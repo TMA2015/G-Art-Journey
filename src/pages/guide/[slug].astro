@@ -1,12 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
+import '../../styles/practical-guides.css';
 import SectionNav from '../../components/SectionNav.astro';
 import {guides} from '../../data/content.mjs';
 import {getGuides} from '../../i18n/content.mjs';
+import {getVisualNotes} from '../../i18n/notes.mjs';
 import {ui,language} from '../../i18n/ui.mjs';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const guide=getGuides(lang).find(g=>g.slug===Astro.props.guide.slug);
+const notes=getVisualNotes(lang);
+const related=(guide.seeAlso||[]).map(slug=>notes.find(n=>n.slug===slug)).filter(Boolean);
 ---
 <Base lang={lang} title={guide.title} description={guide.description}>
  <article class="site-shell guide-article">
@@ -15,7 +19,12 @@ const guide=getGuides(lang).find(g=>g.slug===Astro.props.guide.slug);
   <img id="guide-picture" class="guide-cover" src={base+guide.image} alt={guide.title}/>
   <div class="lesson-grid">
    <aside class="lesson-sidebar"><span class="eyebrow">{t.guides.guideNote}</span><p>{t.guides.suggestedTime}: {guide.time}</p><p>{t.guides.supplies}: {guide.supplies}</p><p>{t.guides.free}</p><a class="subtle-link" href={url('guides/')}>{t.guides.back}</a></aside>
-   <div id="guide-steps"><span class="eyebrow">{t.guides.steps}</span><ol class="lesson-steps">{guide.steps.map(step=><li><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol><div id="guide-note" class="note-banner">{t.guides.placeholder}</div></div>
+   <div id="guide-steps"><span class="eyebrow">{t.guides.steps}</span><ol class="lesson-steps">{guide.steps.map(step=><li><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol><div id="guide-note" class="note-banner">{guide.image.startsWith('infographics/')?'This original diagram shows the main drawing idea. Use the steps above to try it yourself.':t.guides.placeholder}</div></div>
   </div>
+  {(guide.tryIt||guide.remember||related.length>0)&&<section class="practice-followup" aria-label="Try it yourself">
+   {guide.tryIt&&<div class="practice-challenge"><span class="eyebrow">A LITTLE DRAWING CHALLENGE</span><h2 class="serif">Make it your own</h2><p>{guide.tryIt}</p></div>}
+   {guide.remember&&<div class="practice-reminder"><span class="eyebrow">KEEP IN MIND</span><p>{guide.remember}</p></div>}
+   {related.length>0&&<div class="practice-related"><span class="eyebrow">LOOK AT A VISUAL NOTE</span><div>{related.map(note=><a href={url('notes/'+note.slug+'/')}>{note.title} ↗</a>)}</div></div>}
+  </section>}
  </article>
 </Base>

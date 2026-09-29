@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 const read=async path=>readFile('dist/'+path+'index.html','utf8');
-const paths=['','explore/','guides/','gallery/','guide/draw-a-pencil-portrait/','guide/draw-a-pencil-landscape/','guide/draw-a-manga-face/','guide/watercolor-first-flower/','guide/digital-color-layers/','notes/','notes/graphite-values/','notes/head-construction/','movement/renaissance/','movement/impressionism/','movement/post-impressionism/','movement/cubism/','movement/ink-wash/','artist/leonardo-da-vinci/','artist/claude-monet/','artist/vincent-van-gogh/','artist/fan-kuan/'];
+const paths=['','explore/','guides/','gallery/','guide/draw-a-pencil-portrait/','guide/draw-a-pencil-landscape/','guide/draw-a-manga-face/','guide/watercolor-first-flower/','guide/digital-color-layers/','notes/','notes/graphite-values/','notes/head-construction/','movement/renaissance/','movement/impressionism/','movement/post-impressionism/','movement/cubism/','movement/ink-wash/','artist/leonardo-da-vinci/','artist/claude-monet/','artist/vincent-van-gogh/','artist/fan-kuan/','guide/figure-from-simple-shapes/','guide/shade-a-pencil-portrait/','guide/street-with-depth/','guide/four-character-face-approaches/','guide/color-a-face-in-layers/','notes/figure-simple-shapes/','notes/landscape-depth/'];
 for(const path of paths){
  const root=await read(path),legacy=await read('en/'+path);
  for(const html of [root,legacy]){

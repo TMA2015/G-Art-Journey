@@ -5,7 +5,7 @@ import { visualNotes } from '../src/data/visual-notes.mjs';
 const load = p => readFile(p,'utf8');
 
 test('both educational posters exist and have accessible SVG labels', async()=>{
-  assert.equal(visualNotes.length,2);
+  assert.equal(visualNotes.length,4);
   for(const n of visualNotes){
     const svg=await load('public/'+n.image);
     assert.match(svg,/<svg[^>]+viewBox=/);

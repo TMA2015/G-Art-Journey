@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Create depth in a pencil landscape</title><desc id="d">Three example scenes show eye level and converging lines, lighter distant mountains, and a more complete shaded street.</desc>
+<defs><linearGradient id="paper" x2="1" y2="1"><stop stop-color="#f8f3ea"/><stop offset="1" stop-color="#eae3d8"/></linearGradient><pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="4" cy="8" r=".7" fill="#6a6159" opacity=".12"/><circle cx="20" cy="21" r=".5" fill="#6a6159" opacity=".14"/></pattern></defs><rect width="1600" height="1000" fill="url(#paper)"/><rect width="1600" height="1000" fill="url(#grain)"/>
+<text x="75" y="90" font-family="Georgia,serif" font-size="51" fill="#423e3a">04 / Depth in a Pencil Landscape</text>
+<text x="75" y="125" font-family="Arial,sans-serif" font-size="18" fill="#786a60" letter-spacing="3">EYE LEVEL → DISTANCE → FOCAL POINT</text>
+<path d="M75 145 H1525" stroke="#bbafa1" stroke-width="2"/>
+<g fill="#fffdf8" stroke="#cfc2b5" stroke-width="2"><rect x="75" y="187" width="451" height="654" rx="9"/><rect x="574" y="187" width="451" height="654" rx="9"/><rect x="1073" y="187" width="451" height="654" rx="9"/></g>
+<g font-family="Georgia,serif" fill="#594b47" font-size="28"><text x="110" y="235">1. Set your eye level</text><text x="610" y="235">2. Show near and far</text><text x="1109" y="235">3. Choose a dark focus</text></g>
+<g stroke="#a8838b" stroke-width="2.5" fill="none" stroke-dasharray="9 9"><path d="M105 445 H499"/><path d="M600 445 H997"/></g>
+<g stroke="#756b60" stroke-width="3" fill="none">
+ <path d="M105 735 L303 445 L499 735 M105 310 L244 380 L303 445 M499 310 L364 381 L303 445"/>
+ <path d="M138 693 H467 M169 647 H436 M200 600 H405 M242 539 H365"/>
+ <path d="M106 377 L240 414 L240 617 L106 693 M499 375 L365 414 L365 616 L499 693"/>
+ <path d="M159 398 V657 M197 409 V628 M403 406 V624 M442 395 V659"/>
+</g><circle cx="303" cy="445" r="7" fill="#b67e8e"/><text x="312" y="434" font-family="Arial,sans-serif" font-size="15" fill="#9b7581">MEETING POINT</text>
+<g fill="none" stroke-linecap="round"><path d="M600 530 L675 445 L735 511 L802 381 L886 486 L940 424 L997 512" stroke="#b8b5aa" stroke-width="4"/><path d="M600 590 L660 511 L735 559 L803 455 L891 559 L942 510 L997 568" stroke="#928f86" stroke-width="5"/><path d="M600 660 L690 590 L735 637 L811 544 L889 629 L948 581 L997 641" stroke="#595c57" stroke-width="7"/><path d="M600 703 H997" stroke="#a69e91" stroke-width="2"/></g>
+<g stroke="#65665f" stroke-width="4" stroke-linecap="round"><path d="M643 700 l15 -70 l18 70 m-29 -46 h28 M938 700 l15 -92 l22 92 m-30 -59 h24"/></g>
+<g stroke="#5b5a56" fill="none" stroke-width="3"><path d="M1102 710 L1299 452 L1496 710 M1102 310 L1217 394 L1299 452 M1496 315 L1380 397 L1299 452"/><path d="M1102 390 L1215 432 V610 L1102 690 M1496 390 L1382 432 V610 L1496 690"/><path d="M1138 417 V635 M1187 428 V589 M1412 428 V595 M1462 418 V641"/><path d="M1102 710 Q1200 678 1299 681 T1496 708"/></g>
+<path d="M1105 708 L1200 631 L1260 660 L1299 452 L1341 661 L1410 624 L1496 708 L1496 757 L1105 757Z" fill="#74766c" opacity=".11"/>
+<g fill="none" stroke="#474943" stroke-width="5" stroke-linecap="round"><path d="M1173 710 l22 -112 l23 112 m-35 -74 h29 M1447 710 l19 -126 l25 126 m-32 -83 h23"/><path d="M1127 728 H1500"/></g>
+<g font-family="Arial,sans-serif" font-size="18" fill="#73685f"><text x="111" y="798">Road edges meet at one point.</text><text x="608" y="798">Distant hills are lighter and softer.</text><text x="1106" y="798">Keep your darkest detail near you.</text></g>
+<path d="M75 881 H1525" stroke="#c2b5a8"/>
+<text x="83" y="930" font-family="Arial,sans-serif" font-size="22" fill="#5a554e">TRY IT: draw the same little road twice, from different eye levels.</text>
+<text x="82" y="972" font-family="Arial,sans-serif" font-size="15" fill="#8c8176" letter-spacing="2">G-ART JOURNEY · ORIGINAL EDUCATIONAL DIAGRAM</text>
+</svg>

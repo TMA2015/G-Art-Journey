@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Draw a standing figure with simple shapes</title><desc id="d">Three drawing stages show the movement line, simple body shapes, and a balanced standing person.</desc>
+<defs><linearGradient id="paper" x2="1" y2="1"><stop stop-color="#f8f3ea"/><stop offset="1" stop-color="#eae3d8"/></linearGradient><pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="4" cy="8" r=".7" fill="#6a6159" opacity=".12"/><circle cx="20" cy="21" r=".5" fill="#6a6159" opacity=".14"/></pattern></defs><rect width="1600" height="1000" fill="url(#paper)"/><rect width="1600" height="1000" fill="url(#grain)"/>
+<g font-family="Georgia,serif" fill="#423e3a"><text x="75" y="90" font-size="51">03 / A Figure from Simple Shapes</text></g>
+<g font-family="Arial,sans-serif" fill="#786a60" font-size="18" letter-spacing="3"><text x="75" y="125">MOVEMENT → SHAPES → OUTLINE</text></g>
+<path d="M75 145 H1525" stroke="#bbafa1" stroke-width="2"/>
+<g fill="#fffdf8" stroke="#cfc2b5" stroke-width="2"><rect x="75" y="187" width="451" height="654" rx="9"/><rect x="574" y="187" width="451" height="654" rx="9"/><rect x="1073" y="187" width="451" height="654" rx="9"/></g>
+<g font-family="Georgia,serif" fill="#594b47" font-size="28"><text x="110" y="235">1. Find the movement</text><text x="610" y="235">2. Build simple shapes</text><text x="1109" y="235">3. Check the balance</text></g>
+<g stroke="#9b7383" fill="none" stroke-width="7" stroke-linecap="round">
+ <path d="M302 350 Q253 490 298 570 T328 731"/>
+ <path d="M285 420 Q228 457 206 553 M285 420 Q342 429 385 519"/>
+ <path d="M295 548 Q247 625 260 735 M304 548 Q345 628 328 734"/>
+ <path d="M243 750 H344" stroke="#8b847b" stroke-width="3"/>
+</g><circle cx="302" cy="318" r="31" stroke="#87736d" stroke-width="4" fill="none"/>
+<g stroke="#847d74" fill="#d9d2c5" fill-opacity=".32" stroke-width="4" stroke-linejoin="round">
+ <ellipse cx="796" cy="319" rx="34" ry="42" transform="rotate(-8 796 319)"/>
+ <path d="M740 386 L839 371 L853 480 L753 494 Z" />
+ <path d="M762 511 L837 499 L842 559 L757 571 Z" />
+ <path d="M760 400 L708 459 L678 542 M839 395 L884 454 L903 528 M768 559 L741 647 L742 735 M821 558 L854 650 L842 735" fill="none" stroke-width="22" stroke-linecap="round"/>
+ <g stroke="#82736c" stroke-width="4" fill="none"><path d="M752 735 H717 M842 735 H874"/></g>
+</g>
+<g stroke="#766f69" stroke-width="5" fill="#d8d0c7" fill-opacity=".2" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M1279 278 Q1311 266 1324 304 Q1336 349 1303 368 Q1270 371 1260 336 Q1254 292 1279 278Z"/>
+ <path d="M1270 363 Q1242 380 1229 417 L1213 482 Q1223 508 1260 526 Q1292 541 1323 524 Q1353 501 1350 469 L1348 414 Q1331 373 1314 368" />
+ <path d="M1252 517 Q1236 532 1243 564 L1327 562 Q1332 537 1318 522" />
+ <path d="M1235 405 Q1213 426 1198 461 L1174 525 Q1170 544 1163 557 M1341 409 Q1357 427 1377 477 L1396 531 Q1402 546 1410 552"/>
+ <path d="M1260 560 Q1233 627 1239 694 L1230 748 M1314 562 Q1320 627 1350 689 L1346 746"/>
+ <path d="M1210 746 Q1230 750 1250 745 M1331 747 Q1358 747 1371 742" stroke-width="9"/>
+</g>
+<g stroke="#b78591" stroke-width="2" stroke-dasharray="9 10"><path d="M1292 250 V787"/></g><path d="M1192 753 H1430" stroke="#a79a8a" stroke-width="2"/><path d="M1291 753 l-13 -18 h26z" fill="#b78591" opacity=".65"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#73685f"><text x="111" y="798">One loose line can suggest a pose.</text><text x="608" y="798">A head, chest, hips and limbs.</text><text x="1106" y="798">Weight falls near the standing foot.</text></g>
+<path d="M75 881 H1525" stroke="#c2b5a8"/><g font-family="Arial,sans-serif" font-size="22" fill="#5a554e"><text x="83" y="930">TRY IT: one pose in 30 seconds, 2 minutes, then 10 minutes.</text></g>
+<text x="82" y="972" font-family="Arial,sans-serif" font-size="15" fill="#8c8176" letter-spacing="2">G-ART JOURNEY · ORIGINAL EDUCATIONAL DIAGRAM</text>
+</svg>

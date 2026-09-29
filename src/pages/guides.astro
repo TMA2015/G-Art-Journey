@@ -7,7 +7,7 @@ import {getVisualNotes} from '../i18n/notes.mjs';
 import {ui,language} from '../i18n/ui.mjs';
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const guides=getGuides(lang),visualNotes=getVisualNotes(lang);
-const categories=['pencil','landscape','character','watercolor','digital'];
+const categories=['figure','pencil','landscape','character','watercolor','digital'];
 const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.guides.categories[id]}))];
 ---
 <Base lang={lang} title={t.nav.guides} description={t.guides.intro}>

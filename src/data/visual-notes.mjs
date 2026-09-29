@@ -12,5 +12,33 @@ export const visualNotes=[
 {title:"Ước lượng vị trí mắt",body:"Dùng đường tham chiếu ngang để đặt hai mắt. Quan sát mẫu thay vì áp một công thức vào mọi gương mặt."},
 {title:"Định vị mũi và miệng",body:"So sánh khoảng cách từ mắt tới đáy mũi và từ mũi tới cằm, đồng thời kiểm tra độ nghiêng."},
 {title:"Giảm nét dựng, tạo khối",body:"Nhẹ nhàng tẩy bớt nét hướng dẫn, rồi dùng ba sắc độ để nhận ra trán, má và cằm."}
-],note:"Đây là hướng dẫn quan sát và dựng hình ban đầu, không phải bộ tỉ lệ cố định cho mọi độ tuổi, góc nhìn hay phong cách manga/manhwa."}
+],note:"Đây là hướng dẫn quan sát và dựng hình ban đầu, không phải bộ tỉ lệ cố định cho mọi độ tuổi, góc nhìn hay phong cách manga/manhwa."},
+{
+ slug:"figure-simple-shapes",number:"03",title:"Draw a standing figure from simple shapes",subtitle:"Movement, Shapes & Balance",tag:"FIGURE DRAWING",
+ image:"infographics/figure-simple-shapes.svg",
+ description:"See how a movement line, simple body forms and a standing foot work together.",
+ time:"15–20 min",
+ steps:[
+ {title:"Start with movement",body:"Look for the pose’s main curve. Use one quick light line to capture it."},
+ {title:"Add three big forms",body:"Place the head, chest and hips. Notice how they tilt."},
+ {title:"Connect the limbs",body:"Mark shoulder, elbow and wrist, then hip, knee and ankle."},
+ {title:"Look at the balance",body:"Check whether the weight seems to fall toward the supporting foot."},
+ {title:"Draw the outline",body:"Work around your simple shapes. Leave small details until the pose feels natural."}
+ ],
+ note:"This is a drawing aid, not a rule for all bodies. Real proportions vary with age, pose and viewpoint."
+},
+{
+ slug:"landscape-depth",number:"04",title:"Give a pencil landscape a sense of depth",subtitle:"Eye Level, Distance & Focus",tag:"PENCIL LANDSCAPE",
+ image:"infographics/landscape-depth.svg",
+ description:"Place an eye-level line, soften distant shapes and choose one area for your darkest pencil marks.",
+ time:"15–20 min",
+ steps:[
+ {title:"Draw your eye level",body:"Place a light horizontal guide at the height of your eyes."},
+ {title:"Guide lines into the distance",body:"For a straight street, bring the road edges toward one point on the eye-level line."},
+ {title:"Make far things lighter",body:"Use softer lines and lighter gray for distant mountains and buildings."},
+ {title:"Bring near things forward",body:"Make the closest trees and walls a little larger, darker and clearer."},
+ {title:"Choose one focal point",body:"Save your strongest contrast for a place you want to notice first."}
+ ],
+ note:"The eye-level line is not always the visible edge between land and sky. Draw what you actually see."
+}
 ];
