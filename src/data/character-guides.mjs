@@ -3,31 +3,31 @@ export const characterGuides = [
   {
     "slug": "manga-face",
     "title": "Draw a Manga-Inspired Face",
-    "description": "Begin with a head shape, place features, group the hair and explore expressions.",
+    "description": "Explore expressive eye shapes, grouped hair and line weight using a head you already know how to construct.",
     "time": "25–35 min",
     "steps": [
       {
-        "title": "Start with the head shape",
-        "body": "Sketch a round head and chin. Add a soft middle line to show its direction."
+        "title": "Start with a familiar head",
+        "body": "Lightly use the simple head guides from Face Basics, then focus this lesson on artistic choices."
       },
       {
-        "title": "Place the eyes and features",
-        "body": "Choose an eye design that suits your character; check the nose and mouth against the head angle."
+        "title": "Try three eye designs",
+        "body": "Compare round, tapered and understated eyes on the same head. Choose a design that expresses your character."
       },
       {
-        "title": "Block in the hair",
-        "body": "Draw large, flowing groups before adding thin strands."
+        "title": "Shape the hair silhouette",
+        "body": "Try two large hair groups and check how they frame the forehead before drawing small strands."
       },
       {
-        "title": "Choose an expression",
-        "body": "Change the eyebrows, eyes and mouth together rather than relying on one feature."
+        "title": "Change the mood",
+        "body": "Adjust eyes, brows and mouth together while keeping the character recognisable."
       },
       {
-        "title": "Refine your lines",
-        "body": "Keep the lines you need, erase extra guides and add only a few areas of shadow."
+        "title": "Choose the main lines",
+        "body": "Use a clearer outer outline and lighter interior marks to give the face a readable rhythm."
       }
     ],
-    "tryIt": "Draw the same character looking calm, excited and uncertain.",
+    "tryIt": "Keep the same basic face and compare three original combinations of eye shape, hair mass and line weight.",
     "remember": "Manga contains many visual approaches. These proportions are an example you can adapt.",
     "category": "character",
     "tag": "CHARACTER ART",
@@ -44,31 +44,31 @@ export const characterGuides = [
   {
     "slug": "manga-figure",
     "title": "Build a Manga-Inspired Character",
-    "description": "Draw a full character from a movement line and simple body shapes.",
+    "description": "Turn a familiar figure sketch into a stylized character by choosing proportions, gesture and costume shape.",
     "time": "30–45 min",
     "steps": [
       {
-        "title": "Draw the movement line",
-        "body": "Capture the pose with one loose curve."
+        "title": "Begin with a known figure",
+        "body": "Use your earlier standing figure as a light guide; there is no need to repeat its full construction here."
       },
       {
-        "title": "Place the head, chest and hips",
-        "body": "Use simple forms and check how the shoulders and hips tilt."
+        "title": "Compare head-to-body ratios",
+        "body": "Try a slightly larger head and a taller, smaller-headed version beside the original. Choose the feeling you want."
       },
       {
-        "title": "Mark all four limbs",
-        "body": "Find elbows, wrists, knees and ankles before drawing the outlines."
+        "title": "Push the gesture",
+        "body": "Change the shoulder tilt, hip angle or stance to make the character more expressive while keeping balance believable."
       },
       {
-        "title": "Add hair and outfit",
-        "body": "Use big shapes and clothing folds that follow the pose."
+        "title": "Design a clothing silhouette",
+        "body": "Choose one recognisable jacket, dress or accessory shape that follows the pose."
       },
       {
-        "title": "Finish the full silhouette",
-        "body": "Keep hands and feet visible; refine the outlines and a few shadows."
+        "title": "Refine the whole character",
+        "body": "Keep the entire body visible, then add selective lines and a few shadows without hiding its movement."
       }
     ],
-    "tryIt": "Sketch one pose as a realistic figure, then vary the head and leg lengths for an original character.",
+    "tryIt": "Use one neutral figure sketch to design two characters with different head ratios, gestures and costume silhouettes.",
     "remember": "A head-length guide can help, but it is not a fixed rule for every style or body.",
     "category": "character",
     "tag": "CHARACTER ART",

@@ -16,7 +16,7 @@
       "sourceName": "manga-face.png",
       "title": "Draw a Manga-Inspired Face",
       "palette": "soft blush pink, warm ivory, charcoal graphite",
-      "artDirection": "Five stages: head, centerline, eyes and expression, big hair shapes, final lines. Variations show three distinct expressions using the same invented character.",
+      "artDirection": "Five connected drawings of ONE invented face: briefly show an already-known base head, then compare three original expressive eye designs, grouped hair silhouettes, restrained line weights, and final style variations. The core lesson is stylization choices, NOT repeating basic facial proportion construction.",
       "qualityChecks": "Show the same clearly invented adult/teen character across steps, both eyes aligned to the head turn.",
       "position": 1
     },
@@ -26,7 +26,7 @@
       "sourceName": "manga-figure.png",
       "title": "Build a Manga-Inspired Character",
       "palette": "cream, pale mint, warm graphite",
-      "artDirection": "Five stages: movement line, torso and hip blocks, joints and hands/feet, simplified clothes and hair, final full-body standing character. Visible head-length measuring guide.",
+      "artDirection": "Begin from an already-constructed neutral standing figure, then show head-unit ratio choices, expressive silhouette/gesture exaggeration, an original outfit shape, and one complete original stylized character. Include a side-by-side proportion comparison; do NOT repeat the basic five steps of the general standing-figure lesson.",
       "qualityChecks": "Include whole body and feet without clipping. Keep hand count and joint connections correct.",
       "position": 2
     },

@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "purpose": "Prevent new posters from repeating the same main skill. Current approved Human Drawing posters are unchanged.",
+  "approvedLegacyOverlap": {
+    "slugs": [
+      "figure-proportions",
+      "standing-figure"
+    ],
+    "reason": "Owner-approved pair may share sketch scaffolding; one teaches head-based measurement and landmarks, the other gesture and standing balance. Keep both unchanged."
+  },
+  "guides": [
+    {
+      "slug": "face-basics",
+      "status": "published",
+      "family": "face",
+      "primarySkill": "head-construction",
+      "visibleEvidence": "Build one face from an oval, construction guides, features and a clean outline.",
+      "stageFocus": [
+        "head-shape",
+        "center-guides",
+        "facial-landmarks",
+        "clean-outline",
+        "character-personalization"
+      ]
+    },
+    {
+      "slug": "face-expressions",
+      "status": "published",
+      "family": "face",
+      "primarySkill": "expression-design",
+      "visibleEvidence": "Show five changes of eyes, brows and mouth on a consistent character.",
+      "stageFocus": [
+        "shared-face",
+        "brow-change",
+        "eye-change",
+        "mouth-change",
+        "emotion-comparison"
+      ]
+    },
+    {
+      "slug": "head-angles",
+      "status": "published",
+      "family": "face",
+      "primarySkill": "head-rotation",
+      "visibleEvidence": "Keep the same head recognisable across five viewpoints.",
+      "stageFocus": [
+        "head-volume",
+        "turning-centerline",
+        "profile",
+        "upward-view",
+        "downward-view"
+      ]
+    },
+    {
+      "slug": "faces-by-age",
+      "status": "published",
+      "family": "face",
+      "primarySkill": "age-variation",
+      "visibleEvidence": "Compare several age-inspired character designs without rigid anatomy rules.",
+      "stageFocus": [
+        "age-comparison",
+        "proportion-variation",
+        "feature-placement",
+        "skin-detail",
+        "profile-comparison"
+      ]
+    },
+    {
+      "slug": "figure-proportions",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "head-length-measurement",
+      "visibleEvidence": "Explain head-unit measurements and shoulder, waist, hip, knee and ankle landmarks.",
+      "stageFocus": [
+        "head-unit",
+        "body-landmarks",
+        "limb-length",
+        "proportion-comparison",
+        "height-adjustment"
+      ]
+    },
+    {
+      "slug": "standing-figure",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "standing-gesture-and-balance",
+      "visibleEvidence": "Show a complete standing pose that changes from action line to believable weight, clothing and outline.",
+      "stageFocus": [
+        "movement-line",
+        "weight-shift",
+        "support-foot",
+        "pose-balance",
+        "clothing-outline"
+      ]
+    },
+    {
+      "slug": "sitting-poses",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "seated-poses-and-support",
+      "visibleEvidence": "Show five ways the hips, knees and support points change when seated.",
+      "stageFocus": [
+        "support-points",
+        "hip-tilt",
+        "bent-knees",
+        "sitting-variations",
+        "comfort-check"
+      ]
+    },
+    {
+      "slug": "body-silhouettes",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "body-shape-variations",
+      "visibleEvidence": "Show how different body outlines and design shapes can still support believable joints.",
+      "stageFocus": [
+        "body-build",
+        "outer-silhouette",
+        "height-variation",
+        "character-outline",
+        "balance-check"
+      ]
+    },
+    {
+      "slug": "manga-face",
+      "status": "staged",
+      "family": "character",
+      "primarySkill": "manga-style-face-choices",
+      "visibleEvidence": "Compare distinctive original manga-inspired feature, hair and line choices on an already constructed face.",
+      "stageFocus": [
+        "shared-base-head",
+        "eye-shape-options",
+        "hair-mass-design",
+        "line-weight-hierarchy",
+        "expression-variants"
+      ]
+    },
+    {
+      "slug": "manga-figure",
+      "status": "staged",
+      "family": "character",
+      "primarySkill": "manga-character-stylization",
+      "visibleEvidence": "Compare head-unit and silhouette choices with a neutral base, not repeat generic standing construction.",
+      "stageFocus": [
+        "neutral-base-figure",
+        "head-unit-style-variants",
+        "gesture-exaggeration",
+        "costume-shape",
+        "finished-character"
+      ]
+    },
+    {
+      "slug": "webtoon-character",
+      "status": "staged",
+      "family": "character",
+      "primarySkill": "webtoon-color-and-story-panel",
+      "visibleEvidence": "Show a single webtoon-inspired character through flat, shadow, warmth and panel atmosphere.",
+      "stageFocus": [
+        "character-linework",
+        "flat-colors",
+        "light-direction",
+        "soft-shading",
+        "story-panel"
+      ]
+    },
+    {
+      "slug": "manhua-ink-character",
+      "status": "staged",
+      "family": "character",
+      "primarySkill": "ink-stroke-rhythm",
+      "visibleEvidence": "Explore ink line weight and clustered darks on an original moving character.",
+      "stageFocus": [
+        "brush-strokes",
+        "ink-weight",
+        "costume-flow",
+        "dark-shape-group",
+        "rhythm-comparison"
+      ]
+    },
+    {
+      "slug": "cartoon-shapes",
+      "status": "staged",
+      "family": "character",
+      "primarySkill": "shape-language",
+      "visibleEvidence": "Explore rounded, angular and mixed silhouettes from a shared starting gesture.",
+      "stageFocus": [
+        "circle-shape",
+        "square-shape",
+        "triangle-shape",
+        "silhouette-check",
+        "personality-contrast"
+      ]
+    }
+  ]
+}

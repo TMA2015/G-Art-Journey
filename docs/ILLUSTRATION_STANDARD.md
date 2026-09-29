@@ -25,3 +25,13 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 - A poster is linked from its own detail page with View large and Save image actions. Lazy-load card previews; keep hero poster full-height (no object-fit: cover crop).
 - Keep GitHub as the single ongoing storage and hosting platform, and watch the existing advisory asset budget.
 - All eight Human Drawing Batch 01 image checksums are pinned in src/data/human-assets.mjs. Never publish with missing or wrong assets.
+
+## Content distinction gate (added after Batch 01 review)
+
+Before producing a new poster, record its dominant learning result in `assets/guides/skill-intents.json`. The five stage-focus tags are for **what the viewer learns**, not merely the five pieces of the drawing. Run `npm run audit:guides` before generating artwork. CI rejects missing, duplicated or almost identical skill sequences.
+
+A new card needs a distinguishable outcome and a visual example that proves it. A change of name, medium, region, gender or character alone does not create another basic lesson. Shared first steps may be prerequisites, but most of the visual stages must teach something new. If the concept overlaps, extend the existing guide with a variation, embed a related example, or cross-link it rather than create another competing card.
+
+The approved `figure-proportions` and `standing-figure` posters remain unchanged. The first is a head-unit and body-landmark reference; the second is about gesture, supporting leg and standing balance. Their acknowledged scaffolding overlap is documented as an owner-approved historical exception, not a template for future duplication. 
+
+In Batch 02, manga face focuses on feature/hair/line design choices rather than re-teaching basic face construction; manga full figure compares stylized proportions and costume silhouettes rather than redoing the general standing-pose tutorial. Regional terms describe varied storytelling/art contexts and are not fixed face or body templates.
