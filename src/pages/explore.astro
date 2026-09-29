@@ -1,14 +1,51 @@
 ---
+import '../styles/discovery.css';
 import Base from '../layouts/Base.astro';
-import { collections } from '../data/content.mjs';
-const base = import.meta.env.BASE_URL;
+import { media, movements, artists, moreArtists } from '../data/discovery.mjs';
+const base=import.meta.env.BASE_URL;
 ---
-<Base title="Explore Art" description="Dạo chơi qua những chất liệu, phong cách và chủ đề vẽ yêu thích.">
-  <div class="site-shell">
-    <header class="page-hero"><div class="topline eyebrow">01 / EXPLORE ART</div><h1 class="serif">Find something<br/><em>you love.</em></h1><p>Không phải một bảo tàng học thuật. Chỉ là những cánh cửa nhỏ dẫn đến nét chì, màu nước, nhân vật và thế giới minh họa mà bạn yêu thích.</p></header>
-    <div class="explore-grid">
-      {collections.map(c=><a class="explore-tile" href={base + c.link}><img src={base + c.image} alt={'Minh họa '+c.subtitle} loading="lazy"/><div class="tile-text"><span class="eyebrow">{c.number} / {c.subtitle}</span><h2>{c.title} ↗</h2><p>{c.description}</p></div></a>)}
-    </div>
-    <div class="note-banner">Những hình trên hiện là minh họa nguyên bản phục vụ bố cục website, chưa phải tác phẩm của gia đình hay tranh của nghệ sĩ bên ngoài. Về sau, chúng ta sẽ bổ sung tác phẩm và thông tin nguồn/quyền sử dụng rõ ràng.</div>
-  </div>
+<Base title="Explore Art" description="Khám phá hội họa qua chất liệu, phong cách và những người nghệ sĩ đáng nhớ.">
+ <div class="site-shell">
+  <header class="page-hero">
+   <div class="topline eyebrow">01 / EXPLORE ART</div>
+   <h1 class="serif">A little world of <em>art.</em></h1>
+   <p>Bắt đầu từ một chiếc bút chì hay một hộp màu, rồi dạo chơi đến những phong cách và họa sĩ bạn từng nghe tên. Không cần thuộc lịch sử — chỉ cần nhìn, cảm nhận và khám phá.</p>
+  </header>
+  <nav class="discovery-jump" aria-label="Chọn cách khám phá">
+   <a href="#materials"><span>01</span> Theo chất liệu ↘</a>
+   <a href="#movements"><span>02</span> Phong cách nổi tiếng ↘</a>
+   <a href="#artists"><span>03</span> Gặp gỡ danh họa ↘</a>
+  </nav>
+  <section id="materials" class="discovery-section" aria-labelledby="materials-title">
+   <div class="discovery-heading"><span class="eyebrow">01 / MATERIALS & TOOLS</span><h2 id="materials-title" class="serif">Vẽ bằng gì nhỉ?</h2><p>Từ bút chì quen thuộc đến sơn dầu, màu nước và bút vẽ kỹ thuật số. Đây là cách khám phá dễ nhất nếu bạn bắt đầu từ dụng cụ mình đang có.</p></div>
+   <div class="material-grid">
+    {media.map((m,i)=><article class="material-card" id={m.id}>
+     <div class="material-image"><img src={base+m.image} alt={'Hình minh họa cho '+m.name} loading="lazy" /><span class="material-icon" aria-hidden="true">{m.emoji}</span></div>
+     <div class="material-copy"><span class="eyebrow">{String(i+1).padStart(2,'0')} / {m.en}</span><h3>{m.name}</h3><p>{m.text}</p><a href={base+m.start}>Xem gợi ý ↗</a></div>
+    </article>)}
+   </div>
+   <p class="discovery-note">Chất liệu và phong cách là hai chuyện khác nhau: cùng một bức chân dung có thể vẽ bằng chì, màu nước hoặc trên iPad. Hình ở các thẻ là minh họa chủ đề của website.</p>
+  </section>
+  <section id="movements" class="discovery-section" aria-labelledby="movements-title">
+   <div class="discovery-heading"><span class="eyebrow">02 / WAYS OF SEEING</span><h2 id="movements-title" class="serif">Những phong cách từng nghe qua</h2><p>Phục Hưng, Ấn tượng, Hậu Ấn tượng, Lập thể và thủy mặc. Mỗi trang chỉ vài phút đọc: nhìn gì ở tranh, tại sao lại thú vị, và thử vẽ thế nào.</p></div>
+   <div class="movement-grid">
+    {movements.map((m,i)=><a class="movement-card" href={base+'movement/'+m.slug+'/'} style={'--movement-color:'+m.color}>
+     <div class="movement-image"><img src={base+m.image} alt={'Minh họa chủ đề '+m.name} loading="lazy"/><span class="movement-index">{String(i+1).padStart(2,'0')} / 05</span></div>
+     <div class="movement-copy"><span class="eyebrow">{m.period}</span><h3 class="serif">{m.name} <span aria-hidden="true">↗</span></h3><p>{m.summary}</p></div>
+    </a>)}
+   </div>
+   <p class="discovery-note">Thủy mặc là một truyền thống hội họa lâu dài, không phải một trường phái ra đời cùng các phong trào châu Âu. Sơn mài Việt Nam được giới thiệu theo chất liệu và truyền thống riêng.</p>
+  </section>
+  <section id="artists" class="discovery-section" aria-labelledby="artists-title">
+   <div class="discovery-heading"><span class="eyebrow">03 / PEOPLE BEHIND THE ART</span><h2 id="artists-title" class="serif">Gặp gỡ một vài danh họa</h2><p>Mỗi người một tấm infographic ngắn: ba điều đáng chú ý, một tác phẩm để ngắm kỹ và một gợi ý nhỏ để thử vẽ.</p></div>
+   <div class="artist-grid">
+    {artists.map(a=><a class="artist-card" href={base+'artist/'+a.slug+'/'} style={'--artist-color:'+a.accent}>
+      <div class="artist-thumb"><img src={a.image.startsWith('https:')?a.image:base+a.image} alt={a.imageNote} loading="lazy" referrerpolicy="no-referrer"/></div>
+      <div class="artist-card-copy"><span class="eyebrow">{a.tag} · {a.dates}</span><h3 class="serif">{a.name} ↗</h3><p>{a.intro}</p><span class="artist-tag">{a.signature}</span></div>
+    </a>)}
+   </div>
+   <div class="artist-quick"><h3 class="serif">Và những cái tên có thể bạn đã nghe…</h3><div class="artist-quick-grid">{moreArtists.map(a=><a href={a.url} target="_blank" rel="noopener noreferrer"><strong>{a.name} ↗</strong><span>{a.about}</span></a>)}</div></div>
+   <p class="discovery-note">Ảnh minh họa tác phẩm của bảo tàng có ghi nguồn riêng. Các hình SVG còn lại là tranh minh họa do website tạo, không phải tranh thật của danh họa.</p>
+  </section>
+ </div>
 </Base>

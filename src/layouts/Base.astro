@@ -4,36 +4,67 @@ const { title = 'G-Art Journey', description = 'Một cuộc dạo chơi nghệ 
 const base = import.meta.env.BASE_URL;
 const current = Astro.url.pathname;
 const nav = [{href:'',label:'Home'},{href:'explore/',label:'Explore Art'},{href:'guides/',label:'Drawing Guides'},{href:'gallery/',label:'Our Gallery'}];
+const active = (href) => href==='guides/' ? (current===base+'guides/' || current.startsWith(base+'guide/')) : href==='explore/' ? (current===base+'explore/' || current.startsWith(base+'artist/') || current.startsWith(base+'movement/')) : current===base+href;
 ---
 <!doctype html>
-<html lang="vi" data-base={base}>
+<html lang="vi" data-base={base} data-theme="studio">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f8f6f0" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href={base + 'branding/g-learning-mark.svg'} />
+    <link rel="icon" type="image/svg+xml" href={base + 'branding/g-art-mark.svg'} />
     <title>{title === 'G-Art Journey' ? title : title + ' — G-Art Journey'}</title>
+    <script is:inline>
+      try { if (localStorage.getItem('g-art-theme')==='playful') document.documentElement.dataset.theme='playful'; } catch {}
+    </script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Đến nội dung chính</a>
     <header class="site-header">
       <div class="site-shell nav-bar">
         <a class="brand" href={base} aria-label="G-Art Journey — Trang chủ">
-          <img class="brand-mark" src={base + 'branding/g-learning-mark.svg'} alt="" />
+          <img class="brand-mark" src={base + 'branding/g-art-mark.svg'} alt="" />
           <span><span class="brand-name">G-Art Journey</span><span class="brand-sub">Explore · Feel · Create</span></span>
         </a>
         <nav class="top-nav" aria-label="Điều hướng chính">
-          {nav.map(n => <a href={base + n.href} aria-current={current === base + n.href ? 'page' : undefined}>{n.label}</a>)}
+          {nav.map(n => <a href={base + n.href} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}
         </nav>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Chuyển sang giao diện vui tươi">✿ <span data-theme-label>Playful</span></button>
         <a class="header-action" href={base + 'gallery/'}>Our little gallery ↗</a>
+        <details class="mobile-nav">
+          <summary aria-label="Mở menu điều hướng">☰ <span>Menu</span></summary>
+          <nav aria-label="Điều hướng trên màn hình nhỏ">
+            {nav.map(n => <a href={base + n.href} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}
+          </nav>
+        </details>
       </div>
     </header>
     <main id="main"><slot /></main>
     <footer class="footer">
       <div class="site-shell">
-        <div class="footer-mark"><img class="brand-mark" src={base + 'branding/g-learning-mark.svg'} alt="" /><span>G-Art Journey · A little art space for father & daughter.</span></div>
+        <div class="footer-mark"><img class="brand-mark" src={base + 'branding/g-art-mark.svg'} alt="" /><span>G-Art Journey · A little art space for father & daughter.</span></div>
         <span>Created simply for the joy of art. © {new Date().getFullYear()}</span>
       </div>
     </footer>
+    <script>
+      const button = document.querySelector('[data-theme-toggle]');
+      const label = document.querySelector('[data-theme-label]');
+      const updateButton = () => {
+        const playful = document.documentElement.dataset.theme === 'playful';
+        if (button) {
+          button.setAttribute('aria-pressed', String(playful));
+          button.setAttribute('aria-label', playful ? 'Chuyển về giao diện studio' : 'Chuyển sang giao diện vui tươi');
+        }
+        if (label) label.textContent = playful ? 'Studio' : 'Playful';
+      };
+      updateButton();
+      button?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'playful' ? 'studio' : 'playful';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('g-art-theme', next); } catch {}
+        updateButton();
+      });
+    </script>
   </body>
 </html>
