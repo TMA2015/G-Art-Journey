@@ -1,19 +1,23 @@
 ---
 import '../styles/global.css';
+import '../styles/polish.css';
 const { title = 'G-Art Journey', description = 'Một cuộc dạo chơi nghệ thuật của hai bố con.' } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const current = Astro.url.pathname;
 const nav = [{href:'',label:'Home'},{href:'explore/',label:'Explore Art'},{href:'guides/',label:'Drawing Guides'},{href:'gallery/',label:'Our Gallery'}];
-const active = (href) => href==='guides/' ? (current===base+'guides/' || current.startsWith(base+'guide/')) : href==='explore/' ? (current===base+'explore/' || current.startsWith(base+'artist/') || current.startsWith(base+'movement/')) : current===base+href;
+const active = (href) => href==='guides/' ? (current===base+'guides/' || current.startsWith(base+'guide/') || current.startsWith(base+'notes/')) : href==='explore/' ? (current===base+'explore/' || current.startsWith(base+'artist/') || current.startsWith(base+'movement/')) : current===base+href;
 ---
 <!doctype html>
-<html lang="vi" data-base={base} data-theme="studio">
+<html lang="vi" data-base={base} data-theme="studio" style={`--playful-art: url("${base}decor/playful-paper.svg")`}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f8f6f0" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={base + 'branding/g-art-mark.svg'} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
     <title>{title === 'G-Art Journey' ? title : title + ' — G-Art Journey'}</title>
     <script is:inline>
       try { if (localStorage.getItem('g-art-theme')==='playful') document.documentElement.dataset.theme='playful'; } catch {}
@@ -41,6 +45,7 @@ const active = (href) => href==='guides/' ? (current===base+'guides/' || current
       </div>
     </header>
     <main id="main"><slot /></main>
+    <button type="button" class="back-to-top" data-back-to-top aria-label="Lên đầu trang" title="Lên đầu trang" hidden><span aria-hidden="true">↑</span></button>
     <footer class="footer">
       <div class="site-shell">
         <div class="footer-mark"><img class="brand-mark" src={base + 'branding/g-art-mark.svg'} alt="" /><span>G-Art Journey · A little art space for father & daughter.</span></div>
@@ -59,6 +64,14 @@ const active = (href) => href==='guides/' ? (current===base+'guides/' || current
         if (label) label.textContent = playful ? 'Studio' : 'Playful';
       };
       updateButton();
+      const backToTop = document.querySelector('[data-back-to-top]');
+      const updateBackToTop = () => { if (backToTop) backToTop.hidden = window.scrollY < 480; };
+      updateBackToTop();
+      window.addEventListener('scroll', updateBackToTop, { passive: true });
+      backToTop?.addEventListener('click', () => {
+        const motion = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+        window.scrollTo({ top: 0, behavior: motion });
+      });
       button?.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'playful' ? 'studio' : 'playful';
         document.documentElement.dataset.theme = next;

@@ -1,13 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import { guides } from '../data/content.mjs';
+import { visualNotes } from '../data/visual-notes.mjs';
 const base = import.meta.env.BASE_URL;
 const sections = [{id:'pencil',title:'Pencil Art — Vẽ chì'},{id:'landscape',title:'Landscape — Phong cảnh'},{id:'character',title:'Character Art — Nhân vật'},{id:'watercolor',title:'Watercolor — Màu nước'},{id:'digital',title:'Digital Art — Vẽ trên ứng dụng'}];
 ---
 <Base title="Drawing Guides" description="Những gợi ý vẽ nhẹ nhàng theo chủ đề và chất liệu.">
   <div class="site-shell">
     <header class="page-hero"><div class="topline eyebrow">02 / DRAWING GUIDES</div><h1 class="serif">Pick up a pencil.<br/><em>See what happens.</em></h1><p>Không có giáo trình bắt buộc. Chọn thứ bạn thích, xem vài bước cơ bản, rồi thử theo cách của riêng mình.</p></header>
+    <section class="section" aria-labelledby="visual-notes-heading" style="padding-top:40px">
+      <div class="section-title-row"><div><span class="eyebrow">VISUAL NOTES</span><h2 id="visual-notes-heading" class="serif">Xem một hình, thử một nét</h2></div><a class="subtle-link" href={base+'notes/'}>Tất cả infographic ↗</a></div>
+      <div class="visual-note-teaser">{visualNotes.map(n=><a href={base+'notes/'+n.slug+'/'}><img src={base+n.image} alt={'Minh họa '+n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}</div>
+    </section>
     {sections.map(s=><section id={s.id} class="section" style="padding-top:48px"><div class="section-title-row"><div><span class="eyebrow">START ANYWHERE</span><h2 class="serif">{s.title}</h2></div></div><div class="guide-list">{guides.filter(g=>g.category===s.id).map(g=><a class="guide-card" href={base + 'guide/' + g.slug + '/'}><img src={base + g.image} alt={'Minh họa '+g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>Open guide ↗</span></div></div></a>)}</div></section>)}
-    <div class="note-banner">Đây là các hướng dẫn nhập môn dạng văn bản kèm hình minh họa. Các infographic từng bước chi tiết sẽ được bổ sung bằng hình gốc sau khi chốt phong cách đồ họa.</div>
+    <div class="note-banner">Hai infographic đầu tiên là sơ đồ thị giác nguyên bản, có thể mở lớn và lưu lại. Các bài hướng dẫn khác hiện còn dùng hình minh họa chủ đề; chúng ta sẽ tiếp tục bổ sung hình từng bước bằng cùng một mẫu vẽ.</div>
   </div>
 </Base>

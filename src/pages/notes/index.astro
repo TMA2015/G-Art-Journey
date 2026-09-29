@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import {visualNotes} from '../../data/visual-notes.mjs';
+import '../../styles/visual-notes.css';
+const base=import.meta.env.BASE_URL;
+---
+<Base title="Visual Notes" description="Những tấm infographic dễ xem để thử vẽ theo cách của riêng mình.">
+<div class="site-shell visual-note-list"><header class="page-hero"><div class="topline eyebrow">VISUAL SKETCHBOOK</div><h1 class="serif">A few <em>visual notes.</em></h1><p>Hai tấm ghi chú vẽ đầu tiên: nhìn ánh sáng và dựng hình khuôn mặt. Mở lớn, lưu lại hoặc in ra để ngồi vẽ cùng nhau.</p></header>
+<div class="visual-note-grid">{visualNotes.map(n=><a class="visual-note-card" href={base+'notes/'+n.slug+'/'}><img src={base+n.image} alt={'Minh họa '+n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h2 class="serif">{n.title} ↗</h2><p>{n.description}</p></div></a>)}</div>
+</div>
+</Base>

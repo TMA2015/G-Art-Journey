@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-label="Subtle sketchbook paper pattern with flowers and watercolor washes">
+<defs>
+ <radialGradient id="rose"><stop stop-color="#E7ACC6" stop-opacity=".32"/><stop offset="1" stop-color="#F5DAE9" stop-opacity="0"/></radialGradient>
+ <radialGradient id="mint"><stop stop-color="#BCE2D3" stop-opacity=".35"/><stop offset="1" stop-color="#D5F1E6" stop-opacity="0"/></radialGradient>
+ <radialGradient id="peach"><stop stop-color="#F0C29F" stop-opacity=".28"/><stop offset="1" stop-color="#F8E5D9" stop-opacity="0"/></radialGradient>
+ <pattern id="paper" width="29" height="29" patternUnits="userSpaceOnUse"><circle cx="2" cy="6" r=".55" fill="#B9A3AD" opacity=".26"/><circle cx="18" cy="23" r=".4" fill="#B9A3AD" opacity=".24"/></pattern>
+</defs>
+<rect width="1600" height="1040" fill="url(#paper)"/>
+<ellipse cx="78" cy="135" rx="380" ry="280" fill="url(#rose)"/><ellipse cx="1545" cy="215" rx="335" ry="305" fill="url(#mint)"/><ellipse cx="150" cy="885" rx="370" ry="250" fill="url(#peach)"/><ellipse cx="1485" cy="890" rx="340" ry="240" fill="url(#rose)"/>
+<g fill="none" stroke="#BA91AB" stroke-opacity=".35" stroke-width="2.1" stroke-linecap="round">
+ <path d="M76 99 Q118 79 137 108 M90 87 l5 -17 M151 115 l19 -8"/><path d="M1403 110 q26 -14 46 0 q-17 17 -31 6"/><path d="M1305 930 q41 -20 78 -3 m-52 21 q44 15 78 0"/>
+ <path d="M42 707 Q115 666 174 694 M55 727 Q105 699 159 723"/>
+</g>
+<g fill="none" stroke="#91B1A0" stroke-opacity=".38" stroke-width="2.5" stroke-linecap="round">
+ <path d="M1503 340 q-30 -36 -12 -78 q-4 -42 -31 -52"/><path d="M1491 287 q-35 0 -40 -24 q28 -12 40 24 M1492 316 q29 -20 48 -6 q-20 25 -48 6"/>
+ <path d="M122 862 Q162 803 194 765 M161 805 Q126 781 111 795 Q125 817 161 805 M176 790 Q209 762 223 773 Q206 799 176 790"/>
+</g>
+<g fill="none" stroke="#C892A9" stroke-opacity=".40" stroke-width="2.2" stroke-linecap="round">
+ <path d="M1456 780 c-13 -28 -25 -39 -11 -48 c13 -8 26 10 16 26 c8 -31 22 -36 31 -23 c6 13 -10 20 -21 24 c28 -10 39 -4 38 9 c-1 12 -24 11 -40 3 c23 16 23 28 11 33 c-15 4 -18 -18 -21 -30 c-3 27 -17 37 -27 24 c-6 -12 4 -23 24 -26z"/>
+ <path d="M210 212 q-18 -36 -36 -10 q-22 -7 -22 14 q2 16 25 9 q7 26 25 14 q10 -10 0 -22 q23 -6 17 -22 q-13 -12 -23 4"/>
+</g>
+<circle cx="186" cy="217" r="7" fill="#D8AC80" opacity=".48"/><circle cx="1467" cy="772" r="7" fill="#D8AC80" opacity=".5"/>
+<g stroke="#CCABC2" stroke-opacity=".43" stroke-width="2" stroke-linecap="round"><path d="M1139 76 v22 m-11 -11 h22 M385 945 v16 m-8 -8 h16 M1377 477 v15 m-7 -7 h14"/><path d="M399 103 q0 14 15 14 q-15 0 -15 15 q0 -15 -15 -15 q15 0 15 -14z"/></g>
+</svg>
