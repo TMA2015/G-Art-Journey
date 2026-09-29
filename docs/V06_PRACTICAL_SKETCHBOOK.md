@@ -38,3 +38,7 @@ For each approved guide, build **one unified original reference image + 4–6 ma
 - Original SVGs render and download, no mixed-language public captions.
 - Content tests and production build pass.
 - Device QA (laptop and iPad) and editorial/art review before release.
+
+## Storage guideline
+
+The website uses GitHub as its only content and image platform. Family gallery images are web versions (clear, not oversized). Image budgets are soft warnings in CI; there is no new storage service or external backend. See [ASSET_POLICY.md](ASSET_POLICY.md).
