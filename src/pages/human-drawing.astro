@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionNav from '../components/SectionNav.astro';
+import '../styles/human-batch.css';
+import {humanGuides} from '../data/human-guides.mjs';
+const base=import.meta.env.BASE_URL;
+const blocks=[{id:'faces',label:'Faces & Head',items:humanGuides.filter(x=>x.group==='face')},{id:'figures',label:'Figure & Pose',items:humanGuides.filter(x=>x.group==='figure')}];
+---
+<Base lang="en" title="Human Drawing | Visual Guides" description="Eight illustrated guides for faces, head angles, expressions, proportions and figure poses.">
+<div class="site-shell human-library">
+<header class="page-hero human-hero"><div class="topline eyebrow">THE LITTLE SKETCHBOOK / 01</div><h1 class="serif">Draw people, <em>your way.</em></h1><p>Start with simple shapes, then explore feelings, angles and body poses. Each poster is an original illustrated guide you can view large or save. Choose what looks fun—there is no required order.</p></header>
+<SectionNav lang="en" items={[{id:'faces',label:'Faces & Head'},{id:'figures',label:'Figure & Pose'}]}/>
+{blocks.map((block,sectionIndex)=><section id={block.id} class="human-section" aria-labelledby={block.id+'-heading'}>
+<div class="section-title-row"><div><span class="eyebrow">0{sectionIndex+1} / VISUAL DRAWING NOTES</span><h2 id={block.id+'-heading'} class="serif">{block.label}</h2></div><span class="human-count">{block.items.length} posters</span></div>
+<div class="human-card-grid">{block.items.map((guide,i)=><a class="human-card" href={base+'guide/'+guide.slug+'/'}>
+<div class="human-card-image"><img src={base+guide.image} alt={guide.posterAlt} loading="lazy" decoding="async" width={guide.posterWidth||1122} height={guide.posterHeight||1402} /></div>
+<div class="human-card-copy"><span class="eyebrow">{String(i+1).padStart(2,'0')} / {guide.tag}</span><h3 class="serif">{guide.title} ↗</h3><p>{guide.description}</p><span class="human-time">{guide.time} · View the full poster</span></div></a>)}</div></section>)}
+<p class="human-note">A gentle reminder: these figures are examples, not fixed rules for age, gender or body proportions. Look at different people, adjust the shapes and create characters of your own.</p>
+</div></Base>

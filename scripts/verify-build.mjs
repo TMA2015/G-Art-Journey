@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 const read=async path=>readFile('dist/'+path+'index.html','utf8');
-const paths=['','explore/','guides/','gallery/','guide/draw-a-pencil-portrait/','guide/draw-a-pencil-landscape/','guide/draw-a-manga-face/','guide/watercolor-first-flower/','guide/digital-color-layers/','notes/','notes/graphite-values/','notes/head-construction/','movement/renaissance/','movement/impressionism/','movement/post-impressionism/','movement/cubism/','movement/ink-wash/','artist/leonardo-da-vinci/','artist/claude-monet/','artist/vincent-van-gogh/','artist/fan-kuan/','guide/figure-from-simple-shapes/','guide/shade-a-pencil-portrait/','guide/street-with-depth/','guide/four-character-face-approaches/','guide/color-a-face-in-layers/','notes/figure-simple-shapes/','notes/landscape-depth/'];
+const paths=['','explore/','guides/','gallery/','guide/draw-a-pencil-portrait/','guide/draw-a-pencil-landscape/','guide/draw-a-manga-face/','guide/watercolor-first-flower/','guide/digital-color-layers/','notes/','notes/graphite-values/','notes/head-construction/','movement/renaissance/','movement/impressionism/','movement/post-impressionism/','movement/cubism/','movement/ink-wash/','artist/leonardo-da-vinci/','artist/claude-monet/','artist/vincent-van-gogh/','artist/fan-kuan/','guide/figure-from-simple-shapes/','guide/shade-a-pencil-portrait/','guide/street-with-depth/','guide/four-character-face-approaches/','guide/color-a-face-in-layers/','notes/figure-simple-shapes/','notes/landscape-depth/','human-drawing/','guide/face-basics/','guide/face-expressions/','guide/head-angles/','guide/faces-by-age/','guide/figure-proportions/','guide/standing-figure/','guide/sitting-poses/','guide/body-silhouettes/'];
 for(const path of paths){
  const root=await read(path),legacy=await read('en/'+path);
  for(const html of [root,legacy]){
@@ -23,4 +23,5 @@ const note=await read('notes/graphite-values/');
 assert.match(note,/light-and-value\.svg/);
 assert.doesNotMatch(note,/light-and-value-vi\.svg/);
 for(const file of ['dist/showcase/pencil-portrait.svg','dist/infographics/head-construction.svg','dist/infographics/light-and-value.svg'])await access(file);
+for(const slug of ['face-basics','face-expressions','head-angles','faces-by-age','figure-proportions','standing-figure','sitting-poses','body-silhouettes'])await access('dist/infographics/human/'+slug+'.webp');
 console.log('English-first build PASS: '+paths.length+' canonical routes and /en legacy aliases; no visible language switch.');

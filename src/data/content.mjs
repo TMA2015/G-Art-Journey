@@ -1,4 +1,5 @@
 import { practiceGuides } from './practical-guides.mjs';
+import { humanGuides } from './human-guides.mjs';
 export const showcase = [
   { id: 'portrait', label: 'PENCIL PORTRAIT', title: 'The beauty of graphite', description: 'Một nét chì, một chút ánh sáng, và một câu chuyện hiện ra trên giấy.', category: 'Pencil Art', images: [
     { src: 'showcase/pencil-portrait.svg', alt: 'Minh họa chân dung bằng nét chì', title: 'A quiet portrait' },
@@ -66,4 +67,4 @@ const starterGuides = [
   ]}
 ];
 
-export const guides = [...starterGuides, ...practiceGuides];
+export const guides = [...starterGuides, ...practiceGuides, ...humanGuides];

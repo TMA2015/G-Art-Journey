@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import '../styles/guide-grid.css';
+import '../styles/human-batch.css';
 import SectionNav from '../components/SectionNav.astro';
 import {getGuides} from '../i18n/content.mjs';
 import {getVisualNotes} from '../i18n/notes.mjs';
@@ -13,8 +14,12 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
 <Base lang={lang} title={t.nav.guides} description={t.guides.intro}>
  <div class="site-shell">
   <header class="page-hero"><div class="topline eyebrow">{t.guides.tag}</div><h1 class="serif">{t.guides.title1}<br/><em>{t.guides.title2}</em></h1><p>{t.guides.intro}</p></header>
-  <SectionNav lang={lang} items={[{id:'visual-notes',label:t.guides.visualTitle},{id:'guide-collection',label:t.guides.categoryLink}]}/>
-  <section id="visual-notes" class="section" aria-labelledby="visual-notes-heading" style="padding-top:30px">
+  <SectionNav lang={lang} items={[{id:'human-guides',label:'Human Drawing'},{id:'visual-notes',label:t.guides.visualTitle},{id:'guide-collection',label:t.guides.categoryLink}]}/>
+  <section id="human-guides" class="human-preview" aria-labelledby="human-guides-heading">
+    <div class="human-preview-copy"><span class="eyebrow">FEATURED / THE LITTLE SKETCHBOOK</span><h2 id="human-guides-heading" class="serif">Draw people, your way.</h2><p>Eight illustrated posters for faces, expressions, head angles, body shapes and poses. Explore them at your own pace.</p><a class="hero-cta" href={url('human-drawing/')}>Explore the 8 visual guides ↗</a></div>
+    <div class="human-preview-image"><img src={base+'infographics/human/face-basics.webp'} alt="Draw a face — one of eight original G-Art Journey posters" loading="lazy" width="1055" height="1491"/></div>
+   </section>
+   <section id="visual-notes" class="section" aria-labelledby="visual-notes-heading" style="padding-top:30px">
    <div class="section-title-row"><div><span class="eyebrow">{t.guides.visualTag}</span><h2 id="visual-notes-heading" class="serif">{t.guides.visualTitle}</h2></div><a class="subtle-link" href={url('notes/')}>{t.guides.allNotes}</a></div>
    <div class="visual-note-teaser">{visualNotes.map(n=><a href={url('notes/'+n.slug+'/')}><img src={base+n.image} alt={n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}</div>
   </section>
@@ -24,8 +29,8 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
     {filters.map((f,i)=><button type="button" data-filter={f.id} aria-pressed={i===0?'true':'false'}>{f.label}</button>)}
    </nav>
    <div class="guide-grid guide-catalog" data-guide-catalog>
-    {guides.map(g=><a class="guide-card guide-anchor" id={guides.find(x=>x.category===g.category)?.slug===g.slug?g.category:undefined} data-category={g.category} href={url('guide/'+g.slug+'/')}>
-     <img src={base+g.image} alt={g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.guides.open}</span></div></div>
+    {guides.map(g=><a class={"guide-card guide-anchor"+(g.poster?" poster-card":"")} id={guides.find(x=>x.category===g.category)?.slug===g.slug?g.category:undefined} data-category={g.category} href={url('guide/'+g.slug+'/')}>
+     <img src={base+g.image} alt={g.posterAlt||g.title} loading="lazy" decoding="async"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.guides.open}</span></div></div>
     </a>)}
    </div>
    <p data-guide-empty hidden>{t.guides.empty}</p>

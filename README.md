@@ -40,3 +40,7 @@ English is the only active public language, at the canonical root URL. Existing 
 ## One-platform image monitoring
 
 Images stay in GitHub. Each build reports asset counts, large images and published-site size in the GitHub Actions job summary. No images are rejected or altered automatically. See [docs/ASSET_POLICY.md](docs/ASSET_POLICY.md). Run locally after `npm run build` with `npm run audit:assets`.
+
+## Human Drawing visual guides
+
+Eight original English-first illustrated guides for faces, expressions, head angles, age examples, figure proportions and poses. Start at `/human-drawing/`. Optimized WebP posters are tracked in `public/infographics/human/`; integrity checks prevent publishing missing artwork. See [docs/HUMAN_DRAWING_BATCH_01.md](docs/HUMAN_DRAWING_BATCH_01.md).
