@@ -83,9 +83,9 @@ const guideEn={
  {title:'Review the whole image',body:'Toggle layers to see their purpose; keep only as many as you need.'}
  ]}
 };
-export const getShowcase=(lang='vi')=>rawShowcase.map(s=>{
+export const getShowcase=(lang='en')=>rawShowcase.map(s=>{
  const copy=(language(lang)==='en'?showcaseEn:showcaseVi)[s.id];
  return {...s,...copy,images:s.images.map((image,i)=>({...image,...copy.images[i],src:asset(lang,image.src)}))};
 });
-export const getCollections=(lang='vi')=>rawCollections.map(c=>({...c,...(language(lang)==='en'?collectionEn:collectionVi)[c.id],image:asset(lang,c.image)}));
-export const getGuides=(lang='vi')=>rawGuides.map(g=>({...g,...(language(lang)==='en'?guideEn:guideVi)[g.slug],image:asset(lang,g.image)}));
+export const getCollections=(lang='en')=>rawCollections.map(c=>({...c,...(language(lang)==='en'?collectionEn:collectionVi)[c.id],image:asset(lang,c.image)}));
+export const getGuides=(lang='en')=>rawGuides.map(g=>({...g,...(language(lang)==='en'?guideEn:guideVi)[g.slug],image:asset(lang,g.image)}));

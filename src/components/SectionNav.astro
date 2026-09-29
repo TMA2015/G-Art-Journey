@@ -1,6 +1,6 @@
 ---
 import {ui,language} from '../i18n/ui.mjs';
-const {lang='vi',items=[],id=''}=Astro.props;const t=ui(language(lang));
+const {lang='en',items=[],id=''}=Astro.props;const t=ui(language(lang));
 ---
 {items.length>1&&<nav class="section-jump" data-section-jump aria-label={t.quick.label} id={id||undefined}>
  <span class="section-jump-label">✦ {t.quick.sections}</span>

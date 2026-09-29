@@ -24,6 +24,6 @@ export const translations={
   quick:{label:'Jump to section',go:'Go to',sections:'On this page'}
  }
 };
-export const language = value => value==='en'?'en':'vi';
+export const language = value => value==='vi'?'vi':'en';
 export const ui = value => translations[language(value)];
 export const sitePath=(value,path='')=> '/G-Art-Journey/'+(language(value)==='en'?'en/':'')+path;

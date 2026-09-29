@@ -4,7 +4,7 @@ import SectionNav from '../components/SectionNav.astro';
 import '../styles/discovery.css';
 import {getMedia,getMovements,getArtists,getMoreArtists} from '../i18n/discovery.mjs';
 import {ui,language} from '../i18n/ui.mjs';
-const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const media=getMedia(lang),movements=getMovements(lang),artists=getArtists(lang),moreArtists=getMoreArtists(lang);
 const sections=[{id:'materials',label:t.explore.materials},{id:'movements',label:t.explore.movements},{id:'artists',label:t.explore.artists}];
 ---

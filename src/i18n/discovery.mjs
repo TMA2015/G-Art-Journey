@@ -38,13 +38,13 @@ const artistVi={
  'vincent-van-gogh':{imageNote:'Wheat Field with Cypresses (1889) · Bảo tàng The Met, phạm vi công cộng.',museum:'Bảo tàng The Met · phạm vi công cộng'},
  'fan-kuan':{name:'Phạm Khoan (Fan Kuan)',workYear:'khoảng năm 1000',museum:'Bảo tàng Cố Cung, Đài Bắc'}
 };
-export const getMedia=(lang='vi')=>rawMedia.map(m=>{
+export const getMedia=(lang='en')=>rawMedia.map(m=>{
  const en=language(lang)==='en';
  return {...m,name:en?m.en:(mediaViNames[m.id]||m.name),label:en?m.en:(mediaViNames[m.id]||m.name),text:en?mediaEn[m.id]:m.text,image:asset(lang,m.image)};
 });
-export const getMovements=(lang='vi')=>rawMovements.map(m=>{
+export const getMovements=(lang='en')=>rawMovements.map(m=>{
  const en=language(lang)==='en';
  return {...m,...(en?movementEn[m.slug]:{en:m.name}),image:asset(lang,m.image)};
 });
-export const getArtists=(lang='vi')=>rawArtists.map(a=>({...a,...(language(lang)==='en'?artistEn[a.slug]:artistVi[a.slug]||{}),image:a.image.startsWith('https:')?a.image:asset(lang,a.image)}));
-export const getMoreArtists=(lang='vi')=>rawMore.map(a=>({...a,about:language(lang)==='en'?moreEn[a.name]:a.about}));
+export const getArtists=(lang='en')=>rawArtists.map(a=>({...a,...(language(lang)==='en'?artistEn[a.slug]:artistVi[a.slug]||{}),image:a.image.startsWith('https:')?a.image:asset(lang,a.image)}));
+export const getMoreArtists=(lang='en')=>rawMore.map(a=>({...a,about:language(lang)==='en'?moreEn[a.name]:a.about}));

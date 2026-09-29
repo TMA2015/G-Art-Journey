@@ -6,7 +6,7 @@ import {artists} from '../../data/discovery.mjs';
 import {getArtists} from '../../i18n/discovery.mjs';
 import {ui,language} from '../../i18n/ui.mjs';
 export function getStaticPaths(){return artists.map(artist=>({params:{slug:artist.slug},props:{artist}}));}
-const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const artist=getArtists(lang).find(a=>a.slug===Astro.props.artist.slug);
 ---
 <Base lang={lang} title={artist.name} description={artist.intro}>

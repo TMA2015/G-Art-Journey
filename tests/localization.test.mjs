@@ -37,7 +37,7 @@ test('the primary infographic image labels are localized',async()=>{
  const vi=await read('public/infographics/light-and-value-vi.svg');
  const en=await read('public/infographics/light-and-value.svg');
  assert.match(vi,/NĂM SẮC ĐỘ CƠ BẢN/);assert.doesNotMatch(vi,/FIVE SIMPLE VALUES/);
- assert.match(en,/FIVE SIMPLE VALUES/);
+ assert.match(en,/FIVE SHADES/);
 });
 test('separate English pages exist for all content types',async()=>{
  for(const page of ['index.astro','explore.astro','guides.astro','gallery.astro','artist/[slug].astro','movement/[slug].astro','guide/[slug].astro','notes/index.astro','notes/[slug].astro'])await access('src/pages/en/'+page);

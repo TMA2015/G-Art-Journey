@@ -1,19 +1,26 @@
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
-const read=async route=>readFile('dist/'+route+'index.html','utf8');
+const read=async path=>readFile('dist/'+path+'index.html','utf8');
 const paths=['','explore/','guides/','gallery/','guide/draw-a-pencil-portrait/','guide/draw-a-pencil-landscape/','guide/draw-a-manga-face/','guide/watercolor-first-flower/','guide/digital-color-layers/','notes/','notes/graphite-values/','notes/head-construction/','movement/renaissance/','movement/impressionism/','movement/post-impressionism/','movement/cubism/','movement/ink-wash/','artist/leonardo-da-vinci/','artist/claude-monet/','artist/vincent-van-gogh/','artist/fan-kuan/'];
 for(const path of paths){
- const vi=await read(path),en=await read('en/'+path);
- assert.match(vi,/<html lang="vi"/);
- assert.match(en,/<html lang="en"/);
- assert.ok(vi.includes('/G-Art-Journey/en/'+path));
- assert.ok(en.includes('/G-Art-Journey/'+path));
+ const root=await read(path),legacy=await read('en/'+path);
+ for(const html of [root,legacy]){
+  assert.match(html,/<html lang="en"/);
+  assert.doesNotMatch(html,/data-language-switch/);
+  assert.match(html,/<link rel="canonical"/);
+  assert.ok(html.includes('https://tma2015.github.io/G-Art-Journey/'+path));
+  assert.ok(html.includes('/G-Art-Journey/explore/'));
+ }
+ assert.doesNotMatch(root,/href="\/G-Art-Journey\/en\//);
 }
-const viHome=await read(''),enHome=await read('en/');
-assert.match(viHome,/Không cần vẽ thật giỏi/);assert.match(enHome,/No need to be perfect/);
-assert.doesNotMatch(enHome,/Không cần vẽ thật giỏi/);
-const viNote=await read('notes/head-construction/'),enNote=await read('en/notes/head-construction/');
-assert.match(viNote,/head-construction-vi\.svg/);
-assert.match(enNote,/infographics\/head-construction\.svg/);
-for(const file of ['dist/showcase/vi/pencil-portrait.svg','dist/infographics/head-construction-vi.svg','dist/infographics/light-and-value-vi.svg'])await access(file);
-console.log('Localized build PASS: '+paths.length+' page pairs + both infographic assets and home copy.');
+const home=await read('');
+assert.match(home,/No need to be perfect/);
+assert.doesNotMatch(home,/Không cần vẽ thật giỏi/);
+const guide=await read('guides/');
+assert.match(guide,/Pick up a pencil/);
+assert.doesNotMatch(guide,/Không có giáo trình/);
+const note=await read('notes/graphite-values/');
+assert.match(note,/light-and-value\.svg/);
+assert.doesNotMatch(note,/light-and-value-vi\.svg/);
+for(const file of ['dist/showcase/pencil-portrait.svg','dist/infographics/head-construction.svg','dist/infographics/light-and-value.svg'])await access(file);
+console.log('English-first build PASS: '+paths.length+' canonical routes and /en legacy aliases; no visible language switch.');

@@ -32,3 +32,7 @@ https://tma2015.github.io/G-Art-Journey/
 A pull request builds/tests but never deploys. Merge only when ready. Update the repo's image folders any time afterwards; a successful push to `main` refreshes the gallery.
 
 Brand mark is reused from the owner's G Learning identity, while G-Art Journey has its own art-oriented title and character.
+
+## Language direction (v0.5)
+
+English is the only active public language, at the canonical root URL. Existing `/en/` addresses remain as English aliases for older links. The VN/EN switch is deliberately hidden, and the previous Vietnamese content dictionary and translated image assets are retained in source for a future, independently reviewed `/vi/` release. There is no auto-translation of family artworks. See [docs/ENGLISH_FIRST.md](docs/ENGLISH_FIRST.md).
