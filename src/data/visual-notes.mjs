@@ -6,7 +6,7 @@ export const visualNotes=[
 {title:"Mở thành năm sắc độ",body:"Thêm hai mức trung gian để các mảng nối với nhau, nhưng giữ phân biệt sáng–tối rõ ràng."},
 {title:"Thử bằng mắt nheo",body:"Nheo mắt hoặc nhìn từ xa; nếu quả cầu vẫn có khối ngay cả khi mất chi tiết, phân bố sắc độ đang có tác dụng."}
 ],note:"Bài này dùng một quả cầu đơn giản. Trong chân dung và phong cảnh, nguyên lý vẫn hữu ích nhưng vật liệu và ánh sáng thực tế đa dạng hơn."},
-{slug:"head-construction",number:"02",title:"Dựng hình khuôn mặt bằng chì",subtitle:"Portrait Construction",tag:"FIGURE DRAWING",image:"infographics/head-construction.svg",description:"Bắt đầu từ khối đầu, trục mặt và các đường mốc. Chưa cần cố vẽ mắt, mũi, môi thật đẹp ngay.",time:"15–20 phút",steps:[
+{slug:"head-construction",number:"02",retired:true,replacementGuide:"face-basics",replacementTitle:"Draw a Face in Five Steps",title:"Dựng hình khuôn mặt bằng chì",subtitle:"Portrait Construction",tag:"FIGURE DRAWING",image:"infographics/human/face-basics.webp",description:"Bắt đầu từ khối đầu, trục mặt và các đường mốc. Chưa cần cố vẽ mắt, mũi, môi thật đẹp ngay.",time:"15–20 phút",steps:[
 {title:"Phác khối sọ",body:"Vẽ hình bầu dục hoặc hình cầu nhẹ tay, kiểm tra chiều cao và chiều rộng tổng thể."},
 {title:"Thêm đường trục",body:"Đường giữa mặt giúp xác định hướng đầu. Khi quay ba phần tư, đường này uốn theo bề mặt khối."},
 {title:"Ước lượng vị trí mắt",body:"Dùng đường tham chiếu ngang để đặt hai mắt. Quan sát mẫu thay vì áp một công thức vào mọi gương mặt."},
@@ -14,8 +14,8 @@ export const visualNotes=[
 {title:"Giảm nét dựng, tạo khối",body:"Nhẹ nhàng tẩy bớt nét hướng dẫn, rồi dùng ba sắc độ để nhận ra trán, má và cằm."}
 ],note:"Đây là hướng dẫn quan sát và dựng hình ban đầu, không phải bộ tỉ lệ cố định cho mọi độ tuổi, góc nhìn hay phong cách manga/manhwa."},
 {
- slug:"figure-simple-shapes",number:"03",title:"Draw a standing figure from simple shapes",subtitle:"Movement, Shapes & Balance",tag:"FIGURE DRAWING",
- image:"infographics/figure-simple-shapes.svg",
+ slug:"figure-simple-shapes",number:"03",retired:true,replacementGuide:"standing-figure",replacementTitle:"Draw a Standing Figure Step by Step",title:"Draw a standing figure from simple shapes",subtitle:"Movement, Shapes & Balance",tag:"FIGURE DRAWING",
+ image:"infographics/human/standing-figure.webp",
  description:"See how a movement line, simple body forms and a standing foot work together.",
  time:"15–20 min",
  steps:[
@@ -28,8 +28,8 @@ export const visualNotes=[
  note:"This is a drawing aid, not a rule for all bodies. Real proportions vary with age, pose and viewpoint."
 },
 {
- slug:"landscape-depth",number:"04",title:"Give a pencil landscape a sense of depth",subtitle:"Eye Level, Distance & Focus",tag:"PENCIL LANDSCAPE",
- image:"infographics/landscape-depth.svg",
+ slug:"landscape-depth",number:"04",retired:true,artPending:true,replacementGuide:"street-with-depth",replacementTitle:"Draw a Street That Feels Deep",title:"Give a pencil landscape a sense of depth",subtitle:"Eye Level, Distance & Focus",tag:"PENCIL LANDSCAPE",
+ image:"showcase/pencil-landscape.svg",
  description:"Place an eye-level line, soften distant shapes and choose one area for your darkest pencil marks.",
  time:"15–20 min",
  steps:[
