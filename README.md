@@ -52,3 +52,7 @@ Eight original English-first illustrated guides for faces, expressions, head ang
 ## Introductory guide reconciliation
 
 The previous face, figure and perspective vector-only notes have been withdrawn from featured cards. Approved human-drawing posters replace the first two; old links remain friendly update pages. Landscape perspective text stays accessible while its new illustration is prepared. See [docs/LEGACY_GUIDE_RECONCILIATION.md](docs/LEGACY_GUIDE_RECONCILIATION.md).
+
+## Character Styles collection
+
+Twelve original illustrated posters now live in four groups at [Character Styles](https://tma2015.github.io/G-Art-Journey/character-styles/). Artwork is stored as optimized WebP in GitHub with exact SHA-256 validation; see [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).

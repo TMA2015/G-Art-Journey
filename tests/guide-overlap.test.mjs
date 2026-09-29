@@ -4,12 +4,13 @@ import {readFile} from 'node:fs/promises';
 import {auditSkillIntents} from '../scripts/check-guide-overlap.mjs';
 import {guides} from '../src/data/content.mjs';
 const published=guides.filter(g=>!g.retired&&!g.artPending);
+const planned=characterGuides.filter(g=>!published.some(p=>p.slug===g.slug));
 import {characterGuides} from '../src/data/character-guides.mjs';
 const load=()=>readFile('assets/guides/skill-intents.json','utf8').then(JSON.parse);
 test('all approved and planned guides have separate primary skills',async()=>{
  const result=auditSkillIntents(await load());
  assert.equal(result.ok,true,result.problems.join('\n'));
- assert.equal(result.reviewed,published.length+characterGuides.length);
+ assert.equal(result.reviewed,published.length+planned.length);
  assert.equal(result.pairs.length,0);
 });
 test('new duplicate skill is rejected without changing approved pair',async()=>{
@@ -24,6 +25,6 @@ test('copying a five-stage sequence is blocked',async()=>{
  assert.match(auditSkillIntents(bad).problems.join('\n'),/Potential duplicate instructional sequence/);
 });
 test('an unreviewed new guide requires an entry before publication',async()=>{
- const source=await load(),more=[...characterGuides,{slug:'new-unreviewed'}];
+ const source=await load(),more=[...planned,{slug:'new-unreviewed'}];
  assert.match(auditSkillIntents(source,{published,planned:more}).problems.join('\n'),/lacks skill-intent review/);
 });

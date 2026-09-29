@@ -1,22 +1,22 @@
-# Character Batch 02 — one-command import
+# Character Styles — 12 original illustrated posters
 
-The website and finished images remain on GitHub. The art creation files can stay temporary, outside the repository.
+G-Art Journey now displays the approved original posters in four groups: manga, webtoon, manhua and cartoon. Each group has an introductory character guide, an illustrated variation sheet and a focused technique. Layouts flex with the skill; shared pastel colors and accessible captions keep the family identity.
 
-## Artistic direction
-Original G-Art pastel-pencil infographic format: warm paper, soft color, five meaningful drawing stages of a consistent invented subject; English-first. These are five creative approaches, not rigid national/ethnic facial rules. No watermarks or borrowed quotes. Art starts in `assets/batches/character-02.json`; complete guide copy is staged in `src/data/character-guides.mjs` but intentionally not public until assets are ready.
+The images are optimized original WebP web versions stored in `public/infographics/character/`. No external image host, account or grading. The source PNGs are not committed. All twelve SHA-256 checksums and dimensions are recorded in `src/data/character-assets.mjs`; `npm run art:check` and CI verify the real files.
 
-## Portable importer for an authorized Work/desktop environment
+## Navigation
+- `/character-styles/` offers four groups, three complete poster cards each, lazy loaded.
+- Every poster has its own `/guide/<slug>/` page with plain-English steps, viewing and saving controls.
+- Drawing Guides provides a prominent collection entry and keeps the character category filter.
+- The earlier generic manga starter guide redirects readers via an update notice to the new dedicated poster rather than remaining a duplicate catalog card.
 
-1. Checkout branch `feat/character-batch02-pipeline` in a clean repo.
-2. Place the five source posters as `manga-face.png`, `manga-figure.png`, `webtoon-character.png`, `manhua-ink-character.png`, `cartoon-shapes.png` in a temporary directory **outside** the repository.
-3. Run `npm install --no-audit --no-fund`.
-4. Run `npm run art:prepare -- --input /path/to/temporary/source --activate`. This creates optimized WebP files, strips metadata, checks sizes and content signatures, creates SHA-256 manifest and activates the five guides only after all posters exist. A `*.webp` source with the same slug is also accepted.
-5. Run `npm test && npm run build && node scripts/verify-build.mjs && npm run audit:assets`.
-6. If the Work environment has authorized git access, stage **only** `public/infographics/character/*.webp`, `src/data/content.mjs`, `src/data/character-assets.mjs`; commit and push the feature branch. Otherwise, `node scripts/push-art-batch.mjs --branch feat/character-batch02-pipeline --push` can upload those exact files atomically with an existing authorized `GH_TOKEN` or `GITHUB_TOKEN`. Do not paste a token into chat or add one to the repo.
-7. Wait for PR checks, merge only after PASS, then verify the main-branch Pages deployment.
+## Art direction and distinctions
+- Manga Face: eye and hair design; Manga Variations: multiple face designs; Manga Character: styled proportions and full-body design.
+- Webtoon Character: contemporary character; Face Variations: subtle mood and features; Color and Story: five vertical story panels and soft rendering.
+- Manhua Character: outfit and figure; Variations: face/ornament designs; Ink Rhythm: flowing hair and fabric.
+- Cartoon Character: construction; Variations: shape language and individual facial features; Expressions and Action: gesture and animation-minded pose design.
 
-`node scripts/push-art-batch.mjs --branch feat/character-batch02-pipeline` performs a dry run without any remote write. The GitHub API upload uses Base64 blobs and one Git commit; it does **not** need a second image host.
+These are creative examples, not rules for all artists or people from a country. Character faces and clothes are deliberately distinct between collections.
 
-## Safety boundary
-
-Do not push original PNGs, RAW files, temporary exports, or a downloaded ZIP into the Git history. No new subscription, account, server or background task is required. A missing asset is a hard failure. Large images produce advisory size warnings but are not blindly blurred. If source assets are not available in the active Work session, obtain the approved files first; do not substitute unrelated images.
+## Release verification
+`npm test && npm run art:check && npm run audit:guides && npm run build && node scripts/verify-build.mjs && npm run audit:assets`. Preserve the deployed site until these pass and check a real Pages deployment afterwards.

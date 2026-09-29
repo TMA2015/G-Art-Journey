@@ -7,7 +7,7 @@ import {characterGuides} from '../src/data/character-guides.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const sourcePath=path.join(root,'assets/guides/skill-intents.json');
 
-export function auditSkillIntents(ledger,{published=guides.filter(g=>!g.retired&&!g.artPending),planned=characterGuides}={}){
+export function auditSkillIntents(ledger,{published=guides.filter(g=>!g.retired&&!g.artPending),planned=characterGuides.filter(g=>!guides.some(p=>p.slug===g.slug))}={}){
  const problems=[];
  const all=[...published.map(g=>({slug:g.slug,status:'published'})),...planned.map(g=>({slug:g.slug,status:'staged'}))];
  const seen=new Set(), skills=new Map();
