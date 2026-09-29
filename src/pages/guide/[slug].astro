@@ -1,19 +1,21 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { guides } from '../../data/content.mjs';
-export function getStaticPaths() {
-  return guides.map(guide => ({ params: { slug: guide.slug }, props: { guide } }));
-}
-const { guide } = Astro.props;
-const base = import.meta.env.BASE_URL;
+import SectionNav from '../../components/SectionNav.astro';
+import {guides} from '../../data/content.mjs';
+import {getGuides} from '../../i18n/content.mjs';
+import {ui,language} from '../../i18n/ui.mjs';
+export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
+const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const guide=getGuides(lang).find(g=>g.slug===Astro.props.guide.slug);
 ---
-<Base title={guide.title} description={guide.description}>
-  <article class="site-shell guide-article">
-    <header class="page-hero"><a class="eyebrow" href={base + 'guides/'}>← DRAWING GUIDES / {guide.tag}</a><h1 class="serif">{guide.title}</h1><p class="lead">{guide.description}</p></header>
-    <img class="guide-cover" src={base + guide.image} alt={'Minh họa cho '+guide.title}/>
-    <div class="lesson-grid">
-      <aside class="lesson-sidebar"><span class="eyebrow">A LITTLE NOTE</span><p>Thời gian gợi ý: {guide.time}</p><p>Chuẩn bị: {guide.supplies}</p><p>Những bước này chỉ là gợi ý để bắt đầu — cứ điều chỉnh theo nét vẽ của bạn.</p><a class="subtle-link" href={base + 'guides/'}>← All guides</a></aside>
-      <div><span class="eyebrow">STEP BY STEP</span><ol class="lesson-steps">{guide.steps.map(step=><li><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol><div class="note-banner">Hình trên là minh họa cho chủ đề, không phải infographic riêng cho từng bước. Chúng ta sẽ bổ sung các hình từng giai đoạn bằng cùng một mẫu vẽ.</div></div>
-    </div>
-  </article>
+<Base lang={lang} title={guide.title} description={guide.description}>
+ <article class="site-shell guide-article">
+  <header class="page-hero"><a class="eyebrow" href={url('guides/')}>{t.guides.back} / {guide.tag}</a><h1 class="serif">{guide.title}</h1><p class="lead">{guide.description}</p></header>
+  <SectionNav lang={lang} items={[{id:'guide-picture',label:t.common.illustration},{id:'guide-steps',label:t.guides.steps},{id:'guide-note',label:t.guides.guideNote}]}/>
+  <img id="guide-picture" class="guide-cover" src={base+guide.image} alt={guide.title}/>
+  <div class="lesson-grid">
+   <aside class="lesson-sidebar"><span class="eyebrow">{t.guides.guideNote}</span><p>{t.guides.suggestedTime}: {guide.time}</p><p>{t.guides.supplies}: {guide.supplies}</p><p>{t.guides.free}</p><a class="subtle-link" href={url('guides/')}>{t.guides.back}</a></aside>
+   <div id="guide-steps"><span class="eyebrow">{t.guides.steps}</span><ol class="lesson-steps">{guide.steps.map(step=><li><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol><div id="guide-note" class="note-banner">{t.guides.placeholder}</div></div>
+  </div>
+ </article>
 </Base>

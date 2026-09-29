@@ -1,0 +1,7 @@
+---
+import Artist from '../../artist/[slug].astro';
+import {artists} from '../../../data/discovery.mjs';
+export function getStaticPaths(){return artists.map(artist=>({params:{slug:artist.slug},props:{artist}}));}
+const {artist}=Astro.props;
+---
+<Artist lang="en" artist={artist}/>

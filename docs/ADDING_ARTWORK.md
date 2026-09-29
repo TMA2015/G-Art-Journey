@@ -10,3 +10,7 @@ This is a personal gallery for a father and daughter. No account, comments, scor
 Example metadata key: `daughter/sunlit-lake.jpg`. Available fields are `title`, `medium`, `date` (YYYY-MM-DD), `note`, and `featured`. Empty details are allowed. The example metadata entry does not create a gallery item: only real image files are included.
 
 The curated showcase in `public/showcase/` is separate from family art. Its illustrations are original site placeholders, not attributed to family members. Replace them with artwork you are allowed to display.
+
+## Optional bilingual captions
+
+Personal artwork is never machine-translated. To provide separate labels for the two website languages, add any of `title_vi`, `title_en`, `medium_vi`, `medium_en`, `note_vi`, and `note_en` to its `artworks.json` entry. When a locale-specific field is absent, the original caption is shown unchanged. The image itself is never edited.

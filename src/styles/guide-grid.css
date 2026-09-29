@@ -1,0 +1,13 @@
+/* Full-width guide grid: cards flow together rather than one lonely column per category. */
+.guide-catalog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px;align-items:stretch}
+.guide-catalog .guide-card{min-width:0;display:flex;flex-direction:column}
+.guide-catalog .guide-body{display:flex;flex:1;flex-direction:column}
+.guide-catalog .guide-bottom{margin-top:auto}
+.guide-catalog .guide-card[hidden]{display:none!important}
+.guide-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px}
+.guide-filters button{border:1px solid #d6c1ce;background:#fffcf9;color:#685263;border-radius:99px;font-size:12px;font-weight:750;padding:10px 16px}
+.guide-filters button[aria-pressed="true"]{color:white;background:#76516d;border-color:#76516d}
+.guide-filters button:hover:not([aria-pressed="true"]){background:#f4e8f0}
+#visual-notes,#guide-collection,#collections,#drawing-guides,#family-gallery{scroll-margin-top:165px}
+@media(max-width:1100px){.guide-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.guide-catalog{grid-template-columns:1fr}.guide-filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:7px}.guide-filters button{flex-shrink:0}}

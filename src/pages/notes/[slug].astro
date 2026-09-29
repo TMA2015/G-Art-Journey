@@ -1,17 +1,22 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { visualNotes } from '../../data/visual-notes.mjs';
+import SectionNav from '../../components/SectionNav.astro';
+import {visualNotes} from '../../data/visual-notes.mjs';
+import {getVisualNotes} from '../../i18n/notes.mjs';
+import {ui,language} from '../../i18n/ui.mjs';
 import '../../styles/visual-notes.css';
 export function getStaticPaths(){return visualNotes.map(note=>({params:{slug:note.slug},props:{note}}));}
-const {note}=Astro.props;const base=import.meta.env.BASE_URL;
+const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const note=getVisualNotes(lang).find(n=>n.slug===Astro.props.note.slug);
 ---
-<Base title={note.title} description={note.description}>
-<article class="site-shell visual-note-page">
-<a href={base+'guides/'} class="eyebrow note-back">← DRAWING GUIDES</a>
-<header class="note-heading"><span class="eyebrow">VISUAL NOTE {note.number} / {note.tag}</span><h1 class="serif">{note.title}</h1><p>{note.description}</p></header>
-<figure class="visual-note-poster"><img src={base+note.image} alt={'Infographic '+note.subtitle} /><figcaption>Minh họa giáo dục nguyên bản của G-Art Journey.</figcaption></figure>
-<div class="note-actions"><a href={base+note.image} target="_blank" rel="noopener">Mở hình lớn ↗</a><a href={base+note.image} download>Tải infographic SVG ↓</a><span>Thử vẽ: {note.time}</span></div>
-<div class="note-body"><div><span class="eyebrow">JUST FIVE LITTLE STEPS</span><h2 class="serif">Thử làm theo từng bước</h2><p>Không cần vẽ giống hệt. Hãy chọn một ý bạn muốn thử trên giấy hoặc ứng dụng vẽ.</p></div><ol>{note.steps.map((s,i)=><li><span>{String(i+1).padStart(2,'0')}</span><div><h3>{s.title}</h3><p>{s.body}</p></div></li>)}</ol></div>
-<div class="note-footer"><strong>Một lưu ý nhỏ</strong><p>{note.note}</p><a href={base+'guides/'}>Khám phá thêm hướng dẫn ↗</a></div>
-</article>
+<Base lang={lang} title={note.title} description={note.description}>
+ <article class="site-shell visual-note-page">
+  <a href={url('guides/')} class="eyebrow note-back">{t.guides.back}</a>
+  <header class="note-heading"><span class="eyebrow">{t.notes.titleSingle} {note.number} / {note.tag}</span><h1 class="serif">{note.title}</h1><p>{note.description}</p></header>
+  <SectionNav lang={lang} items={[{id:'note-poster',label:t.notes.large},{id:'note-steps',label:t.notes.stepsTitle},{id:'note-tip',label:t.notes.smallNote}]}/>
+  <figure id="note-poster" class="visual-note-poster"><img src={base+note.image} alt={note.title}/><figcaption>{t.notes.caption}</figcaption></figure>
+  <div class="note-actions"><a href={base+note.image} target="_blank" rel="noopener">{t.notes.large}</a><a href={base+note.image} download>{t.notes.download}</a><span>{t.notes.practice}: {note.time}</span></div>
+  <div id="note-steps" class="note-body"><div><span class="eyebrow">{t.notes.five}</span><h2 class="serif">{t.notes.stepsTitle}</h2><p>{t.notes.stepsIntro}</p></div><ol>{note.steps.map((s,i)=><li><span>{String(i+1).padStart(2,'0')}</span><div><h3>{s.title}</h3><p>{s.body}</p></div></li>)}</ol></div>
+  <div id="note-tip" class="note-footer"><strong>{t.notes.smallNote}</strong><p>{note.note}</p><a href={url('guides/')}>{t.notes.more}</a></div>
+ </article>
 </Base>

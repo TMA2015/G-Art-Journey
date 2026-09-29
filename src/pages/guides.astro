@@ -1,18 +1,43 @@
 ---
 import Base from '../layouts/Base.astro';
-import { guides } from '../data/content.mjs';
-import { visualNotes } from '../data/visual-notes.mjs';
-const base = import.meta.env.BASE_URL;
-const sections = [{id:'pencil',title:'Pencil Art — Vẽ chì'},{id:'landscape',title:'Landscape — Phong cảnh'},{id:'character',title:'Character Art — Nhân vật'},{id:'watercolor',title:'Watercolor — Màu nước'},{id:'digital',title:'Digital Art — Vẽ trên ứng dụng'}];
+import '../styles/guide-grid.css';
+import SectionNav from '../components/SectionNav.astro';
+import {getGuides} from '../i18n/content.mjs';
+import {getVisualNotes} from '../i18n/notes.mjs';
+import {ui,language} from '../i18n/ui.mjs';
+const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const guides=getGuides(lang),visualNotes=getVisualNotes(lang);
+const categories=['pencil','landscape','character','watercolor','digital'];
+const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.guides.categories[id]}))];
 ---
-<Base title="Drawing Guides" description="Những gợi ý vẽ nhẹ nhàng theo chủ đề và chất liệu.">
-  <div class="site-shell">
-    <header class="page-hero"><div class="topline eyebrow">02 / DRAWING GUIDES</div><h1 class="serif">Pick up a pencil.<br/><em>See what happens.</em></h1><p>Không có giáo trình bắt buộc. Chọn thứ bạn thích, xem vài bước cơ bản, rồi thử theo cách của riêng mình.</p></header>
-    <section class="section" aria-labelledby="visual-notes-heading" style="padding-top:40px">
-      <div class="section-title-row"><div><span class="eyebrow">VISUAL NOTES</span><h2 id="visual-notes-heading" class="serif">Xem một hình, thử một nét</h2></div><a class="subtle-link" href={base+'notes/'}>Tất cả infographic ↗</a></div>
-      <div class="visual-note-teaser">{visualNotes.map(n=><a href={base+'notes/'+n.slug+'/'}><img src={base+n.image} alt={'Minh họa '+n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}</div>
-    </section>
-    {sections.map(s=><section id={s.id} class="section" style="padding-top:48px"><div class="section-title-row"><div><span class="eyebrow">START ANYWHERE</span><h2 class="serif">{s.title}</h2></div></div><div class="guide-list">{guides.filter(g=>g.category===s.id).map(g=><a class="guide-card" href={base + 'guide/' + g.slug + '/'}><img src={base + g.image} alt={'Minh họa '+g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>Open guide ↗</span></div></div></a>)}</div></section>)}
-    <div class="note-banner">Hai infographic đầu tiên là sơ đồ thị giác nguyên bản, có thể mở lớn và lưu lại. Các bài hướng dẫn khác hiện còn dùng hình minh họa chủ đề; chúng ta sẽ tiếp tục bổ sung hình từng bước bằng cùng một mẫu vẽ.</div>
-  </div>
+<Base lang={lang} title={t.nav.guides} description={t.guides.intro}>
+ <div class="site-shell">
+  <header class="page-hero"><div class="topline eyebrow">{t.guides.tag}</div><h1 class="serif">{t.guides.title1}<br/><em>{t.guides.title2}</em></h1><p>{t.guides.intro}</p></header>
+  <SectionNav lang={lang} items={[{id:'visual-notes',label:t.guides.visualTitle},{id:'guide-collection',label:t.guides.categoryLink}]}/>
+  <section id="visual-notes" class="section" aria-labelledby="visual-notes-heading" style="padding-top:30px">
+   <div class="section-title-row"><div><span class="eyebrow">{t.guides.visualTag}</span><h2 id="visual-notes-heading" class="serif">{t.guides.visualTitle}</h2></div><a class="subtle-link" href={url('notes/')}>{t.guides.allNotes}</a></div>
+   <div class="visual-note-teaser">{visualNotes.map(n=><a href={url('notes/'+n.slug+'/')}><img src={base+n.image} alt={n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}</div>
+  </section>
+  <section id="guide-collection" class="section" aria-labelledby="guides-heading" style="padding-top:40px">
+   <div class="section-title-row"><div><span class="eyebrow">{t.guides.start}</span><h2 id="guides-heading" class="serif">{t.nav.guides}</h2></div></div>
+   <nav class="guide-filters" data-guide-filters aria-label={t.guides.categoryLink}>
+    {filters.map((f,i)=><button type="button" data-filter={f.id} aria-pressed={i===0?'true':'false'}>{f.label}</button>)}
+   </nav>
+   <div class="guide-grid guide-catalog" data-guide-catalog>
+    {guides.map(g=><a class="guide-card guide-anchor" id={guides.find(x=>x.category===g.category)?.slug===g.slug?g.category:undefined} data-category={g.category} href={url('guide/'+g.slug+'/')}>
+     <img src={base+g.image} alt={g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.guides.open}</span></div></div>
+    </a>)}
+   </div>
+   <p data-guide-empty hidden>{t.guides.empty}</p>
+  </section>
+  <div class="note-banner">{t.guides.note}</div>
+ </div>
+ <script>
+  const buttons=[...document.querySelectorAll('[data-guide-filters] button')];
+  const cards=[...document.querySelectorAll('[data-guide-catalog] [data-category]')];
+  const empty=document.querySelector('[data-guide-empty]');
+  const apply=value=>{let shown=0;for(const button of buttons)button.setAttribute('aria-pressed',String(button.dataset.filter===value));for(const card of cards){card.hidden=value!=='all'&&card.dataset.category!==value;if(!card.hidden)shown++;}if(empty)empty.hidden=shown!==0;};
+  for(const button of buttons)button.addEventListener('click',()=>{apply(button.dataset.filter);});
+  const target=location.hash.slice(1);if(buttons.some(b=>b.dataset.filter===target))apply(target);
+ </script>
 </Base>

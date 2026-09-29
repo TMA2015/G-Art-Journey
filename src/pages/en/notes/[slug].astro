@@ -1,0 +1,7 @@
+---
+import Note from '../../notes/[slug].astro';
+import {visualNotes} from '../../../data/visual-notes.mjs';
+export function getStaticPaths(){return visualNotes.map(note=>({params:{slug:note.slug},props:{note}}));}
+const {note}=Astro.props;
+---
+<Note lang="en" note={note}/>
