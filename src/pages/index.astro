@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { showcase, collections, guides } from '../data/content.mjs';
+import { visualNotes } from '../data/visual-notes.mjs';
 const base = import.meta.env.BASE_URL;
 const first = showcase[0];
 ---
@@ -47,7 +48,13 @@ const first = showcase[0];
       <div class="section-title-row"><div><span class="eyebrow">02 / TRY SOMETHING</span><h2 class="serif" id="guides-heading">A few drawing guides</h2></div><a class="subtle-link" href={base + 'guides/'}>All guides ↗</a></div>
       <div class="guide-grid">{guides.slice(0,3).map(g=><a class="guide-card" href={base + 'guide/' + g.slug + '/'}><img src={base + g.image} alt={'Minh họa cho '+g.title} loading="lazy" /><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>Explore ↗</span></div></div></a>)}</div>
     </section>
+    <section class="section" aria-labelledby="notes-heading">
+      <div class="section-title-row"><div><span class="eyebrow">03 / LITTLE SKETCHBOOK</span><h2 class="serif" id="notes-heading">A little note, a little drawing</h2></div><a class="subtle-link" href={base+'notes/'}>All visual notes ↗</a></div>
+      <div class="visual-note-teaser">
+        {visualNotes.map(n=><a href={base+'notes/'+n.slug+'/'}><img src={base+n.image} alt={'Minh họa '+n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}
+      </div>
+    </section>
   </div>
-  <section class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">03 / OUR LITTLE GALLERY</span><h2 class="serif">A place for the<br/><em>things we make.</em></h2><p>Một nơi cất những nét chì đầu tiên, những nhân vật tự nghĩ ra, hay bức phong cảnh vẽ trong một buổi chiều. Không phải để đánh giá. Chỉ đơn giản là thích.</p><a class="hero-cta" href={base + 'gallery/'}>Visit our gallery <span aria-hidden="true">↗</span></a></div><div class="gallery-art"><img src={base + 'showcase/character-2.svg'} alt="Minh họa nhân vật" loading="lazy"/><img src={base + 'showcase/pencil-portrait-2.svg'} alt="Minh họa chân dung chì" loading="lazy"/></div></div></section>
+  <section class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">04 / OUR LITTLE GALLERY</span><h2 class="serif">A place for the<br/><em>things we make.</em></h2><p>Một nơi cất những nét chì đầu tiên, những nhân vật tự nghĩ ra, hay bức phong cảnh vẽ trong một buổi chiều. Không phải để đánh giá. Chỉ đơn giản là thích.</p><a class="hero-cta" href={base + 'gallery/'}>Visit our gallery <span aria-hidden="true">↗</span></a></div><div class="gallery-art"><img src={base + 'showcase/character-2.svg'} alt="Minh họa nhân vật" loading="lazy"/><img src={base + 'showcase/pencil-portrait-2.svg'} alt="Minh họa chân dung chì" loading="lazy"/></div></div></section>
   <script>import '../scripts/home.js';</script>
 </Base>
