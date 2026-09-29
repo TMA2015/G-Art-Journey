@@ -1,5 +1,6 @@
 import { practiceGuides } from './practical-guides.mjs';
 import { humanGuides } from './human-guides.mjs';
+import { characterGuides } from './character-guides.mjs';
 export const showcase = [
   { id: 'portrait', label: 'PENCIL PORTRAIT', title: 'The beauty of graphite', description: 'Một nét chì, một chút ánh sáng, và một câu chuyện hiện ra trên giấy.', category: 'Pencil Art', images: [
     { src: 'showcase/pencil-portrait.svg', alt: 'Minh họa chân dung bằng nét chì', title: 'A quiet portrait' },
@@ -44,7 +45,7 @@ const starterGuides = [
     {title:'Tạo phản chiếu', body:'Dùng các nét ngang ngắn theo mặt nước, không vẽ bản sao đối xứng cứng nhắc.'},
     {title:'Đặt điểm nhấn', body:'Giữ một vùng sáng trên hồ và tăng tương phản tại khu vực muốn người xem chú ý.'}
   ]},
-  { slug:'draw-a-manga-face', category:'character', tag:'CHARACTER ART', difficulty:'Bắt đầu', time:'20–30 phút', title:'Vẽ một khuôn mặt manga', description:'Một cách dựng đầu linh hoạt để bắt đầu thiết kế nhân vật của riêng mình.', image:'showcase/character.svg', supplies:'Giấy và bút chì, hoặc ứng dụng vẽ bất kỳ', steps:[
+  { slug:'draw-a-manga-face', retired:true,replacementGuide:'manga-face',category:'character', tag:'CHARACTER ART', difficulty:'Bắt đầu', time:'20–30 phút', title:'Vẽ một khuôn mặt manga', description:'Một cách dựng đầu linh hoạt để bắt đầu thiết kế nhân vật của riêng mình.', image:'showcase/character.svg', supplies:'Giấy và bút chì, hoặc ứng dụng vẽ bất kỳ', steps:[
     {title:'Khối đầu và trục mặt', body:'Bắt đầu bằng hình cầu, xác định cằm và hướng quay của khuôn mặt.'},
     {title:'Đường mắt và tỉ lệ', body:'Đặt mắt, mũi, miệng theo tạo hình bạn chọn. Không có một tỉ lệ duy nhất cho mọi manga.'},
     {title:'Nhóm tóc thành mảng', body:'Xác định đường chân tóc, hướng tóc và các cụm lớn trước khi thêm sợi nhỏ.'},
@@ -67,4 +68,4 @@ const starterGuides = [
   ]}
 ];
 
-export const guides = [...starterGuides, ...practiceGuides, ...humanGuides];
+export const guides = [...starterGuides, ...practiceGuides, ...humanGuides, ...characterGuides];
