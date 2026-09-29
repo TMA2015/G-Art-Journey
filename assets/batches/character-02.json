@@ -1,0 +1,64 @@
+{
+  "batchId": "character-02",
+  "title": "Character Styles — Visual Guides",
+  "version": 1,
+  "sourceFormat": "png/jpg/webp",
+  "outputDir": "public/infographics/character",
+  "maxLongEdge": 1600,
+  "minShortEdge": 600,
+  "preferredMaxBytes": 1048576,
+  "requireEnglish": true,
+  "style": "Approved G-Art soft-pastel pencil sketch layout, five meaningful visual stages, clear original characters, no borrowed slogans or watermarks.",
+  "items": [
+    {
+      "slug": "manga-face",
+      "filename": "manga-face.webp",
+      "sourceName": "manga-face.png",
+      "title": "Draw a Manga-Inspired Face",
+      "palette": "soft blush pink, warm ivory, charcoal graphite",
+      "artDirection": "Five stages: head, centerline, eyes and expression, big hair shapes, final lines. Variations show three distinct expressions using the same invented character.",
+      "qualityChecks": "Show the same clearly invented adult/teen character across steps, both eyes aligned to the head turn.",
+      "position": 1
+    },
+    {
+      "slug": "manga-figure",
+      "filename": "manga-figure.webp",
+      "sourceName": "manga-figure.png",
+      "title": "Build a Manga-Inspired Character",
+      "palette": "cream, pale mint, warm graphite",
+      "artDirection": "Five stages: movement line, torso and hip blocks, joints and hands/feet, simplified clothes and hair, final full-body standing character. Visible head-length measuring guide.",
+      "qualityChecks": "Include whole body and feet without clipping. Keep hand count and joint connections correct.",
+      "position": 2
+    },
+    {
+      "slug": "webtoon-character",
+      "filename": "webtoon-character.webp",
+      "sourceName": "webtoon-character.png",
+      "title": "Try a Webtoon-Inspired Character",
+      "palette": "warm peach, dusty rose, muted sage",
+      "artDirection": "Five stages for the same invented character: head and body, gentle features, flowing hair and outfit, flat color groups, shadow and light. Bonus five small expressions.",
+      "qualityChecks": "Use one interpretation as a creative example, not a uniform claim about Korean artists.",
+      "position": 3
+    },
+    {
+      "slug": "manhua-ink-character",
+      "filename": "manhua-ink-character.webp",
+      "sourceName": "manhua-ink-character.png",
+      "title": "Explore Flowing Ink-Inspired Lines",
+      "palette": "ivory, ink gray, restrained pale jade",
+      "artDirection": "Five stages: gesture, head and body shapes, costume silhouette, light/dark ink masses, selective flowing linework. Five optional brush marks or fabric details.",
+      "qualityChecks": "Use a fresh fictional character and original costume design; not an attribution or imitation of a living artist's signature character.",
+      "position": 4
+    },
+    {
+      "slug": "cartoon-shapes",
+      "filename": "cartoon-shapes.webp",
+      "sourceName": "cartoon-shapes.png",
+      "title": "Make a Cartoon Character from Shapes",
+      "palette": "soft apricot, muted sky blue, sage and peach",
+      "artDirection": "Five stages: choose shape language, gesture, body forms, bold outline, expression and color. Five playful but anatomically credible silhouettes.",
+      "qualityChecks": "Western comics and cartoons are varied; make an original friendly character rather than treating one design as the sole style.",
+      "position": 5
+    }
+  ]
+}

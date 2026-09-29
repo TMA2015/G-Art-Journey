@@ -44,3 +44,7 @@ Images stay in GitHub. Each build reports asset counts, large images and publish
 ## Human Drawing visual guides
 
 Eight original English-first illustrated guides for faces, expressions, head angles, age examples, figure proportions and poses. Start at `/human-drawing/`. Optimized WebP posters are tracked in `public/infographics/human/`; integrity checks prevent publishing missing artwork. See [docs/HUMAN_DRAWING_BATCH_01.md](docs/HUMAN_DRAWING_BATCH_01.md).
+
+## Automated batch publishing
+
+`npm run art:prepare -- --input <temporary-art-folder> --activate` optimizes and validates the full next art batch, activates its pages only when every image is present, and writes the image checksum manifest. An authorized Work/desktop environment can push the batch in one commit with Git or `node scripts/push-art-batch.mjs --branch feat/character-batch02-pipeline --push`. No original artwork or extra image-host account is required. See [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).
