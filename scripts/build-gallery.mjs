@@ -21,6 +21,7 @@ for (const owner of owners) {
       medium: typeof detail.medium === 'string' ? detail.medium : '',
       note: typeof detail.note === 'string' ? detail.note : '',
       date: typeof detail.date === 'string' ? detail.date : '',
+      ...Object.fromEntries(['title_vi','title_en','medium_vi','medium_en','note_vi','note_en'].filter(field=>typeof detail[field]==='string').map(field=>[field,detail[field]])),
       featured: detail.featured === true
     });
   }

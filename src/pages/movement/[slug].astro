@@ -1,26 +1,28 @@
 ---
 import '../../styles/discovery.css';
 import Base from '../../layouts/Base.astro';
-import {movements,artists} from '../../data/discovery.mjs';
+import SectionNav from '../../components/SectionNav.astro';
+import {movements} from '../../data/discovery.mjs';
+import {getMovements,getArtists} from '../../i18n/discovery.mjs';
+import {ui,language} from '../../i18n/ui.mjs';
 export function getStaticPaths(){return movements.map(movement=>({params:{slug:movement.slug},props:{movement}}));}
-const {movement}=Astro.props;const base=import.meta.env.BASE_URL;
+const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const movement=getMovements(lang).find(m=>m.slug===Astro.props.movement.slug),artists=getArtists(lang);
 ---
-<Base title={movement.name} description={movement.summary}>
- <article class="site-shell movement-page">
-  <a href={base+'explore/#movements'} class="eyebrow back-link">← EXPLORE ART / STYLES</a>
-  <header class="movement-hero" style={'--movement-color:'+movement.color}>
-   <div class="movement-hero-copy"><span class="eyebrow">{movement.period}</span><h1 class="serif">{movement.name}</h1><p class="movement-en">{movement.en}</p><p>{movement.summary}</p></div>
-   <div class="movement-hero-image"><img src={base+movement.image} alt={'Minh họa chủ đề '+movement.name}/><small>Hình minh họa chủ đề do website tạo</small></div>
-  </header>
-  <section class="infographic-detail">
-   <div><span class="eyebrow">HOW TO LOOK</span><h2 class="serif">Nhận ra bằng cách nào?</h2><p>Ba dấu hiệu để bạn có thể bắt đầu quan sát.</p></div>
-   <div class="fact-list">{movement.clues.map((c,i)=><div class="fact-row"><span>{String(i+1).padStart(2,'0')}</span><div><p>{c}</p></div></div>)}</div>
-  </section>
-  <div class="infographic-panels">
-   <section class="featured-work"><span class="eyebrow">LOOK CLOSER</span><h2 class="serif">Ngắm kỹ một chút</h2><p>{movement.look}</p><a href={movement.source} target="_blank" rel="noopener noreferrer">{movement.sourceLabel} ↗</a></section>
-   <section class="try-art"><span class="eyebrow">TRY IT YOURSELF</span><h2 class="serif">Thử một nét nhỏ</h2><p>{movement.try}</p><a href={base+'guides/'}>Xem bài hướng dẫn ↗</a></section>
-  </div>
-  <section class="related-artists"><span class="eyebrow">SOME NAMES TO KNOW</span><h2 class="serif">Các họa sĩ liên quan</h2><div>{movement.artists.map(name=>{const artist=artists.find(a=>name.includes(a.name)||a.name.includes(name));return artist?<a href={base+'artist/'+artist.slug+'/'}>{name} ↗</a>:<span>{name}</span>})}</div></section>
-  <p class="discovery-note">Các nhóm phong cách chỉ là cánh cửa tìm hiểu; một họa sĩ có thể thay đổi cách vẽ qua nhiều giai đoạn. Các tranh gốc được mở qua liên kết bảo tàng để tôn trọng nguồn và quyền sử dụng.</p>
- </article>
+<Base lang={lang} title={movement.name} description={movement.summary}>
+<article class="site-shell movement-page">
+ <a href={url('explore/#movements')} class="eyebrow back-link">{t.movement.back}</a>
+ <SectionNav lang={lang} items={[{id:'movement-intro',label:movement.name},{id:'movement-clues',label:t.movement.recognize},{id:'movement-see',label:t.movement.closerTitle},{id:'movement-try',label:t.movement.tryTitle},{id:'related-artists',label:t.movement.artists}]}/>
+ <header id="movement-intro" class="movement-hero" style={'--movement-color:'+movement.color}>
+  <div class="movement-hero-copy"><span class="eyebrow">{movement.period}</span><h1 class="serif">{movement.name}</h1><p>{movement.summary}</p></div>
+  <div class="movement-hero-image"><img src={base+movement.image} alt={movement.name}/><small>{t.common.illustration}</small></div>
+ </header>
+ <section id="movement-clues" class="infographic-detail"><div><span class="eyebrow">{t.movement.look}</span><h2 class="serif">{t.movement.recognize}</h2><p>{t.movement.clues}</p></div><div class="fact-list">{movement.clues.map((c,i)=><div class="fact-row"><span>{String(i+1).padStart(2,'0')}</span><div><p>{c}</p></div></div>)}</div></section>
+ <div class="infographic-panels">
+  <section id="movement-see" class="featured-work"><span class="eyebrow">{t.movement.closer}</span><h2 class="serif">{t.movement.closerTitle}</h2><p>{movement.look}</p><a href={movement.source} target="_blank" rel="noopener noreferrer">{movement.sourceLabel} ↗</a></section>
+  <section id="movement-try" class="try-art"><span class="eyebrow">{t.movement.try}</span><h2 class="serif">{t.movement.tryTitle}</h2><p>{movement.try}</p><a href={url('guides/')}>{t.movement.guides}</a></section>
+ </div>
+ <section id="related-artists" class="related-artists"><span class="eyebrow">{t.movement.people}</span><h2 class="serif">{t.movement.artists}</h2><div>{movement.artists.map(name=>{const artist=artists.find(a=>name.includes(a.name)||a.name.includes(name));return artist?<a href={url('artist/'+artist.slug+'/')}>{name} ↗</a>:<span>{name}</span>})}</div></section>
+ <p class="discovery-note">{t.movement.disclaimer}</p>
+</article>
 </Base>

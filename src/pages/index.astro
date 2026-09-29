@@ -1,60 +1,59 @@
 ---
 import Base from '../layouts/Base.astro';
-import { showcase, collections, guides } from '../data/content.mjs';
-import { visualNotes } from '../data/visual-notes.mjs';
-const base = import.meta.env.BASE_URL;
-const first = showcase[0];
+import SectionNav from '../components/SectionNav.astro';
+import {getShowcase,getCollections,getGuides} from '../i18n/content.mjs';
+import {getVisualNotes} from '../i18n/notes.mjs';
+import {ui,language} from '../i18n/ui.mjs';
+const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const showcase=getShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),visualNotes=getVisualNotes(lang),first=showcase[0];
+const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',label:t.home.guideTitle},{id:'visual-notes',label:t.home.visualTitle},{id:'family-gallery',label:t.nav.gallery}];
 ---
-<Base title="G-Art Journey" description="Một cuộc dạo chơi nghệ thuật của hai bố con: ngắm tranh, khám phá và tự sáng tạo.">
-  <div class="site-shell">
-    <section class="hero" data-hero aria-label="Tác phẩm và phong cách trong ngày">
-      <div class="hero-visual">
-        <img data-hero-image src={base + first.images[0].src} alt={first.images[0].alt} fetchpriority="high" />
-        <div class="hero-caption"><span data-hero-caption>{first.images[0].title} · Original site illustration</span><span>G-ART / SHOWCASE</span></div>
-      </div>
-      <div class="hero-copy">
-        <span class="eyebrow" data-hero-label>TODAY’S ART JOURNEY</span>
-        <h1 class="serif" data-hero-title>{first.title}</h1>
-        <p data-hero-description>{first.description}</p>
-        <a class="hero-cta" href={base + 'explore/'}>Wander through art <span aria-hidden="true">↗</span></a>
-        <div class="hero-controls">
-          <span class="count" data-hero-count>01 / 02</span>
-          <label class="visually-hidden" for="style-picker">Chọn phong cách</label>
-          <select class="style-select" id="style-picker" data-style-select>
-            <option value="daily">Today's style</option>
-            {showcase.map(s=><option value={s.id}>{s.category === 'Pencil Art' ? s.label.replace('PENCIL ','Pencil ') : s.category}</option>)}
-          </select>
-          <button type="button" data-prev aria-label="Tác phẩm trước">←</button>
-          <button type="button" data-next aria-label="Tác phẩm tiếp">→</button>
-          <button type="button" data-pause aria-label="Tạm dừng slideshow" aria-pressed="false">Ⅱ</button>
-        </div>
-      </div>
-    </section>
-    <div class="intro-strip">
-      <h2 class="serif">A little space to <em>see, feel, and create.</em><br />Không cần vẽ thật giỏi. Chỉ cần thấy thích.</h2>
-      <p>Một cuộc dạo chơi của hai bố con qua những bức tranh, phong cách và những nét vẽ của riêng mình. Không điểm số, không áp lực — chỉ có chút bay bổng.</p>
+<Base lang={lang} title="G-Art Journey" description={t.common.siteDescription}>
+ <div class="site-shell">
+  <section class="hero" data-hero aria-label={t.home.today}>
+   <div class="hero-visual">
+    <img data-hero-image src={base+first.images[0].src} alt={first.images[0].alt} fetchpriority="high"/>
+    <div class="hero-caption"><span data-hero-caption>{first.images[0].title} · {t.home.illustration}</span><span>{lang==='vi'?'G-ART / TRƯNG BÀY':'G-ART / SHOWCASE'}</span></div>
+   </div>
+   <div class="hero-copy">
+    <span class="eyebrow" data-hero-label>{t.home.today}</span>
+    <h1 class="serif" data-hero-title>{first.title}</h1>
+    <p data-hero-description>{first.description}</p>
+    <a class="hero-cta" href={url('explore/')}>{t.home.cta}</a>
+    <div class="hero-controls">
+     <span class="count" data-hero-count>01 / 02</span>
+     <label class="visually-hidden" for="style-picker">{t.home.style}</label>
+     <select class="style-select" id="style-picker" data-style-select>
+      <option value="daily">{t.home.style}</option>
+      {showcase.map(s=><option value={s.id}>{s.label}</option>)}
+     </select>
+     <button type="button" data-prev aria-label={t.home.prev}>←</button>
+     <button type="button" data-next aria-label={t.home.next}>→</button>
+     <button type="button" data-pause aria-label={t.home.pause} aria-pressed="false">Ⅱ</button>
     </div>
-    <section class="section" aria-labelledby="collections-heading">
-      <div class="section-title-row"><div><span class="eyebrow">01 / DISCOVER</span><h2 class="serif" id="collections-heading">Wander through art</h2></div><a class="subtle-link" href={base + 'explore/'}>Explore all collections ↗</a></div>
-      <div class="collection-grid">
-        {collections.map(item=><a class="collection-card" href={base + item.link}><div class="art-frame"><img src={base + item.image} alt={'Minh họa '+item.subtitle} loading="lazy" /></div><div class="meta"><span>{item.number} / COLLECTION</span><span>— {item.subtitle}</span></div><h3>{item.title}</h3><p>{item.description}</p><span class="arrow" aria-hidden="true">↗</span></a>)}
-      </div>
-    </section>
-    <section class="editorial-banner">
-      <div class="banner-art"><img src={base + 'showcase/pencil-landscape-2.svg'} alt="Minh họa phong cảnh đường phố bằng chì" loading="lazy" /></div>
-      <div class="banner-text"><span class="eyebrow">A NOTE FROM OUR SKETCHBOOK</span><h2 class="serif">Some moments<br/><em>belong on paper.</em></h2><p>Đôi khi chỉ là một ngọn núi, một góc phố, hay khuôn mặt mình muốn nhớ. Vẽ lại, theo cách của mình.</p><a class="subtle-link" href={base + 'guides/#landscape'}>Explore pencil landscapes ↗</a></div>
-    </section>
-    <section class="section" aria-labelledby="guides-heading">
-      <div class="section-title-row"><div><span class="eyebrow">02 / TRY SOMETHING</span><h2 class="serif" id="guides-heading">A few drawing guides</h2></div><a class="subtle-link" href={base + 'guides/'}>All guides ↗</a></div>
-      <div class="guide-grid">{guides.slice(0,3).map(g=><a class="guide-card" href={base + 'guide/' + g.slug + '/'}><img src={base + g.image} alt={'Minh họa cho '+g.title} loading="lazy" /><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>Explore ↗</span></div></div></a>)}</div>
-    </section>
-    <section class="section" aria-labelledby="notes-heading">
-      <div class="section-title-row"><div><span class="eyebrow">03 / LITTLE SKETCHBOOK</span><h2 class="serif" id="notes-heading">A little note, a little drawing</h2></div><a class="subtle-link" href={base+'notes/'}>All visual notes ↗</a></div>
-      <div class="visual-note-teaser">
-        {visualNotes.map(n=><a href={base+'notes/'+n.slug+'/'}><img src={base+n.image} alt={'Minh họa '+n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}
-      </div>
-    </section>
-  </div>
-  <section class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">04 / OUR LITTLE GALLERY</span><h2 class="serif">A place for the<br/><em>things we make.</em></h2><p>Một nơi cất những nét chì đầu tiên, những nhân vật tự nghĩ ra, hay bức phong cảnh vẽ trong một buổi chiều. Không phải để đánh giá. Chỉ đơn giản là thích.</p><a class="hero-cta" href={base + 'gallery/'}>Visit our gallery <span aria-hidden="true">↗</span></a></div><div class="gallery-art"><img src={base + 'showcase/character-2.svg'} alt="Minh họa nhân vật" loading="lazy"/><img src={base + 'showcase/pencil-portrait-2.svg'} alt="Minh họa chân dung chì" loading="lazy"/></div></div></section>
-  <script>import '../scripts/home.js';</script>
+   </div>
+  </section>
+  <div class="intro-strip"><h2 class="serif">{t.home.intro1}<br/><em>{t.home.intro2}</em></h2><p>{t.home.introDesc}</p></div>
+  <SectionNav lang={lang} items={jump}/>
+  <section id="collections" class="section" aria-labelledby="collections-heading">
+   <div class="section-title-row"><div><span class="eyebrow">{t.home.discover}</span><h2 class="serif" id="collections-heading">{t.home.collections}</h2></div><a class="subtle-link" href={url('explore/')}>{t.home.allCollections}</a></div>
+   <div class="collection-grid">
+    {collections.map(item=><a class="collection-card" href={url(item.link)}><div class="art-frame"><img src={base+item.image} alt={item.subtitle} loading="lazy"/></div><div class="meta"><span>{item.number} / {item.subtitle}</span></div><h3>{item.title}</h3><p>{item.description}</p><span class="arrow" aria-hidden="true">↗</span></a>)}
+   </div>
+  </section>
+  <section class="editorial-banner">
+   <div class="banner-art"><img src={base+(lang==='en'?'showcase/pencil-landscape-2.svg':'showcase/vi/pencil-landscape-2.svg')} alt={lang==='vi'?'Phác thảo đường phố bằng chì':'Pencil illustration of a little street'} loading="lazy"/></div>
+   <div class="banner-text"><span class="eyebrow">{t.home.sketchTag}</span><h2 class="serif">{t.home.sketchTitle}</h2><p>{t.home.sketchDesc}</p><a class="subtle-link" href={url('guides/#landscape')}>{t.home.sketchCTA}</a></div>
+  </section>
+  <section id="drawing-guides" class="section" aria-labelledby="guides-heading">
+   <div class="section-title-row"><div><span class="eyebrow">{t.home.guideTag}</span><h2 class="serif" id="guides-heading">{t.home.guideTitle}</h2></div><a class="subtle-link" href={url('guides/')}>{t.home.allGuides}</a></div>
+   <div class="guide-grid">{guides.slice(0,3).map(g=><a class="guide-card" href={url('guide/'+g.slug+'/')}><img src={base+g.image} alt={g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.home.openGuide}</span></div></div></a>)}</div>
+  </section>
+  <section id="visual-notes" class="section" aria-labelledby="notes-heading">
+   <div class="section-title-row"><div><span class="eyebrow">{t.home.visualTag}</span><h2 class="serif" id="notes-heading">{t.home.visualTitle}</h2></div><a class="subtle-link" href={url('notes/')}>{t.home.allNotes}</a></div>
+   <div class="visual-note-teaser">{visualNotes.map(n=><a href={url('notes/'+n.slug+'/')}><img src={base+n.image} alt={n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}</div>
+  </section>
+ </div>
+ <section id="family-gallery" class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">{t.home.galleryTag}</span><h2 class="serif">{t.home.galleryTitle}</h2><p>{t.home.galleryDesc}</p><a class="hero-cta" href={url('gallery/')}>{t.home.galleryLink}</a></div><div class="gallery-art"><img src={base+(lang==='en'?'showcase/character-2.svg':'showcase/vi/character-2.svg')} alt={lang==='vi'?'Nhân vật minh họa':'Character illustration'} loading="lazy"/><img src={base+(lang==='en'?'showcase/pencil-portrait-2.svg':'showcase/vi/pencil-portrait-2.svg')} alt={lang==='vi'?'Chân dung chì':'Pencil portrait'} loading="lazy"/></div></div></section>
+ <script>import '../scripts/home.js';</script>
 </Base>

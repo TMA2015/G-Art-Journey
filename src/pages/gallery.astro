@@ -1,26 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
 import artwork from '../data/gallery.generated.json';
-const base = import.meta.env.BASE_URL;
-const ownerLabels = { dad:'Dad', daughter:'Daughter', shared:'Together' };
+import {ui,language} from '../i18n/ui.mjs';
+const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL;
+const ownerLabels=t.gallery.owners;
+const translateArtwork=(item,key)=>item[key+'_'+lang]||item[key];
 ---
-<Base title="Our Little Gallery" description="Một góc nhỏ lưu giữ tác phẩm của hai bố con.">
-  <div class="site-shell">
-    <header class="page-hero"><div class="topline eyebrow">03 / OUR LITTLE GALLERY</div><h1 class="serif">The things<br/><em>we make.</em></h1><p>Không phải để chấm điểm. Không cần một lời giải thích. Đôi khi chỉ là một bức vẽ, đơn giản vì mình thích.</p></header>
-    {artwork.length>0 ? <><div class="gallery-filters" aria-label="Lọc tác phẩm"><button type="button" data-gallery-filter="all" aria-pressed="true">All artworks</button><button type="button" data-gallery-filter="daughter" aria-pressed="false">Daughter</button><button type="button" data-gallery-filter="dad" aria-pressed="false">Dad</button><button type="button" data-gallery-filter="shared" aria-pressed="false">Together</button></div><div class="personal-grid">{artwork.map(item=><figure class="personal-item" data-owner={item.owner}><a href={base+item.src} target="_blank" rel="noopener" aria-label={'Mở ảnh lớn: '+item.title}><img src={base+item.src} alt={item.title} loading="lazy"/></a><figcaption><span class="eyebrow">{ownerLabels[item.owner] || 'Our gallery'} {item.medium ? '· '+item.medium : ''}</span><h2>{item.title}</h2>{item.note && <p>{item.note}</p>}{item.date && <p>{item.date}</p>}</figcaption></figure>)}</div><p data-no-matches hidden>Chưa có tác phẩm trong nhóm này.</p></>
-     : <div class="empty-gallery"><span class="eyebrow">A BLANK PAGE. A NEW BEGINNING.</span><h2>Your first artwork belongs here.</h2><p>Gallery đang chờ bức tranh đầu tiên. Hãy thêm ảnh vào thư mục của hai bố con trên GitHub; website sẽ tự nhận khi bản cập nhật được triển khai.</p><a href="https://github.com/TMA2015/G-Art-Journey/tree/main/public/artworks" target="_blank" rel="noopener">Open artwork folder on GitHub ↗</a></div>}
-    <div class="note-banner">Lưu ý: gallery và ảnh trong repository Public đều được công khai. Chỉ đăng những tác phẩm mà hai bố con đồng ý chia sẻ; tránh ảnh có thông tin cá nhân.</div>
-  </div>
-  <script>
-    const buttons=[...document.querySelectorAll('[data-gallery-filter]')];
-    const cards=[...document.querySelectorAll('[data-owner]')];
-    const empty=document.querySelector('[data-no-matches]');
-    for(const button of buttons)button.addEventListener('click',()=>{
-      const value=button.dataset.galleryFilter;
-      for(const b of buttons)b.setAttribute('aria-pressed',String(b===button));
-      let visible=0;
-      for(const card of cards){const show=value==='all'||card.dataset.owner===value;card.hidden=!show;if(show)visible++;}
-      if(empty)empty.hidden=visible!==0;
-    });
-  </script>
+<Base lang={lang} title={t.nav.gallery} description={t.gallery.intro}>
+ <div class="site-shell">
+  <header class="page-hero"><div class="topline eyebrow">{t.nav.gallery}</div><h1 class="serif">{t.gallery.title}</h1><p>{t.gallery.intro}</p></header>
+  {artwork.length>0 ? <>
+   <div class="gallery-filters" aria-label={t.gallery.filterLabel}>
+    {['all','daughter','dad','shared'].map((key,i)=><button type="button" data-gallery-filter={key} aria-pressed={i===0?'true':'false'}>{t.gallery.filters[key]}</button>)}
+   </div>
+   <div class="personal-grid">{artwork.map(item=><figure class="personal-item" data-owner={item.owner}><a href={base+item.src} target="_blank" rel="noopener" aria-label={t.gallery.openImage+': '+translateArtwork(item,'title')}><img src={base+item.src} alt={translateArtwork(item,'title')} loading="lazy"/></a><figcaption><span class="eyebrow">{ownerLabels[item.owner]||t.nav.gallery} {item.medium?' · '+translateArtwork(item,'medium'):''}</span><h2>{translateArtwork(item,'title')}</h2>{item.note&&<p>{translateArtwork(item,'note')}</p>}{item.date&&<p>{item.date}</p>}</figcaption></figure>)}</div>
+   <p data-no-matches hidden>{t.gallery.emptyFilter}</p>
+  </>:
+  <div class="empty-gallery"><span class="eyebrow">{t.gallery.emptyTag}</span><h2>{t.gallery.emptyTitle}</h2><p>{t.gallery.emptyIntro}</p><a href="https://github.com/TMA2015/G-Art-Journey/tree/main/public/artworks" target="_blank" rel="noopener">{t.gallery.folder}</a></div>}
+  <div class="note-banner">{t.gallery.warning}</div>
+ </div>
+ <script>
+  const buttons=[...document.querySelectorAll('[data-gallery-filter]')],cards=[...document.querySelectorAll('[data-owner]')],empty=document.querySelector('[data-no-matches]');
+  for(const button of buttons)button.addEventListener('click',()=>{const value=button.dataset.galleryFilter;for(const b of buttons)b.setAttribute('aria-pressed',String(b===button));let visible=0;for(const card of cards){const show=value==='all'||card.dataset.owner===value;card.hidden=!show;if(show)visible++}if(empty)empty.hidden=visible!==0;});
+ </script>
 </Base>

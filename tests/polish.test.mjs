@@ -37,8 +37,8 @@ test('Vietnamese font fallback and actual back-to-top button',async()=>{
   assert.match(layout,/Noto\+Serif/);
   assert.match(css,/--art-font-serif/);
   assert.match(layout,/data-back-to-top/);
-  assert.match(layout,/window\.scrollY < 480/);
+  assert.match(layout,/window\.scrollY\s*<\s*480/);
   assert.match(layout,/prefers-reduced-motion/);
-  assert.match(layout,/current\.startsWith\(base\+'notes\/'\)/);
+  assert.match(layout,/relative\.startsWith\('notes\/'\)/);
   assert.match(css,/\.back-to-top\[hidden\]/);
 });

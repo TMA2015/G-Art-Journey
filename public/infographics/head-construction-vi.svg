@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Tỉ lệ chân dung: dựng khối đầu</title><desc id="d">Hai bản dựng đầu người bằng nét nhẹ với trục giữa và các đường mắt, mũi, miệng.</desc>
+<defs><linearGradient id="p" x2="1" y2="1"><stop stop-color="#F9F4EC"/><stop offset="1" stop-color="#ECE4DA"/></linearGradient><pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="7" cy="9" r=".5" fill="#75675D" opacity=".17"/></pattern></defs>
+<rect width="1600" height="1000" fill="url(#p)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text x="72" y="94" font-family="Georgia,serif" font-size="50" fill="#534D48">02 / Dựng hình khuôn mặt</text><text x="1160" y="89" font-family="Arial,sans-serif" font-size="17" fill="#8A7973" letter-spacing="4">GHI CHÚ CHÂN DUNG</text><path d="M68 138 H1532" stroke="#BEB0A6" stroke-width="2"/>
+<g transform="translate(160 190)" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<ellipse cx="310" cy="246" rx="224" ry="215" stroke="#73665F" stroke-width="4"/>
+<path d="M90 246 C74 395 182 573 310 638 C438 573 546 395 530 246" stroke="#73665F" stroke-width="4"/>
+<path d="M309 32 V640 M84 248 H535" stroke="#B97F8A" stroke-width="3" stroke-dasharray="10 12"/>
+<path d="M124 418 H497 M176 527 H443" stroke="#B97F8A" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M171 248 Q231 225 281 248 M337 248 Q389 225 449 248" stroke="#74675F" stroke-width="3"/>
+<path d="M194 248 Q225 262 253 248 M367 248 Q393 262 425 248" stroke="#73665F" stroke-width="3"/>
+<path d="M309 255 Q280 357 298 417 Q305 428 321 416 M257 522 Q310 546 359 522" stroke="#73665F" stroke-width="3"/>
+<path d="M84 247 Q54 227 56 268 Q58 322 100 330 M535 247 Q565 226 562 270 Q561 319 520 330" stroke="#73665F" stroke-width="3"/>
+<path d="M536 247 L604 247 M498 418 L604 418 M443 527 L604 527" stroke="#B97F8A" stroke-width="2"/>
+<g font-family="Arial,sans-serif" fill="#916674" font-size="22" stroke="none"><text x="613" y="254">Đường mắt</text><text x="613" y="425">Mũi</text><text x="613" y="534">Miệng</text></g>
+</g>
+<g transform="translate(965 250)" fill="none" stroke="#73665F" stroke-width="4" stroke-linecap="round">
+<path d="M90 99 C154 -8 323 -18 403 99 C440 148 430 280 384 345 Q365 430 285 476 Q225 512 162 461 Q110 389 97 313 Q23 178 90 99Z" />
+<path d="M77 132 Q213 84 414 142 M255 19 Q241 233 285 478" stroke="#B97F8A" stroke-width="3" stroke-dasharray="9 11"/>
+<path d="M82 223 Q231 193 420 236" stroke="#B97F8A" stroke-width="3" stroke-dasharray="9 11"/>
+<path d="M135 228 Q169 205 210 224 M285 237 Q328 214 366 243 M267 284 Q280 353 309 366 M266 413 Q293 431 321 416" stroke-width="3"/>
+<path d="M93 311 Q43 281 50 333 Q55 379 119 384" stroke-width="3"/>
+</g>
+<g fill="#75665F" font-family="Arial,sans-serif"><text x="215" y="916" font-size="24">CHÍNH DIỆN / Trục và đường mốc</text><text x="1000" y="916" font-size="24">GÓC 3/4 / Trục cong</text></g>
+<rect x="91" y="941" width="1418" height="1" fill="#C8B8AB"/><text x="94" y="972" font-family="Arial,sans-serif" font-size="15" fill="#8C8177" letter-spacing="1">TỈ LỆ LÀ HƯỚNG DẪN QUAN SÁT, KHÔNG PHẢI QUY TẮC CỐ ĐỊNH · G-ART JOURNEY</text>
+</svg>

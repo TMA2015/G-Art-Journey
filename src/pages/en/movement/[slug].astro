@@ -1,0 +1,7 @@
+---
+import Movement from '../../movement/[slug].astro';
+import {movements} from '../../../data/discovery.mjs';
+export function getStaticPaths(){return movements.map(movement=>({params:{slug:movement.slug},props:{movement}}));}
+const {movement}=Astro.props;
+---
+<Movement lang="en" movement={movement}/>

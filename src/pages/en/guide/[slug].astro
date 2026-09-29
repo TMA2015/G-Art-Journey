@@ -1,0 +1,7 @@
+---
+import Guide from '../../guide/[slug].astro';
+import {guides} from '../../../data/content.mjs';
+export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
+const {guide}=Astro.props;
+---
+<Guide lang="en" guide={guide}/>
