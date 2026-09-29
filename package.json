@@ -10,7 +10,8 @@
     "test": "node --test tests/*.test.mjs",
     "audit:assets": "node scripts/check-assets.mjs",
     "art:prepare": "node scripts/art-batch.mjs",
-    "art:check": "node scripts/art-batch.mjs --check"
+    "art:check": "node scripts/art-batch.mjs --check",
+    "audit:guides": "node scripts/check-guide-overlap.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",
