@@ -27,7 +27,7 @@ test('every hero slide has a matching localized image and alt',async()=>{
 });
 test('guide and visual notes have localized text at every step',()=>{
  for(const lang of ['vi','en']){
-  for(const guide of getGuides(lang)){assert.equal(guide.steps.length,5);assert.ok(guide.steps.every(x=>x.title&&x.body));}
+  for(const guide of getGuides(lang)){assert.ok(guide.steps.length>=5);assert.ok(guide.steps.every(x=>x.title&&x.body));}
   for(const note of getVisualNotes(lang)){assert.equal(note.steps.length,5);assert.ok(note.steps.every(x=>x.title&&x.body));}
   for(const style of getMovements(lang)){assert.equal(style.clues.length,3);assert.ok(style.clues.every(Boolean));}
   for(const artist of getArtists(lang)){assert.equal(artist.facts.length,3);assert.ok(artist.facts.every(x=>x.name&&x.detail));}

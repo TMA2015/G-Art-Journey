@@ -21,4 +21,4 @@ const vi={
 'graphite-values':{subtitle:'Ánh sáng và sắc độ',tag:'VẼ CHÌ'},
 'head-construction':{subtitle:'Dựng hình chân dung',tag:'VẼ HÌNH NGƯỜI'}
 };
-export const getVisualNotes=(lang='en')=>visualNotes.map(n=>({...n,...(language(lang)==='en'?en[n.slug]:vi[n.slug]),image:asset(lang,n.image)}));
+export const getVisualNotes=(lang='en')=>visualNotes.map(n=>({...n,...(language(lang)==='en'?en[n.slug]:vi[n.slug]),image:language(lang)==='vi' && vi[n.slug] ? asset(lang,n.image) : n.image}));

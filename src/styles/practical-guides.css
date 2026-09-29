@@ -1,0 +1,13 @@
+.practice-followup{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin:24px 0 70px}
+.practice-followup>div{padding:27px 30px;min-width:0}
+.practice-challenge{background:#e6ece3;border:1px solid #d2ddcd}
+.practice-reminder{background:#f4e9eb;border:1px solid #ebd6e0}
+.practice-related{grid-column:1/-1;background:#fffdf7;border:1px solid #e4dbd1}
+.practice-challenge h2{font-size:clamp(26px,3vw,39px);margin:10px 0}
+.practice-followup p{font-size:14px;line-height:1.8;color:#665e57;margin:9px 0 0}
+.practice-related>div{display:flex;flex-wrap:wrap;gap:12px;margin-top:17px}
+.practice-related a{display:inline-block;border-radius:99px;border:1px solid #cdb9c7;color:#644b62;padding:10px 14px;font-size:12px;font-weight:750}
+.practice-related a:hover{background:#f6ebf3}
+html[data-theme="playful"] .practice-followup>div{border-radius:17px}
+#guide-picture,#guide-steps,#guide-note{scroll-margin-top:170px}
+@media(max-width:690px){.practice-followup{grid-template-columns:1fr}.practice-related{grid-column:auto}.practice-followup>div{padding:21px}}

@@ -88,4 +88,4 @@ export const getShowcase=(lang='en')=>rawShowcase.map(s=>{
  return {...s,...copy,images:s.images.map((image,i)=>({...image,...copy.images[i],src:asset(lang,image.src)}))};
 });
 export const getCollections=(lang='en')=>rawCollections.map(c=>({...c,...(language(lang)==='en'?collectionEn:collectionVi)[c.id],image:asset(lang,c.image)}));
-export const getGuides=(lang='en')=>rawGuides.map(g=>({...g,...(language(lang)==='en'?guideEn:guideVi)[g.slug],image:asset(lang,g.image)}));
+export const getGuides=(lang='en')=>rawGuides.map(g=>({...g,...(language(lang)==='en'?guideEn:guideVi)[g.slug],image:language(lang)==='vi' && guideVi[g.slug] ? asset(lang,g.image) : g.image}));

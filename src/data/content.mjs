@@ -1,3 +1,4 @@
+import { practiceGuides } from './practical-guides.mjs';
 export const showcase = [
   { id: 'portrait', label: 'PENCIL PORTRAIT', title: 'The beauty of graphite', description: 'Một nét chì, một chút ánh sáng, và một câu chuyện hiện ra trên giấy.', category: 'Pencil Art', images: [
     { src: 'showcase/pencil-portrait.svg', alt: 'Minh họa chân dung bằng nét chì', title: 'A quiet portrait' },
@@ -27,7 +28,7 @@ export const collections = [
   { id: 'digital', number:'04', title:'Digital Art', subtitle:'Vẽ trên ứng dụng', description:'Brush, layer, tô màu và những phong cảnh, nhân vật được vẽ trên màn hình.', image:'showcase/digital.svg', link:'guides/#digital' },
   { id: 'landscape', number:'05', title:'Landscape', subtitle:'Phong cảnh', description:'Núi rừng, sông hồ, phố xá, phối cảnh và những nơi bạn muốn nhớ.', image:'showcase/pencil-landscape.svg', link:'guides/#landscape' }
 ];
-export const guides = [
+const starterGuides = [
   { slug:'draw-a-pencil-portrait', category:'pencil', tag:'PENCIL ART', difficulty:'Bắt đầu', time:'25–40 phút', title:'Một khuôn mặt từ những nét chì', description:'Từ hình khối lớn đến tỉ lệ khuôn mặt và ba sắc độ đầu tiên.', image:'showcase/pencil-portrait.svg', supplies:'Giấy, bút chì HB/2B, tẩy mềm', steps:[
     {title:'Quan sát hình lớn', body:'Nhìn tỉ lệ cao–rộng của đầu; phác nhẹ hình bầu dục và đường trục mặt.'},
     {title:'Xác định mốc chính', body:'Đặt đường mắt, đáy mũi, miệng. So sánh khoảng cách trước khi vẽ chi tiết.'},
@@ -64,3 +65,5 @@ export const guides = [
     {title:'Điều chỉnh tổng thể', body:'Tắt/bật từng layer để thấy vai trò của chúng; giữ số lớp vừa đủ cho mình.'}
   ]}
 ];
+
+export const guides = [...starterGuides, ...practiceGuides];
