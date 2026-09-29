@@ -38,20 +38,6 @@
       ]
     },
     {
-      "slug": "draw-a-manga-face",
-      "status": "published",
-      "family": "character",
-      "primarySkill": "manga-foundation-construction",
-      "visibleEvidence": "Use a base head, chin and eye line to sketch a simple manga-inspired face.",
-      "stageFocus": [
-        "head-volume",
-        "jaw-design",
-        "eye-placement",
-        "hair-groups",
-        "expression-refinement"
-      ]
-    },
-    {
       "slug": "watercolor-first-flower",
       "status": "published",
       "family": "watercolor",
