@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+const { title = 'G-Art Journey', description = 'Một cuộc dạo chơi nghệ thuật của hai bố con.' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const current = Astro.url.pathname;
+const nav = [{href:'',label:'Home'},{href:'explore/',label:'Explore Art'},{href:'guides/',label:'Drawing Guides'},{href:'gallery/',label:'Our Gallery'}];
+---
+<!doctype html>
+<html lang="vi" data-base={base}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f6f0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={base + 'branding/g-learning-mark.svg'} />
+    <title>{title === 'G-Art Journey' ? title : title + ' — G-Art Journey'}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-shell nav-bar">
+        <a class="brand" href={base} aria-label="G-Art Journey — Trang chủ">
+          <img class="brand-mark" src={base + 'branding/g-learning-mark.svg'} alt="" />
+          <span><span class="brand-name">G-Art Journey</span><span class="brand-sub">Explore · Feel · Create</span></span>
+        </a>
+        <nav class="top-nav" aria-label="Điều hướng chính">
+          {nav.map(n => <a href={base + n.href} aria-current={current === base + n.href ? 'page' : undefined}>{n.label}</a>)}
+        </nav>
+        <a class="header-action" href={base + 'gallery/'}>Our little gallery ↗</a>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="footer">
+      <div class="site-shell">
+        <div class="footer-mark"><img class="brand-mark" src={base + 'branding/g-learning-mark.svg'} alt="" /><span>G-Art Journey · A little art space for father & daughter.</span></div>
+        <span>Created simply for the joy of art. © {new Date().getFullYear()}</span>
+      </div>
+    </footer>
+  </body>
+</html>

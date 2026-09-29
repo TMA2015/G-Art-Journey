@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { guides } from '../data/content.mjs';
+const base = import.meta.env.BASE_URL;
+const sections = [{id:'pencil',title:'Pencil Art — Vẽ chì'},{id:'landscape',title:'Landscape — Phong cảnh'},{id:'character',title:'Character Art — Nhân vật'},{id:'watercolor',title:'Watercolor — Màu nước'},{id:'digital',title:'Digital Art — Vẽ trên ứng dụng'}];
+---
+<Base title="Drawing Guides" description="Những gợi ý vẽ nhẹ nhàng theo chủ đề và chất liệu.">
+  <div class="site-shell">
+    <header class="page-hero"><div class="topline eyebrow">02 / DRAWING GUIDES</div><h1 class="serif">Pick up a pencil.<br/><em>See what happens.</em></h1><p>Không có giáo trình bắt buộc. Chọn thứ bạn thích, xem vài bước cơ bản, rồi thử theo cách của riêng mình.</p></header>
+    {sections.map(s=><section id={s.id} class="section" style="padding-top:48px"><div class="section-title-row"><div><span class="eyebrow">START ANYWHERE</span><h2 class="serif">{s.title}</h2></div></div><div class="guide-list">{guides.filter(g=>g.category===s.id).map(g=><a class="guide-card" href={base + 'guide/' + g.slug + '/'}><img src={base + g.image} alt={'Minh họa '+g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>Open guide ↗</span></div></div></a>)}</div></section>)}
+    <div class="note-banner">Đây là các hướng dẫn nhập môn dạng văn bản kèm hình minh họa. Các infographic từng bước chi tiết sẽ được bổ sung bằng hình gốc sau khi chốt phong cách đồ họa.</div>
+  </div>
+</Base>

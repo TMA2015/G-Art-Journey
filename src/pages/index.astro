@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { showcase, collections, guides } from '../data/content.mjs';
+const base = import.meta.env.BASE_URL;
+const first = showcase[0];
+---
+<Base title="G-Art Journey" description="Một cuộc dạo chơi nghệ thuật của hai bố con: ngắm tranh, khám phá và tự sáng tạo.">
+  <div class="site-shell">
+    <section class="hero" data-hero aria-label="Tác phẩm và phong cách trong ngày">
+      <div class="hero-visual">
+        <img data-hero-image src={base + first.images[0].src} alt={first.images[0].alt} fetchpriority="high" />
+        <div class="hero-caption"><span data-hero-caption>{first.images[0].title} · Original site illustration</span><span>G-ART / SHOWCASE</span></div>
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow" data-hero-label>TODAY’S ART JOURNEY</span>
+        <h1 class="serif" data-hero-title>{first.title}</h1>
+        <p data-hero-description>{first.description}</p>
+        <a class="hero-cta" href={base + 'explore/'}>Wander through art <span aria-hidden="true">↗</span></a>
+        <div class="hero-controls">
+          <span class="count" data-hero-count>01 / 02</span>
+          <label class="visually-hidden" for="style-picker">Chọn phong cách</label>
+          <select class="style-select" id="style-picker" data-style-select>
+            <option value="daily">Today's style</option>
+            {showcase.map(s=><option value={s.id}>{s.category === 'Pencil Art' ? s.label.replace('PENCIL ','Pencil ') : s.category}</option>)}
+          </select>
+          <button type="button" data-prev aria-label="Tác phẩm trước">←</button>
+          <button type="button" data-next aria-label="Tác phẩm tiếp">→</button>
+          <button type="button" data-pause aria-label="Tạm dừng slideshow" aria-pressed="false">Ⅱ</button>
+        </div>
+      </div>
+    </section>
+    <div class="intro-strip">
+      <h2 class="serif">A little space to <em>see, feel, and create.</em><br />Không cần vẽ thật giỏi. Chỉ cần thấy thích.</h2>
+      <p>Một cuộc dạo chơi của hai bố con qua những bức tranh, phong cách và những nét vẽ của riêng mình. Không điểm số, không áp lực — chỉ có chút bay bổng.</p>
+    </div>
+    <section class="section" aria-labelledby="collections-heading">
+      <div class="section-title-row"><div><span class="eyebrow">01 / DISCOVER</span><h2 class="serif" id="collections-heading">Wander through art</h2></div><a class="subtle-link" href={base + 'explore/'}>Explore all collections ↗</a></div>
+      <div class="collection-grid">
+        {collections.map(item=><a class="collection-card" href={base + item.link}><div class="art-frame"><img src={base + item.image} alt={'Minh họa '+item.subtitle} loading="lazy" /></div><div class="meta"><span>{item.number} / COLLECTION</span><span>— {item.subtitle}</span></div><h3>{item.title}</h3><p>{item.description}</p><span class="arrow" aria-hidden="true">↗</span></a>)}
+      </div>
+    </section>
+    <section class="editorial-banner">
+      <div class="banner-art"><img src={base + 'showcase/pencil-landscape-2.svg'} alt="Minh họa phong cảnh đường phố bằng chì" loading="lazy" /></div>
+      <div class="banner-text"><span class="eyebrow">A NOTE FROM OUR SKETCHBOOK</span><h2 class="serif">Some moments<br/><em>belong on paper.</em></h2><p>Đôi khi chỉ là một ngọn núi, một góc phố, hay khuôn mặt mình muốn nhớ. Vẽ lại, theo cách của mình.</p><a class="subtle-link" href={base + 'guides/#landscape'}>Explore pencil landscapes ↗</a></div>
+    </section>
+    <section class="section" aria-labelledby="guides-heading">
+      <div class="section-title-row"><div><span class="eyebrow">02 / TRY SOMETHING</span><h2 class="serif" id="guides-heading">A few drawing guides</h2></div><a class="subtle-link" href={base + 'guides/'}>All guides ↗</a></div>
+      <div class="guide-grid">{guides.slice(0,3).map(g=><a class="guide-card" href={base + 'guide/' + g.slug + '/'}><img src={base + g.image} alt={'Minh họa cho '+g.title} loading="lazy" /><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>Explore ↗</span></div></div></a>)}</div>
+    </section>
+  </div>
+  <section class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">03 / OUR LITTLE GALLERY</span><h2 class="serif">A place for the<br/><em>things we make.</em></h2><p>Một nơi cất những nét chì đầu tiên, những nhân vật tự nghĩ ra, hay bức phong cảnh vẽ trong một buổi chiều. Không phải để đánh giá. Chỉ đơn giản là thích.</p><a class="hero-cta" href={base + 'gallery/'}>Visit our gallery <span aria-hidden="true">↗</span></a></div><div class="gallery-art"><img src={base + 'showcase/character-2.svg'} alt="Minh họa nhân vật" loading="lazy"/><img src={base + 'showcase/pencil-portrait-2.svg'} alt="Minh họa chân dung chì" loading="lazy"/></div></div></section>
+  <script>import '../scripts/home.js';</script>
+</Base>

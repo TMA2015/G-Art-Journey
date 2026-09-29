@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { collections } from '../data/content.mjs';
+const base = import.meta.env.BASE_URL;
+---
+<Base title="Explore Art" description="Dạo chơi qua những chất liệu, phong cách và chủ đề vẽ yêu thích.">
+  <div class="site-shell">
+    <header class="page-hero"><div class="topline eyebrow">01 / EXPLORE ART</div><h1 class="serif">Find something<br/><em>you love.</em></h1><p>Không phải một bảo tàng học thuật. Chỉ là những cánh cửa nhỏ dẫn đến nét chì, màu nước, nhân vật và thế giới minh họa mà bạn yêu thích.</p></header>
+    <div class="explore-grid">
+      {collections.map(c=><a class="explore-tile" href={base + c.link}><img src={base + c.image} alt={'Minh họa '+c.subtitle} loading="lazy"/><div class="tile-text"><span class="eyebrow">{c.number} / {c.subtitle}</span><h2>{c.title} ↗</h2><p>{c.description}</p></div></a>)}
+    </div>
+    <div class="note-banner">Những hình trên hiện là minh họa nguyên bản phục vụ bố cục website, chưa phải tác phẩm của gia đình hay tranh của nghệ sĩ bên ngoài. Về sau, chúng ta sẽ bổ sung tác phẩm và thông tin nguồn/quyền sử dụng rõ ràng.</div>
+  </div>
+</Base>
