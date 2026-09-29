@@ -48,7 +48,7 @@ const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(
   </section>
   <section id="drawing-guides" class="section" aria-labelledby="guides-heading">
    <div class="section-title-row"><div><span class="eyebrow">{t.home.guideTag}</span><h2 class="serif" id="guides-heading">{t.home.guideTitle}</h2></div><a class="subtle-link" href={url('human-drawing/')}>Explore Human Drawing ↗</a></div>
-   <div class="guide-grid home-approved-guides">{featuredGuides.map(g=><a class="guide-card poster-card" href={url('guide/'+g.slug+'/')}><img src={base+g.image} alt={g.posterAlt||g.title} loading="lazy" width={g.posterWidth||1122} height={g.posterHeight||1402}/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.home.openGuide}</span></div></div></a>)}</div>
+   <div class="guide-grid home-approved-guides">{featuredGuides.map(g=><a class="guide-card poster-card" href={url('guide/'+g.slug+'/')}><div class="home-guide-media"><img src={base+g.image} alt={g.posterAlt||g.title} loading="lazy" decoding="async" width={g.posterWidth||1122} height={g.posterHeight||1402}/></div><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.home.openGuide}</span></div></div></a>)}</div>
   </section>
 
  </div>
