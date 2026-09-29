@@ -10,6 +10,118 @@
   },
   "guides": [
     {
+      "slug": "draw-a-pencil-portrait",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "portrait-shape-landmarks",
+      "visibleEvidence": "Build a portrait using height, width, landmark placements and an initial value plan.",
+      "stageFocus": [
+        "head-width-height",
+        "centerline",
+        "feature-placement",
+        "initial-value-plan",
+        "selective-detail"
+      ]
+    },
+    {
+      "slug": "draw-a-pencil-landscape",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "mountain-lake-composition",
+      "visibleEvidence": "Plan mountains, shore and water reflections in an outdoor landscape.",
+      "stageFocus": [
+        "waterline",
+        "mountain-masses",
+        "near-far-layers",
+        "horizontal-reflections",
+        "landscape-focus"
+      ]
+    },
+    {
+      "slug": "draw-a-manga-face",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manga-foundation-construction",
+      "visibleEvidence": "Use a base head, chin and eye line to sketch a simple manga-inspired face.",
+      "stageFocus": [
+        "head-volume",
+        "jaw-design",
+        "eye-placement",
+        "hair-groups",
+        "expression-refinement"
+      ]
+    },
+    {
+      "slug": "watercolor-first-flower",
+      "status": "published",
+      "family": "watercolor",
+      "primarySkill": "first-flower-transparent-wash",
+      "visibleEvidence": "Paint a simple flower with an initial transparent wash and a dry glaze.",
+      "stageFocus": [
+        "color-water-test",
+        "light-outline",
+        "first-wash",
+        "dry-glaze",
+        "leaves-detail"
+      ]
+    },
+    {
+      "slug": "digital-color-layers",
+      "status": "published",
+      "family": "digital",
+      "primarySkill": "layer-organization",
+      "visibleEvidence": "Learn the roles of sketch, base, shadow and highlight layers in an app.",
+      "stageFocus": [
+        "sketch-layer",
+        "flat-color-layer",
+        "shadow-layer",
+        "highlight-layer",
+        "layer-toggle"
+      ]
+    },
+    {
+      "slug": "shade-a-pencil-portrait",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "portrait-tonal-modeling",
+      "visibleEvidence": "Use graphite to shade cheek, nose and eyes from a chosen light source.",
+      "stageFocus": [
+        "light-direction",
+        "shadow-groups",
+        "middle-tone",
+        "reserved-highlights",
+        "pencil-edge-control"
+      ]
+    },
+    {
+      "slug": "four-character-face-approaches",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "cross-style-character-exploration",
+      "visibleEvidence": "Compare how a common head can be interpreted with several different graphic approaches.",
+      "stageFocus": [
+        "shared-head-shape",
+        "feature-style-comparison",
+        "ink-vs-soft-line",
+        "expression-comparison",
+        "personal-style-mix"
+      ]
+    },
+    {
+      "slug": "color-a-face-in-layers",
+      "status": "published",
+      "family": "digital",
+      "primarySkill": "skin-color-layering",
+      "visibleEvidence": "Apply base skin color, one shadow, soft warmth and small highlights.",
+      "stageFocus": [
+        "skin-flat",
+        "directional-shadow",
+        "blush-layer",
+        "skin-highlight",
+        "before-after-layer-toggle"
+      ]
+    },
+    {
       "slug": "face-basics",
       "status": "published",
       "family": "face",
