@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2040 900" role="img" aria-labelledby="title desc">
+<title id="title">A pencil portrait in five consistent stages</title>
+<desc id="desc">Five original graphite-style diagrams show the same young adult face progressing from oval and guide lines to features, hair, shading and final details.</desc>
+<defs><pattern id="paper" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="6" cy="9" r=".65" fill="#706b62" opacity=".12"/><circle cx="19" cy="20" r=".5" fill="#706b62" opacity=".1"/></pattern><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f7f3ea"/><stop offset="1" stop-color="#eee6da"/></linearGradient></defs>
+<rect width="2040" height="900" fill="url(#bg)"/><rect width="2040" height="900" fill="url(#paper)"/>
+<text x="65" y="80" font-family="Georgia,serif" font-size="52" fill="#443d3b">A Portrait, One Step at a Time</text>
+<text x="66" y="119" font-family="Arial,sans-serif" font-size="20" fill="#80746c" letter-spacing="3">THE SAME FACE, FROM FIRST LINE TO FINAL DETAIL</text>
+<path d="M65 143 H1973" stroke="#b8a89b" stroke-width="2"/>
+<g transform="translate(64 0)">
+ <rect x="0" y="165" width="356" height="678" rx="12" fill="#fffdf8" stroke="#d5c9bc" stroke-width="2"/>
+ <text x="23" y="211" font-family="Georgia,serif" font-size="27" fill="#555049">01 / Find the head shape</text>
+ <path d="M23 232 H333" stroke="#d1c4b6" stroke-width="1.6"/>
+ <g><ellipse cx="178" cy="352" rx="67" ry="99" fill="none" stroke="#aba59b" stroke-width="1.5"/><g stroke="#b77e87" stroke-width="1.6" opacity=".8" stroke-dasharray="7 8"><path d="M178 263 V463 M115 350 Q178 343 241 350 M143 405 H213"/></g></g>
+ <path d="M22 651 H334" stroke="#d5cabe" stroke-width="1.7"/>
+ <text x="23" y="694" font-family="Arial,sans-serif" font-size="19" fill="#746b61">A light oval and center line.</text>
+ <text x="23" y="732" font-family="Arial,sans-serif" font-size="17" fill="#8a8075">No details yet</text>
+ </g>
+<g transform="translate(452 0)">
+ <rect x="0" y="165" width="356" height="678" rx="12" fill="#fffdf8" stroke="#d5c9bc" stroke-width="2"/>
+ <text x="23" y="211" font-family="Georgia,serif" font-size="27" fill="#555049">02 / Place the features</text>
+ <path d="M23 232 H333" stroke="#d1c4b6" stroke-width="1.6"/>
+ <g><path d="M178 255 C134 255 113 283 111 336 C108 382 134 443 178 462 C221 443 247 382 244 336 C241 282 221 255 178 255 Z" fill="none" stroke="#766e64" stroke-width="3.2"/><g stroke="#b77e87" stroke-width="1.6" opacity=".45" stroke-dasharray="7 8"><path d="M178 263 V463 M115 350 Q178 343 241 350 M143 405 H213"/></g><g stroke="#655f58" stroke-linecap="round" fill="none" stroke-width="2.6">
+ <path d="M134 347 Q147 338 164 346 M192 345 Q211 337 226 346"/>
+ <path d="M134 351 Q149 362 164 350 M193 351 Q209 361 225 350"/>
+ <path d="M178 353 Q170 377 175 391 L183 393"/>
+ <path d="M156 415 Q179 426 201 415" />
+ </g></g>
+ <path d="M22 651 H334" stroke="#d5cabe" stroke-width="1.7"/>
+ <text x="23" y="694" font-family="Arial,sans-serif" font-size="19" fill="#746b61">Eyes, nose and mouth first.</text>
+ <text x="23" y="732" font-family="Arial,sans-serif" font-size="17" fill="#8a8075">Check the spacing</text>
+ </g>
+<g transform="translate(840 0)">
+ <rect x="0" y="165" width="356" height="678" rx="12" fill="#fffdf8" stroke="#d5c9bc" stroke-width="2"/>
+ <text x="23" y="211" font-family="Georgia,serif" font-size="27" fill="#555049">03 / Group the hair</text>
+ <path d="M23 232 H333" stroke="#d1c4b6" stroke-width="1.6"/>
+ <g><path d="M178 255 C134 255 113 283 111 336 C108 382 134 443 178 462 C221 443 247 382 244 336 C241 282 221 255 178 255 Z" fill="none" stroke="#766e64" stroke-width="3.2"/><g stroke="#b77e87" stroke-width="1.6" opacity=".45" stroke-dasharray="7 8"><path d="M178 263 V463 M115 350 Q178 343 241 350 M143 405 H213"/></g><path d="M111 355 Q97 296 132 257 Q158 229 197 244 Q235 231 250 286 Q264 317 244 369 Q241 302 226 292 Q207 311 168 288 Q149 316 117 334Z" fill="#b8aea2" fill-opacity=".24" stroke="#6a645c" stroke-width="3"/>
+ <path d="M128 263 Q109 313 120 376 M214 254 Q247 291 241 345 M146 261 Q165 285 195 287" fill="none" stroke="#726b62" stroke-width="2.5"/><path d="M145 449 L144 488 Q177 510 211 486 L210 448" fill="none" stroke="#736b63" stroke-width="2.4"/>
+ <path d="M143 480 Q83 498 66 590 M210 480 Q267 495 294 591 M70 591 Q173 609 291 590" fill="none" stroke="#7f776d" stroke-width="3.2"/><g stroke="#655f58" stroke-linecap="round" fill="none" stroke-width="2.6">
+ <path d="M134 347 Q147 338 164 346 M192 345 Q211 337 226 346"/>
+ <path d="M134 351 Q149 362 164 350 M193 351 Q209 361 225 350"/>
+ <path d="M178 353 Q170 377 175 391 L183 393"/>
+ <path d="M156 415 Q179 426 201 415" />
+ </g></g>
+ <path d="M22 651 H334" stroke="#d5cabe" stroke-width="1.7"/>
+ <text x="23" y="694" font-family="Arial,sans-serif" font-size="19" fill="#746b61">Think in big hair shapes.</text>
+ <text x="23" y="732" font-family="Arial,sans-serif" font-size="17" fill="#8a8075">Same face, same angle</text>
+ </g>
+<g transform="translate(1228 0)">
+ <rect x="0" y="165" width="356" height="678" rx="12" fill="#fffdf8" stroke="#d5c9bc" stroke-width="2"/>
+ <text x="23" y="211" font-family="Georgia,serif" font-size="27" fill="#555049">04 / Build soft shadows</text>
+ <path d="M23 232 H333" stroke="#d1c4b6" stroke-width="1.6"/>
+ <g><path d="M178 255 C134 255 113 283 111 336 C108 382 134 443 178 462 C221 443 247 382 244 336 C241 282 221 255 178 255 Z" fill="#efe8dc" stroke="#766e64" stroke-width="3.2"/><path d="M187 287 Q239 293 239 354 Q230 415 179 453 Q218 437 241 380 Q248 305 212 273Z" fill="#847c72" opacity=".15"/>
+ <path d="M181 392 Q209 391 221 407 L211 429 Q191 432 177 418" fill="#6c675e" opacity=".13"/>
+ <path d="M144 459 Q175 480 209 452 L211 484 Q173 502 144 483Z" fill="#615c55" opacity=".18"/>
+ <path d="M117 332 Q124 386 147 411 L129 383Z" fill="#777067" opacity=".12"/>
+ <path d="M190 254 Q228 261 244 304 Q219 285 204 282Z" fill="#4d4c47" opacity=".22"/><path d="M111 355 Q97 296 132 257 Q158 229 197 244 Q235 231 250 286 Q264 317 244 369 Q241 302 226 292 Q207 311 168 288 Q149 316 117 334Z" fill="#6f6962" fill-opacity=".77" stroke="#6a645c" stroke-width="3"/>
+ <path d="M128 263 Q109 313 120 376 M214 254 Q247 291 241 345 M146 261 Q165 285 195 287" fill="none" stroke="#726b62" stroke-width="2.5"/><path d="M145 449 L144 488 Q177 510 211 486 L210 448" fill="none" stroke="#736b63" stroke-width="2.4"/>
+ <path d="M143 480 Q83 498 66 590 M210 480 Q267 495 294 591 M70 591 Q173 609 291 590" fill="none" stroke="#7f776d" stroke-width="3.2"/><g stroke="#655f58" stroke-linecap="round" fill="none" stroke-width="2.6">
+ <path d="M134 347 Q147 338 164 346 M192 345 Q211 337 226 346"/>
+ <path d="M134 351 Q149 362 164 350 M193 351 Q209 361 225 350"/>
+ <path d="M178 353 Q170 377 175 391 L183 393"/>
+ <path d="M156 415 Q179 426 201 415" />
+ </g><g stroke="#66645e" stroke-width="1.45" stroke-linecap="round" opacity=".45">
+ <path d="M208 365 l-12 8"/><path d="M213 365 l-14 11"/><path d="M218 365 l-16 8"/><path d="M223 365 l-12 11"/><path d="M228 365 l-14 8"/><path d="M208 376 l-16 11"/><path d="M213 376 l-12 8"/><path d="M218 376 l-14 11"/>
+ <path d="M125 381 l11 5"/><path d="M133 381 l11 5"/><path d="M141 381 l11 5"/><path d="M149 381 l11 5"/><path d="M125 391 l11 5"/>
+ </g></g>
+ <path d="M22 651 H334" stroke="#d5cabe" stroke-width="1.7"/>
+ <text x="23" y="694" font-family="Arial,sans-serif" font-size="19" fill="#746b61">Add light, middle and dark.</text>
+ <text x="23" y="732" font-family="Arial,sans-serif" font-size="17" fill="#8a8075">Keep highlights white</text>
+ </g>
+<g transform="translate(1616 0)">
+ <rect x="0" y="165" width="356" height="678" rx="12" fill="#fffdf8" stroke="#d5c9bc" stroke-width="2"/>
+ <text x="23" y="211" font-family="Georgia,serif" font-size="27" fill="#555049">05 / Add gentle details</text>
+ <path d="M23 232 H333" stroke="#d1c4b6" stroke-width="1.6"/>
+ <g><path d="M178 255 C134 255 113 283 111 336 C108 382 134 443 178 462 C221 443 247 382 244 336 C241 282 221 255 178 255 Z" fill="#efe8dc" stroke="#766e64" stroke-width="3.2"/><path d="M187 287 Q239 293 239 354 Q230 415 179 453 Q218 437 241 380 Q248 305 212 273Z" fill="#847c72" opacity=".15"/>
+ <path d="M181 392 Q209 391 221 407 L211 429 Q191 432 177 418" fill="#6c675e" opacity=".13"/>
+ <path d="M144 459 Q175 480 209 452 L211 484 Q173 502 144 483Z" fill="#615c55" opacity=".18"/>
+ <path d="M117 332 Q124 386 147 411 L129 383Z" fill="#777067" opacity=".12"/>
+ <path d="M190 254 Q228 261 244 304 Q219 285 204 282Z" fill="#4d4c47" opacity=".22"/><path d="M111 355 Q97 296 132 257 Q158 229 197 244 Q235 231 250 286 Q264 317 244 369 Q241 302 226 292 Q207 311 168 288 Q149 316 117 334Z" fill="#6f6962" fill-opacity=".77" stroke="#6a645c" stroke-width="3"/>
+ <path d="M128 263 Q109 313 120 376 M214 254 Q247 291 241 345 M146 261 Q165 285 195 287" fill="none" stroke="#726b62" stroke-width="2.5"/><path d="M145 449 L144 488 Q177 510 211 486 L210 448" fill="none" stroke="#736b63" stroke-width="2.4"/>
+ <path d="M143 480 Q83 498 66 590 M210 480 Q267 495 294 591 M70 591 Q173 609 291 590" fill="none" stroke="#7f776d" stroke-width="3.2"/><g stroke="#655f58" stroke-linecap="round" fill="none" stroke-width="3.3">
+ <path d="M134 347 Q147 338 164 346 M192 345 Q211 337 226 346"/>
+ <path d="M134 351 Q149 362 164 350 M193 351 Q209 361 225 350"/>
+ <path d="M178 353 Q170 377 175 391 L183 393"/>
+ <path d="M156 415 Q179 426 201 415" />
+ </g><g fill="#55534e"><ellipse cx="149" cy="351" rx="3.6" ry="4.3"/><ellipse cx="209" cy="350" rx="3.6" ry="4.3"/></g><g fill="none" stroke="#93847b" stroke-width="1.8"><path d="M136 337 Q150 330 164 339 M194 337 Q209 330 224 337"/></g><g stroke="#66645e" stroke-width="1.45" stroke-linecap="round" opacity=".45">
+ <path d="M208 365 l-12 8"/><path d="M213 365 l-14 11"/><path d="M218 365 l-16 8"/><path d="M223 365 l-12 11"/><path d="M228 365 l-14 8"/><path d="M208 376 l-16 11"/><path d="M213 376 l-12 8"/><path d="M218 376 l-14 11"/><path d="M223 376 l-16 8"/><path d="M228 376 l-12 11"/><path d="M208 387 l-14 8"/><path d="M213 387 l-16 11"/><path d="M218 387 l-12 8"/><path d="M223 387 l-14 11"/><path d="M228 387 l-16 8"/><path d="M208 398 l-12 11"/><path d="M213 398 l-14 8"/><path d="M218 398 l-16 11"/>
+ <path d="M125 381 l11 5"/><path d="M133 381 l11 5"/><path d="M141 381 l11 5"/><path d="M149 381 l11 5"/><path d="M125 391 l11 5"/><path d="M133 391 l11 5"/><path d="M141 391 l11 5"/><path d="M149 391 l11 5"/><path d="M125 401 l11 5"/><path d="M133 401 l11 5"/><path d="M141 401 l11 5"/><path d="M149 401 l11 5"/>
+ </g><g stroke="#5e5b56" fill="none" stroke-linecap="round">
+ <path d="M143 366 Q149 371 160 366 M197 366 Q208 369 219 365" stroke-width="1.5"/>
+ <path d="M160 421 Q178 430 199 420" stroke-width="1.5"/>
+ <path d="M121 317 Q124 279 150 258 M229 283 Q243 319 235 355" stroke-width="2"/>
+ <path d="M82 557 Q109 523 140 514 M214 514 Q251 521 273 557" stroke-width="2"/>
+ </g>
+ <g fill="#fcf9f1" opacity=".7"><ellipse cx="144" cy="381" rx="10" ry="5" transform="rotate(-18 144 381)"/><ellipse cx="191" cy="373" rx="11" ry="5" transform="rotate(-20 191 373)"/></g></g>
+ <path d="M22 651 H334" stroke="#d5cabe" stroke-width="1.7"/>
+ <text x="23" y="694" font-family="Arial,sans-serif" font-size="19" fill="#746b61">Sharpen only a few edges.</text>
+ <text x="23" y="732" font-family="Arial,sans-serif" font-size="17" fill="#8a8075">Then step back and look</text>
+ </g>
+<text x="65" y="879" font-family="Arial,sans-serif" font-size="16" fill="#82766e" letter-spacing="2">G-ART JOURNEY · ORIGINAL VECTOR DRAWING STUDY · NOT A PORTRAIT OF A REAL PERSON</text>
+</svg>

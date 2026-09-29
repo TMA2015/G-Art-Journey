@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import '../../styles/practical-guides.css';
+import '../../styles/portrait-sequence.css';
 import SectionNav from '../../components/SectionNav.astro';
 import {guides} from '../../data/content.mjs';
 import {getGuides} from '../../i18n/content.mjs';
@@ -15,11 +16,18 @@ const related=(guide.seeAlso||[]).map(slug=>notes.find(n=>n.slug===slug)).filter
 <Base lang={lang} title={guide.title} description={guide.description}>
  <article class="site-shell guide-article">
   <header class="page-hero"><a class="eyebrow" href={url('guides/')}>{t.guides.back} / {guide.tag}</a><h1 class="serif">{guide.title}</h1><p class="lead">{guide.description}</p></header>
-  <SectionNav lang={lang} items={[{id:'guide-picture',label:t.common.illustration},{id:'guide-steps',label:t.guides.steps},{id:'guide-note',label:t.guides.guideNote}]}/>
+  <SectionNav lang={lang} items={[{id:'guide-picture',label:t.common.illustration},...(guide.visualSequence?[{id:'portrait-sequence',label:'Visual steps'}]:[]),{id:'guide-steps',label:t.guides.steps},{id:'guide-note',label:t.guides.guideNote}]}/>
   <img id="guide-picture" class="guide-cover" src={base+guide.image} alt={guide.title}/>
+  {guide.visualSequence&&<figure id="portrait-sequence" class="portrait-sequence">
+   <img src={base+guide.visualSequence} alt="Five consecutive pencil portrait studies of the same face: outline, features, hair, shading and final details" loading="lazy"/>
+   <figcaption>
+    <span>THE SAME FACE · FIVE CLEAR STAGES</span>
+    <span class="portrait-sequence-links"><a href={base+guide.visualSequence} target="_blank" rel="noopener">View large ↗</a><a href={base+guide.visualSequence} download>Save SVG ↓</a></span>
+   </figcaption>
+  </figure>}
   <div class="lesson-grid">
    <aside class="lesson-sidebar"><span class="eyebrow">{t.guides.guideNote}</span><p>{t.guides.suggestedTime}: {guide.time}</p><p>{t.guides.supplies}: {guide.supplies}</p><p>{t.guides.free}</p><a class="subtle-link" href={url('guides/')}>{t.guides.back}</a></aside>
-   <div id="guide-steps"><span class="eyebrow">{t.guides.steps}</span><ol class="lesson-steps">{guide.steps.map(step=><li><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol><div id="guide-note" class="note-banner">{guide.image.startsWith('infographics/')?'This original diagram shows the main drawing idea. Use the steps above to try it yourself.':t.guides.placeholder}</div></div>
+   <div id="guide-steps"><span class="eyebrow">{t.guides.steps}</span><ol class="lesson-steps">{guide.steps.map(step=><li><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol><div id="guide-note" class="note-banner">{guide.visualSequence?'This five-panel study keeps the same face and angle throughout. Try the stages in order, but adjust the drawing to your own subject.':guide.image.startsWith('infographics/')?'This original diagram shows the main drawing idea. Use the steps above to try it yourself.':t.guides.placeholder}</div></div>
   </div>
   {(guide.tryIt||guide.remember||related.length>0)&&<section class="practice-followup" aria-label="Try it yourself">
    {guide.tryIt&&<div class="practice-challenge"><span class="eyebrow">A LITTLE DRAWING CHALLENGE</span><h2 class="serif">Make it your own</h2><p>{guide.tryIt}</p></div>}

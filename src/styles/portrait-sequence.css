@@ -1,0 +1,8 @@
+.portrait-sequence{margin:22px 0 34px;border:1px solid #ded3c7;background:#f7f2e8;overflow:hidden;border-radius:12px}
+.portrait-sequence img{width:100%;height:auto;display:block}
+.portrait-sequence figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 20px;background:#fffdf8;color:#756b64;font-size:11px;font-weight:700;letter-spacing:.04em}
+.portrait-sequence-links{display:flex;gap:16px;flex-wrap:wrap}
+.portrait-sequence-links a{color:#72536b;text-decoration:underline;text-underline-offset:4px;font-size:12px}
+#portrait-sequence{scroll-margin-top:165px}
+html[data-theme="playful"] .portrait-sequence{border-color:#e8d7e1;box-shadow:0 8px 26px #91627f12}
+@media(max-width:650px){.portrait-sequence{border-radius:10px}.portrait-sequence img{min-width:760px;width:100%}.portrait-sequence{overflow-x:auto}.portrait-sequence figcaption{position:sticky;left:0;width:max-content;min-width:100%}.portrait-sequence-links{gap:10px}}
