@@ -36,3 +36,7 @@ Brand mark is reused from the owner's G Learning identity, while G-Art Journey h
 ## Language direction (v0.5)
 
 English is the only active public language, at the canonical root URL. Existing `/en/` addresses remain as English aliases for older links. The VN/EN switch is deliberately hidden, and the previous Vietnamese content dictionary and translated image assets are retained in source for a future, independently reviewed `/vi/` release. There is no auto-translation of family artworks. See [docs/ENGLISH_FIRST.md](docs/ENGLISH_FIRST.md).
+
+## One-platform image monitoring
+
+Images stay in GitHub. Each build reports asset counts, large images and published-site size in the GitHub Actions job summary. No images are rejected or altered automatically. See [docs/ASSET_POLICY.md](docs/ASSET_POLICY.md). Run locally after `npm run build` with `npm run audit:assets`.

@@ -28,6 +28,10 @@ jobs:
         run: npm run build
       - name: Verify both language builds
         run: node scripts/verify-build.mjs
+      - name: Audit image budget (advisory)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run audit:assets
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
