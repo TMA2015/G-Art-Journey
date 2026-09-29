@@ -22,13 +22,17 @@ test('all linked note slugs and referenced images resolve',async()=>{
  for(const note of visualNotes)await access('public/'+note.image);
  assert.equal(visualNotes.length,4);
 });
-test('new original diagrams have readable labels and five stages',async()=>{
- for(const slug of ['figure-simple-shapes','landscape-depth']){
+test('replaced diagrams have safe destinations with approved posters',async()=>{
+ for(const [slug,guide] of [['head-construction','face-basics'],['figure-simple-shapes','standing-figure'],['landscape-depth','street-with-depth']]){
   const note=visualNotes.find(n=>n.slug===slug);
-  assert.ok(note);assert.equal(note.steps.length,5);
-  const svg=await readFile('public/'+note.image,'utf8');
-  assert.match(svg,/<title id="t">/);assert.match(svg,/<desc id="d">/);assert.match(svg,/ORIGINAL EDUCATIONAL DIAGRAM/);
+  assert.ok(note.retired);
+  assert.equal(note.replacementGuide,guide);
+  await access('public/'+note.image);
  }
+ const oldFigure=guides.find(g=>g.slug==='figure-from-simple-shapes');
+ const oldStreet=guides.find(g=>g.slug==='street-with-depth');
+ assert.ok(oldFigure.retired);
+ assert.ok(oldStreet.artPending);
 });
 test('English-first getters expose new guide and note routes',()=>{
  assert.equal(getGuides('en').length,guides.length);

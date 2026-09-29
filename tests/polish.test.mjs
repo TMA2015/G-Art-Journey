@@ -4,23 +4,29 @@ import { readFile, stat } from 'node:fs/promises';
 import { visualNotes } from '../src/data/visual-notes.mjs';
 const load = p => readFile(p,'utf8');
 
-test('both educational posters exist and have accessible SVG labels', async()=>{
-  assert.equal(visualNotes.length,4);
-  for(const n of visualNotes){
-    const svg=await load('public/'+n.image);
-    assert.match(svg,/<svg[^>]+viewBox=/);
-    assert.match(svg,/<title id="t">/);
-    assert.match(svg,/<desc id="d">/);
-    assert.ok(n.steps.length>=5);
-    assert.ok(n.steps.every(s=>s.title&&s.body));
-  }
+test('legacy notes are retired without losing stable old URLs', async()=>{
+ assert.equal(visualNotes.length,4);
+ const current=visualNotes.filter(n=>!n.retired);
+ assert.deepEqual(current.map(n=>n.slug),['graphite-values']);
+ const svg=await load('public/'+current[0].image);
+ assert.match(svg,/<title/);
+ const retired=visualNotes.filter(n=>n.retired);
+ assert.equal(retired.length,3);
+ for(const note of retired){
+  assert.ok(note.replacementGuide);
+  assert.ok(note.replacementTitle);
+  await load('public/'+note.image);
+ }
 });
-test('new routes and home links are present',async()=>{
-  const home=await load('src/pages/index.astro'),guide=await load('src/pages/guides.astro');
-  const route=await load('src/pages/notes/[slug].astro');
-  for(const page of [home,guide])assert.match(page,/notes\/\x27\+n\.slug/);
-  assert.match(route,/getStaticPaths/);
-  assert.match(route,/download/);
+test('approved posters are featured and old diagrams are not listed',async()=>{
+ const home=await load('src/pages/index.astro'),catalog=await load('src/pages/guides.astro'),notes=await load('src/pages/notes/index.astro'),route=await load('src/pages/notes/[slug].astro');
+ assert.match(home,/featuredGuides\.map/);
+ assert.doesNotMatch(home,/visualNotes\.map/);
+ assert.match(catalog,/!g\.retired&&!g\.artPending/);
+ assert.doesNotMatch(catalog,/visualNotes\.map/);
+ assert.match(notes,/filter\(note=>!note\.retired\)/);
+ assert.match(route,/getStaticPaths/);
+ assert.match(route,/note\.replacementGuide/);
 });
 test('playful background uses local asset and preserves studio theme',async()=>{
   const layout=await load('src/layouts/Base.astro'),css=await load('src/styles/polish.css');

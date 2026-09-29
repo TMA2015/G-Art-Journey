@@ -3,10 +3,11 @@ import Base from '../../layouts/Base.astro';
 import '../../styles/visual-notes.css';
 import {getVisualNotes} from '../../i18n/notes.mjs';
 import {ui,language} from '../../i18n/ui.mjs';
-const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path,visualNotes=getVisualNotes(lang);
+const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path,visualNotes=getVisualNotes(lang).filter(note=>!note.retired);
 ---
 <Base lang={lang} title={t.notes.tag} description={t.notes.intro}>
  <div class="site-shell visual-note-list"><header class="page-hero"><div class="topline eyebrow">{t.notes.tag}</div><h1 class="serif">{t.notes.title}</h1><p>{t.notes.intro}</p></header>
+  <p class="visual-archive-intro">The face and figure lessons have moved into our new illustrated collection. <a href={url('human-drawing/')}>Explore Human Drawing ↗</a></p>
   <div class="visual-note-grid">{visualNotes.map(n=><a class="visual-note-card" href={url('notes/'+n.slug+'/')}><img src={base+n.image} alt={n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h2 class="serif">{n.title} ↗</h2><p>{n.description}</p></div></a>)}</div>
  </div>
 </Base>

@@ -11,3 +11,9 @@
 html[data-theme="playful"] .practice-followup>div{border-radius:17px}
 #guide-picture,#guide-steps,#guide-note{scroll-margin-top:170px}
 @media(max-width:690px){.practice-followup{grid-template-columns:1fr}.practice-related{grid-column:auto}.practice-followup>div{padding:21px}}
+
+/* Legacy links remain useful without resurfacing superseded illustrations. */
+.guide-article .retired-note,.guide-article .pending-art-note{background:#fbf3ed;border:1px solid #e9d7dc;border-radius:18px;padding:clamp(23px,4vw,45px);margin:24px 0 58px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;max-width:920px}
+.guide-article .retired-note h2,.guide-article .pending-art-note h2{font-size:clamp(26px,3.5vw,40px);line-height:1.27;margin:0}
+.guide-article .retired-note p,.guide-article .pending-art-note p{font-size:14px;line-height:1.8;color:#756b65;max-width:650px}
+.guide-article .retired-note .hero-cta{margin-top:7px}

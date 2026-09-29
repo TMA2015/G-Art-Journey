@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import SectionNav from '../components/SectionNav.astro';
+import '../styles/human-batch.css';
 import {getShowcase,getCollections,getGuides} from '../i18n/content.mjs';
-import {getVisualNotes} from '../i18n/notes.mjs';
 import {ui,language} from '../i18n/ui.mjs';
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
-const showcase=getShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),visualNotes=getVisualNotes(lang),first=showcase[0];
-const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',label:t.home.guideTitle},{id:'visual-notes',label:t.home.visualTitle},{id:'family-gallery',label:t.nav.gallery}];
+const showcase=getShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),first=showcase[0];
+const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',label:t.home.guideTitle},{id:'family-gallery',label:t.nav.gallery}];
+const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(slug=>guides.find(g=>g.slug===slug));
 ---
 <Base lang={lang} title="G-Art Journey" description={t.common.siteDescription}>
  <div class="site-shell">
@@ -46,13 +47,10 @@ const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',lab
    <div class="banner-text"><span class="eyebrow">{t.home.sketchTag}</span><h2 class="serif">{t.home.sketchTitle}</h2><p>{t.home.sketchDesc}</p><a class="subtle-link" href={url('guides/#landscape')}>{t.home.sketchCTA}</a></div>
   </section>
   <section id="drawing-guides" class="section" aria-labelledby="guides-heading">
-   <div class="section-title-row"><div><span class="eyebrow">{t.home.guideTag}</span><h2 class="serif" id="guides-heading">{t.home.guideTitle}</h2></div><a class="subtle-link" href={url('guides/')}>{t.home.allGuides}</a></div>
-   <div class="guide-grid">{guides.slice(0,3).map(g=><a class="guide-card" href={url('guide/'+g.slug+'/')}><img src={base+g.image} alt={g.title} loading="lazy"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.home.openGuide}</span></div></div></a>)}</div>
+   <div class="section-title-row"><div><span class="eyebrow">{t.home.guideTag}</span><h2 class="serif" id="guides-heading">{t.home.guideTitle}</h2></div><a class="subtle-link" href={url('human-drawing/')}>Explore Human Drawing ↗</a></div>
+   <div class="guide-grid home-approved-guides">{featuredGuides.map(g=><a class="guide-card poster-card" href={url('guide/'+g.slug+'/')}><img src={base+g.image} alt={g.posterAlt||g.title} loading="lazy" width={g.posterWidth||1122} height={g.posterHeight||1402}/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.home.openGuide}</span></div></div></a>)}</div>
   </section>
-  <section id="visual-notes" class="section" aria-labelledby="notes-heading">
-   <div class="section-title-row"><div><span class="eyebrow">{t.home.visualTag}</span><h2 class="serif" id="notes-heading">{t.home.visualTitle}</h2></div><a class="subtle-link" href={url('notes/')}>{t.home.allNotes}</a></div>
-   <div class="visual-note-teaser">{visualNotes.map(n=><a href={url('notes/'+n.slug+'/')}><img src={base+n.image} alt={n.title} loading="lazy"/><div><span class="eyebrow">{n.number} / {n.tag}</span><h3 class="serif">{n.title} ↗</h3><p>{n.description}</p></div></a>)}</div>
-  </section>
+
  </div>
  <section id="family-gallery" class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">{t.home.galleryTag}</span><h2 class="serif">{t.home.galleryTitle}</h2><p>{t.home.galleryDesc}</p><a class="hero-cta" href={url('gallery/')}>{t.home.galleryLink}</a></div><div class="gallery-art"><img src={base+(lang==='en'?'showcase/character-2.svg':'showcase/vi/character-2.svg')} alt={lang==='vi'?'Nhân vật minh họa':'Character illustration'} loading="lazy"/><img src={base+(lang==='en'?'showcase/pencil-portrait-2.svg':'showcase/vi/pencil-portrait-2.svg')} alt={lang==='vi'?'Chân dung chì':'Pencil portrait'} loading="lazy"/></div></div></section>
  <script>import '../scripts/home.js';</script>

@@ -48,3 +48,7 @@ Eight original English-first illustrated guides for faces, expressions, head ang
 ## Automated batch publishing
 
 `npm run art:prepare -- --input <temporary-art-folder> --activate` optimizes and validates the full next art batch, activates its pages only when every image is present, and writes the image checksum manifest. An authorized Work/desktop environment can push the batch in one commit with Git or `node scripts/push-art-batch.mjs --branch feat/character-batch02-pipeline --push`. No original artwork or extra image-host account is required. See [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).
+
+## Introductory guide reconciliation
+
+The previous face, figure and perspective vector-only notes have been withdrawn from featured cards. Approved human-drawing posters replace the first two; old links remain friendly update pages. Landscape perspective text stays accessible while its new illustration is prepared. See [docs/LEGACY_GUIDE_RECONCILIATION.md](docs/LEGACY_GUIDE_RECONCILIATION.md).

@@ -1,9 +1,9 @@
 export const practiceGuides = [
 {
- slug:'figure-from-simple-shapes', category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
+ slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
  title:'Draw a Standing Figure with Simple Shapes',
  description:'Build a full-body pose with a movement line, a few simple forms and a steady balance.',
- image:'infographics/figure-simple-shapes.svg',
+ image:'infographics/human/standing-figure.webp',
  supplies:'Paper, HB pencil and eraser; or a basic drawing app',
  steps:[
  {title:'Find the movement',body:'Look for the main curve of the pose. Sketch one light line from the head toward the standing leg, rather than drawing a stiff stick figure.'},
@@ -34,10 +34,10 @@ export const practiceGuides = [
  seeAlso:['graphite-values','head-construction']
 },
 {
- slug:'street-with-depth',category:'landscape',tag:'PENCIL LANDSCAPE',difficulty:'Beginner',time:'30–45 min',
+ slug:'street-with-depth',artPending:true,category:'landscape',tag:'PENCIL LANDSCAPE',difficulty:'Beginner',time:'30–45 min',
  title:'Draw a Street That Feels Deep',
  description:'Use a horizon, converging lines and lighter distant details to lead the eye through a street scene.',
- image:'infographics/landscape-depth.svg',
+ image:'showcase/pencil-landscape.svg',
  supplies:'Paper, HB/2B pencils, ruler for first practice, eraser',
  steps:[
  {title:'Choose your eye level',body:'Draw a light horizontal line. This is the horizon, which shows the height of your eyes in the scene.'},
