@@ -13,7 +13,7 @@ const current=Astro.url.pathname;
 const relative=current.startsWith(base+'en/')?current.slice((base+'en/').length):current.slice(base.length);
 
 const nav=[{href:'',label:t.nav.home},{href:'explore/',label:t.nav.explore},{href:'guides/',label:t.nav.guides},{href:'gallery/',label:t.nav.gallery}];
-const active=(path)=>path==='guides/'?(relative==='guides/'||relative.startsWith('guide/')||relative.startsWith('notes/')):path==='explore/'?(relative==='explore/'||relative.startsWith('artist/')||relative.startsWith('movement/')):relative===path;
+const active=(path)=>path==='guides/'?(relative==='guides/'||relative==='human-drawing/'||relative.startsWith('guide/')||relative.startsWith('notes/')):path==='explore/'?(relative==='explore/'||relative.startsWith('artist/')||relative.startsWith('movement/')):relative===path;
 const pageDescription=description||t.common.siteDescription;
 ---
 <!doctype html>

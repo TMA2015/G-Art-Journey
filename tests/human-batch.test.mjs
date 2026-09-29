@@ -1,0 +1,46 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {guides} from '../src/data/content.mjs';
+import {humanGuides} from '../src/data/human-guides.mjs';
+import {humanAssetManifest} from '../src/data/human-assets.mjs';
+const get=path=>readFile(path,'utf8');
+test('eight unique illustrated human drawing guides with accessible poster metadata',()=>{
+ assert.equal(humanGuides.length,8);
+ assert.equal(new Set(humanGuides.map(g=>g.slug)).size,8);
+ assert.equal(humanGuides.filter(g=>g.group==='face').length,4);
+ assert.equal(humanGuides.filter(g=>g.group==='figure').length,4);
+ for(const g of humanGuides){
+  assert.ok(g.poster && g.posterAlt);
+  assert.ok(g.steps.length>=5 && g.steps.every(s=>s.title&&s.body));
+  assert.ok(g.tryIt && g.remember);
+  assert.ok(guides.some(x=>x.slug===g.slug));
+  assert.match(g.image,/^infographics\/human\/[a-z-]+\.webp$/);
+ }
+});
+test('approved original WebP artwork present, undamaged and storage-efficient',async()=>{
+ let total=0;
+ for(const asset of humanAssetManifest){
+  const bytes=await readFile('public/'+asset.path);
+  total+=bytes.length;
+  assert.equal(bytes.length,asset.bytes,asset.slug+' size');
+  assert.equal(bytes.subarray(0,4).toString(),'RIFF',asset.slug+' RIFF');
+  assert.equal(bytes.subarray(8,12).toString(),'WEBP',asset.slug+' WebP');
+  assert.ok(createHash('sha256').update(bytes).digest('hex').startsWith(asset.shaPrefix),asset.slug+' checksum');
+ }
+ assert.ok(total<3*1024*1024);
+});
+test('poster presentation preserves full image and provides two working actions',async()=>{
+ const guide=await get('src/pages/guide/[slug].astro');
+ const list=await get('src/pages/guides.astro');
+ const css=await get('src/styles/human-batch.css');
+ const page=await get('src/pages/human-drawing.astro');
+ assert.match(guide,/guide\.poster\?/);
+ assert.match(guide,/Save WebP/);
+ assert.match(guide,/View large/);
+ assert.match(css,/object-fit:contain/);
+ assert.match(list,/human-drawing\//);
+ assert.match(page,/humanGuides/);
+ await access('src/pages/en/human-drawing.astro');
+});
