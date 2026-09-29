@@ -1,0 +1,26 @@
+---
+import '../../styles/discovery.css';
+import Base from '../../layouts/Base.astro';
+import {movements,artists} from '../../data/discovery.mjs';
+export function getStaticPaths(){return movements.map(movement=>({params:{slug:movement.slug},props:{movement}}));}
+const {movement}=Astro.props;const base=import.meta.env.BASE_URL;
+---
+<Base title={movement.name} description={movement.summary}>
+ <article class="site-shell movement-page">
+  <a href={base+'explore/#movements'} class="eyebrow back-link">← EXPLORE ART / STYLES</a>
+  <header class="movement-hero" style={'--movement-color:'+movement.color}>
+   <div class="movement-hero-copy"><span class="eyebrow">{movement.period}</span><h1 class="serif">{movement.name}</h1><p class="movement-en">{movement.en}</p><p>{movement.summary}</p></div>
+   <div class="movement-hero-image"><img src={base+movement.image} alt={'Minh họa chủ đề '+movement.name}/><small>Hình minh họa chủ đề do website tạo</small></div>
+  </header>
+  <section class="infographic-detail">
+   <div><span class="eyebrow">HOW TO LOOK</span><h2 class="serif">Nhận ra bằng cách nào?</h2><p>Ba dấu hiệu để bạn có thể bắt đầu quan sát.</p></div>
+   <div class="fact-list">{movement.clues.map((c,i)=><div class="fact-row"><span>{String(i+1).padStart(2,'0')}</span><div><p>{c}</p></div></div>)}</div>
+  </section>
+  <div class="infographic-panels">
+   <section class="featured-work"><span class="eyebrow">LOOK CLOSER</span><h2 class="serif">Ngắm kỹ một chút</h2><p>{movement.look}</p><a href={movement.source} target="_blank" rel="noopener noreferrer">{movement.sourceLabel} ↗</a></section>
+   <section class="try-art"><span class="eyebrow">TRY IT YOURSELF</span><h2 class="serif">Thử một nét nhỏ</h2><p>{movement.try}</p><a href={base+'guides/'}>Xem bài hướng dẫn ↗</a></section>
+  </div>
+  <section class="related-artists"><span class="eyebrow">SOME NAMES TO KNOW</span><h2 class="serif">Các họa sĩ liên quan</h2><div>{movement.artists.map(name=>{const artist=artists.find(a=>name.includes(a.name)||a.name.includes(name));return artist?<a href={base+'artist/'+artist.slug+'/'}>{name} ↗</a>:<span>{name}</span>})}</div></section>
+  <p class="discovery-note">Các nhóm phong cách chỉ là cánh cửa tìm hiểu; một họa sĩ có thể thay đổi cách vẽ qua nhiều giai đoạn. Các tranh gốc được mở qua liên kết bảo tàng để tôn trọng nguồn và quyền sử dụng.</p>
+ </article>
+</Base>
