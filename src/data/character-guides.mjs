@@ -1,8 +1,7 @@
-// Staged content: activate only after all batch images have passed validation.
 export const characterGuides = [
   {
     "slug": "manga-face",
-    "title": "Draw a Manga-Inspired Face",
+    "title": "Draw a Manga Face",
     "description": "Explore expressive eye shapes, grouped hair and line weight using a head you already know how to construct.",
     "time": "25–35 min",
     "steps": [
@@ -34,17 +33,62 @@ export const characterGuides = [
     "difficulty": "Beginner",
     "poster": true,
     "image": "infographics/character/manga-face.webp",
-    "posterAlt": "Draw a Manga-Inspired Face — original G-Art Journey visual drawing guide",
+    "posterAlt": "Draw a Manga Face — original G-Art Journey visual drawing guide",
     "supplies": "Pencil and paper, or a basic drawing app",
-    "group": "character",
+    "group": "manga",
     "groupOrder": 0,
     "author": "G-Art Journey",
-    "artType": "original educational illustration"
+    "artType": "original educational illustration",
+    "posterWidth": 1055,
+    "posterHeight": 1491
+  },
+  {
+    "slug": "manga-variations",
+    "title": "Manga Face Variations",
+    "description": "Explore five character moods, eye shapes, hairstyles and expression ideas without repeating the basic head lesson.",
+    "time": "25–35 min",
+    "steps": [
+      {
+        "title": "Compare five face styles",
+        "body": "Notice how softer, lively, cool, elegant and playful designs communicate different character moods."
+      },
+      {
+        "title": "Explore eye shapes",
+        "body": "Compare round, calm, sparkling, sleepy and determined eyes; try mixing features."
+      },
+      {
+        "title": "Change hair and bangs",
+        "body": "Use grouped hair shapes before adding strands. Observe how bangs change the silhouette."
+      },
+      {
+        "title": "Adjust the expression",
+        "body": "Move brows, lids and mouth together to show different emotions."
+      },
+      {
+        "title": "Create your own mix",
+        "body": "Combine three features into one original character and keep the design consistent."
+      }
+    ],
+    "tryIt": "Draw three original girls, each with a different eye, hairstyle and expression combination.",
+    "remember": "These are creative manga-inspired choices, not fixed categories or required facial traits.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/manga-variations.webp",
+    "posterAlt": "Manga Face Variations — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "manga",
+    "groupOrder": 1,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1055,
+    "posterHeight": 1491
   },
   {
     "slug": "manga-figure",
-    "title": "Build a Manga-Inspired Character",
-    "description": "Turn a familiar figure sketch into a stylized character by choosing proportions, gesture and costume shape.",
+    "title": "Design a Manga Character",
+    "description": "Compare stylized head-to-body ratios, gesture and outfit shape using a new original character.",
     "time": "30–45 min",
     "steps": [
       {
@@ -75,12 +119,14 @@ export const characterGuides = [
     "difficulty": "Beginner",
     "poster": true,
     "image": "infographics/character/manga-figure.webp",
-    "posterAlt": "Build a Manga-Inspired Character — original G-Art Journey visual drawing guide",
+    "posterAlt": "Design a Manga Character — original G-Art Journey visual drawing guide",
     "supplies": "Pencil and paper, or a basic drawing app",
-    "group": "character",
-    "groupOrder": 1,
+    "group": "manga",
+    "groupOrder": 2,
     "author": "G-Art Journey",
-    "artType": "original educational illustration"
+    "artType": "original educational illustration",
+    "posterWidth": 1055,
+    "posterHeight": 1491
   },
   {
     "slug": "webtoon-character",
@@ -118,56 +164,232 @@ export const characterGuides = [
     "image": "infographics/character/webtoon-character.webp",
     "posterAlt": "Try a Webtoon-Inspired Character — original G-Art Journey visual drawing guide",
     "supplies": "Pencil and paper, or a basic drawing app",
-    "group": "character",
-    "groupOrder": 2,
+    "group": "webtoon",
+    "groupOrder": 0,
     "author": "G-Art Journey",
-    "artType": "original educational illustration"
+    "artType": "original educational illustration",
+    "posterWidth": 1055,
+    "posterHeight": 1491
   },
   {
-    "slug": "manhua-ink-character",
-    "title": "Explore Flowing Ink-Inspired Lines",
-    "description": "Try expressive line rhythm and simple clothing shapes in a fictional character.",
+    "slug": "webtoon-variations",
+    "title": "Webtoon Face Variations",
+    "description": "Compare a range of soft expressions, everyday hairstyles and subtle facial details.",
+    "time": "25–35 min",
+    "steps": [
+      {
+        "title": "Begin with a balanced face",
+        "body": "Lightly outline the head and set the direction of the eyes."
+      },
+      {
+        "title": "Compare expression choices",
+        "body": "Explore soft smile, bright smile, shy, thoughtful and lively looks."
+      },
+      {
+        "title": "Adjust hair shapes",
+        "body": "Try a short bob, loose layers and tied-back hair to change the character silhouette."
+      },
+      {
+        "title": "Study subtle details",
+        "body": "Compare light linework, blush, natural eyes and small mouth shapes."
+      },
+      {
+        "title": "Choose one character",
+        "body": "Combine details into an original face with an everyday mood."
+      }
+    ],
+    "tryIt": "Design two different everyday characters using the same initial head guide.",
+    "remember": "Webtoons use many art approaches. This poster shows one soft contemporary option.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/webtoon-variations.webp",
+    "posterAlt": "Webtoon Face Variations — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "webtoon",
+    "groupOrder": 1,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1122,
+    "posterHeight": 1402
+  },
+  {
+    "slug": "webtoon-color-story",
+    "title": "Color & Story Panels for Webtoon",
+    "description": "Learn how gentle color, light, expression and vertical panel pacing build a tiny visual story.",
     "time": "30–45 min",
     "steps": [
       {
-        "title": "Find the gesture",
-        "body": "Draw a movement line that suggests the character's energy."
+        "title": "Keep a clean sketch",
+        "body": "Check the head angle and silhouette before adding color."
       },
       {
-        "title": "Place the head and body",
-        "body": "Build readable forms under the clothing."
+        "title": "Place flat colors",
+        "body": "Fill large skin, hair, clothing and background areas first."
+      },
+      {
+        "title": "Add soft shadow",
+        "body": "Choose a light source and use gentle shadow groups to show form."
+      },
+      {
+        "title": "Add warmth and highlights",
+        "body": "Use blush and a few highlights without hiding the original flat colors."
+      },
+      {
+        "title": "Tell a story in five panels",
+        "body": "Show an everyday sequence with varied framing, time of day and expression."
+      }
+    ],
+    "tryIt": "Make a five-panel story about a character receiving a surprising message.",
+    "remember": "Panel spacing, direction and readable sequence matter as much as rendering; avoid making every panel equally dense.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/webtoon-color-story.webp",
+    "posterAlt": "Color & Story Panels for Webtoon — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "webtoon",
+    "groupOrder": 2,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1122,
+    "posterHeight": 1402
+  },
+  {
+    "slug": "manhua-ink-character",
+    "title": "Draw a Manhua-Inspired Character",
+    "description": "Design a flowing original character with an expressive pose, elaborate hair and layered clothing.",
+    "time": "30–45 min",
+    "steps": [
+      {
+        "title": "Start with a flowing gesture",
+        "body": "Build the main movement before drawing long hair or fabric."
+      },
+      {
+        "title": "Place face and body",
+        "body": "Draw the head angle and main body forms so the outfit has a clear structure."
+      },
+      {
+        "title": "Design the hair groups",
+        "body": "Use large flowing masses before adding loose strands and ornaments."
       },
       {
         "title": "Shape the outfit",
-        "body": "Let fabric follow shoulders, hips and the direction of movement."
+        "body": "Keep sleeves, hems and accessories following the character movement."
       },
       {
-        "title": "Choose light and dark areas",
-        "body": "Group dark ink marks rather than outlining every edge equally."
-      },
-      {
-        "title": "Add flowing details",
-        "body": "Use a few varied strokes for hair, fabric and accessories."
+        "title": "Refine the final illustration",
+        "body": "Add selective lines, light shading and only a few details to maintain clarity."
       }
     ],
-    "tryIt": "Draw your character with three different line weights: gentle, bold and brushlike.",
+    "tryIt": "Create a fictional character with a different silhouette and clothing flow from your other studies.",
     "remember": "Manhua spans many media and aesthetics. This is an original ink-inspired option, not a fixed national template.",
     "category": "character",
     "tag": "CHARACTER ART",
     "difficulty": "Beginner",
     "poster": true,
     "image": "infographics/character/manhua-ink-character.webp",
-    "posterAlt": "Explore Flowing Ink-Inspired Lines — original G-Art Journey visual drawing guide",
+    "posterAlt": "Draw a Manhua-Inspired Character — original G-Art Journey visual drawing guide",
     "supplies": "Pencil and paper, or a basic drawing app",
-    "group": "character",
-    "groupOrder": 3,
+    "group": "manhua",
+    "groupOrder": 0,
     "author": "G-Art Journey",
-    "artType": "original educational illustration"
+    "artType": "original educational illustration",
+    "posterWidth": 1055,
+    "posterHeight": 1491
+  },
+  {
+    "slug": "manhua-variations",
+    "title": "Manhua Face Variations",
+    "description": "Explore expressive original faces, hair ornaments and delicate design details.",
+    "time": "25–35 min",
+    "steps": [
+      {
+        "title": "Study the head and profile",
+        "body": "Start from a soft but readable head structure."
+      },
+      {
+        "title": "Try expressive variations",
+        "body": "Compare gentle, smiling, dreamy, serious and lively designs."
+      },
+      {
+        "title": "Design the hair masses",
+        "body": "Choose one updo or long flowing hairstyle before tiny strands."
+      },
+      {
+        "title": "Use selected accessories",
+        "body": "Add one small flower, ribbon or hairpin with a clear purpose."
+      },
+      {
+        "title": "Keep the silhouette readable",
+        "body": "Do not let accessories hide the main form of the head."
+      }
+    ],
+    "tryIt": "Create two original faces with different personalities and different ornaments.",
+    "remember": "Manhua covers diverse contemporary and historical-looking styles; this is one graceful illustrated approach.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/manhua-variations.webp",
+    "posterAlt": "Manhua Face Variations — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "manhua",
+    "groupOrder": 1,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1122,
+    "posterHeight": 1402
+  },
+  {
+    "slug": "manhua-ink-rhythm",
+    "title": "Flowing Hair, Fabric & Ink Rhythm",
+    "description": "Draw a moving character through flowing hair, layered fabric and varied line weight.",
+    "time": "30–45 min",
+    "steps": [
+      {
+        "title": "Follow the movement",
+        "body": "Begin with one loose gesture to guide the whole drawing."
+      },
+      {
+        "title": "Place the body and clothing",
+        "body": "Show the major forms before detail lines."
+      },
+      {
+        "title": "Draw hair flow",
+        "body": "Use long grouped strands that follow the head turn and gesture."
+      },
+      {
+        "title": "Show fabric rhythm",
+        "body": "Keep folds aligned with the arm and body movement; vary long and short curves."
+      },
+      {
+        "title": "Choose the final accents",
+        "body": "Use a few strong marks and ornaments rather than decorating every edge."
+      }
+    ],
+    "tryIt": "Draw the same character in calm air and in a gentle breeze, changing hair and sleeve flow.",
+    "remember": "An ink-inspired approach is only one possible way to draw manhua-inspired characters.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/manhua-ink-rhythm.webp",
+    "posterAlt": "Flowing Hair, Fabric & Ink Rhythm — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "manhua",
+    "groupOrder": 2,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1122,
+    "posterHeight": 1402
   },
   {
     "slug": "cartoon-shapes",
-    "title": "Make a Cartoon Character from Shapes",
-    "description": "Build a playful original character from a clear silhouette and expression.",
+    "title": "Draw a Cartoon Character",
+    "description": "Build a lively original character using readable shapes and playful proportions.",
     "time": "25–35 min",
     "steps": [
       {
@@ -198,11 +420,99 @@ export const characterGuides = [
     "difficulty": "Beginner",
     "poster": true,
     "image": "infographics/character/cartoon-shapes.webp",
-    "posterAlt": "Make a Cartoon Character from Shapes — original G-Art Journey visual drawing guide",
+    "posterAlt": "Draw a Cartoon Character — original G-Art Journey visual drawing guide",
     "supplies": "Pencil and paper, or a basic drawing app",
-    "group": "character",
-    "groupOrder": 4,
+    "group": "cartoon",
+    "groupOrder": 0,
     "author": "G-Art Journey",
-    "artType": "original educational illustration"
+    "artType": "original educational illustration",
+    "posterWidth": 1055,
+    "posterHeight": 1491
+  },
+  {
+    "slug": "cartoon-variations",
+    "title": "Cartoon Face & Shape Variations",
+    "description": "Compare round, oval, square, triangle and mixed-shape character designs.",
+    "time": "25–35 min",
+    "steps": [
+      {
+        "title": "Start with a simple shape",
+        "body": "Make a round or oval head with only basic guides."
+      },
+      {
+        "title": "Compare shape language",
+        "body": "Try round, tall, angular and mixed contours on new fictional faces."
+      },
+      {
+        "title": "Choose expressive features",
+        "body": "Use a simplified nose and mouth with clear eye shapes."
+      },
+      {
+        "title": "Try different hair silhouettes",
+        "body": "Build a short bob, long hair or playful buns as one readable mass."
+      },
+      {
+        "title": "Pick a clear outline",
+        "body": "Use a stronger outside line and keep interior detail simple."
+      }
+    ],
+    "tryIt": "Design three characters whose silhouettes are recognizable without facial details.",
+    "remember": "Shapes can suggest personality in stylized design, but they do not define real people's traits.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/cartoon-variations.webp",
+    "posterAlt": "Cartoon Face & Shape Variations — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "cartoon",
+    "groupOrder": 1,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1122,
+    "posterHeight": 1402
+  },
+  {
+    "slug": "cartoon-expression-action",
+    "title": "Cartoon Expressions & Action Poses",
+    "description": "Make a cheerful character readable through gesture, exaggerated expressions and action.",
+    "time": "25–40 min",
+    "steps": [
+      {
+        "title": "Draw one action line",
+        "body": "Use a curved gesture to show direction and energy."
+      },
+      {
+        "title": "Build the pose",
+        "body": "Place simple body shapes, joints and the supporting foot."
+      },
+      {
+        "title": "Choose facial expression",
+        "body": "Compare cheerful, curious, surprised, grumpy and sleepy designs."
+      },
+      {
+        "title": "Exaggerate movement",
+        "body": "Try jumping, running, waving, spinning and sitting with a readable silhouette."
+      },
+      {
+        "title": "Finish the character",
+        "body": "Keep the main outline bold and add small details only where they help."
+      }
+    ],
+    "tryIt": "Draw one character jumping, waving and sitting, keeping their face and outfit recognizable.",
+    "remember": "Exaggeration should strengthen action; joints and balance still need to read clearly.",
+    "category": "character",
+    "tag": "CHARACTER ART",
+    "difficulty": "Beginner",
+    "poster": true,
+    "image": "infographics/character/cartoon-expression-action.webp",
+    "posterAlt": "Cartoon Expressions & Action Poses — original G-Art Journey visual drawing guide",
+    "supplies": "Pencil, paper or a basic drawing app",
+    "group": "cartoon",
+    "groupOrder": 2,
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "posterWidth": 1122,
+    "posterHeight": 1402
   }
 ];

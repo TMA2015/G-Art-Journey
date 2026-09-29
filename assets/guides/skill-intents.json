@@ -235,7 +235,7 @@
     },
     {
       "slug": "manga-face",
-      "status": "staged",
+      "status": "published",
       "family": "character",
       "primarySkill": "manga-style-face-choices",
       "visibleEvidence": "Compare distinctive original manga-inspired feature, hair and line choices on an already constructed face.",
@@ -249,7 +249,7 @@
     },
     {
       "slug": "manga-figure",
-      "status": "staged",
+      "status": "published",
       "family": "character",
       "primarySkill": "manga-character-stylization",
       "visibleEvidence": "Compare head-unit and silhouette choices with a neutral base, not repeat generic standing construction.",
@@ -263,7 +263,7 @@
     },
     {
       "slug": "webtoon-character",
-      "status": "staged",
+      "status": "published",
       "family": "character",
       "primarySkill": "webtoon-color-and-story-panel",
       "visibleEvidence": "Show a single webtoon-inspired character through flat, shadow, warmth and panel atmosphere.",
@@ -277,21 +277,21 @@
     },
     {
       "slug": "manhua-ink-character",
-      "status": "staged",
+      "status": "published",
       "family": "character",
-      "primarySkill": "ink-stroke-rhythm",
-      "visibleEvidence": "Explore ink line weight and clustered darks on an original moving character.",
+      "primarySkill": "manhua-original-character-design",
+      "visibleEvidence": "Build one original expressive character with a distinct flowing costume and hair silhouette.",
       "stageFocus": [
-        "brush-strokes",
-        "ink-weight",
-        "costume-flow",
-        "dark-shape-group",
-        "rhythm-comparison"
+        "overall-gesture",
+        "face-and-body-form",
+        "hairstyle-mass",
+        "costume-silhouette",
+        "final-design"
       ]
     },
     {
       "slug": "cartoon-shapes",
-      "status": "staged",
+      "status": "published",
       "family": "character",
       "primarySkill": "shape-language",
       "visibleEvidence": "Explore rounded, angular and mixed silhouettes from a shared starting gesture.",
@@ -301,6 +301,104 @@
         "triangle-shape",
         "silhouette-check",
         "personality-contrast"
+      ]
+    },
+    {
+      "slug": "manga-variations",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manga-variation-library",
+      "visibleEvidence": "Compare five manga face archetype designs, eye details, hair and expression choices.",
+      "stageFocus": [
+        "face-style-comparison",
+        "eye-design-gallery",
+        "bangs-variation",
+        "expression-library",
+        "style-mix"
+      ]
+    },
+    {
+      "slug": "webtoon-variations",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "webtoon-face-variation-library",
+      "visibleEvidence": "Compare contemporary webtoon face moods and subtle feature treatments.",
+      "stageFocus": [
+        "soft-mood-variations",
+        "hair-length-choice",
+        "light-brow-adjustment",
+        "subtle-blush-design",
+        "character-selection"
+      ]
+    },
+    {
+      "slug": "webtoon-color-story",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "vertical-webtoon-storytelling",
+      "visibleEvidence": "Create a continuous five-panel sequence with flat color, lighting and readable pacing.",
+      "stageFocus": [
+        "consistent-scene-sketch",
+        "flat-color-pass",
+        "lighting-pass",
+        "panel-sequence",
+        "vertical-flow"
+      ]
+    },
+    {
+      "slug": "manhua-variations",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manhua-face-accessory-variations",
+      "visibleEvidence": "Compare original graceful face designs and ornaments.",
+      "stageFocus": [
+        "soft-face-comparison",
+        "expression-and-view",
+        "ornament-choice",
+        "long-hair-silhouette",
+        "finished-identity"
+      ]
+    },
+    {
+      "slug": "manhua-ink-rhythm",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manhua-hair-fabric-flow",
+      "visibleEvidence": "Show how hair and sleeves follow an underlying gesture with different line weight.",
+      "stageFocus": [
+        "gesture-rhythm",
+        "layered-hair-flow",
+        "sleeve-curve",
+        "fabric-overlap",
+        "selective-ink-weight"
+      ]
+    },
+    {
+      "slug": "cartoon-variations",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "cartoon-face-shape-design",
+      "visibleEvidence": "Compare cartoon face shapes, eyes, noses, hair and line weights.",
+      "stageFocus": [
+        "face-shape-gallery",
+        "eye-nose-options",
+        "mouth-styles",
+        "hair-silhouette-choices",
+        "outline-strength"
+      ]
+    },
+    {
+      "slug": "cartoon-expression-action",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "cartoon-expression-action",
+      "visibleEvidence": "Show the same character in dynamic action poses and five readable emotions.",
+      "stageFocus": [
+        "energetic-gesture",
+        "exaggerated-face",
+        "clear-joint-pose",
+        "action-silhouette",
+        "readable-emotion-set"
       ]
     }
   ]

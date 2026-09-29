@@ -1,7 +1,7 @@
 {
   "batchId": "character-02",
-  "title": "Character Styles — Visual Guides",
-  "version": 1,
+  "title": "Character Styles — 12 illustrated guides",
+  "version": 2,
   "sourceFormat": "png/jpg/webp",
   "outputDir": "public/infographics/character",
   "maxLongEdge": 1600,
@@ -14,51 +14,97 @@
       "slug": "manga-face",
       "filename": "manga-face.webp",
       "sourceName": "manga-face.png",
-      "title": "Draw a Manga-Inspired Face",
-      "palette": "soft blush pink, warm ivory, charcoal graphite",
-      "artDirection": "Five connected drawings of ONE invented face: briefly show an already-known base head, then compare three original expressive eye designs, grouped hair silhouettes, restrained line weights, and final style variations. The core lesson is stylization choices, NOT repeating basic facial proportion construction.",
-      "qualityChecks": "Show the same clearly invented adult/teen character across steps, both eyes aligned to the head turn.",
-      "position": 1
+      "title": "Draw a Manga Face",
+      "position": 1,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "manga-variations",
+      "filename": "manga-variations.webp",
+      "sourceName": "manga-variations.png",
+      "title": "Manga Face Variations",
+      "position": 2,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
     },
     {
       "slug": "manga-figure",
       "filename": "manga-figure.webp",
       "sourceName": "manga-figure.png",
-      "title": "Build a Manga-Inspired Character",
-      "palette": "cream, pale mint, warm graphite",
-      "artDirection": "Begin from an already-constructed neutral standing figure, then show head-unit ratio choices, expressive silhouette/gesture exaggeration, an original outfit shape, and one complete original stylized character. Include a side-by-side proportion comparison; do NOT repeat the basic five steps of the general standing-figure lesson.",
-      "qualityChecks": "Include whole body and feet without clipping. Keep hand count and joint connections correct.",
-      "position": 2
+      "title": "Design a Manga Character",
+      "position": 3,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
     },
     {
       "slug": "webtoon-character",
       "filename": "webtoon-character.webp",
       "sourceName": "webtoon-character.png",
       "title": "Try a Webtoon-Inspired Character",
-      "palette": "warm peach, dusty rose, muted sage",
-      "artDirection": "Five stages for the same invented character: head and body, gentle features, flowing hair and outfit, flat color groups, shadow and light. Bonus five small expressions.",
-      "qualityChecks": "Use one interpretation as a creative example, not a uniform claim about Korean artists.",
-      "position": 3
+      "position": 4,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "webtoon-variations",
+      "filename": "webtoon-variations.webp",
+      "sourceName": "webtoon-variations.png",
+      "title": "Webtoon Face Variations",
+      "position": 5,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "webtoon-color-story",
+      "filename": "webtoon-color-story.webp",
+      "sourceName": "webtoon-color-story.png",
+      "title": "Color & Story Panels for Webtoon",
+      "position": 6,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
     },
     {
       "slug": "manhua-ink-character",
       "filename": "manhua-ink-character.webp",
       "sourceName": "manhua-ink-character.png",
-      "title": "Explore Flowing Ink-Inspired Lines",
-      "palette": "ivory, ink gray, restrained pale jade",
-      "artDirection": "Five stages: gesture, head and body shapes, costume silhouette, light/dark ink masses, selective flowing linework. Five optional brush marks or fabric details.",
-      "qualityChecks": "Use a fresh fictional character and original costume design; not an attribution or imitation of a living artist's signature character.",
-      "position": 4
+      "title": "Draw a Manhua-Inspired Character",
+      "position": 7,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "manhua-variations",
+      "filename": "manhua-variations.webp",
+      "sourceName": "manhua-variations.png",
+      "title": "Manhua Face Variations",
+      "position": 8,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "manhua-ink-rhythm",
+      "filename": "manhua-ink-rhythm.webp",
+      "sourceName": "manhua-ink-rhythm.png",
+      "title": "Flowing Hair, Fabric & Ink Rhythm",
+      "position": 9,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
     },
     {
       "slug": "cartoon-shapes",
       "filename": "cartoon-shapes.webp",
       "sourceName": "cartoon-shapes.png",
-      "title": "Make a Cartoon Character from Shapes",
-      "palette": "soft apricot, muted sky blue, sage and peach",
-      "artDirection": "Five stages: choose shape language, gesture, body forms, bold outline, expression and color. Five playful but anatomically credible silhouettes.",
-      "qualityChecks": "Western comics and cartoons are varied; make an original friendly character rather than treating one design as the sole style.",
-      "position": 5
+      "title": "Draw a Cartoon Character",
+      "position": 10,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "cartoon-variations",
+      "filename": "cartoon-variations.webp",
+      "sourceName": "cartoon-variations.png",
+      "title": "Cartoon Face & Shape Variations",
+      "position": 11,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
+    },
+    {
+      "slug": "cartoon-expression-action",
+      "filename": "cartoon-expression-action.webp",
+      "sourceName": "cartoon-expression-action.png",
+      "title": "Cartoon Expressions & Action Poses",
+      "position": 12,
+      "qualityChecks": "Original character and clear distinct skill, consistent G-Art pastel style; user-approved poster."
     }
   ]
 }
