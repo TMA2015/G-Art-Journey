@@ -1,13 +1,13 @@
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {humanGuides} from '../src/data/human-guides.mjs';
+import {guides} from '../src/data/content.mjs';
 import {characterGuides} from '../src/data/character-guides.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const sourcePath=path.join(root,'assets/guides/skill-intents.json');
 
-export function auditSkillIntents(ledger,{published=humanGuides,planned=characterGuides}={}){
+export function auditSkillIntents(ledger,{published=guides.filter(g=>!g.retired&&!g.artPending),planned=characterGuides}={}){
  const problems=[];
  const all=[...published.map(g=>({slug:g.slug,status:'published'})),...planned.map(g=>({slug:g.slug,status:'staged'}))];
  const seen=new Set(), skills=new Map();
