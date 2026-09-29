@@ -6,7 +6,7 @@ import {getVisualNotes} from '../../i18n/notes.mjs';
 import {ui,language} from '../../i18n/ui.mjs';
 import '../../styles/visual-notes.css';
 export function getStaticPaths(){return visualNotes.map(note=>({params:{slug:note.slug},props:{note}}));}
-const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const note=getVisualNotes(lang).find(n=>n.slug===Astro.props.note.slug);
 ---
 <Base lang={lang} title={note.title} description={note.description}>

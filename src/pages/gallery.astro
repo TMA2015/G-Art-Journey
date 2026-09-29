@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import artwork from '../data/gallery.generated.json';
 import {ui,language} from '../i18n/ui.mjs';
-const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL;
+const lang='en',t=ui(lang),base=import.meta.env.BASE_URL;
 const ownerLabels=t.gallery.owners;
 const translateArtwork=(item,key)=>item[key+'_'+lang]||item[key];
 ---

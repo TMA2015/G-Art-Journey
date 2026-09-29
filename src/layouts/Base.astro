@@ -4,14 +4,14 @@ import '../styles/polish.css';
 import '../styles/navigation.css';
 import '../styles/section-anchor.css';
 import {ui,language} from '../i18n/ui.mjs';
-const {title='G-Art Journey',description,lang='vi'}=Astro.props;
+const {title='G-Art Journey',description,lang='en'}=Astro.props;
 const locale=language(lang), t=ui(locale);
 const base=import.meta.env.BASE_URL;
-const root=base+(locale==='en'?'en/':'');
+const root=base; // English-first canonical URL. /en/ remains a legacy alias.
 const href=(path='')=>root+path;
 const current=Astro.url.pathname;
 const relative=current.startsWith(base+'en/')?current.slice((base+'en/').length):current.slice(base.length);
-const viHref=base+relative, enHref=base+'en/'+relative;
+
 const nav=[{href:'',label:t.nav.home},{href:'explore/',label:t.nav.explore},{href:'guides/',label:t.nav.guides},{href:'gallery/',label:t.nav.gallery}];
 const active=(path)=>path==='guides/'?(relative==='guides/'||relative.startsWith('guide/')||relative.startsWith('notes/')):path==='explore/'?(relative==='explore/'||relative.startsWith('artist/')||relative.startsWith('movement/')):relative===path;
 const pageDescription=description||t.common.siteDescription;
@@ -24,8 +24,7 @@ const pageDescription=description||t.common.siteDescription;
   <meta name="theme-color" content="#f8f6f0" />
   <meta name="description" content={pageDescription} />
   <link rel="icon" type="image/svg+xml" href={base+'branding/g-art-mark.svg'}/>
-  <link rel="alternate" hreflang="vi" href={new URL(viHref,Astro.site).toString()}/>
-  <link rel="alternate" hreflang="en" href={new URL(enHref,Astro.site).toString()}/>
+  <link rel="canonical" href={new URL(base+relative,Astro.site).toString()}/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet"/>
@@ -52,10 +51,6 @@ const pageDescription=description||t.common.siteDescription;
       </nav>
     </details>
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label={locale==='vi'?'Bật giao diện vui tươi':'Switch to playful theme'}>✿ <span data-theme-label>{t.nav.themePlayful}</span></button>
-    <nav class="language-switch" data-language-switch aria-label={t.nav.language}>
-     <a href={viHref} lang="vi" aria-current={locale==='vi'?'page':undefined}>VN</a>
-     <a href={enHref} lang="en" aria-current={locale==='en'?'page':undefined}>EN</a>
-    </nav>
     <details class="mobile-nav">
      <summary aria-label={locale==='vi'?'Mở menu điều hướng':'Open navigation menu'}>☰ <span>{t.nav.menu}</span></summary>
      <nav aria-label={locale==='vi'?'Điều hướng trên màn hình nhỏ':'Mobile navigation'}>
@@ -80,7 +75,6 @@ const pageDescription=description||t.common.siteDescription;
    const updateTop=()=>{if(top)top.hidden=window.scrollY<480};
    updateTop();window.addEventListener('scroll',updateTop,{passive:true});
    top?.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
-   for(const a of document.querySelectorAll('[data-language-switch] a'))a.addEventListener('click',()=>{a.href=a.href.split('#')[0]+location.hash});
    document.addEventListener('click',e=>{for(const menu of document.querySelectorAll('details.quick-explore,details.mobile-nav')){if(!menu.contains(e.target))menu.open=false;}});
   </script>
  </body>

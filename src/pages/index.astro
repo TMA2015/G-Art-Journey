@@ -4,7 +4,7 @@ import SectionNav from '../components/SectionNav.astro';
 import {getShowcase,getCollections,getGuides} from '../i18n/content.mjs';
 import {getVisualNotes} from '../i18n/notes.mjs';
 import {ui,language} from '../i18n/ui.mjs';
-const lang=language(Astro.props.lang),t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+(lang==='en'?'en/':'')+path;
+const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const showcase=getShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),visualNotes=getVisualNotes(lang),first=showcase[0];
 const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',label:t.home.guideTitle},{id:'visual-notes',label:t.home.visualTitle},{id:'family-gallery',label:t.nav.gallery}];
 ---

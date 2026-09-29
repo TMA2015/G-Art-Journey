@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
-<title id="t">Light and value: graphite study</title><desc id="d">A graphite shaded sphere with a cast shadow, five tonal blocks and a diagram of light direction.</desc>
+<title id="t">Light and shade: pencil study</title><desc id="d">A shaded ball, its shadow on the ground, five shades of gray, and a light-direction arrow.</desc>
 <defs>
  <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#FAF7EE"/><stop offset="1" stop-color="#E8E2D8"/></linearGradient>
  <radialGradient id="ball" cx=".28" cy=".22" r=".75"><stop stop-color="#fffdf2"/><stop offset=".28" stop-color="#e4ded2"/><stop offset=".60" stop-color="#a8a399"/><stop offset=".84" stop-color="#625f5a"/><stop offset="1" stop-color="#323331"/></radialGradient>
@@ -7,21 +7,21 @@
  <pattern id="grain" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="7" cy="6" r=".6" fill="#6C675E" opacity=".15"/><circle cx="20" cy="18" r=".7" fill="#6C675E" opacity=".10"/></pattern>
 </defs>
 <rect width="1600" height="1000" fill="url(#paper)"/><rect width="1600" height="1000" fill="url(#grain)"/>
-<path d="M68 140 H1532" stroke="#B7A99B" stroke-width="2"/><text x="72" y="94" font-family="Georgia,serif" font-size="50" fill="#393C38">01 / Light &amp; Value</text><text x="1158" y="90" font-family="Arial,sans-serif" font-size="17" fill="#867D71" letter-spacing="5">GRAPHITE STUDIES</text>
+<path d="M68 140 H1532" stroke="#B7A99B" stroke-width="2"/><text x="72" y="94" font-family="Georgia,serif" font-size="50" fill="#393C38">01 / Light &amp; Shade</text><text x="1158" y="90" font-family="Arial,sans-serif" font-size="17" fill="#867D71" letter-spacing="5">PENCIL STUDIES</text>
 <g><ellipse cx="568" cy="746" rx="365" ry="91" fill="url(#cast)"/><circle cx="535" cy="499" r="267" fill="url(#ball)" stroke="#6F6B64" stroke-width="2" opacity=".98"/>
 <path d="M155 269 L304 330" stroke="#B98367" stroke-width="7" stroke-linecap="round"/><path d="M289 305 L313 335 L274 341" fill="none" stroke="#B98367" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="70" y="230" font-family="Arial,sans-serif" font-size="23" fill="#946A59">LIGHT SOURCE ↘</text>
+<text x="70" y="230" font-family="Arial,sans-serif" font-size="23" fill="#946A59">LIGHT ↘</text>
 <path d="M758 387 C856 370 883 342 939 319" fill="none" stroke="#8D8175" stroke-width="2"/><circle cx="758" cy="387" r="6" fill="#8D8175"/>
-<text x="945" y="322" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Midtone</text>
-<path d="M699 636 C810 647 849 642 930 630" fill="none" stroke="#8D8175" stroke-width="2"/><circle cx="699" cy="636" r="6" fill="#8D8175"/><text x="936" y="637" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Core shadow</text>
-<path d="M763 752 C854 757 899 747 967 725" fill="none" stroke="#8D8175" stroke-width="2"/><text x="973" y="733" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Cast shadow</text>
-<path d="M401 278 C350 234 306 228 267 224" fill="none" stroke="#8D8175" stroke-width="2"/><text x="92" y="371" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Highlight</text></g>
-<g transform="translate(91 815)"><text x="0" y="-14" font-family="Arial,sans-serif" font-size="20" letter-spacing="2" fill="#635D55">FIVE SIMPLE VALUES</text>
+<text x="945" y="322" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Middle gray</text>
+<path d="M699 636 C810 647 849 642 930 630" fill="none" stroke="#8D8175" stroke-width="2"/><circle cx="699" cy="636" r="6" fill="#8D8175"/><text x="936" y="637" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Dark side</text>
+<path d="M763 752 C854 757 899 747 967 725" fill="none" stroke="#8D8175" stroke-width="2"/><text x="973" y="733" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Ground shadow</text>
+<path d="M401 278 C350 234 306 228 267 224" fill="none" stroke="#8D8175" stroke-width="2"/><text x="92" y="371" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Bright spot</text></g>
+<g transform="translate(91 815)"><text x="0" y="-14" font-family="Arial,sans-serif" font-size="20" letter-spacing="2" fill="#635D55">FIVE SHADES</text>
 <rect x="0" y="10" width="180" height="90" fill="#F5F3EA"/><rect x="180" y="10" width="180" height="90" fill="#D1CEC6"/><rect x="360" y="10" width="180" height="90" fill="#A2A09B"/><rect x="540" y="10" width="180" height="90" fill="#6F6E6A"/><rect x="720" y="10" width="180" height="90" fill="#343533"/>
 <g font-family="Arial,sans-serif" font-size="18" fill="#5F5C57"><text x="8" y="134">01 · Light</text><text x="188" y="134">02</text><text x="368" y="134">03 · Middle</text><text x="548" y="134">04</text><text x="728" y="134">05 · Dark</text></g></g>
-<g transform="translate(1090 400)"><path d="M12 0 H422 M12 0 V385" stroke="#B4A89A" stroke-width="2"/><text x="15" y="43" font-family="Georgia,serif" font-size="38" fill="#4D4942">Try it yourself</text><text x="15" y="92" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Start with only three values:</text>
+<g transform="translate(1090 400)"><path d="M12 0 H422 M12 0 V385" stroke="#B4A89A" stroke-width="2"/><text x="15" y="43" font-family="Georgia,serif" font-size="38" fill="#4D4942">Try it yourself</text><text x="15" y="92" font-family="Arial,sans-serif" font-size="22" fill="#74695F">Start with three shades:</text>
 <rect x="15" y="125" width="87" height="70" fill="#ECEAE2"/><rect x="110" y="125" width="87" height="70" fill="#9F9D96"/><rect x="205" y="125" width="87" height="70" fill="#454644"/>
 <text x="15" y="233" font-family="Arial,sans-serif" font-size="20" fill="#74695F">Light · middle · dark</text>
-<text x="15" y="293" font-family="Arial,sans-serif" font-size="20" fill="#74695F">Then build gentle transitions.</text></g>
+<text x="15" y="293" font-family="Arial,sans-serif" font-size="20" fill="#74695F">Then blend gently.</text></g>
 <text x="92" y="980" font-family="Arial,sans-serif" font-size="15" fill="#8C8177" letter-spacing="2">G-ART JOURNEY / ORIGINAL EDUCATIONAL ILLUSTRATION</text>
 </svg>
