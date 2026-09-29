@@ -48,3 +48,12 @@ test('Vietnamese font fallback and actual back-to-top button',async()=>{
   assert.match(layout,/relative\.startsWith\('notes\/'\)/);
   assert.match(css,/\.back-to-top\[hidden\]/);
 });
+
+test('home poster thumbnails use a bounded frame so intrinsic HTML height cannot stretch cards',async()=>{
+ const page=await load('src/pages/index.astro'),css=await load('src/styles/human-batch.css');
+ assert.match(page,/class="home-guide-media"><img/);
+ assert.match(page,/decoding="async" width=\{g\.posterWidth/);
+ assert.match(css,/\.home-approved-guides \.home-guide-media\{[^}]*aspect-ratio:4\/5;[^}]*overflow:hidden/);
+ assert.match(css,/\.home-approved-guides \.home-guide-media img\{[^}]*position:absolute;[^}]*width:100%;height:100%;aspect-ratio:auto;object-fit:contain/);
+ assert.match(css,/\.home-approved-guides \.guide-card\{[^}]*display:flex;flex-direction:column/);
+});
