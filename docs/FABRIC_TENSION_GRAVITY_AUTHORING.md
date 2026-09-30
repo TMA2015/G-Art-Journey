@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **active production; hero study pending owner QA**
+Status: **active production; hero study owner-approved**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
@@ -218,3 +218,19 @@ This workflow is intentionally stricter than a single-shot infographic generatio
 8. Run tests, guide audit, build and asset audit.
 9. Review the deployed page.
 10. Publish independently once the full gate passes.
+
+
+## 11. Owner-approved hero study
+
+Owner approval recorded: **2026-09-30**.
+
+Approved hero direction:
+- female subject, cropped from lower face/neck through torso and bent arm
+- collared shirt so the lesson shows both **sleeve folds and shirt/body drape**
+- four clear callouts: **support**, **gravity**, **stretch**, **compression**
+- graphite-first rendering on warm paper with restrained pastel arrows/labels
+- no hand required in the teaching crop
+
+The approved hero panel should be preserved. Do not regenerate it unless a later composite reveals a concrete layout or readability problem.
+
+This panel is **not the final Fabric infographic**. It is the first approved artwork unit for the final composite.
