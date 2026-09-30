@@ -1,6 +1,6 @@
 {
   "batchId": "core-skills-2a",
-  "status": "published-complete",
+  "status": "active-fabric-focused-set",
   "title": "Core Drawing Skills 2A — Structure & Observation",
   "language": "en",
   "visualMode": "graphite-first",
@@ -116,6 +116,5 @@
         "hands/arms under sleeves remain anatomically coherent when visible"
       ]
     }
-  ],
-  "completedAt": "2026-09-30"
+  ]
 }
