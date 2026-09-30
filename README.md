@@ -4,6 +4,10 @@
 
 G-Art Journey is a personal, public art website, not a classroom or art marketplace. Browse illustrations and drawing ideas, learn a few gentle techniques, and keep a small family gallery. No scores, AI assessment, accounts, comments, or direct browser uploads.
 
+## Project handoff / source of truth
+
+Before continuing development in a new chat or work session, read [docs/PROJECT_MASTER_HANDOFF.md](docs/PROJECT_MASTER_HANDOFF.md). It records the current master plan, approved design principles, QA rules, completed milestones and exact next task. Any change to those rules should update the handoff in the same PR.
+
 ## Start locally
 
 Node.js 22+:
