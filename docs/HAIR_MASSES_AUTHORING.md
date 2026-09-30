@@ -189,6 +189,6 @@ Owner-approved poster direction:
 
 Repository implementation in PR #26:
 - guide slug: `hair-masses`
-- approved raster source is pinned at `assets/core/hair-masses.webp`
+- approved 900×1200 WebP source is pinned as base64 text at `assets/core/hair-masses.b64`
 - generated 900×1200 public asset: `public/infographics/core/hair-masses.webp`
 - the earlier deterministic SVG draft was rejected and removed; do not restore it.
