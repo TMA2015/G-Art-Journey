@@ -177,6 +177,8 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 **NEXT: Draw Hands from Simple Forms**
 
+Exact production brief: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
+
 Visual direction:
 - graphite-first
 - warm paper background
