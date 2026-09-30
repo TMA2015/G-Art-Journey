@@ -206,6 +206,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #42: merged — **Explore Art completion**. The existing 4 artist pages and 5 movement/style pages now use a two-part structure (About / Why it matters + Representative works), with sourced Public Domain/CC0/open-license artwork galleries. Main Pages workflow #182 passed at merge commit `f7a19453c1fa54218a85dbaab3776feb89dd6911`. Final browser visual QA is pending owner confirmation.
 - PR #44: merged — **Materials & Tools detail pages** for all 9 existing media. Each page now covers medium overview, starter tools, beginner workflow, examples and G-Art learning links where available. Main Pages workflow #186 passed at merge commit `155cf3556be8011047b502f13e5342c914e7abbb`. Browser visual QA is pending owner confirmation.
 - PR #48: merged — **Materials visual completion pass**. Approved AI medium studies were added only where needed, Oil/Ink covers were upgraded to real artworks, every AI image is explicitly labeled, and tests enforce at least three distinct visuals per medium. Main Pages workflow #194 passed at merge commit `e5305ab86da526a03853fdbf7fe7c4995bd95957`.
+- PR #50: merged — **Final Materials example replacement pass**. Remaining weak G-Art example cards in Graphite, Colored Pencil, Watercolor, Acrylic, Crayon & Pastel and Vietnamese Lacquer were replaced by owner-approved AI medium studies. Main Pages workflow #198 passed at merge commit `7ba413219e509dea08b0f82105f559601d8aeb27`.
 - PR #33: merged — core poster crop-safe generation + canonical branding remediation. Hands public output now preserves its full 2:3 approved source at 900×1350; Eye adds a deterministic canonical upper-left brand band; implicit cover cropping was removed. Main Pages workflow #123 passed at merge commit `4bccdf87c95b384b3e872bda0ebcbee71d550d58`.
 - PR #34: merged — Hair follow-up branding hotfix. Hair now uses a separate canonical upper-left brand band at 900×1300 and masks only the tiny legacy mark area so the title artwork is not covered. Main Pages workflow #125 passed at merge commit `cfa7ab8b2d8fbf80e3f8effc7a000df0fbbb4023`.
 - **Core poster branding remediation closed:** owner confirmed on the live Drawing Guides page that Hands, Eye and Hair all show the G-Art Journey logo correctly. Hands is no longer cropped; Eye/Hair branding bands render correctly. Fabric may resume.
@@ -214,7 +215,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ### Phase 2 visual baseline reset — current priority
 
-**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Explore Art structure/content has passed browser QA on desktop and iPhone. The final Materials visual-completion pass is deployed and awaits a quick owner visual check.**
+**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Explore Art structure/content has passed browser QA on desktop and iPhone. The final Materials replacement pass is deployed; only owner visual confirmation of the eight new replacements remains before Explore Art is fully closed.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
