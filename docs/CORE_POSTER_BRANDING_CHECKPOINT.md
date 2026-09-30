@@ -35,14 +35,19 @@ Artwork approval does not waive project branding rules unless the owner explicit
 
 `fix/core-poster-branding-20260930`
 
+## Deployment state
+
+- PR #33 merged to `main` as `4bccdf87c95b384b3e872bda0ebcbee71d550d58`; main Pages workflow #123 passed.
+- PR #34 merged to `main` as `cfa7ab8b2d8fbf80e3f8effc7a000df0fbbb4023`; main Pages workflow #125 passed.
+- Code/build/deployment gates are green.
+- Final release gate still open: visually inspect the actual website cards after browser refresh and confirm logo presence/readability plus no title/content cropping.
+- Fabric remains paused until this visual gate passes.
+
 ## Resume order
 
-1. Verify branch SHA and current CI state.
-2. Run the updated core poster build.
-3. Confirm Hands = 900×1350 with visible source logo.
-4. Confirm Eye = 900×1450 with readable canonical upper-left brand band.
-5. Confirm Hair = 900×1300 with readable canonical upper-left brand band and no visible tiny legacy mark.
-6. Inspect website card rendering for all three.
-7. If all pass, merge and verify GitHub Pages.
-8. Update master handoff to close remediation.
-9. Resume Fabric.
+1. Refresh the deployed website after workflow #125.
+2. Confirm Hands card: full poster, readable upper-left logo, no crop.
+3. Confirm Eye card: canonical upper-left brand band visible, no teaching content crop.
+4. Confirm Hair card: canonical upper-left brand band visible, title untouched, tiny legacy mark no longer visible.
+5. If all three pass, close this remediation in the master handoff and resume Fabric.
+6. If any fail, hotfix the deterministic compositor only; do not regenerate approved artwork.
