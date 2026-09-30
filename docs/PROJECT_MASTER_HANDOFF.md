@@ -195,17 +195,18 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - Character Styles stable set is live.
 - PR #23: merged — initial Phase 2A **Draw Hands from Simple Forms** guide release. Its v1 artwork was later superseded by the approved Hands v2 release in PR #29.
 - Phase 2A posters release individually after their own QA gate.
-- PR #24: merged — **Draw an Eye from Structure** is live and academically approved; its artwork is now queued for a visual-quality refresh to the newer Phase 2 baseline. Main deployment workflow #69 passed.
+- PR #24: merged — initial **Draw an Eye from Structure** release. Its v1 artwork was later superseded by the approved Eye v2 release in PR #31.
 - PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
 - PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
 - PR #29: merged — **Hands v2** is live at the existing `hands-simple-forms` guide. The owner-approved five-step / four-key-point / ten-pose poster was preserved, only its branding region was normalized to the canonical lockup, the raster source was integrity-pinned, PR CI passed, and main Pages deployment workflow #107 passed at merge commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
 - PR #31: merged — **Eye v2** is live at the existing `eye-structure` guide. The owner-approved poster is pinned as a 1024×1536 raster source and published at 900×1350 without cropping; PR CI passed and main Pages workflow #119 completed successfully at merge commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
+- **Core poster branding remediation active:** website QA found that Hands v2 public output had cropped away its source logo, Eye v2 lacked the canonical logo in the released public image, and Hair branding was too small to read reliably on cards. Fix all three public outputs and the crop-prone build pipeline before resuming Fabric.
 
 ## 11. Current production task
 
 ### Phase 2 visual baseline reset — current priority
 
-Hands v2, Eye v2 and Hair now form the coherent Phase 2 visual row. **Fabric is now the active production task.**
+Hands v2, Eye v2 and Hair artwork are approved, but **core poster branding/pipeline remediation is the active task before Fabric resumes**.
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -246,7 +247,7 @@ Approved implementation from PR #26:
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**ACTIVE NEXT: Draw Fabric from Tension & Gravity**
+**NEXT AFTER BRANDING FIX: Draw Fabric from Tension & Gravity**
 
 The authoring specification is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`, but no Fabric artwork is approved or published yet.
 
