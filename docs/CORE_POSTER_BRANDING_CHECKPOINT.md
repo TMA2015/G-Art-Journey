@@ -43,6 +43,16 @@ Artwork approval does not waive project branding rules unless the owner explicit
 - Final release gate still open: visually inspect the actual website cards after browser refresh and confirm logo presence/readability plus no title/content cropping.
 - Fabric remains paused until this visual gate passes.
 
+## Final browser QA
+
+Owner confirmation recorded on **2026-09-30** from the live Drawing Guides page:
+- Hands card: logo visible; no top crop
+- Eye card: logo visible
+- Hair card: logo visible
+- all three passed the real-site visual gate
+
+Branding remediation is therefore **closed**. Fabric may resume.
+
 ## Resume order
 
 1. Refresh the deployed website after workflow #125.
