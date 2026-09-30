@@ -3,26 +3,56 @@ import '../../styles/discovery.css';
 import Base from '../../layouts/Base.astro';
 import SectionNav from '../../components/SectionNav.astro';
 import {movements} from '../../data/discovery.mjs';
-import {getMovements,getArtists} from '../../i18n/discovery.mjs';
-import {ui,language} from '../../i18n/ui.mjs';
+import {getMovements} from '../../i18n/discovery.mjs';
 export function getStaticPaths(){return movements.map(movement=>({params:{slug:movement.slug},props:{movement}}));}
-const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
-const movement=getMovements(lang).find(m=>m.slug===Astro.props.movement.slug),artists=getArtists(lang);
+const lang='en',base=import.meta.env.BASE_URL,url=(path='')=>base+path;
+const movement=getMovements(lang).find(m=>m.slug===Astro.props.movement.slug);
 ---
 <Base lang={lang} title={movement.name} description={movement.summary}>
 <article class="site-shell movement-page">
- <a href={url('explore/#movements')} class="eyebrow back-link">{t.movement.back}</a>
- <SectionNav lang={lang} items={[{id:'movement-intro',label:movement.name},{id:'movement-clues',label:t.movement.recognize},{id:'movement-see',label:t.movement.closerTitle},{id:'movement-try',label:t.movement.tryTitle},{id:'related-artists',label:t.movement.artists}]}/>
- <header id="movement-intro" class="movement-hero" style={'--movement-color:'+movement.color}>
-  <div class="movement-hero-copy"><span class="eyebrow">{movement.period}</span><h1 class="serif">{movement.name}</h1><p>{movement.summary}</p></div>
-  <div class="movement-hero-image"><img src={base+movement.image} alt={movement.name}/><small>{t.common.illustration}</small></div>
- </header>
- <section id="movement-clues" class="infographic-detail"><div><span class="eyebrow">{t.movement.look}</span><h2 class="serif">{t.movement.recognize}</h2><p>{t.movement.clues}</p></div><div class="fact-list">{movement.clues.map((c,i)=><div class="fact-row"><span>{String(i+1).padStart(2,'0')}</span><div><p>{c}</p></div></div>)}</div></section>
- <div class="infographic-panels">
-  <section id="movement-see" class="featured-work"><span class="eyebrow">{t.movement.closer}</span><h2 class="serif">{t.movement.closerTitle}</h2><p>{movement.look}</p><a href={movement.source} target="_blank" rel="noopener noreferrer">{movement.sourceLabel} ↗</a></section>
-  <section id="movement-try" class="try-art"><span class="eyebrow">{t.movement.try}</span><h2 class="serif">{t.movement.tryTitle}</h2><p>{movement.try}</p><a href={url('guides/')}>{t.movement.guides}</a></section>
- </div>
- <section id="related-artists" class="related-artists"><span class="eyebrow">{t.movement.people}</span><h2 class="serif">{t.movement.artists}</h2><div>{movement.artists.map(name=>{const artist=artists.find(a=>name.includes(a.name)||a.name.includes(name));return artist?<a href={url('artist/'+artist.slug+'/')}>{name} ↗</a>:<span>{name}</span>})}</div></section>
- <p class="discovery-note">{t.movement.disclaimer}</p>
+ <a href={url('explore/#movements')} class="eyebrow back-link">← Explore art styles</a>
+ <SectionNav lang={lang} items={[{id:'movement-about',label:'About'},{id:'movement-works',label:'Representative works'}]}/>
+
+ <section id="movement-about" class="movement-hero" style={'--movement-color:'+movement.color}>
+  <div class="movement-hero-copy">
+   <span class="eyebrow">{movement.period}</span>
+   <h1 class="serif">{movement.name}</h1>
+   <p>{movement.summary}</p>
+   <ul class="discovery-why">
+    {movement.why.map(point=><li>{point}</li>)}
+   </ul>
+  </div>
+  <div class="movement-hero-image">
+   <img src={movement.image.startsWith('https:')?movement.image:base+movement.image} alt={movement.name} referrerpolicy="no-referrer"/>
+   <small>Representative artwork · source and rights listed below</small>
+  </div>
+ </section>
+
+ <section id="movement-works" class="artwork-section">
+  <div class="discovery-heading">
+   <span class="eyebrow">LOOK AT THE ART</span>
+   <h2 class="serif">Representative works</h2>
+   <p>These examples are not a complete history of the style. They are a compact set chosen to make its main visual ideas easier to recognize.</p>
+  </div>
+  <div class="artwork-grid">
+   {movement.artworks.map(work=>
+    <article class="artwork-card">
+     <a class="artwork-image" href={work.source} target="_blank" rel="noopener noreferrer">
+      <img src={work.image} alt={work.title+' by '+work.artist} loading="lazy" referrerpolicy="no-referrer"/>
+     </a>
+     <div class="artwork-copy">
+      <span class="eyebrow">{work.year}</span>
+      <h3 class="serif">{work.title}</h3>
+      <p class="artwork-by">{work.artist}</p>
+      {work.museum&&<p class="artwork-museum">{work.museum}</p>}
+      <p>{work.note}</p>
+      <a class="artwork-source" href={work.source} target="_blank" rel="noopener noreferrer">Source · {work.rights} ↗</a>
+     </div>
+    </article>
+   )}
+  </div>
+ </section>
+
+ <p class="discovery-note">Artwork images on this page are used only when the linked source marks the file as public domain, CC0, or another open license. Attribution alone is not treated as permission.</p>
 </article>
 </Base>
