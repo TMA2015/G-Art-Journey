@@ -1,6 +1,6 @@
 # Draw Hands from Simple Forms — production specification
 
-Status: **artwork QA complete; published with the Phase 2A hand guide**
+Status: **learning content approved and live; v2 visual refresh in progress**
 
 This is the first Phase 2A production item. It exists to make the hand lesson reproducible across future chats and image-generation runs without relying on conversation memory.
 
@@ -24,12 +24,68 @@ The final result is not a stylized manga hand lesson. It is a transferable hand-
 - warm paper / sketchbook background
 - graphite / pencil drawing only for the hand artwork
 - G-Art pastel accents only for title, arrows, step numbers and tiny callouts
+- use the canonical purple logo lockup at `public/branding/g-art-lockup.svg`, upper-left by default
 - airy composition with large drawings; do not crowd the poster
-- concise English labels
+- concise English-only labels using common beginner words
+- visual finish must meet or exceed the approved Hair poster baseline
 - no decorative character portrait is required
 - no copied anatomy diagram or artist composition
 
 The hand drawings should look like a good drawing lesson, not a medical chart and not a crude wireframe.
+
+## 2A. v2 poster layout — approved direction for refresh
+
+The v2 refresh changes **presentation quality only**. Keep the existing learning objective, slug, URL and five-step construction logic.
+
+Use three visual zones:
+
+### A. Main construction sequence
+Five cumulative stages using one consistent relaxed open hand:
+1. Palm
+2. Thumb base
+3. Finger groups
+4. Joints & flow
+5. Clean hand
+
+The sequence should look hand-drawn and teachable, not like sparse vector boxes.
+
+### B. Four key tips
+Use four short reminders:
+1. **Thumb starts lower.**
+2. **Fingers are different lengths.**
+3. **Knuckles form an arc.**
+4. **Fingers fan, not parallel.**
+
+Use one enlarged mini-study beside the tips if needed to show the thumb base or knuckle arc clearly.
+
+### C. Practical hand reference grid
+Add **8–10 simple hand poses** as references, not extra construction steps. Prefer a useful beginner mix such as:
+- relaxed open palm
+- back of hand
+- loose fist
+- pointing
+- pinch
+- holding a simple cylinder
+- side view
+- bent fingers
+- open gesture
+- simple foreshortened pose
+
+Every complete visible hand in the grid must pass five-digit anatomy QA.
+
+### Composition rule
+Match the Hair poster's **finish level and usefulness**, not its exact layout. The page should feel like one coherent G-Art Journey lesson.
+
+### Panel-first production rule
+Do not generate the full poster in one dense pass.
+
+1. Create the five-step construction sequence as one controlled group.
+2. Inspect each of the five hands at full size.
+3. Create reference poses in small groups.
+4. Inspect every hand individually: digit count, thumb placement, joints, wrist and perspective.
+5. Reject or repair failed hands before composition.
+6. Assemble only approved studies with the canonical logo.
+7. Run a final whole-page QA pass before replacing the live poster.
 
 ## 3. Main cumulative sequence
 
@@ -170,7 +226,9 @@ Small bottom note:
 
 ## 8. Image-generation brief
 
-Create an original educational graphite drawing infographic titled **Draw Hands from Simple Forms**.
+For v2, generate **panel groups first, not the complete infographic**.
+
+Create original educational graphite hand studies for **Draw Hands from Simple Forms**.
 
 Use a warm off-white paper background. The hand drawings are monochrome graphite only. Pastel rose/peach/mint/lilac may appear only in small step numbers, arrows and callout labels.
 
@@ -198,3 +256,13 @@ Style: polished beginner art-school sketchbook lesson, soft graphite line, subtl
 7. Run full repository checks.
 8. Review desktop/tablet/mobile.
 9. Publish only after all checks pass.
+
+
+## 10. v2 refresh constraints
+
+- Keep `hands-simple-forms` as the existing guide slug.
+- Do not alter the current academic guide text merely to justify new artwork.
+- Do not publish the v2 poster until the owner approves the final composite.
+- Use `public/branding/g-art-lockup.svg` as the canonical logo; do not ask the image model to draw a logo.
+- Hair is the current minimum Phase 2 visual-quality benchmark.
+- Fabric remains paused until Hands v2 and Eye v2 establish a coherent Phase 2 row.
