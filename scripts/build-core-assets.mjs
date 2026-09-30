@@ -32,10 +32,17 @@ async function buildPoster(asset,sourceBytes){
 
   if(brand.mode==='band'){
     const artHeight=asset.height-brand.bandHeight;
-    const art=await sharp(sourceBytes)
+    let art=await sharp(sourceBytes)
       .resize({width:asset.width,height:artHeight,fit:'contain',background})
       .png()
       .toBuffer();
+    if(brand.artPlate){
+      const p=brand.artPlate;
+      const plate=Buffer.from(
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${p.width}" height="${p.height}"><rect width="100%" height="100%" rx="10" fill="${p.background||background}"/></svg>`
+      );
+      art=await sharp(art).composite([{input:plate,left:p.left,top:p.top}]).png().toBuffer();
+    }
     const logo=await canonicalLogo(asset);
     return sharp({
       create:{width:asset.width,height:asset.height,channels:4,background}

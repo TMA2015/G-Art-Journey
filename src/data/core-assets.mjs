@@ -67,20 +67,22 @@ export const coreAssetManifest = [
     "sourceSha256": "96265cd38ea1a7fdfc72eedaefdab333a56f3d0ae87cfda7b7ced0a2053b4813",
     "outputPath": "public/infographics/core/hair-masses.webp",
     "width": 900,
-    "height": 1200,
+    "height": 1300,
     "format": "webp",
     "brand": {
-      "mode": "overlay",
+      "mode": "band",
       "canonical": "public/branding/g-art-lockup.svg",
-      "placement": "upper-right-layout-exception",
-      "logoWidth": 190,
-      "left": 690,
-      "top": 56,
-      "plate": {
-        "left": 680,
-        "top": 48,
-        "width": 210,
-        "height": 76,
+      "placement": "upper-left",
+      "bandHeight": 100,
+      "logoWidth": 260,
+      "left": 24,
+      "top": 18,
+      "background": "#FBF7EF",
+      "artPlate": {
+        "left": 755,
+        "top": 70,
+        "width": 135,
+        "height": 60,
         "background": "#FBF7EF"
       }
     }
