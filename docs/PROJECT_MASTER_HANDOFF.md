@@ -175,7 +175,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - Character Styles stable set is live.
 - PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; generated WebP comes from the pinned editable SVG source.
 - Phase 2A posters release individually after their own QA gate.
-- **Draw an Eye from Structure** is included in the current release with deterministic SVG source, generated WebP, guide data and eye-specific QA.
+- PR #24: **Draw an Eye from Structure** — deterministic SVG source, generated WebP, guide data and eye-specific QA; ready to merge after CI.
 
 ## 11. Current production task
 
