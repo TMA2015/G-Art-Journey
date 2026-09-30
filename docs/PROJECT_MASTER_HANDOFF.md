@@ -179,7 +179,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 Published guide:
 - slug: `hands-simple-forms`
-- asset: `public/infographics/core/hands-simple-forms.webp`
+- published asset: `public/infographics/core/hands-simple-forms.webp` (generated from `assets/core/hands-simple-forms.svg` before dev/test/build)
 - graphite-first poster with five-step construction and three supporting studies
 - full-size hand/finger QA completed before release
 
