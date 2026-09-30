@@ -1,25 +1,5 @@
 export const practiceGuides = [
   {
-    slug:'fabric-tension-gravity', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'25–35 min',
-    title:'Draw Fabric from Tension & Gravity',
-    description:'Find what holds, pulls, bends or compresses cloth, then use those forces to place the big folds before small wrinkles.',
-    image:'infographics/core/fabric-tension-gravity.webp',
-    poster:true,
-    posterWidth:900,
-    posterHeight:1350,
-    posterAlt:'Illustrated fabric lesson showing support points, tension, gravity, compression, wrapping, six cloth examples and four key tips with the G-Art Journey logo',
-    supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
-    steps:[
-      {title:'Find the support points',body:'Ask where the cloth is held, attached or pulled. Folds usually begin from these places instead of appearing randomly.'},
-      {title:'Follow gravity and tension',body:'Show the main pull direction first. Hanging cloth drops with gravity, while cloth held at two points pulls toward both supports and can sag between them.'},
-      {title:'Separate stretch and compression',body:'At a bend, one side of the cloth stretches more while the compressed side bunches into shorter, tighter fold groups.'},
-      {title:'Wrap the form',body:'Let the cloth turn around the arm, leg or torso underneath. Use overlap to show which layer sits in front.'},
-      {title:'Simplify the big folds',body:'Keep the largest fold shapes readable before adding smaller wrinkles, texture or shading.'}
-    ],
-    tryIt:'Choose one sleeve or skirt from real clothing. Mark its support point and gravity direction first, then draw only three to five large fold groups before adding any small wrinkles.',
-    remember:'Every useful fold should help explain support, pull, gravity, compression, movement or the form underneath. Big folds come before small wrinkles.'
-  },
-  {
     slug:'hands-simple-forms', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'20–30 min',
     title:'Draw Hands from Simple Forms',
     description:'Build a hand from a palm block, a low thumb base and grouped fingers before refining joints and detail.',
@@ -79,6 +59,27 @@ export const practiceGuides = [
     tryIt:'Pick one of the ten hairstyle examples. Draw only its big outer shape first, then add three to five lock groups before any small strands.',
     remember:'Think in big shapes first. Hair has thickness, flow starts from the part or crown, and you do not need to draw every hair.'
   },
+  {
+    slug:'fabric-tension-gravity', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'25–35 min',
+    title:'Draw Fabric from Tension & Gravity',
+    description:'Find what holds, pulls, bends or compresses cloth, then use those forces to place the big folds before small wrinkles.',
+    image:'infographics/core/fabric-tension-gravity.webp',
+    poster:true,
+    posterWidth:900,
+    posterHeight:1350,
+    posterAlt:'Illustrated fabric lesson showing support points, tension, gravity, compression, wrapping, six cloth examples and four key tips with the G-Art Journey logo',
+    supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
+    steps:[
+      {title:'Find the support points',body:'Ask where the cloth is held, attached or pulled. Folds usually begin from these places instead of appearing randomly.'},
+      {title:'Follow gravity and tension',body:'Show the main pull direction first. Hanging cloth drops with gravity, while cloth held at two points pulls toward both supports and can sag between them.'},
+      {title:'Separate stretch and compression',body:'At a bend, one side of the cloth stretches more while the compressed side bunches into shorter, tighter fold groups.'},
+      {title:'Wrap the form',body:'Let the cloth turn around the arm, leg or torso underneath. Use overlap to show which layer sits in front.'},
+      {title:'Simplify the big folds',body:'Keep the largest fold shapes readable before adding smaller wrinkles, texture or shading.'}
+    ],
+    tryIt:'Choose one sleeve or skirt from real clothing. Mark its support point and gravity direction first, then draw only three to five large fold groups before adding any small wrinkles.',
+    remember:'Every useful fold should help explain support, pull, gravity, compression, movement or the form underneath. Big folds come before small wrinkles.'
+  },
+
 {
  slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
  title:'Draw a Standing Figure with Simple Shapes',
