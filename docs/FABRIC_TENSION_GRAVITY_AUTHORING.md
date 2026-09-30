@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **owner-approved and released in PR #36**
+Status: **overview poster released; focused four-card set still active**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
@@ -294,3 +294,18 @@ Public target:
 - skill-intent ledger and Core Drawing Skills tests passed
 
 Fabric closes **Phase 2A — Structure & Observation**.
+
+
+## 14. Sequencing correction — focused Fabric set still active
+
+A full overview poster was approved and released in PR #36, but the owner intended the focused Fabric card sequence to continue.
+
+The focused set is:
+1. **One support point** — APPROVED
+2. **Two tension points** — APPROVED
+3. **Compression at a bend** — NEXT
+4. **Wrap and overlap** — PENDING
+
+The earlier hero sleeve study is a separate teaching study and does not replace one of these four cause cards.
+
+Phase 2B / Five Values must not start until this Fabric set is finished. The lit-sphere image generated after PR #37 is unrelated to Fabric and is not an approved project asset.
