@@ -50,3 +50,16 @@ test('each media entry provides a route',()=>{
   for(const m of media)assert.ok(m.start);
   assert.ok(moreArtists.length>=4);
 });
+
+
+test('style pages never use internal showcase illustrations',()=>{
+  for(const movement of movements){
+    assert.match(movement.image,/^https:\/\/commons\.wikimedia\.org\//,movement.slug+' cover must be a sourced artwork');
+    assert.equal(movement.image.includes('/showcase/'),false,movement.slug+' must not use G-Art showcase art');
+    for(const work of movement.artworks){
+      assert.match(work.image,/^https:\/\/commons\.wikimedia\.org\//,movement.slug+' artwork must be a sourced historical artwork');
+      assert.ok(work.source?.startsWith('https://commons.wikimedia.org/'),movement.slug+' artwork source');
+      assert.notEqual(work.artist,'G-Art Journey',movement.slug+' style example must be a real artwork');
+    }
+  }
+});
