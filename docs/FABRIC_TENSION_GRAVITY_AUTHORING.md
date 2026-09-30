@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **active production; hero study owner-approved**
+Status: **final poster owner-approved; release candidate wired in PR #36**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
@@ -234,3 +234,49 @@ Approved hero direction:
 The approved hero panel should be preserved. Do not regenerate it unless a later composite reveals a concrete layout or readability problem.
 
 This panel is **not the final Fabric infographic**. It is the first approved artwork unit for the final composite.
+
+
+## 12. Owner-approved final poster
+
+Owner approval recorded: **2026-09-30**.
+
+The approved full Fabric infographic supersedes the need to generate additional standalone panels. It combines the approved teaching direction into one finished poster with:
+- one support point
+- two tension points
+- compression at a bend
+- wrap and overlap
+- six practical fabric examples
+- four key tips
+- four practice ideas
+- female tutorial subjects throughout the human examples
+
+The poster was visually approved as a whole. Preserve the teaching artwork and layout; do not regenerate it merely to re-run the earlier panel-first sequence.
+
+### Final artwork QA notes
+
+- support, gravity, tension and compression directions are visually distinguishable
+- the compressed elbow uses shorter grouped folds while the opposite side reads as stretched
+- cloth examples include hanging, sleeve, elbow, seated knee, moving scarf and light-versus-thicker fabric
+- visible human anatomy is plausible at poster scale
+- no fully exposed teaching hand requires a corrective five-digit redraw
+- female subjects follow the current G-Art tutorial art direction
+- the generated logo at upper-left is **not** trusted as the project brand asset; release production covers it and composites the canonical repository lockup
+
+### Approved source integrity
+
+Original approved PNG:
+- dimensions: **1024×1536**
+- bytes: **2,712,242**
+- SHA-256: `b99148752be0a46cb1f22e1886509ba2f5c66779d74c323a0be4eda2e156fcac`
+
+Pinned repository WebP source:
+- dimensions: **1024×1536**
+- bytes: **375,710**
+- SHA-256: `f391b18060466e38003eb8dbf653299ee5578d4dafc0ee0bbe72efb3b1d60877`
+- chunks: `assets/core/fabric-v1.b64/01.txt` through `06.txt`
+
+Public target:
+- `public/infographics/core/fabric-tension-gravity.webp`
+- **900×1350**
+- full 2:3 artwork preserved
+- AI-rendered logo area deterministically covered and replaced with `public/branding/g-art-lockup.svg`
