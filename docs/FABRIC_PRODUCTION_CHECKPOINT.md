@@ -29,7 +29,7 @@ Do not turn this into a taxonomy of named fold types.
 Use panel-first QA.
 
 Order:
-1. hero study — bent sleeve showing support / gravity / stretch / compression
+1. hero study — **APPROVED**
 2. four cause cards
 3. six practical reference studies
 4. final composite
@@ -37,6 +37,17 @@ Order:
 6. full poster QA
 7. owner approval
 8. asset pinning / guide wiring / CI / release
+
+## Approved hero study
+
+Owner approved the second hero version on **2026-09-30**.
+
+Approved changes versus the first attempt:
+- show more of the shirt/torso, not only the sleeve
+- use a female subject
+- retain the support / gravity / stretch / compression teaching callouts
+
+Do not regenerate this approved hero without a concrete reason.
 
 ## Hero study requirements
 
