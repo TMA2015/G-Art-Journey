@@ -15,7 +15,7 @@ const sections=[{id:'materials',label:t.explore.materials},{id:'movements',label
  <section id="materials" class="discovery-section" aria-labelledby="materials-title">
   <div class="discovery-heading"><span class="eyebrow">{t.explore.materialsTag}</span><h2 id="materials-title" class="serif">{t.explore.materialsTitle}</h2><p>{t.explore.materialsIntro}</p></div>
   <div class="material-grid">
-   {media.map((m,i)=><article class="material-card" id={m.id}><div class="material-image"><img src={m.image.startsWith('https:')?m.image:base+m.image} alt={m.name} loading="lazy" referrerpolicy={m.image.startsWith('https:')?'no-referrer':undefined}/><span class="material-icon" aria-hidden="true">{m.emoji}</span></div><div class="material-copy"><span class="eyebrow">{String(i+1).padStart(2,'0')} / {m.label}</span><h3>{m.name}</h3><p>{m.text}</p><a href={url(m.start)}>{t.explore.materialsLink}</a></div></article>)}
+   {media.map((m,i)=><article class="material-card" id={m.id}><div class="material-image"><img src={m.image.startsWith('https:')?m.image:base+m.image} alt={m.name} loading="lazy" referrerpolicy={m.image.startsWith('https:')?'no-referrer':undefined}/><span class="material-icon" aria-hidden="true">{m.emoji}</span>{m.imageNote?.startsWith('AI-generated')&&<span class="material-ai-badge">AI medium study</span>}</div><div class="material-copy"><span class="eyebrow">{String(i+1).padStart(2,'0')} / {m.label}</span><h3>{m.name}</h3><p>{m.text}</p><a href={url(m.start)}>{t.explore.materialsLink}</a></div></article>)}
   </div>
   <p class="discovery-note">{t.explore.materialsNote}</p>
  </section>
