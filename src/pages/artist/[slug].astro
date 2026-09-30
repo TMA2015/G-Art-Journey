@@ -4,27 +4,57 @@ import Base from '../../layouts/Base.astro';
 import SectionNav from '../../components/SectionNav.astro';
 import {artists} from '../../data/discovery.mjs';
 import {getArtists} from '../../i18n/discovery.mjs';
-import {ui,language} from '../../i18n/ui.mjs';
 export function getStaticPaths(){return artists.map(artist=>({params:{slug:artist.slug},props:{artist}}));}
-const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
+const lang='en',base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const artist=getArtists(lang).find(a=>a.slug===Astro.props.artist.slug);
 ---
 <Base lang={lang} title={artist.name} description={artist.intro}>
 <article class="site-shell profile-page">
- <a href={url('explore/#artists')} class="eyebrow back-link">{t.artist.back}</a>
- <SectionNav lang={lang} items={[{id:'artist-intro',label:artist.name},{id:'artist-facts',label:t.artist.interesting},{id:'artist-work',label:t.artist.work},{id:'artist-try',label:t.artist.tryTitle}]}/>
- <header id="artist-intro" class="artist-infographic" style={'--artist-color:'+artist.accent}>
-  <div class="infographic-art"><img src={artist.image.startsWith('https:')?artist.image:base+artist.image} alt={artist.imageNote}/><small>{artist.imageNote}</small></div>
-  <div class="infographic-info"><span class="eyebrow">{artist.tag} · {t.artist.story}</span><h1 class="serif">{artist.name}</h1><p class="infographic-dates">{artist.dates} · {artist.region}</p><p class="infographic-intro">{artist.intro}</p><div class="infographic-signature"><span>{t.artist.threeWords}</span><strong>{artist.signature}</strong></div></div>
- </header>
- <section id="artist-facts" class="infographic-detail">
-  <div><span class="eyebrow">{t.artist.three}</span><h2 class="serif">{t.artist.interesting}</h2></div>
-  <div class="fact-list">{artist.facts.map((fact,i)=><div class="fact-row"><span>{String(i+1).padStart(2,'0')}</span><div><h3>{fact.name}</h3><p>{fact.detail}</p></div></div>)}</div>
+ <a href={url('explore/#artists')} class="eyebrow back-link">← Explore artists</a>
+ <SectionNav lang={lang} items={[{id:'artist-about',label:'About'},{id:'artist-works',label:'Representative works'}]}/>
+
+ <section id="artist-about" class="artist-infographic" style={'--artist-color:'+artist.accent}>
+  <div class="infographic-art">
+   <img src={artist.image.startsWith('https:')?artist.image:base+artist.image} alt={artist.imageNote||artist.name} referrerpolicy="no-referrer"/>
+   <small>{artist.imageNote}</small>
+  </div>
+  <div class="infographic-info">
+   <span class="eyebrow">ARTIST · {artist.region}</span>
+   <h1 class="serif">{artist.name}</h1>
+   <p class="infographic-dates">{artist.dates}</p>
+   <p class="infographic-intro">{artist.intro}</p>
+   <div class="infographic-signature"><span>Why this artist matters</span><strong>{artist.signature}</strong></div>
+   <ul class="discovery-why">
+    {artist.why.map(point=><li>{point}</li>)}
+   </ul>
+  </div>
  </section>
- <div class="infographic-panels">
-  <section id="artist-work" class="featured-work"><span class="eyebrow">{t.artist.work}</span><h2 class="serif">{artist.work}</h2><p>{artist.workYear} · {artist.museum}</p><a href={artist.workUrl} target="_blank" rel="noopener noreferrer">{t.artist.view}</a></section>
-  <section id="artist-try" class="try-art"><span class="eyebrow">{t.artist.try}</span><h2 class="serif">{t.artist.tryTitle}</h2><p>{artist.try}</p><a href={url('guides/')}>{t.artist.guides}</a></section>
- </div>
- <p class="discovery-note">{t.artist.disclaimer}</p>
+
+ <section id="artist-works" class="artwork-section">
+  <div class="discovery-heading">
+   <span class="eyebrow">LOOK AT THE ART</span>
+   <h2 class="serif">Representative works</h2>
+   <p>{artist.worksNote||'A small set of well-known works to help you recognize the artist’s ideas, choices and visual language.'}</p>
+  </div>
+  <div class="artwork-grid">
+   {artist.artworks.map(work=>
+    <article class="artwork-card">
+     <a class="artwork-image" href={work.source} target="_blank" rel="noopener noreferrer">
+      <img src={work.image} alt={work.title+' by '+work.artist} loading="lazy" referrerpolicy="no-referrer"/>
+     </a>
+     <div class="artwork-copy">
+      <span class="eyebrow">{work.year}</span>
+      <h3 class="serif">{work.title}</h3>
+      <p class="artwork-by">{work.artist}</p>
+      {work.museum&&<p class="artwork-museum">{work.museum}</p>}
+      <p>{work.note}</p>
+      <a class="artwork-source" href={work.source} target="_blank" rel="noopener noreferrer">Source · {work.rights} ↗</a>
+     </div>
+    </article>
+   )}
+  </div>
+ </section>
+
+ <p class="discovery-note">Artwork images on this page are used only when the linked source marks the file as public domain, CC0, or another open license. The source link is provided for provenance and license details.</p>
 </article>
 </Base>
