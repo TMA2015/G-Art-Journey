@@ -5,13 +5,15 @@ This is the first production unit after Character Styles. It is intentionally sm
 ## Production order
 1. Hand structure — **published**. Exact production record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`.
 2. Eye structure — **published**. Exact production record: `docs/EYE_STRUCTURE_AUTHORING.md`.
-3. Hair masses and flow — **next**; teaches grouping and silhouette rather than strand copying. Exact production brief: `docs/HAIR_MASSES_AUTHORING.md`.
-4. Fabric from tension and gravity — connects anatomy, gesture and clothing.
+3. Hair masses and flow — **published**. Exact production record: `docs/HAIR_MASSES_AUTHORING.md`.
+4. Fabric from tension and gravity — **next**; connects support points, gravity, compression and the form underneath. Exact production brief: `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`.
 
 ## Visual direction
 - Graphite-first drawings: neutral pencil/ink values, paper texture and clean construction lines.
 - G-Art pink/peach/mint/purple is used only for titles, arrows, step numbers and small callout shapes.
-- The layout may change per lesson. Hands can use a large anatomy plate; hair may use one hero head plus variants; fabric may use four cause-based mini studies.
+- The layout may change per lesson. Hands can use a large anatomy plate; Hair uses one construction sequence plus hairstyle references; Fabric uses one hero sleeve plus cause-based studies.
+- New infographics should use the purple G-Art Journey logo when practical.
+- Dense multi-panel posters use panel-first QA: approve high-risk drawings separately before compositing.
 - Do not make all models the same girl. Different examples should have different faces, hair, ages or clothing where the skill allows.
 
 ## Non-negotiable human QA
