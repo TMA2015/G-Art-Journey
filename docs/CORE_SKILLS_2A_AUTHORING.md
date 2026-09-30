@@ -3,8 +3,8 @@
 This is the first production unit after Character Styles. It is intentionally small: four transferable skills, not another large curriculum.
 
 ## Production order
-1. Hand structure — highest QA value because hand errors were the most common failure in the previous batch. Exact production brief: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`.
-2. Eye structure — establishes a reliable feature-construction standard.
+1. Hand structure — **published**. Exact production record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`.
+2. Eye structure — **next**; establishes a reliable feature-construction standard. Exact production brief: `docs/EYE_STRUCTURE_AUTHORING.md`.
 3. Hair masses and flow — teaches grouping and silhouette rather than strand copying.
 4. Fabric from tension and gravity — connects anatomy, gesture and clothing.
 
@@ -28,4 +28,4 @@ This is the first production unit after Character Styles. It is intentionally sm
 See `docs/ACADEMIC_REFERENCE_MAP.md`. Public copy should remain simple and friendly; source terminology is for authoring/QA, not for making the lesson feel like a textbook.
 
 ## Release rule
-Nothing in this packet is public yet. Generate original art, inspect at full resolution, create optimized WebP, then add staged guide data and skill-intent records. Only activate after all four posters pass anatomy/content/asset tests.
+Phase 2A posters are modular and may publish **one at a time**. For each poster: create original art, inspect at full resolution, generate the optimized WebP, add guide data and the skill-intent record, then run the full content/asset/test gate. Do not hold a finished poster until all four are complete, and do not publish a later poster merely because another one passed.
