@@ -1,6 +1,6 @@
 # Draw an Eye from Structure — production specification
 
-Status: **artwork QA complete; published with the Phase 2A eye guide**
+Status: **v1 content approved and live; v2 visual refresh in progress**
 
 This is the second Phase 2A Core Drawing Skills item. It should teach a transferable eye-construction method before manga/webtoon/manhua stylization.
 
@@ -179,3 +179,84 @@ Published implementation:
 - editable source: `assets/core/eye-structure.svg`
 - generated public asset: `public/infographics/core/eye-structure.webp`
 - source is regenerated deterministically before dev/test/build.
+
+
+## 10. Eye v2 visual refresh — active production specification
+
+The v2 refresh changes **presentation quality and practical reference depth**, not the learning objective, guide slug, URL or core construction logic.
+
+### A. Main construction sequence
+Create this as the first independent QA unit before any full poster is assembled.
+
+Use one consistent neutral eye in the same three-quarter/front-biased view through all five stages:
+1. **Eyeball sphere** — sphere plus eye axis
+2. **Wrap the lids** — upper/lower lids and corners wrapping around the sphere
+3. **Iris & pupil** — iris seated on the curved eye surface, pupil centered within it
+4. **Thickness & shadow** — readable lid rim/crease plus simple upper-lid cast shadow
+5. **Clean eye** — restrained graphite value and one coherent highlight
+
+The eye identity, opening shape, iris position and camera angle must not drift between stages.
+
+### B. Four key structural studies
+After the five-step group passes QA, create four separate studies:
+1. **Lids wrap the ball** — clear upper/lower lid wrap around the sphere
+2. **Iris sits under the lids** — relaxed eye with iris partly occluded by lids
+3. **Rim, crease & shadow** — show lid thickness and upper-lid shadow without claiming every upper lid is universally thicker/darker
+4. **Corners anchor the opening** — compare inner/outer corner roles without declaring one universal corner shape
+
+Use short beginner wording. Prefer observation-based language such as “often,” “can,” or direct structural description when anatomy varies.
+
+### C. Practical eye-view reference grid
+After key studies pass QA, create 8–10 neutral graphite references. Preferred set:
+- relaxed front
+- three-quarter
+- side / near-profile
+- looking left
+- looking right
+- looking up
+- looking down
+- half-closed
+- wide open
+- closed eye
+
+These are reference variations, not cumulative steps. Avoid turning the grid into a makeup, eyelash or stylized-character showcase. Keep lashes restrained and vary eye identity subtly enough that the sheet does not imply one gendered eye template.
+
+### D. Poster composition
+Final poster may use:
+- title + subtitle
+- five-step main sequence
+- four key structural studies
+- 8–10 practical view references
+- three short practice tips
+
+Keep the upper-left branding area clear during image generation. Composite the canonical repository asset `public/branding/g-art-lockup.svg` after teaching artwork passes QA. Do not ask an image model to redraw the logo.
+
+### E. Eye v2 mandatory QA
+Before final composition:
+- inspect each important eye study at full resolution
+- same eye identity and camera angle across Steps 1–5
+- lids visibly wrap around a spherical form
+- iris/pupil placement remains coherent through the sequence
+- relaxed-eye iris is not a floating full circle
+- no duplicate pupil, iris, highlight or lid edge
+- perspective compression is plausible in turned views
+- lid thickness is visible but not exaggerated
+- cast shadow and highlight agree with one light direction
+- corners connect naturally to upper/lower lids
+- lashes never hide construction errors
+- no panel relies on a rigid gender, ethnicity or beauty-template claim
+
+### F. v2 production order
+1. Lock the page architecture only.
+2. Generate the five-step main eye group.
+3. QA/reject/repair the five-step group.
+4. Generate the four key studies.
+5. QA/reject/repair the key studies.
+6. Generate practical eye-view references in small groups.
+7. QA every reference.
+8. Composite approved panels with the canonical G-Art Journey lockup.
+9. Run whole-page readability/anatomy QA.
+10. Only after owner approval, pin source integrity, generate the public WebP, run CI and release.
+
+### G. Non-release concept
+The first full-page Eye v2 image generated on 2026-09-30 is a **layout reference only**. It is not an approved artwork candidate and must not be wired to the live site. Its useful contribution is the overall density pattern (five steps + four key studies + practical views + practice tips); its eye continuity, wording and representation still require panel-first rebuilding.
