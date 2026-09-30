@@ -1,0 +1,7 @@
+---
+import Material from '../../material/[slug].astro';
+import {media} from '../../../data/discovery.mjs';
+export function getStaticPaths(){return media.map(item=>({params:{slug:item.id},props:{item}}));}
+const {item}=Astro.props;
+---
+<Material lang="en" item={item}/>
