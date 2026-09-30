@@ -260,3 +260,36 @@ Before final composition:
 
 ### G. Non-release concept
 The first full-page Eye v2 image generated on 2026-09-30 is a **layout reference only**. It is not an approved artwork candidate and must not be wired to the live site. Its useful contribution is the overall density pattern (five steps + four key studies + practical views + practice tips); its eye continuity, wording and representation still require panel-first rebuilding.
+
+
+## 11. Owner-approved Eye v2 artwork
+
+Owner approval recorded: **2026-09-30**.
+
+The owner approved the generated full Eye v2 poster shown in the project chat. Preserve this exact artwork direction; do **not** regenerate the poster merely to make it conform more mechanically to the earlier panel-first layout brief.
+
+Approved composition includes:
+- five-stage eye construction row
+- four key structural studies
+- ten practical eye-view examples
+- four compact practice tips
+- warm paper / graphite-led G-Art visual language
+- a small decorative colored drawing-helper character at the upper-right
+
+### Owner-approved visual exceptions
+
+The approved poster differs from the earlier strict v2 brief in several small ways. These are recorded so a future session does not “fix” them by regenerating the whole image:
+
+- the upper-right contains a small colored decorative character rather than being entirely graphite-only
+- the poster does not reserve a dedicated upper-left logo box
+- some short callouts simplify variable anatomy (for example upper/lower lid character and inner/outer corner shape); the web lesson retains the more careful structural explanation
+- the rendered finish increases strongly from Steps 3 → 5, but the construction remains in one consistent overall viewing direction
+
+Treat these as owner-approved presentation choices, not new universal academic rules.
+
+### Release handling
+
+- Keep the approved raster artwork itself unchanged.
+- Do not ask an image model to redraw the logo into the artwork.
+- If brand treatment is needed on the website, use the canonical repository lockup in the surrounding page/UI rather than regenerating the approved image.
+- Pin the approved source hash and dimensions before switching the live asset.
