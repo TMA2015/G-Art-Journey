@@ -77,3 +77,25 @@ Owner confirmed on **2026-09-30**:
 - layout is clear and stable
 
 Materials & Tools browser QA is **closed**.
+
+
+## Image-source policy
+
+Owner decision locked on **2026-09-30**.
+
+For each medium, target at least **3 useful visual examples total**:
+- 1 introductory image
+- 2 additional examples
+
+Priority:
+1. real artwork / image with usable rights and strong visual relevance
+2. original G-Art illustration where it genuinely demonstrates the medium
+3. clearly labeled AI-generated medium study only when suitable real/open examples are still insufficient
+
+AI is allowed **only in Materials / Mediums**, not as a substitute for real works in Artists or Styles.
+
+Any AI medium image must be labeled clearly as:
+- **AI-generated medium study**
+- **Not a historical artwork**
+
+Do not create AI images simply to exceed the three-image minimum.
