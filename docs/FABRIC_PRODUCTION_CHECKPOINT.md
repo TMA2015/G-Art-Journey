@@ -1,4 +1,4 @@
-# G-Art Journey — Fabric Production Recovery Checkpoint
+# G-Art Journey — Fabric Release / Recovery Record
 
 _Last verified: 2026-09-30_
 
@@ -115,6 +115,14 @@ Remaining gate:
 3. verify main Pages deployment
 4. visually inspect the deployed Fabric card/page
 5. close Phase 2A handoff
+
+## Final release state
+
+- final PR CI passed
+- PR #36 merged as `6552900f5ee34a3848868aa183a485c942b53a19`
+- main Pages workflow #142 completed successfully
+- Fabric is released
+- next project task: **Five Values & a Lit Sphere**
 
 ## Resume rule
 
