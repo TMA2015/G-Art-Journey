@@ -66,3 +66,14 @@ Each material page includes:
 6. merge — DONE (PR #44)
 7. Pages deployment — PASS (workflow #186)
 8. owner browser QA on desktop + iPhone — PENDING
+
+
+## Browser QA result
+
+Owner confirmed on **2026-09-30**:
+- desktop: PASS
+- iPhone: PASS
+- new Materials content is visible
+- layout is clear and stable
+
+Materials & Tools browser QA is **closed**.

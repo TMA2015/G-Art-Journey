@@ -213,7 +213,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ### Phase 2 visual baseline reset — current priority
 
-**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Explore Art content is now complete in code: Artists + Styles passed browser QA; Materials & Tools is deployed and awaiting owner browser QA.**
+**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Explore Art is complete and has passed browser QA on desktop and iPhone.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -269,7 +269,7 @@ Planned Fabric teaching order remains:
 
 Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic.
 
-### Explore Art — Materials & Tools deployed, browser QA pending
+### Explore Art — complete
 
 Owner-approved scope:
 - keep the existing **4 artist pages**: Leonardo da Vinci, Claude Monet, Vincent van Gogh, Fan Kuan
@@ -288,7 +288,15 @@ Learner-art status:
 - no learner images are in the repository/public site
 - resume only after the learner confirms original vs fan-art/reference, image-background rights and approximate chronology
 
-### Materials & Tools completion — active
+### Style authenticity rule
+
+For **Explore Art → Styles**, use only real artworks that genuinely belong to the movement/style being discussed.
+- do not use original G-Art showcase illustrations as style examples or style-card covers
+- every style cover and representative work must have a real artist/work source
+- continue using Public Domain / CC0 / clearly open-license image sources
+- G-Art illustrations belong in teaching/material pages, not as historical style exemplars
+
+### Materials & Tools completion — complete
 
 Owner browser QA confirmed the new Artists + Styles content is clear on desktop and iPhone.
 
