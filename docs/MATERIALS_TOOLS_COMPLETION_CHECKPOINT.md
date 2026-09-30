@@ -139,3 +139,20 @@ Each medium must expose at least **3 distinct useful visuals** across cover + ex
 - Oil and Ink & Wash now use real artworks as their covers.
 - Each material now exposes at least 3 distinct useful visuals across its cover and examples.
 - Final gate: owner visual QA on the deployed Materials cards/detail pages.
+
+
+## Final replacement batch — owner approved
+
+Owner approved eight AI medium studies on **2026-10-01** to replace the remaining weak G-Art example cards:
+
+- Graphite: hand + sphere + cube study replaces the old portrait-value G-Art card
+- Colored Pencil: butterfly + flowers study replaces the old character-color G-Art card
+- Watercolor: spring bridge study replaces the old watercolor-flower G-Art card
+- Acrylic: blue-vase still life + sunlit windowsill studies replace both old G-Art cards
+- Crayon & Pastel: sunlit portrait study replaces the old character-color G-Art card
+- Vietnamese Lacquer: lotus/cranes + moonlit-river studies replace both old G-Art cards
+
+All replacements use the existing label contract:
+**AI-generated medium study · Not a historical artwork**
+
+Oil, Ink & Wash and Digital Painting are unchanged in this batch.

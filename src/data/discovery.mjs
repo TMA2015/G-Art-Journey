@@ -23,7 +23,7 @@ export const media = [
   process:['Sketch the biggest shapes very lightly.','Check proportion and placement before darkening lines.','Group the main light and shadow shapes.','Build darker values gradually and keep the lightest paper clean.'],
   examples:[
    artwork('Sheet of Studies of Hands and Arms','Leonardo da Vinci','c. 1480','Study of Arms and Hands.jpg','Royal Collection','A useful example of drawing as observation: separate hand and arm studies are tested on one sheet.'),
-   siteExample('Portrait value study','showcase/pencil-portrait.svg','A G-Art illustration showing how simple line and value can describe a face.')
+   aiExample('Hand, sphere & cube graphite study','explore/materials/graphite-hand-study.webp','Careful hatching, cast shadows and value transitions show how graphite can describe anatomy, simple solids and draped cloth.')
   ],
   learn:[{label:'Pencil drawing guides',href:'guides/#pencil'}]
  },
@@ -35,7 +35,7 @@ export const media = [
   process:['Begin with a clean, light sketch.','Lay down the lightest local colors with gentle pressure.','Layer new colors instead of pressing hard too early.','Sharpen edges and deepen the darkest accents near the end.'],
   examples:[
    aiExample('Bluebird colored-pencil study','explore/materials/colored-pencil-bird-study.webp','Layered blue, orange and neutral pencil strokes show how colored pencil can build feather texture and gradual color changes.'),
-   siteExample('Character color study','showcase/character.svg','A G-Art character illustration used to show simple flat colors and controlled color accents.')
+   aiExample('Butterfly & flowers colored-pencil study','explore/materials/colored-pencil-butterfly-study.webp','Layered pencil strokes build saturated petals, leaf texture and the patterned wings of a butterfly without losing the paper surface.')
   ],
   learn:[]
  },
@@ -47,7 +47,7 @@ export const media = [
   process:['Make a very light drawing if you need one.','Wet or dry the paper depending on the edge you want.','Paint broad light washes first.','Let layers dry, then add darker shapes and the smallest accents.'],
   examples:[
    artwork('The Blue Rigi, Sunrise','J. M. W. Turner','1842','Blue Rigi painting.jpg','Tate','A famous watercolor where transparent washes, paper white and atmospheric edges create distance and light.'),
-   siteExample('Watercolor flower study','showcase/watercolor.svg','An original G-Art illustration showing soft washes, edge control and visible paper.')
+   aiExample('Spring bridge watercolor study','explore/materials/watercolor-bridge-study.webp','Transparent washes, soft wet edges and preserved paper white create bright water, blossoms, distance and reflected light.')
   ],
   learn:[{label:'Watercolor guides',href:'guides/#watercolor'}]
  },
@@ -71,8 +71,8 @@ export const media = [
   tools:['Acrylic colors','Synthetic brushes','Palette','Canvas, board or heavy paper','Water container','Cloth or paper towel'],
   process:['Plan the large shapes before the paint dries.','Block in broad mid-tone color areas.','Add lighter and darker layers after the first shapes are established.','Use smaller brushes only for the final edges and details.'],
   examples:[
-   siteExample('Layered color study','showcase/watercolor-2.svg','A G-Art illustration used to show how transparent-looking and opaque-looking color areas can be layered.'),
-   siteExample('Graphic color study','showcase/digital.svg','An original G-Art image that demonstrates the bold, flat shapes acrylic can handle well.')
+   aiExample('Blue vase & fruit acrylic study','explore/materials/acrylic-vase-fruit-study.webp','Opaque color, visible brush texture and strong warm-cool contrasts show the bold surface acrylic can create.'),
+   aiExample('Sunlit windowsill acrylic study','explore/materials/acrylic-window-study.webp','Layered opaque strokes describe plants, ceramic surfaces, fruit and sharp sunlit shadows with a lively painted edge.')
   ],
   learn:[],
   care:'Rinse brushes before acrylic dries in them. Do not pour heavy paint residue directly into a sink; wipe excess paint first.'
@@ -85,7 +85,7 @@ export const media = [
   process:['Choose a limited palette and place the biggest color shapes first.','Layer or hatch colors instead of immediately smearing everything together.','Blend selectively where a soft transition helps.','Keep some crisp marks and accents so the surface stays lively.'],
   examples:[
    artwork('The Star','Edgar Degas','c. 1876–1878','Edgar Degas - The Star - Google Art Project.jpg','Philadelphia Museum of Art','Pastel over an ink monotype shows both soft color clouds and sharp drawn accents.'),
-   siteExample('Character color sketch','showcase/character-2.svg','A G-Art illustration showing direct color blocks and simple expressive edges.')
+   aiExample('Sunlit portrait pastel study','explore/materials/pastel-girl-study.webp','Broken pastel marks, layered color and softly blended skin tones show how the medium can move between energetic texture and gentle transitions.')
   ],
   learn:[]
  },
@@ -109,8 +109,8 @@ export const media = [
   tools:['Prepared lacquer board or panel','Traditional lacquer materials or a modern studio-safe substitute','Pigments and brushes','Eggshell, gold or silver leaf when part of the design','Abrasives and polishing materials used in the studio'],
   process:['Prepare and seal the support.','Build the image through planned layers rather than one final coat.','Add materials such as pigment, eggshell or metal leaf according to the design.','Sand and polish selectively so different layers and textures become visible.'],
   examples:[
-   siteExample('Layered-surface illustration','showcase/digital-2.svg','A G-Art illustration used only to explain layered color and surface planning; it is not presented as a historical lacquer artwork.'),
-   siteExample('Color-and-texture planning study','showcase/watercolor-2.svg','A simple original illustration used to discuss how a lacquer design can be planned in large color areas before surface finishing.')
+   aiExample('Lotus & cranes lacquer study','explore/materials/lacquer-cranes-study.webp','Black and cinnabar-red fields, gold-like leaf effects and pale eggshell-like lotus and crane forms suggest the layered decorative surface of Vietnamese lacquer.'),
+   aiExample('Moonlit river lacquer study','explore/materials/lacquer-river-study.webp','Dark lacquer-like depth, red-brown layers, gold reflections and shell-like boat roofs show how polishing and embedded materials can create luminous contrast.')
   ],
   learn:[],
   care:'Traditional lacquer sap can irritate skin and requires experienced studio handling. This medium is best learned with a trained teacher rather than treated as an unsupervised home craft.'
