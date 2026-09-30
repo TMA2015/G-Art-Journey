@@ -11,6 +11,8 @@ test('all nine Explore materials have complete beginner pages',async()=>{
     assert.ok(Array.isArray(item.tools)&&item.tools.length>=4,item.id+' tools');
     assert.ok(Array.isArray(item.process)&&item.process.length>=4,item.id+' process');
     assert.ok(Array.isArray(item.examples)&&item.examples.length>=2,item.id+' examples');
+    if(!item.image.startsWith('https:'))await access('public/'+item.image);
+
     for(const ex of item.examples){
       assert.ok(ex.title&&ex.artist&&ex.year&&ex.note&&ex.rights,item.id+' example metadata');
       if(ex.image.startsWith('https:')){
