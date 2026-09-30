@@ -156,3 +156,12 @@ All replacements use the existing label contract:
 **AI-generated medium study · Not a historical artwork**
 
 Oil, Ink & Wash and Digital Painting are unchanged in this batch.
+
+
+## Final replacement deployment
+
+- PR #50 merged as `7ba413219e509dea08b0f82105f559601d8aeb27`.
+- Main Pages workflow #198: **SUCCESS**.
+- The eight owner-approved replacement studies are live in the deployed build.
+- Temporary upload staging was cleaned after the release.
+- Final gate: owner visual confirmation on desktop/iPhone.
