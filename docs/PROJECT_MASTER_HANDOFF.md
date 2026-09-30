@@ -211,7 +211,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ### Phase 2 visual baseline reset — current priority
 
-**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Do not resume Phase 2B automatically; the owner will provide the next project input.
+**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production is temporarily paused. **Explore Art completion is the active project task.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -266,6 +266,25 @@ Planned Fabric teaching order remains:
 - thickness, wrap and overlap
 
 Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic.
+
+### Explore Art — active completion task
+
+Owner-approved scope:
+- keep the existing **4 artist pages**: Leonardo da Vinci, Claude Monet, Vincent van Gogh, Fan Kuan
+- keep the existing **5 style/movement pages**: Renaissance, Impressionism, Post-Impressionism, Cubism, Chinese Ink & Wash
+- complete quickly rather than expanding the catalog
+- each artist page has two main sections: **About / why the artist matters** and **Representative works**
+- each movement page has the same two-part structure
+- use approximately **4–6 representative works** where reliable/open material is available
+- each artwork card includes title, artist, date, holding institution when useful, one short observation, source and rights status
+- attribution alone is **not** considered copyright permission; use Public Domain / CC0 / clearly open-license sources
+- Fan Kuan is a documented exception: only a small number of securely associated works are available, so do not pad his page with doubtful attributions just to reach a count
+- no new lesson production until Explore Art is complete
+
+Learner-art status:
+- the 18-piece learner artwork audit is **paused**
+- no learner images are in the repository/public site
+- resume only after the learner confirms original vs fan-art/reference, image-background rights and approximate chronology
 
 ## 12. Handoff update protocol
 
