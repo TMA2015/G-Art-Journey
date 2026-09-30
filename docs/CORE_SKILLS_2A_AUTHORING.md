@@ -6,7 +6,9 @@ This is the first production unit after Character Styles. It is intentionally sm
 1. Hand structure — **published**. Exact production record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`.
 2. Eye structure — **published**. Exact production record: `docs/EYE_STRUCTURE_AUTHORING.md`.
 3. Hair masses and flow — **published**. Exact production record: `docs/HAIR_MASSES_AUTHORING.md`.
-4. Fabric from tension and gravity — **owner-approved release candidate in PR #36**; connects support points, gravity, compression and the form underneath. Exact production record: `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`.
+4. Fabric from tension and gravity — **published in PR #36**; connects support points, gravity, compression and the form underneath. Exact production record: `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`.
+
+**Phase 2A is complete.** The next production unit is Phase 2B, beginning with **Five Values & a Lit Sphere**.
 
 ## Visual direction
 - Graphite-first drawings: neutral pencil/ink values, paper texture and clean construction lines.
