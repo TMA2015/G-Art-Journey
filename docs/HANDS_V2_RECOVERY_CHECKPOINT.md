@@ -1,8 +1,8 @@
-# G-Art Journey — Hands v2 Recovery Checkpoint
+# G-Art Journey — Hands v2 Release / Recovery Record
 
 _Last verified: 2026-09-30_
 
-Purpose: durable recovery point for the in-progress **Hands v2 visual refresh**. Read this file together with `docs/PROJECT_MASTER_HANDOFF.md` before resuming if a chat/stream is interrupted.
+Purpose: durable record of the recovered and completed **Hands v2 visual refresh**. Hands v2 is now released; future work should use `docs/PROJECT_MASTER_HANDOFF.md` for the active production task.
 
 ## Confirmed repository state
 
@@ -80,6 +80,16 @@ Still pending at this recovery update:
 11. Verify the main Pages deployment.
 12. Only then start **Eye v2**.
 13. Resume Fabric after Hands v2 and Eye v2 establish one coherent Phase 2 visual row.
+
+## Final release state
+
+- PR #29 was marked ready after final PR CI passed.
+- PR #29 merged to `main` as squash commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
+- Main workflow **Build and publish G-Art Journey** run #107 completed successfully.
+- Hands v2 is therefore released through the normal GitHub Pages pipeline.
+- The existing guide slug / URL and academic guide content were preserved.
+- The next active production task is **Eye v2**.
+- **Fabric remains paused** until Eye v2 is complete.
 
 ## Recovery rule
 
