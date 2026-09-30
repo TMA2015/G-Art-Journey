@@ -10,10 +10,13 @@ const artwork=(title,artist,year,file,museum,note,rights='Public domain')=>({
 const siteExample=(title,image,note)=>({
  title,artist:'G-Art Journey',year:'Illustration',image,source:null,museum:null,note,rights:'Original G-Art illustration'
 });
+const aiExample=(title,image,note)=>({
+ title,artist:'G-Art Journey · AI study',year:'AI-generated medium study',image,source:null,museum:null,note,rights:'AI-generated medium study · Not a historical artwork'
+});
 
 export const media = [
  {
-  id:'graphite',name:'Vẽ chì',en:'Graphite & Pencil',emoji:'✎',image:'showcase/pencil-portrait.svg',
+  id:'graphite',name:'Vẽ chì',en:'Graphite & Pencil',emoji:'✎',image:'explore/materials/graphite-study.webp',imageNote:'AI-generated medium study · Not a historical artwork',
   text:'Build shapes with light and shade. Beautiful even without color.',start:'material/graphite/',
   about:'Graphite pencils mix graphite with clay inside a wooden or mechanical holder. Harder H grades usually make lighter, sharper marks; softer B grades make darker, broader marks. HB, 2B and 4B are enough for most beginner studies.',
   tools:['HB or H pencil for light construction','2B–4B pencil for darker values','Eraser or kneaded eraser','Sharpener','Smooth or medium-tooth drawing paper'],
@@ -25,19 +28,19 @@ export const media = [
   learn:[{label:'Pencil drawing guides',href:'guides/#pencil'}]
  },
  {
-  id:'colored-pencil',name:'Chì màu',en:'Colored Pencil',emoji:'✿',image:'showcase/character.svg',
+  id:'colored-pencil',name:'Chì màu',en:'Colored Pencil',emoji:'✿',image:'explore/materials/colored-pencil-floral-study.webp',imageNote:'AI-generated medium study · Not a historical artwork',
   text:'Explore pressure, layered pigments and subtle color transitions.',start:'material/colored-pencil/',
   about:'Colored pencils carry pigment in a wax- or oil-based core. They reward patient layering: light pressure keeps the paper texture open, while heavier pressure can blend or burnish colors into a denser surface.',
   tools:['A small set of colored pencils','Smooth drawing paper or light drawing card','Sharpener','Light graphite pencil for a faint sketch','Optional colorless blender or white pencil'],
   process:['Begin with a clean, light sketch.','Lay down the lightest local colors with gentle pressure.','Layer new colors instead of pressing hard too early.','Sharpen edges and deepen the darkest accents near the end.'],
   examples:[
-   artwork('Colored pencil drawing','Kwang-mo Choi','2020','2020-07-05 Colored pencil drawing.jpg','Wikimedia Commons','A modern colored-pencil example released under CC0; useful for seeing layered pencil texture.','CC0'),
+   aiExample('Bluebird colored-pencil study','explore/materials/colored-pencil-bird-study.webp','Layered blue, orange and neutral pencil strokes show how colored pencil can build feather texture and gradual color changes.'),
    siteExample('Character color study','showcase/character.svg','A G-Art character illustration used to show simple flat colors and controlled color accents.')
   ],
   learn:[]
  },
  {
-  id:'watercolor',name:'Màu nước',en:'Watercolor',emoji:'◌',image:'showcase/watercolor.svg',
+  id:'watercolor',name:'Màu nước',en:'Watercolor',emoji:'◌',image:'explore/materials/watercolor-landscape-study.webp',imageNote:'AI-generated medium study · Not a historical artwork',
   text:'Transparent washes, blooms, water and white paper.',start:'material/watercolor/',
   about:'Watercolor uses pigment carried by water and gum arabic. The white of the paper often supplies the brightest light, so watercolor is usually planned from light toward dark rather than covered with opaque corrections.',
   tools:['Watercolor pans or tubes','Watercolor paper','Round brush plus one larger wash brush','Two water containers','Palette or mixing plate','Paper towel or clean cloth'],
@@ -49,13 +52,12 @@ export const media = [
   learn:[{label:'Watercolor guides',href:'guides/#watercolor'}]
  },
  {
-  id:'oil',name:'Sơn dầu',en:'Oil Painting',emoji:'✦',image:'showcase/digital.svg',
+  id:'oil',name:'Sơn dầu',en:'Oil Painting',emoji:'✦',image:commonsImage('Vincent van Gogh Starry Night.jpg'),imageNote:'The Starry Night · Vincent van Gogh · Public domain source via Wikimedia Commons',
   text:'Brush marks, rich paint layers, color mixing and texture.',start:'material/oil/',
   about:'Oil paint suspends pigment in a drying oil such as linseed oil. It stays workable much longer than acrylic, making it good for slow blending, rich darks, thick brushwork and repeated adjustment.',
   tools:['Tube oil colors','A rigid palette or disposable palette paper','Bristle and/or soft brushes','Prepared canvas or painting panel','Palette knife','Painting medium if needed; beginners can work solvent-free'],
   process:['Block in the large shapes and value pattern.','Establish the main color families before chasing detail.','Build opaque or transparent layers as needed.','Finish with deliberate edges, highlights and brush texture after the large structure works.'],
   examples:[
-   artwork('The Starry Night','Vincent van Gogh','1889','Vincent van Gogh Starry Night.jpg','Museum of Modern Art','Oil paint lets thick directional strokes become part of the image’s rhythm.'),
    artwork('Mona Lisa','Leonardo da Vinci','c. 1503–1516','Leonardo da Vinci - Mona Lisa (Louvre, Paris).jpg','Louvre Museum','Very soft transitions show another side of oil painting: slow modeling rather than obvious brush marks.'),
    artwork('Poppy Field','Claude Monet','1873','Monet, Claude - Poppy Field.jpg','Musée d’Orsay','Separated touches of oil color build light, grass and flowers without describing every detail.')
   ],
@@ -63,7 +65,7 @@ export const media = [
   care:'If a studio uses solvents or traditional mediums, follow the product label, provide ventilation and keep materials away from food. A solvent-free beginner setup is possible.'
  },
  {
-  id:'acrylic',name:'Acrylic',en:'Acrylic Painting',emoji:'◇',image:'showcase/watercolor-2.svg',
+  id:'acrylic',name:'Acrylic',en:'Acrylic Painting',emoji:'◇',image:'explore/materials/acrylic-still-life-study.webp',imageNote:'AI-generated medium study · Not a historical artwork',
   text:'Quick-drying color for exploring layers and styles.',start:'material/acrylic/',
   about:'Acrylic paint uses pigment in an acrylic-polymer binder. It dilutes with water while wet, dries quickly and becomes water-resistant after drying. It can be used in thin transparent layers or in more opaque, paint-like blocks.',
   tools:['Acrylic colors','Synthetic brushes','Palette','Canvas, board or heavy paper','Water container','Cloth or paper towel'],
@@ -76,7 +78,7 @@ export const media = [
   care:'Rinse brushes before acrylic dries in them. Do not pour heavy paint residue directly into a sink; wipe excess paint first.'
  },
  {
-  id:'pastel',name:'Sáp & phấn màu',en:'Crayon & Pastel',emoji:'✺',image:'showcase/character-2.svg',
+  id:'pastel',name:'Sáp & phấn màu',en:'Crayon & Pastel',emoji:'✺',image:'explore/materials/pastel-dancer-study.webp',imageNote:'AI-generated medium study · Not a historical artwork',
   text:'Soft surfaces, direct color and expressive marks.',start:'material/pastel/',
   about:'This page groups several stick media that behave differently: dry pastel is powdery and blendable, oil pastel is soft and waxy, and wax crayons are firmer and cleaner. All are direct mark-making media with no brush between the hand and the surface.',
   tools:['Dry pastel, oil pastel or wax crayons','Textured pastel paper or drawing paper','Scrap paper for testing colors','Optional blending tool or tissue','Fixative only when appropriate for the chosen pastel and with adult/studio guidance'],
@@ -88,20 +90,20 @@ export const media = [
   learn:[]
  },
  {
-  id:'ink',name:'Mực & thủy mặc',en:'Ink & Wash',emoji:'〰',image:'showcase/pencil-landscape.svg',
+  id:'ink',name:'Mực & thủy mặc',en:'Ink & Wash',emoji:'〰',image:commonsImage('Fan Kuan - Travelers Among Mountains and Streams - Google Art Project.jpg'),imageNote:'Travelers Among Mountains and Streams · Fan Kuan · Public domain source via Wikimedia Commons',
   text:'Brush strokes, diluted ink and the expressive space left on paper.',start:'material/ink/',
   about:'Ink drawing can use a pen, brush or traditional ink stick. When ink is diluted with water, one dark material can produce many values. In East Asian ink painting, brush pressure, speed and untouched paper are as important as the black ink itself.',
   tools:['Liquid ink or an ink stick with inkstone','Brush and/or dip pen','Absorbent drawing, xuan or sumi paper','Water containers','Small palette or dishes for diluted ink'],
   process:['Test how quickly the paper absorbs ink.','Prepare two or three dilutions before starting.','Place the largest dark/light structure with confident marks.','Use dry brush, wet wash and empty paper deliberately rather than filling every area.'],
   examples:[
-   artwork('Travelers Among Mountains and Streams','Fan Kuan','c. 1000','Fan Kuan - Travelers Among Mountains and Streams - Google Art Project.jpg','National Palace Museum, Taipei','Dense ink texture, pale atmosphere and tiny travelers create monumental scale.'),
-   artwork('Early Spring','Guo Xi','1072','Guo Xi - Early Spring (large).jpg','National Palace Museum, Taipei','Layered ink values and mist create a landscape that seems to unfold through space.')
+   artwork('Early Spring','Guo Xi','1072','Guo Xi - Early Spring (large).jpg','National Palace Museum, Taipei','Layered ink values and mist create a landscape that seems to unfold through space.'),
+   siteExample('Ink landscape study','showcase/pencil-landscape.svg','A G-Art landscape illustration used to compare broad value masses, empty space and simplified brush-like shapes.')
   ],
   learn:[],
   related:[{label:'Explore Chinese Ink & Wash style',href:'movement/ink-wash/'}]
  },
  {
-  id:'lacquer',name:'Sơn mài Việt Nam',en:'Vietnamese Lacquer',emoji:'✧',image:'showcase/digital-2.svg',
+  id:'lacquer',name:'Sơn mài Việt Nam',en:'Vietnamese Lacquer',emoji:'✧',image:'explore/materials/lacquer-lotus-study.webp',imageNote:'AI-generated medium study · Not a historical artwork',
   text:'Vietnamese lacquer, layered paint, gold, silver, eggshell and polishing.',start:'material/lacquer/',
   about:'Vietnamese lacquer painting is built through repeated layers on a prepared support. Traditional practice may combine lacquer, pigments, eggshell and metal leaf, then sand and polish the surface so earlier layers reappear in controlled ways.',
   tools:['Prepared lacquer board or panel','Traditional lacquer materials or a modern studio-safe substitute','Pigments and brushes','Eggshell, gold or silver leaf when part of the design','Abrasives and polishing materials used in the studio'],
@@ -120,7 +122,6 @@ export const media = [
   tools:['Tablet, iPad/phone or pen display','Pressure-sensitive stylus when available','Drawing app with brush and layer support','A simple brush set','Cloud or local backup for working files'],
   process:['Sketch on a separate layer.','Block the largest color and value shapes before details.','Use layers to separate major tasks, not every tiny stroke.','Zoom out often, then finish edges, accents and export a copy for sharing.'],
   examples:[
-   siteExample('Digital landscape study','showcase/digital.svg','An original G-Art example built from clean color shapes and a limited palette.'),
    siteExample('Digital color study','showcase/digital-2.svg','An original G-Art illustration showing how layers and flat shapes can support quick experimentation.'),
    siteExample('Character study','showcase/character.svg','A simple G-Art character example connecting digital tools with the character-drawing lessons on the site.')
   ],
