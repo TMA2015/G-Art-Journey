@@ -30,7 +30,7 @@ test('Core Drawing Skills guides publish approved poster metadata',()=>{
   assert.equal(hair.poster,true);
   assert.equal(hair.image,'infographics/core/hair-masses.webp');
   assert.equal(hair.posterWidth,900);
-  assert.equal(hair.posterHeight,1200);
+  assert.equal(hair.posterHeight,1300);
   assert.equal(hair.steps.length,5);
   assert.match(hair.remember,/big shapes first/i);
 });
@@ -93,8 +93,9 @@ test('Core poster output preserves approved artwork and canonical branding contr
       assert.equal(asset.brand.placement,'upper-left');
     }
     if(asset.slug==='hair-masses'){
-      assert.equal(asset.brand.mode,'overlay');
-      assert.match(asset.brand.placement,/upper-right/);
+      assert.equal(asset.brand.mode,'band');
+      assert.equal(asset.brand.placement,'upper-left');
+      assert.ok(asset.brand.artPlate,'hair legacy mark cleanup plate');
     }
   }
 });
