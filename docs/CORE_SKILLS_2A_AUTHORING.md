@@ -3,7 +3,7 @@
 This is the first production unit after Character Styles. It is intentionally small: four transferable skills, not another large curriculum.
 
 ## Production order
-1. Hand structure — highest QA value because hand errors were the most common failure in the previous batch.
+1. Hand structure — highest QA value because hand errors were the most common failure in the previous batch. Exact production brief: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`.
 2. Eye structure — establishes a reliable feature-construction standard.
 3. Hair masses and flow — teaches grouping and silhouette rather than strand copying.
 4. Fabric from tension and gravity — connects anatomy, gesture and clothing.
