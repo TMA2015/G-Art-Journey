@@ -99,3 +99,32 @@ Any AI medium image must be labeled clearly as:
 - **Not a historical artwork**
 
 Do not create AI images simply to exceed the three-image minimum.
+
+
+## Approved image completion batch
+
+Owner approved the following generated medium studies on **2026-09-30**:
+
+- Graphite — classical bust + cube graphite study
+- Colored Pencil — botanical bouquet study
+- Colored Pencil — bluebird study
+- Watercolor — river landscape at sunrise
+- Acrylic — bright still life with flowers and fruit
+- Crayon & Pastel — expressive dancer study
+- Vietnamese Lacquer — lotus-lake lacquer-style study
+
+Release mapping:
+- Graphite: AI study becomes cover; Leonardo + original G-Art value study remain supporting examples
+- Colored Pencil: AI bouquet cover + AI bluebird example + original G-Art character example; remove the weak distant CC0 photo
+- Watercolor: AI landscape cover + Turner + original G-Art watercolor example
+- Oil: real Starry Night cover + Mona Lisa + Poppy Field
+- Acrylic: AI still-life cover + two original G-Art examples
+- Pastel: AI dancer cover + Degas + original G-Art example
+- Ink & Wash: real Fan Kuan cover + Guo Xi + original G-Art landscape example
+- Vietnamese Lacquer: AI lacquer cover + two original G-Art explanatory examples
+- Digital Painting: keep three original G-Art visuals; no AI added
+
+AI label contract:
+**AI-generated medium study · Not a historical artwork**
+
+Each medium must expose at least **3 distinct useful visuals** across cover + examples.
