@@ -23,10 +23,10 @@ export const coreAssetManifest = [
   },
   {
     "slug": "hair-masses",
-    "sourcePath": "assets/core/hair-masses.webp",
+    "sourceChunks": ["assets/core/hair-masses.b64"],
+    "sourceBytes": 139234,
+    "sourceSha256": "96265cd38ea1a7fdfc72eedaefdab333a56f3d0ae87cfda7b7ced0a2053b4813",
     "outputPath": "public/infographics/core/hair-masses.webp",
-    "sourceBytes": 14997,
-    "sourceGitBlobSha": "7a9d590c8f3530e561eb8d72731134448982e6bc",
     "width": 900,
     "height": 1200,
     "format": "webp"
