@@ -66,6 +66,25 @@ Important:
 11. Update the master handoff to Eye v2 completed/live.
 12. Resume Fabric only after Eye v2 release is complete.
 
+## Release implementation progress
+
+Completed after owner approval:
+- approved 1024×1536 poster preserved as high-quality WebP source
+- source split into eight repository base64 chunks
+- source size pinned at **495,832 bytes**
+- source SHA-256 pinned as `37526ddfcbe1181641193fe951e9940714916f2a518085ddb7ec3846fac78de2`
+- core manifest switched from the superseded Eye SVG to the approved raster source
+- public target set to **900×1350** to preserve the full 2:3 composition without cropping
+- Eye guide metadata now declares the matching 900×1350 poster dimensions
+- superseded `assets/core/eye-structure.svg` removed
+
+Still pending:
+- final PR CI on the completed source
+- merge PR #31 if CI passes
+- verify main Pages deployment
+- update master handoff to Eye v2 completed/live
+- only then resume Fabric
+
 ## Recovery rule
 
 If another stream timeout occurs, verify branch SHA / PR / CI first and continue from the last confirmed step. Do not repeat writes blindly and do not promote the non-release full-page concept.
