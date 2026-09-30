@@ -21,6 +21,8 @@ G-Art Journey should feel handmade, calm and easy to study:
 - generous spacing and readable hierarchy
 - clean pencil/editorial linework
 - light pastel accents (pink/peach/mint/purple) for identity
+- new infographics should carry the **G-Art Journey** logo when practical; use the website's purple brand as the main logo/identity color
+- do **not** retrofit already-approved historical posters only to add the logo
 - original teaching artwork and original wording
 - no copied quotes or copied instructional diagrams
 
@@ -57,6 +59,8 @@ Every image containing a human or human-like character must be inspected at full
 10. **Step continuity** — cumulative step-by-step art keeps the same subject, camera angle and pose unless viewpoint change is explicitly the lesson.
 
 AI-generated artwork always receives a dedicated anatomy pass. Visual attractiveness never overrides construction errors.
+
+For complex infographics with many detailed drawings, use a **panel-first QA workflow**: define the layout and panel purpose first, create/inspect high-risk panels individually, reject or repair bad panels, then composite the final poster and run one whole-page QA pass. This is preferred over relying on one large AI render to solve every small detailed drawing at once.
 
 ## 5. Medium-specific art rules
 
@@ -176,6 +180,8 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; generated WebP comes from the pinned editable SVG source.
 - Phase 2A posters release individually after their own QA gate.
 - PR #24: merged — **Draw an Eye from Structure** is live with deterministic SVG source, generated WebP, guide data and eye-specific QA. Main deployment workflow #69 passed.
+- PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
+- PR #26: **Draw Hair as Masses, Then Strands** — owner-approved artwork uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo. Release implementation is being finalized.
 
 ## 11. Current production task
 
@@ -200,22 +206,31 @@ Published implementation in this release:
 
 Exact authoring record: `docs/EYE_STRUCTURE_AUTHORING.md`
 
-**NEXT: Draw Hair as Masses, Then Strands**
+**COMPLETED / APPROVED: Draw Hair as Masses, Then Strands**
 
-Exact production brief: `docs/HAIR_MASSES_AUTHORING.md`
+Approved implementation in PR #26:
+- slug: `hair-masses`
+- five-step construction: Head → Big shape → Flow → Lock groups → Few strands
+- four short key tips and a corrected hair-thickness study
+- ten hairstyle examples for practical reference
+- warm paper + graphite/pencil artwork + light pastel accents
+- purple **G-Art Journey** logo in the upper corner
+- English-only wording using simple common language
+- earlier deterministic SVG draft was rejected and removed
+- approved raster source is pinned in repository chunks and generates the public WebP before dev/test/build
 
-Current Hair status:
-- authoring specification is committed on `main`
-- exploratory hair images from the interrupted chat are **not approved, not committed and not published**
-- the next session should resume from the authoring brief, create/inspect the final structural source, then wire guide data/assets only after QA
+Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-Visual direction:
-- graphite-first
-- one consistent three-quarter head through the cumulative sequence
-- head volume and silhouette before strand detail
-- map flow from part/crown
-- group large overlapping locks before selected strands
-- final poster must preserve silhouette, flow, overlap and head continuity
+**NEXT: Draw Fabric from Tension & Gravity**
+
+Primary teaching order:
+- support / tension points
+- gravity and movement
+- compression
+- large folds before small wrinkles
+- thickness and overlap
+
+Production note: apply the panel-first QA workflow for detailed fold examples instead of generating one dense poster in a single pass.
 
 ## 12. Handoff update protocol
 
