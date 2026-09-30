@@ -18,7 +18,11 @@ test('core source is pinned and generated WebP is valid',async()=>{
   const asset=coreAssetManifest.find(x=>x.slug==='hands-simple-forms');
   const source=await readFile(asset.sourcePath);
   assert.equal(source.length,asset.sourceBytes);
-  assert.equal(createHash('sha256').update(source).digest('hex'),asset.sourceSha256);
+  const gitBlobSha=createHash('sha1')
+    .update(Buffer.from('blob '+source.length+'\0'))
+    .update(source)
+    .digest('hex');
+  assert.equal(gitBlobSha,asset.sourceGitBlobSha);
 
   const bytes=await readFile(asset.outputPath);
   assert.ok(bytes.length>20000,'generated poster should not be suspiciously small');
