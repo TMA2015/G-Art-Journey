@@ -155,3 +155,6 @@ html[data-theme="playful"] .artist-infographic,html[data-theme="playful"] .movem
  .material-hero-copy h1{font-size:clamp(42px,12vw,60px)}.material-info-section{padding-top:44px}
  .material-tool-grid,.material-process-list{grid-template-columns:1fr}.material-learn{grid-template-columns:1fr;padding:25px 22px}
 }
+
+.material-ai-badge{position:absolute;left:14px;bottom:12px;z-index:2;padding:6px 9px;border-radius:999px;background:#fffaf1e8;border:1px solid #d9c5bd;color:#6e565c;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(4px)}
+.material-image-note{position:absolute;left:14px;right:14px;bottom:12px;z-index:2;padding:7px 10px;border-radius:10px;background:#fffaf1e8;border:1px solid #d9c5bd;color:#67595b;font-size:10px;line-height:1.45;letter-spacing:.02em}
