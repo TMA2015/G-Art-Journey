@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **overview poster released; focused four-card set still active**
+Status: **five-image Fabric guide set released**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
@@ -345,3 +345,13 @@ Release presentation:
 - the Fabric guide page shows all five approved images
 - all focused posters receive canonical G-Art Journey branding through deterministic production composition
 - the Wrap and overlap generated logo is covered before the canonical logo is added
+
+
+## 16. Five-image release state
+
+- PR #39 merged as `0484d6d7db2582c87ef446f64ba3ba80fcd1aa68`
+- Main Pages workflow #176: **SUCCESS**
+- Live Fabric guide contains the four focused cause cards plus the approved overview as image 5
+- canonical G-Art Journey branding is generated for all five public images
+- the guide card continues to use the overview poster as its cover
+- each detail-page image supports View large / Save WebP
