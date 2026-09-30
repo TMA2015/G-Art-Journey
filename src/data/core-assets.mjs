@@ -86,5 +86,37 @@ export const coreAssetManifest = [
         "background": "#FBF7EF"
       }
     }
+  },
+  {
+    "slug": "fabric-tension-gravity",
+    "sourceChunks": [
+      "assets/core/fabric-v1.b64/01.txt",
+      "assets/core/fabric-v1.b64/02.txt",
+      "assets/core/fabric-v1.b64/03.txt",
+      "assets/core/fabric-v1.b64/04.txt",
+      "assets/core/fabric-v1.b64/05.txt",
+      "assets/core/fabric-v1.b64/06.txt"
+    ],
+    "sourceBytes": 375710,
+    "sourceSha256": "f391b18060466e38003eb8dbf653299ee5578d4dafc0ee0bbe72efb3b1d60877",
+    "outputPath": "public/infographics/core/fabric-tension-gravity.webp",
+    "width": 900,
+    "height": 1350,
+    "format": "webp",
+    "brand": {
+      "mode": "overlay",
+      "canonical": "public/branding/g-art-lockup.svg",
+      "placement": "upper-left",
+      "logoWidth": 195,
+      "left": 15,
+      "top": 10,
+      "plate": {
+        "left": 10,
+        "top": 7,
+        "width": 205,
+        "height": 78,
+        "background": "#FBF7EF"
+      }
+    }
   }
 ];
