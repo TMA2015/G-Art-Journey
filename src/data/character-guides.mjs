@@ -302,89 +302,89 @@ export const characterGuides = [
   },
   {
     "slug": "manhua-variations",
-    "title": "Manhua Face Variations",
-    "description": "Explore expressive original faces, hair ornaments and delicate design details.",
+    "title": "Elegant Manhua Details",
+    "description": "Study expressive eyes, flowing hair, soft facial structure, anatomically clear hands and fabric rhythm.",
     "time": "25–35 min",
     "steps": [
       {
-        "title": "Study the head and profile",
-        "body": "Start from a soft but readable head structure."
+        "title": "Eye detail",
+        "body": "Use clear eyelids, iris detail, lashes and restrained highlights to create a lively eye without losing structure."
       },
       {
-        "title": "Try expressive variations",
-        "body": "Compare gentle, smiling, dreamy, serious and lively designs."
+        "title": "Hair flow",
+        "body": "Build the hairstyle in large flowing groups, then add a few loose strands that follow the movement."
       },
       {
-        "title": "Design the hair masses",
-        "body": "Choose one updo or long flowing hairstyle before tiny strands."
+        "title": "Soft face shape",
+        "body": "Keep the chin and facial features balanced, clean and readable before adding decorative detail."
       },
       {
-        "title": "Use selected accessories",
-        "body": "Add one small flower, ribbon or hairpin with a clear purpose."
+        "title": "Graceful hands",
+        "body": "Draw each hand with five fingers including a correctly placed thumb. Check finger count, joints and overlap before finishing."
       },
       {
-        "title": "Keep the silhouette readable",
-        "body": "Do not let accessories hide the main form of the head."
+        "title": "Fabric rhythm",
+        "body": "Use curved folds and layered edges to show how cloth follows pose, gravity and movement."
       }
     ],
-    "tryIt": "Create two original faces with different personalities and different ornaments.",
-    "remember": "Manhua covers diverse contemporary and historical-looking styles; this is one graceful illustrated approach.",
+    "tryIt": "Make a small detail study with one eye, one hairstyle, one five-finger hand and one fabric fold before drawing a full character.",
+    "remember": "Decorative detail comes after sound structure: check face balance, hand anatomy and the direction of fabric first.",
     "category": "character",
     "tag": "CHARACTER ART",
     "difficulty": "Beginner",
     "poster": true,
     "image": "infographics/character/manhua-variations.webp",
-    "posterAlt": "Manhua Face Variations — original G-Art Journey visual drawing guide",
+    "posterAlt": "Elegant Manhua Details — original G-Art Journey guide to eyes, hair, face, five-finger hands and flowing fabric",
     "supplies": "Pencil, paper or a basic drawing app",
     "group": "manhua",
     "groupOrder": 1,
     "author": "G-Art Journey",
     "artType": "original educational illustration",
-    "posterWidth": 1122,
-    "posterHeight": 1402
+    "posterWidth": 1086,
+    "posterHeight": 1448
   },
   {
     "slug": "manhua-ink-rhythm",
-    "title": "Flowing Hair, Fabric & Ink Rhythm",
-    "description": "Draw a moving character through flowing hair, layered fabric and varied line weight.",
+    "title": "How to Draw Manhua Movement",
+    "description": "Keep one character, one camera angle and one pose while building gesture, hair and flowing fabric step by step.",
     "time": "30–45 min",
     "steps": [
       {
-        "title": "Follow the movement",
-        "body": "Begin with one loose gesture to guide the whole drawing."
+        "title": "Gesture line",
+        "body": "Draw a flowing S-curve that captures the character's movement and direction."
       },
       {
-        "title": "Place the body and clothing",
-        "body": "Show the major forms before detail lines."
+        "title": "Head and body",
+        "body": "Build the head and body over the gesture. Keep the same camera angle and pose as you refine proportions."
       },
       {
-        "title": "Draw hair flow",
-        "body": "Use long grouped strands that follow the head turn and gesture."
+        "title": "Hair flow",
+        "body": "Add long hair masses that follow the same movement before drawing smaller strands."
       },
       {
-        "title": "Show fabric rhythm",
-        "body": "Keep folds aligned with the arm and body movement; vary long and short curves."
+        "title": "Fabric movement",
+        "body": "Let sleeves, ribbons and layered fabric follow the gesture rather than changing the character's orientation."
       },
       {
-        "title": "Choose the final accents",
-        "body": "Use a few strong marks and ornaments rather than decorating every edge."
+        "title": "Refined moving figure",
+        "body": "Clean the lines, add selective shading and details, and keep the same pose and angle through the final drawing."
       }
     ],
-    "tryIt": "Draw the same character in calm air and in a gentle breeze, changing hair and sleeve flow.",
-    "remember": "An ink-inspired approach is only one possible way to draw manhua-inspired characters.",
+    "tryIt": "Draw the same character twice: once in still air and once in a breeze, changing only hair and fabric movement.",
+    "remember": "In a cumulative tutorial, the subject and camera angle should remain consistent from the first stage to the last.",
     "category": "character",
     "tag": "CHARACTER ART",
     "difficulty": "Beginner",
     "poster": true,
     "image": "infographics/character/manhua-ink-rhythm.webp",
-    "posterAlt": "Flowing Hair, Fabric & Ink Rhythm — original G-Art Journey visual drawing guide",
+    "posterAlt": "How to Draw Manhua Movement — original G-Art Journey visual guide with one consistent character and pose",
     "supplies": "Pencil, paper or a basic drawing app",
     "group": "manhua",
     "groupOrder": 2,
     "author": "G-Art Journey",
     "artType": "original educational illustration",
-    "posterWidth": 1122,
-    "posterHeight": 1402
+    "posterWidth": 1086,
+    "posterHeight": 1448
   },
   {
     "slug": "cartoon-shapes",

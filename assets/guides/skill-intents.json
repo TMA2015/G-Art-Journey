@@ -335,28 +335,28 @@
       "slug": "manhua-variations",
       "status": "published",
       "family": "character",
-      "primarySkill": "manhua-face-accessory-variations",
-      "visibleEvidence": "Compare original graceful face designs and ornaments.",
+      "primarySkill": "manhua-detail-anatomy-and-rhythm",
+      "visibleEvidence": "Study eyes, hair, face structure, anatomically clear five-finger hands and flowing fabric as separate design details.",
       "stageFocus": [
-        "soft-face-comparison",
-        "expression-and-view",
-        "ornament-choice",
-        "long-hair-silhouette",
-        "finished-identity"
+        "eye-structure",
+        "hair-group-flow",
+        "face-balance",
+        "five-finger-hand-anatomy",
+        "fabric-rhythm"
       ]
     },
     {
       "slug": "manhua-ink-rhythm",
       "status": "published",
       "family": "character",
-      "primarySkill": "manhua-hair-fabric-flow",
-      "visibleEvidence": "Show how hair and sleeves follow an underlying gesture with different line weight.",
+      "primarySkill": "manhua-consistent-movement-sequence",
+      "visibleEvidence": "Build one moving character from gesture to finished fabric while preserving the same pose and camera angle.",
       "stageFocus": [
-        "gesture-rhythm",
-        "layered-hair-flow",
-        "sleeve-curve",
-        "fabric-overlap",
-        "selective-ink-weight"
+        "gesture-line",
+        "consistent-head-body-angle",
+        "hair-flow",
+        "fabric-movement",
+        "same-pose-refinement"
       ]
     },
     {
