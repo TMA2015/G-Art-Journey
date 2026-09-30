@@ -5,7 +5,9 @@ export const practiceGuides = [
     description:'Build a hand from a palm block, a low thumb base and grouped fingers before refining joints and detail.',
     image:'infographics/core/hands-simple-forms.webp',
     poster:true,
-    posterAlt:'Graphite hand construction lesson showing palm block, thumb base, finger groups, joints and a clean five-finger hand',
+    posterWidth:900,
+    posterHeight:1350,
+    posterAlt:'Graphite hand construction lesson showing palm block, thumb base, finger groups, joints and a clean five-finger hand with the G-Art Journey logo',
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
       {title:'Block the palm',body:'Draw a slightly tapered palm block with a simple wrist. Think about width, height and depth before fingers.'},
@@ -24,8 +26,8 @@ export const practiceGuides = [
     image:'infographics/core/eye-structure.webp',
     poster:true,
     posterWidth:900,
-    posterHeight:1350,
-    posterAlt:'Graphite eye construction lesson showing five construction stages, four key studies, ten eye-view examples and practice tips',
+    posterHeight:1450,
+    posterAlt:'Graphite eye construction lesson showing five construction stages, four key studies, ten eye-view examples, practice tips and the G-Art Journey logo',
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
       {title:'Start with the sphere',body:'Sketch the eyeball as a light sphere and mark the eye axis. Think of the visible opening as sitting on this rounded form.'},
@@ -43,7 +45,9 @@ export const practiceGuides = [
     description:'Start with one clear hair shape, map the flow, group the locks, then add only a few strands. The poster also gives ten hairstyle ideas to study.',
     image:'infographics/core/hair-masses.webp',
     poster:true,
-    posterAlt:'Hand-drawn hair lesson showing five construction steps, four key tips and ten hairstyle examples with the G-Art Journey logo',
+    posterWidth:900,
+    posterHeight:1200,
+    posterAlt:'Hand-drawn hair lesson showing five construction steps, four key tips and ten hairstyle examples with a readable G-Art Journey logo',
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
       {title:'Start with the head',body:'Draw a simple head so you know where the hair sits. Leave room for hair thickness above and around the skull.'},

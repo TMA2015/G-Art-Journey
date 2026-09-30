@@ -6,9 +6,12 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 ### Brand mark placement
 - New G-Art Journey infographics use the purple **G-Art Journey** brand mark/lockup in the **upper-left corner by default**.
 - Reuse one canonical repository brand asset/lockup. Do **not** ask an image model to redraw or reinterpret the logo on each poster.
-- Keep the logo large enough to read but visually secondary to the lesson title.
-- Move it from the upper-left only when the teaching layout has a clear reason.
-- Do not rebuild already-approved historical posters only to add or move the logo.
+- Keep the logo large enough to read at the actual website card size, not only at source resolution.
+- Move it from the upper-left only when the teaching layout has a clear reason; document the layout exception.
+- Do not rebuild already-approved historical posters only to add or move the logo. Use deterministic production compositing when possible.
+- **Artwork approval does not waive mandatory branding rules** unless the owner explicitly approves that exception.
+- Before release, inspect the **generated public WebP as rendered on the website**. Checking only the source artwork is not sufficient.
+- Poster generation must preserve the approved artwork aspect ratio; never use an implicit crop/cover resize that can remove the logo or teaching content.
 
 A tutorial must look like artwork someone would want to draw, not a crude wireframe presented as a finished example. Do not copy slogans, watermarks, compositions or finished characters from reference artists. Use our own short G-Art notes.
 
