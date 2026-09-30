@@ -1,6 +1,6 @@
 # Draw Hands from Simple Forms — production specification
 
-Status: **authoring complete; artwork not yet approved/published**
+Status: **artwork QA complete; published with the Phase 2A hand guide**
 
 This is the first Phase 2A production item. It exists to make the hand lesson reproducible across future chats and image-generation runs without relying on conversation memory.
 
