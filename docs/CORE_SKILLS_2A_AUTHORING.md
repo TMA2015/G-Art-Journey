@@ -4,8 +4,8 @@ This is the first production unit after Character Styles. It is intentionally sm
 
 ## Production order
 1. Hand structure — **published**. Exact production record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`.
-2. Eye structure — **next**; establishes a reliable feature-construction standard. Exact production brief: `docs/EYE_STRUCTURE_AUTHORING.md`.
-3. Hair masses and flow — teaches grouping and silhouette rather than strand copying.
+2. Eye structure — **published**. Exact production record: `docs/EYE_STRUCTURE_AUTHORING.md`.
+3. Hair masses and flow — **next**; teaches grouping and silhouette rather than strand copying.
 4. Fabric from tension and gravity — connects anatomy, gesture and clothing.
 
 ## Visual direction
