@@ -198,30 +198,26 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #24: merged — **Draw an Eye from Structure** is live and academically approved; its artwork is now queued for a visual-quality refresh to the newer Phase 2 baseline. Main deployment workflow #69 passed.
 - PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
 - PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
+- PR #29: merged — **Hands v2** is live at the existing `hands-simple-forms` guide. The owner-approved five-step / four-key-point / ten-pose poster was preserved, only its branding region was normalized to the canonical lockup, the raster source was integrity-pinned, PR CI passed, and main Pages deployment workflow #107 passed at merge commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
 
 ## 11. Current production task
 
 ### Phase 2 visual baseline reset — current priority
 
-Before producing Fabric artwork, refresh the first two Phase 2A posters so the live Core Drawing Skills row no longer mixes two visibly different quality generations.
+Hands v2 is complete and live. **Eye v2 is now the active production task.** Fabric remains paused until Eye v2 joins Hands v2 and Hair at the coherent Phase 2 visual baseline.
 
-**1. Draw Hands from Simple Forms — CONTENT COMPLETE / VISUAL REFRESH REQUIRED**
+**1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
-Keep unchanged:
-- slug: `hands-simple-forms`
-- lesson objective, guide data and existing URL
-- five-step hand-construction logic
-- mandatory five-digit anatomy checks
+Released in PR #29:
+- slug remains `hands-simple-forms`
+- lesson objective, guide data, URL and five-step hand-construction logic are unchanged
+- approved poster contains five construction steps, four key-point studies and ten practical hand-pose references
+- graphite-first artwork with light G-Art pastel accents and the canonical purple lockup
+- approved 1024×1536 raster source is integrity-pinned in ten base64 chunks and generates the 900×1200 public WebP
+- owner-approved known imperfection: the **Finger structure** study says **3 segments** while the visual subdivision can read as four visible sections; do not regenerate the full poster solely for this
+- PR CI passed and main Pages deployment workflow #107 passed
 
-Refresh only the poster artwork/presentation:
-- use the Hair poster as the current minimum finish-quality benchmark
-- keep graphite-first drawing
-- add practical hand studies/pose references where useful
-- use the canonical purple G-Art Journey logo at upper-left
-- create and QA important hands separately before compositing
-- replace the live poster only after the refreshed artwork passes its own release gate
-
-Exact academic record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
+Exact academic/release record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
 
 **2. Draw an Eye from Structure — CONTENT COMPLETE / VISUAL REFRESH REQUIRED**
 
