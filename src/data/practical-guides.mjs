@@ -46,8 +46,8 @@ export const practiceGuides = [
     image:'infographics/core/hair-masses.webp',
     poster:true,
     posterWidth:900,
-    posterHeight:1200,
-    posterAlt:'Hand-drawn hair lesson showing five construction steps, four key tips and ten hairstyle examples with a readable G-Art Journey logo',
+    posterHeight:1300,
+    posterAlt:'Hand-drawn hair lesson showing five construction steps, four key tips, ten hairstyle examples and a readable upper-left G-Art Journey logo',
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
       {title:'Start with the head',body:'Draw a simple head so you know where the hair sits. Leave room for hair thickness above and around the skull.'},
