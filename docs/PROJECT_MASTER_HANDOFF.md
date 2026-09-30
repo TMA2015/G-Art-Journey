@@ -320,6 +320,32 @@ Each material page should explain:
 
 Keep this section concise and practical. Do not expand the material catalog during this pass.
 
+### Explore Art image-source policy
+
+Locked owner decision:
+
+**Artists**
+- use real artworks only
+- do not use AI-generated substitutes as representative artist works
+- before adding a new artist, confirm that enough usable/open artwork images can be sourced
+
+**Styles / movements**
+- use real artworks only
+- do not use G-Art illustrations or AI-generated simulations as representative historical style examples
+- before adding a new style, confirm that enough usable/open artwork images can be sourced
+
+**Materials / media**
+- this section is pedagogical rather than art-historical: its job is to show how a medium affects color, surface, marks and visual character
+- target **at least 3 useful images per medium**: one introductory image plus two additional examples
+- prefer real/open-license artwork or photography when it is visually strong and appropriate
+- original G-Art illustration is acceptable where it genuinely demonstrates the medium
+- AI-generated medium studies may be used **sparingly only when suitable real/open examples are insufficient**
+- any AI image must be explicitly labeled **AI-generated medium study** / **not a historical artwork**
+- do not add AI merely to increase variety when three suitable real/original examples already exist
+
+General priority:
+**real usable artwork first → original G-Art illustration when appropriate → limited clearly labeled AI only as a gap-filler for Materials.**
+
 ## 12. Handoff update protocol
 
 Whenever a future decision changes the project:

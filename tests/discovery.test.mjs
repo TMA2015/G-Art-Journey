@@ -63,3 +63,16 @@ test('style pages never use internal showcase illustrations',()=>{
     }
   }
 });
+
+
+test('artist pages never use internal or AI substitutes for representative art',()=>{
+  for(const artist of artists){
+    assert.match(artist.image,/^https:\/\/commons\.wikimedia\.org\//,artist.slug+' cover must be a sourced real artwork');
+    assert.equal(artist.image.includes('/showcase/'),false,artist.slug+' cover must not be G-Art showcase art');
+    for(const work of artist.artworks){
+      assert.match(work.image,/^https:\/\/commons\.wikimedia\.org\//,artist.slug+' representative work must be sourced real art');
+      assert.ok(work.source?.startsWith('https://commons.wikimedia.org/'),artist.slug+' representative work source');
+      assert.notEqual(work.artist,'G-Art Journey',artist.slug+' representative work must not be an internal illustration');
+    }
+  }
+});
