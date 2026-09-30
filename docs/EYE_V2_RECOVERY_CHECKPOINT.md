@@ -41,19 +41,29 @@ Reasons it is not releasable:
 
 Do not upload or wire that concept to production.
 
+## Owner approval / current state
+
+The owner approved the newly generated full Eye v2 poster in the project chat on **2026-09-30**.
+
+Important:
+- preserve the approved artwork; do not regenerate it
+- the earlier full-page concept remains non-release
+- the newly approved poster is the release candidate
+- record its owner-approved visual exceptions in `docs/EYE_STRUCTURE_AUTHORING.md`
+
 ## Exact resume order
 
 1. Verify this branch and current HEAD before any write.
-2. Create the five-step main-eye group only.
-3. Inspect continuity, lid wrap, iris/pupil, shadow/highlight and viewpoint at full resolution.
-4. Repair/reject failures before moving on.
-5. Create four key structural studies.
-6. QA those studies independently.
-7. Create practical eye-view references in small groups.
-8. QA all references.
-9. Composite only approved studies and add the canonical logo.
-10. Ask owner to approve the final Eye v2 poster.
-11. Only after approval: pin source integrity, switch the core asset manifest, remove/supersede the old Eye source as appropriate, run CI, merge and verify Pages.
+2. Preserve the approved Eye v2 poster exactly.
+3. Store/pin the approved raster source, dimensions and source hash.
+4. Generate the public WebP without cropping away teaching content.
+5. Keep slug, URL and academic guide content unchanged.
+6. Switch the core asset manifest from the old Eye SVG to the approved raster source.
+7. Remove/supersede the old Eye SVG source only after the raster source is safely pinned.
+8. Run repository tests, guide audit, build and asset audit.
+9. If CI passes, mark PR #31 ready and merge it.
+10. Verify the main Pages deployment.
+11. Update the master handoff to Eye v2 completed/live.
 12. Resume Fabric only after Eye v2 release is complete.
 
 ## Recovery rule
