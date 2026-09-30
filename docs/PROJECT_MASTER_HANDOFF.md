@@ -346,6 +346,25 @@ Locked owner decision:
 General priority:
 **real usable artwork first → original G-Art illustration when appropriate → limited clearly labeled AI only as a gap-filler for Materials.**
 
+### Materials image completion pass
+
+Owner-approved medium-image batch (2026-09-30):
+- Graphite: approved AI graphite bust/cube study
+- Colored Pencil: approved AI flower study + approved AI bluebird study
+- Watercolor: approved AI river/sunrise landscape study
+- Acrylic: approved AI still-life study
+- Crayon & Pastel: approved AI dancer study
+- Vietnamese Lacquer: approved AI lotus/lakeside lacquer-style study
+
+Image policy applied:
+- all AI assets are medium demonstrations only
+- every AI cover/example is explicitly labeled **AI-generated medium study · Not a historical artwork**
+- AI images are used only where the medium had fewer than three strong distinct visuals
+- Oil uses real paintings only for the final three-image set
+- Ink & Wash uses a real Fan Kuan work as its cover
+- Digital Painting keeps its three original G-Art digital illustrations; no AI added
+- each material now targets at least three distinct useful visuals (cover + examples)
+
 ## 12. Handoff update protocol
 
 Whenever a future decision changes the project:
