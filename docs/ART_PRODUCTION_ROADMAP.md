@@ -20,9 +20,9 @@ The two current Manhua replacements are the approved **How to Draw Manhua Moveme
 
 This phase is modular rather than a compulsory course. Each poster teaches one transferable drawing idea and links to related guides.
 
-### 2A — Observation, face, hands and fabric
-1. **Draw an Eye from Structure** — lids around the eyeball, iris/pupil placement, shadow under upper lid, view changes.
-2. **Draw Hands from Simple Forms** — palm block, thumb base, finger groups, joints, gesture; five digits visible when the pose shows them.
+### 2A — Observation, hands, face and fabric
+1. **Draw Hands from Simple Forms** — palm block, thumb base, finger groups, joints, gesture; five digits visible when the pose shows them.
+2. **Draw an Eye from Structure** — lids around the eyeball, iris/pupil placement, shadow under upper lid, view changes.
 3. **Draw Hair as Masses, Then Strands** — overall silhouette, flow direction, grouped locks, selected strand detail.
 4. **Draw Fabric from Tension & Gravity** — anchor/tension points, compression, hanging folds and direction of movement.
 
