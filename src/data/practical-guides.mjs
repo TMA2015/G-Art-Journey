@@ -35,6 +35,24 @@ export const practiceGuides = [
     tryIt:'Use a mirror or photo and draw one eye twice: first as sphere and lid construction, then as the clean eye. Compare where the lids actually wrap.',
     remember:'The eyeball is round, the lids wrap around it, and the iris and pupil belong to the same curved surface. Structure comes before lashes or style.'
   },
+  {
+    slug:'hair-masses', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'20–30 min',
+    title:'Draw Hair as Masses, Then Strands',
+    description:'Start with one clear hair shape, map the flow, group the locks, then add only a few strands. The poster also gives ten hairstyle ideas to study.',
+    image:'infographics/core/hair-masses.webp',
+    poster:true,
+    posterAlt:'Hand-drawn hair lesson showing five construction steps, four key tips and ten hairstyle examples with the G-Art Journey logo',
+    supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
+    steps:[
+      {title:'Start with the head',body:'Draw a simple head so you know where the hair sits. Leave room for hair thickness above and around the skull.'},
+      {title:'Find the big shape',body:'Draw the overall hair mass before small lines. Check the width, height and outer silhouette.'},
+      {title:'Map the flow',body:'Use a few guide lines from the part or crown. Let gravity and the hairstyle guide the direction.'},
+      {title:'Group the locks',body:'Split the mass into a few larger hair groups. Use overlap to show which group sits in front.'},
+      {title:'Add a few strands',body:'Refine the main groups with selected strands. Keep the big shape readable instead of drawing every hair.'}
+    ],
+    tryIt:'Pick one of the ten hairstyle examples. Draw only its big outer shape first, then add three to five lock groups before any small strands.',
+    remember:'Think in big shapes first. Hair has thickness, flow starts from the part or crown, and you do not need to draw every hair.'
+  },
 {
  slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
  title:'Draw a Standing Figure with Simple Shapes',
