@@ -49,13 +49,20 @@ Each material page includes:
 
 `feature/materials-and-tools-pages-20260930`
 
+## Deployment state
+
+- PR #44 merged to `main` as `155cf3556be8011047b502f13e5342c914e7abbb`.
+- Main Pages workflow #186 completed successfully.
+- Code/tests/build/deployment are green.
+- Final browser visual QA on desktop + iPhone remains pending owner confirmation.
+
 ## Release gate
 
 1. all 9 data records complete
 2. root + /en material routes exist
 3. responsive material template/styles
 4. tests validate page completeness, local assets and source metadata
-5. PR CI PASS
-6. merge
-7. Pages deployment PASS
-8. owner browser QA on desktop + iPhone
+5. PR CI — PASS
+6. merge — DONE (PR #44)
+7. Pages deployment — PASS (workflow #186)
+8. owner browser QA on desktop + iPhone — PENDING
