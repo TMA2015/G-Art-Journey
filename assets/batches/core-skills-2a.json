@@ -1,0 +1,120 @@
+{
+  "batchId": "core-skills-2a",
+  "status": "staged-authoring",
+  "title": "Core Drawing Skills 2A — Structure & Observation",
+  "language": "en",
+  "visualMode": "graphite-first",
+  "styleRules": [
+    "Drawing itself stays monochrome graphite or neutral ink; G-Art pastel appears only in headings, arrows, small labels and framing accents.",
+    "Poster layout is chosen for the subject; do not force every lesson into the same five-column template.",
+    "Use one clearly defined transferable skill per poster.",
+    "All human examples receive an explicit final anatomy check at full resolution."
+  ],
+  "qaPrompts": [
+    "correct anatomy",
+    "five fingers on each hand",
+    "detailed hands",
+    "balanced / symmetrical face appropriate to viewpoint",
+    "clean and style-appropriate eyes",
+    "natural facial expression",
+    "detailed features",
+    "proportionate body anatomy",
+    "anatomically correct",
+    "clear full-length shot or medium shot when the body is part of the lesson"
+  ],
+  "items": [
+    {
+      "slug": "eye-structure-basics",
+      "title": "Draw an Eye from Structure",
+      "learningGoal": "Understand the eyeball, eyelid wrap, iris/pupil placement and simple light/shadow before adding lashes or style.",
+      "academicBasis": [
+        "Foothill ART 4E: head/feature anatomy, proportions and light/shadow",
+        "Johns Hopkins portrait course: skull/feature structure and geometric simplification"
+      ],
+      "suggestedLayout": "One large construction sequence plus a bottom strip comparing front, 3/4 and side/turned eye views.",
+      "steps": [
+        "Place a sphere/eye socket guide and the eye axis.",
+        "Wrap upper and lower lids around the sphere; avoid a flat almond symbol.",
+        "Place iris and pupil with correct occlusion by the upper lid.",
+        "Add one light source, lid shadow and a restrained highlight.",
+        "Refine lashes and surrounding planes only after structure reads."
+      ],
+      "visualChecks": [
+        "both eyes align to head angle if shown on a face",
+        "iris remains circular in perspective, appearing elliptical when turned",
+        "no duplicated pupils/highlights",
+        "eyelids wrap around volume"
+      ]
+    },
+    {
+      "slug": "hand-structure-basics",
+      "title": "Draw Hands from Simple Forms",
+      "learningGoal": "Construct a readable hand from palm block, thumb base and finger groups, then refine joints and gesture.",
+      "academicBasis": [
+        "Stanford Art and Anatomy: internal/external hand structure and observation",
+        "Foothill ART 4E: hand anatomy, proportions, planes, views and light"
+      ],
+      "suggestedLayout": "Large hand construction on left; three smaller practical poses on right; dedicated five-finger checklist box.",
+      "steps": [
+        "Block the palm as a tapered box and mark wrist direction.",
+        "Attach the thumb base as a separate wedge with its own joint direction.",
+        "Group four fingers first, then separate them by length and joint rhythm.",
+        "Add knuckles, taper and overlap from observation.",
+        "Refine contour and simple shadow while preserving exactly five digits."
+      ],
+      "visualChecks": [
+        "exactly five digits including one thumb whenever all fingers are visible",
+        "no extra/fused/missing fingers",
+        "thumb originates from correct side of palm",
+        "joint bends remain plausible",
+        "small secondary hands receive the same inspection as the hero hand"
+      ]
+    },
+    {
+      "slug": "hair-masses-flow",
+      "title": "Draw Hair as Masses, Then Strands",
+      "learningGoal": "See hair as volume attached to a head, organized into flow groups, instead of drawing isolated strands from the start.",
+      "academicBasis": [
+        "Observational drawing: contour/form relationships from UCSD and Foothill fundamentals",
+        "Portrait structure: head volume/viewpoint from Johns Hopkins"
+      ],
+      "suggestedLayout": "One head in 4 stages plus a variation row for straight, wavy and tied hair using different models.",
+      "steps": [
+        "Establish skull volume and hairline before the hairstyle.",
+        "Draw the overall hair silhouette with clear space around the head.",
+        "Divide the hairstyle into a few large flow groups.",
+        "Show overlap and direction with selected interior lines.",
+        "Add only a small number of fine strands where they clarify texture or movement."
+      ],
+      "visualChecks": [
+        "hair sits outside skull rather than replacing it",
+        "flow follows gravity/gesture",
+        "no spaghetti-like uniform strand density",
+        "different examples use visibly different characters"
+      ]
+    },
+    {
+      "slug": "fabric-tension-gravity",
+      "title": "Draw Fabric from Tension & Gravity",
+      "learningGoal": "Understand why folds appear by locating support/tension points, gravity direction, compression and movement.",
+      "academicBasis": [
+        "Foothill/UCSD drawing fundamentals: form, observation, light and contour",
+        "General studio principle: structure and forces before decorative fold lines"
+      ],
+      "suggestedLayout": "Four mini studies organized by cause: hanging, stretched, compressed and moving fabric; one final clothed figure crop.",
+      "steps": [
+        "Find where the cloth is supported or pulled.",
+        "Mark the main direction of gravity or movement.",
+        "Group the largest folds before small wrinkles.",
+        "Separate stretched areas from compressed bunching.",
+        "Use value and edge changes to show thickness and overlap."
+      ],
+      "visualChecks": [
+        "folds emerge from believable anchor/tension points",
+        "fabric follows body volume",
+        "no random parallel wrinkles",
+        "hands/arms under sleeves remain anatomically coherent when visible"
+      ]
+    }
+  ]
+}
