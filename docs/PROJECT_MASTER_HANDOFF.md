@@ -174,7 +174,8 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #19: merged — Phase 2 Core Drawing Skills roadmap + academic reference map + 2A authoring packet.
 - Character Styles stable set is live.
 - PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; generated WebP comes from the pinned editable SVG source.
-- Phase 2A posters release individually after their own QA gate; the next active item is Eye Structure.
+- Phase 2A posters release individually after their own QA gate.
+- **Draw an Eye from Structure** is included in the current release with deterministic SVG source, generated WebP, guide data and eye-specific QA.
 
 ## 11. Current production task
 
@@ -188,18 +189,28 @@ Published guide:
 
 Exact authoring record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
 
-**NEXT: Draw an Eye from Structure**
+**COMPLETED: Draw an Eye from Structure**
 
-Exact production brief: `docs/EYE_STRUCTURE_AUTHORING.md`
+Published implementation in this release:
+- slug: `eye-structure`
+- editable source: `assets/core/eye-structure.svg`
+- generated asset: `public/infographics/core/eye-structure.webp`
+- five cumulative stages preserve the same eye/viewpoint
+- iris/pupil, lid-wrap and one-light-direction QA completed at full resolution
+
+Exact authoring record: `docs/EYE_STRUCTURE_AUTHORING.md`
+
+**NEXT: Draw Hair as Masses, Then Strands**
+
+Exact production brief: `docs/HAIR_MASSES_AUTHORING.md`
 
 Visual direction:
 - graphite-first
-- explain the eyeball as a sphere before drawing eyelids
-- show upper and lower lids wrapping around the form
-- place iris/pupil on the curved surface rather than as flat symbols
-- include the upper-lid cast shadow and a simple highlight
-- keep the same eye/viewpoint through cumulative stages
-- final eye must pass symmetry, lid, iris/pupil and lighting QA
+- one consistent three-quarter head through the cumulative sequence
+- head volume and silhouette before strand detail
+- map flow from part/crown
+- group large overlapping locks before selected strands
+- final poster must preserve silhouette, flow, overlap and head continuity
 
 ## 12. Handoff update protocol
 
