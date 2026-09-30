@@ -47,14 +47,21 @@ Known accepted imperfection:
   - Hair quality baseline
   - panel-first production / QA rules
 
-## Not yet done at this checkpoint
+## Recovery progress after resume
 
-- approved Hands v2 raster artwork has **not yet been committed**
-- core asset manifest still points Hands to the old SVG source
-- public Hands WebP has **not yet been replaced**
-- no updated Hands source/hash/dimensions have been pinned yet
-- no final Hands v2 release tests have run
-- PR #29 is still draft and unmerged
+Completed on the resumed stream:
+- recovered the exact owner-approved 1024×1536 Hands v2 poster from the project Library
+- preserved the approved teaching artwork and normalized only the branding region to the canonical repository lockup
+- replaced the interrupted source upload with ten complete base64 chunks
+- pinned source size **148,768 bytes** and SHA-256 `195edf005d1765d0adc4278bf9017088b7087809b5fa13f9abeec0caf13e43ad`
+- switched the core asset manifest from the superseded Hands SVG to the approved raster source
+- removed the superseded Hands SVG source
+- recorded the owner-approved Finger-structure imperfection in the authoring record
+
+Still pending at this recovery update:
+- run the final Hands v2 release tests / guide audit / build / asset checks on the completed source
+- if CI passes, mark PR #29 ready and merge it
+- verify the main GitHub Pages deployment
 - Eye v2 has not started
 - Fabric remains paused after its authoring brief
 
