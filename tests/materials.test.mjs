@@ -65,3 +65,15 @@ test('AI medium studies are clearly labeled and limited to Materials',()=>{
     }
   }
 });
+
+
+test('approved material replacements remove weak G-Art examples',()=>{
+  const ids=['graphite','colored-pencil','watercolor','acrylic','pastel','lacquer'];
+  for(const id of ids){
+    const item=media.find(x=>x.id===id);
+    assert.ok(item,id+' material');
+    for(const ex of item.examples){
+      assert.notEqual(ex.rights,'Original G-Art illustration',id+' should no longer use the weak G-Art example cards');
+    }
+  }
+});
