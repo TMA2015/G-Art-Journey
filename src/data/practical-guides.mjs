@@ -68,6 +68,13 @@ export const practiceGuides = [
     posterWidth:900,
     posterHeight:1350,
     posterAlt:'Illustrated fabric lesson showing support points, tension, gravity, compression, wrapping, six cloth examples and four key tips with the G-Art Journey logo',
+    posterGallery:[
+      {title:'1. One support point',image:'infographics/core/fabric-one-support.webp',width:900,height:1224,alt:'Fabric lesson showing one shoulder support point, gravity and large folds on a female shirt sleeve'},
+      {title:'2. Two tension points',image:'infographics/core/fabric-two-tension.webp',width:900,height:1224,alt:'Fabric lesson showing cloth held between two support points with tension and gravity sag'},
+      {title:'3. Compression at a bend',image:'infographics/core/fabric-compression-bend.webp',width:900,height:1450,alt:'Fabric lesson showing shorter compressed folds and longer stretched folds around a bent sleeve'},
+      {title:'4. Wrap and overlap',image:'infographics/core/fabric-wrap-overlap.webp',width:1200,height:900,wide:true,alt:'Fabric lesson showing cloth wrapping around forms, visible front layers, hidden layers and overlap examples'},
+      {title:'5. Fabric overview',image:'infographics/core/fabric-tension-gravity.webp',width:900,height:1350,wide:true,alt:'Complete Fabric from Tension and Gravity overview with four causes, examples, key tips and practice ideas'}
+    ],
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
       {title:'Find the support points',body:'Ask where the cloth is held, attached or pulled. Folds usually begin from these places instead of appearing randomly.'},
