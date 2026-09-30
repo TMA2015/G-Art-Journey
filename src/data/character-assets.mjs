@@ -59,18 +59,18 @@ export const characterAssets = [
   {
     "slug": "manhua-variations",
     "path": "public/infographics/character/manhua-variations.webp",
-    "bytes": 420708,
-    "width": 1122,
-    "height": 1402,
-    "sha256": "e6896a0ee7bb1ea64049f48bbf8f0682065c1ac7ca7b78db471f069e40e44450"
+    "bytes": 514314,
+    "width": 1086,
+    "height": 1448,
+    "sha256": "86c1e977c6031d11f1a259be1194eeb18595ac2ddbf1cae29a9cf645341a3c0d"
   },
   {
     "slug": "manhua-ink-rhythm",
     "path": "public/infographics/character/manhua-ink-rhythm.webp",
-    "bytes": 491636,
-    "width": 1122,
-    "height": 1402,
-    "sha256": "132bd3effa46575851b57e28036ef070a4418c4b839160880d6c68ab52c9f293"
+    "bytes": 465152,
+    "width": 1086,
+    "height": 1448,
+    "sha256": "f6413d2bb62c7f77efb8c61e7aa3d2903f8e85a23632faf9084c86bc420589c2"
   },
   {
     "slug": "cartoon-shapes",

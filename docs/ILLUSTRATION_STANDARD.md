@@ -35,3 +35,24 @@ A new card needs a distinguishable outcome and a visual example that proves it. 
 The approved `figure-proportions` and `standing-figure` posters remain unchanged. The first is a head-unit and body-landmark reference; the second is about gesture, supporting leg and standing balance. Their acknowledged scaffolding overlap is documented as an owner-approved historical exception, not a template for future duplication. 
 
 In Batch 02, manga face focuses on feature/hair/line design choices rather than re-teaching basic face construction; manga full figure compares stylized proportions and costume silhouettes rather than redoing the general standing-pose tutorial. Regional terms describe varied storytelling/art contexts and are not fixed face or body templates.
+
+## Human/character image QA — mandatory before publication
+
+For any infographic that contains people or human-like characters, explicitly inspect the final image at full size before publishing:
+
+- **correct anatomy / anatomically correct**: joints, limbs and visible body structure must read plausibly for the intended stylization.
+- **five fingers on each visible hand**: exactly five digits including one correctly placed thumb; reject extra, fused or missing fingers unless intentionally hidden by the pose.
+- **detailed hands**: hands should be drawn clearly enough to count fingers and understand the pose; tiny ambiguous hands should not carry a teaching point.
+- **balanced face**: eyes, nose, mouth and jaw must align coherently with the head angle; avoid accidental asymmetry or duplicated features.
+- **style-appropriate eyes**: clean, balanced and intentional. Realistic lessons need believable eye structure; stylized lessons may exaggerate while remaining internally consistent.
+- **natural facial expression**: brows, eyelids, mouth and cheeks should work together rather than contradict one another.
+- **detailed features**: teaching examples should have enough detail to demonstrate the skill without visual noise.
+- **proportionate body anatomy**: proportions may be stylized, but the chosen ratio must be deliberate and consistent within the lesson.
+- **clear framing**: use a deliberate full-length or medium shot when body/pose is being taught; do not crop hands, feet or key landmarks needed by the lesson.
+- **cumulative-step continuity**: when a poster is step-by-step, keep the same subject, camera angle and pose unless the lesson explicitly teaches a viewpoint change.
+
+AI-generated art gets a dedicated final anatomy pass. Hands are checked one by one, including small secondary examples. A visually attractive image does not pass QA if anatomy or step continuity is wrong.
+
+### Pencil/graphite exception to the color identity
+
+G-Art Journey keeps its typography, spacing, warm paper and gentle editorial character, but graphite lessons should not color the drawing itself. Use monochrome graphite/value studies, hatching, edges and paper texture; reserve pastel accents for headings, callouts or small navigation marks only. The medium should remain visibly pencil-first.
