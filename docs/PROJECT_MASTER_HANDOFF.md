@@ -164,6 +164,8 @@ A poster is publishable only after all of these pass:
 7. repository tests and build
 8. GitHub Pages deployment verification
 
+Phase 2 modular rule: each poster may release independently after passing this gate; do not wait for the full phase batch.
+
 A beautiful image that teaches the wrong construction, changes the subject mid-process or contains anatomy errors must be held back.
 
 ## 10. Current technical / project status
@@ -171,7 +173,8 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #18: merged — approved Manhua replacements + mandatory human/anatomy QA + graphite color exception.
 - PR #19: merged — Phase 2 Core Drawing Skills roadmap + academic reference map + 2A authoring packet.
 - Character Styles stable set is live.
-- Phase 2 art is not public yet.
+- PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; generated WebP comes from the pinned editable SVG source.
+- Phase 2A posters release individually after their own QA gate; the next active item is Eye Structure.
 
 ## 11. Current production task
 
@@ -186,6 +189,8 @@ Published guide:
 Exact authoring record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
 
 **NEXT: Draw an Eye from Structure**
+
+Exact production brief: `docs/EYE_STRUCTURE_AUTHORING.md`
 
 Visual direction:
 - graphite-first
