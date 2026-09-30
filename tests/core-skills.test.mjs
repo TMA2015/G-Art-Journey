@@ -40,6 +40,14 @@ test('Core Drawing Skills guides publish approved poster metadata',()=>{
   assert.equal(fabric.image,'infographics/core/fabric-tension-gravity.webp');
   assert.equal(fabric.posterWidth,900);
   assert.equal(fabric.posterHeight,1350);
+  assert.equal(fabric.posterGallery.length,5);
+  assert.deepEqual(fabric.posterGallery.map(p=>p.image),[
+    'infographics/core/fabric-one-support.webp',
+    'infographics/core/fabric-two-tension.webp',
+    'infographics/core/fabric-compression-bend.webp',
+    'infographics/core/fabric-wrap-overlap.webp',
+    'infographics/core/fabric-tension-gravity.webp'
+  ]);
   assert.equal(fabric.steps.length,5);
   assert.match(fabric.remember,/Big folds come before small wrinkles/i);
 });
