@@ -15,8 +15,7 @@ export const practiceGuides = [
       {title:'Clean the hand',body:'Refine the outline while keeping the construction readable. Check all five digits before adding any extra shading.'}
     ],
     tryIt:'Hold your non-drawing hand in one relaxed pose and rebuild it from the same five stages. Compare your sketch with the real hand before adding detail.',
-    remember:'The thumb starts lower than the finger knuckles, finger lengths change with viewpoint, and every fully visible hand should still read as five clear digits.',
-    seeAlso:['figure-proportions','standing-figure']
+    remember:'The thumb starts lower than the finger knuckles, finger lengths change with viewpoint, and every fully visible hand should still read as five clear digits.'
   },
 {
  slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
