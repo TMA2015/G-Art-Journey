@@ -366,6 +366,14 @@ Image policy applied:
 - Digital Painting keeps its three original G-Art digital illustrations; no AI added
 - each material now targets at least three distinct useful visuals (cover + examples)
 
+### Final Materials replacement batch
+
+Owner-approved on 2026-10-01:
+- replace the remaining weak G-Art examples in Graphite, Colored Pencil, Watercolor, Acrylic, Crayon & Pastel and Vietnamese Lacquer with the newly approved AI medium studies
+- preserve the explicit AI label: **AI-generated medium study · Not a historical artwork**
+- Oil, Ink & Wash and Digital Painting are unchanged in this batch
+- after deploy, final owner browser QA can close Explore Art completely
+
 ## 12. Handoff update protocol
 
 Whenever a future decision changes the project:
