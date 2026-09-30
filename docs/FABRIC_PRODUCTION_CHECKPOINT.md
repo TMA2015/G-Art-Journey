@@ -94,6 +94,28 @@ The body is only a support for the fabric lesson. Keep the face out of frame. Om
 Next artwork unit:
 - **Cause Card 3 — Compression at a bend**
 
+## Final poster approval
+
+Owner approved the full Fabric infographic on **2026-09-30**.
+
+The full poster already includes the remaining cause cards, reference examples, tips and practice prompts. Do not create more standalone panels unless a concrete release-QA defect requires replacement.
+
+Release implementation:
+- source chunks: `assets/core/fabric-v1.b64/01.txt` … `06.txt`
+- source bytes: **375,710**
+- source SHA-256: `f391b18060466e38003eb8dbf653299ee5578d4dafc0ee0bbe72efb3b1d60877`
+- public output: **900×1350**
+- canonical logo replaces the generated logo via deterministic overlay
+- guide slug: `fabric-tension-gravity`
+- skill-intent ledger entry added
+
+Remaining gate:
+1. final PR CI
+2. merge PR #36 if green
+3. verify main Pages deployment
+4. visually inspect the deployed Fabric card/page
+5. close Phase 2A handoff
+
 ## Resume rule
 
 If interrupted:
