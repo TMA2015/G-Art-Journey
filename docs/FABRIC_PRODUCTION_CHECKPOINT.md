@@ -80,6 +80,20 @@ The body is only a support for the fabric lesson. Keep the face out of frame. Om
 - final infographic gets the canonical repository logo during deterministic composition
 - no copied garment or tutorial composition
 
+## Approved cause cards
+
+- **Cause Card 1 — One support point — APPROVED**
+  - female subject
+  - shirt/sleeve drape from one shoulder support
+  - gravity and large-fold direction read clearly
+- **Cause Card 2 — Two tension points — APPROVED**
+  - female subject
+  - fabric held at two supports
+  - tension toward both supports and gravity sag are clearly separated
+
+Next artwork unit:
+- **Cause Card 3 — Compression at a bend**
+
 ## Resume rule
 
 If interrupted:
