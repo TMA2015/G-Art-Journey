@@ -13,9 +13,10 @@
     "art:check": "node scripts/art-batch.mjs --check",
     "audit:guides": "node scripts/check-guide-overlap.mjs",
     "core:assets": "node scripts/build-core-assets.mjs",
-    "pretest": "npm run core:assets",
-    "prebuild": "npm run core:assets",
-    "predev": "npm run core:assets"
+    "pretest": "npm run core:assets && npm run materials:assets",
+    "prebuild": "npm run core:assets && npm run materials:assets",
+    "predev": "npm run core:assets && npm run materials:assets",
+    "materials:assets": "node scripts/build-material-assets.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",
