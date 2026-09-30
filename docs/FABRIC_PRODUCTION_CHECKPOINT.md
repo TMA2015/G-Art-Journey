@@ -129,9 +129,28 @@ Remaining gate:
   - future sleeve drawings must also avoid an unnaturally tight lower sleeve around the forearm
   - keep the bent arm anatomy straighter and more believable through upper arm → elbow → forearm
   - use more even, realistic garment ease along the sleeve
-- Next: Cause Card 4 — **Wrap and overlap**.
+- Cause Card 4 — **Wrap and overlap — APPROVED**.
+- The focused four-card Fabric set is complete.
+- Add the previously approved Fabric overview poster as **image 5** on the live guide.
 - PR #38 / Five Values was closed without merge because Phase 2B started too early.
 - The lit-sphere artwork is not part of Fabric and is not an approved project asset.
+
+## Five-image website set
+
+Owner-approved public order:
+1. One support point
+2. Two tension points
+3. Compression at a bend
+4. Wrap and overlap
+5. Fabric overview — the owner-supplied/approved overview poster
+
+The earlier hero sleeve study remains an authoring study and is not one of the five public images.
+
+Website implementation:
+- guide card thumbnail remains the Fabric overview
+- Fabric detail guide renders a five-image gallery
+- each image has View large / Save WebP
+- canonical G-Art Journey branding is added through the asset pipeline
 
 ## Resume rule
 
