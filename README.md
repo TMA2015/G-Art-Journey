@@ -56,3 +56,7 @@ The previous face, figure and perspective vector-only notes have been withdrawn 
 ## Character Styles collection
 
 Twelve original illustrated posters now live in four groups at [Character Styles](https://tma2015.github.io/G-Art-Journey/character-styles/). Artwork is stored as optimized WebP in GitHub with exact SHA-256 validation; see [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).
+
+## Phase 2 — Core Drawing Skills
+
+Next production focuses on small transferable drawing skills rather than another large curriculum: eye structure, hand construction, hair masses, fabric behavior, graphite values/portrait/landscape, then software-neutral digital basics. Graphite art stays monochrome while G-Art pastel identity moves to headings and small annotations. See [docs/CORE_DRAWING_SKILLS_PHASE2.md](docs/CORE_DRAWING_SKILLS_PHASE2.md) and [docs/ACADEMIC_REFERENCE_MAP.md](docs/ACADEMIC_REFERENCE_MAP.md).
