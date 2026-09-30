@@ -28,6 +28,12 @@ A tutorial must look like artwork someone would want to draw, not a crude wirefr
 - For anatomy-heavy topics such as hands, eyes, faces or figures, treat each important study as its own QA unit before it enters the final composite. A poster with nine good panels and one incorrect teaching panel does not pass.
 
 ## Anatomy and representation
+
+### Default human subject direction
+- For new G-Art Journey tutorial artwork that includes a human character, **default to a female subject** unless the teaching objective clearly benefits from another choice.
+- This is a project art-direction preference for the intended learner and visual identity, not a claim that drawing rules differ by gender.
+- Keep the subject age-appropriate, friendly and secondary to the teaching goal when the lesson is about fabric, light, anatomy, perspective or another transferable skill.
+
 - Proportions in head lengths are useful approximations, not an anatomical law.
 - Individual bodies, faces, ages and expressions vary. Avoid rigid claims that one facial feature defines an age, gender or region.
 - Manga, manhwa, manhua and Western comics are varied media traditions, not immutable appearance templates.

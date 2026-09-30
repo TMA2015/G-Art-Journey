@@ -202,13 +202,13 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #31: merged — **Eye v2** is live at the existing `eye-structure` guide. The owner-approved poster is pinned as a 1024×1536 raster source and published at 900×1350 without cropping; PR CI passed and main Pages workflow #119 completed successfully at merge commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
 - PR #33: merged — core poster crop-safe generation + canonical branding remediation. Hands public output now preserves its full 2:3 approved source at 900×1350; Eye adds a deterministic canonical upper-left brand band; implicit cover cropping was removed. Main Pages workflow #123 passed at merge commit `4bccdf87c95b384b3e872bda0ebcbee71d550d58`.
 - PR #34: merged — Hair follow-up branding hotfix. Hair now uses a separate canonical upper-left brand band at 900×1300 and masks only the tiny legacy mark area so the title artwork is not covered. Main Pages workflow #125 passed at merge commit `cfa7ab8b2d8fbf80e3f8effc7a000df0fbbb4023`.
-- **Core poster branding remediation is deployed; final browser visual QA is still pending owner confirmation.** Fabric remains paused until Hands / Eye / Hair are visibly correct on the actual website cards.
+- **Core poster branding remediation closed:** owner confirmed on the live Drawing Guides page that Hands, Eye and Hair all show the G-Art Journey logo correctly. Hands is no longer cropped; Eye/Hair branding bands render correctly. Fabric may resume.
 
 ## 11. Current production task
 
 ### Phase 2 visual baseline reset — current priority
 
-Hands v2, Eye v2 and Hair branding/pipeline fixes are deployed. **Final browser visual QA on the actual website is the active gate; Fabric remains paused until that passes.**
+Hands v2, Eye v2 and Hair branding/pipeline fixes passed final browser visual QA. **Fabric is now the active Phase 2 production task.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -249,7 +249,7 @@ Approved implementation from PR #26:
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**NEXT AFTER BRANDING FIX: Draw Fabric from Tension & Gravity**
+**ACTIVE: Draw Fabric from Tension & Gravity**
 
 The authoring specification is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`, but no Fabric artwork is approved or published yet.
 

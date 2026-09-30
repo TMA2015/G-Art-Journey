@@ -33,6 +33,15 @@ test('Core Drawing Skills guides publish approved poster metadata',()=>{
   assert.equal(hair.posterHeight,1300);
   assert.equal(hair.steps.length,5);
   assert.match(hair.remember,/big shapes first/i);
+
+  const fabric=guides.find(g=>g.slug==='fabric-tension-gravity');
+  assert.ok(fabric);
+  assert.equal(fabric.poster,true);
+  assert.equal(fabric.image,'infographics/core/fabric-tension-gravity.webp');
+  assert.equal(fabric.posterWidth,900);
+  assert.equal(fabric.posterHeight,1350);
+  assert.equal(fabric.steps.length,5);
+  assert.match(fabric.remember,/Big folds come before small wrinkles/i);
 });
 
 test('Core approved sources are pinned and generated WebPs are valid',async()=>{
@@ -96,6 +105,11 @@ test('Core poster output preserves approved artwork and canonical branding contr
       assert.equal(asset.brand.mode,'band');
       assert.equal(asset.brand.placement,'upper-left');
       assert.ok(asset.brand.artPlate,'hair legacy mark cleanup plate');
+    }
+    if(asset.slug==='fabric-tension-gravity'){
+      assert.equal(asset.brand.mode,'overlay');
+      assert.equal(asset.brand.placement,'upper-left');
+      assert.ok(asset.brand.plate,'fabric generated-logo cleanup plate');
     }
   }
 });
