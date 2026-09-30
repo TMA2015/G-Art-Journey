@@ -3,10 +3,21 @@
 export const coreAssetManifest = [
   {
     "slug": "hands-simple-forms",
-    "sourcePath": "assets/core/hands-simple-forms.svg",
+    "sourceChunks": [
+      "assets/core/hands-v2.b64/01.txt",
+      "assets/core/hands-v2.b64/02.txt",
+      "assets/core/hands-v2.b64/03.txt",
+      "assets/core/hands-v2.b64/04.txt",
+      "assets/core/hands-v2.b64/05.txt",
+      "assets/core/hands-v2.b64/06.txt",
+      "assets/core/hands-v2.b64/07.txt",
+      "assets/core/hands-v2.b64/08.txt",
+      "assets/core/hands-v2.b64/09.txt",
+      "assets/core/hands-v2.b64/10.txt"
+    ],
+    "sourceBytes": 148768,
+    "sourceSha256": "195edf005d1765d0adc4278bf9017088b7087809b5fa13f9abeec0caf13e43ad",
     "outputPath": "public/infographics/core/hands-simple-forms.webp",
-    "sourceBytes": 8351,
-    "sourceGitBlobSha": "dd750eb773fcc94c92ef280f0eb5a9f2f5902adc",
     "width": 900,
     "height": 1200,
     "format": "webp"
