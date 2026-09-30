@@ -14,15 +14,19 @@ test('hands core guide is published with the approved poster metadata',()=>{
   assert.match(guide.remember,/five clear digits/i);
 });
 
-test('approved core poster bytes and dimensions stay pinned',async()=>{
+test('core source is pinned and generated WebP is valid',async()=>{
   const asset=coreAssetManifest.find(x=>x.slug==='hands-simple-forms');
-  const bytes=await readFile(asset.path);
-  assert.equal(bytes.length,asset.bytes);
+  const source=await readFile(asset.sourcePath);
+  assert.equal(source.length,asset.sourceBytes);
+  assert.equal(createHash('sha256').update(source).digest('hex'),asset.sourceSha256);
+
+  const bytes=await readFile(asset.outputPath);
+  assert.ok(bytes.length>20000,'generated poster should not be suspiciously small');
   assert.equal(bytes.subarray(0,4).toString(),'RIFF');
   assert.equal(bytes.subarray(8,12).toString(),'WEBP');
-  assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256);
   const {default:sharp}=await import('sharp');
   const meta=await sharp(bytes).metadata();
   assert.equal(meta.width,asset.width);
   assert.equal(meta.height,asset.height);
+  assert.equal(meta.format,asset.format);
 });
