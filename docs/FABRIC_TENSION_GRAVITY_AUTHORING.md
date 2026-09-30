@@ -309,3 +309,19 @@ The focused set is:
 The earlier hero sleeve study is a separate teaching study and does not replace one of these four cause cards.
 
 Phase 2B / Five Values must not start until this Fabric set is finished. The lit-sphere image generated after PR #37 is unrelated to Fabric and is not an approved project asset.
+
+
+### Cause Card 3 approval notes
+
+Owner approval recorded: **2026-09-30**.
+
+**Compression at a bend** is approved for the Fabric focused set, with quality notes to carry forward:
+
+- the instructional idea is correct: short, denser folds on the compressed side and longer folds on the stretched side
+- the final accepted version is improved but the sleeve fit is still not ideal
+- avoid making the upper sleeve near the shoulder disproportionately large
+- avoid making the lower sleeve cling too tightly to the forearm
+- keep the bent-arm anatomy plausible through the entire upper-arm / elbow / forearm path
+- maintain believable, fairly even garment ease while still allowing local compression at the elbow
+
+These notes are mandatory QA for later clothing/fabric illustrations.
