@@ -54,13 +54,21 @@ The 18-image learner audit is paused in Draft PR #41.
 
 `feature/explore-art-complete-20260930`
 
+## Deployment state
+
+- PR #42 merged to `main` as `f7a19453c1fa54218a85dbaab3776feb89dd6911`.
+- Main Pages workflow #182 completed successfully.
+- Code, tests, build and deployment gates are green.
+- Final browser visual QA remains open because the current tool session cannot directly render the GitHub Pages site.
+- Owner should inspect at least one artist page and one movement page; if layout/images look correct, close this checkpoint.
+
 ## Release gate
 
 1. update discovery data
 2. simplify artist/movement pages to the two-section contract
 3. add responsive artwork galleries
 4. add tests for counts/source metadata/rights fields
-5. PR CI must pass
-6. merge
-7. verify GitHub Pages deployment
-8. browser visual QA of at least one artist page and one movement page
+5. PR CI — PASS
+6. merge — DONE (PR #42)
+7. GitHub Pages deployment — PASS (workflow #182)
+8. browser visual QA of at least one artist page and one movement page — PENDING OWNER CONFIRMATION
