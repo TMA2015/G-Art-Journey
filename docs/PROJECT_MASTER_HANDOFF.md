@@ -175,7 +175,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - Character Styles stable set is live.
 - PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; generated WebP comes from the pinned editable SVG source.
 - Phase 2A posters release individually after their own QA gate.
-- PR #24: **Draw an Eye from Structure** — deterministic SVG source, generated WebP, guide data and eye-specific QA; ready to merge after CI.
+- PR #24: merged — **Draw an Eye from Structure** is live with deterministic SVG source, generated WebP, guide data and eye-specific QA. Main deployment workflow #69 passed.
 
 ## 11. Current production task
 
@@ -204,6 +204,11 @@ Exact authoring record: `docs/EYE_STRUCTURE_AUTHORING.md`
 
 Exact production brief: `docs/HAIR_MASSES_AUTHORING.md`
 
+Current Hair status:
+- authoring specification is committed on `main`
+- exploratory hair images from the interrupted chat are **not approved, not committed and not published**
+- the next session should resume from the authoring brief, create/inspect the final structural source, then wire guide data/assets only after QA
+
 Visual direction:
 - graphite-first
 - one consistent three-quarter head through the cumulative sequence
@@ -219,3 +224,4 @@ Whenever a future decision changes the project:
 - also update this master handoff if the change affects the roadmap, visual rules, QA, release process, completed status or next task
 - keep the “Current production task” section accurate
 - never rely on chat memory alone for a project-critical rule
+- if a chat/stream times out during GitHub work, **verify repository/PR/CI state first and continue from the last confirmed step; do not repeat the previous command blindly**
