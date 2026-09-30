@@ -181,7 +181,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - Phase 2A posters release individually after their own QA gate.
 - PR #24: merged — **Draw an Eye from Structure** is live with deterministic SVG source, generated WebP, guide data and eye-specific QA. Main deployment workflow #69 passed.
 - PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
-- PR #26: **Draw Hair as Masses, Then Strands** — owner-approved artwork uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo. Release implementation is being finalized.
+- PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
 
 ## 11. Current production task
 
@@ -221,16 +221,25 @@ Approved implementation in PR #26:
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**NEXT: Draw Fabric from Tension & Gravity**
+**CURRENT: Draw Fabric from Tension & Gravity**
+
+Exact production brief: `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`
 
 Primary teaching order:
 - support / tension points
-- gravity and movement
-- compression
+- gravity and pull direction
+- stretch versus compression
 - large folds before small wrinkles
-- thickness and overlap
+- thickness, wrap and overlap
 
-Production note: apply the panel-first QA workflow for detailed fold examples instead of generating one dense poster in a single pass.
+Planned layout:
+- one large bent-sleeve hero study
+- four cause cards: one support, two supports, compression at a bend, wrap/overlap
+- six small practical reference studies
+- four short key tips
+- purple G-Art Journey logo and English-only beginner copy
+
+Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic. No Fabric artwork is approved or published yet.
 
 ## 12. Handoff update protocol
 
