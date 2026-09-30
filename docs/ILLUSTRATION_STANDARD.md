@@ -1,7 +1,7 @@
 # G-Art Journey — Illustration standard (approved)
 
 ## Look and feel
-Original pencil and soft pastel illustration; warm paper, airy white space, gentle rose/peach/mint accents, legible English. A tutorial must look like artwork someone would want to draw, not a crude wireframe presented as a finished example. Do not copy slogans, watermarks, compositions or finished characters from reference artists. Use our own short G-Art notes.
+Original pencil and soft pastel illustration; warm paper, airy white space, gentle rose/peach/mint accents, legible English. Use the website's purple **G-Art Journey** identity as the primary logo color. New infographics should include the G-Art Journey logo in a quiet corner when practical; do not rebuild already-approved older posters only to add it. A tutorial must look like artwork someone would want to draw, not a crude wireframe presented as a finished example. Do not copy slogans, watermarks, compositions or finished characters from reference artists. Use our own short G-Art notes.
 
 ## Basic tutorial poster
 - One clear visual question per poster.
@@ -10,6 +10,7 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 - Show enough actual drawing, not only numbered explanations. Keep proportions, hands, feet and perspective consistent.
 - Make small text readable in a 100% full-size view. Use concise English; place detailed explanations in the web lesson, not crowded into the artwork.
 - Finish with a simple original creative exercise, not a grade or score.
+- For dense posters with many small drawings, define the panel grid and the teaching job of each panel first. Create and inspect high-risk panels individually, repair or reject failures, then composite the final infographic and run a whole-page QA pass. Do not rely on one large AI generation to solve many small detailed teaching drawings at once.
 
 ## Anatomy and representation
 - Proportions in head lengths are useful approximations, not an anatomical law.
