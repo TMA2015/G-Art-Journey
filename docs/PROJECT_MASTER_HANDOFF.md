@@ -21,12 +21,26 @@ G-Art Journey should feel handmade, calm and easy to study:
 - generous spacing and readable hierarchy
 - clean pencil/editorial linework
 - light pastel accents (pink/peach/mint/purple) for identity
-- new infographics should carry the **G-Art Journey** logo when practical; use the website's purple brand as the main logo/identity color
-- do **not** retrofit already-approved historical posters only to add the logo
+- new infographics use the purple **G-Art Journey** logo/lockup in the **upper-left corner by default**
+- reuse one canonical repository logo/lockup; do **not** let AI redraw or reinterpret the logo for each poster
+- move the logo only when the lesson layout gives a clear reason
+- do **not** retrofit already-approved historical posters only to add or reposition the logo
 - original teaching artwork and original wording
 - no copied quotes or copied instructional diagrams
 
 The layout may vary when the teaching objective benefits from it. Consistency means shared identity and quality, **not forcing every poster into the same composition**.
+
+### Phase 2 visual-quality baseline
+The approved **Draw Hair as Masses, Then Strands** poster is the current minimum visual-quality benchmark for Phase 2 Core Drawing Skills until a later approved poster raises the bar.
+
+New or refreshed Phase 2 posters should have:
+- convincing hand-drawn / graphite examples rather than sparse schematic placeholders
+- enough practical examples or studies to make the lesson useful at a glance
+- clear editorial hierarchy and mobile-readable labels
+- G-Art identity without overwhelming the teaching content
+- panel-first QA for dense or anatomy-heavy infographics
+
+Match the **quality level**, not necessarily Hair's exact layout.
 
 ## 3. Anti-duplication rule
 
@@ -61,6 +75,8 @@ Every image containing a human or human-like character must be inspected at full
 AI-generated artwork always receives a dedicated anatomy pass. Visual attractiveness never overrides construction errors.
 
 For complex infographics with many detailed drawings, use a **panel-first QA workflow**: define the layout and panel purpose first, create/inspect high-risk panels individually, reject or repair bad panels, then composite the final poster and run one whole-page QA pass. This is preferred over relying on one large AI render to solve every small detailed drawing at once.
+
+For anatomy-heavy lessons, each important study is a separate QA unit before compositing. One incorrect panel is enough to hold the whole poster back.
 
 ## 5. Medium-specific art rules
 
@@ -177,69 +193,80 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #18: merged — approved Manhua replacements + mandatory human/anatomy QA + graphite color exception.
 - PR #19: merged — Phase 2 Core Drawing Skills roadmap + academic reference map + 2A authoring packet.
 - Character Styles stable set is live.
-- PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; generated WebP comes from the pinned editable SVG source.
+- PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; its learning content remains approved, but its artwork is now queued for a visual-quality refresh to the newer Phase 2 baseline.
 - Phase 2A posters release individually after their own QA gate.
-- PR #24: merged — **Draw an Eye from Structure** is live with deterministic SVG source, generated WebP, guide data and eye-specific QA. Main deployment workflow #69 passed.
+- PR #24: merged — **Draw an Eye from Structure** is live and academically approved; its artwork is now queued for a visual-quality refresh to the newer Phase 2 baseline. Main deployment workflow #69 passed.
 - PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
 - PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
 
 ## 11. Current production task
 
-**COMPLETED: Draw Hands from Simple Forms**
+### Phase 2 visual baseline reset — current priority
 
-Published guide:
+Before producing Fabric artwork, refresh the first two Phase 2A posters so the live Core Drawing Skills row no longer mixes two visibly different quality generations.
+
+**1. Draw Hands from Simple Forms — CONTENT COMPLETE / VISUAL REFRESH REQUIRED**
+
+Keep unchanged:
 - slug: `hands-simple-forms`
-- published asset: `public/infographics/core/hands-simple-forms.webp` (generated from `assets/core/hands-simple-forms.svg` before dev/test/build)
-- graphite-first poster with five-step construction and three supporting studies
-- full-size hand/finger QA completed before release
+- lesson objective, guide data and existing URL
+- five-step hand-construction logic
+- mandatory five-digit anatomy checks
 
-Exact authoring record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
+Refresh only the poster artwork/presentation:
+- use the Hair poster as the current minimum finish-quality benchmark
+- keep graphite-first drawing
+- add practical hand studies/pose references where useful
+- use the canonical purple G-Art Journey logo at upper-left
+- create and QA important hands separately before compositing
+- replace the live poster only after the refreshed artwork passes its own release gate
 
-**COMPLETED: Draw an Eye from Structure**
+Exact academic record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
 
-Published implementation in this release:
+**2. Draw an Eye from Structure — CONTENT COMPLETE / VISUAL REFRESH REQUIRED**
+
+Keep unchanged:
 - slug: `eye-structure`
-- editable source: `assets/core/eye-structure.svg`
-- generated asset: `public/infographics/core/eye-structure.webp`
-- five cumulative stages preserve the same eye/viewpoint
-- iris/pupil, lid-wrap and one-light-direction QA completed at full resolution
+- lesson objective, guide data and existing URL
+- sphere → lid wrap → iris/pupil → depth/shadow construction logic
 
-Exact authoring record: `docs/EYE_STRUCTURE_AUTHORING.md`
+Refresh only the poster artwork/presentation:
+- use the Hair poster as the current minimum finish-quality benchmark
+- include a stronger main construction study plus useful eye/view/lid variations
+- keep graphite-first drawing
+- use the canonical purple G-Art Journey logo at upper-left
+- create and QA important eye studies separately before compositing
+- replace the live poster only after the refreshed artwork passes its own release gate
 
-**COMPLETED / APPROVED: Draw Hair as Masses, Then Strands**
+Exact academic record: `docs/EYE_STRUCTURE_AUTHORING.md`
 
-Approved implementation in PR #26:
+**3. Draw Hair as Masses, Then Strands — COMPLETED / CURRENT VISUAL BASELINE**
+
+Approved implementation from PR #26:
 - slug: `hair-masses`
 - five-step construction: Head → Big shape → Flow → Lock groups → Few strands
 - four short key tips and a corrected hair-thickness study
 - ten hairstyle examples for practical reference
 - warm paper + graphite/pencil artwork + light pastel accents
-- purple **G-Art Journey** logo in the upper corner
+- purple G-Art Journey logo
 - English-only wording using simple common language
-- earlier deterministic SVG draft was rejected and removed
-- approved 900×1200 WebP source is pinned as base64 text at `assets/core/hair-masses.b64` and generates the public 900×1200 WebP before dev/test/build
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**CURRENT: Draw Fabric from Tension & Gravity**
+**PAUSED AFTER BRIEF: Draw Fabric from Tension & Gravity**
 
-Exact production brief: `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`
+The authoring specification is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`, but no Fabric artwork is approved or published yet.
 
-Primary teaching order:
+Resume Fabric **after Hands v2 and Eye v2 establish one coherent Phase 2 visual row**.
+
+Planned Fabric teaching order remains:
 - support / tension points
 - gravity and pull direction
 - stretch versus compression
 - large folds before small wrinkles
 - thickness, wrap and overlap
 
-Planned layout:
-- one large bent-sleeve hero study
-- four cause cards: one support, two supports, compression at a bend, wrap/overlap
-- six small practical reference studies
-- four short key tips
-- purple G-Art Journey logo and English-only beginner copy
-
-Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic. No Fabric artwork is approved or published yet.
+Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic.
 
 ## 12. Handoff update protocol
 

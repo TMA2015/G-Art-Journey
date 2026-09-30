@@ -1,9 +1,20 @@
 # G-Art Journey — Illustration standard (approved)
 
 ## Look and feel
-Original pencil and soft pastel illustration; warm paper, airy white space, gentle rose/peach/mint accents, legible English. Use the website's purple **G-Art Journey** identity as the primary logo color. New infographics should include the G-Art Journey logo in a quiet corner when practical; do not rebuild already-approved older posters only to add it. A tutorial must look like artwork someone would want to draw, not a crude wireframe presented as a finished example. Do not copy slogans, watermarks, compositions or finished characters from reference artists. Use our own short G-Art notes.
+Original pencil and soft pastel illustration; warm paper, airy white space, gentle rose/peach/mint accents, legible English.
+
+### Brand mark placement
+- New G-Art Journey infographics use the purple **G-Art Journey** brand mark/lockup in the **upper-left corner by default**.
+- Reuse one canonical repository brand asset/lockup. Do **not** ask an image model to redraw or reinterpret the logo on each poster.
+- Keep the logo large enough to read but visually secondary to the lesson title.
+- Move it from the upper-left only when the teaching layout has a clear reason.
+- Do not rebuild already-approved historical posters only to add or move the logo.
+
+A tutorial must look like artwork someone would want to draw, not a crude wireframe presented as a finished example. Do not copy slogans, watermarks, compositions or finished characters from reference artists. Use our own short G-Art notes.
 
 ## Basic tutorial poster
+- **Current Phase 2 visual baseline:** the approved **Draw Hair as Masses, Then Strands** poster sets the minimum finish level for new Core Drawing Skills artwork until a later approved poster raises that bar. This means convincing hand-drawn/graphite examples, useful visual variety, clear hierarchy and a finished editorial page—not merely correct but sparse technical diagrams.
+- Match the baseline quality, not necessarily the Hair poster's exact grid. Layout should follow the teaching goal.
 - One clear visual question per poster.
 - A row of five connected stages with the **same subject** and consistent camera angle where the skill is cumulative.
 - Optional rows of five expressions, angles, poses, age or silhouette examples. Label these as variations rather than progressive stages.
@@ -11,6 +22,7 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 - Make small text readable in a 100% full-size view. Use concise English; place detailed explanations in the web lesson, not crowded into the artwork.
 - Finish with a simple original creative exercise, not a grade or score.
 - For dense posters with many small drawings, define the panel grid and the teaching job of each panel first. Create and inspect high-risk panels individually, repair or reject failures, then composite the final infographic and run a whole-page QA pass. Do not rely on one large AI generation to solve many small detailed teaching drawings at once.
+- For anatomy-heavy topics such as hands, eyes, faces or figures, treat each important study as its own QA unit before it enters the final composite. A poster with nine good panels and one incorrect teaching panel does not pass.
 
 ## Anatomy and representation
 - Proportions in head lengths are useful approximations, not an anatomical law.
@@ -20,7 +32,8 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 - Credit original illustrations to G-Art Journey. Museum artwork uses its actual maker/source, not a generic site credit.
 
 ## Technical delivery
-- English-first; retain localization-friendly metadata for future use but do not maintain an incomplete VN/EN switch.
+- English-first; use short common words in public artwork. Retain localization-friendly metadata for future use but do not maintain an incomplete VN/EN switch.
+- Before the next new infographic release, maintain one canonical purple G-Art Journey logo/lockup in the repository branding assets and reuse it across new poster sources.
 - Original art may be created at a higher resolution offsite, but the public GitHub repository stores only a clear WebP web version (usually 1000–1600 px on its longer useful axis).
 - Check lettering at full size and on mobile. Do not optimize away legibility.
 - A poster is linked from its own detail page with View large and Save image actions. Lazy-load card previews; keep hero poster full-height (no object-fit: cover crop).
