@@ -199,12 +199,13 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
 - PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
 - PR #29: merged — **Hands v2** is live at the existing `hands-simple-forms` guide. The owner-approved five-step / four-key-point / ten-pose poster was preserved, only its branding region was normalized to the canonical lockup, the raster source was integrity-pinned, PR CI passed, and main Pages deployment workflow #107 passed at merge commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
+- PR #31: merged — **Eye v2** is live at the existing `eye-structure` guide. The owner-approved poster is pinned as a 1024×1536 raster source and published at 900×1350 without cropping; PR CI passed and main Pages workflow #119 completed successfully at merge commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
 
 ## 11. Current production task
 
 ### Phase 2 visual baseline reset — current priority
 
-Hands v2 is complete and live. **Eye v2 is now the active production task.** Fabric remains paused until Eye v2 joins Hands v2 and Hair at the coherent Phase 2 visual baseline.
+Hands v2, Eye v2 and Hair now form the coherent Phase 2 visual row. **Fabric is now the active production task.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -219,25 +220,18 @@ Released in PR #29:
 
 Exact academic/release record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
 
-**2. Draw an Eye from Structure — V2 ACTIVE / PANEL-FIRST REFRESH**
+**2. Draw an Eye from Structure — V2 COMPLETED / LIVE**
 
-Keep unchanged:
-- slug: `eye-structure`
-- lesson objective, guide data and existing URL
-- sphere → lid wrap → iris/pupil → depth/shadow construction logic
+Released in PR #31:
+- slug remains `eye-structure`
+- lesson objective, guide data, URL and five-step eye-construction logic remain unchanged
+- owner-approved poster includes five construction stages, four key structural studies, ten eye-view examples and four practice tips
+- approved source is pinned at 1024×1536; public WebP is 900×1350 so the full 2:3 composition is preserved without cropping
+- superseded Eye SVG source was removed
+- owner-approved presentation exceptions are recorded in `docs/EYE_STRUCTURE_AUTHORING.md`
+- PR CI passed and main Pages deployment workflow #119 passed
 
-Current v2 production rules:
-- use Hands v2 / Hair as the current finish-quality baseline
-- preserve the existing academic objective, slug, URL and guide data
-- build the poster panel-first: five-step main eye → four key studies → practical eye-view references → final composite
-- keep the main five-step sequence on one consistent eye and camera angle
-- keep graphite-first drawing; pastel only for editorial accents
-- use neutral structural examples rather than a beauty/makeup or manga-eye sheet
-- reserve the upper-left branding area and composite the canonical repository lockup after artwork QA
-- avoid rigid claims that one corner shape or one lid darkness/thickness rule applies to every eye
-- replace the live poster only after all panel QA, full-poster QA, CI and deployment gates pass
-
-Exact academic record: `docs/EYE_STRUCTURE_AUTHORING.md`
+Exact academic/release record: `docs/EYE_STRUCTURE_AUTHORING.md`
 
 **3. Draw Hair as Masses, Then Strands — COMPLETED / CURRENT VISUAL BASELINE**
 
@@ -252,11 +246,11 @@ Approved implementation from PR #26:
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**PAUSED AFTER BRIEF: Draw Fabric from Tension & Gravity**
+**ACTIVE NEXT: Draw Fabric from Tension & Gravity**
 
 The authoring specification is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`, but no Fabric artwork is approved or published yet.
 
-Resume Fabric **after Hands v2 and Eye v2 establish one coherent Phase 2 visual row**.
+Hands v2 and Eye v2 are now complete, so Fabric may resume using the same panel-first Phase 2 production gate.
 
 Planned Fabric teaching order remains:
 - support / tension points
