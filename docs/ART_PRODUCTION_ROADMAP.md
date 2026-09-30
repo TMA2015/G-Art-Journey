@@ -22,7 +22,7 @@ This phase is modular rather than a compulsory course. Each poster teaches one t
 
 ### 2A — Observation, hands, face and fabric
 1. **Draw Hands from Simple Forms** — **published**; palm block, thumb base, finger groups, joints, gesture; five digits visible when the pose shows them.
-2. **Draw an Eye from Structure** — lids around the eyeball, iris/pupil placement, shadow under upper lid, view changes.
+2. **Draw an Eye from Structure** — **published**; lids wrap around the eyeball, iris/pupil sit on the curved surface, and lid shadow follows one light direction.
 3. **Draw Hair as Masses, Then Strands** — overall silhouette, flow direction, grouped locks, selected strand detail.
 4. **Draw Fabric from Tension & Gravity** — anchor/tension points, compression, hanging folds and direction of movement.
 

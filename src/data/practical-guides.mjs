@@ -17,6 +17,24 @@ export const practiceGuides = [
     tryIt:'Hold your non-drawing hand in one relaxed pose and rebuild it from the same five stages. Compare your sketch with the real hand before adding detail.',
     remember:'The thumb starts lower than the finger knuckles, finger lengths change with viewpoint, and every fully visible hand should still read as five clear digits.'
   },
+  {
+    slug:'eye-structure', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'20–30 min',
+    title:'Draw an Eye from Structure',
+    description:'Build an eye from the eyeball sphere, wrapping lids and curved iris placement before adding shadow and detail.',
+    image:'infographics/core/eye-structure.webp',
+    poster:true,
+    posterAlt:'Graphite eye construction lesson showing eyeball sphere, lid wrap, iris and pupil, lid shadow and a clean final eye',
+    supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
+    steps:[
+      {title:'Start with the sphere',body:'Sketch the eyeball as a light sphere and mark the eye axis. Think of the visible opening as sitting on this rounded form.'},
+      {title:'Wrap the lids',body:'Place the inner and outer corners, then curve the upper and lower lids around the eyeball instead of drawing a flat almond symbol.'},
+      {title:'Place iris and pupil',body:'Set the iris on the curved surface and center the pupil inside it. Let the lids cover part of the iris in a relaxed eye.'},
+      {title:'Add lid depth and shadow',body:'Show a little lid thickness, the crease and the darker cast shadow below the upper lid. Keep the lighting simple and consistent.'},
+      {title:'Clean the eye',body:'Refine the same eye with controlled graphite values, one small highlight and only a few lashes after the construction works.'}
+    ],
+    tryIt:'Use a mirror or photo and draw one eye twice: first as sphere and lid construction, then as the clean eye. Compare where the lids actually wrap.',
+    remember:'The eyeball is round, the lids wrap around it, and the iris and pupil belong to the same curved surface. Structure comes before lashes or style.'
+  },
 {
  slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
  title:'Draw a Standing Figure with Simple Shapes',

@@ -400,6 +400,20 @@
         "joint-segment-flow",
         "clean-five-digit-hand"
       ]
+    },
+    {
+      "slug": "eye-structure",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "eye-structure-from-sphere-and-lids",
+      "visibleEvidence": "Build one consistent eye from eyeball sphere and lid wrap through iris/pupil placement, lid shadow and a clean final eye.",
+      "stageFocus": [
+        "eyeball-sphere-axis",
+        "lid-wrap-and-corners",
+        "iris-pupil-curved-placement",
+        "lid-thickness-and-shadow",
+        "clean-structured-eye"
+      ]
     }
   ]
 }
