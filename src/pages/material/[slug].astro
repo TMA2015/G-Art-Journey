@@ -1,0 +1,78 @@
+---
+import '../../styles/discovery.css';
+import Base from '../../layouts/Base.astro';
+import SectionNav from '../../components/SectionNav.astro';
+import {media} from '../../data/discovery.mjs';
+import {getMedia} from '../../i18n/discovery.mjs';
+export function getStaticPaths(){return media.map(item=>({params:{slug:item.id},props:{item}}));}
+const lang='en',base=import.meta.env.BASE_URL,url=(path='')=>base+path;
+const item=getMedia(lang).find(x=>x.id===Astro.props.item.id);
+const sections=[
+ {id:'material-about',label:'About'},
+ {id:'material-tools',label:'Tools'},
+ {id:'material-process',label:'How it works'},
+ {id:'material-examples',label:'Examples'},
+ ...((item.learn?.length||item.related?.length)?[{id:'material-learn',label:'Learn more'}]:[])
+];
+const imageSrc=(src)=>src.startsWith('https:')?src:base+src;
+---
+<Base lang={lang} title={item.en||item.name} description={item.about}>
+<article class="site-shell material-page">
+ <a href={url('explore/#materials')} class="eyebrow back-link">← Materials & tools</a>
+ <SectionNav lang={lang} items={sections}/>
+
+ <section id="material-about" class="material-hero">
+  <div class="material-hero-art"><img src={imageSrc(item.image)} alt={item.en||item.name}/><span aria-hidden="true">{item.emoji}</span></div>
+  <div class="material-hero-copy">
+   <span class="eyebrow">MATERIAL & TOOL</span>
+   <h1 class="serif">{item.en||item.name}</h1>
+   <p>{item.about}</p>
+   {item.care&&<aside class="material-care"><strong>Studio note</strong><span>{item.care}</span></aside>}
+  </div>
+ </section>
+
+ <section id="material-tools" class="material-info-section">
+  <div class="discovery-heading"><span class="eyebrow">WHAT YOU NEED</span><h2 class="serif">Basic tools</h2><p>A small starter kit is enough. Add specialized tools only when they solve a real problem.</p></div>
+  <div class="material-tool-grid">
+   {item.tools.map((tool,i)=><div class="material-tool"><span>{String(i+1).padStart(2,'0')}</span><p>{tool}</p></div>)}
+  </div>
+ </section>
+
+ <section id="material-process" class="material-info-section">
+  <div class="discovery-heading"><span class="eyebrow">BEGINNER WORKFLOW</span><h2 class="serif">How it works</h2><p>These are starting steps, not rigid rules. The goal is to understand how the medium behaves.</p></div>
+  <div class="material-process-list">
+   {item.process.map((step,i)=><article><span>{i+1}</span><p>{step}</p></article>)}
+  </div>
+ </section>
+
+ <section id="material-examples" class="artwork-section">
+  <div class="discovery-heading"><span class="eyebrow">LOOK & NOTICE</span><h2 class="serif">Examples</h2><p>Some examples are historical artworks with open-use sources; others are original G-Art illustrations used only to explain the medium.</p></div>
+  <div class="artwork-grid">
+   {item.examples.map(ex=>
+    <article class="artwork-card">
+     {ex.source?
+      <a class="artwork-image" href={ex.source} target="_blank" rel="noopener noreferrer"><img src={imageSrc(ex.image)} alt={ex.title} loading="lazy" referrerpolicy="no-referrer"/></a>:
+      <div class="artwork-image"><img src={imageSrc(ex.image)} alt={ex.title} loading="lazy"/></div>}
+     <div class="artwork-copy">
+      <span class="eyebrow">{ex.year}</span>
+      <h3 class="serif">{ex.title}</h3>
+      <p class="artwork-by">{ex.artist}</p>
+      {ex.museum&&<p class="artwork-museum">{ex.museum}</p>}
+      <p>{ex.note}</p>
+      {ex.source?<a class="artwork-source" href={ex.source} target="_blank" rel="noopener noreferrer">Source · {ex.rights} ↗</a>:<span class="artwork-source artwork-source-static">{ex.rights}</span>}
+     </div>
+    </article>
+   )}
+  </div>
+ </section>
+
+ {(item.learn?.length||item.related?.length)&&
+ <section id="material-learn" class="material-learn">
+  <div><span class="eyebrow">KEEP GOING</span><h2 class="serif">Learn more on G-Art Journey</h2><p>Continue with a practical guide or a related style page already available on the site.</p></div>
+  <div class="material-learn-links">
+   {item.learn?.map(link=><a href={url(link.href)}>{link.label} ↗</a>)}
+   {item.related?.map(link=><a href={url(link.href)}>{link.label} ↗</a>)}
+  </div>
+ </section>}
+</article>
+</Base>

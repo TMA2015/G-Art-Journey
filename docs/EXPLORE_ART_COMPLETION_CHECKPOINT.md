@@ -54,6 +54,16 @@ The 18-image learner audit is paused in Draft PR #41.
 
 `feature/explore-art-complete-20260930`
 
+## Browser QA result
+
+Owner confirmed on **2026-09-30**:
+- new Explore content is visible
+- desktop layout passes
+- iPhone layout passes
+- artwork frames are clear
+
+Artists + Styles browser QA is therefore **closed**.
+
 ## Deployment state
 
 - PR #42 merged to `main` as `f7a19453c1fa54218a85dbaab3776feb89dd6911`.
