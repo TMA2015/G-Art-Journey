@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **authoring ready; artwork not yet approved**
+Status: **active production; hero study pending owner QA**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
