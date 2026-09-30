@@ -217,7 +217,7 @@ Approved implementation in PR #26:
 - purple **G-Art Journey** logo in the upper corner
 - English-only wording using simple common language
 - earlier deterministic SVG draft was rejected and removed
-- approved raster source is pinned in repository chunks and generates the public WebP before dev/test/build
+- approved raster source is pinned at `assets/core/hair-masses.webp` and generates the public 900×1200 WebP before dev/test/build
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
