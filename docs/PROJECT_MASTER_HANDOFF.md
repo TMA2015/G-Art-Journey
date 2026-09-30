@@ -212,7 +212,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ### Phase 2 visual baseline reset — current priority
 
-**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Explore Art implementation is complete and deployed; final browser visual QA is pending owner confirmation.**
+**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Artists + Styles browser QA passed on desktop and iPhone; Materials & Tools completion is now active.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -268,7 +268,7 @@ Planned Fabric teaching order remains:
 
 Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic.
 
-### Explore Art — implemented / deployed, browser QA pending
+### Explore Art — Artists + Styles complete; Materials & Tools active
 
 Owner-approved scope:
 - keep the existing **4 artist pages**: Leonardo da Vinci, Claude Monet, Vincent van Gogh, Fan Kuan
@@ -286,6 +286,30 @@ Learner-art status:
 - the 18-piece learner artwork audit is **paused**
 - no learner images are in the repository/public site
 - resume only after the learner confirms original vs fan-art/reference, image-background rights and approximate chronology
+
+### Materials & Tools completion — active
+
+Owner browser QA confirmed the new Artists + Styles content is clear on desktop and iPhone.
+
+Complete the existing 9 material cards with dedicated detail pages:
+- Graphite & Pencil
+- Colored Pencil
+- Watercolor
+- Oil Painting
+- Acrylic Painting
+- Crayon & Pastel
+- Ink & Wash
+- Vietnamese Lacquer
+- Digital Painting
+
+Each material page should explain:
+1. what the medium is / what makes it distinctive
+2. basic tools and paint/material types
+3. a simple beginner workflow
+4. representative examples — public-domain/open-license famous works where appropriate, otherwise original G-Art illustrations
+5. a link to an existing G-Art learning route when a corresponding tutorial exists
+
+Keep this section concise and practical. Do not expand the material catalog during this pass.
 
 ## 12. Handoff update protocol
 
