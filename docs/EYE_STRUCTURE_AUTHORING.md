@@ -293,3 +293,24 @@ Treat these as owner-approved presentation choices, not new universal academic r
 - Do not ask an image model to redraw the logo into the artwork.
 - If brand treatment is needed on the website, use the canonical repository lockup in the surrounding page/UI rather than regenerating the approved image.
 - Pin the approved source hash and dimensions before switching the live asset.
+
+
+### Approved source integrity record
+
+The owner-approved generated poster was archived into the repository pipeline as a high-quality WebP source without changing composition.
+
+Original approved generation:
+- dimensions: **1024×1536**
+- PNG bytes: **3,183,197**
+- PNG SHA-256: `b3786c8b40857907f03cd6144222d0fac711b014fd2c5932f6d18e188a3327df`
+
+Pinned repository source:
+- dimensions: **1024×1536**
+- WebP source bytes: **495,832**
+- WebP source SHA-256: `37526ddfcbe1181641193fe951e9940714916f2a518085ddb7ec3846fac78de2`
+- source chunks: `assets/core/eye-v2.b64/01.txt` through `08.txt`
+
+Generated public asset:
+- `public/infographics/core/eye-structure.webp`
+- target dimensions: **900×1350**
+- aspect ratio preserved at **2:3** so no teaching content is cropped
