@@ -200,13 +200,15 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
 - PR #29: merged — **Hands v2** is live at the existing `hands-simple-forms` guide. The owner-approved five-step / four-key-point / ten-pose poster was preserved, only its branding region was normalized to the canonical lockup, the raster source was integrity-pinned, PR CI passed, and main Pages deployment workflow #107 passed at merge commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
 - PR #31: merged — **Eye v2** is live at the existing `eye-structure` guide. The owner-approved poster is pinned as a 1024×1536 raster source and published at 900×1350 without cropping; PR CI passed and main Pages workflow #119 completed successfully at merge commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
-- **Core poster branding remediation active:** website QA found that Hands v2 public output had cropped away its source logo, Eye v2 lacked the canonical logo in the released public image, and Hair branding was too small to read reliably on cards. Fix all three public outputs and the crop-prone build pipeline before resuming Fabric.
+- PR #33: merged — core poster crop-safe generation + canonical branding remediation. Hands public output now preserves its full 2:3 approved source at 900×1350; Eye adds a deterministic canonical upper-left brand band; implicit cover cropping was removed. Main Pages workflow #123 passed at merge commit `4bccdf87c95b384b3e872bda0ebcbee71d550d58`.
+- PR #34: merged — Hair follow-up branding hotfix. Hair now uses a separate canonical upper-left brand band at 900×1300 and masks only the tiny legacy mark area so the title artwork is not covered. Main Pages workflow #125 passed at merge commit `cfa7ab8b2d8fbf80e3f8effc7a000df0fbbb4023`.
+- **Core poster branding remediation is deployed; final browser visual QA is still pending owner confirmation.** Fabric remains paused until Hands / Eye / Hair are visibly correct on the actual website cards.
 
 ## 11. Current production task
 
 ### Phase 2 visual baseline reset — current priority
 
-Hands v2, Eye v2 and Hair artwork are approved, but **core poster branding/pipeline remediation is the active task before Fabric resumes**.
+Hands v2, Eye v2 and Hair branding/pipeline fixes are deployed. **Final browser visual QA on the actual website is the active gate; Fabric remains paused until that passes.**
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
