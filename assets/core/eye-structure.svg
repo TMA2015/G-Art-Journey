@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<defs>
+  <style>
+    .title{font:700 40px "DejaVu Sans",Arial,sans-serif;fill:#1e3f67}
+    .sub{font:400 18px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .meta{font:400 13px "DejaVu Sans",Arial,sans-serif;fill:#666}
+    .step{font:700 14px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .small{font:400 12px "DejaVu Sans",Arial,sans-serif;fill:#555}
+    .mini{font:700 14px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .graphite{stroke:#44484e;stroke-width:2.1;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .construct{stroke:#81848a;stroke-width:1.2;fill:none;stroke-dasharray:5 4;stroke-linecap:round}
+    .soft{stroke:#9a9da2;stroke-width:1.35;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .clean{stroke:#30343b;stroke-width:2.35;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <clipPath id="eyeOpen3" clipPathUnits="userSpaceOnUse">
+    <path d="M15 116 Q70 66 126 116 Q70 155 15 116 Z"/>
+  </clipPath>
+  <clipPath id="eyeOpen5" clipPathUnits="userSpaceOnUse">
+    <path d="M10 123 Q68 65 132 119 Q70 159 10 123 Z"/>
+  </clipPath>
+</defs>
+<rect width="900" height="1200" fill="#f9f6ef"/>
+<text x="52" y="60" class="title">Draw an Eye from Structure</text>
+<text x="54" y="94" class="sub">Build the sphere and eyelids before adding iris, shadow and detail.</text>
+<text x="54" y="122" class="meta">G-Art Journey · Phase 2A · Core Drawing Skills</text>
+
+<!-- five panels -->
+<g>
+  <rect x="30" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="30" y="165" width="158" height="45" rx="16" fill="#b0d6c3"/><rect x="30" y="193" width="158" height="17" fill="#b0d6c3"/>
+  <text x="43" y="193" class="step">1  Eyeball sphere</text>
+  <rect x="200" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="200" y="165" width="158" height="45" rx="16" fill="#efc092"/><rect x="200" y="193" width="158" height="17" fill="#efc092"/>
+  <text x="213" y="193" class="step">2  Lid wrap</text>
+  <rect x="370" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="370" y="165" width="158" height="45" rx="16" fill="#c7bbe1"/><rect x="370" y="193" width="158" height="17" fill="#c7bbe1"/>
+  <text x="383" y="193" class="step">3  Iris + pupil</text>
+  <rect x="540" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="540" y="165" width="158" height="45" rx="16" fill="#ebb2b7"/><rect x="540" y="193" width="158" height="17" fill="#ebb2b7"/>
+  <text x="553" y="193" class="step">4  Lid + shadow</text>
+  <rect x="710" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="710" y="165" width="158" height="45" rx="16" fill="#b0d6c3"/><rect x="710" y="193" width="158" height="17" fill="#b0d6c3"/>
+  <text x="723" y="193" class="step">5  Clean eye</text>
+</g>
+<g fill="#1e3f67">
+  <path d="M190 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M360 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M530 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M700 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+</g>
+
+<!-- Step 1 -->
+<g transform="translate(39 238)">
+  <circle cx="70" cy="115" r="54" class="graphite"/>
+  <path d="M17 115Q70 91 123 115Q70 139 17 115" class="construct"/>
+  <path d="M70 61Q54 115 70 169Q86 115 70 61" class="construct"/>
+  <text x="18" y="210" class="small">round form · eye axis</text>
+</g>
+
+<!-- Step 2 -->
+<g transform="translate(209 238)">
+  <circle cx="70" cy="115" r="54" class="construct"/>
+  <path d="M15 116 Q70 66 126 116" class="graphite"/>
+  <path d="M15 116 Q70 155 126 116" class="graphite"/>
+  <circle cx="15" cy="116" r="2.6" fill="#efc092"/><circle cx="126" cy="116" r="2.6" fill="#efc092"/>
+  <path d="M21 102Q70 76 120 103" class="construct"/>
+  <text x="15" y="210" class="small">corners anchor the lids</text>
+</g>
+
+<!-- Step 3 -->
+<g transform="translate(379 238)">
+  <circle cx="70" cy="115" r="54" class="construct"/>
+  <g clip-path="url(#eyeOpen3)">
+    <circle cx="73" cy="114" r="29" class="soft"/>
+    <circle cx="73" cy="114" r="10" fill="#4a4d52"/>
+  </g>
+  <path d="M15 116 Q70 66 126 116" class="graphite"/>
+  <path d="M15 116 Q70 155 126 116" class="graphite"/>
+  <path d="M54 89Q73 82 93 90" class="construct"/>
+  <text x="18" y="210" class="small">iris sits behind the lids</text>
+</g>
+
+<!-- Step 4 -->
+<g transform="translate(549 238)">
+  <g clip-path="url(#eyeOpen3)">
+    <circle cx="73" cy="114" r="29" class="soft"/>
+    <circle cx="73" cy="114" r="10" fill="#44484e"/>
+    <circle cx="64" cy="103" r="4" fill="#f9f6ef" stroke="#777" stroke-width=".8"/>
+  </g>
+  <path d="M15 116 Q70 66 126 116" class="clean"/>
+  <path d="M15 116 Q70 155 126 116" class="graphite"/>
+  <path d="M19 111 Q70 59 124 111" class="soft"/>
+  <path d="M29 86 Q70 61 112 86" class="soft"/>
+  <path d="M24 111 Q70 78 121 111" stroke="#60636a" stroke-width="7" opacity=".22" fill="none" stroke-linecap="round"/>
+  <text x="18" y="210" class="small">rim · crease · cast shadow</text>
+</g>
+
+<!-- Step 5 -->
+<g transform="translate(719 231)">
+  <path d="M10 123 Q68 65 132 119" class="clean"/>
+  <path d="M10 123 Q70 159 132 119" class="clean"/>
+  <g clip-path="url(#eyeOpen5)">
+    <ellipse cx="77" cy="116" rx="31" ry="34" class="clean"/>
+    <circle cx="77" cy="116" r="12" fill="#383b40"/>
+    <circle cx="66" cy="104" r="5" fill="#fff" stroke="#888" stroke-width=".6"/>
+  </g>
+  <path d="M18 116 Q69 71 126 113" stroke="#30343b" stroke-width="5.5" fill="none" stroke-linecap="round" opacity=".5"/>
+  <path d="M18 109Q68 55 124 104" class="soft"/>
+  <path d="M25 92Q69 68 116 90" class="soft"/>
+  <path d="M23 131Q68 153 122 126" class="soft"/>
+  <path d="M34 88l-8-12M47 79l-5-14M106 81l7-13M118 89l10-10" class="graphite"/>
+  <path d="M47 142Q77 151 107 138" class="construct" style="stroke-dasharray:none"/>
+</g>
+
+<text x="45" y="585" class="step" fill="#1e3f67">Quick studies</text>
+
+<!-- quick study 1 -->
+<g>
+  <rect x="40" y="610" width="260" height="235" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="58" y="640" class="mini">Lid wrap</text>
+  <g transform="translate(92 676)">
+    <circle cx="72" cy="65" r="53" class="construct"/>
+    <path d="M24 66Q73 26 122 66" class="graphite"/>
+    <path d="M24 66Q73 101 122 66" class="graphite"/>
+    <path d="M36 51Q73 33 110 52" class="soft"/>
+    <path d="M73 13Q53 65 73 117" class="construct"/>
+  </g>
+  <text x="75" y="815" class="small">lids curve over the sphere</text>
+</g>
+
+<!-- quick study 2 -->
+<g>
+  <rect x="320" y="610" width="260" height="235" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="338" y="640" class="mini">Iris in perspective</text>
+  <g transform="translate(355 690)">
+    <circle cx="45" cy="53" r="33" class="graphite"/><circle cx="45" cy="53" r="10" class="graphite"/>
+    <ellipse cx="153" cy="53" rx="17" ry="33" class="graphite"/><ellipse cx="153" cy="53" rx="5" ry="10" class="graphite"/>
+    <path d="M89 53h30" class="construct"/>
+    <path d="M116 48l7 5-7 5" class="soft"/>
+  </g>
+  <text x="348" y="815" class="small">turning compresses the visible iris</text>
+</g>
+
+<!-- quick study 3 -->
+<g>
+  <rect x="600" y="610" width="260" height="235" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="618" y="640" class="mini">Upper-lid shadow</text>
+  <g transform="translate(628 690)">
+    <path d="M10 66Q70 22 132 64" class="clean"/>
+    <path d="M10 66Q70 103 132 64" class="graphite"/>
+    <ellipse cx="76" cy="64" rx="28" ry="31" class="soft"/>
+    <circle cx="76" cy="64" r="10" fill="#44484e"/>
+    <path d="M20 63Q70 36 125 61" stroke="#60636a" stroke-width="8" opacity=".23" fill="none" stroke-linecap="round"/>
+    <circle cx="66" cy="53" r="4" fill="#fff" stroke="#777" stroke-width=".6"/>
+    <path d="M154 19l-14 20" stroke="#1e3f67" stroke-width="2"/>
+    <path d="M139 39l2-10 8 6" fill="#1e3f67"/>
+  </g>
+  <text x="626" y="815" class="small">shadow and highlight share one light</text>
+</g>
+
+<!-- footer -->
+<rect x="40" y="885" width="820" height="200" rx="20" fill="#fff" stroke="#d7d0c6"/>
+<text x="65" y="920" class="step" fill="#1e3f67">Practice tip</text>
+<text x="65" y="952" class="sub" style="font-size:16px">Use a mirror or photo and check how the lids wrap around the eyeball.</text>
+<text x="65" y="990" class="mini">Full-resolution QA</text>
+<text x="65" y="1018" class="small">• Keep the same eye shape and viewpoint through all five cumulative stages.</text>
+<text x="65" y="1045" class="small">• Keep the pupil centered in the iris; lids must visibly wrap the sphere.</text>
+<text x="65" y="1072" class="small">• Make lid shadow and highlight agree with one light direction.</text>
+<text x="42" y="1155" class="step" fill="#1e3f67">Sphere first · Lids wrap · Detail last</text>
+</svg>
