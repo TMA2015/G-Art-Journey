@@ -5,8 +5,8 @@ export const coreAssetManifest = [
     "slug": "hands-simple-forms",
     "sourcePath": "assets/core/hands-simple-forms.svg",
     "outputPath": "public/infographics/core/hands-simple-forms.webp",
-    "sourceBytes": 9974,
-    "sourceGitBlobSha": "a8306621ddcd648ce0bc5f6fd778be3153df1d71",
+    "sourceBytes": 8351,
+    "sourceGitBlobSha": "dd750eb773fcc94c92ef280f0eb5a9f2f5902adc",
     "width": 900,
     "height": 1200,
     "format": "webp"
