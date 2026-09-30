@@ -1,4 +1,4 @@
-# G-Art Journey — Fabric Focused Set / Recovery Record
+# G-Art Journey — Fabric Five-Image Release / Recovery Record
 
 _Last verified: 2026-09-30_
 
@@ -151,6 +151,20 @@ Website implementation:
 - Fabric detail guide renders a five-image gallery
 - each image has View large / Save WebP
 - canonical G-Art Journey branding is added through the asset pipeline
+
+## Final five-image release
+
+- PR #39 merged to `main` as `0484d6d7db2582c87ef446f64ba3ba80fcd1aa68`.
+- Main Pages workflow #176 completed successfully.
+- Live Fabric guide contains five approved public images in order:
+  1. One support point
+  2. Two tension points
+  3. Compression at a bend
+  4. Wrap and overlap
+  5. Fabric overview
+- Canonical G-Art Journey branding is applied to all public outputs.
+- The earlier hero sleeve study remains authoring material only.
+- Fabric production is complete.
 
 ## Resume rule
 
