@@ -1,6 +1,6 @@
 # Draw an Eye from Structure — production specification
 
-Status: **authoring ready; artwork not yet published**
+Status: **artwork QA complete; published with the Phase 2A eye guide**
 
 This is the second Phase 2A Core Drawing Skills item. It should teach a transferable eye-construction method before manga/webtoon/manhua stylization.
 
@@ -173,3 +173,9 @@ Preferred workflow:
 6. Run tests, guide audit, build and asset audit.
 7. Review desktop/tablet/mobile.
 8. Publish the eye poster independently once it passes its own gate.
+
+Published implementation:
+- guide slug: `eye-structure`
+- editable source: `assets/core/eye-structure.svg`
+- generated public asset: `public/infographics/core/eye-structure.webp`
+- source is regenerated deterministically before dev/test/build.
