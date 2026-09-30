@@ -201,6 +201,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #29: merged — **Hands v2** is live at the existing `hands-simple-forms` guide. The owner-approved five-step / four-key-point / ten-pose poster was preserved, only its branding region was normalized to the canonical lockup, the raster source was integrity-pinned, PR CI passed, and main Pages deployment workflow #107 passed at merge commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
 - PR #31: merged — **Eye v2** is live at the existing `eye-structure` guide. The owner-approved poster is pinned as a 1024×1536 raster source and published at 900×1350 without cropping; PR CI passed and main Pages workflow #119 completed successfully at merge commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
 - PR #36: merged — **Draw Fabric from Tension & Gravity** is released as the fourth Core Drawing Skills 2A poster. The owner-approved 1024×1536 source is pinned, the AI-rendered logo area is replaced deterministically with the canonical G-Art Journey lockup, the guide/skill-intent record are wired, PR CI passed, and main Pages workflow #142 passed at merge commit `6552900f5ee34a3848868aa183a485c942b53a19`.
+- PR #38: closed without merge — **Five Values & a Lit Sphere** was started prematurely. Its sphere artwork is not Fabric and is not approved for production. Resume Fabric focused cards before Phase 2B.
 - PR #33: merged — core poster crop-safe generation + canonical branding remediation. Hands public output now preserves its full 2:3 approved source at 900×1350; Eye adds a deterministic canonical upper-left brand band; implicit cover cropping was removed. Main Pages workflow #123 passed at merge commit `4bccdf87c95b384b3e872bda0ebcbee71d550d58`.
 - PR #34: merged — Hair follow-up branding hotfix. Hair now uses a separate canonical upper-left brand band at 900×1300 and masks only the tiny legacy mark area so the title artwork is not covered. Main Pages workflow #125 passed at merge commit `cfa7ab8b2d8fbf80e3f8effc7a000df0fbbb4023`.
 - **Core poster branding remediation closed:** owner confirmed on the live Drawing Guides page that Hands, Eye and Hair all show the G-Art Journey logo correctly. Hands is no longer cropped; Eye/Hair branding bands render correctly. Fabric may resume.
@@ -209,7 +210,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ### Phase 2 visual baseline reset — current priority
 
-**Phase 2A is complete:** Hands v2, Eye v2, Hair and Fabric are released. The next active production task is **Phase 2B — Five Values & a Lit Sphere**.
+Hands v2, Eye v2 and Hair are complete. Fabric has a released overview poster, but its **focused four-card Fabric set is still in production**. The active task is Fabric Cause Card 3 — **Compression at a bend**. Phase 2B has not started.
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -250,11 +251,11 @@ Approved implementation from PR #26:
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**COMPLETED: Draw Fabric from Tension & Gravity**
+**ACTIVE: Draw Fabric from Tension & Gravity — focused four-card set**
 
-The Fabric authoring/release record is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`; the poster and guide are published through PR #36.
+The Fabric overview poster and guide were published through PR #36, but the focused cause-card set is not complete. The recorded sequence remains: One support point → Two tension points → Compression at a bend → Wrap and overlap.
 
-Phase 2A is now complete. Begin Phase 2B with **Five Values & a Lit Sphere** using the same source-pinning, branding and public-WebP QA gates.
+Do **not** begin Phase 2B yet. Finish Fabric Cause Card 3 and Cause Card 4 first, then decide how the focused set and overview poster should be presented on the site.
 
 Planned Fabric teaching order remains:
 - support / tension points

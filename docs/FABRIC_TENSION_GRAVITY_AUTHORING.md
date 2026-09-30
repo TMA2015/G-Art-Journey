@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **owner-approved and released in PR #36**
+Status: **overview poster released; focused four-card set still active**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
@@ -294,3 +294,54 @@ Public target:
 - skill-intent ledger and Core Drawing Skills tests passed
 
 Fabric closes **Phase 2A — Structure & Observation**.
+
+
+## 14. Sequencing correction — focused Fabric set still active
+
+A full overview poster was approved and released in PR #36, but the owner intended the focused Fabric card sequence to continue.
+
+The focused set is:
+1. **One support point** — APPROVED
+2. **Two tension points** — APPROVED
+3. **Compression at a bend** — NEXT
+4. **Wrap and overlap** — PENDING
+
+The earlier hero sleeve study is a separate teaching study and does not replace one of these four cause cards.
+
+Phase 2B / Five Values must not start until this Fabric set is finished. The lit-sphere image generated after PR #37 is unrelated to Fabric and is not an approved project asset.
+
+
+### Cause Card 3 approval notes
+
+Owner approval recorded: **2026-09-30**.
+
+**Compression at a bend** is approved for the Fabric focused set, with quality notes to carry forward:
+
+- the instructional idea is correct: short, denser folds on the compressed side and longer folds on the stretched side
+- the final accepted version is improved but the sleeve fit is still not ideal
+- avoid making the upper sleeve near the shoulder disproportionately large
+- avoid making the lower sleeve cling too tightly to the forearm
+- keep the bent-arm anatomy plausible through the entire upper-arm / elbow / forearm path
+- maintain believable, fairly even garment ease while still allowing local compression at the elbow
+
+These notes are mandatory QA for later clothing/fabric illustrations.
+
+
+## 15. Final focused set and website gallery
+
+Owner approval recorded for **Cause Card 4 — Wrap and overlap** on 2026-09-30.
+
+The final public Fabric set is five images:
+1. **One support point**
+2. **Two tension points**
+3. **Compression at a bend** — approved with the recorded sleeve/anatomy quality notes
+4. **Wrap and overlap**
+5. **Fabric overview** — the owner-approved overview poster supplied again for inclusion as the fifth image
+
+The earlier hero sleeve study remains useful authoring material but is not part of the five-image public set.
+
+Release presentation:
+- the Drawing Guides card continues to use the overview poster as its cover
+- the Fabric guide page shows all five approved images
+- all focused posters receive canonical G-Art Journey branding through deterministic production composition
+- the Wrap and overlap generated logo is covered before the canonical logo is added

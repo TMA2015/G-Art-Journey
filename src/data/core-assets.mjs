@@ -118,5 +118,117 @@ export const coreAssetManifest = [
         "background": "#FBF7EF"
       }
     }
+  },
+  {
+    "slug": "fabric-one-support",
+    "sourceChunks": [
+      "assets/core/fabric-one-support.b64/01.txt",
+      "assets/core/fabric-one-support.b64/02.txt",
+      "assets/core/fabric-one-support.b64/03.txt",
+      "assets/core/fabric-one-support.b64/04.txt",
+      "assets/core/fabric-one-support.b64/05.txt"
+    ],
+    "sourceBytes": 274120,
+    "sourceSha256": "8510e59627a9bc5c6f7a88564a2b713e19863873a2718ea33a43846af53adf9a",
+    "outputPath": "public/infographics/core/fabric-one-support.webp",
+    "width": 900,
+    "height": 1224,
+    "format": "webp",
+    "brand": {
+      "mode": "band",
+      "canonical": "public/branding/g-art-lockup.svg",
+      "placement": "upper-left",
+      "bandHeight": 100,
+      "logoWidth": 240,
+      "left": 24,
+      "top": 18,
+      "background": "#FBF7EF"
+    }
+  },
+  {
+    "slug": "fabric-two-tension",
+    "sourceChunks": [
+      "assets/core/fabric-two-tension.b64/01.txt",
+      "assets/core/fabric-two-tension.b64/02.txt",
+      "assets/core/fabric-two-tension.b64/03.txt",
+      "assets/core/fabric-two-tension.b64/04.txt",
+      "assets/core/fabric-two-tension.b64/05.txt"
+    ],
+    "sourceBytes": 312770,
+    "sourceSha256": "60001022cf03f56b235d2c60da92fd646910597d93c4d42d69fd5c68207fa567",
+    "outputPath": "public/infographics/core/fabric-two-tension.webp",
+    "width": 900,
+    "height": 1224,
+    "format": "webp",
+    "brand": {
+      "mode": "band",
+      "canonical": "public/branding/g-art-lockup.svg",
+      "placement": "upper-left",
+      "bandHeight": 100,
+      "logoWidth": 240,
+      "left": 24,
+      "top": 18,
+      "background": "#FBF7EF"
+    }
+  },
+  {
+    "slug": "fabric-compression-bend",
+    "sourceChunks": [
+      "assets/core/fabric-compression-bend.b64/01.txt",
+      "assets/core/fabric-compression-bend.b64/02.txt",
+      "assets/core/fabric-compression-bend.b64/03.txt",
+      "assets/core/fabric-compression-bend.b64/04.txt",
+      "assets/core/fabric-compression-bend.b64/05.txt"
+    ],
+    "sourceBytes": 260804,
+    "sourceSha256": "653cdd3ab174bc838ef3cca4b5ef6ee04bda50effdd54d4b1663d5d949de1cdc",
+    "outputPath": "public/infographics/core/fabric-compression-bend.webp",
+    "width": 900,
+    "height": 1450,
+    "format": "webp",
+    "brand": {
+      "mode": "band",
+      "canonical": "public/branding/g-art-lockup.svg",
+      "placement": "upper-left",
+      "bandHeight": 100,
+      "logoWidth": 240,
+      "left": 24,
+      "top": 18,
+      "background": "#FBF7EF"
+    }
+  },
+  {
+    "slug": "fabric-wrap-overlap",
+    "sourceChunks": [
+      "assets/core/fabric-wrap-overlap.b64/01.txt",
+      "assets/core/fabric-wrap-overlap.b64/02.txt",
+      "assets/core/fabric-wrap-overlap.b64/03.txt",
+      "assets/core/fabric-wrap-overlap.b64/04.txt",
+      "assets/core/fabric-wrap-overlap.b64/05.txt",
+      "assets/core/fabric-wrap-overlap.b64/06.txt"
+    ],
+    "sourceBytes": 368890,
+    "sourceSha256": "9437858a86a7e4f73665483cf655c56b70fa53ab14dc795fb32288ddae5ea623",
+    "outputPath": "public/infographics/core/fabric-wrap-overlap.webp",
+    "width": 1200,
+    "height": 900,
+    "format": "webp",
+    "brand": {
+      "mode": "band",
+      "canonical": "public/branding/g-art-lockup.svg",
+      "placement": "upper-left",
+      "bandHeight": 100,
+      "logoWidth": 240,
+      "left": 24,
+      "top": 18,
+      "background": "#FBF7EF",
+      "artPlate": {
+        "left": 1025,
+        "top": 0,
+        "width": 175,
+        "height": 78,
+        "background": "#FBF7EF"
+      }
+    }
   }
 ];

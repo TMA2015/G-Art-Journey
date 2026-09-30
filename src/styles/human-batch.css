@@ -9,3 +9,9 @@ html[data-theme="playful"] .human-card,html[data-theme="playful"] .guide-poster{
 @media(max-width:390px){.human-card-grid{grid-template-columns:1fr}.human-card-copy{padding:18px}.human-card-copy h3{font-size:25px}}
 
 .home-approved-guides .guide-card{min-width:0;overflow:hidden;display:flex;flex-direction:column}.home-approved-guides .home-guide-media{position:relative;width:100%;aspect-ratio:4/5;overflow:hidden;background:#faf3ec;flex:none}.home-approved-guides .home-guide-media img{position:absolute;inset:0;display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:contain;object-position:center center}.home-approved-guides .guide-body{display:flex;flex:1;flex-direction:column}.home-approved-guides .guide-bottom{margin-top:auto}.human-note a,.visual-archive-intro a{font-weight:800;color:#725168;text-decoration:underline;text-underline-offset:4px}
+
+.guide-poster-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:25px auto 40px;max-width:1180px}
+.guide-poster-gallery .guide-poster{margin:0;max-width:none}
+.guide-poster-gallery .guide-poster-wide{grid-column:1/-1}
+.guide-article .guide-poster-gallery~.lesson-grid{margin-top:40px}
+@media(max-width:760px){.guide-poster-gallery{grid-template-columns:1fr;gap:16px}.guide-poster-gallery .guide-poster-wide{grid-column:auto}}

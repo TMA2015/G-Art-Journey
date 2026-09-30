@@ -1,4 +1,4 @@
-# G-Art Journey — Fabric Release / Recovery Record
+# G-Art Journey — Fabric Focused Set / Recovery Record
 
 _Last verified: 2026-09-30_
 
@@ -94,11 +94,11 @@ The body is only a support for the fabric lesson. Keep the face out of frame. Om
 Next artwork unit:
 - **Cause Card 3 — Compression at a bend**
 
-## Final poster approval
+## Released overview poster
 
 Owner approved the full Fabric infographic on **2026-09-30**.
 
-The full poster already includes the remaining cause cards, reference examples, tips and practice prompts. Do not create more standalone panels unless a concrete release-QA defect requires replacement.
+The released full poster is an **overview poster**. It does not cancel the separately approved focused-card production sequence.
 
 Release implementation:
 - source chunks: `assets/core/fabric-v1.b64/01.txt` … `06.txt`
@@ -116,13 +116,41 @@ Remaining gate:
 4. visually inspect the deployed Fabric card/page
 5. close Phase 2A handoff
 
-## Final release state
+## Current state after sequencing correction
 
-- final PR CI passed
-- PR #36 merged as `6552900f5ee34a3848868aa183a485c942b53a19`
-- main Pages workflow #142 completed successfully
-- Fabric is released
-- next project task: **Five Values & a Lit Sphere**
+- PR #36 overview poster is live and may remain as an approved Fabric overview.
+- Focused Fabric cards remain a separate unfinished set.
+- Cause Card 1 — **One support point** — APPROVED.
+- Cause Card 2 — **Two tension points** — APPROVED.
+- Cause Card 3 — **Compression at a bend — APPROVED WITH NOTES**.
+  - teaching logic is accepted
+  - sleeve/arm proportion is improved but not ideal
+  - future sleeve drawings must avoid an oversized upper sleeve near the shoulder
+  - future sleeve drawings must also avoid an unnaturally tight lower sleeve around the forearm
+  - keep the bent arm anatomy straighter and more believable through upper arm → elbow → forearm
+  - use more even, realistic garment ease along the sleeve
+- Cause Card 4 — **Wrap and overlap — APPROVED**.
+- The focused four-card Fabric set is complete.
+- Add the previously approved Fabric overview poster as **image 5** on the live guide.
+- PR #38 / Five Values was closed without merge because Phase 2B started too early.
+- The lit-sphere artwork is not part of Fabric and is not an approved project asset.
+
+## Five-image website set
+
+Owner-approved public order:
+1. One support point
+2. Two tension points
+3. Compression at a bend
+4. Wrap and overlap
+5. Fabric overview — the owner-supplied/approved overview poster
+
+The earlier hero sleeve study remains an authoring study and is not one of the five public images.
+
+Website implementation:
+- guide card thumbnail remains the Fabric overview
+- Fabric detail guide renders a five-image gallery
+- each image has View large / Save WebP
+- canonical G-Art Journey branding is added through the asset pipeline
 
 ## Resume rule
 
