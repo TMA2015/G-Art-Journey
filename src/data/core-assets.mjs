@@ -24,12 +24,21 @@ export const coreAssetManifest = [
   },
   {
     "slug": "eye-structure",
-    "sourcePath": "assets/core/eye-structure.svg",
+    "sourceChunks": [
+      "assets/core/eye-v2.b64/01.txt",
+      "assets/core/eye-v2.b64/02.txt",
+      "assets/core/eye-v2.b64/03.txt",
+      "assets/core/eye-v2.b64/04.txt",
+      "assets/core/eye-v2.b64/05.txt",
+      "assets/core/eye-v2.b64/06.txt",
+      "assets/core/eye-v2.b64/07.txt",
+      "assets/core/eye-v2.b64/08.txt"
+    ],
+    "sourceBytes": 495832,
+    "sourceSha256": "37526ddfcbe1181641193fe951e9940714916f2a518085ddb7ec3846fac78de2",
     "outputPath": "public/infographics/core/eye-structure.webp",
-    "sourceBytes": 8845,
-    "sourceGitBlobSha": "e1b4566a32c1dfdb17a99df8c1d9df384c8fbb76",
     "width": 900,
-    "height": 1200,
+    "height": 1350,
     "format": "webp"
   },
   {

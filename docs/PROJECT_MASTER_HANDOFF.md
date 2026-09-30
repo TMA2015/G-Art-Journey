@@ -193,7 +193,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #18: merged — approved Manhua replacements + mandatory human/anatomy QA + graphite color exception.
 - PR #19: merged — Phase 2 Core Drawing Skills roadmap + academic reference map + 2A authoring packet.
 - Character Styles stable set is live.
-- PR #23: merged — first Phase 2A guide **Draw Hands from Simple Forms** is live; its learning content remains approved, but its artwork is now queued for a visual-quality refresh to the newer Phase 2 baseline.
+- PR #23: merged — initial Phase 2A **Draw Hands from Simple Forms** guide release. Its v1 artwork was later superseded by the approved Hands v2 release in PR #29.
 - Phase 2A posters release individually after their own QA gate.
 - PR #24: merged — **Draw an Eye from Structure** is live and academically approved; its artwork is now queued for a visual-quality refresh to the newer Phase 2 baseline. Main deployment workflow #69 passed.
 - PR #25: merged — durable handoff finalized after the Eye release; stream-timeout recovery rule added.
@@ -219,20 +219,23 @@ Released in PR #29:
 
 Exact academic/release record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
 
-**2. Draw an Eye from Structure — CONTENT COMPLETE / VISUAL REFRESH REQUIRED**
+**2. Draw an Eye from Structure — V2 ACTIVE / PANEL-FIRST REFRESH**
 
 Keep unchanged:
 - slug: `eye-structure`
 - lesson objective, guide data and existing URL
 - sphere → lid wrap → iris/pupil → depth/shadow construction logic
 
-Refresh only the poster artwork/presentation:
-- use the Hair poster as the current minimum finish-quality benchmark
-- include a stronger main construction study plus useful eye/view/lid variations
-- keep graphite-first drawing
-- use the canonical purple G-Art Journey logo at upper-left
-- create and QA important eye studies separately before compositing
-- replace the live poster only after the refreshed artwork passes its own release gate
+Current v2 production rules:
+- use Hands v2 / Hair as the current finish-quality baseline
+- preserve the existing academic objective, slug, URL and guide data
+- build the poster panel-first: five-step main eye → four key studies → practical eye-view references → final composite
+- keep the main five-step sequence on one consistent eye and camera angle
+- keep graphite-first drawing; pastel only for editorial accents
+- use neutral structural examples rather than a beauty/makeup or manga-eye sheet
+- reserve the upper-left branding area and composite the canonical repository lockup after artwork QA
+- avoid rigid claims that one corner shape or one lid darkness/thickness rule applies to every eye
+- replace the live poster only after all panel QA, full-poster QA, CI and deployment gates pass
 
 Exact academic record: `docs/EYE_STRUCTURE_AUTHORING.md`
 

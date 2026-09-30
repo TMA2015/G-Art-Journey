@@ -23,7 +23,9 @@ export const practiceGuides = [
     description:'Build an eye from the eyeball sphere, wrapping lids and curved iris placement before adding shadow and detail.',
     image:'infographics/core/eye-structure.webp',
     poster:true,
-    posterAlt:'Graphite eye construction lesson showing eyeball sphere, lid wrap, iris and pupil, lid shadow and a clean final eye',
+    posterWidth:900,
+    posterHeight:1350,
+    posterAlt:'Graphite eye construction lesson showing five construction stages, four key studies, ten eye-view examples and practice tips',
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
       {title:'Start with the sphere',body:'Sketch the eyeball as a light sphere and mark the eye axis. Think of the visible opening as sitting on this rounded form.'},
