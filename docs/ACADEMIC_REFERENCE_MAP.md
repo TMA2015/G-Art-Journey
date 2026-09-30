@@ -84,7 +84,37 @@ Useful principles:
 
 **G-Art use:** eye/nose/mouth lessons should relate features to head volume and viewpoint; expression should alter several features together.
 
-## 4. Value, graphite and light
+## 4. Fabric, drapery and clothing folds
+
+### Proko — Intro to Drapery
+https://www.proko.com/course-lesson/intro-to-drapery
+
+Useful principles:
+- folds connect to support / tension points such as body landmarks, seams and garment edges
+- gravity pulls loose cloth down from those points
+- simplify complex drapery into larger shapes and gestures first
+- fabric wraps around the 3D form underneath
+- overlap helps explain depth
+
+### Proko — Intro to Compression / Half-Lock Folds
+https://www.proko.com/course-lesson/intro-to-compression-half-lock-folds
+
+Useful principles:
+- bends bring body areas closer and compress cloth
+- compressed folds should be grouped and connected to the anatomy underneath
+- edit visual noise instead of copying every wrinkle
+
+### Art Prof — How to Draw Clothing
+https://artprof.org/learn/how-to-draw-clothing/
+
+Useful principles:
+- named fold types can support observation
+- beginners benefit from finding the largest fold shapes and curves first
+- different movements and materials change the visible fold pattern
+
+**G-Art use:** teach the cause of folds before terminology: support, gravity, stretch, compression, large fold groups, wrap and overlap. Avoid making beginners memorize a taxonomy before they can read the forces.
+
+## 5. Value, graphite and light
 
 ### Palomar College Pressbooks — Foundations of Drawing: Value
 https://pressbooks.palomar.edu/art102/chapter/value/
@@ -105,7 +135,7 @@ Useful principles:
 
 **G-Art use:** first graphite tonal poster should use a small value scale plus one clearly lit simple form before portrait shading.
 
-## 5. Perspective and depth
+## 6. Perspective and depth
 
 ### Princeton University Art Museum — Drawing: Perspective 101
 https://artmuseum.princeton.edu/art/stories-perspectives/video/art-making-l-drawing-perspective-101
@@ -126,7 +156,7 @@ Useful principles:
 
 **G-Art use:** pencil landscape lessons can combine simple linear perspective with overlap, scale and value/edge reduction for depth.
 
-## 6. Digital drawing
+## 7. Digital drawing
 
 ### Adobe Learn — Get to know layers
 https://www.adobe.com/learn/photoshop/in-app/introduction-to-layers
