@@ -325,3 +325,23 @@ Owner approval recorded: **2026-09-30**.
 - maintain believable, fairly even garment ease while still allowing local compression at the elbow
 
 These notes are mandatory QA for later clothing/fabric illustrations.
+
+
+## 15. Final focused set and website gallery
+
+Owner approval recorded for **Cause Card 4 — Wrap and overlap** on 2026-09-30.
+
+The final public Fabric set is five images:
+1. **One support point**
+2. **Two tension points**
+3. **Compression at a bend** — approved with the recorded sleeve/anatomy quality notes
+4. **Wrap and overlap**
+5. **Fabric overview** — the owner-approved overview poster supplied again for inclusion as the fifth image
+
+The earlier hero sleeve study remains useful authoring material but is not part of the five-image public set.
+
+Release presentation:
+- the Drawing Guides card continues to use the overview poster as its cover
+- the Fabric guide page shows all five approved images
+- all focused posters receive canonical G-Art Journey branding through deterministic production composition
+- the Wrap and overlap generated logo is covered before the canonical logo is added
