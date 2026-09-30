@@ -122,8 +122,14 @@ Remaining gate:
 - Focused Fabric cards remain a separate unfinished set.
 - Cause Card 1 — **One support point** — APPROVED.
 - Cause Card 2 — **Two tension points** — APPROVED.
-- Next: Cause Card 3 — **Compression at a bend**.
-- Then: Cause Card 4 — **Wrap and overlap**.
+- Cause Card 3 — **Compression at a bend — APPROVED WITH NOTES**.
+  - teaching logic is accepted
+  - sleeve/arm proportion is improved but not ideal
+  - future sleeve drawings must avoid an oversized upper sleeve near the shoulder
+  - future sleeve drawings must also avoid an unnaturally tight lower sleeve around the forearm
+  - keep the bent arm anatomy straighter and more believable through upper arm → elbow → forearm
+  - use more even, realistic garment ease along the sleeve
+- Next: Cause Card 4 — **Wrap and overlap**.
 - PR #38 / Five Values was closed without merge because Phase 2B started too early.
 - The lit-sphere artwork is not part of Fabric and is not an approved project asset.
 
