@@ -1,4 +1,4 @@
-# G-Art Journey — Eye v2 Recovery Checkpoint
+# G-Art Journey — Eye v2 Release / Recovery Record
 
 _Last verified: 2026-09-30_
 
@@ -84,6 +84,15 @@ Still pending:
 - verify main Pages deployment
 - update master handoff to Eye v2 completed/live
 - only then resume Fabric
+
+## Final release state
+
+- PR #31 passed final pull-request CI on head `318d431d95f0e69c18339fb6fcf61a49c6dd17a3`.
+- PR #31 merged to `main` as squash commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
+- Main **Build and publish G-Art Journey** workflow #119 completed successfully.
+- Eye v2 is therefore released through the normal GitHub Pages pipeline.
+- The existing `eye-structure` guide slug, URL and academic steps were preserved.
+- **Fabric is now the next active production task.**
 
 ## Recovery rule
 
