@@ -428,6 +428,20 @@
         "overlapping-lock-groups",
         "selected-strand-detail"
       ]
+    },
+    {
+      "slug": "fabric-tension-gravity",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "fabric-folds-from-support-tension-and-gravity",
+      "visibleEvidence": "Explain cloth folds by locating support points, gravity, tension, compression, wrapping and large fold groups before small wrinkles.",
+      "stageFocus": [
+        "support-and-tension-points",
+        "gravity-and-sag-direction",
+        "stretch-versus-compression",
+        "wrap-overlap-form",
+        "large-folds-before-wrinkles"
+      ]
     }
   ]
 }
