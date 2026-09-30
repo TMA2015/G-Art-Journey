@@ -141,3 +141,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Generated Phase 2 Core Drawing Skills web assets
+public/infographics/core/*.webp

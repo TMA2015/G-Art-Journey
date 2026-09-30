@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<defs>
+  <style>
+    .title{font:700 40px "DejaVu Sans",Arial,sans-serif;fill:#1e3f67}
+    .sub{font:400 18px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .meta{font:400 13px "DejaVu Sans",Arial,sans-serif;fill:#666}
+    .step{font:700 14px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .small{font:400 12px "DejaVu Sans",Arial,sans-serif;fill:#555}
+    .mini{font:700 14px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .graphite{stroke:#44484e;stroke-width:2.1;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .construct{stroke:#81848a;stroke-width:1.25;fill:none;stroke-dasharray:5 4;stroke-linecap:round}
+    .clean{stroke:#30343b;stroke-width:2.25;fill:#fcfbf8;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+</defs>
+<rect width="900" height="1200" fill="#f9f6ef"/>
+<text x="52" y="60" class="title">Draw Hands from Simple Forms</text>
+<text x="54" y="94" class="sub">Build the palm, thumb and fingers before adding detail.</text>
+<text x="54" y="122" class="meta">G-Art Journey · Phase 2A · Core Drawing Skills</text>
+<g>
+  <rect x="30" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="30" y="165" width="158" height="45" rx="16" fill="#b0d6c3"/><rect x="30" y="193" width="158" height="17" fill="#b0d6c3"/>
+  <text x="43" y="193" class="step">1  Palm block</text>
+  <rect x="200" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="200" y="165" width="158" height="45" rx="16" fill="#efc092"/><rect x="200" y="193" width="158" height="17" fill="#efc092"/>
+  <text x="213" y="193" class="step">2  Thumb base</text>
+  <rect x="370" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="370" y="165" width="158" height="45" rx="16" fill="#c7bbe1"/><rect x="370" y="193" width="158" height="17" fill="#c7bbe1"/>
+  <text x="383" y="193" class="step">3  Finger groups</text>
+  <rect x="540" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="540" y="165" width="158" height="45" rx="16" fill="#ebb2b7"/><rect x="540" y="193" width="158" height="17" fill="#ebb2b7"/>
+  <text x="553" y="193" class="step">4  Joints + flow</text>
+  <rect x="710" y="165" width="158" height="365" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="710" y="165" width="158" height="45" rx="16" fill="#b0d6c3"/><rect x="710" y="193" width="158" height="17" fill="#b0d6c3"/>
+  <text x="723" y="193" class="step">5  Clean hand</text>
+</g>
+<g fill="#1e3f67">
+  <path d="M190 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M360 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M530 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M700 348h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+</g>
+<g transform="translate(47 235)">
+  <rect x="35" y="74" width="70" height="100" rx="16" class="graphite"/>
+  <path d="M45 174v46M95 174v46" class="graphite"/>
+  <path d="M36 98Q70 88 104 98" class="construct"/>
+  <path d="M70 74v100" class="construct"/>
+  <text x="20" y="248" class="small">width · height · depth</text>
+</g>
+<g transform="translate(217 235)">
+  <rect x="35" y="74" width="70" height="100" rx="16" class="graphite"/>
+  <path d="M45 174v46M95 174v46" class="graphite"/>
+  <path d="M35 123 C21 122 8 132 3 147 C-1 159 8 169 20 164 L39 153" class="graphite"/>
+  <path d="M17 137L34 151" class="construct"/>
+  <circle cx="36" cy="137" r="4" fill="#efc092"/>
+  <path d="M5 190H57" stroke="#b77a43" stroke-width="1.5"/>
+  <text x="4" y="210" class="small">thumb starts low</text>
+</g>
+<g transform="translate(387 228)">
+  <rect x="35" y="105" width="70" height="91" rx="16" class="graphite"/>
+  <path d="M44 196v36M96 196v36" class="graphite"/>
+  <rect x="35" y="47" width="16" height="70" rx="8" class="graphite" transform="rotate(-4 43 117)"/>
+  <rect x="53" y="30" width="16" height="86" rx="8" class="graphite"/>
+  <rect x="71" y="38" width="16" height="78" rx="8" class="graphite" transform="rotate(2 79 116)"/>
+  <rect x="89" y="56" width="15" height="61" rx="7" class="graphite" transform="rotate(5 96 117)"/>
+  <path d="M35 142C18 135 8 146 5 158C2 171 15 179 25 171L40 159" class="graphite"/>
+  <path d="M42 105Q70 96 103 105" class="construct"/>
+  <path d="M43 50L43 115M61 32L61 115M79 40L79 115M97 58L97 115" class="construct"/>
+</g>
+<g transform="translate(557 228)">
+  <rect x="35" y="105" width="70" height="91" rx="16" class="graphite"/>
+  <path d="M44 196v36M96 196v36" class="graphite"/>
+  <rect x="35" y="47" width="16" height="70" rx="8" class="graphite" transform="rotate(-4 43 117)"/>
+  <rect x="53" y="30" width="16" height="86" rx="8" class="graphite"/>
+  <rect x="71" y="38" width="16" height="78" rx="8" class="graphite" transform="rotate(2 79 116)"/>
+  <rect x="89" y="56" width="15" height="61" rx="7" class="graphite" transform="rotate(5 96 117)"/>
+  <path d="M35 142C18 135 8 146 5 158C2 171 15 179 25 171L40 159" class="graphite"/>
+  <path d="M37 76h13M36 99h14M55 57h13M54 85h14M73 65h13M73 91h13M91 78h12M91 99h12" class="construct"/>
+  <path d="M40 107Q70 92 103 108" class="construct"/>
+  <path d="M22 151q8 10 15 12" class="construct"/>
+  <text x="26" y="250" class="small">segment · taper · arc</text>
+</g>
+<g transform="translate(727 223)">
+  <path d="M47 230 C43 218 42 200 42 179 L19 164 C8 157 7 144 16 138 C24 133 31 137 41 144 L43 85 C43 74 57 73 58 85 L59 50 C59 37 75 36 76 50 L77 39 C78 26 94 27 95 41 L96 54 C97 42 111 44 111 57 L112 74 C113 63 126 66 125 78 L123 138 C122 174 116 196 105 210 C94 223 77 230 62 232 Z" class="clean"/>
+  <path d="M48 154Q71 143 101 154" class="construct" style="stroke-dasharray:none;stroke:#9a9da2"/>
+  <path d="M61 94q7 5 13 0M79 84q7 5 13 0M97 95q7 4 12 0" class="construct" style="stroke-dasharray:none;stroke:#9a9da2"/>
+  <path d="M56 202Q78 213 101 196" class="construct" style="stroke-dasharray:none;stroke:#9a9da2"/>
+</g>
+<text x="45" y="585" class="step" fill="#1e3f67">Quick studies</text>
+<g>
+  <rect x="40" y="610" width="260" height="235" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="58" y="640" class="mini">Finger length rhythm</text>
+  <g transform="translate(80 672)">
+    <path d="M26 122V54M66 122V32M106 122V42M146 122V67" class="graphite"/>
+    <path d="M17 122H35M57 122H75M97 122H115M137 122H155" class="graphite"/>
+    <path d="M26 54Q66 21 106 42Q129 49 146 67" class="construct"/>
+    <path d="M18 141Q85 154 155 141" class="construct"/>
+  </g>
+</g>
+<g>
+  <rect x="320" y="610" width="260" height="235" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="338" y="640" class="mini">Thumb direction</text>
+  <g transform="translate(360 685)">
+    <rect x="10" y="28" width="56" height="82" rx="13" class="graphite"/>
+    <path d="M11 66C-3 63-12 76-10 88C-8 100 4 105 12 94L23 82" class="graphite"/>
+    <rect x="112" y="28" width="56" height="82" rx="13" class="graphite"/>
+    <path d="M113 70C126 69 141 76 151 91" class="graphite"/>
+    <path d="M37 15v110M140 15v110" class="construct"/>
+  </g>
+</g>
+<g>
+  <rect x="600" y="610" width="260" height="235" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="618" y="640" class="mini">Bent-hand overlap</text>
+  <g transform="translate(635 690)">
+    <path d="M20 110C30 70 59 49 99 50C126 51 151 63 169 86" class="graphite"/>
+    <path d="M52 96C63 73 78 64 96 64C112 64 125 70 136 83" class="graphite"/>
+    <path d="M74 112C85 90 99 82 114 84C129 85 140 94 149 107" class="graphite"/>
+    <path d="M18 112Q89 128 171 110" class="construct"/>
+  </g>
+</g>
+<rect x="40" y="885" width="820" height="200" rx="20" fill="#fff" stroke="#d7d0c6"/>
+<text x="65" y="920" class="step" fill="#1e3f67">Practice tip</text>
+<text x="65" y="952" class="sub" style="font-size:16px">Compare your drawing with your own hand from the same angle.</text>
+<text x="65" y="990" class="mini">Full-resolution QA</text>
+<text x="65" y="1018" class="small">• Every fully visible hand has exactly five digits, including one correctly placed thumb.</text>
+<text x="65" y="1045" class="small">• Keep the same hand orientation through the cumulative construction.</text>
+<text x="65" y="1072" class="small">• Structure must remain readable before shading or stylization.</text>
+<text x="42" y="1155" class="step" fill="#1e3f67">Structure first · Details second · Stylize later</text>
+</svg>

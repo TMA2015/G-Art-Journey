@@ -1,4 +1,22 @@
 export const practiceGuides = [
+  {
+    slug:'hands-simple-forms', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'20–30 min',
+    title:'Draw Hands from Simple Forms',
+    description:'Build a hand from a palm block, a low thumb base and grouped fingers before refining joints and detail.',
+    image:'infographics/core/hands-simple-forms.webp',
+    poster:true,
+    posterAlt:'Graphite hand construction lesson showing palm block, thumb base, finger groups, joints and a clean five-finger hand',
+    supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
+    steps:[
+      {title:'Block the palm',body:'Draw a slightly tapered palm block with a simple wrist. Think about width, height and depth before fingers.'},
+      {title:'Add the thumb base',body:'Attach the thumb low on the side of the palm. It projects at an angle instead of sitting in the finger row.'},
+      {title:'Group the fingers',body:'Add four tapered finger groups. Let the middle finger lead the length and allow the fingers to fan naturally.'},
+      {title:'Find joints and flow',body:'Mark the main finger joints and the curved knuckle rhythm. Keep the segments tapered and the bends believable.'},
+      {title:'Clean the hand',body:'Refine the outline while keeping the construction readable. Check all five digits before adding any extra shading.'}
+    ],
+    tryIt:'Hold your non-drawing hand in one relaxed pose and rebuild it from the same five stages. Compare your sketch with the real hand before adding detail.',
+    remember:'The thumb starts lower than the finger knuckles, finger lengths change with viewpoint, and every fully visible hand should still read as five clear digits.'
+  },
 {
  slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
  title:'Draw a Standing Figure with Simple Shapes',

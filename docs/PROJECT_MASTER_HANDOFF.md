@@ -175,21 +175,26 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-**NEXT: Draw Hands from Simple Forms**
+**COMPLETED: Draw Hands from Simple Forms**
 
-Exact production brief: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
+Published guide:
+- slug: `hands-simple-forms`
+- published asset: `public/infographics/core/hands-simple-forms.webp` (generated from `assets/core/hands-simple-forms.svg` before dev/test/build)
+- graphite-first poster with five-step construction and three supporting studies
+- full-size hand/finger QA completed before release
+
+Exact authoring record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
+
+**NEXT: Draw an Eye from Structure**
 
 Visual direction:
 - graphite-first
-- warm paper background
-- pastel only in title / arrows / step labels / small callouts
-- anatomy before stylization
-- large, inspectable hands
-- show palm block, thumb base, finger grouping and joints clearly
-- every complete hand must pass the five-digit check
-- avoid using the same character identity as earlier style posters when a character crop is included
-
-Only after the hand poster passes full-resolution QA should it be converted to WebP, wired into guide data and published.
+- explain the eyeball as a sphere before drawing eyelids
+- show upper and lower lids wrapping around the form
+- place iris/pupil on the curved surface rather than as flat symbols
+- include the upper-lid cast shadow and a simple highlight
+- keep the same eye/viewpoint through cumulative stages
+- final eye must pass symmetry, lid, iris/pupil and lighting QA
 
 ## 12. Handoff update protocol
 

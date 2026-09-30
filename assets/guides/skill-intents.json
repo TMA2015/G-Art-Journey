@@ -386,6 +386,20 @@
         "action-silhouette",
         "readable-emotion-set"
       ]
+    },
+    {
+      "slug": "hands-simple-forms",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "hand-construction-from-simple-forms",
+      "visibleEvidence": "Build a clear five-digit hand from a palm block, low thumb base, grouped fingers and joint rhythm before clean contours.",
+      "stageFocus": [
+        "palm-block-volume",
+        "low-thumb-base",
+        "finger-length-fan",
+        "joint-segment-flow",
+        "clean-five-digit-hand"
+      ]
     }
   ]
 }
