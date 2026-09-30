@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<defs>
+  <style>
+    .title{font:700 40px "DejaVu Sans",Arial,sans-serif;fill:#1e3f67}
+    .sub{font:400 18px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .meta{font:400 13px "DejaVu Sans",Arial,sans-serif;fill:#666}
+    .step{font:700 14px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .small{font:400 12px "DejaVu Sans",Arial,sans-serif;fill:#555}
+    .mini{font:700 14px "DejaVu Sans",Arial,sans-serif;fill:#30343b}
+    .graphite{stroke:#44484e;stroke-width:2.05;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .soft{stroke:#72767c;stroke-width:1.35;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .construct{stroke:#8d9095;stroke-width:1.15;fill:none;stroke-dasharray:5 4;stroke-linecap:round;stroke-linejoin:round}
+    .clean{stroke:#30343b;stroke-width:2.25;fill:#fcfbf8;stroke-linecap:round;stroke-linejoin:round}
+    .hairfill{fill:#dedbd4;stroke:#41454a;stroke-width:2.1;stroke-linejoin:round}
+  </style>
+
+  <g id="headBase">
+    <path d="M56 29 C82 19 111 28 126 50 C138 68 139 96 132 118 C128 132 127 149 118 164 C108 181 92 194 74 199 C57 191 46 176 40 158 C33 137 31 116 35 94 C39 70 43 44 56 29Z" class="clean"/>
+    <path d="M129 95 C142 91 146 102 141 114 C137 125 129 127 124 121" class="graphite"/>
+    <path d="M41 126 C55 135 71 140 88 138" class="construct"/>
+    <path d="M95 90 C101 95 104 105 99 111 L106 114" class="graphite"/>
+    <path d="M90 128 Q99 132 108 128" class="soft"/>
+    <path d="M65 197 L62 225 M107 181 L111 225" class="graphite"/>
+    <path d="M82 88 Q92 82 102 87" class="soft"/>
+    <path d="M84 93 Q92 98 100 93" class="soft"/>
+    <circle cx="93" cy="93" r="1.8" fill="#56595e"/>
+    <ellipse cx="82" cy="86" rx="50" ry="62" class="construct"/>
+    <path d="M82 25 C84 53 82 76 79 97" class="construct"/>
+    <path d="M49 70 C63 56 80 51 98 56 C111 59 120 66 127 78" class="construct"/>
+  </g>
+
+  <g id="hairSilhouette">
+    <path d="M50 65
+             C47 42 61 22 82 17
+             C106 11 130 22 141 43
+             C154 67 151 92 151 116
+             C151 141 158 161 154 186
+             C151 206 144 223 137 238
+             C125 230 116 220 111 209
+             C104 220 93 231 82 239
+             C71 230 62 217 57 205
+             C48 217 38 226 26 231
+             C20 208 18 184 24 163
+             C29 145 26 125 28 107
+             C30 88 35 75 50 65Z
+             M51 66
+             C64 54 79 50 96 55
+             C111 59 122 68 130 80
+             C128 96 126 110 124 121
+             C127 145 121 164 108 181
+             C98 193 86 199 74 199
+             C57 191 46 176 40 158
+             C34 139 32 117 35 94
+             C38 80 43 70 51 66Z"
+          fill="#dedbd4" fill-rule="evenodd"
+          stroke="#41454a" stroke-width="2.1" stroke-linejoin="round"/>
+    <path d="M88 48 C94 43 102 42 108 47" class="graphite"/>
+  </g>
+
+  <g id="flowGuides">
+    <path d="M101 46 C82 60 62 82 52 108 C44 132 45 160 39 191" class="construct"/>
+    <path d="M96 49 C77 67 61 91 56 119 C52 148 58 176 70 205" class="construct"/>
+    <path d="M105 48 C122 62 136 81 140 104 C144 130 138 154 141 181" class="construct"/>
+    <path d="M111 51 C129 72 138 94 136 120 C134 148 127 176 138 209" class="construct"/>
+  </g>
+
+  <g id="lockGroups">
+    <path d="M58 70 C47 92 44 117 48 140 C52 161 49 185 39 211" class="graphite"/>
+    <path d="M77 58 C62 77 56 101 57 125 C58 151 65 177 72 207 C75 218 78 227 82 236" class="graphite"/>
+    <path d="M111 54 C126 73 133 96 130 121 C127 145 119 171 122 194 C125 209 131 221 138 229" class="graphite"/>
+    <path d="M132 70 C144 91 147 113 142 136 C137 159 136 181 145 207" class="graphite"/>
+    <path d="M48 139 C57 145 65 149 73 150" class="soft"/>
+    <path d="M121 126 C129 133 136 136 143 134" class="soft"/>
+    <path d="M64 183 C71 188 77 191 84 190" class="soft"/>
+  </g>
+
+  <g id="selectedStrands">
+    <path d="M52 83 C43 108 42 134 47 157 C51 175 47 194 40 211" class="soft"/>
+    <path d="M66 70 C55 94 53 120 57 144 C61 165 66 186 72 207" class="soft"/>
+    <path d="M80 62 C68 84 64 109 65 133 C66 157 72 181 80 207" class="soft"/>
+    <path d="M118 61 C132 83 136 106 132 128 C129 149 123 169 127 190" class="soft"/>
+    <path d="M136 82 C146 105 146 129 141 151 C137 171 140 190 146 207" class="soft"/>
+    <path d="M71 228 C62 235 55 241 49 249" class="soft"/>
+    <path d="M138 226 C146 232 151 240 155 247" class="soft"/>
+    <path d="M124 78 C134 96 137 114 133 131" stroke="#55595f" stroke-width="5" opacity=".15" fill="none" stroke-linecap="round"/>
+    <path d="M57 132 C52 151 52 169 57 187" stroke="#55595f" stroke-width="5" opacity=".12" fill="none" stroke-linecap="round"/>
+  </g>
+</defs>
+
+<rect width="900" height="1200" fill="#f9f6ef"/>
+<text x="52" y="60" class="title">Draw Hair as Masses, Then Strands</text>
+<text x="54" y="94" class="sub">Build the silhouette and flow before drawing individual hairs.</text>
+<text x="54" y="122" class="meta">G-Art Journey · Phase 2A · Core Drawing Skills</text>
+
+<g>
+  <rect x="30" y="165" width="158" height="390" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="30" y="165" width="158" height="45" rx="16" fill="#b0d6c3"/><rect x="30" y="193" width="158" height="17" fill="#b0d6c3"/>
+  <text x="43" y="193" class="step">1  Head volume</text>
+
+  <rect x="200" y="165" width="158" height="390" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="200" y="165" width="158" height="45" rx="16" fill="#efc092"/><rect x="200" y="193" width="158" height="17" fill="#efc092"/>
+  <text x="213" y="193" class="step">2  Hair silhouette</text>
+
+  <rect x="370" y="165" width="158" height="390" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="370" y="165" width="158" height="45" rx="16" fill="#c7bbe1"/><rect x="370" y="193" width="158" height="17" fill="#c7bbe1"/>
+  <text x="383" y="193" class="step">3  Flow direction</text>
+
+  <rect x="540" y="165" width="158" height="390" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="540" y="165" width="158" height="45" rx="16" fill="#ebb2b7"/><rect x="540" y="193" width="158" height="17" fill="#ebb2b7"/>
+  <text x="553" y="193" class="step">4  Grouped locks</text>
+
+  <rect x="710" y="165" width="158" height="390" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <rect x="710" y="165" width="158" height="45" rx="16" fill="#b0d6c3"/><rect x="710" y="193" width="158" height="17" fill="#b0d6c3"/>
+  <text x="723" y="193" class="step">5  Selected strands</text>
+</g>
+
+<g fill="#1e3f67">
+  <path d="M190 356h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M360 356h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M530 356h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+  <path d="M700 356h8l-5-5 4-4 12 12-12 12-4-4 5-5h-8z"/>
+</g>
+
+<g transform="translate(34 233) scale(.84)">
+  <use href="#headBase"/>
+  <path d="M41 65 C52 38 71 23 91 21 C112 19 130 32 141 54" class="construct"/>
+  <path d="M133 46l8 8-11 2" fill="#1e3f67"/>
+</g>
+<text x="52" y="518" class="small">hair has thickness</text>
+
+<g transform="translate(204 233) scale(.84)">
+  <use href="#headBase"/>
+  <use href="#hairSilhouette"/>
+</g>
+<text x="224" y="518" class="small">read the big shape</text>
+
+<g transform="translate(374 233) scale(.84)">
+  <use href="#headBase"/>
+  <use href="#hairSilhouette"/>
+  <use href="#flowGuides"/>
+  <circle cx="104" cy="48" r="3.5" fill="#efc092"/>
+</g>
+<text x="386" y="518" class="small">part + gravity guide flow</text>
+
+<g transform="translate(544 233) scale(.84)">
+  <use href="#headBase"/>
+  <use href="#hairSilhouette"/>
+  <use href="#flowGuides" opacity=".45"/>
+  <use href="#lockGroups"/>
+</g>
+<text x="570" y="518" class="small">overlap shows depth</text>
+
+<g transform="translate(714 233) scale(.84)">
+  <use href="#headBase"/>
+  <use href="#hairSilhouette"/>
+  <use href="#lockGroups"/>
+  <use href="#selectedStrands"/>
+</g>
+<text x="726" y="518" class="small">few strands, clear forms</text>
+
+<text x="45" y="600" class="step" fill="#1e3f67">Quick studies</text>
+
+<g>
+  <rect x="40" y="625" width="260" height="230" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="58" y="655" class="mini">Part and crown</text>
+  <g transform="translate(67 686)">
+    <ellipse cx="60" cy="58" rx="48" ry="52" class="construct"/>
+    <path d="M60 13 C50 30 40 44 24 59 M60 13 C70 31 82 45 99 59 M60 13 C58 36 58 61 60 93" class="graphite"/>
+    <circle cx="60" cy="13" r="3" fill="#efc092"/>
+    <ellipse cx="166" cy="58" rx="48" ry="52" class="construct"/>
+    <path d="M151 17 C139 33 128 48 116 64 M151 17 C165 29 180 43 199 57 M151 17 C161 39 165 65 166 94" class="graphite"/>
+    <circle cx="151" cy="17" r="3" fill="#efc092"/>
+  </g>
+  <text x="64" y="828" class="small">flow starts at the part or crown</text>
+</g>
+
+<g>
+  <rect x="320" y="625" width="260" height="230" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="338" y="655" class="mini">Overlap</text>
+  <g transform="translate(350 692)">
+    <path d="M15 98 C42 48 68 36 94 56 C105 65 109 80 105 102" class="hairfill"/>
+    <path d="M72 104 C89 65 114 45 140 51 C161 56 173 75 178 104" class="hairfill"/>
+    <path d="M107 98 C119 81 131 72 143 70" class="soft"/>
+    <path d="M70 104 C84 93 95 84 105 72" class="graphite"/>
+    <path d="M98 55 C88 66 82 77 79 91" class="graphite"/>
+  </g>
+  <text x="350" y="828" class="small">front edges hide the group behind</text>
+</g>
+
+<g>
+  <rect x="600" y="625" width="260" height="230" rx="16" fill="#fff" stroke="#d7d0c6"/>
+  <text x="618" y="655" class="mini">Straight vs. wavy flow</text>
+  <g transform="translate(632 690)">
+    <path d="M26 8 C22 40 21 72 24 112" class="graphite"/>
+    <path d="M48 8 C45 42 45 75 47 112" class="graphite"/>
+    <path d="M70 8 C68 42 70 78 71 112" class="graphite"/>
+    <path d="M121 8 C97 32 143 53 121 77 C99 99 139 105 131 116" class="graphite"/>
+    <path d="M149 8 C126 30 170 55 148 79 C129 99 164 106 158 116" class="graphite"/>
+    <path d="M177 8 C154 31 195 55 177 80 C160 100 191 108 187 116" class="graphite"/>
+    <path d="M8 124h75M104 124h94" class="construct"/>
+  </g>
+  <text x="626" y="828" class="small">same mass logic, different rhythm</text>
+</g>
+
+<rect x="40" y="895" width="820" height="190" rx="20" fill="#fff" stroke="#d7d0c6"/>
+<text x="65" y="930" class="step" fill="#1e3f67">Practice tip</text>
+<text x="65" y="962" class="sub" style="font-size:16px">Squint at your reference. If the big hair shape disappears, detail came too soon.</text>
+<text x="65" y="1000" class="mini">Full-resolution QA</text>
+<text x="65" y="1028" class="small">• Keep the same head, hairstyle and viewpoint through all five stages.</text>
+<text x="65" y="1055" class="small">• Make flow, grouped locks and front/back overlap clear before small strands.</text>
+<text x="42" y="1150" class="step" fill="#1e3f67">Silhouette first · Flow second · Strands last</text>
+</svg>
