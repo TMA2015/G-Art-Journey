@@ -44,7 +44,13 @@ export const getMedia=(lang='en')=>rawMedia.map(m=>{
 });
 export const getMovements=(lang='en')=>rawMovements.map(m=>{
  const en=language(lang)==='en';
- return {...m,...(en?movementEn[m.slug]:{en:m.name}),image:m.image.startsWith('https:')?m.image:asset(lang,m.image)};
+ const localized={...m,...(en?movementEn[m.slug]:{en:m.name}),image:m.image.startsWith('https:')?m.image:asset(lang,m.image)};
+ return {...localized,clues:localized.clues||localized.why};
 });
-export const getArtists=(lang='en')=>rawArtists.map(a=>({...a,...(language(lang)==='en'?artistEn[a.slug]:artistVi[a.slug]||{}),image:a.image.startsWith('https:')?a.image:asset(lang,a.image)}));
+export const getArtists=(lang='en')=>rawArtists.map(a=>{
+ const en=language(lang)==='en';
+ const localized={...a,...(en?artistEn[a.slug]:artistVi[a.slug]||{}),image:a.image.startsWith('https:')?a.image:asset(lang,a.image)};
+ const facts=localized.facts||localized.why.map((detail,i)=>({name:en?`Key idea ${i+1}`:`Ý chính ${i+1}`,detail}));
+ return {...localized,facts};
+});
 export const getMoreArtists=(lang='en')=>rawMore.map(a=>({...a,about:language(lang)==='en'?moreEn[a.name]:a.about}));
