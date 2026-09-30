@@ -1,6 +1,6 @@
 # Draw Fabric from Tension & Gravity — production specification
 
-Status: **final poster owner-approved; release candidate wired in PR #36**
+Status: **owner-approved and released in PR #36**
 
 This is the fourth Phase 2A Core Drawing Skills item. It should teach why folds appear before teaching decorative wrinkle patterns.
 
@@ -280,3 +280,17 @@ Public target:
 - **900×1350**
 - full 2:3 artwork preserved
 - AI-rendered logo area deterministically covered and replaced with `public/branding/g-art-lockup.svg`
+
+
+## 13. Final release state
+
+- PR #36 final head: `dbd696f4689eb5636717b03c2ad51f06837324cc`
+- PR #36 merge commit: `6552900f5ee34a3848868aa183a485c942b53a19`
+- Main Pages workflow #142: **SUCCESS**
+- guide slug: `fabric-tension-gravity`
+- public asset: `public/infographics/core/fabric-tension-gravity.webp`
+- public dimensions: **900×1350**
+- canonical G-Art Journey branding is composited deterministically over the generated-logo area
+- skill-intent ledger and Core Drawing Skills tests passed
+
+Fabric closes **Phase 2A — Structure & Observation**.
