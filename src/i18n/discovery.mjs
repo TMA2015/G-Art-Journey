@@ -40,7 +40,7 @@ const artistVi={
 };
 export const getMedia=(lang='en')=>rawMedia.map(m=>{
  const en=language(lang)==='en';
- return {...m,name:en?m.en:(mediaViNames[m.id]||m.name),label:en?m.en:(mediaViNames[m.id]||m.name),text:en?mediaEn[m.id]:m.text,image:asset(lang,m.image)};
+ return {...m,name:en?m.en:(mediaViNames[m.id]||m.name),label:en?m.en:(mediaViNames[m.id]||m.name),text:en?mediaEn[m.id]:m.text,image:m.image.startsWith('https:')?m.image:asset(lang,m.image)};
 });
 export const getMovements=(lang='en')=>rawMovements.map(m=>{
  const en=language(lang)==='en';
