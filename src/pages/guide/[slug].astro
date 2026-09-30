@@ -18,7 +18,18 @@ const related=(guide.seeAlso||[]).map(slug=>notes.find(n=>n.slug===slug)).filter
   <header class="page-hero"><a class="eyebrow" href={url('guides/')}>{t.guides.back} / {guide.tag}</a><h1 class="serif">{guide.title}</h1><p class="lead">{guide.description}</p></header>
   {guide.retired&&<section class="retired-note"><span class="eyebrow">UPDATED DRAWING GUIDE</span><h2 class="serif">Find the refreshed illustrated lesson.</h2><p>The original sketch has a clearer, more detailed guide in our latest collection.</p><a class="hero-cta" href={url('guide/'+guide.replacementGuide+'/')}>Open the updated lesson ↗</a></section>}
   {!guide.retired&&<SectionNav lang={lang} items={guide.artPending?[{id:'guide-steps',label:t.guides.steps},{id:'guide-note',label:t.guides.guideNote}]:[{id:'guide-picture',label:t.common.illustration},{id:'guide-steps',label:t.guides.steps},{id:'guide-note',label:t.guides.guideNote}]}/>}
-  {!guide.retired&&!guide.artPending&&(guide.poster?
+  {!guide.retired&&!guide.artPending&&(guide.posterGallery?.length?
+   <section id="guide-picture" class="guide-poster-gallery" aria-label={guide.title+' illustrations'}>
+    {guide.posterGallery.map((poster,index)=>
+      <figure class:list={['guide-poster',poster.wide&&'guide-poster-wide']}>
+       <img src={base+poster.image} alt={poster.alt||poster.title} fetchpriority={index===0?'high':'auto'} loading={index===0?'eager':'lazy'} width={poster.width} height={poster.height}/>
+       <figcaption><span>{poster.title} · Original G-Art Journey illustration</span>
+        <span class="guide-poster-actions"><a href={base+poster.image} target="_blank" rel="noopener">View large ↗</a><a href={base+poster.image} download>Save WebP ↓</a></span>
+       </figcaption>
+      </figure>
+    )}
+   </section>:
+   guide.poster?
    <figure id="guide-picture" class="guide-poster">
     <img src={base+guide.image} alt={guide.posterAlt||guide.title} fetchpriority="high" width={guide.posterWidth||1122} height={guide.posterHeight||1402}/>
     <figcaption><span>Original G-Art Journey illustration · {guide.title}</span>
