@@ -3,9 +3,9 @@ export const coreAssetManifest = [
   {
     "slug": "hands-simple-forms",
     "path": "public/infographics/core/hands-simple-forms.webp",
-    "bytes": 58400,
+    "bytes": 58712,
     "width": 900,
     "height": 1200,
-    "sha256": "948d54020f67d758beced8f1d84d1cf30083865e8c06e2b8497e959f1750304"
+    "sha256": "584932706aa3366f0e0de835b3d6f8b20e10fd6b9cc427d105fe54401418726f"
   }
 ];
