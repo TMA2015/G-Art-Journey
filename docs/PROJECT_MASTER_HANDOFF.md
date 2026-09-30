@@ -200,6 +200,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 - PR #26: merged — **Draw Hair as Masses, Then Strands** is live. PR CI #84 passed and main Pages deployment #85 passed. The release uses a five-step construction, four key tips, ten hairstyle references, English-only copy and the purple G-Art Journey logo.
 - PR #29: merged — **Hands v2** is live at the existing `hands-simple-forms` guide. The owner-approved five-step / four-key-point / ten-pose poster was preserved, only its branding region was normalized to the canonical lockup, the raster source was integrity-pinned, PR CI passed, and main Pages deployment workflow #107 passed at merge commit `9f372e968bcd0ac9616318cff2d09fef8f4db460`.
 - PR #31: merged — **Eye v2** is live at the existing `eye-structure` guide. The owner-approved poster is pinned as a 1024×1536 raster source and published at 900×1350 without cropping; PR CI passed and main Pages workflow #119 completed successfully at merge commit `6c99542af5d7114c962f9b83fdc294d888db9934`.
+- PR #36: merged — **Draw Fabric from Tension & Gravity** is released as the fourth Core Drawing Skills 2A poster. The owner-approved 1024×1536 source is pinned, the AI-rendered logo area is replaced deterministically with the canonical G-Art Journey lockup, the guide/skill-intent record are wired, PR CI passed, and main Pages workflow #142 passed at merge commit `6552900f5ee34a3848868aa183a485c942b53a19`.
 - PR #33: merged — core poster crop-safe generation + canonical branding remediation. Hands public output now preserves its full 2:3 approved source at 900×1350; Eye adds a deterministic canonical upper-left brand band; implicit cover cropping was removed. Main Pages workflow #123 passed at merge commit `4bccdf87c95b384b3e872bda0ebcbee71d550d58`.
 - PR #34: merged — Hair follow-up branding hotfix. Hair now uses a separate canonical upper-left brand band at 900×1300 and masks only the tiny legacy mark area so the title artwork is not covered. Main Pages workflow #125 passed at merge commit `cfa7ab8b2d8fbf80e3f8effc7a000df0fbbb4023`.
 - **Core poster branding remediation closed:** owner confirmed on the live Drawing Guides page that Hands, Eye and Hair all show the G-Art Journey logo correctly. Hands is no longer cropped; Eye/Hair branding bands render correctly. Fabric may resume.
@@ -208,7 +209,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ### Phase 2 visual baseline reset — current priority
 
-Hands v2, Eye v2 and Hair branding/pipeline fixes passed final browser visual QA. **Fabric is now the active Phase 2 production task.**
+**Phase 2A is complete:** Hands v2, Eye v2, Hair and Fabric are released. The next active production task is **Phase 2B — Five Values & a Lit Sphere**.
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -249,11 +250,11 @@ Approved implementation from PR #26:
 
 Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
 
-**ACTIVE: Draw Fabric from Tension & Gravity**
+**COMPLETED: Draw Fabric from Tension & Gravity**
 
-The authoring specification is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`, but no Fabric artwork is approved or published yet.
+The Fabric authoring/release record is complete at `docs/FABRIC_TENSION_GRAVITY_AUTHORING.md`; the poster and guide are published through PR #36.
 
-Hands v2 and Eye v2 are now complete, so Fabric may resume using the same panel-first Phase 2 production gate.
+Phase 2A is now complete. Begin Phase 2B with **Five Values & a Lit Sphere** using the same source-pinning, branding and public-WebP QA gates.
 
 Planned Fabric teaching order remains:
 - support / tension points
