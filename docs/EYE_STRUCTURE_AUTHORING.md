@@ -1,6 +1,6 @@
 # Draw an Eye from Structure — production specification
 
-Status: **v1 content approved and live; v2 visual refresh in progress**
+Status: **v2 artwork approved and live; released in PR #31**
 
 This is the second Phase 2A Core Drawing Skills item. It should teach a transferable eye-construction method before manga/webtoon/manhua stylization.
 
