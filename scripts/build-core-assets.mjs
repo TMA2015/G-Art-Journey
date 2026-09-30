@@ -8,11 +8,16 @@ import {coreAssetManifest} from '../src/data/core-assets.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 
 for(const asset of coreAssetManifest){
-  const source=path.join(root,asset.sourcePath);
   const output=path.join(root,asset.outputPath);
   await mkdir(path.dirname(output),{recursive:true});
-  const svg=await readFile(source);
-  const info=await sharp(svg)
+  let sourceBytes;
+  if(asset.sourceChunks){
+    const parts=await Promise.all(asset.sourceChunks.map(p=>readFile(path.join(root,p),'utf8')));
+    sourceBytes=Buffer.from(parts.join(''),'base64');
+  }else{
+    sourceBytes=await readFile(path.join(root,asset.sourcePath));
+  }
+  const info=await sharp(sourceBytes)
     .resize(asset.width,asset.height)
     .webp({quality:85})
     .toFile(output);

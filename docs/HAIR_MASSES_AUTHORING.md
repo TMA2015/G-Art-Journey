@@ -1,6 +1,6 @@
 # Draw Hair as Masses, Then Strands — production specification
 
-Status: **authoring ready; artwork not yet published**
+Status: **artwork approved; release implementation in PR #26**
 
 This is the third Phase 2A Core Drawing Skills item. It teaches hair as a designed 3D mass with flow and overlap before individual strands are added.
 
@@ -21,7 +21,8 @@ The method must work for realistic drawing and later character stylization.
 - warm off-white paper / sketchbook background
 - graphite / pencil artwork only
 - pastel accents only for title bars, arrows, step numbers and tiny callouts
-- concise English labels
+- concise English-only labels using simple words
+- G-Art Journey logo in the upper corner, using the purple website brand as the primary identity color
 - one consistent head/viewpoint through the five cumulative stages
 - no decorative character portrait competing with the lesson
 - no copied hairstyle or tutorial diagram
@@ -86,18 +87,20 @@ Teach:
 
 Label: **Add strands last**
 
-## 4. Supporting mini-studies
+## 4. Supporting references
 
-Use up to three small studies:
+The approved poster combines the five-step construction with a compact reference library. This gives beginners both a method and useful hairstyle variety without turning every example into a separate tutorial.
 
-### A. Part and crown
-Show two simple direction maps from a center/side part.
+Use these support areas:
 
-### B. Overlap
-Show two or three lock groups crossing so front/back order is obvious.
+### A. Key tips
+Keep four short reminders: big shapes first, hair has thickness, show flow from the part/crown, and do not draw every hair.
 
-### C. Straight vs. wavy flow
-Compare the same mass logic with different curve rhythms; do not present one hair type as the default.
+### B. Hair thickness mini-study
+Use one larger side/three-quarter example so the outer hair mass clearly sits outside the skull. The approved revision must not leave the front half of the head bald.
+
+### C. Hairstyle reference grid
+Show ten distinct hairstyle examples using the same simple head language. The approved set includes short bob, long straight, wavy long, side part, curtain bangs, ponytail, twin tails, bun, braids and messy short. These are examples, not a claim that one texture or style is universal.
 
 ## 5. Mandatory hair QA
 
@@ -150,12 +153,17 @@ Bottom note:
 
 Continuity matters more than decorative rendering.
 
-Preferred workflow:
-1. use one deterministic head guide and hairstyle silhouette for the full cumulative sequence
-2. add vector/graphite flow guides, grouped locks and selected strands in layers
-3. keep the source editable in the repository
-4. generate the public WebP deterministically before dev/test/build
-5. use AI-generated reference only when it preserves the same subject and passes anatomy/continuity QA
+Preferred workflow for complex infographics:
+1. lock the page layout and define each panel before final rendering
+2. create the important panels or examples separately when detail density is high
+3. inspect each panel at full size for anatomy, continuity, text, cropping and teaching accuracy
+4. reject or repair a bad panel before compositing the full infographic
+5. assemble only approved panels, then perform one final whole-page QA pass
+6. keep public copy English-only and simple
+7. include the G-Art Journey purple logo on new infographics unless the layout gives a strong reason not to
+8. preserve the approved raster source in the repository and generate the public WebP before dev/test/build
+
+This panel-first process is preferred over asking one large AI render to solve many small detailed teaching drawings at once.
 
 ## 9. Release sequence
 
@@ -167,3 +175,20 @@ Preferred workflow:
 6. Run tests, guide audit, build and asset audit.
 7. Review desktop/tablet/mobile.
 8. Publish independently once it passes its own gate.
+
+
+## 10. Approved implementation record
+
+Owner-approved poster direction:
+- five-step construction: Head → Big shape → Flow → Lock groups → Few strands
+- four short key tips plus a corrected hair-thickness study
+- ten hairstyle examples for practical reference
+- warm paper, graphite/pencil drawings and light pastel accents
+- purple **G-Art Journey** logo in the upper corner
+- English-only wording
+
+Repository implementation in PR #26:
+- guide slug: `hair-masses`
+- approved 900×1200 WebP source is pinned as base64 text at `assets/core/hair-masses.b64`
+- generated 900×1200 public asset: `public/infographics/core/hair-masses.webp`
+- the earlier deterministic SVG draft was rejected and removed; do not restore it.

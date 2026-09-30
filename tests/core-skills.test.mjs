@@ -19,19 +19,34 @@ test('Core Drawing Skills guides publish approved poster metadata',()=>{
   assert.equal(eye.image,'infographics/core/eye-structure.webp');
   assert.equal(eye.steps.length,5);
   assert.match(eye.remember,/eyeball is round/i);
+
+  const hair=guides.find(g=>g.slug==='hair-masses');
+  assert.ok(hair);
+  assert.equal(hair.poster,true);
+  assert.equal(hair.image,'infographics/core/hair-masses.webp');
+  assert.equal(hair.steps.length,5);
+  assert.match(hair.remember,/big shapes first/i);
 });
 
-test('Core vector sources are pinned and generated WebPs are valid',async()=>{
+test('Core approved sources are pinned and generated WebPs are valid',async()=>{
   assert.ok(coreAssetManifest.length>=2);
   const {default:sharp}=await import('sharp');
   for(const asset of coreAssetManifest){
-    const source=await readFile(asset.sourcePath);
+    let source;
+    if(asset.sourceChunks){
+      const parts=await Promise.all(asset.sourceChunks.map(p=>readFile(p,'utf8')));
+      source=Buffer.from(parts.join(''),'base64');
+      const sha256=createHash('sha256').update(source).digest('hex');
+      assert.equal(sha256,asset.sourceSha256,asset.slug+' source sha256');
+    }else{
+      source=await readFile(asset.sourcePath);
+      const gitBlobSha=createHash('sha1')
+        .update(Buffer.from('blob '+source.length+'\0'))
+        .update(source)
+        .digest('hex');
+      assert.equal(gitBlobSha,asset.sourceGitBlobSha,asset.slug+' source identity');
+    }
     assert.equal(source.length,asset.sourceBytes,asset.slug+' source size');
-    const gitBlobSha=createHash('sha1')
-      .update(Buffer.from('blob '+source.length+'\0'))
-      .update(source)
-      .digest('hex');
-    assert.equal(gitBlobSha,asset.sourceGitBlobSha,asset.slug+' source identity');
 
     const bytes=await readFile(asset.outputPath);
     assert.ok(bytes.length>10000,asset.slug+' generated poster should not be suspiciously small');

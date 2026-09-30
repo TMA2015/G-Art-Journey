@@ -414,6 +414,20 @@
         "lid-thickness-and-shadow",
         "clean-structured-eye"
       ]
+    },
+    {
+      "slug": "hair-masses",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "hair-mass-flow-and-lock-grouping",
+      "visibleEvidence": "Build one hairstyle from head volume and a readable outer mass through flow, grouped locks and selected strands, then compare ten hairstyle examples.",
+      "stageFocus": [
+        "hair-space-around-head",
+        "outer-hair-mass",
+        "part-crown-flow",
+        "overlapping-lock-groups",
+        "selected-strand-detail"
+      ]
     }
   ]
 }
