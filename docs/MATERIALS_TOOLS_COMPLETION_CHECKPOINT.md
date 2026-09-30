@@ -128,3 +128,14 @@ AI label contract:
 **AI-generated medium study · Not a historical artwork**
 
 Each medium must expose at least **3 distinct useful visuals** across cover + examples.
+
+
+## Visual completion release
+
+- PR #48 merged as `e5305ab86da526a03853fdbf7fe7c4995bd95957`.
+- Main Pages workflow #194: **SUCCESS**.
+- The approved AI medium studies are generated from pinned optimized WebP sources during build.
+- AI covers/examples are visibly labeled as **AI-generated medium study · Not a historical artwork**.
+- Oil and Ink & Wash now use real artworks as their covers.
+- Each material now exposes at least 3 distinct useful visuals across its cover and examples.
+- Final gate: owner visual QA on the deployed Materials cards/detail pages.
