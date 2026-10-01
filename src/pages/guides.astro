@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import '../styles/guide-grid.css';
 import '../styles/human-batch.css';
 import '../styles/character-styles.css';
+import '../styles/reference-library.css';
 import SectionNav from '../components/SectionNav.astro';
 import {getGuides} from '../i18n/content.mjs';
 import {ui,language} from '../i18n/ui.mjs';
@@ -14,7 +15,7 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
 <Base lang={lang} title={t.nav.guides} description={t.guides.intro}>
  <div class="site-shell">
   <header class="page-hero"><div class="topline eyebrow">{t.guides.tag}</div><h1 class="serif">{t.guides.title1}<br/><em>{t.guides.title2}</em></h1><p>{t.guides.intro}</p></header>
-  <SectionNav lang={lang} items={[{id:'human-guides',label:'Human Drawing'},{id:'character-styles',label:'Character Styles'},{id:'guide-collection',label:t.guides.categoryLink}]}/>
+  <SectionNav lang={lang} items={[{id:'human-guides',label:'Human Drawing'},{id:'character-styles',label:'Character Styles'},{id:'reference-library',label:'Reference Library'},{id:'guide-collection',label:t.guides.categoryLink}]}/>
   <section id="human-guides" class="human-preview" aria-labelledby="human-guides-heading">
     <div class="human-preview-copy"><span class="eyebrow">FEATURED / THE LITTLE SKETCHBOOK</span><h2 id="human-guides-heading" class="serif">Draw people, your way.</h2><p>Eight illustrated posters for faces, expressions, head angles, body shapes and poses. Explore them at your own pace.</p><a class="hero-cta" href={url('human-drawing/')}>Explore the 8 visual guides ↗</a></div>
     <div class="human-preview-image"><img src={base+'infographics/human/face-basics.webp'} alt="Draw a face — one of eight original G-Art Journey posters" loading="lazy" width="1055" height="1491"/></div>
@@ -23,6 +24,17 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
   <section id="character-styles" class="character-preview" aria-labelledby="character-heading">
    <div class="character-preview-copy"><span class="eyebrow">FEATURED / A LITTLE CHARACTER STUDIO</span><h2 id="character-heading" class="serif">One pencil. Many worlds.</h2><p>Twelve original illustrated lessons: manga, webtoon, manhua and cartoon. Each has a character guide, a variation sheet and a distinctive technique.</p><a class="hero-cta" href={url('character-styles/')}>Explore all 12 guides ↗</a></div>
    <div class="character-preview-image"><img src={base+'infographics/character/manga-variations.webp'} alt="Five original manga face variations" loading="lazy" width="1055" height="1491"/></div>
+  </section>
+  <section id="reference-library" class="reference-library-preview" aria-labelledby="reference-library-preview-heading">
+   <div>
+    <span class="eyebrow">NEW / VISUAL REFERENCE LIBRARY</span>
+    <h2 id="reference-library-preview-heading" class="serif">Need a pose, hairstyle or outfit idea?</h2>
+    <p>Browse quick G-Art visual references for poses, movement, hair and clothing. Filter by natural drawing, manga, webtoon or manhua when style matters.</p>
+    <a class="hero-cta" href={url('reference-library/')}>Open the Reference Library ↗</a>
+   </div>
+   <div class="reference-preview-chips" aria-label="Reference Library collections">
+    <span>Poses</span><span>Motion</span><span>Hair</span><span>Clothing</span>
+   </div>
   </section>
   <section id="guide-collection" class="section" aria-labelledby="guides-heading" style="padding-top:40px">
    <div class="section-title-row"><div><span class="eyebrow">{t.guides.start}</span><h2 id="guides-heading" class="serif">{t.nav.guides}</h2></div></div>
