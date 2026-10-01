@@ -386,7 +386,8 @@ Owner decision on 2026-10-01:
 - do **not** add scores, levels, progress charts or comparative judgments
 - store dates/order + tags now so filtered timelines can emerge naturally later
 - page should avoid unnecessary identifying information about the learner
-- before public release, retain the earlier provenance gate: confirm approximate chronology and original / fan-art / reference / external-background status
+- the owner explicitly approved these ten images for the first public gallery set on 2026-10-01; do not reopen the earlier provenance audit for this selected set unless a new concern appears
+- do not invent chronology; add approximate date/order only from learner/owner information
 
 Current staging implementation:
 - branch: `feature/daughter-gallery-v1-20261001`
@@ -394,7 +395,7 @@ Current staging implementation:
 - metadata: `src/data/daughter-art.mjs`
 - plan: `docs/DAUGHTER_GALLERY_V1.md`
 - previous-chat artwork can be visually audited, but raw source bytes are not exportable into the current GitHub tool session; image publication therefore remains blocked until the ten source files are available again as raw uploads
-- do not merge the image-publication release until chronology/provenance are confirmed
+- image publication is blocked only by the current raw-file transfer limitation; chronology may be added once the learner/owner supplies approximate order
 
 Reference Library status:
 - foundation remains preserved in Draft PR #52
