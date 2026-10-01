@@ -584,6 +584,39 @@ Next content priority after this approval:
 - **Watercolor**, currently the thinnest Drawing Guides category
 - first real target: replace the placeholder **Watercolor First Flower** with a proper illustrated lesson
 
+### Character Face + Watercolor website release checkpoint — 2026-10-02
+
+Owner visual approvals:
+- **Character Face Design Lab: 1 infographic APPROVED**
+- **Watercolor: 6 infographics APPROVED**
+- total new poster assets in this release: **7**
+
+Character Face:
+- existing route `four-character-face-approaches` is upgraded in place
+- approved artwork: 1 shared base head + 4 controlled design variations
+- it no longer teaches Manga / Webtoon / Manhua / Western-comics categories
+- poster is landscape/wide and uses contain behavior
+
+Watercolor:
+1. Watercolor First Flower
+2. Wet-on-Wet & Wet-on-Dry
+3. Simple Leaves & Botanical Shapes
+4. Soft Sky / Cloud Washes — **main Lesson 4**
+5. Sky Wash Practice & Variations — **additional approved companion**
+6. Small Watercolor Landscape
+
+Watercolor logo rule:
+- keep the watercolor-styled G-Art Journey logo already embedded in every approved poster
+- **do not replace or overlay it with the canonical website logo**
+
+Release branch:
+- `feature/character-face-watercolor-20261002`
+- 7 optimized WebP assets added
+- next gate: CI + release review, then merge and Pages deployment
+
+Detailed Watercolor status:
+- `docs/WATERCOLOR_ART_AUTHORING.md`
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
