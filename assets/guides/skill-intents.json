@@ -13,14 +13,14 @@
       "slug": "watercolor-first-flower",
       "status": "published",
       "family": "watercolor",
-      "primarySkill": "first-flower-transparent-wash",
-      "visibleEvidence": "Paint a simple flower with an initial transparent wash and a dry glaze.",
+      "primarySkill": "watercolor-transparency-and-glazing",
+      "visibleEvidence": "Paint one simple flower from water-ratio tests through a transparent first wash and dry glaze.",
       "stageFocus": [
-        "color-water-test",
-        "light-outline",
-        "first-wash",
-        "dry-glaze",
-        "leaves-detail"
+        "water-color-ratio",
+        "light-flower-sketch",
+        "transparent-first-wash",
+        "dry-glaze-layer",
+        "stem-leaf-finish"
       ]
     },
     {
@@ -55,14 +55,14 @@
       "slug": "four-character-face-approaches",
       "status": "published",
       "family": "character",
-      "primarySkill": "cross-style-character-exploration",
-      "visibleEvidence": "Compare how a common head can be interpreted with several different graphic approaches.",
+      "primarySkill": "controlled-character-face-design-variation",
+      "visibleEvidence": "Keep one base head, pose and broad expression while creating four distinct character identities through face shape, features, hair silhouette and line weight.",
       "stageFocus": [
-        "shared-head-shape",
-        "feature-style-comparison",
-        "ink-vs-soft-line",
-        "expression-comparison",
-        "personal-style-mix"
+        "shared-base-head",
+        "face-shape-variation",
+        "coordinated-feature-language",
+        "hair-silhouette-line-weight",
+        "controlled-four-way-comparison"
       ]
     },
     {
@@ -553,6 +553,76 @@
         "foreground-frame",
         "value-groups",
         "selective-finish"
+      ]
+    },
+    {
+      "slug": "watercolor-wet-on-wet-dry",
+      "status": "published",
+      "family": "watercolor",
+      "primarySkill": "wet-paper-vs-dry-paper-control",
+      "visibleEvidence": "Compare the same watercolor pigment on wet and dry paper, then combine soft and sharp edges intentionally.",
+      "stageFocus": [
+        "two-surface-setup",
+        "wet-on-wet-spread",
+        "wet-on-dry-edge",
+        "edge-comparison",
+        "combined-methods"
+      ]
+    },
+    {
+      "slug": "watercolor-leaves-botanical",
+      "status": "published",
+      "family": "watercolor",
+      "primarySkill": "botanical-brush-shape-grouping",
+      "visibleEvidence": "Build simple leaves and small botanical groups from a limited vocabulary of brush shapes and stems.",
+      "stageFocus": [
+        "leaf-shape-library",
+        "single-leaf-stroke",
+        "stem-pair-spacing",
+        "botanical-grouping",
+        "small-study-finish"
+      ]
+    },
+    {
+      "slug": "watercolor-soft-sky-cloud-washes",
+      "status": "published",
+      "family": "watercolor",
+      "primarySkill": "soft-sky-wash-and-lift",
+      "visibleEvidence": "Create a light sky wash, lift soft clouds and layer a gentle color transition without hard outlines.",
+      "stageFocus": [
+        "even-sky-wash",
+        "cloud-lifting",
+        "gentle-color-layer",
+        "soft-edge-control",
+        "sky-study-finish"
+      ]
+    },
+    {
+      "slug": "watercolor-sky-wash-practice",
+      "status": "published",
+      "family": "watercolor",
+      "primarySkill": "sky-wash-mood-variation",
+      "visibleEvidence": "Practice one repeatable sky-wash process across clear, sunset, overcast and evening mood variations.",
+      "stageFocus": [
+        "palette-preparation",
+        "wet-surface-readiness",
+        "wet-on-wet-color-flow",
+        "lift-and-soften-clouds",
+        "dry-detail-variation"
+      ]
+    },
+    {
+      "slug": "watercolor-small-landscape",
+      "status": "published",
+      "family": "watercolor",
+      "primarySkill": "small-watercolor-scene-simplification",
+      "visibleEvidence": "Build a small landscape from three to five large shapes, transparent layers and a few dark focal accents.",
+      "stageFocus": [
+        "simple-scene-choice",
+        "sky-first-wash",
+        "big-land-shapes",
+        "water-ground-details",
+        "dark-focal-accents"
       ]
     }
   ]
