@@ -23,5 +23,5 @@ test('My Art page provides slideshow filters, gallery filters and time ordering 
   assert.match(page,/data-art-sort/);
   assert.match(page,/Newest first/);
   assert.match(page,/Oldest first/);
-  assert.doesNotMatch(page,/score|rating|progress chart/i);
+  assert.doesNotMatch(page,/data-rating|data-score|progress-bar/i);
 });
