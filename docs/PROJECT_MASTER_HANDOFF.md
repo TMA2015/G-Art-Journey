@@ -213,9 +213,9 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-### Phase 2 visual baseline reset — current priority
+### Reference Library + homepage integration — current priority
 
-**Phase 2A is complete:** Hands v2, Eye v2, Hair and the five-image Fabric set are live. Lesson production remains temporarily paused. **Explore Art structure/content has passed browser QA on desktop and iPhone. The final Materials replacement pass is deployed; only owner visual confirmation of the eight new replacements remains before Explore Art is fully closed.**
+**Current state on 2026-10-01:** Explore Art is complete for the current scope; My Art V1 and Reference Library V1 are live and owner-checked on desktop/iPad. The active task is homepage refinement: Discover now points only into Explore Art, Try Something remains unchanged, and Our Little Gallery uses real learner artwork.
 
 **1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
 
@@ -523,7 +523,25 @@ Production release completed:
 - page: `/G-Art-Journey/reference-library/`
 - Drawing Guides now links directly to Reference Library
 - portrait images use uncropped contain display; the three approved Vietnamese clothing landscape infographics use wider landscape cards on desktop and responsive single-column cards on mobile
-- remaining gate: owner visual QA on desktop/iPad for filters, portrait/landscape presentation and View large links
+- owner visual QA on desktop/iPad: **PASS** for filters, portrait/landscape presentation and View large links
+
+### Homepage Discover + Little Gallery refresh
+
+Owner decision and release on 2026-10-01:
+- **01 / Discover** now links only into Explore Art
+- three cards:
+  1. Artists → `explore/#artists`
+  2. Styles & Movements → `explore/#movements`
+  3. Materials → `explore/#materials`
+- performance rule: **smoothness takes priority over mini slideshows**
+- current implementation uses one representative lazy-loaded Explore artwork per card; do not restore old G-Art placeholder/guide imagery to these three cards
+- optional mini slideshows may be reconsidered later only if they can be added without noticeable page-load/scroll cost
+- **02 / Try Something remains unchanged**
+- **Our Little Gallery** now shows two real 2026 Procreate drawings from My Art (Drawing 07 and Drawing 09) instead of simulated G-Art illustrations
+- PR #55 merged to `main`
+- production commit: `4005109efe6becba72a169b38f147d3428558dff`
+- Pages workflow **#229 PASS**: build, both-language verification, image-budget audit and deploy succeeded
+- remaining gate: owner visual QA of the refreshed homepage on desktop/iPad
 
 ## 15. Handoff update protocol
 
