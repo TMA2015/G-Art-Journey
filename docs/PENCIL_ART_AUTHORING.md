@@ -1,6 +1,6 @@
 # Pencil Art — production plan
 
-Status: **lesson map approved; Lesson 1 in production**
+Status: **lesson map approved; Pencil Art overview infographic owner-approved; Lesson 1 detail poster in production**
 
 ## 1. Category role
 
@@ -134,3 +134,21 @@ Reject if:
 Lessons 2–4 are staged as `artPending` placeholders with full authoring to follow after Lesson 1 approval.
 
 Lesson 5 will reuse/refine the existing `shade-a-pencil-portrait` academic content rather than creating a duplicate portrait lesson.
+
+
+## 6. Approved Pencil Art overview infographic
+
+Owner visual QA: **PASS / approved on 2026-10-01**.
+
+The approved image summarizes the full five-lesson Pencil Art path in one landscape infographic:
+1. Pencil Control — Lines, Pressure & Marks
+2. Shade Simple Forms
+3. Draw Everyday Objects
+4. Texture with Graphite
+5. A Pencil Portrait
+
+Important classification:
+- this image is the **Pencil Art category overview / roadmap**
+- it does **not** replace the detailed instructional poster for Lesson 1
+- keep the approved overview unchanged unless the owner later requests a revision
+- lesson-specific posters should be simpler and give each teaching example much more space
