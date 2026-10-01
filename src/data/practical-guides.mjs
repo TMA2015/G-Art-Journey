@@ -105,38 +105,202 @@ export const practiceGuides = [
  seeAlso:['head-construction','graphite-values']
 },
 {
- slug:'shade-a-pencil-portrait',category:'pencil',tag:'PENCIL PORTRAIT',difficulty:'Beginner',time:'25–40 min',
- title:'Shade a Portrait with a Pencil',
- description:'Give a face depth using broad areas of light and dark before adding eyelashes or hair strands.',
- image:'infographics/light-and-value.svg',
- supplies:'HB, 2B and 4B pencils, soft eraser, plain paper',
+ slug:'pencil-control-lines-pressure',category:'pencil',tag:'PENCIL ART',difficulty:'Beginner',time:'20–30 min',
+ title:'Pencil Control — Lines, Pressure & Marks',
+ description:'Build control with confident lines, deliberate pressure, line weight, hatching and simple mark-making.',
+ image:'infographics/pencil/pencil-01-control.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Pencil Control lesson with graphite line, pressure, hatching and texture studies using the approved Pencil Art G-Art series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper, eraser and sharpener',
  steps:[
- {title:'Choose the light',body:'Decide where the light is coming from. Look for the bright side of the forehead, nose, cheeks and chin.'},
- {title:'Mark the largest shadows',body:'Shade the eye sockets, side of the nose, under the lower lip and under the chin very lightly. Look at the big shapes first.'},
- {title:'Build the middle gray',body:'Use gentle layers of pencil to turn the cheek and forehead. Make each pass light; you can always go darker.'},
- {title:'Keep a few bright places',body:'Leave some paper white or lift a little graphite with your eraser. Too many equally bright spots can make a face look flat.'},
- {title:'Add only the useful details',body:'Sharpen the eyes and a few hair edges. Step back and check whether the face still reads without every small line.'}
+  {title:'Warm up with long lines',body:'Draw straight, curved and S-shaped lines with one confident movement. Avoid scratching the same edge again and again.'},
+  {title:'Change pressure on purpose',body:'Make a line move from light to dark and back to light. Keep the pressure change gradual.'},
+  {title:'Vary line weight',body:'Use lighter lines for soft or secondary edges and stronger lines where overlap or focus needs emphasis.'},
+  {title:'Build tone with hatching',body:'Place parallel strokes with even spacing. Darken by layering more strokes instead of pressing hard immediately.'},
+  {title:'Try cross-hatching and texture',body:'Cross a second layer at another angle, then compare dots, broken marks and short directional strokes.'}
  ],
- tryIt:'Draw just the nose and one cheek with three shades. You can repeat the exercise using five shades later.',
- remember:'A soft transition shows a rounded cheek; a sharper edge may show where the nose casts a shadow.',
- seeAlso:['graphite-values','head-construction']
+ tryIt:'Fill five small boxes with pressure, line-weight, hatching, cross-hatching and texture exercises.',
+ remember:'Control comes from deliberate pressure and direction. Build darks in layers rather than forcing them with one heavy pass.',
+ seeAlso:['graphite-values']
 },
 {
- slug:'street-with-depth',artPending:true,category:'landscape',tag:'PENCIL LANDSCAPE',difficulty:'Beginner',time:'30–45 min',
- title:'Draw a Street That Feels Deep',
- description:'Use a horizon, converging lines and lighter distant details to lead the eye through a street scene.',
- image:'showcase/pencil-landscape.svg',
- supplies:'Paper, HB/2B pencils, ruler for first practice, eraser',
+ slug:'pencil-simple-forms',category:'pencil',tag:'PENCIL ART',difficulty:'Beginner',time:'25–35 min',
+ title:'Shade Simple Forms',
+ description:'Use one light source to turn a sphere, cube, cylinder and cone into solid three-dimensional forms.',
+ image:'infographics/pencil/pencil-02-simple-forms.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Graphite lesson showing light, shadow and cast shadow on a sphere, cube, cylinder and cone with the approved Pencil Art series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper and eraser',
  steps:[
- {title:'Choose your eye level',body:'Draw a light horizontal line. This is the horizon, which shows the height of your eyes in the scene.'},
- {title:'Place one meeting point',body:'Choose a point on the horizon. Guide the road edges and building edges toward it. This is one-point perspective.'},
- {title:'Draw the largest buildings',body:'Begin with simple boxes and check that their nearest edges are bigger than those farther away.'},
- {title:'Give the scene layers',body:'Keep distant buildings softer and lighter. Make the closest wall, tree or sidewalk edge a little darker.'},
- {title:'Add a quiet focal point',body:'Choose one place for your darkest marks, such as a doorway or nearby tree. Avoid outlining every distant window.'}
+  {title:'Choose one light source',body:'Keep the light direction simple and consistent so every form follows the same lighting idea.'},
+  {title:'Map light and shadow',body:'Separate the light side, halftone, core shadow, reflected light and cast shadow before polishing transitions.'},
+  {title:'Shade the sphere',body:'Let values turn gradually around the round surface. Keep the cast shadow attached to the form.'},
+  {title:'Compare flat and curved forms',body:'Use clear value changes on the cube and smooth gradients on the cylinder and cone.'},
+  {title:'Check the whole value pattern',body:'Step back and make sure the light side still reads clearly against the shadow family.'}
  ],
- tryIt:'Sketch one short lane from your imagination. Draw it again from a lower eye level to see how the view changes.',
- remember:'The horizon is your eye level, not always the line where land meets sky. Curved roads and tilted objects may need more than one guide.',
- seeAlso:['landscape-depth','graphite-values']
+ tryIt:'Shade the same sphere twice with the light coming from two different directions.',
+ remember:'The value pattern explains the form. Smooth surfaces turn gradually; flat planes change more clearly.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'pencil-everyday-objects',category:'pencil',tag:'PENCIL ART',difficulty:'Beginner',time:'30–45 min',
+ title:'Draw Everyday Objects',
+ description:'Find boxes, cylinders and spheres inside familiar objects, then refine proportion, detail and shading.',
+ image:'infographics/pencil/pencil-03-everyday-objects.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Graphite lesson simplifying a mug, fruit, books and bottle into basic forms with the approved Pencil Art series logo',
+ supplies:'HB and 2B pencils, paper, eraser and a few simple household objects',
+ steps:[
+  {title:'Find the big shape',body:'Ignore small details at first. Ask whether the object is mainly a box, cylinder, sphere, cone or a combination.'},
+  {title:'Check proportion',body:'Compare height, width and the main center line before adding handles, openings or small edges.'},
+  {title:'Build the object',body:'Turn the basic form into the real object with ellipses, thickness and overlapping parts.'},
+  {title:'Add useful detail',body:'Refine only the details that explain the object clearly. Keep construction lines light.'},
+  {title:'Shade the form',body:'Use the same light-and-shadow logic from simple forms to make the object feel solid.'}
+ ],
+ tryIt:'Choose three objects from your desk and draw each first as one or two simple forms, then refine it.',
+ remember:'Big shape and proportion come before texture or decoration.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'pencil-textures',category:'pencil',tag:'PENCIL ART',difficulty:'Beginner',time:'30–45 min',
+ title:'Texture with Graphite',
+ description:'Use direction, spacing, edge quality and value contrast to suggest wood, stone, metal, glass, fabric and hair.',
+ image:'infographics/pencil/pencil-04-texture-graphite.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Graphite texture lesson with wood, stone, metal, glass, fabric and hair studies using the approved Pencil Art series logo',
+ supplies:'HB, 2B and 4B pencils, paper, eraser and sharpener',
+ steps:[
+  {title:'Observe the surface',body:'Notice whether the material looks smooth, rough, soft, hard, reflective or transparent before choosing marks.'},
+  {title:'Choose mark direction',body:'Let pencil strokes follow grain, folds, hair flow or the planes of stone instead of using one texture everywhere.'},
+  {title:'Control spacing and edge',body:'Tighter marks and sharper edges often feel harder or darker; softer spacing can feel lighter or softer.'},
+  {title:'Keep the form underneath',body:'Texture should sit on a readable light-and-shadow structure rather than flattening the object.'},
+  {title:'Compare materials',body:'Place several small studies side by side and exaggerate only the differences that make each material recognizable.'}
+ ],
+ tryIt:'Make six small texture swatches: wood, stone, metal, glass, fabric and hair.',
+ remember:'Texture describes a surface, but form still comes first.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'shade-a-pencil-portrait',category:'pencil',tag:'PENCIL PORTRAIT',difficulty:'Beginner',time:'40–60 min',
+ title:'A Pencil Portrait',
+ description:'Combine head shape, feature placement, light and shadow, hair masses and selective detail into one finished portrait.',
+ image:'infographics/pencil/pencil-05-portrait.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Five-step graphite portrait lesson from head construction to finished shading using the approved Pencil Art series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper, eraser and sharpener',
+ steps:[
+  {title:'Start with the head shape',body:'Draw a light oval, center line and eye line. Keep the neck and shoulders simple.'},
+  {title:'Place the features',body:'Use the guides to compare eyes, nose, mouth and ears before committing to detail.'},
+  {title:'Block light and shadow',body:'Choose one light direction and group the biggest light and shadow shapes across the whole face.'},
+  {title:'Refine hair and features',body:'Develop eyes, nose, mouth and hair with controlled edges and layered graphite, keeping highlights clean.'},
+  {title:'Finish the portrait',body:'Deepen selected darks, soften unnecessary edges and check that the face still reads as one coherent whole.'}
+ ],
+ tryIt:'Draw a simple self-portrait or use one reference photo. Follow the five stages and keep the early steps light.',
+ remember:'A convincing portrait depends on proportion and value structure before eyelashes, strands or tiny details.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'pencil-facial-features',category:'pencil',tag:'PENCIL PORTRAIT',difficulty:'Beginner',time:'30–45 min',
+ title:'Facial Features in Pencil',
+ description:'A portrait add-on that gives extra space to eyes and mouth, then studies the nose and ear through simple form and value.',
+ image:'infographics/pencil/pencil-06-facial-features.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Graphite facial-feature add-on with large eye and mouth studies plus nose and ear construction using the approved Pencil Art series logo',
+ supplies:'HB, 2B and 4B pencils, paper, eraser and sharpener',
+ steps:[
+  {title:'Build the eye as a rounded form',body:'Wrap the lids around the eyeball, place iris and pupil, then add the upper-lid shadow and a controlled highlight.'},
+  {title:'Model the mouth softly',body:'Keep the center line soft, compare upper and lower lip values and use the shadow below the lower lip to show volume.'},
+  {title:'See the nose through planes',body:'Use bridge, ball and wing shapes, then let light and shadow describe the form instead of outlining every edge.'},
+  {title:'Simplify the ear',body:'Find the outer rim, inner curve, hollow and lobe as a few connected shapes before adding small folds.'},
+  {title:'Compare construction with finish',body:'For each feature, check how the simple structure survives underneath the finished graphite example.'}
+ ],
+ tryIt:'Choose one feature and draw it three times: construction only, simple value, then a finished study.',
+ remember:'Soft value changes create form. Do not turn every feature into a hard outline.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'landscape-depth-layers',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'25–35 min',
+ title:'Build Depth with Three Layers',
+ description:'Use foreground, middle ground and background with size, overlap and contrast to make a scene feel deep.',
+ image:'infographics/landscape/landscape-01-depth-layers.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Landscape drawing lesson explaining foreground, middle ground and background depth using the approved stylized Landscape series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper and eraser',
+ steps:[
+  {title:'Separate three layers',body:'Identify foreground, middle ground and background before drawing small details.'},
+  {title:'Change size with distance',body:'Let nearby forms appear larger and distant forms smaller.'},
+  {title:'Use overlap',body:'Place closer shapes in front of farther shapes so the scene reads in clear layers.'},
+  {title:'Change contrast and detail',body:'Keep foreground darker and clearer, middle ground moderate, and background lighter and simpler.'},
+  {title:'Check the whole space',body:'Step back and make sure the eye can travel from near to far without every layer competing equally.'}
+ ],
+ tryIt:'Sketch one tiny scene using only three depth layers and three value groups.',
+ remember:'Near is usually larger, darker and clearer; far is usually smaller, lighter and simpler.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'landscape-big-shapes',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'25–35 min',
+ title:'Trees, Rocks & Clouds as Big Shapes',
+ description:'Simplify nature into a few large masses before adding directional texture or small detail.',
+ image:'infographics/landscape/landscape-02-big-shapes.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Landscape lesson simplifying trees, rocks and clouds into large masses with the approved stylized Landscape series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper and eraser',
+ steps:[
+  {title:'See the big mass',body:'Look at the whole tree crown, rock group or cloud before thinking about leaves, cracks or tiny cloud edges.'},
+  {title:'Break it into a few shapes',body:'Use two to four major masses or planes instead of dozens of small pieces.'},
+  {title:'Follow the form with texture',body:'Let branch marks, rock cracks and cloud shading follow the direction of the larger form.'},
+  {title:'Keep detail selective',body:'Add just enough texture to explain the material while preserving the large silhouette.'},
+  {title:'Combine a small scene',body:'Place a tree, rocks and clouds together and check that the scene still reads clearly from a distance.'}
+ ],
+ tryIt:'Simplify one reference photo into only three to five big natural masses.',
+ remember:'Big shapes first. Texture comes only after the mass is clear.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'landscape-water-reflections',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'25–35 min',
+ title:'Water & Reflections',
+ description:'Use horizontal strokes, simplified reflected masses, distortion and value to draw lakes and rivers naturally.',
+ image:'infographics/landscape/landscape-03-water-reflections.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Landscape drawing lesson on calm water, ripples and broken reflections using the approved stylized Landscape series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper and eraser',
+ steps:[
+  {title:'Keep the water horizontal',body:'Use mostly horizontal strokes. Calm water stays flatter while moving water bends and breaks the line.'},
+  {title:'Reflect the big shape',body:'Place a simplified reflected mass below the object, keeping the overall relationship without copying every detail.'},
+  {title:'Break and soften the reflection',body:'Interrupt reflected shapes with horizontal gaps, softer edges and lighter values.'},
+  {title:'Add distortion',body:'Let ripples stretch, compress or offset reflected marks so the water does not look like a perfect mirror.'},
+  {title:'Finish one water study',body:'Combine shoreline, distant forms and controlled reflections into a scene where the water remains the main lesson.'}
+ ],
+ tryIt:'Draw one tree above calm water twice: first as a simple reflection, then with broken horizontal gaps.',
+ remember:'Reflections are related to the object, but they are usually softer, simpler and more broken.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'street-with-depth',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'30–45 min',
+ title:'Draw a Street That Feels Deep',
+ description:'Use a horizon, one-point perspective and simple building boxes to make a street recede convincingly.',
+ image:'infographics/landscape/landscape-04-street-depth.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'One-point perspective street lesson with horizon, vanishing point and building boxes using the approved stylized Landscape series logo',
+ supplies:'Paper, HB/2B pencils, ruler for first practice and eraser',
+ steps:[
+  {title:'Find the horizon',body:'Draw your eye level as one horizontal line and place a single vanishing point on it.'},
+  {title:'Build the street',body:'Use guide lines from the vanishing point to establish road edges and simple building boxes.'},
+  {title:'Repeat forms into depth',body:'Make doors, windows, lamps and paving smaller and closer together as they move away.'},
+  {title:'Simplify the distance',body:'Keep nearby forms darker and clearer while distant buildings become lighter and less detailed.'},
+  {title:'Finish the street study',body:'Add shading and one quiet focal area without losing the horizon and shared vanishing point.'}
+ ],
+ tryIt:'Draw the same short street with a higher and a lower eye level while keeping one vanishing point.',
+ remember:'The horizon is your eye level. Parallel edges that recede in the same direction aim toward the same vanishing point.',
+ seeAlso:['graphite-values']
+},
+{
+ slug:'landscape-complete-composition',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'30–45 min',
+ title:'Compose a Complete Landscape',
+ description:'Use focal point, big shapes, foreground framing and grouped values to organize a finished scene.',
+ image:'infographics/landscape/landscape-05-complete-composition.webp',poster:true,posterWide:true,posterWidth:1280,posterHeight:801,
+ posterAlt:'Complete landscape composition lesson with thumbnails, focal point, foreground framing and value groups using the approved stylized Landscape series logo',
+ supplies:'HB, 2B and 4B pencils, drawing paper and eraser',
+ steps:[
+  {title:'Make thumbnail choices',body:'Try three small arrangements so you can compare big shapes and focal placement before committing.'},
+  {title:'Choose one focal point',body:'Give one area stronger contrast, clearer shape or slightly more detail so the viewer knows where to look first.'},
+  {title:'Frame with the foreground',body:'Use rocks, grasses or branches to lead the eye inward without blocking the subject.'},
+  {title:'Group the values',body:'Organize the scene into a few large light, middle and dark masses instead of giving every object equal contrast.'},
+  {title:'Finish selectively',body:'Develop the chosen composition, keeping the focal area clear and letting secondary areas stay quieter.'}
+ ],
+ tryIt:'Make three thumbnail sketches, choose the strongest one and develop only that version into a finished drawing.',
+ remember:'One focal point, clear big shapes and grouped values are more useful than equal detail everywhere.',
+ seeAlso:['graphite-values']
 },
 {
  slug:'four-character-face-approaches',category:'character',tag:'CHARACTER ART',difficulty:'Beginner',time:'25–40 min',
