@@ -471,6 +471,28 @@ Reference Library resumed on 2026-10-01:
 - where hands are not central to the reference goal, compose the sheet so hands are either clearly visible at inspectable size or naturally outside the crop; do not hide malformed tiny hands in dense layouts
 - next production collection: **Hair / General**, followed by **Clothing**
 
+### Reference Library — Clothing / General checkpoint
+
+Owner approval on 2026-10-01:
+- **Clothing / General complete**
+- 4 portrait infographics
+- each infographic = 2 full-body sheets × 5 figures
+- total **40 outfit references**
+- approved groups:
+  1. Everyday Casual + Smart Casual
+  2. School / Campus + Office / Formal
+  3. Spring / Summer + Autumn / Winter
+  4. Dresses / Skirts + Layered / Statement Outfits
+
+Next extension:
+- add **2 Vietnamese Traditional Clothing infographics**
+- each infographic is one unified theme, not split into two sheets
+- layout: **2 rows × 5 full-body figures = 10 outfits per infographic**
+- total: **20 Vietnamese clothing references**
+- include major Vietnamese traditional garments (e.g. áo dài, áo bà ba, áo tứ thân) and selected ethnic-minority traditional clothing
+- keep respectful, readable, non-costume-like presentation; avoid mixing motifs between ethnic groups
+- anatomy/hand QA still applies to every figure
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
