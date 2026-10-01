@@ -1,6 +1,6 @@
 # Landscape Drawing — production plan
 
-Status: **COMPLETE — all 5 Landscape lessons owner-approved and staged for website release**
+Status: **COMPLETE & LIVE — all 5 Landscape lessons owner-approved and published on the website**
 
 ## 1. Category role
 
@@ -223,3 +223,13 @@ Release rule:
 - preserve the stylized Landscape series logo already embedded in the upper-left
 - do not overlay the canonical site logo
 - use wide poster cards with contain behavior; no crop
+
+
+## 12. Production release
+
+- PR #58
+- production commit: `e9463e6898a5b7a9b36500aabe4ece3e332192ff`
+- Pages workflow #248: **PASS**
+- 5/5 Landscape posters are live
+- embedded stylized Landscape logo preserved; no website-logo overlay
+- owner browser visual QA remains
