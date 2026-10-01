@@ -10,6 +10,7 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 - Move it from the upper-left only when the teaching layout has a clear reason; document the layout exception.
 - Do not rebuild already-approved historical posters only to add or move the logo. Use deterministic production compositing when possible.
 - **Artwork approval does not waive mandatory branding rules** unless the owner explicitly approves that exception.
+- **Owner-approved series-logo exception:** the approved **Landscape Drawing** series uses its own hand-drawn/stylized G-Art logo treatment in the upper-left. Keep that approved series mark on Landscape posters and **do not replace it with the canonical website lockup during upload/compositing**.
 - Before release, inspect the **generated public WebP as rendered on the website**. Checking only the source artwork is not sufficient.
 - Poster generation must preserve the approved artwork aspect ratio; never use an implicit crop/cover resize that can remove the logo or teaching content.
 
@@ -44,6 +45,7 @@ For **smaller subjects or partial-body studies** such as hair, eyes, hands, head
 For tutorial posters that are not reference sheets:
 - use the same principle: fewer, larger examples are preferred to many tiny examples
 - dense small-detail generation should be split into separately QA'd panels and composited afterward
+- for Landscape lesson posters, prefer **one lesson per infographic**, with **no more than 4 main teaching zones** plus a compact practice/footer strip; do not combine several lessons into one generated poster
 
 ## Basic tutorial poster
 - **Current Phase 2 visual baseline:** the approved **Draw Hair as Masses, Then Strands** poster sets the minimum finish level for new Core Drawing Skills artwork until a later approved poster raises that bar. This means convincing hand-drawn/graphite examples, useful visual variety, clear hierarchy and a finished editorial page—not merely correct but sparse technical diagrams.
