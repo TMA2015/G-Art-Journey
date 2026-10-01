@@ -28,7 +28,7 @@ export const visualNotes=[
  note:"This is a drawing aid, not a rule for all bodies. Real proportions vary with age, pose and viewpoint."
 },
 {
- slug:"landscape-depth",number:"04",retired:true,artPending:true,replacementGuide:"street-with-depth",replacementTitle:"Draw a Street That Feels Deep",title:"Give a pencil landscape a sense of depth",subtitle:"Eye Level, Distance & Focus",tag:"PENCIL LANDSCAPE",
+ slug:"landscape-depth",number:"04",retired:true,artPending:true,replacementGuide:"landscape-depth-layers",replacementTitle:"Build Depth with Three Layers",title:"Give a pencil landscape a sense of depth",subtitle:"Eye Level, Distance & Focus",tag:"PENCIL LANDSCAPE",
  image:"showcase/pencil-landscape.svg",
  description:"Place an eye-level line, soften distant shapes and choose one area for your darkest pencil marks.",
  time:"15–20 min",
