@@ -32,10 +32,44 @@ test('replaced diagrams have safe destinations with approved posters',async()=>{
  const oldFigure=guides.find(g=>g.slug==='figure-from-simple-shapes');
  const oldStreet=guides.find(g=>g.slug==='street-with-depth');
  assert.ok(oldFigure.retired);
- assert.ok(oldStreet.artPending);
+ assert.ok(!oldStreet.artPending);assert.equal(oldStreet.image,'infographics/landscape/landscape-04-street-depth.webp');
 });
 test('English-first getters expose new guide and note routes',()=>{
  assert.equal(getGuides('en').length,guides.length);
  assert.equal(getVisualNotes('en').length,visualNotes.length);
  assert.equal(getGuides('en').find(x=>x.slug==='figure-from-simple-shapes').title,'Draw a Standing Figure with Simple Shapes');
+});
+
+
+const pencilSet=[
+ 'pencil-control-lines-pressure','pencil-simple-forms','pencil-everyday-objects',
+ 'pencil-textures','shade-a-pencil-portrait','pencil-facial-features'
+];
+const landscapeSet=[
+ 'landscape-depth-layers','landscape-big-shapes','landscape-water-reflections',
+ 'street-with-depth','landscape-complete-composition'
+];
+
+test('approved Pencil and Landscape sets are active wide posters',async()=>{
+ for(const slug of [...pencilSet,...landscapeSet]){
+  const g=guides.find(x=>x.slug===slug);
+  assert.ok(g,slug);
+  assert.ok(!g.retired,slug);
+  assert.ok(!g.artPending,slug);
+  assert.equal(g.poster,true,slug);
+  assert.equal(g.posterWide,true,slug);
+  assert.ok(g.steps.length>=5,slug);
+  assert.ok(g.tryIt,slug);
+  assert.ok(g.remember,slug);
+  await access('public/'+g.image);
+ }
+});
+
+test('old Pencil and Landscape starter placeholders retire to the new lessons',()=>{
+ const oldPencil=guides.find(x=>x.slug==='draw-a-pencil-portrait');
+ const oldLandscape=guides.find(x=>x.slug==='draw-a-pencil-landscape');
+ assert.ok(oldPencil.retired);
+ assert.equal(oldPencil.replacementGuide,'shade-a-pencil-portrait');
+ assert.ok(oldLandscape.retired);
+ assert.equal(oldLandscape.replacementGuide,'landscape-depth-layers');
 });
