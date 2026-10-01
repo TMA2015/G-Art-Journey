@@ -305,20 +305,106 @@ export const practiceGuides = [
 {
  slug:'four-character-face-approaches',category:'character',tag:'CHARACTER ART',difficulty:'Beginner',time:'25–40 min',
  title:'Try Four Ways to Draw a Character Face',
- description:'Explore different choices for eyes, face shape, line weight and expression while keeping the same basic head.',
- image:'showcase/character.svg',
+ description:'Start from one shared head, then create four distinct characters by changing face shape, features, hair silhouette and line weight.',
+ image:'infographics/character/character-face-four-ways.webp',poster:true,posterWide:true,posterWidth:1200,posterHeight:751,
+ posterAlt:'Try Four Ways to Draw a Character Face infographic comparing one shared base head with Soft and Gentle, Bright and Expressive, Cool and Angular, and Playful and Graphic character designs',
  supplies:'Pencil and paper or any drawing app',
  steps:[
- {title:'Start with one shared head',body:'Sketch the same round head and face direction four times. This makes differences in design easy to compare.'},
- {title:'Try a manga-inspired face',body:'Use clear eye shapes, grouped hair and a few strong lines. Try one expressive version and one quieter version.'},
- {title:'Try a webtoon-inspired face',body:'Use a softer face outline and more gradual features if that suits your design. Many Korean webtoons use different approaches, so treat this as one example.'},
- {title:'Try a manhua-inspired face',body:'Try flowing hair and expressive linework, perhaps with ink-like marks or color. Chinese comics include many different visual approaches.'},
- {title:'Try a Western comics or cartoon face',body:'Experiment with bold outlines, strong shadows, or more playful shapes. American comics and cartoons vary widely too.'},
- {title:'Choose your own mix',body:'Keep the features you enjoy rather than copying a whole regional label. Change eyebrows and mouth to show joy, worry or surprise.'}
+  {title:'Start with one shared base head',body:'Keep the head angle, camera and basic proportions the same so the design choices are easy to compare.'},
+  {title:'Change the face shape',body:'Try a softer round shape, a balanced oval, a sharper angular design and a more graphic stylized shape.'},
+  {title:'Change the feature language',body:'Adjust eyes, brows, nose and mouth as a coordinated set instead of swapping one random feature at a time.'},
+  {title:'Change hair silhouette and line weight',body:'Use clearly different outer hair shapes and compare lighter, cleaner, stronger and more graphic line treatments.'},
+  {title:'Compare all four designs',body:'Keep the broad expression nearly the same, then notice how the controlled design choices create four different character identities.'}
  ],
- tryIt:'Give one character the same surprised expression in four style studies. Which design feels most like your character?',
- remember:'Manga, manhwa, manhua and Western comics describe broad publishing traditions, not fixed facial rules. Artists within each create many different styles.',
+ tryIt:'Draw one base head, then make four versions by changing face shape, feature design, hair silhouette and line weight while keeping the pose and expression nearly the same.',
+ remember:'Character identity can change through a few deliberate design choices. You do not need to copy a whole named style to make a face feel different.',
  seeAlso:['head-construction']
+},
+
+{
+ slug:'watercolor-wet-on-wet-dry',category:'watercolor',tag:'WATERCOLOR',difficulty:'Beginner',time:'20–30 min',
+ title:'Wet-on-Wet & Wet-on-Dry',
+ description:'Compare two basic watercolor methods and learn when soft spreading edges or sharper controlled edges are useful.',
+ image:'infographics/watercolor/watercolor-02-wet-wet-dry.webp',poster:true,posterWidth:1000,posterHeight:1250,
+ posterAlt:'Watercolor lesson comparing wet-on-wet and wet-on-dry techniques with petals, washes and a finished flower',
+ supplies:'Watercolor paper, round brush, watercolor paint, clean water and tissue',
+ steps:[
+  {title:'Prepare two test areas',body:'Wet one area with clean water and leave the other dry so you can compare the two methods side by side.'},
+  {title:'Try wet-on-wet',body:'Drop color onto damp paper and watch it spread softly. Use it for gentle petals, clouds and backgrounds.'},
+  {title:'Try wet-on-dry',body:'Paint on dry paper for sharper edges and more controlled leaves, stems and defined shapes.'},
+  {title:'Compare the effects',body:'Use the same color in both tests and compare edge softness, control and how quickly the pigment spreads.'},
+  {title:'Use both together',body:'Combine soft wet-on-wet areas with selected wet-on-dry details in one small painting.'}
+ ],
+ tryIt:'Paint one simple petal twice: once on wet paper and once on dry paper. Compare the edges.',
+ remember:'Wet-on-wet is soft and flowing. Wet-on-dry is sharper and more controlled.'
+},
+{
+ slug:'watercolor-leaves-botanical',category:'watercolor',tag:'WATERCOLOR',difficulty:'Beginner',time:'25–35 min',
+ title:'Simple Leaves & Botanical Shapes',
+ description:'Learn a small vocabulary of leaf shapes, brushstrokes and botanical groupings without drawing every detail.',
+ image:'infographics/watercolor/watercolor-03-leaves-botanical.webp',poster:true,posterWidth:1000,posterHeight:1250,
+ posterAlt:'Watercolor lesson showing simple leaf shapes, single leaves, stems, clusters and a small botanical study',
+ supplies:'Watercolor paper, round brush, green and warm watercolor mixes, clean water',
+ steps:[
+  {title:'See basic leaf shapes',body:'Begin with a few simple silhouettes such as oval, long, round, heart-like and pointed leaves.'},
+  {title:'Paint single leaves',body:'Use one or two confident brushstrokes, starting light and adding a darker edge or center vein only when useful.'},
+  {title:'Add stems and pairs',body:'Attach leaves to a simple stem and vary their angle, size and spacing so the branch feels natural.'},
+  {title:'Build small botanical groups',body:'Combine a few leaves into a sprig, cluster or small bud-and-leaf arrangement.'},
+  {title:'Finish a botanical study',body:'Choose only a few shapes and colors, keeping the arrangement light, transparent and uncluttered.'}
+ ],
+ tryIt:'Paint three different leaf shapes, then combine them into one small sprig.',
+ remember:'Simple shapes and transparent color usually read better than heavy outlines and too much detail.'
+},
+{
+ slug:'watercolor-soft-sky-cloud-washes',category:'watercolor',tag:'WATERCOLOR',difficulty:'Beginner',time:'25–35 min',
+ title:'Soft Sky / Cloud Washes',
+ description:'Paint gentle skies, lifted clouds and calm color transitions with simple transparent washes.',
+ image:'infographics/watercolor/watercolor-04-soft-sky.webp',poster:true,posterWidth:1000,posterHeight:1250,
+ posterAlt:'Watercolor sky lesson showing a light sky wash, lifted soft clouds, gentle layered color and a finished sky study',
+ supplies:'Watercolor paper, large soft brush, blue watercolor, one warm accent color, clean water and tissue',
+ steps:[
+  {title:'Prepare the sky wash',body:'Wet the area evenly and begin with a light blue wash, keeping the brush moving so the sky stays fresh.'},
+  {title:'Lift soft clouds',body:'While the paper is still damp, lift selected cloud shapes with a clean damp brush or tissue.'},
+  {title:'Layer gentle color',body:'Add a small amount of warm or violet color while the wash is damp to create a soft transition.'},
+  {title:'Let edges stay soft',body:'Keep most cloud boundaries diffused and irregular instead of outlining every cloud.'},
+  {title:'Finish a sky study',body:'Add only a few quiet distant shapes after drying so the sky remains the main subject.'}
+ ],
+ tryIt:'Paint two small skies: one blue-only and one blue with a warm sunset color. Compare the mood.',
+ remember:'Work light, keep water clean and let most cloud edges stay soft.'
+},
+{
+ slug:'watercolor-sky-wash-practice',category:'watercolor',tag:'WATERCOLOR · PRACTICE',difficulty:'Beginner',time:'25–40 min',
+ title:'Sky Wash Practice & Variations',
+ description:'A companion sky study with color preparation, wet-on-wet blending, lifting, soft cloud edges and four sky mood ideas.',
+ image:'infographics/watercolor/watercolor-04b-sky-practice.webp',poster:true,posterWidth:900,posterHeight:1350,
+ posterAlt:'Companion watercolor sky practice guide with color swatches, wet-on-wet washes, lifted clouds and clear, sunset, overcast and evening sky ideas',
+ supplies:'Watercolor paper, soft round brush, blue and warm watercolor mixes, clean water and tissue',
+ steps:[
+  {title:'Prepare colors and paper',body:'Mix a few light transparent colors first and use paper heavy enough to handle a wet wash.'},
+  {title:'Wet the sky area',body:'Brush on clean water evenly. The surface should be damp with a gentle sheen, not covered in puddles.'},
+  {title:'Add sky colors wet-on-wet',body:'Drop in light blue and a small warm color, letting the pigments flow while preserving some bright paper.'},
+  {title:'Lift and soften cloud shapes',body:'Use a clean damp brush or tissue to lift clouds, or add a slightly thicker mix for soft cloud masses.'},
+  {title:'Dry, then add selected details',body:'After the wash dries, add only a few darker cloud accents or distant landscape shapes.'}
+ ],
+ tryIt:'Paint one simple blue sky and one warm sunset sky using the same basic wash process.',
+ remember:'Keep the first wash light. Let water create softness, then add only the details the sky actually needs.'
+},
+{
+ slug:'watercolor-small-landscape',category:'watercolor',tag:'WATERCOLOR',difficulty:'Beginner',time:'30–45 min',
+ title:'Small Watercolor Landscape',
+ description:'Build a tiny landscape from a few big shapes, light washes and one calm focal point.',
+ image:'infographics/watercolor/watercolor-05-small-landscape.webp',poster:true,posterWidth:1000,posterHeight:1250,
+ posterAlt:'Watercolor landscape lesson building a small scene from sky, large land shapes, water or ground details and dark focal accents',
+ supplies:'Watercolor paper, round brush, a small palette of blue, green and warm colors, clean water',
+ steps:[
+  {title:'Choose a simple scene',body:'Look for a clear horizon, three to five big shapes and one focal point rather than many tiny details.'},
+  {title:'Paint the sky first',body:'Use a light wash and keep the brightest paper areas clean while the scene is still simple.'},
+  {title:'Block in big land shapes',body:'Add distant hills, a middle layer of trees or land and one foreground shape with broad washes.'},
+  {title:'Add water or ground details',body:'Use a few gentle horizontal water marks or loose ground strokes without filling every area.'},
+  {title:'Finish with dark accents',body:'Add a few darker trees, roof shapes, rocks or lines near the focal point and stop before overworking.'}
+ ],
+ tryIt:'Paint one tiny landscape using only three to five big shapes and a limited palette.',
+ remember:'Light washes first, simple value groups and only a few dark accents usually make a clearer watercolor landscape.'
 },
 {
  slug:'color-a-face-in-layers',category:'digital',tag:'DIGITAL COLOR',difficulty:'Beginner',time:'20–35 min',
