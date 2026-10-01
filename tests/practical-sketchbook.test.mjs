@@ -23,7 +23,7 @@ test('all linked note slugs and referenced images resolve',async()=>{
  assert.equal(visualNotes.length,4);
 });
 test('replaced diagrams have safe destinations with approved posters',async()=>{
- for(const [slug,guide] of [['head-construction','face-basics'],['figure-simple-shapes','standing-figure'],['landscape-depth','street-with-depth']]){
+ for(const [slug,guide] of [['head-construction','face-basics'],['figure-simple-shapes','standing-figure'],['landscape-depth','landscape-depth-layers']]){
   const note=visualNotes.find(n=>n.slug===slug);
   assert.ok(note.retired);
   assert.equal(note.replacementGuide,guide);
