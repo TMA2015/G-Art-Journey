@@ -397,7 +397,10 @@ Current staging implementation:
 - plan: `docs/DAUGHTER_GALLERY_V1.md`
 - previous-chat artwork can be visually audited, but raw source bytes are not exportable into the current GitHub tool session; image publication therefore remains blocked until the ten source files are available again as raw uploads
 - the owner supplied the ten-image RAR; optimized web copies are now connected on the feature branch
-- remaining release gate: owner visual QA of the staged My Art page
+- PR #53 merged to `main` on 2026-10-01 as production commit `2d9aabc3914902adb8165028cbf56eef39e7d250`
+- production Pages workflow **#211 PASS** (build + deploy)
+- My Art V1 is now live at `/G-Art-Journey/my-art/`
+- remaining release gate: **owner visual QA on desktop/iPad** (slideshow, tag filters, image order, full-size opening, mobile layout)
 
 Reference Library status:
 - foundation remains preserved in Draft PR #52
