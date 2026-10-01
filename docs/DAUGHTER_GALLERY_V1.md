@@ -58,16 +58,13 @@ Before public release, record either:
 
 The page can then sort newest/oldest and later support filtered timelines such as “Portraits through time” without introducing a formal progress system.
 
-## Rights / provenance gate
+## Publication approval
 
-The earlier learner-art rule still applies before public release.
+On 2026-10-01 the owner explicitly approved the ten selected candidate IDs above as the first set that may be uploaded to the learner gallery.
 
-For each selected piece, confirm:
-- original character/artwork vs fan-art/reference
-- whether any external photo/background/reference is embedded in the final image
-- whether that background/reference is okay to publish
+The earlier 18-image audit had separately flagged other images for fan-art/reference or external-background checks; those flagged images are not part of this initial ten-image release.
 
-The V1 branch may stage the page and metadata before this confirmation, but **do not merge image publication to the public site until the gate is satisfied**.
+No additional provenance round is required for these ten unless a new concern is discovered while reconnecting the source files.
 
 ## Privacy
 
@@ -97,4 +94,4 @@ Images:
 - not yet copied to the repository because the previous-chat image records are viewable for audit but their original raw bytes are not exportable into the current GitHub tool session
 - once the ten source files are available again as raw uploads, place them under `public/artworks/daughter/` and fill the matching `src` values
 
-Release remains staging-only until chronology + provenance are confirmed.
+Release remains staging-only until the ten raw image files can be reconnected. Chronology should be added from learner/owner information rather than guessed.
