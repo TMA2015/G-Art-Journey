@@ -12,7 +12,7 @@ test('daughter art metadata is lightweight and filterable',()=>{
     assert.equal(item.medium,'Procreate · iPad');
     assert.ok(Array.isArray(item.tags)&&item.tags.length>=2);
     assert.ok(item.tags.every(tag=>daughterArtTags.includes(tag)));
-    assert.ok(['pending-confirmation','original','fan-art','reference'].includes(item.origin));
+    assert.ok(['owner-approved-gallery','original','fan-art','reference'].includes(item.origin));
   }
 });
 
