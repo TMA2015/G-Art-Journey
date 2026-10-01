@@ -554,6 +554,22 @@ Owner reported a display defect after replacing simulated gallery images with re
 - Pages workflow **#232 PASS** including build and deploy
 - remaining gate: owner visual confirmation on desktop/iPad
 
+### Homepage hero simplified to Explore Art + My Art only
+
+Owner decision and release on 2026-10-01:
+- remove the legacy **G-Art Showcase** group from the homepage hero slideshow
+- remove the old Daily/Style selector mode
+- hero selector now has exactly **2 choices**:
+  1. Explore Art
+  2. My Art
+- default hero collection: **Explore Art**
+- preserve previous / next / pause controls and 7-second autoplay
+- preserve session choice when it is still one of the two valid collections
+- historical G-Art Showcase assets remain in the repository for compatibility/other uses but are not part of the homepage hero
+- PR #57 merged to `main`
+- production commit: `21f76b933177537223f1444e6daef98f6388c169`
+- Pages workflow **#236 PASS** including build and deploy
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
