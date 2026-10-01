@@ -5,8 +5,8 @@ export const practiceGuides = [
     description:'Build a hand from a palm block, a low thumb base and grouped fingers before refining joints and detail.',
     image:'infographics/core/hands-simple-forms.webp',
     poster:true,
-    posterWidth:900,
-    posterHeight:1350,
+    posterWidth:1600,
+    posterHeight:1000,
     posterAlt:'Graphite hand construction lesson showing palm block, thumb base, finger groups, joints and a clean five-finger hand with the G-Art Journey logo',
     supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
     steps:[
@@ -108,39 +108,8 @@ export const practiceGuides = [
     remember:'Control comes from deliberate pressure and direction. Darker does not always mean pressing harder; repeated light layers usually give you more control.',
     seeAlso:['graphite-values']
   },
-  {
-    slug:'pencil-simple-forms', artPending:true, category:'pencil', tag:'PENCIL BASICS', difficulty:'Beginner', time:'25–35 min',
-    title:'Shade Simple Forms',
-    description:'Use one clear light source to turn a sphere, cube, cylinder and cone into solid forms.',
-    image:'infographics/pencil/pencil-simple-forms.webp',
-    supplies:'HB, 2B and 4B pencils, drawing paper and eraser',
-    steps:[],
-    tryIt:'Shade the same sphere twice with the light coming from different directions.',
-    remember:'Separate light, halftone, core shadow and cast shadow before polishing small transitions.',
-    seeAlso:['graphite-values']
-  },
-  {
-    slug:'pencil-everyday-objects', artPending:true, category:'pencil', tag:'PENCIL STUDY', difficulty:'Beginner', time:'30–40 min',
-    title:'Draw Everyday Objects',
-    description:'Turn simple forms into cups, books, fruit and bottles before adding value and small detail.',
-    image:'infographics/pencil/pencil-everyday-objects.webp',
-    supplies:'HB and 2B pencils, paper, eraser and a few simple household objects',
-    steps:[],
-    tryIt:'Choose three objects from your desk and simplify each into one or two basic forms before drawing detail.',
-    remember:'Proportion and big shape come before texture.',
-    seeAlso:['graphite-values']
-  },
-  {
-    slug:'pencil-textures', artPending:true, category:'pencil', tag:'PENCIL STUDY', difficulty:'Beginner', time:'25–35 min',
-    title:'Create Texture with Graphite',
-    description:'Change stroke direction, edge quality and value pattern to suggest wood, metal, glass, hair, stone and cloth.',
-    image:'infographics/pencil/pencil-textures.webp',
-    supplies:'HB, 2B and 4B pencils, paper, eraser and sharpener',
-    steps:[],
-    tryIt:'Make six small texture squares and identify which marks create the strongest material difference.',
-    remember:'Texture sits on top of form; keep the big light-and-dark structure readable.',
-    seeAlso:['graphite-values']
-  },
+
+
 
 {
  slug:'figure-from-simple-shapes', retired:true,replacementGuide:'standing-figure',category:'figure', tag:'FIGURE DRAWING', difficulty:'Beginner', time:'25–35 min',
