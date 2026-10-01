@@ -58,3 +58,19 @@ test('home little gallery uses real learner artwork',async()=>{
   assert.doesNotMatch(page,/showcase\/character-2\.svg/);
   assert.doesNotMatch(page,/showcase\/pencil-portrait-2\.svg/);
 });
+
+
+test('home hero exposes only Explore Art and My Art choices',async()=>{
+  const groups=getHomeShowcase('en');
+  assert.deepEqual(groups.map(g=>g.id),['explore-art','my-art']);
+  const page=await readFile('src/pages/index.astro','utf8');
+  assert.doesNotMatch(page,/G-Art Showcase/);
+  assert.doesNotMatch(page,/value="daily"/);
+  assert.match(page,/showcase\.map\(s=>/);
+});
+
+test('home hero defaults to Explore Art when no valid saved choice exists',async()=>{
+  const script=await readFile('src/scripts/home.js','utf8');
+  assert.match(script,/let chosen='explore-art'/);
+  assert.doesNotMatch(script,/dailyGroups|dailyEligible|dailyGroup/);
+});
