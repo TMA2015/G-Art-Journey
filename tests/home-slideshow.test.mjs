@@ -1,0 +1,40 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {getHomeShowcase} from '../src/i18n/content.mjs';
+
+test('home slideshow includes Explore Art and My Art topics',()=>{
+  const groups=getHomeShowcase('en');
+  const explore=groups.find(g=>g.id==='explore-art');
+  const myArt=groups.find(g=>g.id==='my-art');
+  assert.ok(explore);
+  assert.ok(myArt);
+  assert.equal(explore.section,'journey');
+  assert.equal(myArt.section,'journey');
+  assert.ok(explore.images.length>=6);
+  assert.equal(myArt.images.length,10);
+});
+
+test('My Art home slideshow preserves confirmed 2026 chronology',()=>{
+  const myArt=getHomeShowcase('en').find(g=>g.id==='my-art');
+  assert.deepEqual(myArt.images.map(i=>i.title),Array.from({length:10},(_,i)=>'Drawing '+String(i+1).padStart(2,'0')));
+  assert.ok(myArt.images.every(i=>i.fit==='contain'&&i.href==='my-art/'));
+});
+
+test('Explore Art home slideshow links back into Explore content',()=>{
+  const explore=getHomeShowcase('en').find(g=>g.id==='explore-art');
+  assert.ok(explore.images.some(i=>i.href.startsWith('movement/')));
+  assert.ok(explore.images.some(i=>i.href.startsWith('material/')));
+  assert.ok(explore.images.every(i=>i.fit==='contain'));
+});
+
+test('home hero exposes topic groups, dynamic image links and dynamic CTA',async()=>{
+  const page=await readFile('src/pages/index.astro','utf8');
+  const script=await readFile('src/scripts/home.js','utf8');
+  assert.match(page,/From G-Art Journey/);
+  assert.match(page,/data-hero-image-link/);
+  assert.match(page,/data-hero-source/);
+  assert.match(page,/data-hero-cta/);
+  assert.match(script,/getHomeShowcase/);
+  assert.match(script,/groupHref/);
+});

@@ -1,5 +1,7 @@
 import { showcase as rawShowcase,collections as rawCollections,guides as rawGuides } from '../data/content.mjs';
 import { language } from './ui.mjs';
+import { media as rawDiscoveryMedia, movements as rawDiscoveryMovements } from '../data/discovery.mjs';
+import { daughterArt } from '../data/daughter-art.mjs';
 export const asset=(lang,path)=>{
  if(language(lang)==='vi' && path.startsWith('showcase/')) return path.replace('showcase/','showcase/vi/');
  if(language(lang)==='vi' && path.startsWith('infographics/')) return path.replace(/\.svg$/, '-vi.svg');
@@ -89,3 +91,75 @@ export const getShowcase=(lang='en')=>rawShowcase.map(s=>{
 });
 export const getCollections=(lang='en')=>rawCollections.map(c=>({...c,...(language(lang)==='en'?collectionEn:collectionVi)[c.id],image:asset(lang,c.image)}));
 export const getGuides=(lang='en')=>rawGuides.map(g=>({...g,...(language(lang)==='en'?guideEn:guideVi)[g.slug],image:language(lang)==='vi' && guideVi[g.slug] ? asset(lang,g.image) : g.image}));
+
+
+const homeExploreImages=()=>{
+ const graphite=rawDiscoveryMedia.find(m=>m.id==='graphite')?.examples?.[1];
+ const watercolor=rawDiscoveryMedia.find(m=>m.id==='watercolor')?.examples?.[1];
+ const acrylic=rawDiscoveryMedia.find(m=>m.id==='acrylic')?.examples?.[0];
+ const lacquer=rawDiscoveryMedia.find(m=>m.id==='lacquer')?.examples?.[0];
+ const movement=(slug)=>rawDiscoveryMovements.find(m=>m.slug===slug)?.artworks?.[0];
+ const items=[
+  graphite&&{...graphite,href:'material/graphite/',fit:'contain'},
+  watercolor&&{...watercolor,href:'material/watercolor/',fit:'contain'},
+  movement('renaissance')&&{...movement('renaissance'),href:'movement/renaissance/',fit:'contain'},
+  movement('impressionism')&&{...movement('impressionism'),href:'movement/impressionism/',fit:'contain'},
+  movement('post-impressionism')&&{...movement('post-impressionism'),href:'movement/post-impressionism/',fit:'contain'},
+  movement('ink-wash')&&{...movement('ink-wash'),href:'movement/ink-wash/',fit:'contain'},
+  acrylic&&{...acrylic,href:'material/acrylic/',fit:'contain'},
+  lacquer&&{...lacquer,href:'material/lacquer/',fit:'contain'}
+ ].filter(Boolean);
+ return items.map(item=>({
+  src:item.image,
+  title:item.title,
+  alt:item.note||item.title,
+  caption:item.artist&&item.artist!=='G-Art Journey · AI study'?item.title+' · '+item.artist:item.title+' · Explore Art',
+  href:item.href,
+  fit:item.fit
+ }));
+};
+
+export const getHomeShowcase=(lang='en')=>{
+ const en=language(lang)==='en';
+ const core=getShowcase(lang).map(group=>({
+  ...group,
+  section:'showcase',
+  dailyEligible:true,
+  href:'explore/',
+  cta:en?'Wander through art ↗':'Khám phá nghệ thuật ↗',
+  sourceLabel:en?'G-ART / SHOWCASE':'G-ART / TRƯNG BÀY',
+  images:group.images.map(image=>({...image,href:'explore/',fit:'cover'}))
+ }));
+ const explore={
+  id:'explore-art',
+  section:'journey',
+  dailyEligible:false,
+  label:en?'EXPLORE ART':'KHÁM PHÁ NGHỆ THUẬT',
+  title:en?'Wander through art history':'Dạo qua những câu chuyện nghệ thuật',
+  description:en?'Materials, movements and landmark artworks gathered from the Explore Art section.':'Chất liệu, trường phái và những tác phẩm tiêu biểu từ phần Khám phá nghệ thuật.',
+  href:'explore/',
+  cta:en?'Open Explore Art ↗':'Mở Khám phá nghệ thuật ↗',
+  sourceLabel:en?'G-ART / EXPLORE':'G-ART / KHÁM PHÁ',
+  images:homeExploreImages()
+ };
+ const myArt={
+  id:'my-art',
+  section:'journey',
+  dailyEligible:false,
+  label:en?'MY ART · 2026':'TRANH CỦA MÌNH · 2026',
+  title:en?'A little gallery that keeps growing':'Một góc tranh nhỏ đang lớn dần',
+  description:en?'Ten drawings made in Procreate on iPad, kept in their real drawing order from 01 to 10.':'Mười bức tranh vẽ bằng Procreate trên iPad, được giữ đúng thứ tự từ 01 đến 10.',
+  href:'my-art/',
+  cta:en?'Open My Art ↗':'Mở góc tranh ↗',
+  sourceLabel:en?'MY ART / 2026':'TRANH CỦA MÌNH / 2026',
+  images:[...daughterArt].sort((a,b)=>a.sortOrder-b.sortOrder).map(item=>({
+   src:item.src,
+   title:item.title,
+   alt:(en?'Digital character drawing ':'Tranh nhân vật kỹ thuật số ')+item.legacyId,
+   caption:item.title+' · Procreate on iPad',
+   href:'my-art/',
+   fit:'contain'
+  }))
+ };
+ return [...core,explore,myArt];
+};

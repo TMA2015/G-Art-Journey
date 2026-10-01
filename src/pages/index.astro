@@ -2,10 +2,11 @@
 import Base from '../layouts/Base.astro';
 import SectionNav from '../components/SectionNav.astro';
 import '../styles/human-batch.css';
-import {getShowcase,getCollections,getGuides} from '../i18n/content.mjs';
+import {getHomeShowcase,getCollections,getGuides} from '../i18n/content.mjs';
 import {ui,language} from '../i18n/ui.mjs';
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
-const showcase=getShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),first=showcase[0];
+const showcase=getHomeShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),first=showcase[0];
+const showcaseGroups=showcase.filter(s=>s.section==='showcase'),journeyGroups=showcase.filter(s=>s.section==='journey');
 const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',label:t.home.guideTitle},{id:'family-gallery',label:t.nav.gallery}];
 const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(slug=>guides.find(g=>g.slug===slug));
 ---
@@ -13,20 +14,27 @@ const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(
  <div class="site-shell">
   <section class="hero" data-hero aria-label={t.home.today}>
    <div class="hero-visual">
-    <img data-hero-image src={base+first.images[0].src} alt={first.images[0].alt} fetchpriority="high"/>
-    <div class="hero-caption"><span data-hero-caption>{first.images[0].title} · {t.home.illustration}</span><span>{lang==='vi'?'G-ART / TRƯNG BÀY':'G-ART / SHOWCASE'}</span></div>
+    <a class="hero-visual-link" data-hero-image-link href={url(first.images[0].href||first.href)}>
+     <img data-hero-image data-fit={first.images[0].fit||'cover'} src={base+first.images[0].src} alt={first.images[0].alt} fetchpriority="high"/>
+    </a>
+    <div class="hero-caption"><span data-hero-caption>{first.images[0].caption||first.images[0].title+' · '+t.home.illustration}</span><span data-hero-source>{first.sourceLabel}</span></div>
    </div>
    <div class="hero-copy">
     <span class="eyebrow" data-hero-label>{t.home.today}</span>
     <h1 class="serif" data-hero-title>{first.title}</h1>
     <p data-hero-description>{first.description}</p>
-    <a class="hero-cta" href={url('explore/')}>{t.home.cta}</a>
+    <a class="hero-cta" data-hero-cta href={url(first.href)}>{first.cta||t.home.cta}</a>
     <div class="hero-controls">
      <span class="count" data-hero-count>01 / 02</span>
      <label class="visually-hidden" for="style-picker">{t.home.style}</label>
      <select class="style-select" id="style-picker" data-style-select>
       <option value="daily">{t.home.style}</option>
-      {showcase.map(s=><option value={s.id}>{s.label}</option>)}
+      <optgroup label="G-Art Showcase">
+       {showcaseGroups.map(s=><option value={s.id}>{s.label}</option>)}
+      </optgroup>
+      <optgroup label="From G-Art Journey">
+       {journeyGroups.map(s=><option value={s.id}>{s.label}</option>)}
+      </optgroup>
      </select>
      <button type="button" data-prev aria-label={t.home.prev}>←</button>
      <button type="button" data-next aria-label={t.home.next}>→</button>
