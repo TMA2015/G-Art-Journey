@@ -7,11 +7,14 @@ This file is the durable list of deferred improvements that should not interrupt
 ## Visual / Home
 
 ### Replace the original G-Art Showcase image set
-**Status:** Deferred · keep current production images for now  
-**Priority:** Medium, but only when stronger artwork is available
+**Status:** Closed / superseded on 2026-10-01  
+**Priority:** None for homepage
 
-Owner feedback on 2026-10-01:
-- the five original **G-Art Showcase** slideshow topics work correctly, but their current images are visually less impressive than the newer Explore Art and My Art imagery
+Owner decision on 2026-10-01:
+- the five original **G-Art Showcase** topics were removed from the homepage hero
+- the homepage hero now contains only **Explore Art** and **My Art**
+- therefore the old replacement task is no longer required for the homepage
+- retain the old assets only where still needed for compatibility or other pages
 - do **not** replace them quickly with merely adequate substitutes
 - whenever genuinely stronger project content appears, reuse suitable images to upgrade the relevant Showcase topic
 - if the project still lacks enough strong replacements, create a dedicated **G-Art Showcase image library** with a consistent, polished visual standard and replace the old set as a coordinated pass
