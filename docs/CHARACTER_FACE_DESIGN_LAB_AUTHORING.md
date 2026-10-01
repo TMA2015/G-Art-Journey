@@ -178,3 +178,13 @@ Release branch:
 - `feature/character-face-watercolor-20261002`
 
 The existing route `four-character-face-approaches` is upgraded in place. Do not restore the earlier style-family comparison content.
+
+
+## 12. Production release
+
+- PR #59
+- production commit: `e78e220bbcd044e4542657ce5c73af184667acfa`
+- Pages workflow #257: **PASS**
+- approved Character Face Design Lab poster is live
+- route `four-character-face-approaches` now uses the controlled-design lesson
+- remaining gate: owner desktop/iPad visual QA
