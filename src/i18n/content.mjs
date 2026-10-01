@@ -121,15 +121,7 @@ const homeExploreImages=()=>{
 
 export const getHomeShowcase=(lang='en')=>{
  const en=language(lang)==='en';
- const core=getShowcase(lang).map(group=>({
-  ...group,
-  section:'showcase',
-  dailyEligible:true,
-  href:'explore/',
-  cta:en?'Wander through art ↗':'Khám phá nghệ thuật ↗',
-  sourceLabel:en?'G-ART / SHOWCASE':'G-ART / TRƯNG BÀY',
-  images:group.images.map(image=>({...image,href:'explore/',fit:'cover'}))
- }));
+
  const explore={
   id:'explore-art',
   section:'journey',
@@ -161,5 +153,5 @@ export const getHomeShowcase=(lang='en')=>{
    fit:'contain'
   }))
  };
- return [...core,explore,myArt];
+ return [explore,myArt];
 };

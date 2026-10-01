@@ -28,15 +28,15 @@ test('Explore Art home slideshow links back into Explore content',()=>{
   assert.ok(explore.images.every(i=>i.fit==='contain'));
 });
 
-test('home hero exposes topic groups, dynamic image links and dynamic CTA',async()=>{
+test('home hero exposes the two collections with dynamic image links and CTA',async()=>{
   const page=await readFile('src/pages/index.astro','utf8');
   const script=await readFile('src/scripts/home.js','utf8');
-  assert.match(page,/From G-Art Journey/);
+  assert.match(page,/showcase\.map\(s=>/);
   assert.match(page,/data-hero-image-link/);
   assert.match(page,/data-hero-source/);
   assert.match(page,/data-hero-cta/);
   assert.match(script,/getHomeShowcase/);
-  assert.match(script,/groupHref/);
+  assert.match(script,/selected\.href\|\|group\.href/);
 });
 
 
@@ -57,4 +57,20 @@ test('home little gallery uses real learner artwork',async()=>{
   assert.match(page,/galleryArt=\['07','09'\]/);
   assert.doesNotMatch(page,/showcase\/character-2\.svg/);
   assert.doesNotMatch(page,/showcase\/pencil-portrait-2\.svg/);
+});
+
+
+test('home hero exposes only Explore Art and My Art choices',async()=>{
+  const groups=getHomeShowcase('en');
+  assert.deepEqual(groups.map(g=>g.id),['explore-art','my-art']);
+  const page=await readFile('src/pages/index.astro','utf8');
+  assert.doesNotMatch(page,/G-Art Showcase/);
+  assert.doesNotMatch(page,/value="daily"/);
+  assert.match(page,/showcase\.map\(s=>/);
+});
+
+test('home hero defaults to Explore Art when no valid saved choice exists',async()=>{
+  const script=await readFile('src/scripts/home.js','utf8');
+  assert.match(script,/let chosen='explore-art'/);
+  assert.doesNotMatch(script,/dailyGroups|dailyEligible|dailyGroup/);
 });
