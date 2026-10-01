@@ -543,6 +543,17 @@ Owner decision and release on 2026-10-01:
 - Pages workflow **#229 PASS**: build, both-language verification, image-budget audit and deploy succeeded
 - remaining gate: owner visual QA of the refreshed homepage on desktop/iPad
 
+### Homepage gallery real-art layout fix
+
+Owner reported a display defect after replacing simulated gallery images with real learner artwork:
+- root cause: the old homepage gallery CSS still forced a fixed portrait `aspect-ratio` designed for the simulated images
+- this created large empty bands around real artworks with different proportions
+- fix: preserve each real artwork's natural aspect ratio, keep `object-fit: contain`, cap desktop/tablet height for balance, and retain the light polaroid rotation
+- PR #56 merged to `main`
+- production commit: `c4ba13dc89ac1bab34687f645156dc0957547c62`
+- Pages workflow **#232 PASS** including build and deploy
+- remaining gate: owner visual confirmation on desktop/iPad
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
