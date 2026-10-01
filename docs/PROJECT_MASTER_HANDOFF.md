@@ -1,6 +1,6 @@
 # G-Art Journey — Project Master Handoff
 
-_Last updated: 2026-09-30_
+_Last updated: 2026-10-01_
 
 This file is the durable handoff for future ChatGPT sessions. Treat it as the project source of truth for **current status, master plan, design rules, QA gates and the next production step**. When a rule or project decision changes, update this file in the same PR as the change whenever practical.
 
@@ -375,7 +375,32 @@ Owner-approved on 2026-10-01:
 - Oil, Ink & Wash and Digital Painting are unchanged in this batch
 - after deploy, final owner browser QA can close Explore Art completely
 
-## 12. Handoff update protocol
+## 12. Daughter Gallery V1 — active task
+
+Owner decision on 2026-10-01:
+- pause Reference Library work temporarily and return to the learner's own artwork
+- keep the first gallery intentionally simple and motivating rather than evaluative
+- initial public-candidate IDs: **02, 04, 07, 08, 09, 11, 12, 13, 15, 16**
+- all selected works were drawn in **Procreate on iPad**
+- V1 should provide a personal-feeling art page with slideshow, tags, gallery grid and newest/oldest ordering
+- do **not** add scores, levels, progress charts or comparative judgments
+- store dates/order + tags now so filtered timelines can emerge naturally later
+- page should avoid unnecessary identifying information about the learner
+- before public release, retain the earlier provenance gate: confirm approximate chronology and original / fan-art / reference / external-background status
+
+Current staging implementation:
+- branch: `feature/daughter-gallery-v1-20261001`
+- page: `src/pages/my-art.astro`
+- metadata: `src/data/daughter-art.mjs`
+- plan: `docs/DAUGHTER_GALLERY_V1.md`
+- previous-chat artwork can be visually audited, but raw source bytes are not exportable into the current GitHub tool session; image publication therefore remains blocked until the ten source files are available again as raw uploads
+- do not merge the image-publication release until chronology/provenance are confirmed
+
+Reference Library status:
+- foundation remains preserved in Draft PR #52
+- its image-production work is **paused**, not cancelled
+
+## 13. Handoff update protocol
 
 Whenever a future decision changes the project:
 - update the relevant specialist document if needed
