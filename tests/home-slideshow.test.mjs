@@ -28,15 +28,15 @@ test('Explore Art home slideshow links back into Explore content',()=>{
   assert.ok(explore.images.every(i=>i.fit==='contain'));
 });
 
-test('home hero exposes topic groups, dynamic image links and dynamic CTA',async()=>{
+test('home hero exposes the two collections with dynamic image links and CTA',async()=>{
   const page=await readFile('src/pages/index.astro','utf8');
   const script=await readFile('src/scripts/home.js','utf8');
-  assert.match(page,/From G-Art Journey/);
+  assert.match(page,/showcase\.map\(s=>/);
   assert.match(page,/data-hero-image-link/);
   assert.match(page,/data-hero-source/);
   assert.match(page,/data-hero-cta/);
   assert.match(script,/getHomeShowcase/);
-  assert.match(script,/groupHref/);
+  assert.match(script,/selected\.href\|\|group\.href/);
 });
 
 
