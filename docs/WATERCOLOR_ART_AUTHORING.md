@@ -1,6 +1,6 @@
 # Watercolor — approved production set
 
-Status: **APPROVED — 6 owner-approved portrait-format infographics staged for website release**
+Status: **COMPLETE & LIVE — 6 owner-approved portrait-format infographics published on the website**
 
 ## 1. Category role
 
@@ -84,12 +84,10 @@ They are intentionally both retained. Do not retire one merely because their sub
 
 Owner visual QA: **PASS — 6/6 approved**.
 
-Release branch:
-- `feature/character-face-watercolor-20261002`
-
-Next gate:
-- repository tests
-- guide distinctness audit
-- build
-- Pages deployment
-- owner desktop/iPad visual QA
+Production release:
+- PR #59
+- production commit: `e78e220bbcd044e4542657ce5c73af184667acfa`
+- Pages workflow #257: **PASS**
+- 6/6 Watercolor posters are live
+- embedded Watercolor series logo preserved; no website-logo overlay
+- remaining gate: owner desktop/iPad visual QA
