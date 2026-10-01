@@ -380,8 +380,9 @@ Owner-approved on 2026-10-01:
 Owner decision on 2026-10-01:
 - pause Reference Library work temporarily and return to the learner's own artwork
 - keep the first gallery intentionally simple and motivating rather than evaluative
-- initial public-candidate IDs: **02, 04, 07, 08, 09, 11, 12, 13, 15, 16**
-- all selected works were drawn in **Procreate on iPad**
+- final Gallery V1 archive contains **10 works numbered 01 → 10**
+- all selected works were drawn in **Procreate on iPad during 2026**
+- chronology is confirmed by filename: **01 oldest → 10 newest**
 - V1 should provide a personal-feeling art page with slideshow, tags, gallery grid and newest/oldest ordering
 - do **not** add scores, levels, progress charts or comparative judgments
 - store dates/order + tags now so filtered timelines can emerge naturally later
@@ -395,7 +396,8 @@ Current staging implementation:
 - metadata: `src/data/daughter-art.mjs`
 - plan: `docs/DAUGHTER_GALLERY_V1.md`
 - previous-chat artwork can be visually audited, but raw source bytes are not exportable into the current GitHub tool session; image publication therefore remains blocked until the ten source files are available again as raw uploads
-- image publication is blocked only by the current raw-file transfer limitation; chronology may be added once the learner/owner supplies approximate order
+- the owner supplied the ten-image RAR; optimized web copies are now connected on the feature branch
+- remaining release gate: owner visual QA of the staged My Art page
 
 Reference Library status:
 - foundation remains preserved in Draft PR #52
