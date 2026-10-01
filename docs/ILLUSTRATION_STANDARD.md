@@ -4,7 +4,7 @@
 Original pencil and soft pastel illustration; warm paper, airy white space, gentle rose/peach/mint accents, legible English.
 
 ### Brand mark placement
-- New G-Art Journey infographics use the purple **G-Art Journey** brand mark/lockup in the **upper-left corner by default**.
+- **Every new G-Art Journey infographic must carry the canonical purple G-Art Journey logo/lockup in the upper-left corner by default.**
 - Reuse one canonical repository brand asset/lockup. Do **not** ask an image model to redraw or reinterpret the logo on each poster.
 - Keep the logo large enough to read at the actual website card size, not only at source resolution.
 - Move it from the upper-left only when the teaching layout has a clear reason; document the layout exception.
@@ -14,6 +14,36 @@ Original pencil and soft pastel illustration; warm paper, airy white space, gent
 - Poster generation must preserve the approved artwork aspect ratio; never use an implicit crop/cover resize that can remove the logo or teaching content.
 
 A tutorial must look like artwork someone would want to draw, not a crude wireframe presented as a finished example. Do not copy slogans, watermarks, compositions or finished characters from reference artists. Use our own short G-Art notes.
+
+## Infographic format and density rules
+
+### Default orientation
+- **Portrait is the project default** for new G-Art Journey infographics so the library feels consistent on the website and iPad.
+- Use landscape only when the teaching content genuinely benefits from width; document the exception.
+- Approved current exceptions:
+  - **Pencil Art** may use landscape for its lesson/roadmap graphics when the graphite studies need a wide comparison layout.
+  - **Landscape drawing** may use landscape when the scene or composition itself is naturally horizontal.
+  - previously owner-approved horizontal Vietnamese clothing reference sheets remain historical approved exceptions.
+- Do not switch orientation merely because generation is easier.
+
+### Maximum visual density
+The goal is to keep every reference large enough to inspect and to reduce anatomy/detail failures.
+
+For **full-body figures**:
+- target **2 sheets per infographic**
+- target **5 figures per sheet**
+- hard maximum: **10 full-body figures in one infographic**
+- if more examples are needed, create another infographic rather than shrinking figures
+
+For **smaller subjects or partial-body studies** such as hair, eyes, hands, heads or close-up details:
+- up to **3 sheets per infographic**
+- target **5 studies per sheet**
+- hard maximum: **15 studies in one infographic**
+- if not divided into visible sheets, the same 15-study maximum still applies
+
+For tutorial posters that are not reference sheets:
+- use the same principle: fewer, larger examples are preferred to many tiny examples
+- dense small-detail generation should be split into separately QA'd panels and composited afterward
 
 ## Basic tutorial poster
 - **Current Phase 2 visual baseline:** the approved **Draw Hair as Masses, Then Strands** poster sets the minimum finish level for new Core Drawing Skills artwork until a later approved poster raises that bar. This means convincing hand-drawn/graphite examples, useful visual variety, clear hierarchy and a finished editorial page—not merely correct but sparse technical diagrams.
@@ -75,6 +105,28 @@ For any infographic that contains people or human-like characters, explicitly in
 - **cumulative-step continuity**: when a poster is step-by-step, keep the same subject, camera angle and pose unless the lesson explicitly teaches a viewpoint change.
 
 AI-generated art gets a dedicated final anatomy pass. Hands are checked one by one, including small secondary examples. A visually attractive image does not pass QA if anatomy or step continuity is wrong.
+
+### Human / character generation reject list
+
+When people or human-like characters appear, reject or repair the image if any of the following occurs:
+
+- extra arm, duplicated arm, extra leg or duplicated limb
+- missing limb, disconnected limb or a limb that merges into clothing/background
+- more or fewer than five digits on a fully visible hand
+- duplicated thumb, missing thumb, thumb attached in the wrong place, or fused/broken fingers
+- tiny ambiguous hands used where the hand is important to the lesson
+- wrist, elbow, knee, ankle or shoulder bending in an implausible direction
+- broken or twisted fingers with no believable joint structure
+- malformed feet or shoes, duplicated feet, or feet that do not connect coherently to the leg
+- face features drifting off the head angle, accidental extra eye/feature, or strongly mismatched eyes
+- neck, shoulder, torso, hip or pelvis connection that does not make structural sense
+- clothing seams, straps, pockets or layers that connect to the wrong body part
+- bags, tools or props floating, merging into a hand/body, or creating an accidental extra limb
+- step-by-step panels changing subject identity, pose, camera angle or handedness without the lesson explicitly teaching that change
+- important anatomy cropped out of frame
+- anatomy defects hidden by tiny scale, hair, props, folds or dense composition
+
+A visually attractive figure still fails if one of these errors affects the teaching/reference value.
 
 ### Pencil/graphite exception to the color identity
 
