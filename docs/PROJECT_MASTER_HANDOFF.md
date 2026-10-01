@@ -463,6 +463,27 @@ Pencil-specific decision:
 - graphite artwork stays monochrome; pastel is limited to headings/callouts
 - the approved Pencil Art overview is a category roadmap, not the Lesson 1 detail poster
 
+### Pencil Art production recovery checkpoint — 2026-10-01
+
+Current Pencil Art state:
+- approved curriculum: 5 lessons
+  1. Pencil Control — Lines, Pressure & Marks
+  2. Shade Simple Forms
+  3. Draw Everyday Objects
+  4. Create Texture with Graphite
+  5. Shade a Pencil Portrait
+- Pencil Art orientation for this set: **landscape**
+- one five-lesson overview/roadmap image was owner-approved visually in chat
+- that approved overview binary has **not yet been committed to GitHub**
+- Lesson 1 academic content is complete on branch `feature/pencil-art-foundation-20261001`
+- Lesson 1 detail poster is **not yet successfully generated or approved**
+- repeated generation failure: later attempts reproduced the five-lesson overview instead of isolating Lesson 1
+- recovery rule: stop after a wrong-scope generation, classify the asset type explicitly, and regenerate only from the single-lesson brief
+- incomplete Lessons 2–4 runtime placeholders were removed; only Lesson 1 remains staged in runtime data
+- no empty `steps: []` entries remain
+- there is **no PR** for the Pencil branch yet; production is unaffected
+- branch is currently behind `main` and must be resynced before any PR/release
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
