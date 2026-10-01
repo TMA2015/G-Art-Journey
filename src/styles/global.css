@@ -98,3 +98,20 @@ html[data-theme="playful"] .footer{border-color:#f1dfe5}
 .home-explore-card .art-frame{background:#eee9e1}
 .home-explore-card .art-frame img{object-fit:cover}
 .gallery-art img{object-fit:contain;background:#f6f1ea}
+
+/* Real-art layout fix for Our Little Gallery */
+.gallery-preview .gallery-art{align-items:center}
+.gallery-preview .gallery-art img{
+  width:100%;
+  height:auto;
+  max-height:460px;
+  aspect-ratio:auto;
+  object-fit:contain;
+  background:#fff;
+}
+@media(max-width:1020px){
+  .gallery-preview .gallery-art img{max-height:400px}
+}
+@media(max-width:650px){
+  .gallery-preview .gallery-art img{max-height:none}
+}
