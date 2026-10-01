@@ -399,7 +399,7 @@ Current staging implementation:
 - PR #53 merged to `main` on 2026-10-01 as production commit `2d9aabc3914902adb8165028cbf56eef39e7d250`
 - production Pages workflow **#211 PASS** (build + deploy)
 - My Art V1 is now live at `/G-Art-Journey/my-art/`
-- remaining release gate: **owner visual QA on desktop/iPad** (slideshow, tag filters, image order, full-size opening, mobile layout)
+- owner visual QA: **PASS** for the My Art V1 presentation; keep future changes additive and lightweight
 
 Reference Library status:
 - foundation remains preserved in Draft PR #52
@@ -429,7 +429,32 @@ Current notable backlog:
 - if suitable future content does not naturally supply enough replacements, create a dedicated polished G-Art Showcase image library
 - resume Reference Library image production when Learn to Draw becomes active again
 
-## 14. Handoff update protocol
+## 14. Session checkpoint — 2026-10-01 midday
+
+Current stable state before pause:
+- production `main` checkpoint before this handoff-only update: `594c2f55125211f1353c743a18d0ca7f7304e709`
+- Explore Art: complete for current scope
+- My Art V1: live and owner-approved visually
+- home slideshow expansion: live; Explore Art + My Art topics PASS on desktop and iPad
+- original five G-Art Showcase image sets remain functional but visually weaker; replacement is deferred in `docs/PROJECT_BACKLOG.md`
+- no production visual/content change is requested during this pause
+
+Next active task when work resumes later today:
+- return to **Learn to Draw → Reference Library**
+- Draft PR #52 remains open on branch `feature/reference-library-foundation-20261001`
+- PR #52 head at checkpoint: `e561ff24dd0505044091216d3488a4da87e52786`
+- begin image production with **Batch R1 — Poses / General**
+- planned six starter sheets:
+  1. relaxed standing / weight shift
+  2. sitting on chair / floor
+  3. leaning / resting
+  4. crouching / kneeling
+  5. turning / looking back
+  6. simple front / side / back body views
+- continue using small reviewable batches; do not mass-generate the whole library before owner QA
+- mandatory anatomy/hand QA applies to every figure in every sheet
+
+## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
 - update the relevant specialist document if needed
