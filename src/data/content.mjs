@@ -31,14 +31,14 @@ export const collections = [
   { id: 'landscape', number:'05', title:'Landscape', subtitle:'Phong cảnh', description:'Núi rừng, sông hồ, phố xá, phối cảnh và những nơi bạn muốn nhớ.', image:'showcase/pencil-landscape.svg', link:'guides/#landscape' }
 ];
 const starterGuides = [
-  { slug:'draw-a-pencil-portrait', category:'pencil', tag:'PENCIL ART', difficulty:'Bắt đầu', time:'25–40 phút', title:'Một khuôn mặt từ những nét chì', description:'Từ hình khối lớn đến tỉ lệ khuôn mặt và ba sắc độ đầu tiên.', image:'showcase/pencil-portrait.svg', supplies:'Giấy, bút chì HB/2B, tẩy mềm', steps:[
+  { slug:'draw-a-pencil-portrait', retired:true,replacementGuide:'shade-a-pencil-portrait', category:'pencil', tag:'PENCIL ART', difficulty:'Bắt đầu', time:'25–40 phút', title:'Một khuôn mặt từ những nét chì', description:'Từ hình khối lớn đến tỉ lệ khuôn mặt và ba sắc độ đầu tiên.', image:'showcase/pencil-portrait.svg', supplies:'Giấy, bút chì HB/2B, tẩy mềm', steps:[
     {title:'Quan sát hình lớn', body:'Nhìn tỉ lệ cao–rộng của đầu; phác nhẹ hình bầu dục và đường trục mặt.'},
     {title:'Xác định mốc chính', body:'Đặt đường mắt, đáy mũi, miệng. So sánh khoảng cách trước khi vẽ chi tiết.'},
     {title:'Dựng mắt, mũi, môi', body:'Dùng các hình đơn giản và nét nhẹ. Tránh làm một mắt thật hoàn chỉnh khi mắt kia còn chưa có vị trí.'},
     {title:'Đặt ba sắc độ', body:'Chia sáng – trung gian – tối. Bắt đầu ở vùng tóc và bóng lớn, giữ giấy trắng ở vùng sáng nhất.'},
     {title:'Hoàn thiện có chọn lọc', body:'Làm sắc nét điểm nhấn, làm mềm mép bóng ở vùng chuyển khối, rồi nhìn lại tổng thể.'}
   ]},
-  { slug:'draw-a-pencil-landscape', category:'landscape', tag:'PENCIL LANDSCAPE', difficulty:'Bắt đầu', time:'20–35 phút', title:'Một ngọn núi và mặt hồ', description:'Tạo chiều sâu không gian chỉ với đường nét và sắc độ.', image:'showcase/pencil-landscape.svg', supplies:'Giấy, bút HB/2B/4B, tẩy', steps:[
+  { slug:'draw-a-pencil-landscape', retired:true,replacementGuide:'landscape-depth-layers', category:'landscape', tag:'PENCIL LANDSCAPE', difficulty:'Bắt đầu', time:'20–35 phút', title:'Một ngọn núi và mặt hồ', description:'Tạo chiều sâu không gian chỉ với đường nét và sắc độ.', image:'showcase/pencil-landscape.svg', supplies:'Giấy, bút HB/2B/4B, tẩy', steps:[
     {title:'Chọn đường chân trời', body:'Vẽ thật nhẹ ranh giới giữa nước và đất. Dành không gian cho bầu trời.'},
     {title:'Dựng mảng núi', body:'Đi từ hình lớn nhất, tránh vẽ vụn từng tảng đá ngay lập tức.'},
     {title:'Phân lớp xa gần', body:'Dãy núi xa nhẹ và ít tương phản; cây và bờ gần đậm, sắc nét hơn.'},
