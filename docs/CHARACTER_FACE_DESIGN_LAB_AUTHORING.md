@@ -165,3 +165,16 @@ Approved infographic:
 Next implementation step:
 - replace the current placeholder artwork on route `four-character-face-approaches`
 - preserve the approved composition and visual hierarchy
+
+
+## 11. Website release checkpoint
+
+Owner visual QA: **PASS / APPROVED**.
+
+Staged website asset:
+- `infographics/character/character-face-four-ways.webp`
+
+Release branch:
+- `feature/character-face-watercolor-20261002`
+
+The existing route `four-character-face-approaches` is upgraded in place. Do not restore the earlier style-family comparison content.
