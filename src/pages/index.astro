@@ -2,13 +2,26 @@
 import Base from '../layouts/Base.astro';
 import SectionNav from '../components/SectionNav.astro';
 import '../styles/human-batch.css';
-import {getHomeShowcase,getCollections,getGuides} from '../i18n/content.mjs';
+import {getHomeShowcase,getGuides} from '../i18n/content.mjs';
+import {artists as exploreArtists,movements as exploreMovements,media as exploreMedia} from '../data/discovery.mjs';
+import {daughterArt} from '../data/daughter-art.mjs';
 import {ui,language} from '../i18n/ui.mjs';
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
-const showcase=getHomeShowcase(lang),collections=getCollections(lang),guides=getGuides(lang),first=showcase[0];
+const showcase=getHomeShowcase(lang),guides=getGuides(lang),first=showcase[0];
 const showcaseGroups=showcase.filter(s=>s.section==='showcase'),journeyGroups=showcase.filter(s=>s.section==='journey');
 const jump=[{id:'collections',label:t.home.collections},{id:'drawing-guides',label:t.home.guideTitle},{id:'family-gallery',label:t.nav.gallery}];
 const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(slug=>guides.find(g=>g.slug===slug));
+const leonardo=exploreArtists.find(item=>item.slug==='leonardo-da-vinci');
+const postImpressionism=exploreMovements.find(item=>item.slug==='post-impressionism');
+const watercolor=exploreMedia.find(item=>item.id==='watercolor');
+const blueRigi=watercolor?.examples?.find(item=>item.title==='The Blue Rigi, Sunrise')||watercolor?.examples?.[0];
+const discoverCards=[
+ {number:'01',title:'Artists',subtitle:'Artist stories',description:'Meet artists through their works, ideas and visual language.',image:leonardo?.image,alt:leonardo?.imageNote||'Artwork from the Leonardo da Vinci artist story',link:'explore/#artists'},
+ {number:'02',title:'Styles & Movements',subtitle:'Art movements',description:'See how different periods and movements change color, space, rhythm and form.',image:postImpressionism?.image,alt:'The Starry Night by Vincent van Gogh',link:'explore/#movements'},
+ {number:'03',title:'Materials',subtitle:'Ways to make art',description:'Explore graphite, watercolor, paint, ink and other materials through real examples.',image:blueRigi?.image,alt:'The Blue Rigi, Sunrise by J. M. W. Turner',link:'explore/#materials'}
+].filter(item=>item.image);
+const galleryArt=['07','09'].map(id=>daughterArt.find(item=>item.legacyId===id)).filter(Boolean);
+const imageSrc=(src='')=>src.startsWith('https:')?src:base+src;
 ---
 <Base lang={lang} title="G-Art Journey" description={t.common.siteDescription}>
  <div class="site-shell">
@@ -46,8 +59,16 @@ const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(
   <SectionNav lang={lang} items={jump}/>
   <section id="collections" class="section" aria-labelledby="collections-heading">
    <div class="section-title-row"><div><span class="eyebrow">{t.home.discover}</span><h2 class="serif" id="collections-heading">{t.home.collections}</h2></div><a class="subtle-link" href={url('explore/')}>{t.home.allCollections}</a></div>
-   <div class="collection-grid">
-    {collections.map(item=><a class="collection-card" href={url(item.link)}><div class="art-frame"><img src={base+item.image} alt={item.subtitle} loading="lazy"/></div><div class="meta"><span>{item.number} / {item.subtitle}</span></div><h3>{item.title}</h3><p>{item.description}</p><span class="arrow" aria-hidden="true">↗</span></a>)}
+   <div class="collection-grid home-explore-grid">
+    {discoverCards.map(item=><a class="collection-card home-explore-card" href={url(item.link)}>
+      <div class="art-frame">
+       <img src={imageSrc(item.image)} alt={item.alt} loading="lazy" decoding="async" referrerpolicy={item.image.startsWith('https:')?'no-referrer':undefined}/>
+      </div>
+      <div class="meta"><span>{item.number} / {item.subtitle}</span></div>
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+      <span class="arrow" aria-hidden="true">↗</span>
+     </a>)}
    </div>
   </section>
   <section class="editorial-banner">
@@ -60,6 +81,6 @@ const featuredGuides=['face-basics','figure-proportions','standing-figure'].map(
   </section>
 
  </div>
- <section id="family-gallery" class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">{t.home.galleryTag}</span><h2 class="serif">{t.home.galleryTitle}</h2><p>{t.home.galleryDesc}</p><a class="hero-cta" href={url('gallery/')}>{t.home.galleryLink}</a></div><div class="gallery-art"><img src={base+(lang==='en'?'showcase/character-2.svg':'showcase/vi/character-2.svg')} alt={lang==='vi'?'Nhân vật minh họa':'Character illustration'} loading="lazy"/><img src={base+(lang==='en'?'showcase/pencil-portrait-2.svg':'showcase/vi/pencil-portrait-2.svg')} alt={lang==='vi'?'Chân dung chì':'Pencil portrait'} loading="lazy"/></div></div></section>
+ <section id="family-gallery" class="gallery-preview"><div class="site-shell"><div><span class="eyebrow">{t.home.galleryTag}</span><h2 class="serif">{t.home.galleryTitle}</h2><p>{t.home.galleryDesc}</p><a class="hero-cta" href={url('gallery/')}>{t.home.galleryLink}</a></div><div class="gallery-art">{galleryArt.map(item=><img src={base+item.src} alt={item.title+' · '+item.medium} loading="lazy" decoding="async" width="900" height="1200"/>)}</div></div></section>
  <script>import '../scripts/home.js';</script>
 </Base>

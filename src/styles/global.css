@@ -93,3 +93,8 @@ html[data-theme="playful"] .footer{border-color:#f1dfe5}
 .hero-caption{z-index:2}
 .style-select{max-width:220px}
 @media(max-width:650px){.style-select{max-width:190px}.hero-visual img[data-fit="contain"]{padding:10px}}
+
+/* Home Explore cards + real learner gallery artwork */
+.home-explore-card .art-frame{background:#eee9e1}
+.home-explore-card .art-frame img{object-fit:cover}
+.gallery-art img{object-fit:contain;background:#f6f1ea}

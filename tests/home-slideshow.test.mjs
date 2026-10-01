@@ -38,3 +38,23 @@ test('home hero exposes topic groups, dynamic image links and dynamic CTA',async
   assert.match(script,/getHomeShowcase/);
   assert.match(script,/groupHref/);
 });
+
+
+test('home Discover section links only into Explore Art with real Explore imagery',async()=>{
+  const page=await readFile('src/pages/index.astro','utf8');
+  assert.match(page,/explore\/#artists/);
+  assert.match(page,/explore\/#movements/);
+  assert.match(page,/explore\/#materials/);
+  assert.match(page,/exploreArtists/);
+  assert.match(page,/exploreMovements/);
+  assert.match(page,/exploreMedia/);
+  assert.doesNotMatch(page,/getCollections/);
+});
+
+test('home little gallery uses real learner artwork',async()=>{
+  const page=await readFile('src/pages/index.astro','utf8');
+  assert.match(page,/daughterArt/);
+  assert.match(page,/galleryArt=\['07','09'\]/);
+  assert.doesNotMatch(page,/showcase\/character-2\.svg/);
+  assert.doesNotMatch(page,/showcase\/pencil-portrait-2\.svg/);
+});
