@@ -213,167 +213,33 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-### Reference Library + homepage integration — current priority
+### Drawing Guides — Pencil Art + Landscape content build
 
-**Current state on 2026-10-01:** Explore Art is complete for the current scope; My Art V1 and Reference Library V1 are live and owner-checked on desktop/iPad. The active task is homepage refinement: Discover now points only into Explore Art, Try Something remains unchanged, and Our Little Gallery uses real learner artwork.
+Current production state as of 2026-10-01 evening:
+- Explore Art: current scope complete
+- My Art V1: live
+- Reference Library V1: 18 approved infographics live; owner desktop/iPad QA PASS
+- homepage Discover refresh: live
+- Our Little Gallery uses real learner artwork; layout fix live
+- homepage hero now contains only **Explore Art** and **My Art**; G-Art Showcase removed from hero
+- current content gap is now the two thin Drawing Guides categories:
+  - **Pencil Art**
+  - **Landscape**
 
-**1. Draw Hands from Simple Forms — V2 COMPLETED / LIVE**
+Existing material to preserve/reuse where useful:
+- Pencil:
+  - old starter card `draw-a-pencil-portrait` is visually obsolete / placeholder-quality
+  - stronger existing practical lesson `shade-a-pencil-portrait` can be retained or folded into the new Pencil sequence
+  - `graphite-values` note already teaches light/value fundamentals and should not be duplicated verbatim
+- Landscape:
+  - old starter `draw-a-pencil-landscape` is placeholder-quality
+  - `street-with-depth` already has solid academic steps but remains `artPending:true`
+  - future Landscape content should connect perspective, depth, composition and natural forms rather than repeat generic Pencil technique
 
-Released in PR #29:
-- slug remains `hands-simple-forms`
-- lesson objective, guide data, URL and five-step hand-construction logic are unchanged
-- approved poster contains five construction steps, four key-point studies and ten practical hand-pose references
-- graphite-first artwork with light G-Art pastel accents and the canonical purple lockup
-- approved 1024×1536 raster source is integrity-pinned in ten base64 chunks and generates the 900×1200 public WebP
-- owner-approved known imperfection: the **Finger structure** study says **3 segments** while the visual subdivision can read as four visible sections; do not regenerate the full poster solely for this
-- PR CI passed and main Pages deployment workflow #107 passed
-
-Exact academic/release record: `docs/HANDS_FROM_SIMPLE_FORMS_AUTHORING.md`
-
-**2. Draw an Eye from Structure — V2 COMPLETED / LIVE**
-
-Released in PR #31:
-- slug remains `eye-structure`
-- lesson objective, guide data, URL and five-step eye-construction logic remain unchanged
-- owner-approved poster includes five construction stages, four key structural studies, ten eye-view examples and four practice tips
-- approved source is pinned at 1024×1536; public WebP is 900×1350 so the full 2:3 composition is preserved without cropping
-- superseded Eye SVG source was removed
-- owner-approved presentation exceptions are recorded in `docs/EYE_STRUCTURE_AUTHORING.md`
-- PR CI passed and main Pages deployment workflow #119 passed
-
-Exact academic/release record: `docs/EYE_STRUCTURE_AUTHORING.md`
-
-**3. Draw Hair as Masses, Then Strands — COMPLETED / CURRENT VISUAL BASELINE**
-
-Approved implementation from PR #26:
-- slug: `hair-masses`
-- five-step construction: Head → Big shape → Flow → Lock groups → Few strands
-- four short key tips and a corrected hair-thickness study
-- ten hairstyle examples for practical reference
-- warm paper + graphite/pencil artwork + light pastel accents
-- purple G-Art Journey logo
-- English-only wording using simple common language
-
-Exact authoring record: `docs/HAIR_MASSES_AUTHORING.md`
-
-**COMPLETED: Draw Fabric from Tension & Gravity — five-image set live**
-
-The Fabric overview poster was published through PR #36 and the focused four-card set was completed/published through PR #39. The live guide now contains all five approved images.
-
-Phase 2B remains intentionally paused until the owner chooses to resume it.
-
-Planned Fabric teaching order remains:
-- support / tension points
-- gravity and pull direction
-- stretch versus compression
-- large folds before small wrinkles
-- thickness, wrap and overlap
-
-Production rule: use panel-first QA. Create and inspect high-risk fold examples separately, repair/reject failures, then composite the final infographic.
-
-### Explore Art — complete
-
-Owner-approved scope:
-- keep the existing **4 artist pages**: Leonardo da Vinci, Claude Monet, Vincent van Gogh, Fan Kuan
-- keep the existing **5 style/movement pages**: Renaissance, Impressionism, Post-Impressionism, Cubism, Chinese Ink & Wash
-- complete quickly rather than expanding the catalog
-- each artist page has two main sections: **About / why the artist matters** and **Representative works**
-- each movement page has the same two-part structure
-- use approximately **4–6 representative works** where reliable/open material is available
-- each artwork card includes title, artist, date, holding institution when useful, one short observation, source and rights status
-- attribution alone is **not** considered copyright permission; use Public Domain / CC0 / clearly open-license sources
-- Fan Kuan is a documented exception: only a small number of securely associated works are available, so do not pad his page with doubtful attributions just to reach a count
-- no new lesson production until Explore Art is complete
-
-Learner-art status:
-- the 18-piece learner artwork audit is **paused**
-- no learner images are in the repository/public site
-- resume only after the learner confirms original vs fan-art/reference, image-background rights and approximate chronology
-
-### Style authenticity rule
-
-For **Explore Art → Styles**, use only real artworks that genuinely belong to the movement/style being discussed.
-- do not use original G-Art showcase illustrations as style examples or style-card covers
-- every style cover and representative work must have a real artist/work source
-- continue using Public Domain / CC0 / clearly open-license image sources
-- G-Art illustrations belong in teaching/material pages, not as historical style exemplars
-
-### Materials & Tools completion — complete
-
-Owner browser QA confirmed the new Artists + Styles content is clear on desktop and iPhone.
-
-Complete the existing 9 material cards with dedicated detail pages:
-- Graphite & Pencil
-- Colored Pencil
-- Watercolor
-- Oil Painting
-- Acrylic Painting
-- Crayon & Pastel
-- Ink & Wash
-- Vietnamese Lacquer
-- Digital Painting
-
-Each material page should explain:
-1. what the medium is / what makes it distinctive
-2. basic tools and paint/material types
-3. a simple beginner workflow
-4. representative examples — public-domain/open-license famous works where appropriate, otherwise original G-Art illustrations
-5. a link to an existing G-Art learning route when a corresponding tutorial exists
-
-Keep this section concise and practical. Do not expand the material catalog during this pass.
-
-### Explore Art image-source policy
-
-Locked owner decision:
-
-**Artists**
-- use real artworks only
-- do not use AI-generated substitutes as representative artist works
-- before adding a new artist, confirm that enough usable/open artwork images can be sourced
-
-**Styles / movements**
-- use real artworks only
-- do not use G-Art illustrations or AI-generated simulations as representative historical style examples
-- before adding a new style, confirm that enough usable/open artwork images can be sourced
-
-**Materials / media**
-- this section is pedagogical rather than art-historical: its job is to show how a medium affects color, surface, marks and visual character
-- target **at least 3 useful images per medium**: one introductory image plus two additional examples
-- prefer real/open-license artwork or photography when it is visually strong and appropriate
-- original G-Art illustration is acceptable where it genuinely demonstrates the medium
-- AI-generated medium studies may be used **sparingly only when suitable real/open examples are insufficient**
-- any AI image must be explicitly labeled **AI-generated medium study** / **not a historical artwork**
-- do not add AI merely to increase variety when three suitable real/original examples already exist
-
-General priority:
-**real usable artwork first → original G-Art illustration when appropriate → limited clearly labeled AI only as a gap-filler for Materials.**
-
-### Materials image completion pass
-
-Owner-approved medium-image batch (2026-09-30):
-- Graphite: approved AI graphite bust/cube study
-- Colored Pencil: approved AI flower study + approved AI bluebird study
-- Watercolor: approved AI river/sunrise landscape study
-- Acrylic: approved AI still-life study
-- Crayon & Pastel: approved AI dancer study
-- Vietnamese Lacquer: approved AI lotus/lakeside lacquer-style study
-
-Image policy applied:
-- all AI assets are medium demonstrations only
-- every AI cover/example is explicitly labeled **AI-generated medium study · Not a historical artwork**
-- AI images are used only where the medium had fewer than three strong distinct visuals
-- Oil uses real paintings only for the final three-image set
-- Ink & Wash uses a real Fan Kuan work as its cover
-- Digital Painting keeps its three original G-Art digital illustrations; no AI added
-- each material now targets at least three distinct useful visuals (cover + examples)
-
-### Final Materials replacement batch
-
-Owner-approved on 2026-10-01:
-- replace the remaining weak G-Art examples in Graphite, Colored Pencil, Watercolor, Acrylic, Crayon & Pastel and Vietnamese Lacquer with the newly approved AI medium studies
-- preserve the explicit AI label: **AI-generated medium study · Not a historical artwork**
-- Oil, Ink & Wash and Digital Painting are unchanged in this batch
-- after deploy, final owner browser QA can close Explore Art completely
+Next task:
+- define a compact, non-overlapping real curriculum for Pencil Art and Landscape
+- owner approves lesson list before artwork production
+- then author original illustrated guides in small QA batches using the same anatomy/visual standards where people appear
 
 ## 12. Daughter Gallery V1 — active task
 
@@ -569,6 +435,15 @@ Owner decision and release on 2026-10-01:
 - PR #57 merged to `main`
 - production commit: `21f76b933177537223f1444e6daef98f6388c169`
 - Pages workflow **#236 PASS** including build and deploy
+
+### Evening checkpoint — Pencil Art + Landscape planning
+
+Owner confirmed the current site state is stable enough to move on from homepage/ref-library work.
+Next content target:
+- replace thin/placeholder content in the **Pencil Art** and **Landscape** tabs with real, original learning content
+- maintain clear category roles so Pencil teaches graphite technique while Landscape teaches scene construction, depth, perspective and composition
+- avoid duplicating Figure Drawing, Character Art or existing light/value notes
+- finalize the lesson map before generating visual assets
 
 ## 15. Handoff update protocol
 
