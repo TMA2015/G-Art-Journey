@@ -1,6 +1,6 @@
 # Pencil Art — approved production set
 
-Status: **COMPLETE — 6 owner-approved landscape-format infographics staged for website release**
+Status: **COMPLETE & LIVE — 6 owner-approved landscape-format infographics published on the website**
 
 ## Category role
 
@@ -55,3 +55,13 @@ Public asset paths:
 - `infographics/pencil/pencil-04-texture-graphite.webp`
 - `infographics/pencil/pencil-05-portrait.webp`
 - `infographics/pencil/pencil-06-facial-features.webp`
+
+
+## Production release
+
+- PR #58
+- production commit: `e9463e6898a5b7a9b36500aabe4ece3e332192ff`
+- Pages workflow #248: **PASS**
+- 6/6 Pencil Art posters are live
+- embedded Pencil series logo preserved; no website-logo overlay
+- owner browser visual QA remains
