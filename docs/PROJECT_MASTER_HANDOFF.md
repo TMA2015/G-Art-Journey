@@ -458,7 +458,18 @@ Reference Library resumed on 2026-10-01:
 - across different sheets, deliberately vary face, hairstyle and clothing so the library feels like a broad reference collection rather than one repeated character
 - small hands/fingers are a major failure mode; hands must remain large/clear enough to inspect
 - mandatory anatomy/hand QA applies to every figure
-- next production collection: **Motion / General**
+- **Motion / General is owner-approved and complete for the starter set**
+- approved Motion sheets:
+  1. Walking / Strolling
+  2. Running
+  3. Jumping / Landing
+  4. Reaching / Stretching
+  5. Turning / Spinning
+  6. Simple Action / Dynamic Pose
+- owner noted minor residual defects in the approved Motion batch, especially extra fingers
+- approval of the current batch **does not relax** the anatomy/hand standard; future batches must still pass exact finger-count and hand-shape QA
+- where hands are not central to the reference goal, compose the sheet so hands are either clearly visible at inspectable size or naturally outside the crop; do not hide malformed tiny hands in dense layouts
+- next production collection: **Hair / General**, followed by **Clothing**
 
 ## 15. Handoff update protocol
 
