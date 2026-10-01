@@ -515,11 +515,15 @@ Layout rules retained:
 - prioritize large readable references over dense poster layouts
 - exact hand/finger/anatomy QA remains mandatory; approval of earlier minor residual defects does not weaken the rule
 
-Next technical task:
-- upload the 18 approved infographics into Draft PR #52
-- populate `src/data/reference-library.mjs`
-- verify category/style filters, full-size opening, mobile layout, image budget and CI
-- only then release Reference Library to production
+Production release completed:
+- PR #52 merged to `main` on 2026-10-01
+- production commit: `70aaecf49e48d3c8053f641a5d1b7dfb5b8205de`
+- Pages workflow **#225 PASS**: project check, distinctness review, build, both-language verification, image-budget audit and deploy all succeeded
+- **18 approved Reference Library infographics are now live**
+- page: `/G-Art-Journey/reference-library/`
+- Drawing Guides now links directly to Reference Library
+- portrait images use uncropped contain display; the three approved Vietnamese clothing landscape infographics use wider landscape cards on desktop and responsive single-column cards on mobile
+- remaining gate: owner visual QA on desktop/iPad for filters, portrait/landscape presentation and View large links
 
 ## 15. Handoff update protocol
 
