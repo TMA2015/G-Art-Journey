@@ -10,11 +10,13 @@ test('five new independent art guides exist',()=>{
  for(const slug of added){const g=guides.find(x=>x.slug===slug);assert.ok(g);assert.ok(g.steps.length>=5);assert.ok(g.tryIt);assert.ok(g.remember);assert.ok(g.steps.every(s=>s.title&&s.body));}
  assert.equal(new Set(guides.map(g=>g.slug)).size,guides.length);
 });
-test('character style exploration includes four traditions without rigid rules',()=>{
+test('character face design lab compares controlled design choices instead of style families',()=>{
  const g=guides.find(x=>x.slug==='four-character-face-approaches');
- const joined=g.steps.map(x=>x.title+' '+x.body).join(' ').toLowerCase();
- for(const term of ['manga','webtoon','manhua','western comics'])assert.ok(joined.includes(term),term);
- assert.match(g.remember,/not fixed facial rules/);
+ const joined=(g.title+' '+g.description+' '+g.steps.map(x=>x.title+' '+x.body).join(' ')+' '+g.remember).toLowerCase();
+ for(const term of ['face shape','feature','hair silhouette','line weight'])assert.ok(joined.includes(term),term);
+ for(const label of ['manga-inspired','webtoon-inspired','manhua-inspired','western comics'])assert.ok(!joined.includes(label),label);
+ assert.equal(g.poster,true);
+ assert.equal(g.posterWide,true);
 });
 test('all linked note slugs and referenced images resolve',async()=>{
  const noteNames=new Set(visualNotes.map(n=>n.slug));
@@ -72,4 +74,26 @@ test('old Pencil and Landscape starter placeholders retire to the new lessons',(
  assert.equal(oldPencil.replacementGuide,'shade-a-pencil-portrait');
  assert.ok(oldLandscape.retired);
  assert.equal(oldLandscape.replacementGuide,'landscape-depth-layers');
+});
+
+
+const watercolorSet=[
+ 'watercolor-first-flower','watercolor-wet-on-wet-dry','watercolor-leaves-botanical',
+ 'watercolor-soft-sky-cloud-washes','watercolor-sky-wash-practice','watercolor-small-landscape'
+];
+
+test('approved Watercolor set publishes six original poster lessons',async()=>{
+ for(const slug of watercolorSet){
+  const g=guides.find(x=>x.slug===slug);
+  assert.ok(g,slug);
+  assert.ok(!g.retired,slug);
+  assert.ok(!g.artPending,slug);
+  assert.equal(g.poster,true,slug);
+  assert.ok(g.steps.length>=5,slug);
+  assert.ok(g.tryIt,slug);
+  assert.ok(g.remember,slug);
+  await access('public/'+g.image);
+ }
+ assert.equal(guides.find(x=>x.slug==='watercolor-soft-sky-cloud-washes').image,'infographics/watercolor/watercolor-04-soft-sky.webp');
+ assert.equal(guides.find(x=>x.slug==='watercolor-sky-wash-practice').image,'infographics/watercolor/watercolor-04b-sky-practice.webp');
 });
