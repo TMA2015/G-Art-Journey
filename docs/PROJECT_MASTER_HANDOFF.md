@@ -609,10 +609,16 @@ Watercolor logo rule:
 - keep the watercolor-styled G-Art Journey logo already embedded in every approved poster
 - **do not replace or overlay it with the canonical website logo**
 
-Release branch:
-- `feature/character-face-watercolor-20261002`
-- 7 optimized WebP assets added
-- next gate: CI + release review, then merge and Pages deployment
+Production release:
+- PR #59 merged to `main`
+- production commit: `e78e220bbcd044e4542657ce5c73af184667acfa`
+- Pages workflow **#257 PASS**
+- project check, guide-distinctness audit, build, both-language verification, image-budget audit and Pages deploy all succeeded
+- **Character Face Design Lab: LIVE**
+- **Watercolor: 6/6 approved posters LIVE**
+- both approved Soft Sky posters remain published with separate roles
+- embedded Watercolor series logos were preserved unchanged; no canonical website-logo overlay
+- remaining gate: owner visual QA on desktop/iPad
 
 Detailed Watercolor status:
 - `docs/WATERCOLOR_ART_AUTHORING.md`
