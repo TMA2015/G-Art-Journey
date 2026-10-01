@@ -10,34 +10,6 @@
   },
   "guides": [
     {
-      "slug": "draw-a-pencil-portrait",
-      "status": "retired",
-      "family": "pencil",
-      "primarySkill": "portrait-shape-landmarks",
-      "visibleEvidence": "Build a portrait using height, width, landmark placements and an initial value plan.",
-      "stageFocus": [
-        "head-width-height",
-        "centerline",
-        "feature-placement",
-        "initial-value-plan",
-        "selective-detail"
-      ]
-    },
-    {
-      "slug": "draw-a-pencil-landscape",
-      "status": "retired",
-      "family": "landscape",
-      "primarySkill": "mountain-lake-composition",
-      "visibleEvidence": "Plan mountains, shore and water reflections in an outdoor landscape.",
-      "stageFocus": [
-        "waterline",
-        "mountain-masses",
-        "near-far-layers",
-        "horizontal-reflections",
-        "landscape-focus"
-      ]
-    },
-    {
       "slug": "watercolor-first-flower",
       "status": "published",
       "family": "watercolor",
