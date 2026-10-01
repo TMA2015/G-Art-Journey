@@ -1,6 +1,6 @@
 # Character Face Design Lab — authoring spec
 
-Status: **SPEC LOCKED — infographic ready for owner visual QA**
+Status: **APPROVED — infographic passed owner visual QA on 2026-10-01**
 
 ## 1. Existing route
 
@@ -150,3 +150,18 @@ Reject if:
 ## 9. Try it
 
 **Draw one base head, then make four versions by changing face shape, feature design, hair silhouette and line weight. Keep the pose and expression nearly the same so you can compare your choices.**
+
+
+## 10. Approval checkpoint
+
+Owner visual QA: **PASS / APPROVED**.
+
+Approved infographic:
+- **Try Four Ways to Draw a Character Face**
+- subtitle: **One Base Head · Four Design Choices**
+- 1 shared base head + 4 large design variations
+- no Manga / Webtoon / Manhua / Cartoon category duplication
+
+Next implementation step:
+- replace the current placeholder artwork on route `four-character-face-approaches`
+- preserve the approved composition and visual hierarchy
