@@ -70,12 +70,12 @@ const guideEn={
  {title:'Add expression',body:'Experiment with eyes, brows and mouth without losing the head structure.'},
  {title:'Refine the linework',body:'Vary main outlines and keep secondary lines lighter so the face reads clearly.'}
  ]},
- 'watercolor-first-flower':{tag:'WATERCOLOR',difficulty:'Beginner',time:'20–30 min',title:'Your first watercolor flower',description:'Explore water, transparency and layering without controlling every bloom.',supplies:'Watercolor paper, paint, round brush and two cups of water',steps:[
- {title:'Test color first',body:'Mix lighter and darker versions of one color, noticing the water ratio.'},
- {title:'Lightly sketch a flower',body:'Keep pencil lines faint beneath transparent washes.'},
- {title:'Paint the first wash',body:'Begin with a thin wash and reserve white paper for the brightest spots.'},
- {title:'Let it dry, then layer',body:'Glazing deepens color while leaving the earlier wash visible.'},
- {title:'Add stem and leaves',body:'Use a few considered marks; prefer an overall rhythm to making every leaf identical.'}
+ 'watercolor-first-flower':{tag:'WATERCOLOR',difficulty:'Beginner',time:'20–30 min',title:'Watercolor First Flower',description:'Explore water, transparency and layering through one simple flower.',supplies:'Watercolor paper, watercolor paint, round brush, pencil and clean water',steps:[
+ {title:'Test water and color',body:'Mix pale, medium and darker versions of one color so you can see how the water ratio changes transparency.'},
+ {title:'Sketch light shapes',body:'Use a very light pencil sketch so the flower structure guides you without fighting the transparent paint.'},
+ {title:'Paint the first transparent wash',body:'Begin with a light wash and leave selected white paper for the brightest highlights.'},
+ {title:'Dry, then glaze',body:'Let the first layer dry before adding a second transparent glaze for gentle depth and richer color.'},
+ {title:'Add stem and leaves',body:'Finish with a loose stem and a few simple leaves while keeping the painting fresh and uncluttered.'}
  ]},
  'digital-color-layers':{tag:'DIGITAL ART',difficulty:'Basics',time:'15–25 min',title:'Painting with separate layers',description:'Why digital artists separate sketch, base colors, shadows and light.',supplies:'A drawing app with layers (Procreate, Krita, ibisPaint...)',steps:[
  {title:'Sketch',body:'Create a sketch layer and lower its opacity to use as a guide.'},
