@@ -544,6 +544,31 @@ Production release:
 - wide catalog cards use contain behavior and the lesson pages preserve natural poster aspect ratio
 - remaining gate: owner visual QA on desktop/iPad
 
+### Character Face Design Lab — spec locked 2026-10-01
+
+Next Drawing Guides target:
+- existing route: `four-character-face-approaches`
+- title remains **Try Four Ways to Draw a Character Face**
+- new learning goal: **One Base Head · Four Design Choices**
+
+Scope decision:
+- do **not** repeat Manga / Webtoon / Manhua / Cartoon style-family lessons
+- use one shared head construction and compare four controlled design approaches:
+  1. Soft & Gentle
+  2. Bright & Expressive
+  3. Cool & Angular
+  4. Playful & Graphic
+- primary learning skill: controlled character-face design variation
+- differences come from **face shape / feature language / hair silhouette / line weight**
+- keep pose, camera and broad expression nearly constant
+- landscape infographic
+- target 5 large faces total: 1 base + 4 variations
+- no dense mini-gallery
+- canonical G-Art Journey brand mark at upper-left
+- owner visual QA required before replacing the current placeholder artwork
+
+Detailed spec: `docs/CHARACTER_FACE_DESIGN_LAB_AUTHORING.md`
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
