@@ -10,20 +10,14 @@ The first version is a small personal art space where the learner can see her ow
 
 ## Initial selection
 
-Approved candidate IDs from the previous 18-image audit:
+The owner supplied a final ten-image RAR for Gallery V1. The archive is numbered **01 → 10**.
 
-- 02
-- 04
-- 07
-- 08
-- 09
-- 11
-- 12
-- 13
-- 15
-- 16
+All were drawn in **Procreate on iPad during 2026**.
 
-All were drawn in **Procreate on iPad**.
+Chronology is learner/owner-confirmed:
+- 01 is the earliest of this set
+- each larger number was drawn later
+- 10 is the most recent of this set
 
 ## V1 interaction
 
@@ -50,13 +44,13 @@ Tags can evolve later without changing the page architecture.
 
 ## Chronology rule
 
-Do not invent dates.
+Do not invent month/day dates.
 
-Before public release, record either:
-- approximate date (preferred), or
-- a simple learner-confirmed chronological order.
+Confirmed metadata:
+- year: **2026** for all ten works
+- order: **01 → 10**, oldest → newest
 
-The page can then sort newest/oldest and later support filtered timelines such as “Portraits through time” without introducing a formal progress system.
+This is sufficient for newest/oldest sorting and later filtered timelines such as “Portraits through time” without introducing a formal progress system.
 
 ## Publication approval
 
@@ -91,7 +85,9 @@ Styles:
 - `src/styles/my-art.css`
 
 Images:
-- not yet copied to the repository because the previous-chat image records are viewable for audit but their original raw bytes are not exportable into the current GitHub tool session
-- once the ten source files are available again as raw uploads, place them under `public/artworks/daughter/` and fill the matching `src` values
+- owner supplied `New folder.rar` containing `1.jpg` through `10.jpg`
+- web copies are stored as AVIF under `public/artworks/daughter/01.avif` through `10.avif`
+- source chronology maps directly to the numeric filenames
+- originals remain the owner's source archive; web copies are optimized derivatives for the site
 
-Release remains staging-only until the ten raw image files can be reconnected. Chronology should be added from learner/owner information rather than guessed.
+Release remains on the Draft PR until owner visual QA.
