@@ -42,7 +42,7 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
     {filters.map((f,i)=><button type="button" data-filter={f.id} aria-pressed={i===0?'true':'false'}>{f.label}</button>)}
    </nav>
    <div class="guide-grid guide-catalog" data-guide-catalog>
-    {guides.map(g=><a class={"guide-card guide-anchor"+(g.poster?" poster-card":"")} id={guides.find(x=>x.category===g.category)?.slug===g.slug?g.category:undefined} data-category={g.category} href={url('guide/'+g.slug+'/')}>
+    {guides.map(g=><a class={"guide-card guide-anchor"+(g.poster?" poster-card":"")+(g.posterWide?" wide-poster-card":"")} id={guides.find(x=>x.category===g.category)?.slug===g.slug?g.category:undefined} data-category={g.category} href={url('guide/'+g.slug+'/')}>
      <img src={base+g.image} alt={g.posterAlt||g.title} loading="lazy" decoding="async"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.guides.open}</span></div></div>
     </a>)}
    </div>
