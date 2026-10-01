@@ -502,6 +502,41 @@ Current status:
 - match Lesson 1's graphite/warm-paper/pastel identity, but do not duplicate its exact composition
 - next generation target: **Lesson 2 only — Trees, Rocks & Clouds as Big Shapes**
 
+### Pencil + Landscape website release checkpoint — 2026-10-01
+
+Owner visual approvals are complete:
+- **Pencil Art: 6 infographics APPROVED**
+- **Landscape Drawing: 5 infographics APPROVED**
+- total new approved lesson posters: **11**
+
+Pencil set:
+1. Pencil Control — Lines, Pressure & Marks
+2. Shade Simple Forms
+3. Draw Everyday Objects
+4. Texture with Graphite
+5. A Pencil Portrait
+6. Facial Features in Pencil (portrait add-on)
+
+Landscape set:
+1. Build Depth with Three Layers
+2. Trees, Rocks & Clouds as Big Shapes
+3. Water & Reflections
+4. Draw a Street That Feels Deep
+5. Compose a Complete Landscape
+
+Release rules:
+- preserve both series' **embedded stylized logos**
+- do not replace or overlay them with the canonical website logo
+- use landscape/wide poster cards with contain behavior; never crop these approved artworks
+- old starter placeholders `draw-a-pencil-portrait` and `draw-a-pencil-landscape` are retired
+- retain and upgrade the academically useful `shade-a-pencil-portrait` and `street-with-depth` routes
+- `landscape-depth` retired note now redirects to `landscape-depth-layers`
+
+Release branch:
+- `feature/pencil-landscape-guides-20261001`
+- 11 approved WebP assets added under `public/infographics/pencil/` and `public/infographics/landscape/`
+- next gate: CI + browser QA, then merge to production
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
