@@ -493,6 +493,34 @@ Next extension:
 - keep respectful, readable, non-costume-like presentation; avoid mixing motifs between ethnic groups
 - anatomy/hand QA still applies to every figure
 
+### Reference Library approved-asset checkpoint — 18 infographics
+
+Owner approvals confirmed on 2026-10-01:
+- **Poses / General:** 3 infographics
+- **Motion / General:** 6 infographics
+- **Hair / General:** 2 infographics
+- **Clothing / General:** 4 infographics
+- **Vietnamese Clothing:** 3 infographics
+  - Vietnamese Traditional Clothing (1)
+  - Vietnamese Traditional Clothing (2)
+  - Vietnamese Modernized Traditional Fashion
+- total approved assets for first website upload: **18 infographics**
+
+Layout rules retained:
+- normal Reference Library default remains **portrait**
+- full-body collections normally use **2 sheets × 5 figures per portrait infographic**
+- partial/head-focused collections may use **3 sheets × 5 figures per portrait infographic**
+- the Vietnamese Clothing set is an **explicit horizontal exception**: 2 rows × 5 outfits, approved for these three assets only; do not generalize this layout to the whole library
+- no Key Points / Construction blocks inside reference-library infographics
+- prioritize large readable references over dense poster layouts
+- exact hand/finger/anatomy QA remains mandatory; approval of earlier minor residual defects does not weaken the rule
+
+Next technical task:
+- upload the 18 approved infographics into Draft PR #52
+- populate `src/data/reference-library.mjs`
+- verify category/style filters, full-size opening, mobile layout, image budget and CI
+- only then release Reference Library to production
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
