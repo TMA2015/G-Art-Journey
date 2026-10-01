@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionNav from '../components/SectionNav.astro';
+import '../styles/reference-library.css';
+import {referenceCollections,referenceItems,referenceStyles} from '../data/reference-library.mjs';
+
+const base=import.meta.env.BASE_URL;
+const url=(path='')=>base+path;
+const categoryFilters=[{id:'all',label:'All references'},...referenceCollections.map(x=>({id:x.id,label:x.label}))];
+const availableStyles=referenceStyles.filter(style=>style.id==='all'||referenceItems.some(item=>item.style===style.id));
+const countFor=(category)=>referenceItems.filter(item=>item.category===category).length;
+---
+
+<Base lang="en" title="Reference Library" description="A visual reference library for poses, movement, hair and clothing while drawing.">
+ <div class="site-shell reference-shell">
+  <header class="page-hero reference-hero">
+   <div class="topline eyebrow">LEARN TO DRAW / REFERENCE LIBRARY</div>
+   <h1 class="serif">Look, borrow an idea,<br/><em>then make it your own.</em></h1>
+   <p>Quick visual references for the moments when you know what you want to draw, but need help with a pose, movement, hairstyle or outfit.</p>
+  </header>
+
+  <SectionNav items={[
+    {id:'reference-collections',label:'Collections'},
+    {id:'reference-grid',label:'Browse'},
+    {id:'how-to-use',label:'How to use'}
+  ]}/>
+
+  <section id="reference-collections" class="reference-section" aria-labelledby="reference-collections-title">
+   <div class="reference-heading">
+    <div><span class="eyebrow">START WITH A QUESTION</span><h2 id="reference-collections-title" class="serif">What do you need today?</h2></div>
+    <p>These are references, not rules. Use one detail, combine several, or change everything.</p>
+   </div>
+   <div class="reference-collection-grid">
+    {referenceCollections.map(collection=>
+      <a class="reference-collection-card" href={'#reference-grid'} data-collection-jump={collection.id}>
+       <span class="eyebrow">{collection.eyebrow}</span>
+       <h3>{collection.label}</h3>
+       <p>{collection.description}</p>
+       <span class="reference-count">{countFor(collection.id)} approved infographic{countFor(collection.id)===1?'':'s'}</span>
+      </a>
+    )}
+   </div>
+  </section>
+
+  <section id="reference-grid" class="reference-section" aria-labelledby="reference-grid-title">
+   <div class="reference-heading">
+    <div><span class="eyebrow">VISUAL VOCABULARY</span><h2 id="reference-grid-title" class="serif">Browse references</h2></div>
+    <p>Browse the approved G-Art reference sets. Open any infographic at full size while drawing.</p>
+   </div>
+
+   <div class="reference-filter-group" aria-label="Filter reference category">
+    {categoryFilters.map((filter,index)=><button type="button" data-reference-category={filter.id} aria-pressed={index===0?'true':'false'}>{filter.label}</button>)}
+   </div>
+   <div class="reference-filter-group reference-style-filters" aria-label="Filter drawing style">
+    {availableStyles.map((filter,index)=><button type="button" data-reference-style={filter.id} aria-pressed={index===0?'true':'false'}>{filter.label}</button>)}
+   </div>
+
+   <div class="reference-grid" data-reference-grid>
+    {referenceItems.map(item=>
+      <article class:list={['reference-card',item.orientation==='landscape'&&'reference-card-landscape']} data-category={item.category} data-style={item.style}>
+       <a class="reference-image" href={url(item.image)} target="_blank" rel="noopener">
+        <img src={url(item.image)} width={item.width} height={item.height} alt={item.alt} loading="lazy" decoding="async"/>
+       </a>
+       <div class="reference-card-body">
+        <div class="reference-card-meta">{referenceCollections.find(x=>x.id===item.category)?.label} · {referenceStyles.find(x=>x.id===item.style)?.label}</div>
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+        <div class="reference-tags">{item.tags?.map(tag=><span>{tag}</span>)}</div>
+        <a class="reference-open" href={url(item.image)} target="_blank" rel="noopener">View large ↗</a>
+       </div>
+      </article>
+    )}
+   </div>
+
+   <div class="reference-empty" data-reference-empty hidden>
+    <span aria-hidden="true">✎</span>
+    <div><strong>No references in this filter yet.</strong><p>Choose another collection or style.</p></div>
+   </div>
+  </section>
+
+  <section id="how-to-use" class="reference-section reference-use" aria-labelledby="reference-use-title">
+   <div><span class="eyebrow">A SIMPLE WAY TO USE IT</span><h2 id="reference-use-title" class="serif">Reference is a starting point.</h2></div>
+   <div class="reference-use-grid">
+    <div><strong>1 · Pick one idea</strong><p>Choose the pose, flow, hair shape or outfit silhouette you need.</p></div>
+    <div><strong>2 · Notice the big shapes</strong><p>Look for balance, direction, overlap and large masses before small details.</p></div>
+    <div><strong>3 · Change something</strong><p>Turn the head, change the clothes, combine two references or invent a new detail.</p></div>
+   </div>
+  </section>
+
+  <div class="reference-back"><a href={url('guides/')}>← Back to Drawing Guides</a></div>
+ </div>
+
+ <script>
+  const categoryButtons=[...document.querySelectorAll('[data-reference-category]')];
+  const styleButtons=[...document.querySelectorAll('[data-reference-style]')];
+  const cards=[...document.querySelectorAll('[data-reference-grid] [data-category]')];
+  const empty=document.querySelector('[data-reference-empty]');
+  let category='all',style='all';
+
+  const apply=()=>{
+   let shown=0;
+   for(const button of categoryButtons)button.setAttribute('aria-pressed',String(button.dataset.referenceCategory===category));
+   for(const button of styleButtons)button.setAttribute('aria-pressed',String(button.dataset.referenceStyle===style));
+   for(const card of cards){
+    const visible=(category==='all'||card.dataset.category===category)&&(style==='all'||card.dataset.style===style);
+    card.hidden=!visible;
+    if(visible)shown++;
+   }
+   if(empty)empty.hidden=shown!==0;
+  };
+
+  for(const button of categoryButtons)button.addEventListener('click',()=>{category=button.dataset.referenceCategory||'all';apply();});
+  for(const button of styleButtons)button.addEventListener('click',()=>{style=button.dataset.referenceStyle||'all';apply();});
+  for(const link of document.querySelectorAll('[data-collection-jump]'))link.addEventListener('click',()=>{category=link.dataset.collectionJump||'all';apply();});
+  apply();
+ </script>
+</Base>
