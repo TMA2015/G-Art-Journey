@@ -439,20 +439,26 @@ Current stable state before pause:
 - original five G-Art Showcase image sets remain functional but visually weaker; replacement is deferred in `docs/PROJECT_BACKLOG.md`
 - no production visual/content change is requested during this pause
 
-Next active task when work resumes later today:
-- return to **Learn to Draw → Reference Library**
+Reference Library resumed on 2026-10-01:
 - Draft PR #52 remains open on branch `feature/reference-library-foundation-20261001`
-- PR #52 head at checkpoint: `e561ff24dd0505044091216d3488a4da87e52786`
-- begin image production with **Batch R1 — Poses / General**
-- planned six starter sheets:
+- **Poses / General is owner-approved and complete for the starter set**
+- approved output structure: **3 portrait infographics × 2 sheets each = 6 pose sheets**
+- approved sheets:
   1. relaxed standing / weight shift
   2. sitting on chair / floor
   3. leaning / resting
   4. crouching / kneeling
   5. turning / looking back
-  6. simple front / side / back body views
-- continue using small reviewable batches; do not mass-generate the whole library before owner QA
-- mandatory anatomy/hand QA applies to every figure in every sheet
+  6. front / side / back body views
+- new Reference Library visual rule: **2 sheets per portrait infographic**
+- target about **5 large reference figures per sheet**
+- remove Key Points / Construction blocks from reference-library infographics; that teaching content belongs in Drawing Guides
+- prioritize large, readable figures over dense poster layouts
+- within one sheet, one consistent character is acceptable; outfit variations are allowed
+- across different sheets, deliberately vary face, hairstyle and clothing so the library feels like a broad reference collection rather than one repeated character
+- small hands/fingers are a major failure mode; hands must remain large/clear enough to inspect
+- mandatory anatomy/hand QA applies to every figure
+- next production collection: **Motion / General**
 
 ## 15. Handoff update protocol
 
