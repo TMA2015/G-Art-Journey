@@ -569,6 +569,21 @@ Scope decision:
 
 Detailed spec: `docs/CHARACTER_FACE_DESIGN_LAB_AUTHORING.md`
 
+### Character Face Design Lab — artwork approved 2026-10-01
+
+Owner visual QA: **PASS**.
+
+Approved asset direction:
+- **Try Four Ways to Draw a Character Face**
+- subtitle: **One Base Head · Four Design Choices**
+- 1 shared base head + 4 controlled character variations
+- design levers: face shape / features / hair silhouette / line weight
+- no style-family duplication
+
+Next content priority after this approval:
+- **Watercolor**, currently the thinnest Drawing Guides category
+- first real target: replace the placeholder **Watercolor First Flower** with a proper illustrated lesson
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
