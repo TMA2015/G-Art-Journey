@@ -271,4 +271,9 @@ Layout clarification:
 - this does **not** change the default portrait Reference Library format
 - future normal full-body infographics remain portrait 2-sheet layouts unless the owner explicitly approves another exception
 
-Next: connect all 18 approved image files to the Reference Library page and run full CI/visual QA before merge.
+Release status:
+- all 18 approved image files connected
+- PR #52 merged to production commit `70aaecf49e48d3c8053f641a5d1b7dfb5b8205de`
+- Pages workflow #225 PASS
+- technical release complete
+- owner browser visual QA remains before closing this first Reference Library release checkpoint
