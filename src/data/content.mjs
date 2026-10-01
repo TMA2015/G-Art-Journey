@@ -52,13 +52,13 @@ const starterGuides = [
     {title:'Biểu cảm', body:'Thử thay đổi hình mắt, lông mày và miệng mà vẫn giữ cấu trúc đầu.'},
     {title:'Nét hoàn chỉnh', body:'Tăng độ dày ở nét viền chính, giữ nét phụ nhẹ hơn để khuôn mặt dễ đọc.'}
   ]},
-  { slug:'watercolor-first-flower', category:'watercolor', tag:'WATERCOLOR', difficulty:'Bắt đầu', time:'20–30 phút', title:'Bông hoa màu nước đầu tiên', description:'Thử nước, độ trong và lớp màu mà không cần kiểm soát mọi vệt loang.', image:'showcase/watercolor.svg', supplies:'Giấy màu nước, màu nước, cọ tròn, hai cốc nước', steps:[
-    {title:'Thử màu trên giấy nháp', body:'Pha màu nhạt và đậm của cùng một sắc, quan sát lượng nước.'},
-    {title:'Phác một hình hoa đơn giản', body:'Giữ nét chì nhẹ để không cản trở lớp màu trong.'},
-    {title:'Tô lớp đầu', body:'Dùng lớp wash mỏng; chừa giấy ở vùng sáng nhất.'},
-    {title:'Đợi khô rồi chồng lớp', body:'Glazing giúp tăng chiều sâu mà vẫn thấy sắc màu bên dưới.'},
-    {title:'Thêm thân và lá', body:'Dùng ít nét, ưu tiên nhịp điệu tổng thể thay vì cố vẽ đều từng chiếc lá.'}
-  ]},
+  { slug:'watercolor-first-flower', category:'watercolor', tag:'WATERCOLOR', difficulty:'Beginner', time:'20–30 min', title:'Watercolor First Flower', description:'Explore water, transparency and layering through one simple flower.', image:'infographics/watercolor/watercolor-01-first-flower.webp', poster:true,posterWidth:1000,posterHeight:1333,posterAlt:'Watercolor First Flower lesson showing water-to-paint tests, a light sketch, transparent wash, glazing, stem and leaves', supplies:'Watercolor paper, watercolor paint, round brush, pencil and clean water', steps:[
+    {title:'Test water and color', body:'Mix pale, medium and darker versions of one color so you can see how the water ratio changes transparency.'},
+    {title:'Sketch light shapes', body:'Use a very light pencil sketch so the flower structure guides you without fighting the transparent paint.'},
+    {title:'Paint the first transparent wash', body:'Begin with a light wash and leave selected white paper for the brightest highlights.'},
+    {title:'Dry, then glaze', body:'Let the first layer dry before adding a second transparent glaze for gentle depth and richer color.'},
+    {title:'Add stem and leaves', body:'Finish with a loose stem and a few simple leaves while keeping the painting fresh and uncluttered.'}
+  ], tryIt:'Paint the same flower twice: once with more water and once with less water. Compare the transparency.', remember:'Let watercolor breathe. Leave some paper white and build color slowly.' },
   { slug:'digital-color-layers', category:'digital', tag:'DIGITAL ART', difficulty:'Cơ bản', time:'15–25 phút', title:'Tô màu với những lớp riêng biệt', description:'Hiểu vì sao người vẽ chia sketch, màu nền, bóng và ánh sáng thành các layer.', image:'showcase/digital.svg', supplies:'Ứng dụng vẽ có layer (Procreate, Krita, ibisPaint...)', steps:[
     {title:'Sketch', body:'Tạo lớp phác thảo và giảm opacity để làm hướng dẫn.'},
     {title:'Base colors', body:'Đặt các mảng màu nền da, tóc, quần áo trên những lớp riêng khi cần.'},
