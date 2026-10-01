@@ -11,7 +11,7 @@
   "guides": [
     {
       "slug": "draw-a-pencil-portrait",
-      "status": "published",
+      "status": "retired",
       "family": "pencil",
       "primarySkill": "portrait-shape-landmarks",
       "visibleEvidence": "Build a portrait using height, width, landmark placements and an initial value plan.",
@@ -25,7 +25,7 @@
     },
     {
       "slug": "draw-a-pencil-landscape",
-      "status": "published",
+      "status": "retired",
       "family": "landscape",
       "primarySkill": "mountain-lake-composition",
       "visibleEvidence": "Plan mountains, shore and water reflections in an outdoor landscape.",
@@ -69,14 +69,14 @@
       "slug": "shade-a-pencil-portrait",
       "status": "published",
       "family": "pencil",
-      "primarySkill": "portrait-tonal-modeling",
-      "visibleEvidence": "Use graphite to shade cheek, nose and eyes from a chosen light source.",
+      "primarySkill": "complete-graphite-portrait",
+      "visibleEvidence": "Build one portrait from head shape and feature placement through grouped values and a selective finish.",
       "stageFocus": [
-        "light-direction",
-        "shadow-groups",
-        "middle-tone",
-        "reserved-highlights",
-        "pencil-edge-control"
+        "head-construction",
+        "feature-placement",
+        "portrait-value-block",
+        "feature-hair-refine",
+        "portrait-finish"
       ]
     },
     {
@@ -441,6 +441,146 @@
         "stretch-versus-compression",
         "wrap-overlap-form",
         "large-folds-before-wrinkles"
+      ]
+    },
+    {
+      "slug": "pencil-control-lines-pressure",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "graphite-mark-control",
+      "visibleEvidence": "Control graphite through deliberate pressure, line weight, hatching and mark direction.",
+      "stageFocus": [
+        "confident-line",
+        "pressure-gradient",
+        "line-weight",
+        "parallel-hatching",
+        "cross-hatch-texture"
+      ]
+    },
+    {
+      "slug": "pencil-simple-forms",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "graphite-form-shading",
+      "visibleEvidence": "Turn sphere, cube, cylinder and cone into solid forms using one coherent light source.",
+      "stageFocus": [
+        "light-source",
+        "value-map",
+        "round-form-gradient",
+        "plane-value-change",
+        "cast-shadow"
+      ]
+    },
+    {
+      "slug": "pencil-everyday-objects",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "object-form-simplification",
+      "visibleEvidence": "Reduce familiar objects to boxes, cylinders and spheres before proportion and shading.",
+      "stageFocus": [
+        "big-shape",
+        "proportion-check",
+        "form-construction",
+        "selective-detail",
+        "object-shading"
+      ]
+    },
+    {
+      "slug": "pencil-textures",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "graphite-surface-texture",
+      "visibleEvidence": "Change graphite marks and edges to distinguish wood, stone, metal, glass, fabric and hair.",
+      "stageFocus": [
+        "surface-observation",
+        "mark-direction",
+        "spacing-edge",
+        "texture-over-form",
+        "material-comparison"
+      ]
+    },
+    {
+      "slug": "pencil-facial-features",
+      "status": "published",
+      "family": "pencil",
+      "primarySkill": "graphite-facial-feature-studies",
+      "visibleEvidence": "Study eye, mouth, nose and ear construction and value as individual portrait components.",
+      "stageFocus": [
+        "eye-form",
+        "mouth-volume",
+        "nose-planes",
+        "ear-shapes",
+        "construction-finish-comparison"
+      ]
+    },
+    {
+      "slug": "landscape-depth-layers",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "three-layer-landscape-depth",
+      "visibleEvidence": "Create spatial depth by separating foreground, middle ground and background with size, overlap and contrast.",
+      "stageFocus": [
+        "three-depth-layers",
+        "distance-size",
+        "overlap-depth",
+        "distance-contrast",
+        "near-far-check"
+      ]
+    },
+    {
+      "slug": "landscape-big-shapes",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "natural-form-massing",
+      "visibleEvidence": "Simplify trees, rocks and clouds into a few large masses before directional texture.",
+      "stageFocus": [
+        "natural-big-mass",
+        "few-large-shapes",
+        "directional-texture",
+        "selective-detail",
+        "nature-cluster"
+      ]
+    },
+    {
+      "slug": "landscape-water-reflections",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "water-reflection-distortion",
+      "visibleEvidence": "Draw water with horizontal flow and reflections that are simplified, broken and distorted.",
+      "stageFocus": [
+        "water-direction",
+        "reflected-mass",
+        "broken-reflection",
+        "ripple-distortion",
+        "water-study"
+      ]
+    },
+    {
+      "slug": "street-with-depth",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "one-point-street-perspective",
+      "visibleEvidence": "Build a receding street from eye level, one vanishing point and repeated building boxes.",
+      "stageFocus": [
+        "horizon-eye-level",
+        "single-vanishing-point",
+        "building-boxes",
+        "receding-repetition",
+        "distance-simplification"
+      ]
+    },
+    {
+      "slug": "landscape-complete-composition",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "landscape-composition-focal-hierarchy",
+      "visibleEvidence": "Compose a complete scene using thumbnail choice, focal point, foreground framing and grouped values.",
+      "stageFocus": [
+        "thumbnail-choice",
+        "focal-hierarchy",
+        "foreground-frame",
+        "value-groups",
+        "selective-finish"
       ]
     }
   ]
