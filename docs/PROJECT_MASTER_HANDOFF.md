@@ -484,6 +484,24 @@ Current Pencil Art state:
 - there is **no PR** for the Pencil branch yet; production is unaffected
 - branch is currently behind `main` and must be resynced before any PR/release
 
+### Landscape production reset — 2026-10-01
+
+Owner-confirmed Landscape map:
+1. Build Depth with Three Layers
+2. Trees, Rocks & Clouds as Big Shapes
+3. Water & Reflections
+4. Draw a Street That Feels Deep
+5. Compose a Complete Landscape
+
+Current status:
+- Landscape image #1 / Lesson 1: **owner-approved**
+- Lessons 2–5: **not yet approved**
+- several subsequent generations were rejected because they combined unrelated lessons/categories and became too dense
+- new rule: each Landscape lesson is one independent landscape-format infographic with **maximum 4 main teaching zones + compact footer**
+- Landscape series keeps the owner-approved **stylized G-Art logo** from Lesson 1; do not replace it with the canonical website logo on upload
+- match Lesson 1's graphite/warm-paper/pastel identity, but do not duplicate its exact composition
+- next generation target: **Lesson 2 only — Trees, Rocks & Clouds as Big Shapes**
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
