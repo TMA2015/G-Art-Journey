@@ -9,6 +9,7 @@ const translateArtwork=(item,key)=>item[key+'_'+lang]||item[key];
 <Base lang={lang} title={t.nav.gallery} description={t.gallery.intro}>
  <div class="site-shell">
   <header class="page-hero"><div class="topline eyebrow">{t.nav.gallery}</div><h1 class="serif">{t.gallery.title}</h1><p>{t.gallery.intro}</p></header>
+  <div class="note-banner"><strong>My Art · 2026</strong> — a simple drawing corner with tags, a slideshow and the ten newest works in their real drawing order. <a class="subtle-link" href={base+'my-art/'}>Open My Art →</a></div>
   {artwork.length>0 ? <>
    <div class="gallery-filters" aria-label={t.gallery.filterLabel}>
     {['all','daughter','dad','shared'].map((key,i)=><button type="button" data-gallery-filter={key} aria-pressed={i===0?'true':'false'}>{t.gallery.filters[key]}</button>)}
