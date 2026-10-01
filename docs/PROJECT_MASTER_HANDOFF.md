@@ -445,6 +445,24 @@ Next content target:
 - avoid duplicating Figure Drawing, Character Art or existing light/value notes
 - finalize the lesson map before generating visual assets
 
+### Infographic layout rule refresh — 2026-10-01
+
+Owner reconfirmed the global image-production rules:
+- every new infographic carries the canonical G-Art Journey logo at the **upper-left**
+- **portrait remains the default orientation**
+- landscape is allowed only when content benefits from width
+- current approved orientation exceptions include **Pencil Art** and **Landscape drawing**
+- full-body infographic: normally 2 sheets × 5 figures; **maximum 10 full-body figures total**
+- smaller/partial studies: up to 3 sheets × 5; **maximum 15 studies total**
+- never shrink many detailed figures merely to fit more examples; split into more infographics instead
+- all mandatory anatomy/hand rules remain active, including rejection of extra limbs, extra/missing/fused fingers, malformed joints/feet, incoherent clothing/props, face drift and step-continuity failures
+- dense human sheets should use panel-first QA rather than one large uncontrolled generation
+
+Pencil-specific decision:
+- the current Pencil Art set will use **landscape** layout
+- graphite artwork stays monochrome; pastel is limited to headings/callouts
+- the approved Pencil Art overview is a category roadmap, not the Lesson 1 detail poster
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
