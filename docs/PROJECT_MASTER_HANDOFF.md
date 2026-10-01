@@ -1,6 +1,6 @@
 # G-Art Journey — Project Master Handoff
 
-_Last updated: 2026-09-30_
+_Last updated: 2026-10-01_
 
 This file is the durable handoff for future ChatGPT sessions. Treat it as the project source of truth for **current status, master plan, design rules, QA gates and the next production step**. When a rule or project decision changes, update this file in the same PR as the change whenever practical.
 
@@ -375,7 +375,35 @@ Owner-approved on 2026-10-01:
 - Oil, Ink & Wash and Digital Painting are unchanged in this batch
 - after deploy, final owner browser QA can close Explore Art completely
 
-## 12. Handoff update protocol
+## 12. Daughter Gallery V1 — active task
+
+Owner decision on 2026-10-01:
+- pause Reference Library work temporarily and return to the learner's own artwork
+- keep the first gallery intentionally simple and motivating rather than evaluative
+- final Gallery V1 archive contains **10 works numbered 01 → 10**
+- all selected works were drawn in **Procreate on iPad during 2026**
+- chronology is confirmed by filename: **01 oldest → 10 newest**
+- V1 should provide a personal-feeling art page with slideshow, tags, gallery grid and newest/oldest ordering
+- do **not** add scores, levels, progress charts or comparative judgments
+- store dates/order + tags now so filtered timelines can emerge naturally later
+- page should avoid unnecessary identifying information about the learner
+- the owner explicitly approved these ten images for the first public gallery set on 2026-10-01; do not reopen the earlier provenance audit for this selected set unless a new concern appears
+- do not invent chronology; add approximate date/order only from learner/owner information
+
+Current staging implementation:
+- branch: `feature/daughter-gallery-v1-20261001`
+- page: `src/pages/my-art.astro`
+- metadata: `src/data/daughter-art.mjs`
+- plan: `docs/DAUGHTER_GALLERY_V1.md`
+- previous-chat artwork can be visually audited, but raw source bytes are not exportable into the current GitHub tool session; image publication therefore remains blocked until the ten source files are available again as raw uploads
+- the owner supplied the ten-image RAR; optimized web copies are now connected on the feature branch
+- remaining release gate: owner visual QA of the staged My Art page
+
+Reference Library status:
+- foundation remains preserved in Draft PR #52
+- its image-production work is **paused**, not cancelled
+
+## 13. Handoff update protocol
 
 Whenever a future decision changes the project:
 - update the relevant specialist document if needed

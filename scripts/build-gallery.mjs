@@ -21,12 +21,13 @@ for (const owner of owners) {
       medium: typeof detail.medium === 'string' ? detail.medium : '',
       note: typeof detail.note === 'string' ? detail.note : '',
       date: typeof detail.date === 'string' ? detail.date : '',
+      sortOrder: Number.isInteger(detail.sortOrder) ? detail.sortOrder : null,
       ...Object.fromEntries(['title_vi','title_en','medium_vi','medium_en','note_vi','note_en'].filter(field=>typeof detail[field]==='string').map(field=>[field,detail[field]])),
       featured: detail.featured === true
     });
   }
 }
-entries.sort((a,b)=> (b.date || '').localeCompare(a.date || '') || a.title.localeCompare(b.title));
+entries.sort((a,b)=> (b.date || '').localeCompare(a.date || '') || ((b.sortOrder??-1)-(a.sortOrder??-1)) || a.title.localeCompare(b.title));
 await mkdir(path.dirname(destination),{recursive:true});
 await writeFile(destination,JSON.stringify(entries,null,2)+'\n');
 console.log('Gallery manifest: '+entries.length+' artwork(s).');

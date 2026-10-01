@@ -5,5 +5,85 @@
     "date": "2026-09-29",
     "note": "A little moment worth keeping.",
     "featured": false
+  },
+  "daughter/01.avif": {
+    "title": "Drawing 01",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 01 of 10",
+    "sortOrder": 1,
+    "featured": false
+  },
+  "daughter/02.avif": {
+    "title": "Drawing 02",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 02 of 10",
+    "sortOrder": 2,
+    "featured": false
+  },
+  "daughter/03.avif": {
+    "title": "Drawing 03",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 03 of 10",
+    "sortOrder": 3,
+    "featured": false
+  },
+  "daughter/04.avif": {
+    "title": "Drawing 04",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 04 of 10",
+    "sortOrder": 4,
+    "featured": false
+  },
+  "daughter/05.avif": {
+    "title": "Drawing 05",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 05 of 10",
+    "sortOrder": 5,
+    "featured": false
+  },
+  "daughter/06.avif": {
+    "title": "Drawing 06",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 06 of 10",
+    "sortOrder": 6,
+    "featured": false
+  },
+  "daughter/07.avif": {
+    "title": "Drawing 07",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 07 of 10",
+    "sortOrder": 7,
+    "featured": false
+  },
+  "daughter/08.avif": {
+    "title": "Drawing 08",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 08 of 10",
+    "sortOrder": 8,
+    "featured": true
+  },
+  "daughter/09.avif": {
+    "title": "Drawing 09",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 09 of 10",
+    "sortOrder": 9,
+    "featured": true
+  },
+  "daughter/10.avif": {
+    "title": "Drawing 10",
+    "medium": "Procreate · iPad",
+    "date": "2026",
+    "note": "2026 · drawing 10 of 10",
+    "sortOrder": 10,
+    "featured": true
   }
 }

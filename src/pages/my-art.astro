@@ -1,0 +1,168 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/my-art.css';
+import {daughterArt,daughterArtTags,publishedDaughterArt} from '../data/daughter-art.mjs';
+
+const base=import.meta.env.BASE_URL;
+const publicItems=publishedDaughterArt;
+const selectedCount=daughterArt.length;
+---
+
+<Base lang="en" title="My Little Art Space" description="A small personal gallery of drawings made in Procreate on iPad.">
+ <div class="site-shell my-art-shell">
+  <header class="my-art-hero">
+   <span class="eyebrow">MY LITTLE ART SPACE</span>
+   <h1 class="serif">Things I felt like drawing.</h1>
+   <p>No scores. No perfect lines. Just characters, expressions and little ideas worth keeping.</p>
+   <div class="my-art-meta"><span>{selectedCount} drawings selected</span><span>Made in Procreate on iPad</span></div>
+  </header>
+
+  <section class="my-art-showcase" aria-labelledby="my-art-showcase-title">
+   <div class="my-art-showcase-copy">
+    <span class="eyebrow">A DRAWING FOR TODAY</span>
+    <h2 id="my-art-showcase-title" class="serif">Pick a tag and wander.</h2>
+    <p>The slideshow follows the same filter as the gallery, so one day it can become a quiet way to look through portraits, poses, hair or expressions over time.</p>
+    <div class="my-art-filters" data-art-filters aria-label="Filter drawings">
+     <button type="button" data-art-filter="all" aria-pressed="true">All</button>
+     {daughterArtTags.map(tag=><button type="button" data-art-filter={tag} aria-pressed="false">{tag}</button>)}
+    </div>
+   </div>
+
+   <div class="my-art-stage" data-art-stage>
+    {publicItems.length>0 ?
+     <figure class="my-art-slide" data-art-slide>
+      <a data-art-link href={base+publicItems[0].src} target="_blank" rel="noopener">
+       <img data-art-image src={base+publicItems[0].src} alt={publicItems[0].title}/>
+      </a>
+      <figcaption>
+       <div><span data-art-counter>01 / {String(publicItems.length).padStart(2,'0')}</span><strong data-art-title>{publicItems[0].title}</strong></div>
+       <span data-art-date>{publicItems[0].date||''}</span>
+      </figcaption>
+     </figure>
+     :
+     <div class="my-art-awaiting">
+      <span aria-hidden="true">✦</span>
+      <strong>The first ten drawings are selected.</strong>
+      <p>The page structure is ready. Original image files will be connected before this page is published. Approximate dates or order will be added when available.</p>
+     </div>}
+    <div class="my-art-controls" hidden={publicItems.length<2}>
+     <button type="button" data-art-prev aria-label="Previous drawing">←</button>
+     <button type="button" data-art-pause aria-pressed="false">Pause</button>
+     <button type="button" data-art-next aria-label="Next drawing">→</button>
+    </div>
+   </div>
+  </section>
+
+  <section class="my-art-gallery-section" aria-labelledby="my-art-gallery-title">
+   <div class="my-art-section-heading">
+    <div><span class="eyebrow">THE GALLERY</span><h2 id="my-art-gallery-title" class="serif">A little shelf of drawings.</h2></div>
+    <label class="my-art-sort">Order
+     <select data-art-sort>
+      <option value="newest">Newest first</option>
+      <option value="oldest">Oldest first</option>
+     </select>
+    </label>
+   </div>
+
+   <div class="my-art-grid" data-art-grid>
+    {daughterArt.map(item=>
+     <article class={"my-art-card"+(!item.src?" awaiting-image":"")} data-art-card data-tags={item.tags.join('|')} data-order={item.sortOrder??''} data-date={item.date} data-legacy={item.legacyId}>
+      {item.src ?
+       <a class="my-art-card-image" href={base+item.src} target="_blank" rel="noopener"><img src={base+item.src} alt={item.title} loading="lazy"/></a>
+       :
+       <div class="my-art-card-placeholder" aria-label={'Artwork '+item.legacyId+' image pending'}><span>ART {item.legacyId}</span><small>image ready to connect</small></div>}
+      <div class="my-art-card-copy">
+       <span class="my-art-card-number">Artwork {item.legacyId}</span>
+       <h3>{item.title}</h3>
+       <div class="my-art-tags">{item.tags.map(tag=><span>{tag}</span>)}</div>
+       {item.date&&<time>{item.date}</time>}
+      </div>
+     </article>
+    )}
+   </div>
+   <p class="my-art-empty" data-art-empty hidden>No drawings match this tag yet.</p>
+  </section>
+
+  <aside class="my-art-note">
+   <strong>For later, not for now.</strong>
+   <p>Dates or ordering plus tags are stored so the same gallery can eventually show “Portraits through time” or “Hair through time” without turning drawing into a score or report card.</p>
+  </aside>
+ </div>
+
+ <script define:vars={{items:publicItems,base}}>
+  const filterButtons=[...document.querySelectorAll('[data-art-filter]')];
+  const cards=[...document.querySelectorAll('[data-art-card]')];
+  const empty=document.querySelector('[data-art-empty]');
+  const sort=document.querySelector('[data-art-sort]');
+  const grid=document.querySelector('[data-art-grid]');
+  const image=document.querySelector('[data-art-image]');
+  const link=document.querySelector('[data-art-link]');
+  const title=document.querySelector('[data-art-title]');
+  const counter=document.querySelector('[data-art-counter]');
+  const date=document.querySelector('[data-art-date]');
+  const prev=document.querySelector('[data-art-prev]');
+  const next=document.querySelector('[data-art-next]');
+  const pause=document.querySelector('[data-art-pause]');
+
+  let active='all',index=0,paused=false,timer=null;
+  const matches=item=>active==='all'||item.tags?.includes(active);
+  const filteredItems=()=>items.filter(matches);
+
+  const renderSlide=()=>{
+   const list=filteredItems();
+   if(!list.length||!image||!link||!title||!counter||!date)return;
+   index=((index%list.length)+list.length)%list.length;
+   const item=list[index];
+   image.src=base+item.src;
+   image.alt=item.title;
+   link.href=base+item.src;
+   title.textContent=item.title;
+   date.textContent=item.date||'';
+   counter.textContent=String(index+1).padStart(2,'0')+' / '+String(list.length).padStart(2,'0');
+  };
+
+  const restart=()=>{
+   if(timer)window.clearInterval(timer);
+   if(paused||filteredItems().length<2||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+   timer=window.setInterval(()=>{index++;renderSlide();},5000);
+  };
+
+  const applyFilter=value=>{
+   active=value;index=0;
+   for(const button of filterButtons)button.setAttribute('aria-pressed',String(button.dataset.artFilter===value));
+   let visible=0;
+   for(const card of cards){
+    const tags=(card.dataset.tags||'').split('|');
+    const show=value==='all'||tags.includes(value);
+    card.hidden=!show;if(show)visible++;
+   }
+   if(empty)empty.hidden=visible!==0;
+   renderSlide();restart();
+  };
+
+  const sortCards=()=>{
+   if(!grid||!sort)return;
+   const direction=sort.value==='oldest'?1:-1;
+   const ordered=[...cards].sort((a,b)=>{
+    const ao=Number(a.dataset.order||0),bo=Number(b.dataset.order||0);
+    if(ao&&bo)return (ao-bo)*direction;
+    const ad=a.dataset.date||'',bd=b.dataset.date||'';
+    if(ad&&bd)return ad.localeCompare(bd)*direction;
+    return Number(a.dataset.legacy||0)-Number(b.dataset.legacy||0);
+   });
+   for(const card of ordered)grid.append(card);
+  };
+
+  for(const button of filterButtons)button.addEventListener('click',()=>applyFilter(button.dataset.artFilter||'all'));
+  prev?.addEventListener('click',()=>{index--;renderSlide();restart();});
+  next?.addEventListener('click',()=>{index++;renderSlide();restart();});
+  pause?.addEventListener('click',()=>{
+   paused=!paused;
+   pause.setAttribute('aria-pressed',String(paused));
+   pause.textContent=paused?'Play':'Pause';
+   restart();
+  });
+  sort?.addEventListener('change',sortCards);
+  sortCards();restart();
+ </script>
+</Base>
