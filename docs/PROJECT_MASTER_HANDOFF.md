@@ -416,10 +416,20 @@ Owner decision and production release on 2026-10-01:
 - selector groups are **G-Art Showcase** and **From G-Art Journey**
 - PR #54 merged to `main` as production commit `027da7d994ef4e47609ee6855416846b58f63d42`
 - production Pages workflow **#214 PASS** (build + deploy)
-- remaining QA: owner checks the new **Explore Art** and **My Art · 2026** selector options on desktop/iPad
+- owner visual QA on 2026-10-01: **PASS on desktop and iPad** for the new Explore Art / My Art slideshow topics
+- deferred visual improvement: the five original G-Art Showcase images are functional but not yet visually strong enough; replacement is tracked in `docs/PROJECT_BACKLOG.md` and should wait for genuinely better imagery rather than a rushed swap
 
 
-## 13. Handoff update protocol
+## 13. Deferred-work backlog
+
+Durable deferred tasks live in `docs/PROJECT_BACKLOG.md`.
+
+Current notable backlog:
+- replace the five original G-Art Showcase hero image sets when sufficiently strong imagery exists
+- if suitable future content does not naturally supply enough replacements, create a dedicated polished G-Art Showcase image library
+- resume Reference Library image production when Learn to Draw becomes active again
+
+## 14. Handoff update protocol
 
 Whenever a future decision changes the project:
 - update the relevant specialist document if needed
