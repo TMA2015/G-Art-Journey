@@ -1,6 +1,6 @@
 # Landscape Drawing — production plan
 
-Status: **Lesson 1 owner-approved; Lessons 2–5 layout locked before generation**
+Status: **COMPLETE — all 5 Landscape lessons owner-approved and staged for website release**
 
 ## 1. Category role
 
@@ -205,3 +205,21 @@ Recovery rule:
 - generation brief must mention only that lesson's 4 locked zones
 - if unrelated categories/lessons appear, reject immediately and stop
 - do not keep retrying from the same broad context
+
+
+## 11. Completion checkpoint — 2026-10-01
+
+Owner visual QA: **PASS — 5/5 Landscape infographics approved**.
+
+Approved set:
+1. Build Depth with Three Layers
+2. Trees, Rocks & Clouds as Big Shapes
+3. Water & Reflections
+4. Draw a Street That Feels Deep
+5. Compose a Complete Landscape
+
+Release rule:
+- preserve each approved image unchanged
+- preserve the stylized Landscape series logo already embedded in the upper-left
+- do not overlay the canonical site logo
+- use wide poster cards with contain behavior; no crop
