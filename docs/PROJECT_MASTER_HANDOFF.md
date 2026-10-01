@@ -532,10 +532,17 @@ Release rules:
 - retain and upgrade the academically useful `shade-a-pencil-portrait` and `street-with-depth` routes
 - `landscape-depth` retired note now redirects to `landscape-depth-layers`
 
-Release branch:
-- `feature/pencil-landscape-guides-20261001`
-- 11 approved WebP assets added under `public/infographics/pencil/` and `public/infographics/landscape/`
-- next gate: CI + browser QA, then merge to production
+Production release:
+- PR #58 merged to `main`
+- production commit: `e9463e6898a5b7a9b36500aabe4ece3e332192ff`
+- Pages workflow **#248 PASS**
+- build, guide-distinctness audit, both-language verification, image-budget audit and Pages deploy all succeeded
+- **11 approved WebP lesson posters are live**
+- Pencil Art: 6/6 live
+- Landscape Drawing: 5/5 live
+- embedded stylized series logos were preserved unchanged; no canonical website logo was overlaid
+- wide catalog cards use contain behavior and the lesson pages preserve natural poster aspect ratio
+- remaining gate: owner visual QA on desktop/iPad
 
 ## 15. Handoff update protocol
 
