@@ -395,8 +395,7 @@ Current staging implementation:
 - page: `src/pages/my-art.astro`
 - metadata: `src/data/daughter-art.mjs`
 - plan: `docs/DAUGHTER_GALLERY_V1.md`
-- previous-chat artwork can be visually audited, but raw source bytes are not exportable into the current GitHub tool session; image publication therefore remains blocked until the ten source files are available again as raw uploads
-- the owner supplied the ten-image RAR; optimized web copies are now connected on the feature branch
+- the owner supplied the ten-image RAR; optimized AVIF web copies are connected under `public/artworks/daughter/01.avif` → `10.avif`
 - PR #53 merged to `main` on 2026-10-01 as production commit `2d9aabc3914902adb8165028cbf56eef39e7d250`
 - production Pages workflow **#211 PASS** (build + deploy)
 - My Art V1 is now live at `/G-Art-Journey/my-art/`
@@ -405,6 +404,20 @@ Current staging implementation:
 Reference Library status:
 - foundation remains preserved in Draft PR #52
 - its image-production work is **paused**, not cancelled
+
+### Home slideshow topic expansion
+
+Owner decision and production release on 2026-10-01:
+- keep the five original G-Art Showcase topics and their daily rotation
+- add **Explore Art** as an explicit slideshow topic using representative material studies and historical works already present in Explore Art
+- add **My Art · 2026** as an explicit slideshow topic using all ten learner drawings in confirmed order **01 → 10**
+- historical and learner artwork use `contain` in the hero so portrait/square works are not cropped
+- clicking the slideshow image opens the specific relevant Explore/My Art destination; the CTA stays at the topic-level destination
+- selector groups are **G-Art Showcase** and **From G-Art Journey**
+- PR #54 merged to `main` as production commit `027da7d994ef4e47609ee6855416846b58f63d42`
+- production Pages workflow **#214 PASS** (build + deploy)
+- remaining QA: owner checks the new **Explore Art** and **My Art · 2026** selector options on desktop/iPad
+
 
 ## 13. Handoff update protocol
 
