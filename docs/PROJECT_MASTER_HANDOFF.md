@@ -1337,3 +1337,61 @@ Architecture:
 
 This closes the intended v1 self-learning loop:
 **Start Here → Path → Lesson → Suggested next lesson / Back to path**.
+
+
+### Lesson-level continuity production release — 2026-10-03
+
+The self-learning loop is now live.
+
+Release:
+- PR **#72 merged**
+- PR CI **#331 PASS**
+- production merge commit: `650b0ec53bc9e94d36a35bd2582985ebb3ce95f5`
+- Pages workflow **#332 PASS**
+- full gate: **103/103 tests PASS**
+- content consistency: 53 active guides / 6 Character topics / 2 Digital topics / 23 reference sheets
+- distinctness: 53 guides / 0 high-overlap pairs
+- production build: 214 pages
+- English-first verification: 66 canonical routes + legacy aliases
+
+Live behavior:
+- core standalone lessons show current Learning Path / stage and one next suggested lesson when a direct core next step exists
+- end-of-core lessons return to the path / Choose a path without inventing a next lesson
+- Explore more / Support lessons show where they fit but do not force progression
+- Digital Art keeps its own Previous / Next navigation
+- continuity is derived from Learning Path metadata; no per-lesson hard-coded route map
+
+Self-learning loop:
+**Start Here → Path → Lesson → Suggested next / Back to path**.
+
+### Full learning-material quality audit — 2026-10-03
+
+Owner asked to expand the project only after completing the learning routes and rechecking the existing learning-material quality.
+
+Durable audit:
+- `docs/LEARNING_MATERIAL_QUALITY_AUDIT_20261003.md`
+
+Current quality baseline:
+- 53 active guides; every active guide has WebP artwork
+- no active `artPending`
+- 23 Reference Library sheets
+- structural copy gate clean
+- current blocking distinctness gate clean
+
+Key findings:
+- Drawing Basics, Draw People, Character Art, Digital Art, Draw Places and Color Basics are structurally sound
+- Character Art should not receive another topic now
+- Digital 5+5 is productive repetition, but its denser poster family is not the visual benchmark for future assets
+- owner-approved Gesture & Motion remains usable but is not the ideal visual benchmark
+- Watercolor has one true redundancy: Soft Sky / Cloud Washes vs Sky Wash Practice & Variations
+- quality correction staged: keep both lessons, but move Sky Wash Practice & Variations from core to optional Practice
+- six Human Drawing posters lack explicit width/height metadata; exact dimensions must be verified before patching, never guessed
+- strongest next instructional expansion: **DP-01 Built Spaces** — two-point boxes/corners then simple room
+
+Expansion spec:
+- `docs/DP01_BUILT_SPACES_PLAN.md`
+
+DP-01 rule:
+- produce Lesson 1 pilot first
+- do not create Lesson 2 until Lesson 1 teaching/visual QA passes
+- initial placement is Draw Places Explore more, not mandatory core

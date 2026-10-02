@@ -97,10 +97,12 @@ export const learningPaths=[
    {kind:'guide',slug:'watercolor-wet-on-wet-dry',label:'Core'},
    {kind:'guide',slug:'watercolor-leaves-botanical',label:'Core'},
    {kind:'guide',slug:'watercolor-soft-sky-cloud-washes',label:'Core'},
-   {kind:'guide',slug:'watercolor-sky-wash-practice',label:'Core'},
    {kind:'guide',slug:'watercolor-small-landscape',label:'Core'}
   ],
-  explore:['simple-color-harmony']
+  exploreGroups:[
+   {id:'practice',label:'Practice',guides:['watercolor-sky-wash-practice']},
+   {id:'color-planning',label:'Color planning',guides:['simple-color-harmony']}
+  ]
  },
  {
   id:'digital-art-basics',
