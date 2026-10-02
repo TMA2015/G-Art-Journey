@@ -1,0 +1,14 @@
+.learning-continuity{margin:34px 0 10px;padding:clamp(22px,4vw,34px);background:#fffaf6;border:1px solid #eadde2;border-radius:20px}
+.learning-continuity h2{margin:7px 0 9px;font-size:clamp(25px,3.4vw,38px)}
+.learning-continuity>p{margin:0;color:#6f646a;line-height:1.7;max-width:760px}
+.learning-continuity-meta{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0 0}
+.learning-continuity-meta a,.learning-continuity-meta span{display:inline-flex;align-items:center;padding:8px 11px;border:1px solid #e1d4da;border-radius:999px;background:#fff;color:#6a5562;font-size:11px;font-weight:750;text-decoration:none}
+.learning-continuity-actions{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(210px,.8fr);gap:14px;margin-top:22px}
+.learning-continuity-card{display:block;padding:18px 20px;border:1px solid #e4d7dd;border-radius:15px;background:#fff;color:inherit;text-decoration:none}
+.learning-continuity-card:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(74,52,65,.07)}
+.learning-continuity-card span{display:block;margin-bottom:6px;font-size:10px;letter-spacing:.08em;font-weight:800;color:#8b6079;text-transform:uppercase}
+.learning-continuity-card strong{display:block;font-size:17px;line-height:1.3;color:#3f2e38}
+.learning-continuity-card p{margin:7px 0 0;font-size:13px;line-height:1.55;color:#756a70}
+.learning-continuity-optional{margin-top:17px;padding-top:15px;border-top:1px solid #eadfe4}
+.learning-continuity-optional p{margin:0 0 9px;color:#70656b;font-size:13px;line-height:1.6}
+@media(max-width:720px){.learning-continuity-actions{grid-template-columns:1fr}.learning-continuity{padding:20px 18px}}
