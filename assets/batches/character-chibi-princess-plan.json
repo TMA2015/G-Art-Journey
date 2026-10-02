@@ -1,6 +1,6 @@
 {
   "packet_id": "CHARACTER-EXPANSION-CHIBI-PRINCESS-20261002",
-  "status": "OWNER_APPROVED_PLAN",
+  "status": "CHIBI_3_OF_3_APPROVED_PRINCESS_NOT_STARTED",
   "public_release": false,
   "category": "character",
   "hierarchy": "Category > Topic > Lesson",
@@ -25,23 +25,51 @@
           "slug": "chibi-proportions",
           "title": "Draw Cute Chibi Proportions",
           "primary_skill": "intentional 2–3 head chibi proportion and readable silhouette",
-          "status": "PLANNED"
+          "status": "OWNER_APPROVED",
+          "approved_source": {
+            "slug": "chibi-proportions",
+            "source_name": "01-chibi-proportions.png",
+            "width": 1055,
+            "height": 1491,
+            "bytes": 2172759,
+            "sha256": "9a6d05f1a504804f5d519202acfb671d3a7ac9cf0399444c62206fb4bebef515",
+            "library_path": "/G-Art Journey/Approved/Chibi/01-chibi-proportions.png"
+          }
         },
         {
           "order": 2,
           "slug": "chibi-faces-expressions",
           "title": "Chibi Faces & Expressions",
           "primary_skill": "coordinated brows, eyes, mouth and cheeks for readable chibi emotion",
-          "status": "PLANNED"
+          "status": "OWNER_APPROVED",
+          "approved_source": {
+            "slug": "chibi-faces-expressions",
+            "source_name": "02-chibi-faces-expressions.png",
+            "width": 1055,
+            "height": 1491,
+            "bytes": 2461341,
+            "sha256": "6ed025b4b16ead58f958b5028633b5c4808d908d0e6617307a431167e2186c47",
+            "library_path": "/G-Art Journey/Approved/Chibi/02-chibi-faces-expressions.png"
+          }
         },
         {
           "order": 3,
           "slug": "chibi-poses-outfits",
           "title": "Chibi Poses & Outfits",
           "primary_skill": "simple gesture, balance and outfit silhouette",
-          "status": "PLANNED"
+          "status": "OWNER_APPROVED",
+          "approved_source": {
+            "slug": "chibi-poses-outfits",
+            "source_name": "03-chibi-poses-outfits.png",
+            "width": 1055,
+            "height": 1491,
+            "bytes": 2412006,
+            "sha256": "f206ed22eabe7a594cee2997af1a37144bcb7a29b311391ef3b1c0f8a6820bb4",
+            "library_path": "/G-Art Journey/Approved/Chibi/03-chibi-poses-outfits.png"
+          }
         }
-      ]
+      ],
+      "topic_status": "OWNER_APPROVED_3_OF_3"
     },
     {
       "id": "princess",
@@ -108,5 +136,11 @@
     ],
     "no_mass_generation_before_pilot_approval": true
   },
-  "total_planned_posters": 6
+  "total_planned_posters": 6,
+  "approval_checkpoint": {
+    "date": "2026-10-02",
+    "chibi_topic_status": "OWNER_APPROVED_3_OF_3",
+    "next_pilot": "fairy-tale-princess-design",
+    "note": "Preserve the approved Chibi visual family. Do not regenerate or substitute these three source artworks unless the owner explicitly requests a revision."
+  }
 }
