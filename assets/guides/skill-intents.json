@@ -624,6 +624,90 @@
         "water-ground-details",
         "dark-focal-accents"
       ]
+    },
+    {
+      "slug": "chibi-proportions",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "chibi-head-body-ratio-design",
+      "visibleEvidence": "intentional 2\u20133 head chibi proportion and readable silhouette",
+      "stageFocus": [
+        "compare-chibi-head-ratios",
+        "chibi-body-masses",
+        "short-limb-joints",
+        "simplified-hands-feet",
+        "chibi-silhouette-choice"
+      ]
+    },
+    {
+      "slug": "chibi-faces-expressions",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "chibi-coordinated-emotion-design",
+      "visibleEvidence": "coordinated brows, eyes, mouth and cheeks for readable chibi emotion",
+      "stageFocus": [
+        "shared-chibi-face",
+        "clear-chibi-eye-style",
+        "six-emotion-comparison",
+        "coordinated-brows-lids-mouth",
+        "chibi-identity-continuity"
+      ]
+    },
+    {
+      "slug": "chibi-poses-outfits",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "chibi-gesture-outfit-silhouette",
+      "visibleEvidence": "simple gesture, balance and outfit silhouette",
+      "stageFocus": [
+        "short-chibi-gesture",
+        "four-chibi-pose-studies",
+        "outfit-follows-body",
+        "single-helpful-prop",
+        "finished-chibi-silhouette"
+      ]
+    },
+    {
+      "slug": "fairy-tale-princess-design",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "original-princess-motif-identity",
+      "visibleEvidence": "original princess identity through face, hair silhouette, dress silhouette and motif",
+      "stageFocus": [
+        "graceful-head-body",
+        "princess-hair-silhouette",
+        "princess-dress-silhouette",
+        "original-princess-motif",
+        "coherent-princess-design"
+      ]
+    },
+    {
+      "slug": "princess-hair-dress-details",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "princess-hair-dress-detail-grouping",
+      "visibleEvidence": "hair masses, dress construction, folds and restrained royal details",
+      "stageFocus": [
+        "flowing-hair-masses",
+        "bodice-skirt-sleeve-shapes",
+        "gravity-led-dress-folds",
+        "restrained-royal-accents",
+        "remove-extra-decoration"
+      ]
+    },
+    {
+      "slug": "graceful-princess-poses",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "princess-balanced-graceful-gesture",
+      "visibleEvidence": "elegant gesture, hand placement, balance and skirt movement",
+      "stageFocus": [
+        "princess-supporting-leg",
+        "graceful-pose-comparison",
+        "gesture-led-hands",
+        "hair-skirt-motion",
+        "calm-full-body-silhouette"
+      ]
     }
   ]
 }

@@ -43,7 +43,9 @@ export const characterTopics=[
   eyebrow:'CHARACTER ART',
   description:'Shape language, expressive faces and lively action.',
   image:'infographics/character/cartoon-shapes.webp'
- }
+ },
+ {id:'chibi',label:'Chibi Characters',eyebrow:'CHARACTER ART',description:'Cute proportions, clear expressions and playful poses with simple outfits.',image:'infographics/character/chibi-proportions.webp'},
+ {id:'princess',label:'Fairy-Tale Princess',eyebrow:'CHARACTER ART',description:'Original princess design, elegant hair and dress details, and graceful balanced poses.',image:'infographics/character/fairy-tale-princess-design.webp'}
 ];
 
 export const digitalSeries={

@@ -95,5 +95,53 @@ export const characterAssets = [
     "width": 1122,
     "height": 1402,
     "sha256": "fd96a507a3419e3949d12c1f50adb4bb6267f7343a446e0e94a4499d611547f7"
-  }
+  },
+{
+  "slug": "chibi-proportions",
+  "path": "public/infographics/character/chibi-proportions.webp",
+  "bytes": 269402,
+  "width": 1055,
+  "height": 1491,
+  "sha256": "8a12cae79944b27e0f20e5a611f3a6b9bd7fee8b9b339f609e112baa17ee263e"
+},
+{
+  "slug": "chibi-faces-expressions",
+  "path": "public/infographics/character/chibi-faces-expressions.webp",
+  "bytes": 355342,
+  "width": 1055,
+  "height": 1491,
+  "sha256": "eaac7702d37d43031add236ce604235d6d18be663ca934b51567d3689ae748dd"
+},
+{
+  "slug": "chibi-poses-outfits",
+  "path": "public/infographics/character/chibi-poses-outfits.webp",
+  "bytes": 350900,
+  "width": 1055,
+  "height": 1491,
+  "sha256": "3aeb78b0b8df25ced8069a4fc7518a77ffa128419a82e4111e5daa244fb0a688"
+},
+{
+  "slug": "fairy-tale-princess-design",
+  "path": "public/infographics/character/fairy-tale-princess-design.webp",
+  "bytes": 399164,
+  "width": 1055,
+  "height": 1491,
+  "sha256": "abb74aea8b45d8ece4acb07ffd796370870846d35ca5cd9dae2731f4e31c7805"
+},
+{
+  "slug": "princess-hair-dress-details",
+  "path": "public/infographics/character/princess-hair-dress-details.webp",
+  "bytes": 449068,
+  "width": 1055,
+  "height": 1491,
+  "sha256": "d95bd2500ca73d5ebc70369898b49e40678e43d7e09ab13572876fb6e0b83e29"
+},
+{
+  "slug": "graceful-princess-poses",
+  "path": "public/infographics/character/graceful-princess-poses.webp",
+  "bytes": 388914,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a22a9bf8ec4d28f1ca34258de63ae73ac3f7fc06c857488f7636341dfb266193"
+}
 ];
