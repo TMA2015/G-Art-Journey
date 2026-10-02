@@ -29,7 +29,7 @@ for(const id of ['drawing-basics','draw-people','create-characters','draw-places
 assert.match(startHere,/character-styles\/chibi\//);
 assert.match(startHere,/guide\/digital-color-layers\/01-layer-workflow\//);
 for(const label of ['STAGE 1','STAGE 2','STAGE 3','FACE','HEAD','FIGURE','MOTION','FINISH THE FIGURE'])assert.ok(startHere.includes(label));
-for(const label of ['POSE','ANATOMY','HAIR','CLOTHING','COLOR'])assert.ok(startHere.includes(label));
+for(const label of ['Pose','Anatomy','Hair','Clothing','Color'])assert.ok(startHere.includes(label));
 assert.ok(startHere.indexOf('Draw Gesture &amp; Motion from Simple Lines')<startHere.indexOf('Draw a Standing Figure Step by Step'));
 assert.match(startHere,/Face details/);
 assert.match(startHere,/Figure extras/);
