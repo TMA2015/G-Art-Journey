@@ -134,3 +134,14 @@ A visually attractive figure still fails if one of these errors affects the teac
 ### Pencil/graphite exception to the color identity
 
 G-Art Journey keeps its typography, spacing, warm paper and gentle editorial character, but graphite lessons should not color the drawing itself. Use monochrome graphite/value studies, hatching, edges and paper texture; reserve pastel accents for headings, callouts or small navigation marks only. The medium should remain visibly pencil-first.
+
+
+### Website readability gate for teaching posters
+
+An approved teaching poster must work in the learning interface, not only as a full-resolution source file.
+
+- The main lesson page should display the poster large enough that the teaching sequence and ordinary instructional text are comfortably readable on desktop and iPad.
+- **View large** is an optional close-inspection action, not a workaround for an undersized default presentation.
+- When several posters form one topic or series, show a lesson-selection shelf first and open each poster on its own lesson page instead of shrinking many text-heavy posters into one multi-column wall.
+- Preserve the approved image composition and aspect ratio with contain behavior; solve normal readability problems through information architecture and layout before requesting artwork regeneration.
+- If a poster remains difficult to read at a comfortable single-lesson width, then review the poster itself for excessive text density, weak hierarchy or examples that are too small.
