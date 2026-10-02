@@ -49,10 +49,12 @@ test('SG-01 Learning Path placement preserves core and optional roles',()=>{
  const core=people.steps.filter(x=>x.kind==='guide').map(x=>x.slug);
  assert.equal(core.indexOf('gesture-motion-basics'),core.indexOf('figure-proportions')+1);
  assert.equal(core.indexOf('standing-figure'),core.indexOf('gesture-motion-basics')+1);
- assert.ok(people.explore.includes('feet-simple-forms'));
+ const peopleExplore=(people.exploreGroups||[]).flatMap(group=>group.guides);
+ assert.ok(peopleExplore.includes('feet-simple-forms'));
 
  const character=learningPaths.find(x=>x.id==='create-characters');
- for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(character.supportGuides.includes(slug));
+ const characterSupport=(character.supportGroups||[]).flatMap(group=>group.guides);
+ for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(characterSupport.includes(slug));
 
  assert.ok(learningPaths.find(x=>x.id==='watercolor-basics').explore.includes('simple-color-harmony'));
  assert.ok(learningPaths.find(x=>x.id==='digital-art-basics').explore.includes('simple-color-harmony'));
