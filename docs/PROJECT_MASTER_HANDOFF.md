@@ -774,3 +774,33 @@ Durable sources:
 - `docs/ILLUSTRATION_STANDARD.md`
 
 Current production status: **spec locked; artwork not yet produced or published**.
+
+
+### Chibi Characters artwork complete — 2026-10-02
+
+Owner approved the complete **Chibi Characters** topic artwork: **3/3 posters APPROVED**.
+
+Approved lessons:
+1. **Draw Cute Chibi Proportions**
+2. **Chibi Faces & Expressions**
+3. **Chibi Poses & Outfits**
+
+Locked visual family:
+- soft pastel Character Art treatment derived from the approved Webtoon-like direction
+- warm off-white background, generous whitespace and character-first layout
+- no dense Digital Art-style colored block treatment
+- consistent original brown-haired chibi character family across the topic
+
+Exact source PNG dimensions/hashes and durable Library paths are recorded in:
+- `assets/batches/character-chibi-princess-plan.json`
+- `docs/CHARACTER_CHIBI_PRINCESS_AUTHORING.md`
+
+The three approved source artworks are preserved in the project Library under:
+- `/G-Art Journey/Approved/Chibi/`
+
+Do not regenerate or replace the approved Chibi artwork during integration without explicit owner instruction.
+
+Current next task:
+- **Fairy-Tale Princess Lesson 1 — Design a Fairy-Tale Princess**
+- create this as the single princess visual pilot
+- wait for owner approval before creating Princess Lessons 2–3
