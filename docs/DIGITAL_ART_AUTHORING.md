@@ -168,6 +168,9 @@ Preparation checkpoint:
 - all 10 were converted to WebP with **no resize/crop**, preserving embedded logos and composition
 - dimensions, byte sizes and source/output SHA-256 hashes are recorded in the batch manifest
 - Digital Art skill intents were refined so Set A teaches **layer-role organization** while Set B teaches an **applied face-color layer progression**
+- English-first lesson copy for both existing routes is aligned with the approved five-stage poster sequences
+- draft PR **#60** tracks the controlled integration checkpoint
+- staging CI/build checkpoint: **PASS**
 - binary WebP upload and runtime route switch remain gated together so the site never references missing poster files
 
 Next release gate:
