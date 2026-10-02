@@ -804,3 +804,32 @@ Current next task:
 - **Fairy-Tale Princess Lesson 1 — Design a Fairy-Tale Princess**
 - create this as the single princess visual pilot
 - wait for owner approval before creating Princess Lessons 2–3
+
+
+### Chibi + Fairy-Tale Princess artwork and Reference Library expansion complete — 2026-10-02
+
+Owner approval is now complete for the full next release scope:
+
+**Character Art lessons — 6/6 APPROVED**
+- Chibi Characters: 3/3
+- Fairy-Tale Princess: 3/3
+
+**Reference Library additions — 5/5 APPROVED**
+- Princess Hairstyles & Accessories
+- Princess Dress Library
+- Chibi Clothing Library
+- Chibi Pose & Motion Library
+- Chibi Hair Library
+
+Release architecture:
+- Character Art gains two topic cards: **Chibi Characters** and **Fairy-Tale Princess**
+- each topic opens exactly three lesson cards under the existing Category → Topic → Lesson hierarchy
+- Reference Library keeps core collections Poses / Motion / Hair / Clothing
+- add style filters **Chibi** and **Fairy-Tale Princess**
+- Princess hair/accessories and Chibi hair go under Hair
+- Princess dresses and Chibi clothing go under Clothing
+- Chibi pose/motion goes under Motion
+
+Approved originals are preserved in the project Library. Exact source hashes/dimensions are recorded in `assets/batches/character-chibi-princess-plan.json`.
+
+Next task: controlled integration of **11 exact approved assets** (6 Character Art lesson posters + 5 Reference Library sheets), full tests/audits/build, then Pages deployment and owner desktop/iPad QA. No asset may be regenerated, cropped, resized, rebranded or substituted during integration.
