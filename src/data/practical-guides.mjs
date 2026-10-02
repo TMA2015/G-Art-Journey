@@ -410,7 +410,7 @@ export const practiceGuides = [
  slug:'color-a-face-in-layers',category:'digital',tag:'DIGITAL COLOR',difficulty:'Beginner',time:'20–35 min',
  title:'Color a Face with Simple Layers',
  description:'Take one face from a clean sketch to flat skin, one clear shadow and selected details while keeping every stage easy to edit.',
- image:'showcase/character-2.svg',
+ image:'infographics/digital/face-01-clean-sketch.webp', poster:true, posterWidth:1122, posterHeight:1402, posterGallery:[{"title": "1. Clean Sketch", "image": "infographics/digital/face-01-clean-sketch.webp", "width": 1122, "height": 1402, "alt": "Clean Sketch: approved G-Art Journey digital art layer lesson"}, {"title": "2. Flat Skin Color", "image": "infographics/digital/face-02-flat-skin.webp", "width": 1024, "height": 1536, "alt": "Flat Skin Color: approved G-Art Journey digital art layer lesson"}, {"title": "3. Add One Clear Shadow", "image": "infographics/digital/face-03-shadow.webp", "width": 1024, "height": 1536, "alt": "Add One Clear Shadow: approved G-Art Journey digital art layer lesson"}, {"title": "4. Add Details", "image": "infographics/digital/face-04-details.webp", "width": 1024, "height": 1536, "alt": "Add Details: approved G-Art Journey digital art layer lesson"}, {"title": "5. Check Your Layers", "image": "infographics/digital/face-05-check.webp", "width": 1024, "height": 1536, "alt": "Check Your Layers: approved G-Art Journey digital art layer lesson"}],
  supplies:'Any drawing app with layers and a simple face sketch',
  steps:[
  {title:'Keep a clean sketch layer',body:'Put the sketch on its own top layer and lower the opacity before coloring. Keep the face construction easy to read.'},
