@@ -711,3 +711,27 @@ Staging branch:
 - draft PR: **#61**
 - CI #279: **PASS** after updating hierarchy-aware tests and English legacy aliases
 - production remains unchanged until PR #61 is merged and Pages passes
+
+
+### Guide topic hierarchy production release — 2026-10-02
+
+- PR **#61 merged** after final-head CI **#280 PASS**.
+- Production merge commit: `ee65a4c3f9004e674e96fe336c40937ac4e4159d`.
+- Pages workflow **#281 PASS**; build and deploy jobs both succeeded.
+- Release checks PASS: **87 tests**, guide-distinctness audit, production build, English-first / `/en` legacy-alias verification and image-budget audit.
+- New durable hierarchy is live: **Category → Topic → Lesson** for grouped learning areas.
+- Digital Art:
+  - the two existing topic URLs remain stable
+  - each topic now shows five lesson cards instead of five reduced posters
+  - all ten approved posters have standalone lesson pages with comfortable single-poster width, View large, Save WebP and previous/next lesson navigation
+  - the ten approved WebP assets were not regenerated, cropped, resized or replaced
+- Human Drawing:
+  - landing page now shows **Faces & Head** and **Figure & Pose**
+  - each topic opens a four-lesson shelf
+- Character Art:
+  - landing page now shows **Manga**, **Manhwa / Webtoon**, **Manhua**, **Cartoon / Comics**
+  - each topic opens a three-lesson shelf
+  - Character Face Design Lab remains a separate direct card
+- Main Drawing Guides catalog no longer mixes all Human Drawing / Character Styles lesson cards into the flat list; topic hubs are used instead.
+- Pencil, Landscape, Watercolor and other single-level guide groups remain direct lesson collections.
+- Remaining acceptance: owner visual QA on desktop/iPad for topic-card clarity, lesson selection, Digital poster readability and previous/next navigation.
