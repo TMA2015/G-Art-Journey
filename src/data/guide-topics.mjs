@@ -20,32 +20,32 @@ export const characterTopics=[
   id:'manga',
   label:'Manga',
   eyebrow:'CHARACTER ART',
-  description:'Face design, variations and stylized character proportions.',
+  description:'Expressive faces, style variations and stylized character proportions.',
   image:'infographics/character/manga-face.webp'
  },
  {
   id:'webtoon',
   label:'Manhwa / Webtoon',
   eyebrow:'CHARACTER ART',
-  description:'Everyday character design, soft variation and vertical visual storytelling.',
+  description:'Everyday character design, soft expressions and simple vertical visual storytelling.',
   image:'infographics/character/webtoon-character.webp'
  },
  {
   id:'manhua',
   label:'Manhua',
   eyebrow:'CHARACTER ART',
-  description:'Elegant character design, detail studies and flowing movement rhythm.',
+  description:'Elegant character design, flowing hair and fabric, detail studies and graceful movement.',
   image:'infographics/character/manhua-ink-character.webp'
  },
  {
   id:'cartoon',
   label:'Cartoon / Comics',
   eyebrow:'CHARACTER ART',
-  description:'Shape language, expressive faces and lively action.',
+  description:'Clear shape language, expressive faces and lively action poses.',
   image:'infographics/character/cartoon-shapes.webp'
  },
- {id:'chibi',label:'Chibi Characters',eyebrow:'CHARACTER ART',description:'Cute proportions, clear expressions and playful poses with simple outfits.',image:'infographics/character/chibi-proportions.webp'},
- {id:'princess',label:'Fairy-Tale Princess',eyebrow:'CHARACTER ART',description:'Original princess design, elegant hair and dress details, and graceful balanced poses.',image:'infographics/character/fairy-tale-princess-design.webp'}
+ {id:'chibi',label:'Chibi Characters',eyebrow:'CHARACTER ART',description:'Cute proportions, readable expressions, playful poses and simple outfit design.',image:'infographics/character/chibi-proportions.webp'},
+ {id:'princess',label:'Fairy-Tale Princess',eyebrow:'CHARACTER ART',description:'Original princess design, elegant hair and dress details, and graceful, balanced poses.',image:'infographics/character/fairy-tale-princess-design.webp'}
 ];
 
 export const digitalSeries={

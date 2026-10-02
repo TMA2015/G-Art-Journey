@@ -23,14 +23,14 @@ const showcaseEn={
 };
 const collectionVi={
  pencil:{title:'Vẽ chì',subtitle:'Nét chì',description:'Chân dung, hình người và phong cảnh. Những câu chuyện kể bằng đậm nhạt.'},
- character:{title:'Vẽ nhân vật',subtitle:'Nhân vật',description:'Manga, manhwa, manhua và hoạt hình: nhiều cách tạo nên một nhân vật.'},
+ character:{title:'Vẽ nhân vật',subtitle:'Nhân vật',description:'Manga, manhwa / webtoon, manhua, hoạt hình, chibi và nhân vật công chúa cổ tích: nhiều cách tạo nên một nhân vật nguyên bản.'},
  watercolor:{title:'Màu nước',subtitle:'Màu nước',description:'Lớp màu trong, vệt loang mềm và những khoảnh khắc tự nhiên.'},
  digital:{title:'Vẽ kỹ thuật số',subtitle:'Ứng dụng vẽ',description:'Cọ vẽ, lớp màu, ánh sáng và thế giới trên màn hình.'},
  landscape:{title:'Phong cảnh',subtitle:'Phong cảnh',description:'Núi rừng, sông hồ, phố xá, phối cảnh và những nơi bạn muốn nhớ.'}
 };
 const collectionEn={
  pencil:{title:'Pencil Art',subtitle:'Graphite',description:'Portraits, figures and landscapes. Stories told through light and shade.'},
- character:{title:'Character Art',subtitle:'Characters',description:'Manga, manhwa, manhua and cartoons: many ways to create a character.'},
+ character:{title:'Character Art',subtitle:'Characters',description:'Manga, manhwa / webtoon, manhua, cartoon, chibi and fairy-tale character design: many ways to build an original character.'},
  watercolor:{title:'Watercolor',subtitle:'Watercolor',description:'Transparent washes, gentle blooms and natural little moments.'},
  digital:{title:'Digital Art',subtitle:'Drawing apps',description:'Brushes, layers, light and worlds made on screen.'},
  landscape:{title:'Landscape',subtitle:'Landscape',description:'Mountains, lakes, streets, perspective and places worth remembering.'}

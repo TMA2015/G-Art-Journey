@@ -906,3 +906,23 @@ Correction branch:
 - Reference Library preview now reflects **23 approved sheets** and only names style filters that currently have published assets.
 - README and historical baseline docs were reconciled so old 12-poster / 18-sheet checkpoints are clearly labeled as historical.
 - No artwork, binary asset, route hierarchy or approved lesson content changed.
+
+
+### Learning-copy consistency audit — 2026-10-02
+
+A focused post-expansion content audit reviewed the active Character Art, Human Drawing, Digital Art, Core Drawing, Watercolor and Reference Library copy after the Chibi / Fairy-Tale Princess release.
+
+Findings:
+- no major academic or instructional error was found in the active lesson steps
+- the six new Chibi / Fairy-Tale Princess lessons remain aligned with their approved authoring spec
+- guide-distinctness remains structurally sound; the main issues were wording consistency and stale collection-level descriptions rather than lesson overlap
+- active guide data contains no remaining stale `12 lessons` / four-topic Character Art wording
+
+Copy refinements staged:
+- Character Art collection descriptions now include Manga, Manhwa / Webtoon, Manhua, Cartoon / Comics, Chibi and Fairy-Tale Princess
+- Character Art topic descriptions were polished for simpler, more natural English
+- Character Styles intro now distinguishes broad visual families from design themes without presenting them as fixed rules
+- new Chibi / Princess `Try it` prompts use consistent sentence casing
+- Chibi proportion wording was simplified from “2-head / 2.5-head / 3-head” to “roughly 2, 2.5 and 3 heads tall”
+
+No artwork, route, lesson count, teaching objective or approved poster is changed by this pass.

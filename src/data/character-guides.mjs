@@ -518,12 +518,12 @@ export const characterGuides = [
 {
   "slug": "chibi-proportions",
   "title": "Draw Cute Chibi Proportions",
-  "description": "Understand how intentional head-to-body ratios create a cute chibi silhouette without losing balance.",
+  "description": "Learn how head-to-body ratios create cute chibi silhouettes while keeping the figure balanced.",
   "time": "25\u201335 min",
   "steps": [
     {
       "title": "Compare proportions",
-      "body": "Compare roughly 2-head, 2.5-head and 3-head chibi proportions."
+      "body": "Compare chibi figures that are roughly 2, 2.5 and 3 heads tall."
     },
     {
       "title": "Build the big shapes",
@@ -542,7 +542,7 @@ export const characterGuides = [
       "body": "Compare silhouettes and choose a proportion for an original character."
     }
   ],
-  "tryIt": "redraw one simple character at two different chibi ratios.",
+  "tryIt": "Redraw one simple character at two different chibi ratios.",
   "remember": "A large head and short body are deliberate design choices. Keep the joints and standing balance clear.",
   "category": "character",
   "tag": "CHARACTER ART",
@@ -585,7 +585,7 @@ export const characterGuides = [
       "body": "Keep the same character recognizable across the expression set."
     }
   ],
-  "tryIt": "draw three emotions using the same face shape and hairstyle.",
+  "tryIt": "Draw three emotions using the same face shape and hairstyle.",
   "remember": "Keep the same face and hair while changing brows, lids and mouth together.",
   "category": "character",
   "tag": "CHARACTER ART",
@@ -628,7 +628,7 @@ export const characterGuides = [
       "body": "Finish one original chibi with a clean silhouette."
     }
   ],
-  "tryIt": "keep one chibi proportion and design two different outfits and poses.",
+  "tryIt": "Keep one chibi proportion and design two different outfits and poses.",
   "remember": "Keep the pose readable before adding clothing and small props.",
   "category": "character",
   "tag": "CHARACTER ART",
@@ -671,7 +671,7 @@ export const characterGuides = [
       "body": "Refine one finished original princess without copying a recognizable franchise character."
     }
   ],
-  "tryIt": "make two princess designs by changing only hair silhouette, dress shape and motif.",
+  "tryIt": "Make two princess designs by changing only hair silhouette, dress shape and motif.",
   "remember": "Use your own hair, dress and motif choices to create an original fairy-tale character.",
   "category": "character",
   "tag": "CHARACTER ART",
@@ -714,7 +714,7 @@ export const characterGuides = [
       "body": "Remove unnecessary decoration so the character stays readable."
     }
   ],
-  "tryIt": "use the same base figure for two different hair-and-dress combinations.",
+  "tryIt": "Use the same base figure for two different hair-and-dress combinations.",
   "remember": "Big hair and dress shapes come before strands, folds and decoration.",
   "category": "character",
   "tag": "CHARACTER ART",
@@ -757,7 +757,7 @@ export const characterGuides = [
       "body": "Finish one pose with a clear silhouette and calm story mood."
     }
   ],
-  "tryIt": "draw one princess pose twice with different arm and skirt movement.",
+  "tryIt": "Draw one princess pose twice with different arm and skirt movement.",
   "remember": "Find the supporting leg first, then let the hands, hair and skirt follow the gesture.",
   "category": "character",
   "tag": "CHARACTER ART",
