@@ -1,0 +1,64 @@
+{
+  "packetId": "GART-SG01-RELEASE-20261003",
+  "status": "INTEGRATED_LOCAL_RELEASE_GATE_PASS_AWAITING_FINAL_PR_CI",
+  "assetCount": 3,
+  "assets": [
+    {
+      "slug": "gesture-motion-basics",
+      "sourceFile": "gesture-motion-basics.png",
+      "targetPath": "public/infographics/core/gesture-motion-basics.webp",
+      "kind": "lesson",
+      "category": "figure",
+      "width": 1086,
+      "height": 1448,
+      "sourceBytes": 2034380,
+      "sourceSha256": "50023553c0064c2133feb8a3818e283125c00724d2d65b589941417fe75bd3ef",
+      "webpBytes": 170600,
+      "webpSha256": "fe82978f2d197082a56e48bcb3fb806e721249dfa561e8b18244bf0d782cbac3",
+      "resize": "none",
+      "crop": "none",
+      "quality": 88
+    },
+    {
+      "slug": "feet-simple-forms",
+      "sourceFile": "feet-simple-forms.png",
+      "targetPath": "public/infographics/core/feet-simple-forms.webp",
+      "kind": "lesson",
+      "category": "figure",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2138312,
+      "sourceSha256": "b57f1fcf0c7cfcc9884915461038ab6530659ef703cc7b590e2555d9ea416388",
+      "webpBytes": 194460,
+      "webpSha256": "6f2ea0bac3ed408b3c85925da28167f54dc53b7580ae1e2d81e5d33d698e8ade",
+      "resize": "none",
+      "crop": "none",
+      "quality": 88
+    },
+    {
+      "slug": "simple-color-harmony",
+      "sourceFile": "simple-color-palette.png",
+      "targetPath": "public/infographics/color/simple-color-palette.webp",
+      "kind": "lesson",
+      "category": "color",
+      "width": 1122,
+      "height": 1402,
+      "sourceBytes": 2340934,
+      "sourceSha256": "3fff0bae4b07e434382fc7776a6f18cae501ccbd81a562b2a621e22579eff7ac",
+      "webpBytes": 253012,
+      "webpSha256": "d1cf48eae9ba301ada9fb0b1850f48c5be7aa9057809285fcaa4874f655051f9",
+      "resize": "none",
+      "crop": "none",
+      "quality": 88
+    }
+  ],
+  "releaseRules": {
+    "doNotRegenerate": true,
+    "doNotCrop": true,
+    "doNotResize": true,
+    "preserveEmbeddedBranding": true,
+    "preserveDigitalSeriesStructure": true,
+    "preserveWatercolorCoreRoute": true,
+    "publishOnlyAfterFullChecksPass": true
+  }
+}
