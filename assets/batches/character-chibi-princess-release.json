@@ -1,0 +1,162 @@
+{
+  "packetId": "GART-CHARACTER-CHIBI-PRINCESS-REFERENCE-RELEASE-20261002",
+  "status": "OWNER_APPROVED_ASSETS_READY_FOR_BINARY_UPLOAD_AND_INTEGRATION",
+  "assetCount": 11,
+  "lessonAssetCount": 6,
+  "referenceAssetCount": 5,
+  "assets": [
+    {
+      "sourceFile": "01-chibi-proportions.png",
+      "targetPath": "public/infographics/character/chibi-proportions.webp",
+      "kind": "lesson",
+      "topic": "Chibi Characters",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2172759,
+      "sourceSha256": "9a6d05f1a504804f5d519202acfb671d3a7ac9cf0399444c62206fb4bebef515",
+      "webpBytes": 269402,
+      "webpSha256": "8a12cae79944b27e0f20e5a611f3a6b9bd7fee8b9b339f609e112baa17ee263e"
+    },
+    {
+      "sourceFile": "02-chibi-faces-expressions.png",
+      "targetPath": "public/infographics/character/chibi-faces-expressions.webp",
+      "kind": "lesson",
+      "topic": "Chibi Characters",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2461341,
+      "sourceSha256": "6ed025b4b16ead58f958b5028633b5c4808d908d0e6617307a431167e2186c47",
+      "webpBytes": 355342,
+      "webpSha256": "eaac7702d37d43031add236ce604235d6d18be663ca934b51567d3689ae748dd"
+    },
+    {
+      "sourceFile": "03-chibi-poses-outfits.png",
+      "targetPath": "public/infographics/character/chibi-poses-outfits.webp",
+      "kind": "lesson",
+      "topic": "Chibi Characters",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2412006,
+      "sourceSha256": "f206ed22eabe7a594cee2997af1a37144bcb7a29b311391ef3b1c0f8a6820bb4",
+      "webpBytes": 350900,
+      "webpSha256": "3aeb78b0b8df25ced8069a4fc7518a77ffa128419a82e4111e5daa244fb0a688"
+    },
+    {
+      "sourceFile": "04-princess-design.png",
+      "targetPath": "public/infographics/character/fairy-tale-princess-design.webp",
+      "kind": "lesson",
+      "topic": "Fairy-Tale Princess",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2650271,
+      "sourceSha256": "0451bbb311b3fdef6f64e98e5c6b2ac386184b60e700ce6df46d586028a8c369",
+      "webpBytes": 399164,
+      "webpSha256": "abb74aea8b45d8ece4acb07ffd796370870846d35ca5cd9dae2731f4e31c7805"
+    },
+    {
+      "sourceFile": "05-princess-hair-dress-details.png",
+      "targetPath": "public/infographics/character/princess-hair-dress-details.webp",
+      "kind": "lesson",
+      "topic": "Fairy-Tale Princess",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2725090,
+      "sourceSha256": "27f6e430ed99b2f0c2d1f14f203d0907d33a129d51a48bac76b6b8b3d8a0bd37",
+      "webpBytes": 449068,
+      "webpSha256": "d95bd2500ca73d5ebc70369898b49e40678e43d7e09ab13572876fb6e0b83e29"
+    },
+    {
+      "sourceFile": "06-princess-poses.png",
+      "targetPath": "public/infographics/character/graceful-princess-poses.webp",
+      "kind": "lesson",
+      "topic": "Fairy-Tale Princess",
+      "width": 1024,
+      "height": 1536,
+      "sourceBytes": 2611337,
+      "sourceSha256": "02b3912cb3ea7418e2adbbe9f0787d41bfb5497afb7588cc742578c55fb9e984",
+      "webpBytes": 388914,
+      "webpSha256": "a22a9bf8ec4d28f1ca34258de63ae73ac3f7fc06c857488f7636341dfb266193"
+    },
+    {
+      "sourceFile": "07-princess-hairstyles-accessories.png",
+      "targetPath": "public/references/hair/princess-hairstyles-accessories.webp",
+      "kind": "reference",
+      "topic": "Fairy-Tale Princess",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2801129,
+      "sourceSha256": "674916a925863333a75b0cdb0b24a43f130e6eda6012ec6130f11931a8823f60",
+      "webpBytes": 474074,
+      "webpSha256": "93dea0b54993df4b24687a95909c480fae57b0c3218b8d331420a2cbc53879f3"
+    },
+    {
+      "sourceFile": "08-princess-dress-library.png",
+      "targetPath": "public/references/clothing/princess-dress-library.webp",
+      "kind": "reference",
+      "topic": "Fairy-Tale Princess",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 3072324,
+      "sourceSha256": "14977fb4833ffc66e1acca5235dae8602997be6a031ba3e5925584c48fcaea1e",
+      "webpBytes": 534026,
+      "webpSha256": "305d436e6e10b6236e417796338183e8cb586d5f14ff3599d127556870aa6ed5"
+    },
+    {
+      "sourceFile": "09-chibi-clothing-library.png",
+      "targetPath": "public/references/clothing/chibi-clothing-library.webp",
+      "kind": "reference",
+      "topic": "Chibi Characters",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2663716,
+      "sourceSha256": "288437ed050193fbe73f04693c045f13db31263cee628419552c93a88c73d673",
+      "webpBytes": 403368,
+      "webpSha256": "a10fe28317e576c4891992984ecddf4aedafeabe0329c2b41bfeabf443b61801"
+    },
+    {
+      "sourceFile": "10-chibi-pose-motion-library.png",
+      "targetPath": "public/references/motion/chibi-pose-motion-library.webp",
+      "kind": "reference",
+      "topic": "Chibi Characters",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2574290,
+      "sourceSha256": "f0f733c9ddcc1b5656bd1ede8f5e1307165e313276d92de3cc097b2453f5cc30",
+      "webpBytes": 386886,
+      "webpSha256": "0f87432de90c7bbfffc15f3e3d3e6b1d23ebd122f7d3cccf8c3abd32aa81b885"
+    },
+    {
+      "sourceFile": "11-chibi-hair-library.png",
+      "targetPath": "public/references/hair/chibi-hair-library.webp",
+      "kind": "reference",
+      "topic": "Chibi Characters",
+      "width": 1055,
+      "height": 1491,
+      "sourceBytes": 2645056,
+      "sourceSha256": "80e4dfabb608bdd42bc44eea6cdbe304bcdccfe3f8c5bf7be679dc2d8a26cd48",
+      "webpBytes": 393096,
+      "webpSha256": "5e93103cb0fbafe9888ac236f9dede3b4cff70dfca6a206d4ed31af836995de5"
+    }
+  ],
+  "releaseRules": {
+    "doNotRegenerate": true,
+    "doNotCrop": true,
+    "doNotResize": true,
+    "preserveEmbeddedBranding": true,
+    "characterTopics": [
+      "chibi",
+      "princess"
+    ],
+    "referenceStyles": [
+      "chibi",
+      "princess"
+    ],
+    "referenceCollectionsRemain": [
+      "poses",
+      "motion",
+      "hair",
+      "clothing"
+    ],
+    "publishOnlyAfterFullChecksPass": true
+  }
+}
