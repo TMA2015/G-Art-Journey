@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/human-batch.css';
+import '../../styles/guide-series.css';
+import {humanGuides} from '../../data/human-guides.mjs';
+import {humanTopics} from '../../data/guide-topics.mjs';
+export function getStaticPaths(){
+ return humanTopics.map(topic=>({params:{group:topic.id},props:{topic}}));
+}
+const topic=Astro.props.topic;
+const base=import.meta.env.BASE_URL;
+const groupKey=topic.id==='faces'?'face':'figure';
+const items=humanGuides.filter(g=>g.group===groupKey).sort((a,b)=>(a.groupOrder??0)-(b.groupOrder??0));
+---
+<Base lang="en" title={topic.label+' | Human Drawing'} description={topic.description}>
+ <div class="site-shell human-library">
+  <header class="page-hero">
+   <a class="eyebrow" href={base+'human-drawing/'}>HUMAN DRAWING / ALL TOPICS</a>
+   <h1 class="serif">{topic.label}</h1>
+   <p>{topic.description} Choose one lesson to open on its own page.</p>
+  </header>
+
+  <section class="lesson-choice-grid" aria-label={topic.label+' lessons'}>
+   {items.map((guide,index)=><a class="series-lesson-card" href={base+'guide/'+guide.slug+'/'}>
+    <div class="series-lesson-art"><img src={base+guide.image} alt={guide.posterAlt||guide.title} loading={index===0?'eager':'lazy'} decoding="async" width={guide.posterWidth||1055} height={guide.posterHeight||1491}/></div>
+    <div class="series-lesson-copy">
+     <span class="eyebrow">LESSON {String(index+1).padStart(2,'0')}</span>
+     <h2 class="serif">{guide.title}</h2>
+     <p>{guide.description}</p>
+     <span class="topic-open">{guide.time} · OPEN LESSON ↗</span>
+    </div>
+   </a>)}
+  </section>
+
+  <p class="series-topic-note">Each lesson opens separately, so its poster and teaching notes have enough space to read comfortably on desktop and iPad.</p>
+ </div>
+</Base>
