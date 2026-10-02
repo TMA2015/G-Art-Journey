@@ -6,9 +6,16 @@ import '../styles/character-styles.css';
 import '../styles/reference-library.css';
 import SectionNav from '../components/SectionNav.astro';
 import {getGuides} from '../i18n/content.mjs';
+import {humanGuides} from '../data/human-guides.mjs';
+import {characterGuides} from '../data/character-guides.mjs';
 import {ui,language} from '../i18n/ui.mjs';
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
-const guides=getGuides(lang).filter(g=>!g.retired&&!g.artPending);
+const groupedLessonSlugs=new Set([...humanGuides,...characterGuides].map(g=>g.slug));
+const guides=getGuides(lang).filter(g=>!g.retired&&!g.artPending&&!groupedLessonSlugs.has(g.slug));
+const topicHubs=[
+ {category:'figure',href:'human-drawing/',image:'infographics/human/face-basics.webp',tag:'HUMAN DRAWING',difficulty:'Topic library',title:'Human Drawing',description:'Choose Faces & Head or Figure & Pose before opening an individual lesson.',time:'8 lessons'},
+ {category:'character',href:'character-styles/',image:'infographics/character/manga-face.webp',tag:'CHARACTER ART',difficulty:'Topic library',title:'Character Styles',description:'Choose Manga, Manhwa / Webtoon, Manhua or Cartoon / Comics, then select the exact lesson you want.',time:'12 lessons'}
+];
 const categories=['figure','pencil','landscape','character','watercolor','digital'];
 const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.guides.categories[id]}))];
 ---
@@ -42,6 +49,9 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
     {filters.map((f,i)=><button type="button" data-filter={f.id} aria-pressed={i===0?'true':'false'}>{f.label}</button>)}
    </nav>
    <div class="guide-grid guide-catalog" data-guide-catalog>
+    {topicHubs.map(h=><a class="guide-card guide-anchor poster-card" data-category={h.category} href={url(h.href)}>
+     <img src={base+h.image} alt={h.title+' topic library'} loading="lazy" decoding="async"/><div class="guide-body"><span class="guide-meta">{h.tag} · {h.difficulty}</span><h3>{h.title}</h3><p>{h.description}</p><div class="guide-bottom"><span>{h.time}</span><span>Open topic ↗</span></div></div>
+    </a>)}
     {guides.map(g=><a class={"guide-card guide-anchor"+(g.poster?" poster-card":"")+(g.posterWide?" wide-poster-card":"")} id={guides.find(x=>x.category===g.category)?.slug===g.slug?g.category:undefined} data-category={g.category} href={url('guide/'+g.slug+'/')}>
      <img src={base+g.image} alt={g.posterAlt||g.title} loading="lazy" decoding="async"/><div class="guide-body"><span class="guide-meta">{g.tag} · {g.difficulty}</span><h3>{g.title}</h3><p>{g.description}</p><div class="guide-bottom"><span>{g.time}</span><span>{t.guides.open}</span></div></div>
     </a>)}
