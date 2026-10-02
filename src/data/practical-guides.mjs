@@ -422,5 +422,69 @@ export const practiceGuides = [
  tryIt:'Use one face sketch and save four checkpoints: clean sketch, flat skin, shadow, then details. Toggle the layers to compare how each stage changes the face.',
  remember:'A simple, readable layer stack is enough. Finish the big color and shadow decisions before adding small facial details.',
  seeAlso:['graphite-values']
+},
+{
+ slug:'gesture-motion-basics', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'25–35 min',
+ title:'Draw Gesture & Motion from Simple Lines',
+ description:'Build lively poses from one action line, simple chest and hip masses, stretch, compression and believable support.',
+ image:'infographics/core/gesture-motion-basics.webp',
+ poster:true,
+ posterWidth:1086,
+ posterHeight:1448,
+ posterAlt:'Gesture and motion drawing lesson showing one flowing pose built from an action line through chest, hips, stretch, compression, support and a finished figure',
+ supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
+ steps:[
+  {title:'Find one action line',body:'Use one flowing line to show the main movement before drawing anatomy or clothing.'},
+  {title:'Add chest and hips',body:'Place simple chest and hip masses over the action line so the torso direction stays clear.'},
+  {title:'Show stretch and compression',body:'Notice which side of the body lengthens and which side compresses as the torso bends.'},
+  {title:'Place the support',body:'Find the supporting leg or contact point so the pose still feels balanced under the movement.'},
+  {title:'Build the simple figure',body:'Add simple limbs and body forms over the gesture while preserving the original action line.'},
+  {title:'Compare stiff and flowing',body:'Draw the same basic pose with straighter, stiffer lines and then with a clearer curve to compare the feeling of motion.'}
+ ],
+ tryIt:'Draw one pose twice: first stiff, then with one clear action line and more flowing relationships.',
+ remember:'Gesture shows energy first. Structure and balance help the pose feel believable.'
+},
+{
+ slug:'feet-simple-forms', category:'figure', tag:'CORE DRAWING', difficulty:'Beginner', time:'25–35 min',
+ title:'Draw Feet from Simple Forms',
+ description:'Build a foot from ankle, heel and forefoot forms, then check views, toe direction, weight, ground contact and simple shoes.',
+ image:'infographics/core/feet-simple-forms.webp',
+ poster:true,
+ posterWidth:1055,
+ posterHeight:1491,
+ posterAlt:'Feet construction lesson showing ankle, heel and forefoot forms in side, top and three-quarter views, standing contact and shoe simplification',
+ supplies:'Paper, HB or 2B pencil, eraser; or any drawing app',
+ steps:[
+  {title:'Start with simple blocks',body:'Break the foot into an ankle cylinder, heel block and forefoot wedge before drawing toes.'},
+  {title:'Study the side view',body:'Find the ankle, heel, arch, ball of the foot and the way the toes point slightly forward and down.'},
+  {title:'Study the top view',body:'See the wider big-toe side, the center direction and the five toes arranged in a gentle curve.'},
+  {title:'Turn to three-quarter view',body:'Keep the same ankle, heel and forefoot forms while letting the toes follow perspective.'},
+  {title:'Show weight and contact',body:'Let the standing foot receive weight through the ankle and show the heel and ball touching the ground clearly.'},
+  {title:'Simplify a shoe',body:'Build a simple shoe over the same big foot forms so the shoe keeps the foot direction instead of hiding it.'}
+ ],
+ tryIt:'Sketch one foot in top, side and three-quarter view before adding small toe or shoe details.',
+ remember:'Think heel + wedge + toe direction. Keep the big-toe side clear and let the foot sit on the ground.'
+},
+{
+ slug:'simple-color-harmony', category:'color', tag:'COLOR BASICS', difficulty:'Beginner', time:'25–35 min',
+ title:'Build a Simple Color Palette',
+ description:'Choose a small group of colors by thinking about hue, value, saturation, one main family, one support color and a small accent.',
+ image:'infographics/color/simple-color-palette.webp',
+ poster:true,
+ posterWidth:1122,
+ posterHeight:1402,
+ posterAlt:'Color basics lesson showing hue, value and saturation, a main color family, supporting color, accent, palette testing and calm versus lively variations',
+ supplies:'Any drawing or painting materials that let you compare a few colors; paper or a drawing app',
+ steps:[
+  {title:'Start with hue, value and saturation',body:'Separate what color something is, how light or dark it is, and how strong or muted the color feels.'},
+  {title:'Choose one main color family',body:'Let one color family lead the picture instead of giving every color equal importance.'},
+  {title:'Add one supporting color',body:'Choose a nearby or gentle partner color that works with the main family without competing with it.'},
+  {title:'Add a small accent',body:'Use a little contrasting color for focus rather than spreading the accent everywhere.'},
+  {title:'Test the palette',body:'Try the same small palette on a simple character or scene before committing to a larger painting.'},
+  {title:'Compare calm and lively',body:'Use softer low-contrast colors for a calmer feeling or stronger contrast and brighter accents for more energy.'}
+ ],
+ tryIt:'Pick one main color, one support color and one small accent, then test them on a tiny sketch.',
+ remember:'A simple palette is easier to control. Let one color lead, keep the accent small, and check the values too.'
 }
+
 ];
