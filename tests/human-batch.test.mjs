@@ -31,16 +31,19 @@ test('approved original WebP artwork present, undamaged and storage-efficient',a
  }
  assert.ok(total<3*1024*1024);
 });
-test('poster presentation preserves full image and provides two working actions',async()=>{
+test('topic-first Human Drawing navigation preserves standalone poster actions',async()=>{
  const guide=await get('src/pages/guide/[slug].astro');
  const list=await get('src/pages/guides.astro');
  const css=await get('src/styles/human-batch.css');
  const page=await get('src/pages/human-drawing.astro');
+ const topicPage=await get('src/pages/human-drawing/[group].astro');
  assert.match(guide,/guide\.poster\?/);
  assert.match(guide,/Save WebP/);
  assert.match(guide,/View large/);
  assert.match(css,/object-fit:contain/);
  assert.match(list,/human-drawing\//);
- assert.match(page,/humanGuides/);
+ assert.match(page,/humanTopics/);
+ assert.match(topicPage,/humanGuides/);
+ assert.match(topicPage,/OPEN LESSON/);
  await access('src/pages/en/human-drawing.astro');
 });
