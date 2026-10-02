@@ -40,7 +40,7 @@ Reserved style families that may receive future reference sheets:
 Do not fill these filters merely to make the matrix look complete. Add a reference sheet only when it supplies useful visual vocabulary not already covered.
 
 ### Skill-gap audit
-**Status:** Completed proposal — owner priority review pending
+**Status:** Completed and released as SG-01
 
 Audit:
 - `docs/SKILL_GAP_AUDIT.md`
@@ -56,9 +56,23 @@ Findings:
 Explicit non-gap:
 - Light & Value is already covered strongly by Shade Simple Forms + Graphite Values + portrait/digital reinforcement.
 
-SG-01 artwork is now complete and owner-approved: Gesture & Motion, Feet from Simple Forms and Build a Simple Color Palette. Integration into the lesson catalog and Learning Paths is the active release task.
+SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color Palette. Owner desktop QA passed; quick iPad close-out remains.
 
 ## Product / UX
+
+### Post-SG-01 Learning Paths UX audit
+**Status:** Next  
+**Priority:** High
+
+Review the live Start Here experience after SG-01:
+- Draw People now has 9 core steps; check whether grouping into stages improves scanability without removing content
+- Create Characters now has 7 optional support guides; check whether grouping by purpose reduces visual/cognitive clutter
+- keep Feet and Color Palette optional
+- preserve Digital Art 2×5 and Watercolor 6 core steps
+- prefer UX grouping and clearer labels over creating more lessons
+
+Do not start a new content batch until this audit is complete.
+
 
 ### Learning-path progress tracking
 **Status:** Deferred
