@@ -656,7 +656,16 @@ Design rule:
 
 Website state:
 - these 10 newly approved Digital Art posters are **not yet released as a batch**
-- next chat should begin with mapping the 10 posters to current Digital Art routes, then optimize/upload, audit, CI, PR, deploy and owner QA
+- integration branch: `feature/digital-art-10-posters-20261002`
+- exact approved asset/checksum map: `assets/batches/digital-art-10.json`
+- route mapping is now locked:
+  - `digital-color-layers` → **Painting with Separate Layers** → Set A five-poster gallery
+  - `color-a-face-in-layers` → **Color a Face with Simple Layers** → Set B five-poster gallery
+- both routes are upgraded **in place**; do not create duplicate Digital Art routes
+- all 10 approved originals have been recovered and converted to WebP without resize/crop; embedded logos and owner-approved compositions are preserved
+- Digital skill intents are separated: Set A = layer-role organization; Set B = applied face-color layer progression
+- **do not switch runtime image references until all 10 WebP binaries are committed**, so production/build never points at missing files
+- next gate: binary upload → route/gallery patch → tests/audit/build → controlled PR/Pages release → owner desktop/iPad QA
 
 Detailed durable spec:
 - `docs/DIGITAL_ART_AUTHORING.md`
