@@ -277,3 +277,41 @@ Release status:
 - Pages workflow #225 PASS
 - technical release complete
 - owner browser visual QA remains before closing this first Reference Library release checkpoint
+
+
+## Character-themed Reference Library expansion — approved 2026-10-02
+
+Owner approved **5 additional portrait reference sheets** for the live Reference Library.
+
+### Fairy-Tale Princess
+1. **Princess Hairstyles & Accessories**
+   - category: Hair
+   - style filter: Fairy-Tale Princess
+   - 3 hairstyle rows plus 1 accessory row
+2. **Princess Dress Library**
+   - category: Clothing
+   - style filter: Fairy-Tale Princess
+   - 2 rows × 5 dresses = 10 dress references
+
+### Chibi
+1. **Chibi Clothing Library**
+   - category: Clothing
+   - style filter: Chibi
+   - 3 rows × 5 outfits = 15 references
+2. **Chibi Pose & Motion Library**
+   - category: Motion
+   - style filter: Chibi
+   - 3 rows × 5 poses = 15 references
+3. **Chibi Hair Library**
+   - category: Hair
+   - style filter: Chibi
+   - 4 rows × 4 hairstyles = 16 references
+
+Retained rules:
+- keep the four core collections **Poses / Motion / Hair / Clothing**
+- add **Chibi** and **Fairy-Tale Princess** as style filters, not new core collections
+- use varied faces / character identities across the reference sheets
+- Reference Library remains visual vocabulary, not a tutorial sequence
+- approved artwork must be published unchanged apart from optimized WebP conversion with no crop or resize
+
+New approved inventory after this release: **23 reference infographics total** (existing 18 + new 5).
