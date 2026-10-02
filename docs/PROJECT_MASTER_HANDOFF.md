@@ -664,6 +664,9 @@ Website state:
 - both routes are upgraded **in place**; do not create duplicate Digital Art routes
 - all 10 approved originals have been recovered and converted to WebP without resize/crop; embedded logos and owner-approved compositions are preserved
 - Digital skill intents are separated: Set A = layer-role organization; Set B = applied face-color layer progression
+- English-first route copy has been aligned with both approved five-stage sequences
+- draft PR **#60** is open on the integration branch
+- staging CI/build checkpoint: **PASS**
 - **do not switch runtime image references until all 10 WebP binaries are committed**, so production/build never points at missing files
 - next gate: binary upload → route/gallery patch → tests/audit/build → controlled PR/Pages release → owner desktop/iPad QA
 
