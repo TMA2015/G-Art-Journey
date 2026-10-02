@@ -1,0 +1,62 @@
+---
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/practical-guides.css';
+import '../../../styles/human-batch.css';
+import '../../../styles/guide-series.css';
+import {guides} from '../../../data/content.mjs';
+import {digitalSeries} from '../../../data/guide-topics.mjs';
+import {getGuides} from '../../../i18n/content.mjs';
+
+export function getStaticPaths(){
+ const paths=[];
+ for(const [slug,series] of Object.entries(digitalSeries)){
+  const guide=guides.find(g=>g.slug===slug);
+  if(!guide) continue;
+  series.lessons.forEach((lesson,index)=>paths.push({
+   params:{slug,lesson:lesson.slug},
+   props:{parentSlug:slug,lessonIndex:index}
+  }));
+ }
+ return paths;
+}
+
+const base=import.meta.env.BASE_URL;
+const parentSlug=Astro.props.parentSlug;
+const lessonIndex=Astro.props.lessonIndex;
+const guide=getGuides('en').find(g=>g.slug===parentSlug);
+const series=digitalSeries[parentSlug];
+const lesson=series.lessons[lessonIndex];
+const poster=guide.posterGallery?.[lessonIndex];
+const focus=guide.steps?.[lessonIndex];
+const previous=lessonIndex>0?series.lessons[lessonIndex-1]:null;
+const next=lessonIndex<series.lessons.length-1?series.lessons[lessonIndex+1]:null;
+const lessonPath=(item)=>base+'guide/'+parentSlug+'/'+item.slug+'/';
+---
+<Base lang="en" title={lesson.title+' | '+series.label} description={lesson.description}>
+ <article class="site-shell guide-article lesson-page-shell">
+  <header class="page-hero">
+   <a class="eyebrow" href={base+'guide/'+parentSlug+'/'}>{series.label} / ALL LESSONS</a>
+   <h1 class="serif">{lesson.title}</h1>
+   <p class="lead">{lesson.description}</p>
+  </header>
+
+  {poster&&<figure class="lesson-page-poster">
+   <img src={base+poster.image} alt={poster.alt||lesson.title} fetchpriority="high" width={poster.width} height={poster.height}/>
+   <figcaption>
+    <span>Lesson {lessonIndex+1} of {series.lessons.length} · Original G-Art Journey illustration</span>
+    <span class="guide-poster-actions"><a href={base+poster.image} target="_blank" rel="noopener">View large ↗</a><a href={base+poster.image} download>Save WebP ↓</a></span>
+   </figcaption>
+  </figure>}
+
+  {focus&&<section class="lesson-focus-box" aria-labelledby="lesson-focus-title">
+   <span class="eyebrow">LESSON FOCUS</span>
+   <h2 id="lesson-focus-title" class="serif">{focus.title}</h2>
+   <p>{focus.body}</p>
+  </section>}
+
+  <nav class="lesson-prev-next" aria-label="Digital Art lesson navigation">
+   {previous?<a href={lessonPath(previous)}><span>← PREVIOUS LESSON</span><strong>{previous.title}</strong></a>:<a href={base+'guide/'+parentSlug+'/'}><span>← TOPIC PAGE</span><strong>All {series.lessons.length} lessons</strong></a>}
+   {next?<a href={lessonPath(next)}><span>NEXT LESSON →</span><strong>{next.title}</strong></a>:<a href={base+'guide/'+parentSlug+'/'}><span>TOPIC COMPLETE →</span><strong>Back to all lessons</strong></a>}
+  </nav>
+ </article>
+</Base>

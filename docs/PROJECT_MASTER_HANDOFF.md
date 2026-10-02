@@ -682,3 +682,32 @@ Whenever a future decision changes the project:
 - No unrelated generated material/gallery assets were included in the release.
 - Remaining acceptance: owner desktop/iPad visual QA of both catalog cards, five-poster order, uncropped display, responsive layout, View large and Save WebP.
 - This release-record update changes documentation/manifest status only; the production artwork and route implementation remain the verified PR #60 tree.
+
+
+### Guide information architecture refinement — 2026-10-02
+
+Owner desktop/iPad review of the Digital Art release identified a navigation problem rather than an artwork-integrity problem: grouped topics were exposing many posters at once, but learners could not open each Digital poster as its own lesson page.
+
+New durable navigation rule:
+- use **Category → Topic → Lesson** when a category contains meaningful subtopics
+- use **Category → Lesson** when the category is already a single coherent lesson shelf
+- do not flatten Human Drawing, Character Art or Digital Art into one mixed lesson catalog
+
+Implementation staged in PR #61:
+- Digital Art keeps its two existing topic routes; each now presents five lesson cards instead of a five-poster wall
+- all ten approved Digital posters get standalone lesson routes with comfortable-width display, View large, Save WebP and previous/next navigation
+- Human Drawing becomes two topic cards: **Faces & Head** and **Figure & Pose**, each opening a four-lesson shelf
+- Character Art becomes four topic cards: **Manga**, **Manhwa / Webtoon**, **Manhua**, **Cartoon / Comics**; each opens its three-lesson shelf
+- Character Face Design Lab remains a separate direct card because it is not tied to one regional/style family
+- the main Drawing Guides catalog no longer mixes all Human Drawing and Character Style lessons together; it exposes topic hubs instead
+- Pencil, Landscape, Watercolor and other single-level groups remain direct lesson collections
+
+Artwork rule:
+- no approved poster is regenerated, resized, cropped or replaced for this navigation refinement
+- lesson-page layout must make the infographic readable at normal page size; **View large is optional inspection, not a requirement for basic reading**
+
+Staging branch:
+- `feature/guide-topic-hierarchy-20261002`
+- draft PR: **#61**
+- CI #279: **PASS** after updating hierarchy-aware tests and English legacy aliases
+- production remains unchanged until PR #61 is merged and Pages passes

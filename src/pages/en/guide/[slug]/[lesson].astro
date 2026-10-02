@@ -1,0 +1,13 @@
+---
+import Page from '../../../guide/[slug]/[lesson].astro';
+import {digitalSeries} from '../../../../data/guide-topics.mjs';
+export function getStaticPaths(){
+ const paths=[];
+ for(const [slug,series] of Object.entries(digitalSeries)){
+  series.lessons.forEach((lesson,index)=>paths.push({params:{slug,lesson:lesson.slug},props:{parentSlug:slug,lessonIndex:index}}));
+ }
+ return paths;
+}
+const {parentSlug,lessonIndex}=Astro.props;
+---
+<Page parentSlug={parentSlug} lessonIndex={lessonIndex}/>

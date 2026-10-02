@@ -215,3 +215,18 @@ This document is the durable source of truth for the next chat.
 - No unrelated generated material/gallery assets were included in the release.
 - Remaining acceptance: owner desktop/iPad visual QA of both catalog cards, five-poster order, uncropped display, responsive layout, View large and Save WebP.
 - This release-record update changes documentation/manifest status only; the production artwork and route implementation remain the verified PR #60 tree.
+
+
+### Digital Art lesson hierarchy refinement — 2026-10-02
+
+Post-release owner QA confirmed both Digital topics and all ten approved assets are present, but the original five-poster gallery layout did not provide a separate learning page for each poster and reduced readability for text-heavy lessons.
+
+Refined structure:
+- `digital-color-layers` remains the **Painting with Separate Layers** topic page
+- `color-a-face-in-layers` remains the **Color a Face with Simple Layers** topic page
+- each topic page now acts as a five-lesson selector
+- every approved poster opens on its own nested lesson route
+- each standalone lesson keeps the original WebP unchanged and provides View large, Save WebP and previous/next navigation
+- the topic page uses thumbnails for selection; the lesson page uses a comfortable single-poster reading width
+
+This is a presentation/navigation change only. The approved ten WebP hashes and the official Clean Sketch / Flat Skin Color replacement rule remain unchanged.

@@ -1,0 +1,7 @@
+---
+import Page from '../../human-drawing/[group].astro';
+import {humanTopics} from '../../../data/guide-topics.mjs';
+export function getStaticPaths(){return humanTopics.map(topic=>({params:{group:topic.id},props:{topic}}));}
+const {topic}=Astro.props;
+---
+<Page topic={topic}/>

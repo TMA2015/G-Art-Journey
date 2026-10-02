@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/character-styles.css';
+import '../../styles/guide-series.css';
+import {characterGuides} from '../../data/character-guides.mjs';
+import {characterTopics} from '../../data/guide-topics.mjs';
+export function getStaticPaths(){
+ return characterTopics.map(topic=>({params:{group:topic.id},props:{topic}}));
+}
+const topic=Astro.props.topic;
+const base=import.meta.env.BASE_URL;
+const items=characterGuides.filter(g=>g.group===topic.id).sort((a,b)=>(a.groupOrder??0)-(b.groupOrder??0));
+---
+<Base lang="en" title={topic.label+' | Character Art'} description={topic.description}>
+ <div class="site-shell character-library">
+  <header class="page-hero">
+   <a class="eyebrow" href={base+'character-styles/'}>CHARACTER ART / ALL TOPICS</a>
+   <h1 class="serif">{topic.label}</h1>
+   <p>{topic.description} Choose the exact lesson you want to open.</p>
+  </header>
+
+  <section class="lesson-choice-grid" aria-label={topic.label+' lessons'}>
+   {items.map((guide,index)=><a class="series-lesson-card" href={base+'guide/'+guide.slug+'/'}>
+    <div class="series-lesson-art"><img src={base+guide.image} alt={guide.posterAlt||guide.title} loading={index===0?'eager':'lazy'} decoding="async" width={guide.posterWidth||1055} height={guide.posterHeight||1491}/></div>
+    <div class="series-lesson-copy">
+     <span class="eyebrow">LESSON {String(index+1).padStart(2,'0')}</span>
+     <h2 class="serif">{guide.title}</h2>
+     <p>{guide.description}</p>
+     <span class="topic-open">{guide.time} · OPEN LESSON ↗</span>
+    </div>
+   </a>)}
+  </section>
+
+  <p class="series-topic-note">Each lesson opens on its own page. Return here whenever you want to switch to another lesson inside {topic.label}.</p>
+ </div>
+</Base>
