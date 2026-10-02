@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionNav from '../components/SectionNav.astro';
+import '../styles/learning-paths.css';
+import {learningPaths,learningPathById} from '../data/learning-paths.mjs';
+import {guides} from '../data/content.mjs';
+import {characterTopics,digitalSeries} from '../data/guide-topics.mjs';
+import {referenceCollections} from '../data/reference-library.mjs';
+
+const base=import.meta.env.BASE_URL;
+const url=(path='')=>base+path;
+const activeGuides=guides.filter(g=>!g.retired&&!g.artPending);
+const guideBySlug=new Map(activeGuides.map(g=>[g.slug,g]));
+const guideFor=(slug)=>guideBySlug.get(slug);
+const pathImage=(path)=>guideFor(path.firstSlug)?.image||'infographics/core/hands-simple-forms.webp';
+const guideHref=(slug)=>url('guide/'+slug+'/');
+const topicHref=(id)=>url('character-styles/'+id+'/');
+const seriesHref=(slug)=>url('guide/'+slug+'/');
+const digitalLessonHref=(seriesSlug,lessonSlug)=>url('guide/'+seriesSlug+'/'+lessonSlug+'/');
+const pathScope=(path)=>{
+ if(path.id==='digital-art-basics')return Object.values(digitalSeries).length+' guided series · '+Object.values(digitalSeries).reduce((n,s)=>n+s.lessons.length,0)+' short lessons';
+ if(path.id==='create-characters')return '1 design lab · choose 1 of '+characterTopics.length+' topics';
+ return path.steps.filter(step=>step.kind==='guide').length+' core steps';
+};
+---
+<Base lang="en" title="Start Here | Learning Paths" description="Choose a simple suggested learning path through G-Art Journey. Pick drawing basics, people, characters, places, watercolor or digital art.">
+ <div class="site-shell learning-shell">
+  <header class="page-hero learning-hero">
+   <div class="topline eyebrow">START HERE / LEARNING PATHS</div>
+   <h1 class="serif">What would you like<br/><em>to draw?</em></h1>
+   <p class="lead">Pick a path for a suggested order, or jump anywhere you like. These are friendly routes through the existing G-Art Journey lessons—not locked levels.</p>
+   <div class="path-principles" aria-label="Learning path principles"><span>Suggested, not locked</span><span>Use what you need</span><span>Change paths anytime</span></div>
+  </header>
+
+  <SectionNav items={[
+   {id:'choose-a-path',label:'Choose a path'},
+   {id:'drawing-basics',label:'Basics'},
+   {id:'draw-people',label:'People'},
+   {id:'create-characters',label:'Characters'},
+   {id:'draw-places',label:'Places'},
+   {id:'watercolor-basics',label:'Watercolor'},
+   {id:'digital-art-basics',label:'Digital'}
+  ]}/>
+
+  <section id="choose-a-path" class="path-card-grid" aria-label="Choose a learning path">
+   {learningPaths.map(path=><a class="path-card" href={'#'+path.id}>
+    <div class="path-card-art"><img src={url(pathImage(path))} alt="" loading="lazy" decoding="async"/></div>
+    <div class="path-card-copy">
+     <span class="eyebrow">{path.eyebrow}</span>
+     <h2 class="serif">{path.title}</h2>
+     <p>{path.description}</p>
+     <div class="path-card-meta">{pathScope(path)} · VIEW PATH ↓</div>
+    </div>
+   </a>)}
+  </section>
+
+  {learningPaths.map(path=><section id={path.id} class="path-section" aria-labelledby={path.id+'-title'}>
+   <div class="path-section-head">
+    <div>
+     <span class="eyebrow">{path.eyebrow}</span>
+     <h2 id={path.id+'-title'} class="serif">{path.title}</h2>
+     <p>{path.description}</p>
+    </div>
+    <div class="path-outcome"><strong>What this path helps with</strong><br/>{path.outcome}<br/><br/><strong>Good to know</strong><br/>{path.recommended}</div>
+   </div>
+
+   <div class="path-step-list">
+    {path.steps.map((step,index)=>{
+     const guide=step.kind==='guide'?guideFor(step.slug):null;
+     const series=step.kind==='digitalSeries'?digitalSeries[step.slug]:null;
+     const parent=step.kind==='digitalSeries'?guideFor(step.slug):null;
+     return <article class="path-step">
+      <div class="path-step-number">{String(index+1).padStart(2,'0')}</div>
+      <div class="path-step-copy">
+       <div class="path-step-top"><span class="path-label">{step.label}</span></div>
+
+       {guide&&<>
+        <h3>{guide.title}</h3>
+        <p>{guide.description}</p>
+        <a class="path-open" href={guideHref(guide.slug)}>OPEN LESSON ↗</a>
+       </>}
+
+       {step.kind==='characterTopics'&&<>
+        <h3>Choose one Character Art topic</h3>
+        <p>You do not need to study every style family. Pick the one that makes you want to draw, then follow its three-lesson shelf.</p>
+        <div class="path-topic-grid">
+         {characterTopics.map(topic=><a href={topicHref(topic.id)}>
+          <strong>{topic.label}</strong>
+          <span>{topic.description}</span>
+         </a>)}
+        </div>
+       </>}
+
+       {step.kind==='supportChoice'&&<>
+        <h3>Add one supporting skill</h3>
+        <p>Choose the skill your current character needs. These are helpers, not required checkpoints.</p>
+        <div class="path-support-grid">
+         {path.supportGuides.map(slug=>{const item=guideFor(slug);return item&&<a href={guideHref(slug)}>
+          <strong>{item.title}</strong><span>{item.description}</span>
+         </a>})}
+        </div>
+       </>}
+
+       {step.kind==='reference'&&<>
+        <h3>Make your own variation</h3>
+        <p>Use references for a pose, motion, hairstyle or outfit idea, then change and combine what you see into your own design.</p>
+        <a class="path-open" href={url('reference-library/')}>OPEN REFERENCE LIBRARY ↗</a>
+       </>}
+
+       {series&&parent&&<>
+        <h3>{series.label}</h3>
+        <p>{series.description}</p>
+        <div class="path-series">
+         <strong>{series.lessons.length} short lessons</strong>
+         <ol>{series.lessons.map(lesson=><li><a href={digitalLessonHref(step.slug,lesson.slug)}>{lesson.title}</a></li>)}</ol>
+        </div>
+        <a class="path-open" href={seriesHref(step.slug)}>OPEN SERIES ↗</a>
+       </>}
+      </div>
+     </article>
+    })}
+   </div>
+
+   {path.explore?.length>0&&<div class="path-explore">
+    <h3>Explore more when you need it</h3>
+    <div class="path-explore-links">
+     {path.explore.map(slug=>{const item=guideFor(slug);return item&&<a href={guideHref(slug)}>{item.title}</a>})}
+    </div>
+   </div>}
+
+   {path.nextPaths?.length>0&&<div class="path-explore">
+    <h3>Choose what you want to draw next</h3>
+    <div class="path-explore-links">
+     {path.nextPaths.map(id=>{const next=learningPathById.get(id);return next&&<a href={'#'+id}>{next.title}</a>})}
+    </div>
+   </div>}
+  </section>)}
+
+  <section class="path-reference" aria-labelledby="reference-helper-title">
+   <span class="eyebrow">OPTIONAL HELPER</span>
+   <h2 id="reference-helper-title" class="serif">Need an idea while you draw?</h2>
+   <p>Reference Library is not homework. Open it when you need a pose, movement, hairstyle or outfit idea. Pick one detail, combine ideas, then make it your own.</p>
+   <div class="path-reference-chips">{referenceCollections.map(collection=><span>{collection.label}</span>)}</div>
+   <a class="hero-cta" href={url('reference-library/')}>Open the Reference Library ↗</a>
+  </section>
+
+  <div class="reference-back"><a href={url('guides/')}>← Back to Drawing Guides</a></div>
+ </div>
+</Base>
