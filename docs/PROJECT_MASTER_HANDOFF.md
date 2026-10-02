@@ -1074,3 +1074,28 @@ Production rule:
 - Learning Paths are updated only after each new lesson is approved and published
 
 The old Phase 2 roadmap was reconciled so superseded items such as Five Values & a Lit Sphere / Layers for Beginners do not accidentally trigger duplicate content.
+
+
+### SG-01 Gesture & Motion pilot approved — 2026-10-03
+
+Owner approved the revised **Draw Gesture & Motion from Simple Lines** poster for use.
+
+Approval note:
+- the first draft had a continuity error: Steps 4–5 changed the leg relationship established in Steps 1–3
+- the revised version corrected the sequence enough to be accepted
+- owner explicitly noted the revision is **acceptable but not perfect**
+- therefore this poster is approved content, but should **not** be treated as the ideal visual-quality benchmark for the remaining SG-01 posters
+- cumulative-step continuity remains a mandatory gate for future anatomy/gesture posters
+
+Approved source artwork is preserved in Library:
+- `/G-Art Journey/Approved/Skill Gap/01-gesture-motion-basics.png`
+
+SG-01 status:
+1. Draw Gesture & Motion from Simple Lines — **OWNER APPROVED**
+2. Draw Feet from Simple Forms — **NEXT**
+3. Build a Simple Color Palette — pending
+
+Next production rule:
+- create only **Draw Feet from Simple Forms**
+- prioritize clear ankle/heel/forefoot construction, top/side/three-quarter views, weight/contact, five-toe anatomy where visible, and shoe simplification without changing foot direction
+- do not start Color Palette until Feet is owner-approved
