@@ -1099,3 +1099,29 @@ Next production rule:
 - create only **Draw Feet from Simple Forms**
 - prioritize clear ankle/heel/forefoot construction, top/side/three-quarter views, weight/contact, five-toe anatomy where visible, and shoe simplification without changing foot direction
 - do not start Color Palette until Feet is owner-approved
+
+
+### SG-01 artwork complete — 2026-10-03
+
+Owner approved all three SG-01 teaching posters:
+
+1. **Draw Gesture & Motion from Simple Lines** — approved
+2. **Draw Feet from Simple Forms** — approved
+3. **Build a Simple Color Palette** — approved
+
+Durable approved source PNGs:
+- `/G-Art Journey/Approved/Skill Gap/01-gesture-motion-basics.png`
+- `/G-Art Journey/Approved/Skill Gap/02-feet-simple-forms.png`
+- `/G-Art Journey/Approved/Skill Gap/03-simple-color-palette.png`
+
+Visual note:
+- Gesture & Motion is approved for use, but owner noted it is acceptable rather than an ideal benchmark because pose-continuity correction remained visually imperfect.
+- Feet and Color Palette should preserve the same warm-paper, soft-pastel, spacious teaching-poster family.
+- Do not regenerate or replace these three approved artworks during integration without explicit owner instruction.
+
+Recommended integration:
+- Gesture & Motion: Core Drawing / Figure; insert into **Draw People** after Figure Proportions and before Standing Figure; add as optional Create Characters support.
+- Feet from Simple Forms: Core Drawing / Figure; keep in **Explore more / support**, not mandatory core; add to Create Characters support.
+- Build a Simple Color Palette: treat as medium-independent **Color Basics** support; link from Digital Art, Watercolor and Create Characters without altering the existing Digital 5+5 series or Watercolor six-step core route.
+
+Current next task: package the 3 approved PNGs as production WebPs, add the three lesson records and Learning Path links, run the full content-consistency / guide-distinctness / build gate, then owner visual QA.
