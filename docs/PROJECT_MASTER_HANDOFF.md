@@ -1,6 +1,6 @@
 # G-Art Journey — Project Master Handoff
 
-_Last updated: 2026-10-01_
+_Last updated: 2026-10-02_
 
 This file is the durable handoff for future ChatGPT sessions. Treat it as the project source of truth for **current status, master plan, design rules, QA gates and the next production step**. When a rule or project decision changes, update this file in the same PR as the change whenever practical.
 
@@ -213,33 +213,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-### Drawing Guides — Pencil Art + Landscape content build
-
-Current production state as of 2026-10-01 evening:
-- Explore Art: current scope complete
-- My Art V1: live
-- Reference Library V1: 18 approved infographics live; owner desktop/iPad QA PASS
-- homepage Discover refresh: live
-- Our Little Gallery uses real learner artwork; layout fix live
-- homepage hero now contains only **Explore Art** and **My Art**; G-Art Showcase removed from hero
-- current content gap is now the two thin Drawing Guides categories:
-  - **Pencil Art**
-  - **Landscape**
-
-Existing material to preserve/reuse where useful:
-- Pencil:
-  - old starter card `draw-a-pencil-portrait` is visually obsolete / placeholder-quality
-  - stronger existing practical lesson `shade-a-pencil-portrait` can be retained or folded into the new Pencil sequence
-  - `graphite-values` note already teaches light/value fundamentals and should not be duplicated verbatim
-- Landscape:
-  - old starter `draw-a-pencil-landscape` is placeholder-quality
-  - `street-with-depth` already has solid academic steps but remains `artPending:true`
-  - future Landscape content should connect perspective, depth, composition and natural forms rather than repeat generic Pencil technique
-
-Next task:
-- define a compact, non-overlapping real curriculum for Pencil Art and Landscape
-- owner approves lesson list before artwork production
-- then author original illustrated guides in small QA batches using the same anatomy/visual standards where people appear
+Digital Art: complete the existing PR #60 release gate for exactly ten approved posters on the two locked existing routes. Integration and local tests are complete; verify PR CI and Pages before declaring the batch live. Preserve the official face remakes and every embedded logo. Owner desktop/iPad visual QA follows deployment.
 
 ## 12. Daughter Gallery V1 — active task
 
@@ -681,3 +655,16 @@ Whenever a future decision changes the project:
 - keep the “Current production task” section accurate
 - never rely on chat memory alone for a project-critical rule
 - if a chat/stream times out during GitHub work, **verify repository/PR/CI state first and continue from the last confirmed step; do not repeat the previous command blindly**
+
+### Digital Art integration release gate — 2026-10-02
+
+- Integration checkpoint: `c0a9498b8ad3bd12aa5fedf069f98b252993bc47` on `feature/digital-art-10-posters-20261002`, existing PR #60.
+- Binary checkpoint: `b756fac14c8cafba03622cc93e0b2497b285f128`.
+- Exactly ten supplied WebP files pass SHA-256, byte-size and dimension checks; no artwork was edited, cropped, resized or rebranded.
+- Both existing Digital routes now use five-poster galleries in the locked order; catalog covers use the first approved poster.
+- Official Clean Sketch and Flat Skin Color remake hashes are pinned in release tests.
+- Local release gate PASS: 83/83 tests; 44-guide intent audit with zero high-overlap pairs; 158-page build; English-first/legacy-alias verification; image-budget audit with no warnings.
+- Built HTML has exactly five poster figures per route and all ten built assets retain the approved hashes.
+- PR CI and Pages deployment are verified separately before reporting the production release; this checkpoint does not assert a deployment has already occurred.
+- Next: PR CI → ready/merge PR #60 → verify Pages → record production result → owner desktop/iPad QA.
+- Owner QA: Digital tab contains the two existing guides; each opens five ordered uncropped posters; View large and Save WebP work; remake first two face posters and approved Light & Details logo remain intact.

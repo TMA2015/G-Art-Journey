@@ -188,3 +188,16 @@ Approved source images are the current conversation-generated originals. Importa
 - do **not** accidentally use the earlier rejected versions with more colorful sheet backgrounds
 
 This document is the durable source of truth for the next chat.
+
+### Digital Art integration release gate — 2026-10-02
+
+- Integration checkpoint: `c0a9498b8ad3bd12aa5fedf069f98b252993bc47` on `feature/digital-art-10-posters-20261002`, existing PR #60.
+- Binary checkpoint: `b756fac14c8cafba03622cc93e0b2497b285f128`.
+- Exactly ten supplied WebP files pass SHA-256, byte-size and dimension checks; no artwork was edited, cropped, resized or rebranded.
+- Both existing Digital routes now use five-poster galleries in the locked order; catalog covers use the first approved poster.
+- Official Clean Sketch and Flat Skin Color remake hashes are pinned in release tests.
+- Local release gate PASS: 83/83 tests; 44-guide intent audit with zero high-overlap pairs; 158-page build; English-first/legacy-alias verification; image-budget audit with no warnings.
+- Built HTML has exactly five poster figures per route and all ten built assets retain the approved hashes.
+- PR CI and Pages deployment are verified separately before reporting the production release; this checkpoint does not assert a deployment has already occurred.
+- Next: PR CI → ready/merge PR #60 → verify Pages → record production result → owner desktop/iPad QA.
+- Owner QA: Digital tab contains the two existing guides; each opens five ordered uncropped posters; View large and Save WebP work; remake first two face posters and approved Light & Details logo remain intact.
