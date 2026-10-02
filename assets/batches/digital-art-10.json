@@ -1,6 +1,6 @@
 {
   "batchId": "digital-art-10-20261002",
-  "status": "approved-assets-prepared-awaiting-binary-upload",
+  "status": "staging-ci-pass-awaiting-binary-upload",
   "routeMap": [
     {
       "slug": "digital-color-layers",
@@ -119,5 +119,12 @@
     "method": 6,
     "resize": "none",
     "preserveEmbeddedLogo": true
+  },
+  "staging": {
+    "branch": "feature/digital-art-10-posters-20261002",
+    "draftPr": 60,
+    "checkpointCi": "PASS",
+    "runtimeRefsSwitched": false,
+    "note": "Copy, route mapping and skill separation are staged; do not switch posterGallery/image paths until all 10 WebP binaries are committed."
   }
 }
