@@ -243,11 +243,40 @@ Do not mass-generate all six posters before the first poster of each topic is ow
 
 | Topic | Lesson | Planned slug | Status |
 |---|---|---|---|
-| Chibi Characters | Draw Cute Chibi Proportions | `chibi-proportions` | Planned |
-| Chibi Characters | Chibi Faces & Expressions | `chibi-faces-expressions` | Planned |
-| Chibi Characters | Chibi Poses & Outfits | `chibi-poses-outfits` | Planned |
+| Chibi Characters | Draw Cute Chibi Proportions | `chibi-proportions` | **OWNER APPROVED** |
+| Chibi Characters | Chibi Faces & Expressions | `chibi-faces-expressions` | **OWNER APPROVED** |
+| Chibi Characters | Chibi Poses & Outfits | `chibi-poses-outfits` | **OWNER APPROVED** |
 | Fairy-Tale Princess | Design a Fairy-Tale Princess | `fairy-tale-princess-design` | Planned |
 | Fairy-Tale Princess | Princess Hair, Dress & Royal Details | `princess-hair-dress-details` | Planned |
 | Fairy-Tale Princess | Graceful Princess Poses | `graceful-princess-poses` | Planned |
 
 **Locked total: 6 planned posters.**
+
+
+## 11. Chibi approval checkpoint — 2026-10-02
+
+**Topic status: 3/3 OWNER APPROVED.**
+
+The approved Chibi visual family is now locked for this topic:
+- warm off-white background
+- soft blush / peach / mint / pale blue / warm yellow accents
+- character-first composition
+- generous whitespace
+- rounded gentle teaching panels
+- readable, controlled heading/body scale
+- same original brown-haired bow-wearing chibi character family
+- no Digital Art-style heavy colored block treatment
+
+Approved source PNGs:
+- `01-chibi-proportions.png` — 1055×1491 — SHA-256 `9a6d05f1a504804f5d519202acfb671d3a7ac9cf0399444c62206fb4bebef515`
+- `02-chibi-faces-expressions.png` — 1055×1491 — SHA-256 `6ed025b4b16ead58f958b5028633b5c4808d908d0e6617307a431167e2186c47`
+- `03-chibi-poses-outfits.png` — 1055×1491 — SHA-256 `f206ed22eabe7a594cee2997af1a37144bcb7a29b311391ef3b1c0f8a6820bb4`
+
+Durable Library copies:
+- `/G-Art Journey/Approved/Chibi/01-chibi-proportions.png`
+- `/G-Art Journey/Approved/Chibi/02-chibi-faces-expressions.png`
+- `/G-Art Journey/Approved/Chibi/03-chibi-poses-outfits.png`
+
+Do not regenerate, redesign or substitute these approved source artworks during website integration unless the owner explicitly requests a revision.
+
+**Next production step:** create only **Fairy-Tale Princess Lesson 1 — Design a Fairy-Tale Princess** as the princess visual pilot. Do not produce Princess Lessons 2–3 before Lesson 1 owner approval.
