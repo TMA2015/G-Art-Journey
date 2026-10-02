@@ -1,6 +1,6 @@
 {
   "packet_id": "CHARACTER-EXPANSION-CHIBI-PRINCESS-20261002",
-  "status": "CHIBI_3_OF_3_APPROVED_PRINCESS_NOT_STARTED",
+  "status": "ALL_6_LESSONS_AND_5_REFERENCE_SHEETS_OWNER_APPROVED_READY_FOR_RELEASE",
   "public_release": false,
   "category": "character",
   "hierarchy": "Category > Topic > Lesson",
@@ -89,23 +89,51 @@
           "slug": "fairy-tale-princess-design",
           "title": "Design a Fairy-Tale Princess",
           "primary_skill": "original princess identity through face, hair silhouette, dress silhouette and motif",
-          "status": "PLANNED"
+          "status": "OWNER_APPROVED",
+          "approved_source": {
+            "slug": "fairy-tale-princess-design",
+            "source_name": "04-princess-design.png",
+            "width": 1055,
+            "height": 1491,
+            "bytes": 2650271,
+            "sha256": "0451bbb311b3fdef6f64e98e5c6b2ac386184b60e700ce6df46d586028a8c369",
+            "library_path": "/G-Art Journey/Approved/Fairy-Tale Princess/Lessons/01-design-a-fairy-tale-princess.png"
+          }
         },
         {
           "order": 2,
           "slug": "princess-hair-dress-details",
           "title": "Princess Hair, Dress & Royal Details",
           "primary_skill": "hair masses, dress construction, folds and restrained royal details",
-          "status": "PLANNED"
+          "status": "OWNER_APPROVED",
+          "approved_source": {
+            "slug": "princess-hair-dress-details",
+            "source_name": "05-princess-hair-dress-details.png",
+            "width": 1055,
+            "height": 1491,
+            "bytes": 2725090,
+            "sha256": "27f6e430ed99b2f0c2d1f14f203d0907d33a129d51a48bac76b6b8b3d8a0bd37",
+            "library_path": "/G-Art Journey/Approved/Fairy-Tale Princess/Lessons/02-princess-hair-dress-royal-details.png"
+          }
         },
         {
           "order": 3,
           "slug": "graceful-princess-poses",
           "title": "Graceful Princess Poses",
           "primary_skill": "elegant gesture, hand placement, balance and skirt movement",
-          "status": "PLANNED"
+          "status": "OWNER_APPROVED",
+          "approved_source": {
+            "slug": "graceful-princess-poses",
+            "source_name": "06-princess-poses.png",
+            "width": 1024,
+            "height": 1536,
+            "bytes": 2611337,
+            "sha256": "02b3912cb3ea7418e2adbbe9f0787d41bfb5497afb7588cc742578c55fb9e984",
+            "library_path": "/G-Art Journey/Approved/Fairy-Tale Princess/Lessons/03-graceful-princess-poses.png"
+          }
         }
-      ]
+      ],
+      "topic_status": "OWNER_APPROVED_3_OF_3"
     }
   ],
   "visual_contract": {
@@ -140,7 +168,84 @@
   "approval_checkpoint": {
     "date": "2026-10-02",
     "chibi_topic_status": "OWNER_APPROVED_3_OF_3",
-    "next_pilot": "fairy-tale-princess-design",
-    "note": "Preserve the approved Chibi visual family. Do not regenerate or substitute these three source artworks unless the owner explicitly requests a revision."
+    "princess_topic_status": "OWNER_APPROVED_3_OF_3",
+    "reference_extension_status": "OWNER_APPROVED_5_OF_5",
+    "next_step": "controlled website integration and release",
+    "note": "Use only the exact approved source artworks and derived no-resize/no-crop WebPs."
+  },
+  "reference_library_extension": {
+    "status": "OWNER_APPROVED_5_OF_5",
+    "styles": [
+      {
+        "id": "princess",
+        "label": "Fairy-Tale Princess"
+      },
+      {
+        "id": "chibi",
+        "label": "Chibi"
+      }
+    ],
+    "items": [
+      {
+        "id": "hair-princess-01",
+        "category": "hair",
+        "style": "princess",
+        "title": "Princess Hairstyles & Accessories",
+        "source_name": "07-princess-hairstyles-accessories.png",
+        "width": 1055,
+        "height": 1491,
+        "bytes": 2801129,
+        "sha256": "674916a925863333a75b0cdb0b24a43f130e6eda6012ec6130f11931a8823f60",
+        "library_path": "/G-Art Journey/Approved/Fairy-Tale Princess/Reference/01-princess-hairstyles-accessories.png"
+      },
+      {
+        "id": "clothing-princess-01",
+        "category": "clothing",
+        "style": "princess",
+        "title": "Princess Dress Library",
+        "source_name": "08-princess-dress-library.png",
+        "width": 1055,
+        "height": 1491,
+        "bytes": 3072324,
+        "sha256": "14977fb4833ffc66e1acca5235dae8602997be6a031ba3e5925584c48fcaea1e",
+        "library_path": "/G-Art Journey/Approved/Fairy-Tale Princess/Reference/02-princess-dress-library.png"
+      },
+      {
+        "id": "clothing-chibi-01",
+        "category": "clothing",
+        "style": "chibi",
+        "title": "Chibi Clothing Library",
+        "source_name": "09-chibi-clothing-library.png",
+        "width": 1055,
+        "height": 1491,
+        "bytes": 2663716,
+        "sha256": "288437ed050193fbe73f04693c045f13db31263cee628419552c93a88c73d673",
+        "library_path": "/G-Art Journey/Approved/Chibi/Reference/01-chibi-clothing-library.png"
+      },
+      {
+        "id": "motion-chibi-01",
+        "category": "motion",
+        "style": "chibi",
+        "title": "Chibi Pose & Motion Library",
+        "source_name": "10-chibi-pose-motion-library.png",
+        "width": 1055,
+        "height": 1491,
+        "bytes": 2574290,
+        "sha256": "f0f733c9ddcc1b5656bd1ede8f5e1307165e313276d92de3cc097b2453f5cc30",
+        "library_path": "/G-Art Journey/Approved/Chibi/Reference/02-chibi-pose-motion-library.png"
+      },
+      {
+        "id": "hair-chibi-01",
+        "category": "hair",
+        "style": "chibi",
+        "title": "Chibi Hair Library",
+        "source_name": "11-chibi-hair-library.png",
+        "width": 1055,
+        "height": 1491,
+        "bytes": 2645056,
+        "sha256": "80e4dfabb608bdd42bc44eea6cdbe304bcdccfe3f8c5bf7be679dc2d8a26cd48",
+        "library_path": "/G-Art Journey/Approved/Chibi/Reference/03-chibi-hair-library.png"
+      }
+    ]
   }
 }
