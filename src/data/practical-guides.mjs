@@ -409,18 +409,18 @@ export const practiceGuides = [
 {
  slug:'color-a-face-in-layers',category:'digital',tag:'DIGITAL COLOR',difficulty:'Beginner',time:'20–35 min',
  title:'Color a Face with Simple Layers',
- description:'Learn why artists place skin color, shadows, warm cheeks and highlights on separate layers.',
- image:'showcase/character-2.svg',
- supplies:'A drawing app with layers and a simple face sketch',
+ description:'Take one face from a clean sketch to flat skin, one clear shadow and selected details while keeping every stage easy to edit.',
+ image:'infographics/digital/face-01-clean-sketch.webp', poster:true, posterWidth:1122, posterHeight:1402, posterGallery:[{"title": "1. Clean Sketch", "image": "infographics/digital/face-01-clean-sketch.webp", "width": 1122, "height": 1402, "alt": "Clean Sketch: approved G-Art Journey digital art layer lesson"}, {"title": "2. Flat Skin Color", "image": "infographics/digital/face-02-flat-skin.webp", "width": 1024, "height": 1536, "alt": "Flat Skin Color: approved G-Art Journey digital art layer lesson"}, {"title": "3. Add One Clear Shadow", "image": "infographics/digital/face-03-shadow.webp", "width": 1024, "height": 1536, "alt": "Add One Clear Shadow: approved G-Art Journey digital art layer lesson"}, {"title": "4. Add Details", "image": "infographics/digital/face-04-details.webp", "width": 1024, "height": 1536, "alt": "Add Details: approved G-Art Journey digital art layer lesson"}, {"title": "5. Check Your Layers", "image": "infographics/digital/face-05-check.webp", "width": 1024, "height": 1536, "alt": "Check Your Layers: approved G-Art Journey digital art layer lesson"}],
+ supplies:'Any drawing app with layers and a simple face sketch',
  steps:[
- {title:'Keep the sketch on top',body:'Put the sketch on one layer and lower its opacity if needed. Make a new layer underneath for skin color.'},
- {title:'Fill one base color',body:'Choose a starting skin color that fits your character and lighting. Keep it as a clear, flat shape before shading.'},
- {title:'Add one shadow layer',body:'Decide where the light comes from, then shade the opposite side of the face and under the hair. Keep the shapes simple.'},
- {title:'Bring in warmth',body:'Try a light, soft brush for cheeks, nose or ears. Use a separate layer so you can lower its opacity without changing the base skin color.'},
- {title:'Place small highlights',body:'Add bright accents only where light catches the face. Toggle the extra layers off and on to see what each one contributes.'}
+ {title:'Keep a clean sketch layer',body:'Put the sketch on its own top layer and lower the opacity before coloring. Keep the face construction easy to read.'},
+ {title:'Fill one flat skin color',body:'Create a clean skin base for the face, ears and neck. Keep it flat for now so the silhouette and edges are easy to check.'},
+ {title:'Add one clear shadow',body:'Choose one light direction and place one simple shadow layer on the opposite planes and under the hair. Use clipping if it helps.'},
+ {title:'Add selected details',body:'Add only a few useful accents such as soft blush, lips, small highlights, hair strands or a light edge. Keep the face simple and coherent.'},
+ {title:'Check your layers',body:'Toggle sketch, skin, shadow and detail layers to compare each stage. Name or group them clearly and merge only when needed.'}
  ],
- tryIt:'Make three versions from the same base face: flat color, one shadow, and one shadow plus blush. Compare the mood.',
- remember:'Many layers help you edit freely, but more layers do not automatically make better art. Start with only a few.',
+ tryIt:'Use one face sketch and save four checkpoints: clean sketch, flat skin, shadow, then details. Toggle the layers to compare how each stage changes the face.',
+ remember:'A simple, readable layer stack is enough. Finish the big color and shadow decisions before adding small facial details.',
  seeAlso:['graphite-values']
 }
 ];

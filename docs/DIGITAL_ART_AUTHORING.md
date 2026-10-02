@@ -138,15 +138,48 @@ Artwork production:
 
 Website release:
 - **NOT YET PUBLISHED as this new 10-poster Digital Art batch**
-- existing Digital Art placeholder cards/routes remain the integration target
+- integration branch: `feature/digital-art-10-posters-20261002`
+- exact asset map/checksums: `assets/batches/digital-art-10.json`
 
-Next recommended task in the next chat:
-1. inspect the current Digital Art routes/data and decide exact mapping of the 10 posters
-2. optimize approved originals to WebP without changing composition/logo
-3. add/update guide metadata and skill-intent entries
-4. run overlap audit + tests + build
-5. controlled PR and Pages release
-6. owner desktop/iPad QA
+Route mapping is now locked:
+- `digital-color-layers` → **Painting with Separate Layers** → Set A five-poster gallery
+- `color-a-face-in-layers` → **Color a Face with Simple Layers** → Set B five-poster gallery
+- upgrade both routes in place; do not create duplicate Digital Art routes
+
+Planned public assets:
+
+Set A:
+- `infographics/digital/layers-01-overview.webp`
+- `infographics/digital/layers-02-base-color.webp`
+- `infographics/digital/layers-03-shadow.webp`
+- `infographics/digital/layers-04-light-details.webp`
+- `infographics/digital/layers-05-check.webp`
+
+Set B:
+- `infographics/digital/face-01-clean-sketch.webp`
+- `infographics/digital/face-02-flat-skin.webp`
+- `infographics/digital/face-03-shadow.webp`
+- `infographics/digital/face-04-details.webp`
+- `infographics/digital/face-05-check.webp`
+
+Preparation checkpoint:
+- all 10 owner-approved source PNGs were recovered from the Art Project Library
+- only the **remake** Clean Sketch and Flat Skin Color were selected
+- all 10 were converted to WebP with **no resize/crop**, preserving embedded logos and composition
+- dimensions, byte sizes and source/output SHA-256 hashes are recorded in the batch manifest
+- Digital Art skill intents were refined so Set A teaches **layer-role organization** while Set B teaches an **applied face-color layer progression**
+- English-first lesson copy for both existing routes is aligned with the approved five-stage poster sequences
+- draft PR **#60** tracks the controlled integration checkpoint
+- staging CI/build checkpoint: **PASS**
+- binary WebP upload and runtime route switch remain gated together so the site never references missing poster files
+
+Next release gate:
+1. commit the 10 WebP binaries to the integration branch
+2. switch the two existing routes to their five-poster galleries
+3. update English-first route copy and release tests
+4. run guide-overlap audit + full tests + build
+5. controlled PR merge and Pages deployment
+6. owner desktop/iPad visual QA
 
 ## 7. Source-art checkpoint from current conversation
 
@@ -155,3 +188,16 @@ Approved source images are the current conversation-generated originals. Importa
 - do **not** accidentally use the earlier rejected versions with more colorful sheet backgrounds
 
 This document is the durable source of truth for the next chat.
+
+### Digital Art integration release gate — 2026-10-02
+
+- Integration checkpoint: `c0a9498b8ad3bd12aa5fedf069f98b252993bc47` on `feature/digital-art-10-posters-20261002`, existing PR #60.
+- Binary checkpoint: `b756fac14c8cafba03622cc93e0b2497b285f128`.
+- Exactly ten supplied WebP files pass SHA-256, byte-size and dimension checks; no artwork was edited, cropped, resized or rebranded.
+- Both existing Digital routes now use five-poster galleries in the locked order; catalog covers use the first approved poster.
+- Official Clean Sketch and Flat Skin Color remake hashes are pinned in release tests.
+- Local release gate PASS: 83/83 tests; 44-guide intent audit with zero high-overlap pairs; 158-page build; English-first/legacy-alias verification; image-budget audit with no warnings.
+- Built HTML has exactly five poster figures per route and all ten built assets retain the approved hashes.
+- PR CI and Pages deployment are verified separately before reporting the production release; this checkpoint does not assert a deployment has already occurred.
+- Next: PR CI → ready/merge PR #60 → verify Pages → record production result → owner desktop/iPad QA.
+- Owner QA: Digital tab contains the two existing guides; each opens five ordered uncropped posters; View large and Save WebP work; remake first two face posters and approved Light & Details logo remain intact.

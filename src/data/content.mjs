@@ -59,13 +59,13 @@ const starterGuides = [
     {title:'Dry, then glaze', body:'Let the first layer dry before adding a second transparent glaze for gentle depth and richer color.'},
     {title:'Add stem and leaves', body:'Finish with a loose stem and a few simple leaves while keeping the painting fresh and uncluttered.'}
   ], tryIt:'Paint the same flower twice: once with more water and once with less water. Compare the transparency.', remember:'Let watercolor breathe. Leave some paper white and build color slowly.' },
-  { slug:'digital-color-layers', category:'digital', tag:'DIGITAL ART', difficulty:'Cơ bản', time:'15–25 phút', title:'Tô màu với những lớp riêng biệt', description:'Hiểu vì sao người vẽ chia sketch, màu nền, bóng và ánh sáng thành các layer.', image:'showcase/digital.svg', supplies:'Ứng dụng vẽ có layer (Procreate, Krita, ibisPaint...)', steps:[
-    {title:'Sketch', body:'Tạo lớp phác thảo và giảm opacity để làm hướng dẫn.'},
-    {title:'Base colors', body:'Đặt các mảng màu nền da, tóc, quần áo trên những lớp riêng khi cần.'},
-    {title:'Shadows', body:'Tạo lớp bóng phía trên màu nền; thử clipping để không tô tràn mảng.'},
-    {title:'Highlights', body:'Dùng lớp mới cho điểm sáng. Hạn chế đặt ánh sáng khắp nơi như nhau.'},
-    {title:'Điều chỉnh tổng thể', body:'Tắt/bật từng layer để thấy vai trò của chúng; giữ số lớp vừa đủ cho mình.'}
-  ]}
+  { slug:'digital-color-layers', category:'digital', tag:'DIGITAL ART', difficulty:'Beginner', time:'20–35 min', title:'Painting with Separate Layers', description:'Organize one digital painting so base colors, shadow, light and details stay easy to edit and understand.', image:'infographics/digital/layers-01-overview.webp', poster:true, posterWidth:1122, posterHeight:1402, posterGallery:[{"title": "1. Painting with Separate Layers", "image": "infographics/digital/layers-01-overview.webp", "width": 1122, "height": 1402, "alt": "Painting with Separate Layers: approved G-Art Journey digital art layer lesson"}, {"title": "2. Base Color Layers", "image": "infographics/digital/layers-02-base-color.webp", "width": 1122, "height": 1402, "alt": "Base Color Layers: approved G-Art Journey digital art layer lesson"}, {"title": "3. Shadow Layer", "image": "infographics/digital/layers-03-shadow.webp", "width": 1122, "height": 1402, "alt": "Shadow Layer: approved G-Art Journey digital art layer lesson"}, {"title": "4. Light & Details", "image": "infographics/digital/layers-04-light-details.webp", "width": 1024, "height": 1536, "alt": "Light & Details: approved G-Art Journey digital art layer lesson"}, {"title": "5. Check Your Layers", "image": "infographics/digital/layers-05-check.webp", "width": 1055, "height": 1491, "alt": "Check Your Layers: approved G-Art Journey digital art layer lesson"}], supplies:'Any drawing app with layers', steps:[
+    {title:'See the layer workflow', body:'Start with a simple sketch and plan a small layer stack before painting. Each layer should have a clear job.'},
+    {title:'Build base color layers', body:'Separate the largest color groups so background, subject and foreground can be adjusted without repainting everything.'},
+    {title:'Add one shadow layer', body:'Choose one light direction, place a clear shadow layer and use clipping when it helps keep the shadow inside the base shape.'},
+    {title:'Add light and selected details', body:'Use a separate layer for highlights and a few useful details. Keep the main shapes readable instead of polishing every area equally.'},
+    {title:'Check your layers', body:'Toggle layers on and off, name or group them clearly, and merge only when it genuinely makes the file easier to manage.'}
+  ], tryIt:'Paint one simple object or scene with a small stack: sketch, base colors, shadow, then light/details. Toggle each layer to see exactly what it contributes.', remember:'Layers are tools for clear editing, not a goal by themselves. Give each layer a useful role and keep the stack as simple as the painting allows.' }
 ];
 
 export const guides = [...starterGuides, ...practiceGuides, ...humanGuides, ...characterGuides];

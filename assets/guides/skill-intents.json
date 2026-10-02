@@ -27,14 +27,14 @@
       "slug": "digital-color-layers",
       "status": "published",
       "family": "digital",
-      "primarySkill": "layer-organization",
-      "visibleEvidence": "Learn the roles of sketch, base, shadow and highlight layers in an app.",
+      "primarySkill": "layer-role-organization",
+      "visibleEvidence": "Organize one digital painting into base-color groups, one shadow layer, light/detail layers and a final layer-visibility check.",
       "stageFocus": [
-        "sketch-layer",
-        "flat-color-layer",
-        "shadow-layer",
-        "highlight-layer",
-        "layer-toggle"
+        "layer-workflow-overview",
+        "base-color-groups",
+        "shadow-and-clipping",
+        "light-and-selected-details",
+        "toggle-organize-merge"
       ]
     },
     {
@@ -69,14 +69,14 @@
       "slug": "color-a-face-in-layers",
       "status": "published",
       "family": "digital",
-      "primarySkill": "skin-color-layering",
-      "visibleEvidence": "Apply base skin color, one shadow, soft warmth and small highlights.",
+      "primarySkill": "simple-face-color-layer-progression",
+      "visibleEvidence": "Take one face from a clean sketch through flat skin, one clear shadow and selected details, then compare the layer stack.",
       "stageFocus": [
-        "skin-flat",
-        "directional-shadow",
-        "blush-layer",
-        "skin-highlight",
-        "before-after-layer-toggle"
+        "clean-sketch-layer",
+        "flat-skin-base",
+        "one-clear-shadow",
+        "selected-face-details",
+        "layer-stack-check"
       ]
     },
     {

@@ -77,12 +77,12 @@ const guideEn={
  {title:'Dry, then glaze',body:'Let the first layer dry before adding a second transparent glaze for gentle depth and richer color.'},
  {title:'Add stem and leaves',body:'Finish with a loose stem and a few simple leaves while keeping the painting fresh and uncluttered.'}
  ]},
- 'digital-color-layers':{tag:'DIGITAL ART',difficulty:'Basics',time:'15–25 min',title:'Painting with separate layers',description:'Why digital artists separate sketch, base colors, shadows and light.',supplies:'A drawing app with layers (Procreate, Krita, ibisPaint...)',steps:[
- {title:'Sketch',body:'Create a sketch layer and lower its opacity to use as a guide.'},
- {title:'Base colors',body:'Put skin, hair and clothing shapes on separate layers when useful.'},
- {title:'Shadows',body:'Add a shadow layer above the base; try clipping to keep paint inside its shape.'},
- {title:'Highlights',body:'Add highlights on another layer, but avoid making every area equally bright.'},
- {title:'Review the whole image',body:'Toggle layers to see their purpose; keep only as many as you need.'}
+ 'digital-color-layers':{tag:'DIGITAL ART',difficulty:'Beginner',time:'20–35 min',title:'Painting with Separate Layers',description:'Organize one digital painting so base colors, shadow, light and details stay easy to edit and understand.',supplies:'Any drawing app with layers',steps:[
+ {title:'See the layer workflow',body:'Start with a simple sketch and plan a small layer stack before painting. Each layer should have a clear job.'},
+ {title:'Build base color layers',body:'Separate the largest color groups so background, subject and foreground can be adjusted without repainting everything.'},
+ {title:'Add one shadow layer',body:'Choose one light direction, place a clear shadow layer and use clipping when it helps keep the shadow inside the base shape.'},
+ {title:'Add light and selected details',body:'Use a separate layer for highlights and a few useful details. Keep the main shapes readable instead of polishing every area equally.'},
+ {title:'Check your layers',body:'Toggle layers on and off, name or group them clearly, and merge only when it genuinely makes the file easier to manage.'}
  ]}
 };
 export const getShowcase=(lang='en')=>rawShowcase.map(s=>{

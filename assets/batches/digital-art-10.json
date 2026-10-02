@@ -1,0 +1,130 @@
+{
+  "batchId": "digital-art-10-20261002",
+  "status": "integrated-awaiting-release-gate",
+  "routeMap": [
+    {
+      "slug": "digital-color-layers",
+      "title": "Painting with Separate Layers",
+      "posters": [
+        {
+          "localFile": "01-painting-with-separate-layers.webp",
+          "targetPath": "infographics/digital/layers-01-overview.webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 259824,
+          "sha256": "95dcdc4c93c46c37c6a03d334107fd1cd79e0a37c59773930a492565d5b66423",
+          "sourcePngSha256": "f7d03a610353ec76f593af16dd94fd35700b662f6ce4dd91243917a45e86c9de"
+        },
+        {
+          "localFile": "02-base-color-layers.webp",
+          "targetPath": "infographics/digital/layers-02-base-color.webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 265304,
+          "sha256": "2f3dd459210820e849dc2518aecb9a9078f97e7472a84fced1932de51bd2c928",
+          "sourcePngSha256": "9b9e9fc142e06baf1dab9ad0df702238bde0523099d1f2b84fe0bf76616e4b7a"
+        },
+        {
+          "localFile": "03-shadow-layer.webp",
+          "targetPath": "infographics/digital/layers-03-shadow.webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 323742,
+          "sha256": "06893410502c30a1a74290add37c9ca6530a3918c21caf2959285c9d42764651",
+          "sourcePngSha256": "fc11e4c6b7ca2bdcc5239e23b2568edc1aa840dffe1b961f7b0fd13041ba906a"
+        },
+        {
+          "localFile": "04-light-details.webp",
+          "targetPath": "infographics/digital/layers-04-light-details.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 375596,
+          "sha256": "a2b75754779aa6d8d541498b52b1ef44f4941bb8d6c58d9c5531c779a9d70c9e",
+          "sourcePngSha256": "e434a26773981e5ecd55dfcbb8868c84c521d42815bd0b3c78a244df2458fa30"
+        },
+        {
+          "localFile": "05-check-your-layers.webp",
+          "targetPath": "infographics/digital/layers-05-check.webp",
+          "width": 1055,
+          "height": 1491,
+          "bytes": 341060,
+          "sha256": "3058e2fd1428c1df6f14ecc4731f232f1846f44425165d368724c4807b62ddc3",
+          "sourcePngSha256": "9a04f36c6830f11ef54d7367bc89b9665b0b549257238d8428601878349a761d"
+        }
+      ]
+    },
+    {
+      "slug": "color-a-face-in-layers",
+      "title": "Color a Face with Simple Layers",
+      "posters": [
+        {
+          "localFile": "06-clean-sketch-remake.webp",
+          "targetPath": "infographics/digital/face-01-clean-sketch.webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 296066,
+          "sha256": "fbee372981911fc8106e0de6cf5274cbff5a8e5935290437ba527fe6132c8df9",
+          "sourcePngSha256": "45929de860d39fbeca8e96ac1d76e34f74c1f3dbc632ba0408e1e7d91c38e6dd"
+        },
+        {
+          "localFile": "07-flat-skin-color-remake.webp",
+          "targetPath": "infographics/digital/face-02-flat-skin.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 294480,
+          "sha256": "20f927ec0ec938543fb96980ae718a6f3b2e20fd8e8278b81809facd79b2a782",
+          "sourcePngSha256": "2d270d0e2e17da9ce565139753033bf612cd6f2faacfb4d412d832453ec7c0a2"
+        },
+        {
+          "localFile": "08-face-shadow.webp",
+          "targetPath": "infographics/digital/face-03-shadow.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 317768,
+          "sha256": "a9f9aabaff340fe43bcce9713be4bbf7a41fab285d5083895963bbbbfd8fd189",
+          "sourcePngSha256": "6155b3f17f5c93ce0440bd06f7e3af14430b4ad02e8d282ddd54d84a82fd6a19"
+        },
+        {
+          "localFile": "09-face-details.webp",
+          "targetPath": "infographics/digital/face-04-details.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 333132,
+          "sha256": "34903fd9420ba1a34a09091bed6497d8777755dc746750e724a607124a46e17e",
+          "sourcePngSha256": "4ab0b8dc14dea91151369674a9b3521f8cd26ab4ec6e3d507d81ac2b6151810d"
+        },
+        {
+          "localFile": "10-face-check-layers.webp",
+          "targetPath": "infographics/digital/face-05-check.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 368328,
+          "sha256": "45879df6ff8de0a76af36f8b62497005f9f7d00f7279a4612953ad0bd439522c",
+          "sourcePngSha256": "2250f879ed822487d5a9fa230621f4eae182221bde84c6f8a61b4edcb3817ed0"
+        }
+      ]
+    }
+  ],
+  "replacementRule": {
+    "officialCount": 10,
+    "rejected": [
+      "old Set B Clean Sketch",
+      "old Set B Flat Skin Color"
+    ],
+    "note": "Only the remake Clean Sketch and Flat Skin Color assets are official."
+  },
+  "conversion": {
+    "format": "WebP",
+    "quality": 88,
+    "method": 6,
+    "resize": "none",
+    "preserveEmbeddedLogo": true
+  },
+  "staging": {
+    "branch": "feature/digital-art-10-posters-20261002",
+    "draftPr": 60,
+    "checkpointCi": "PASS",
+    "runtimeRefsSwitched": true,
+    "note": "All ten approved binary hashes verified; both existing routes now use their five-poster galleries."
+  }
+}
