@@ -61,8 +61,8 @@ SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color
 ## Product / UX
 
 ### Post-SG-01 Learning Paths UX audit
-**Status:** Implementation in progress  
-**Priority:** High
+**Status:** Implemented / live — owner visual QA pending  
+**Priority:** Closing
 
 Review the live Start Here experience after SG-01:
 - Draw People now has 9 core steps; check whether grouping into stages improves scanability without removing content
@@ -71,7 +71,7 @@ Review the live Start Here experience after SG-01:
 - preserve Digital Art 2×5 and Watercolor 6 core steps
 - prefer UX grouping and clearer labels over creating more lessons
 
-Do not start a new content batch until this audit is complete.
+Implementation is live through PR #71. Keep new content paused only until the owner confirms the grouped Start Here presentation on desktop/iPad.
 
 
 ### Learning-path progress tracking
