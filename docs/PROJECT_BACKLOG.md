@@ -24,6 +24,40 @@ Implemented at `/start-here/` after owner approval. Keep future changes within t
 
 ## Learn to Draw — future content
 
+### Full learning-material quality audit
+**Status:** Completed baseline / quality correction staged  
+**Priority:** Active
+
+Audit:
+- `docs/LEARNING_MATERIAL_QUALITY_AUDIT_20261003.md`
+
+Immediate correction:
+- keep Soft Sky / Cloud Washes as Watercolor core
+- move Sky Wash Practice & Variations to optional Practice
+- keep Build a Simple Color Palette under optional Color planning
+
+Known watch items:
+- Digital approved posters are denser than the current preferred poster family; no redesign without owner instruction
+- Gesture & Motion is approved but not a best-in-class visual benchmark
+- six Human Drawing posters need exact width/height verification before metadata cleanup
+
+### DP-01 Built Spaces
+**Status:** Next content expansion  
+**Priority:** High
+
+Plan:
+- `docs/DP01_BUILT_SPACES_PLAN.md`
+
+Lessons:
+1. Draw Boxes & Corners in Two-Point Perspective
+2. Draw a Simple Room from Boxes
+
+Production rule:
+- create Lesson 1 pilot first
+- owner QA before Lesson 2
+- initial placement under Draw Places Explore more
+
+
 ### Reference Library style expansion
 **Status:** Foundation complete; future expansion deferred
 
@@ -75,8 +109,8 @@ Implementation is live through PR #71 and owner visual QA passed. This UX pass i
 
 
 ### Lesson-level path continuity
-**Status:** Implementation in progress  
-**Priority:** High
+**Status:** Completed / live  
+**Priority:** Closed
 
 Learning Paths now organize discovery well, but standalone guide pages still do not consistently show where a learner can go next.
 
