@@ -7,7 +7,7 @@ This file tracks deferred or upcoming work that should not interrupt the current
 ## Active proposal
 
 ### Start Here / Learning Paths
-**Status:** Proposal drafted — owner structure review pending  
+**Status:** Owner approved — implementation in progress  
 **Priority:** Next
 
 Purpose:
