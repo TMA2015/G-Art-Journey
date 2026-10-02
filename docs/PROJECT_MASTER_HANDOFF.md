@@ -623,6 +623,44 @@ Production release:
 Detailed Watercolor status:
 - `docs/WATERCOLOR_ART_AUTHORING.md`
 
+### Digital Art handoff — 2026-10-02
+
+Artwork status: **2 approved sets / exactly 10 official infographics**.
+
+Set A — **Painting with Separate Layers**:
+1. Painting with Separate Layers
+2. Base Color Layers
+3. Shadow Layer
+4. Light & Details
+5. Check Your Layers
+
+Set B — **Color a Face with Simple Layers**:
+1. Clean Sketch — **new remake is official**
+2. Flat Skin Color — **new remake is official**
+3. Add One Clear Shadow
+4. Add Details
+5. Check Your Layers
+
+Critical replacement rule:
+- the earlier Set B Lesson 1 and Lesson 2 approvals were later revoked
+- those old two images are **SUPERSEDED / REJECTED**
+- do not publish them
+- official approved total remains **10**, not 12
+
+Design rule:
+- prefer the Digital Art logo/style from Set A Lessons 1–3 for future images
+- Set A Lesson 4 has a different logo but is **owner-approved as a one-off exception**
+- preserve every approved poster's embedded logo when uploading; do not overlay the canonical website logo
+- keep backgrounds bright/clean and teaching stages easy to inspect
+- same artwork within one progressive lesson; more variety between lessons
+
+Website state:
+- these 10 newly approved Digital Art posters are **not yet released as a batch**
+- next chat should begin with mapping the 10 posters to current Digital Art routes, then optimize/upload, audit, CI, PR, deploy and owner QA
+
+Detailed durable spec:
+- `docs/DIGITAL_ART_AUTHORING.md`
+
 ## 15. Handoff update protocol
 
 Whenever a future decision changes the project:
