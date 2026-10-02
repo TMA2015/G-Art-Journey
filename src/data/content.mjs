@@ -25,7 +25,7 @@ export const showcase = [
 ];
 export const collections = [
   { id: 'pencil', number:'01', title:'Pencil Art', subtitle:'Vẽ chì', description:'Chân dung, hình người và phong cảnh. Những câu chuyện được kể bằng đậm nhạt.', image:'showcase/pencil-portrait.svg', link:'guides/#pencil' },
-  { id: 'character', number:'02', title:'Character Art', subtitle:'Vẽ nhân vật', description:'Manga, manhwa, manhua và cartoon – cùng khám phá nhiều cách dựng một nhân vật.', image:'infographics/character/manga-variations.webp', link:'character-styles/' },
+  { id: 'character', number:'02', title:'Character Art', subtitle:'Vẽ nhân vật', description:'Manga, manhwa / webtoon, manhua, cartoon, chibi và nhân vật công chúa cổ tích – nhiều cách xây dựng một nhân vật nguyên bản.', image:'infographics/character/manga-variations.webp', link:'character-styles/' },
   { id: 'watercolor', number:'03', title:'Watercolor', subtitle:'Màu nước', description:'Lớp màu trong, vệt loang mềm và những khoảnh khắc rất đỗi tự nhiên.', image:'showcase/watercolor.svg', link:'guides/#watercolor' },
   { id: 'digital', number:'04', title:'Digital Art', subtitle:'Vẽ trên ứng dụng', description:'Brush, layer, tô màu và những phong cảnh, nhân vật được vẽ trên màn hình.', image:'showcase/digital.svg', link:'guides/#digital' },
   { id: 'landscape', number:'05', title:'Landscape', subtitle:'Phong cảnh', description:'Núi rừng, sông hồ, phố xá, phối cảnh và những nơi bạn muốn nhớ.', image:'showcase/pencil-landscape.svg', link:'guides/#landscape' }
