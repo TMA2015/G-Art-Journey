@@ -61,8 +61,8 @@ SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color
 ## Product / UX
 
 ### Post-SG-01 Learning Paths UX audit
-**Status:** Implemented / live — owner visual QA pending  
-**Priority:** Closing
+**Status:** Completed / owner QA PASS  
+**Priority:** Closed
 
 Review the live Start Here experience after SG-01:
 - Draw People now has 9 core steps; check whether grouping into stages improves scanability without removing content
@@ -71,8 +71,23 @@ Review the live Start Here experience after SG-01:
 - preserve Digital Art 2×5 and Watercolor 6 core steps
 - prefer UX grouping and clearer labels over creating more lessons
 
-Implementation is live through PR #71. Keep new content paused only until the owner confirms the grouped Start Here presentation on desktop/iPad.
+Implementation is live through PR #71 and owner visual QA passed. This UX pass is closed.
 
+
+### Lesson-level path continuity
+**Status:** Proposed next UX step  
+**Priority:** High
+
+Learning Paths now organize discovery well, but standalone guide pages still do not consistently show where a learner can go next.
+
+Evaluate a lightweight, stateless footer for eligible lessons:
+- return to Start Here / relevant path
+- show one suggested next lesson when the lesson belongs to a clear core sequence
+- show optional “Explore more” only when it genuinely helps
+- do not add accounts, checkboxes, streaks, locked prerequisites or saved progress
+- do not disturb the existing Digital Art previous/next lesson navigation
+
+Prefer path metadata as the source of truth rather than hard-coded lesson-page links.
 
 ### Learning-path progress tracking
 **Status:** Deferred
