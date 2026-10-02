@@ -23,7 +23,7 @@ const topicHubs=[
  {category:'figure',href:'human-drawing/',image:'infographics/human/face-basics.webp',tag:'HUMAN DRAWING',difficulty:'Topic library',title:'Human Drawing',description:'Choose '+naturalList(humanTopics.map(x=>x.label))+' before opening an individual lesson.',time:humanTopics.length+' topics · '+humanGuides.length+' lessons'},
  {category:'character',href:'character-styles/',image:'infographics/character/manga-face.webp',tag:'CHARACTER ART',difficulty:'Topic library',title:'Character Styles',description:'Choose '+naturalList(characterTopicLabels)+', then select the exact lesson you want.',time:characterTopics.length+' topics · '+characterGuides.length+' lessons'}
 ];
-const categories=['figure','pencil','landscape','character','watercolor','digital'];
+const categories=['figure','pencil','landscape','character','watercolor','digital','color'];
 const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.guides.categories[id]}))];
 ---
 <Base lang={lang} title={t.nav.guides} description={t.guides.intro}>
