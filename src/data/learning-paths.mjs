@@ -23,25 +23,25 @@ export const learningPaths=[
   outcome:'Build people from simple structure instead of drawing details first.',
   firstSlug:'face-basics',
   recommended:'Helpful after the first two Drawing Basics lessons, but you can start here.',
-  steps:[
-   {kind:'guide',slug:'face-basics',label:'Core'},
-   {kind:'guide',slug:'face-expressions',label:'Core'},
-   {kind:'guide',slug:'head-angles',label:'Core'},
-   {kind:'guide',slug:'figure-proportions',label:'Core'},
-   {kind:'guide',slug:'gesture-motion-basics',label:'Core'},
-   {kind:'guide',slug:'standing-figure',label:'Core'},
-   {kind:'guide',slug:'sitting-poses',label:'Core'},
-   {kind:'guide',slug:'hands-simple-forms',label:'Core'},
-   {kind:'guide',slug:'hair-masses',label:'Core'}
+  stages:[
+   {id:'face-head',label:'Face & Head',description:'Build a clear head and expression before moving to the full figure.'},
+   {id:'figure-motion',label:'Figure & Motion',description:'Move from proportion into gesture, balance and everyday poses.'},
+   {id:'finish-figure',label:'Finish the Figure',description:'Add two high-value supporting skills without losing the big structure.'}
   ],
-  explore:[
-   'eye-structure',
-   'pencil-facial-features',
-   'shade-a-pencil-portrait',
-   'faces-by-age',
-   'body-silhouettes',
-   'feet-simple-forms',
-   'fabric-tension-gravity'
+  steps:[
+   {kind:'guide',slug:'face-basics',label:'Core',stage:'face-head'},
+   {kind:'guide',slug:'face-expressions',label:'Core',stage:'face-head'},
+   {kind:'guide',slug:'head-angles',label:'Core',stage:'face-head'},
+   {kind:'guide',slug:'figure-proportions',label:'Core',stage:'figure-motion'},
+   {kind:'guide',slug:'gesture-motion-basics',label:'Core',stage:'figure-motion'},
+   {kind:'guide',slug:'standing-figure',label:'Core',stage:'figure-motion'},
+   {kind:'guide',slug:'sitting-poses',label:'Core',stage:'figure-motion'},
+   {kind:'guide',slug:'hands-simple-forms',label:'Core',stage:'finish-figure'},
+   {kind:'guide',slug:'hair-masses',label:'Core',stage:'finish-figure'}
+  ],
+  exploreGroups:[
+   {id:'face-details',label:'Face details',guides:['eye-structure','pencil-facial-features','shade-a-pencil-portrait','faces-by-age']},
+   {id:'figure-extras',label:'Figure extras',guides:['body-silhouettes','feet-simple-forms','fabric-tension-gravity']}
   ],
   referenceCollections:['poses','motion','hair','clothing']
  },
@@ -59,7 +59,12 @@ export const learningPaths=[
    {kind:'supportChoice',label:'Choose what you need'},
    {kind:'reference',label:'Explore more'}
   ],
-  supportGuides:['gesture-motion-basics','hands-simple-forms','feet-simple-forms','hair-masses','fabric-tension-gravity','standing-figure','simple-color-harmony'],
+  supportGroups:[
+   {id:'pose-motion',label:'Pose & Motion',description:'Make the pose read clearly before adding detail.',guides:['gesture-motion-basics','standing-figure']},
+   {id:'anatomy',label:'Anatomy',description:'Strengthen difficult contact points and small forms.',guides:['hands-simple-forms','feet-simple-forms']},
+   {id:'hair-clothing',label:'Hair & Clothing',description:'Add flow, silhouette and fabric behavior around the figure.',guides:['hair-masses','fabric-tension-gravity']},
+   {id:'color',label:'Color',description:'Plan a small, coherent palette when you are ready to color.',guides:['simple-color-harmony']}
+  ],
   referenceCollections:['poses','motion','hair','clothing']
  },
  {

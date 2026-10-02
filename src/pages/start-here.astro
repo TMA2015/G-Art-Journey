@@ -22,6 +22,22 @@ const pathScope=(path)=>{
  if(path.id==='create-characters')return '1 design lab · choose 1 of '+characterTopics.length+' topics';
  return path.steps.filter(step=>step.kind==='guide').length+' core steps';
 };
+const pathBlocksFor=(path)=>{
+ const stageMap=new Map((path.stages||[]).map((stage,index)=>[stage.id,{...stage,number:index+1}]));
+ const blocks=[];
+ let current=null;
+ path.steps.forEach((step,index)=>{
+  const key=step.stage?'stage:'+step.stage:'plain';
+  if(!current||current.key!==key){
+   current={key,type:step.stage?'stage':'plain',stage:step.stage?stageMap.get(step.stage):null,items:[]};
+   blocks.push(current);
+  }
+  current.items.push({step,index});
+ });
+ return blocks;
+};
+const exploreGroupsFor=(path)=>path.exploreGroups||(path.explore?.length?[{id:'explore',label:null,guides:path.explore}]:[]);
+const supportGroupsFor=(path)=>path.supportGroups||(path.supportGuides?.length?[{id:'support',label:null,description:null,guides:path.supportGuides}]:[]);
 ---
 <Base lang="en" title="Start Here | Learning Paths" description="Choose a simple suggested learning path through G-Art Journey. Pick drawing basics, people, characters, places, watercolor or digital art.">
  <div class="site-shell learning-shell">
@@ -64,67 +80,86 @@ const pathScope=(path)=>{
     <div class="path-outcome"><strong>What this path helps with</strong><br/>{path.outcome}<br/><br/><strong>Good to know</strong><br/>{path.recommended}</div>
    </div>
 
-   <div class="path-step-list">
-    {path.steps.map((step,index)=>{
-     const guide=step.kind==='guide'?guideFor(step.slug):null;
-     const series=step.kind==='digitalSeries'?digitalSeries[step.slug]:null;
-     const parent=step.kind==='digitalSeries'?guideFor(step.slug):null;
-     return <article class="path-step">
-      <div class="path-step-number">{String(index+1).padStart(2,'0')}</div>
-      <div class="path-step-copy">
-       <div class="path-step-top"><span class="path-label">{step.label}</span></div>
+   {pathBlocksFor(path).map(block=><div class={block.type==='stage'?'path-stage':'path-stage path-stage-plain'}>
+    {block.stage&&<div class="path-stage-head">
+     <span class="eyebrow">STAGE {block.stage.number} / {block.stage.label.toUpperCase()}</span>
+     <p>{block.stage.description}</p>
+    </div>}
+    <div class="path-step-list">
+     {block.items.map(({step,index})=>{
+      const guide=step.kind==='guide'?guideFor(step.slug):null;
+      const series=step.kind==='digitalSeries'?digitalSeries[step.slug]:null;
+      const parent=step.kind==='digitalSeries'?guideFor(step.slug):null;
+      return <article class="path-step">
+       <div class="path-step-number">{String(index+1).padStart(2,'0')}</div>
+       <div class="path-step-copy">
+        <div class="path-step-top"><span class="path-label">{step.label}</span></div>
 
-       {guide&&<>
-        <h3>{guide.title}</h3>
-        <p>{guide.description}</p>
-        <a class="path-open" href={guideHref(guide.slug)}>OPEN LESSON ↗</a>
-       </>}
+        {guide&&<>
+         <h3>{guide.title}</h3>
+         <p>{guide.description}</p>
+         <a class="path-open" href={guideHref(guide.slug)}>OPEN LESSON ↗</a>
+        </>}
 
-       {step.kind==='characterTopics'&&<>
-        <h3>Choose one Character Art topic</h3>
-        <p>You do not need to study every style family. Pick the one that makes you want to draw, then follow its three-lesson shelf.</p>
-        <div class="path-topic-grid">
-         {characterTopics.map(topic=><a href={topicHref(topic.id)}>
-          <strong>{topic.label}</strong>
-          <span>{topic.description}</span>
-         </a>)}
-        </div>
-       </>}
+        {step.kind==='characterTopics'&&<>
+         <h3>Choose one Character Art topic</h3>
+         <p>You do not need to study every style family. Pick the one that makes you want to draw, then follow its three-lesson shelf.</p>
+         <div class="path-topic-grid">
+          {characterTopics.map(topic=><a href={topicHref(topic.id)}>
+           <strong>{topic.label}</strong>
+           <span>{topic.description}</span>
+          </a>)}
+         </div>
+        </>}
 
-       {step.kind==='supportChoice'&&<>
-        <h3>Add one supporting skill</h3>
-        <p>Choose the skill your current character needs. These are helpers, not required checkpoints.</p>
-        <div class="path-support-grid">
-         {path.supportGuides.map(slug=>{const item=guideFor(slug);return item&&<a href={guideHref(slug)}>
-          <strong>{item.title}</strong><span>{item.description}</span>
-         </a>})}
-        </div>
-       </>}
+        {step.kind==='supportChoice'&&<>
+         <h3>Add one supporting skill</h3>
+         <p>Choose the skill your current character needs. These are helpers, not required checkpoints.</p>
+         <div class="path-support-groups">
+          {supportGroupsFor(path).map(group=><section class="path-support-group">
+           {group.label&&<div class="path-support-group-head">
+            <span class="path-group-label">{group.label}</span>
+            {group.description&&<p>{group.description}</p>}
+           </div>}
+           <div class="path-support-grid">
+            {group.guides.map(slug=>{const item=guideFor(slug);return item&&<a href={guideHref(slug)}>
+             <strong>{item.title}</strong><span>{item.description}</span>
+            </a>})}
+           </div>
+          </section>)}
+         </div>
+        </>}
 
-       {step.kind==='reference'&&<>
-        <h3>Make your own variation</h3>
-        <p>Use references for a pose, motion, hairstyle or outfit idea, then change and combine what you see into your own design.</p>
-        <a class="path-open" href={url('reference-library/')}>OPEN REFERENCE LIBRARY ↗</a>
-       </>}
+        {step.kind==='reference'&&<>
+         <h3>Make your own variation</h3>
+         <p>Use references for a pose, motion, hairstyle or outfit idea, then change and combine what you see into your own design.</p>
+         <a class="path-open" href={url('reference-library/')}>OPEN REFERENCE LIBRARY ↗</a>
+        </>}
 
-       {series&&parent&&<>
-        <h3>{series.label}</h3>
-        <p>{series.description}</p>
-        <div class="path-series">
-         <strong>{series.lessons.length} short lessons</strong>
-         <ol>{series.lessons.map(lesson=><li><a href={digitalLessonHref(step.slug,lesson.slug)}>{lesson.title}</a></li>)}</ol>
-        </div>
-        <a class="path-open" href={seriesHref(step.slug)}>OPEN SERIES ↗</a>
-       </>}
-      </div>
-     </article>
-    })}
-   </div>
+        {series&&parent&&<>
+         <h3>{series.label}</h3>
+         <p>{series.description}</p>
+         <div class="path-series">
+          <strong>{series.lessons.length} short lessons</strong>
+          <ol>{series.lessons.map(lesson=><li><a href={digitalLessonHref(step.slug,lesson.slug)}>{lesson.title}</a></li>)}</ol>
+         </div>
+         <a class="path-open" href={seriesHref(step.slug)}>OPEN SERIES ↗</a>
+        </>}
+       </div>
+      </article>
+     })}
+    </div>
+   </div>)}
 
-   {path.explore?.length>0&&<div class="path-explore">
+   {exploreGroupsFor(path).length>0&&<div class="path-explore">
     <h3>Explore more when you need it</h3>
-    <div class="path-explore-links">
-     {path.explore.map(slug=>{const item=guideFor(slug);return item&&<a href={guideHref(slug)}>{item.title}</a>})}
+    <div class="path-explore-groups">
+     {exploreGroupsFor(path).map(group=><section class="path-explore-group">
+      {group.label&&<h4>{group.label}</h4>}
+      <div class="path-explore-links">
+       {group.guides.map(slug=>{const item=guideFor(slug);return item&&<a href={guideHref(slug)}>{item.title}</a>})}
+      </div>
+     </section>)}
     </div>
    </div>}
 

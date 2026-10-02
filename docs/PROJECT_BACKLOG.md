@@ -61,7 +61,7 @@ SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color
 ## Product / UX
 
 ### Post-SG-01 Learning Paths UX audit
-**Status:** Audit complete — implementation proposal ready  
+**Status:** Implementation in progress  
 **Priority:** High
 
 Review the live Start Here experience after SG-01:
