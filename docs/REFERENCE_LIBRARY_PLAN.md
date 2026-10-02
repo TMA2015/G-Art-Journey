@@ -328,3 +328,27 @@ New approved inventory after this release: **23 reference infographics total** (
 - Existing 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
 - Final PR CI must pass before merge; Pages build and deployment are checked after merge.
 - Remaining acceptance: owner desktop/iPad QA after release.
+
+## Verified production release — 2026-10-02
+
+- Existing PR **#62 merged** after final PR CI **#293 PASS**.
+- Final PR head: `2333fc127fb0513b89f9abaa1009bf5c81befdec`.
+- Production implementation merge: `1ad8cccb6222ca38f451f7782c54b92b7399ddab`.
+- Pages workflow **#294 PASS**, build and deploy.
+- Release checks: **90/90 tests PASS**, 50-guide distinctness audit with zero high-overlap pairs, 206-page production build, 62 canonical routes / legacy aliases verified, and image-budget audit with no warnings.
+- All **11/11 supplied WebP SHA-256 hashes**, dimensions, byte sizes and target paths match. Artwork and embedded logos were preserved byte-for-byte.
+- Character Art landing: **6 topic shelves × 3 lessons = 18 topic lessons**, plus the separate Character Face Design Lab (19 lessons exposed through this landing). Human Drawing face lessons remain in their existing separate shelves.
+- New topics: Chibi Characters **3/3 LIVE**; Fairy-Tale Princess **3/3 LIVE**.
+- Reference Library: **23 sheets LIVE**; Poses 3, Motion 7, Hair 4, Clothing 9. Style counts: General 18, Chibi 3, Fairy-Tale Princess 2.
+- Core collection IDs, original twelve Character Style lessons, Design Lab, existing topic routes and compatibility aliases are unchanged.
+- No unrelated generated gallery/material assets were committed.
+- Remaining acceptance: owner desktop/iPad visual QA.
+
+QA checklist:
+1. Character Art landing has six topic cards plus the separate Design Lab.
+2. Chibi and Princess topics each open exactly three lessons in order.
+3. Each of the six lesson pages shows its full approved poster, readable text and intact logo, with working View large and Save WebP.
+4. Back links return to the topic/Character Art landing without losing route context.
+5. Reference Library has the Chibi and Fairy-Tale Princess style filters; style-only results show three and two cards respectively.
+6. Combined filters show Hair (one Chibi + one Princess), Clothing (one Chibi + one Princess), Motion (one Chibi), and no new Poses sheets.
+7. View large opens the correct full reference; iPad portrait/landscape layouts scroll without clipping or horizontal overflow.

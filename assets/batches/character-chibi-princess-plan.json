@@ -1,7 +1,7 @@
 {
   "packet_id": "CHARACTER-EXPANSION-CHIBI-PRINCESS-20261002",
-  "status": "ALL_6_LESSONS_AND_5_REFERENCE_SHEETS_OWNER_APPROVED_READY_FOR_RELEASE",
-  "public_release": false,
+  "status": "RELEASED_OWNER_VISUAL_QA_PENDING",
+  "public_release": true,
   "category": "character",
   "hierarchy": "Category > Topic > Lesson",
   "visual_reference_family": "Manhwa / Webtoon Character posters",
@@ -24,7 +24,7 @@
           "order": 1,
           "slug": "chibi-proportions",
           "title": "Draw Cute Chibi Proportions",
-          "primary_skill": "intentional 2–3 head chibi proportion and readable silhouette",
+          "primary_skill": "intentional 2\u20133 head chibi proportion and readable silhouette",
           "status": "OWNER_APPROVED",
           "approved_source": {
             "slug": "chibi-proportions",
@@ -139,7 +139,7 @@
   "visual_contract": {
     "orientation": "portrait",
     "background": "bright warm paper / off-white",
-    "hierarchy": "character-first, generous whitespace, 3–5 major teaching zones",
+    "hierarchy": "character-first, generous whitespace, 3\u20135 major teaching zones",
     "typography": "friendly controlled headings; short readable English captions; no oversized bubble lettering",
     "accents": "light pastel only; thin separators and restrained callouts",
     "avoid": [
@@ -170,7 +170,7 @@
     "chibi_topic_status": "OWNER_APPROVED_3_OF_3",
     "princess_topic_status": "OWNER_APPROVED_3_OF_3",
     "reference_extension_status": "OWNER_APPROVED_5_OF_5",
-    "next_step": "controlled website integration and release",
+    "next_step": "owner desktop/iPad visual QA",
     "note": "Use only the exact approved source artworks and derived no-resize/no-crop WebPs."
   },
   "reference_library_extension": {

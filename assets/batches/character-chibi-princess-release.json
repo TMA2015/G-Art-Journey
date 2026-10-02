@@ -1,6 +1,6 @@
 {
   "packetId": "GART-CHARACTER-CHIBI-PRINCESS-REFERENCE-RELEASE-20261002",
-  "status": "INTEGRATED_LOCAL_RELEASE_GATE_PASS_AWAITING_FINAL_PR_CI",
+  "status": "RELEASED_OWNER_VISUAL_QA_PENDING",
   "assetCount": 11,
   "lessonAssetCount": 6,
   "referenceAssetCount": 5,
@@ -158,5 +158,19 @@
       "clothing"
     ],
     "publishOnlyAfterFullChecksPass": true
+  },
+  "release": {
+    "pr": 62,
+    "prStatus": "merged",
+    "prHead": "2333fc127fb0513b89f9abaa1009bf5c81befdec",
+    "productionImplementationCommit": "1ad8cccb6222ca38f451f7782c54b92b7399ddab",
+    "prCiRun": 293,
+    "pagesRun": 294,
+    "testCount": 90,
+    "characterTopicCount": 6,
+    "characterTopicLessonCount": 18,
+    "characterDesignLabCount": 1,
+    "referenceCount": 23,
+    "ownerVisualQa": "pending"
   }
 }
