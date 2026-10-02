@@ -1308,3 +1308,32 @@ The grouping pass is closed. No further changes are required to this release.
 Next product-design question:
 - Learning Paths now organize discovery well, but ordinary standalone lesson pages still end after Try it / Remember without a lightweight “where next?” bridge.
 - Before adding more content, evaluate a small lesson-level continuity feature that can point learners back to Start Here or to the next suggested lesson without adding accounts, locked progress or stateful curriculum behavior.
+
+
+### Lesson-level Learning Path continuity implementation — 2026-10-03
+
+Owner approved completing the self-learning loop before further content expansion.
+
+Implementation branch:
+- `feature/lesson-path-continuity-20261003`
+
+Behavior:
+- ordinary standalone lessons now derive continuity from Learning Paths metadata
+- core lessons show:
+  - current path
+  - current stage when available
+  - one next suggested lesson only when the next path item is another core guide
+  - back-to-path navigation
+- end-of-core sequences do not invent a next lesson; they return to the path / Choose a path
+- Explore more / Support lessons show where they fit but never force a next lesson
+- a guide that is core in one path and optional in another keeps both roles visible
+- Digital Art standalone series pages keep their existing Previous / Next navigation and do not receive the generic continuity footer
+
+Architecture:
+- `src/data/learning-path-continuity.mjs` derives all memberships from `learning-paths.mjs`
+- no per-lesson hard-coded route map
+- continuity remains stateless: no accounts, progress state, completion checkboxes, streaks or locked prerequisites
+- regression tests verify core ordering, optional roles, end-of-sequence behavior and built-page output
+
+This closes the intended v1 self-learning loop:
+**Start Here → Path → Lesson → Suggested next lesson / Back to path**.
