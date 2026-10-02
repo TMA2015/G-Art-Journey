@@ -3,18 +3,28 @@ import Base from '../../layouts/Base.astro';
 import '../../styles/practical-guides.css';
 import '../../styles/human-batch.css';
 import '../../styles/guide-series.css';
+import '../../styles/lesson-continuity.css';
 import SectionNav from '../../components/SectionNav.astro';
 import {guides} from '../../data/content.mjs';
 import {digitalSeries} from '../../data/guide-topics.mjs';
 import {getGuides} from '../../i18n/content.mjs';
 import {getVisualNotes} from '../../i18n/notes.mjs';
 import {ui} from '../../i18n/ui.mjs';
+import {getGuideContinuity} from '../../data/learning-path-continuity.mjs';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const guide=getGuides(lang).find(g=>g.slug===Astro.props.guide.slug);
 const series=digitalSeries[guide.slug];
 const notes=getVisualNotes(lang);
 const related=(guide.seeAlso||[]).map(slug=>notes.find(n=>n.slug===slug)).filter(Boolean);
+const continuity=!guide.retired&&!series?getGuideContinuity(guide.slug):null;
+const continuityPrimary=continuity?.primary;
+const continuityPath=continuityPrimary?.path;
+const continuityStage=continuityPrimary?.stage;
+const continuityNext=continuity?.nextSlug?getGuides(lang).find(g=>g.slug===continuity.nextSlug):null;
+const continuityPathHref=continuityPath?url('start-here/#'+continuityPath.id):url('start-here/');
+const optionalMemberships=(continuity?.memberships||[]).filter(item=>item.role!=='core');
+const optionalPathIds=[...new Set(optionalMemberships.map(item=>item.pathId))];
 ---
 <Base lang={lang} title={guide.title} description={guide.description}>
  <article class="site-shell guide-article">
@@ -80,6 +90,52 @@ const related=(guide.seeAlso||[]).map(slug=>notes.find(n=>n.slug===slug)).filter
    {guide.tryIt&&<div class="practice-challenge"><span class="eyebrow">A LITTLE DRAWING CHALLENGE</span><h2 class="serif">Make it your own</h2><p>{guide.tryIt}</p></div>}
    {guide.remember&&<div class="practice-reminder"><span class="eyebrow">KEEP IN MIND</span><p>{guide.remember}</p></div>}
    {related.length>0&&<div class="practice-related"><span class="eyebrow">LOOK AT A VISUAL NOTE</span><div>{related.map(note=><a href={note.retired?url('guide/'+note.replacementGuide+'/'):url('notes/'+note.slug+'/')}>{note.retired?note.replacementTitle:note.title} ↗</a>)}</div></div>}
+  </section>}
+  {continuity&&<section class="learning-continuity" aria-label="Continue learning">
+   <span class="eyebrow">{continuityPrimary.role==='core'?'CONTINUE LEARNING':'WHERE THIS FITS'}</span>
+   <h2 class="serif">{continuityPrimary.role==='core'?'Keep going with '+continuityPath.title:'Use this lesson when you need it'}</h2>
+   {continuityPrimary.role==='core'?
+    <p>This lesson is part of <strong>{continuityPath.title}</strong>{continuityStage?<> · {continuityStage.label}</>:''}. The path is suggested, not locked—you can jump anywhere at any time.</p>:
+    <p>This is an optional support lesson. Use it when it helps your current drawing rather than treating it as a required checkpoint.</p>}
+   <div class="learning-continuity-meta">
+    {continuityPrimary.role==='core'&&<a href={continuityPathHref}>{continuityPath.title}{continuityStage?' · '+continuityStage.label:''}</a>}
+    {optionalMemberships.map(item=><a href={url('start-here/#'+item.pathId)}>{item.role==='support'?'Support':'Explore more'} · {item.pathTitle}{item.group?' · '+item.group:''}</a>)}
+   </div>
+
+   {continuityPrimary.role==='core'&&continuityNext?<div class="learning-continuity-actions">
+    <a class="learning-continuity-card" href={url('guide/'+continuityNext.slug+'/')}>
+     <span>Next suggested lesson →</span>
+     <strong>{continuityNext.title}</strong>
+     <p>{continuityNext.description}</p>
+    </a>
+    <a class="learning-continuity-card" href={continuityPathHref}>
+     <span>Back to path</span>
+     <strong>{continuityPath.title}</strong>
+     <p>See the whole suggested route and choose any lesson.</p>
+    </a>
+   </div>:
+   continuityPrimary.role==='core'?<div class="learning-continuity-actions">
+    <a class="learning-continuity-card" href={continuityPathHref}>
+     <span>Path checkpoint</span>
+     <strong>Back to {continuityPath.title}</strong>
+     <p>You reached the end of this core sequence. Explore optional lessons or choose another path.</p>
+    </a>
+    <a class="learning-continuity-card" href={url('start-here/#choose-a-path')}>
+     <span>Choose another path</span>
+     <strong>What would you like to draw next?</strong>
+     <p>Switch direction without losing access to anything.</p>
+    </a>
+   </div>:
+   <div class="learning-continuity-actions">
+    {optionalPathIds.slice(0,2).map(pathId=>{
+     const item=optionalMemberships.find(m=>m.pathId===pathId);
+     return item&&<a class="learning-continuity-card" href={url('start-here/#'+pathId)}>
+      <span>{item.role==='support'?'Support in':'Explore more in'}</span>
+      <strong>{item.pathTitle}</strong>
+      <p>{item.group?'Look under '+item.group+'.':'Return to the path and choose what you need next.'}</p>
+     </a>
+    })}
+   </div>}
   </section>}
  </article>
 </Base>
