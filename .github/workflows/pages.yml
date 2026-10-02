@@ -24,6 +24,8 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Check project
         run: npm test
+      - name: Audit learning content consistency
+        run: npm run audit:content
       - name: Review guide distinctness
         run: npm run audit:guides
       - name: Build site and regenerate gallery

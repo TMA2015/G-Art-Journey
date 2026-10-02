@@ -926,3 +926,21 @@ Copy refinements staged:
 - Chibi proportion wording was simplified from “2-head / 2.5-head / 3-head” to “roughly 2, 2.5 and 3 heads tall”
 
 No artwork, route, lesson count, teaching objective or approved poster is changed by this pass.
+
+
+### Content consistency gate — 2026-10-02
+
+Owner approved making content consistency a permanent release gate after the post-expansion copy audit.
+
+Durable standard:
+- `docs/CONTENT_CONSISTENCY_STANDARD.md`
+
+Automated audit:
+- `scripts/check-content-consistency.mjs`
+- command: `npm run audit:content`
+- CI runs the audit on every pull request and every push to `main`
+
+The gate checks structural learning-copy integrity across active guides, Character Art topics, Human Drawing shelves, Digital Art topic/lesson/poster alignment and Reference Library metadata. It also blocks selected stale Character Art count wording and public use of `Disney Princess` in place of the original `Fairy-Tale Princess` topic.
+
+Human review remains required for semantic and visual agreement:
+**Topic description → lesson objective → steps → Try it → Remember → poster**.
