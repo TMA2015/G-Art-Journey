@@ -213,7 +213,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-The Chibi + Fairy-Tale Princess + Reference Library release is live through PR #62 after 90 tests, audits, build and Pages deployment passed. Next: owner desktop/iPad visual QA of six topic shelves, the two new three-lesson topics, standalone poster readability/actions and the 23-sheet Reference Library filters. Preserve all eleven approved images and embedded logos unchanged.
+The Chibi + Fairy-Tale Princess + Reference Library release is live through PR #62 after 90 tests, audits, build and Pages deployment passed. Current Character Art = **6 topic shelves × 3 lessons = 18 topic lessons**, plus the separate Character Face Design Lab. Current Reference Library = **23 sheets**. Next: finish owner desktop/iPad visual QA and correct any post-release presentation/metadata issues without changing the eleven approved assets or embedded logos.
 
 ## 12. Daughter Gallery V1 — active task
 
@@ -870,3 +870,26 @@ QA checklist:
 5. Reference Library has the Chibi and Fairy-Tale Princess style filters; style-only results show three and two cards respectively.
 6. Combined filters show Hair (one Chibi + one Princess), Clothing (one Chibi + one Princess), Motion (one Chibi), and no new Poses sheets.
 7. View large opens the correct full reference; iPad portrait/landscape layouts scroll without clipping or horizontal overflow.
+
+
+### Post-release catalog consistency audit — 2026-10-02
+
+Owner QA found a stale public catalog card that still said **12 lessons** after Character Art expanded to six topic shelves.
+
+Audit result:
+- live Character Art data is correct: **6 topics / 18 topic lessons**, plus the separate Character Face Design Lab
+- live Reference Library data is correct: **23 sheets**; General 18, Chibi 3, Fairy-Tale Princess 2
+- stale information was presentation/documentation debt, not missing content
+
+Correction rule:
+- public collection counts should be derived from live data arrays whenever practical instead of being duplicated as hard-coded strings
+- historical release documents may retain old counts only when clearly labeled as historical baselines
+- current README / master / catalog copy must reflect the latest live state
+
+Correction branch:
+- `fix/current-project-counts-20261002`
+- updates Drawing Guides card/preview copy to derive Human/Character/Reference counts from data
+- refreshes Reference Library preview to show only style families with published assets
+- marks Character Batch 02 and the first 18-sheet Reference Library checkpoint as historical baselines
+- refreshes README to the current Character Art, Reference Library and Core Drawing Skills state
+- adds regression assertions preventing the old Character Art `12 lessons` copy from returning
