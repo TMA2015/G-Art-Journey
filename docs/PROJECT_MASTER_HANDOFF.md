@@ -1254,3 +1254,39 @@ Preserved:
 - no tabs, accordions, progress UI or new navigation layer
 
 Regression tests now validate group metadata, all nested guide references and generated Start Here headings.
+
+
+### Post-SG-01 Learning Paths grouping release — 2026-10-03
+
+The owner-approved grouping pass is live.
+
+Release:
+- PR **#71 merged**
+- final PR CI **#325 PASS**
+- production merge commit: `ee9f6a75e185ead719baa72f70b98e604fabbd5f`
+- Pages workflow **#326 PASS**; build and deployment both succeeded
+- full gate: **99/99 tests PASS**
+- content consistency: 53 active guides / 6 Character topics / 2 Digital topics / 23 reference sheets
+- learning-intent distinctness: 53 guides / 0 high-overlap pairs
+- production build: 214 pages
+- English-first verification: 66 canonical routes + legacy aliases
+- image-budget audit: PASS
+
+Live UX:
+- Draw People keeps all 9 core lessons, now grouped as:
+  1. Face & Head
+  2. Figure & Motion
+  3. Finish the Figure
+- Draw People Explore more is grouped into Face details / Figure extras
+- Create Characters keeps all 7 optional support guides, grouped as:
+  - Pose & Motion
+  - Anatomy
+  - Hair & Clothing
+  - Color
+- grouping is metadata-driven and the Start Here renderer remains generic
+- Drawing Basics, Draw Places, Watercolor six core steps and Digital Art 2×5 are unchanged
+- no lesson content, artwork or route changed
+- no tabs, accordions, progress UI or additional navigation layer was added
+
+Next acceptance step:
+- owner visual QA on desktop/iPad, focused only on Draw People stage headings and Create Characters support groups
