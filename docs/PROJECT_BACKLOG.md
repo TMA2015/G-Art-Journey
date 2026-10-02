@@ -7,8 +7,8 @@ This file tracks deferred or upcoming work that should not interrupt the current
 ## Active proposal
 
 ### Start Here / Learning Paths
-**Status:** Owner approved — implementation in progress  
-**Priority:** Next
+**Status:** Completed / live on 2026-10-02  
+**Priority:** Closed
 
 Purpose:
 - help a new learner answer “What should I learn next?”
@@ -20,7 +20,7 @@ Proposal:
 - six initial paths: Drawing Basics, Draw People, Create Characters, Draw Places, Watercolor Basics, Digital Art Basics
 - Reference Library remains an optional support tool
 
-Do not implement the page until the owner approves the proposed path structure.
+Implemented at `/start-here/` after owner approval. Keep future changes within the approved principle: suggested routes, never locked curriculum.
 
 ## Learn to Draw — future content
 

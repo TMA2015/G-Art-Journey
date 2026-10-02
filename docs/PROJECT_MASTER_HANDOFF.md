@@ -1011,3 +1011,35 @@ Implementation scope:
 - production build verification now includes the Start Here route
 
 No existing lesson artwork or lesson content is changed by this implementation.
+
+
+### Start Here / Learning Paths production release — 2026-10-02
+
+- Owner-approved structure from PR #66 is implemented and live.
+- Implementation PR **#67 merged** after PR CI **#305 PASS**.
+- Production merge commit: `500c056d4ab461163c5b52e20d9d9da716d54d14`.
+- Pages workflow **#306 PASS**; build and deploy both succeeded.
+- New canonical route: `/start-here/`; `/en/start-here/` remains a legacy English alias.
+- Drawing Guides now includes a clear **Start Here** entry point.
+- Live v1 paths:
+  1. Drawing Basics
+  2. Draw People
+  3. Create Characters
+  4. Draw Places
+  5. Watercolor Basics
+  6. Digital Art Basics
+- Character Art remains a branch choice across six topic families rather than a forced sequence.
+- Digital Art keeps its two-series / ten-lesson internal hierarchy.
+- Reference Library remains optional support.
+- Automated Learning Paths tests verify that referenced guide slugs are active, topic branches resolve and Digital series structure remains intact.
+- Production route verification includes Start Here and its legacy alias.
+- No existing lesson artwork, approved poster, lesson objective or route was replaced.
+
+Owner visual QA requested on desktop/iPad:
+- Start Here entry point visibility on Drawing Guides
+- six path cards and anchor navigation
+- readability / spacing on iPad portrait and landscape
+- Character Art branch links
+- Digital nested lesson links
+- Reference Library helper
+- no horizontal overflow or clipped cards
