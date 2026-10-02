@@ -81,7 +81,36 @@ console.log('Character expansion build PASS: 6 topics, 18 topic lessons + Design
 
 const sgGesture=await read('guide/gesture-motion-basics/');
 assert.match(sgGesture,/Draw Gesture &amp; Motion from Simple Lines|Draw Gesture & Motion from Simple Lines/);
+assert.match(sgGesture,/CONTINUE LEARNING/);
+assert.match(sgGesture,/Next suggested lesson/);
+assert.match(sgGesture,/Draw a Standing Figure Step by Step/);
+assert.match(sgGesture,/Draw People/);
+assert.match(sgGesture,/Figure &amp; Motion|Figure & Motion/);
+
+const faceBasics=await read('guide/face-basics/');
+assert.match(faceBasics,/Next suggested lesson/);
+assert.match(faceBasics,/Five Everyday Facial Expressions/);
+assert.match(faceBasics,/Face &amp; Head|Face & Head/);
+
+const peopleEnd=await read('guide/hair-masses/');
+assert.match(peopleEnd,/Path checkpoint/);
+assert.match(peopleEnd,/Choose another path/);
+assert.doesNotMatch(peopleEnd,/Next suggested lesson/);
+
 const sgFeet=await read('guide/feet-simple-forms/');
 assert.match(sgFeet,/Draw Feet from Simple Forms/);
+assert.match(sgFeet,/WHERE THIS FITS/);
+assert.match(sgFeet,/Explore more/);
+assert.match(sgFeet,/Support/);
+assert.doesNotMatch(sgFeet,/Next suggested lesson/);
+
 const sgColor=await read('guide/simple-color-harmony/');
 assert.match(sgColor,/Build a Simple Color Palette/);
+assert.match(sgColor,/WHERE THIS FITS/);
+assert.match(sgColor,/Create Characters/);
+assert.match(sgColor,/Watercolor Basics/);
+assert.match(sgColor,/Digital Art Basics/);
+
+const digitalLesson=await read('guide/digital-color-layers/01-layer-workflow/');
+assert.match(digitalLesson,/NEXT LESSON/);
+assert.doesNotMatch(digitalLesson,/CONTINUE LEARNING/);
