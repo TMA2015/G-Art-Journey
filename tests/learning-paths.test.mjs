@@ -63,3 +63,22 @@ test('Start Here routes and Drawing Guides entry point exist',async()=>{
  assert.match(guidesPage,/learningPaths\.length/);
  assert.match(base,/relative==='start-here\/'/);
 });
+
+
+test('SG-01 lessons are placed in Learning Paths as approved',()=>{
+ const people=learningPaths.find(x=>x.id==='draw-people');
+ const peopleCore=people.steps.filter(x=>x.kind==='guide').map(x=>x.slug);
+ assert.equal(peopleCore.indexOf('gesture-motion-basics'),peopleCore.indexOf('figure-proportions')+1);
+ assert.equal(peopleCore.indexOf('standing-figure'),peopleCore.indexOf('gesture-motion-basics')+1);
+ assert.ok(people.explore.includes('feet-simple-forms'));
+
+ const characters=learningPaths.find(x=>x.id==='create-characters');
+ for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(characters.supportGuides.includes(slug));
+
+ const watercolor=learningPaths.find(x=>x.id==='watercolor-basics');
+ const digital=learningPaths.find(x=>x.id==='digital-art-basics');
+ assert.ok(watercolor.explore.includes('simple-color-harmony'));
+ assert.ok(digital.explore.includes('simple-color-harmony'));
+
+ for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(activeGuides.has(slug));
+});
