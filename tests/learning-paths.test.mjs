@@ -26,7 +26,9 @@ test('Every Learning Path guide reference resolves to an active guide',()=>{
  for(const path of learningPaths){
   for(const step of path.steps)if(step.kind==='guide')slugs.push(step.slug);
   for(const slug of path.explore||[])slugs.push(slug);
+  for(const group of path.exploreGroups||[])for(const slug of group.guides)slugs.push(slug);
   for(const slug of path.supportGuides||[])slugs.push(slug);
+  for(const group of path.supportGroups||[])for(const slug of group.guides)slugs.push(slug);
  }
  for(const slug of slugs){
   assert.ok(activeGuides.has(slug),'missing or retired guide: '+slug);
@@ -70,10 +72,11 @@ test('SG-01 lessons are placed in Learning Paths as approved',()=>{
  const peopleCore=people.steps.filter(x=>x.kind==='guide').map(x=>x.slug);
  assert.equal(peopleCore.indexOf('gesture-motion-basics'),peopleCore.indexOf('figure-proportions')+1);
  assert.equal(peopleCore.indexOf('standing-figure'),peopleCore.indexOf('gesture-motion-basics')+1);
- assert.ok(people.explore.includes('feet-simple-forms'));
+ assert.ok(people.exploreGroups.flatMap(group=>group.guides).includes('feet-simple-forms'));
 
  const characters=learningPaths.find(x=>x.id==='create-characters');
- for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(characters.supportGuides.includes(slug));
+ const characterSupport=characters.supportGroups.flatMap(group=>group.guides);
+ for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(characterSupport.includes(slug));
 
  const watercolor=learningPaths.find(x=>x.id==='watercolor-basics');
  const digital=learningPaths.find(x=>x.id==='digital-art-basics');
@@ -81,4 +84,28 @@ test('SG-01 lessons are placed in Learning Paths as approved',()=>{
  assert.ok(digital.explore.includes('simple-color-harmony'));
 
  for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(activeGuides.has(slug));
+});
+
+
+test('Post-SG01 grouping keeps Draw People and Create Characters easy to scan',async()=>{
+ const people=learningPaths.find(x=>x.id==='draw-people');
+ assert.deepEqual(people.stages.map(x=>x.id),['face-head','figure-motion','finish-figure']);
+ assert.deepEqual(people.stages.map(x=>x.label),['Face & Head','Figure & Motion','Finish the Figure']);
+ assert.deepEqual(
+  people.steps.filter(x=>x.kind==='guide').map(x=>x.stage),
+  ['face-head','face-head','face-head','figure-motion','figure-motion','figure-motion','figure-motion','finish-figure','finish-figure']
+ );
+ assert.deepEqual(people.exploreGroups.map(x=>x.id),['face-details','figure-extras']);
+ assert.equal(people.exploreGroups.flatMap(x=>x.guides).length,7);
+
+ const characters=learningPaths.find(x=>x.id==='create-characters');
+ assert.deepEqual(characters.supportGroups.map(x=>x.id),['pose-motion','anatomy','hair-clothing','color']);
+ assert.deepEqual(characters.supportGroups.map(x=>x.label),['Pose & Motion','Anatomy','Hair & Clothing','Color']);
+ assert.equal(characters.supportGroups.flatMap(x=>x.guides).length,7);
+
+ const page=await readFile('src/pages/start-here.astro','utf8');
+ assert.match(page,/pathBlocksFor/);
+ assert.match(page,/STAGE \{block\.stage\.number\}/);
+ assert.match(page,/supportGroupsFor/);
+ assert.match(page,/exploreGroupsFor/);
 });
