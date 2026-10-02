@@ -1,11 +1,13 @@
-# Character Styles — 12 original illustrated posters
+# Character Styles — original Batch 02 baseline (12 posters)
 
-G-Art Journey now displays the approved original posters in four groups: manga, webtoon, manhua and cartoon. Each group has an introductory character guide, an illustrated variation sheet and a focused technique. Layouts flex with the skill; shared pastel colors and accessible captions keep the family identity.
+> **Historical baseline.** This document records the original four-topic Character Styles batch: Manga, Manhwa / Webtoon, Manhua and Cartoon / Comics, three posters each. The current live Character Art library has **6 topic shelves × 3 lessons = 18 topic lessons**, plus the separate Character Face Design Lab, after the Chibi Characters + Fairy-Tale Princess expansion. See `docs/CHARACTER_CHIBI_PRINCESS_RELEASE.md` and `docs/PROJECT_MASTER_HANDOFF.md` for current status.
+
+Batch 02 introduced twelve approved original posters in four groups: manga, webtoon, manhua and cartoon. Each group has an introductory character guide, an illustrated variation sheet and a focused technique. Layouts flex with the skill; shared pastel colors and accessible captions keep the family identity.
 
 The images are optimized original WebP web versions stored in `public/infographics/character/`. No external image host, account or grading. The source PNGs are not committed. All twelve SHA-256 checksums and dimensions are recorded in `src/data/character-assets.mjs`; `npm run art:check` and CI verify the real files.
 
 ## Navigation
-- `/character-styles/` offers four groups, three complete poster cards each, lazy loaded.
+- At the time of Batch 02, `/character-styles/` offered four groups with three complete poster cards each. The current page now exposes six topic shelves.
 - Every poster has its own `/guide/<slug>/` page with plain-English steps, viewing and saving controls.
 - Drawing Guides provides a prominent collection entry and keeps the character category filter.
 - The earlier generic manga starter guide redirects readers via an update notice to the new dedicated poster rather than remaining a duplicate catalog card.
