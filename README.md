@@ -72,3 +72,10 @@ The live [Reference Library](https://tma2015.github.io/G-Art-Journey/reference-l
 The original Phase 2 roadmap has grown into live illustrated learning areas for **Hands, Eyes, Hair and Fabric**, alongside Pencil, Landscape, Watercolor and Digital Art guides. Digital Art uses topic → lesson navigation, and teaching posters are displayed at a comfortable single-lesson reading size. Graphite work remains pencil-first while G-Art pastel identity stays in headings and small annotations.
 
 The historical roadmap and source map remain in [docs/CORE_DRAWING_SKILLS_PHASE2.md](docs/CORE_DRAWING_SKILLS_PHASE2.md) and [docs/ACADEMIC_REFERENCE_MAP.md](docs/ACADEMIC_REFERENCE_MAP.md). Current production status and release history live in [docs/PROJECT_MASTER_HANDOFF.md](docs/PROJECT_MASTER_HANDOFF.md).
+
+
+## Start Here / Learning Paths
+
+G-Art Journey includes six suggested learning paths for learners who want a simple answer to “What should I learn next?”: Drawing Basics, Draw People, Create Characters, Draw Places, Watercolor Basics and Digital Art Basics. Paths are recommendations only; lessons remain freely accessible and learners can switch paths at any time. Reference Library remains an optional helper rather than required coursework.
+
+The approved product/academic structure is documented in [docs/LEARNING_PATHS_PLAN.md](docs/LEARNING_PATHS_PLAN.md).

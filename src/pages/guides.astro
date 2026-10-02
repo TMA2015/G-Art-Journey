@@ -4,12 +4,14 @@ import '../styles/guide-grid.css';
 import '../styles/human-batch.css';
 import '../styles/character-styles.css';
 import '../styles/reference-library.css';
+import '../styles/learning-paths.css';
 import SectionNav from '../components/SectionNav.astro';
 import {getGuides} from '../i18n/content.mjs';
 import {humanGuides} from '../data/human-guides.mjs';
 import {characterGuides} from '../data/character-guides.mjs';
 import {humanTopics,characterTopics} from '../data/guide-topics.mjs';
 import {referenceItems,referenceStyles} from '../data/reference-library.mjs';
+import {learningPaths} from '../data/learning-paths.mjs';
 import {ui,language} from '../i18n/ui.mjs';
 const lang='en',t=ui(lang),base=import.meta.env.BASE_URL,url=(path='')=>base+path;
 const groupedLessonSlugs=new Set([...humanGuides,...characterGuides].map(g=>g.slug));
@@ -27,7 +29,18 @@ const filters=[{id:'all',label:t.guides.all},...categories.map(id=>({id,label:t.
 <Base lang={lang} title={t.nav.guides} description={t.guides.intro}>
  <div class="site-shell">
   <header class="page-hero"><div class="topline eyebrow">{t.guides.tag}</div><h1 class="serif">{t.guides.title1}<br/><em>{t.guides.title2}</em></h1><p>{t.guides.intro}</p></header>
-  <SectionNav lang={lang} items={[{id:'human-guides',label:'Human Drawing'},{id:'character-styles',label:'Character Styles'},{id:'reference-library',label:'Reference Library'},{id:'guide-collection',label:t.guides.categoryLink}]}/>
+  <SectionNav lang={lang} items={[{id:'start-here',label:'Start Here'},{id:'human-guides',label:'Human Drawing'},{id:'character-styles',label:'Character Styles'},{id:'reference-library',label:'Reference Library'},{id:'guide-collection',label:t.guides.categoryLink}]}/>
+  <section id="start-here" class="start-here-preview" aria-labelledby="start-here-heading">
+   <div>
+    <span class="eyebrow">NEW HERE? / LEARNING PATHS</span>
+    <h2 id="start-here-heading" class="serif">Not sure where to begin?</h2>
+    <p>Choose one of {learningPaths.length} short learning paths for a suggested order through the lessons you already see here. Nothing is locked, and you can change paths anytime.</p>
+    <a class="hero-cta" href={url('start-here/')}>Start with a learning path ↗</a>
+   </div>
+   <div class="start-here-preview-tags" aria-label="Learning path choices">
+    {learningPaths.map(path=><span>{path.title}</span>)}
+   </div>
+  </section>
   <section id="human-guides" class="human-preview" aria-labelledby="human-guides-heading">
     <div class="human-preview-copy"><span class="eyebrow">FEATURED / THE LITTLE SKETCHBOOK</span><h2 id="human-guides-heading" class="serif">Draw people, your way.</h2><p>{humanGuides.length} illustrated lessons across {humanTopics.length} topics for faces, expressions, head angles, body shapes and poses. Explore them at your own pace.</p><a class="hero-cta" href={url('human-drawing/')}>Explore {humanTopics.length} topics · {humanGuides.length} lessons ↗</a></div>
     <div class="human-preview-image"><img src={base+'infographics/human/face-basics.webp'} alt="Draw a face — one of eight original G-Art Journey posters" loading="lazy" width="1055" height="1491"/></div>

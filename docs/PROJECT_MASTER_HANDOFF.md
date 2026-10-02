@@ -982,3 +982,32 @@ Current state:
 - owner review of the learning-path structure is required before implementation
 
 The project backlog was refreshed at the same checkpoint: Reference Library is no longer listed as paused; its current 23-sheet foundation is complete, while Manga / Manhwa-Webtoon / Manhua reference expansion and a future skill-gap audit remain deferred.
+
+
+### Start Here / Learning Paths owner approval + implementation — 2026-10-02
+
+Owner approved the six-path structure in `docs/LEARNING_PATHS_PLAN.md`.
+
+Approved v1 paths:
+1. Drawing Basics
+2. Draw People
+3. Create Characters
+4. Draw Places
+5. Watercolor Basics
+6. Digital Art Basics
+
+Implementation branch:
+- `feature/start-here-learning-paths-20261002`
+
+Implementation scope:
+- structured path data in `src/data/learning-paths.mjs`
+- canonical `/start-here/` page plus `/en/start-here/` legacy alias
+- one clear Start Here entry point from Drawing Guides
+- no locked prerequisites, accounts, progress bars, badges or new art assets
+- Character Art remains a branch choice among six topic families
+- Digital Art retains two series / ten nested lessons
+- Reference Library remains optional support
+- automated path-integrity tests verify all guide references resolve to active content
+- production build verification now includes the Start Here route
+
+No existing lesson artwork or lesson content is changed by this implementation.
