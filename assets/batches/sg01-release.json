@@ -1,6 +1,6 @@
 {
   "packetId": "GART-SG01-RELEASE-20261003",
-  "status": "STAGED_BINARY_UPLOAD_PENDING",
+  "status": "INTEGRATED_LOCAL_RELEASE_GATE_PASS_AWAITING_FINAL_PR_CI",
   "assetCount": 3,
   "assets": [
     {

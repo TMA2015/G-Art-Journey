@@ -213,7 +213,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-The Chibi + Fairy-Tale Princess + Reference Library release is live through PR #62 after 90 tests, audits, build and Pages deployment passed. Current Character Art = **6 topic shelves × 3 lessons = 18 topic lessons**, plus the separate Character Face Design Lab. Current Reference Library = **23 sheets**. Next: finish owner desktop/iPad visual QA and correct any post-release presentation/metadata issues without changing the eleven approved assets or embedded logos.
+Complete the existing SG-01 release in PR #69. All three approved WebPs are uploaded and local release checks pass. Verify final-head CI before merge, then verify Pages deployment and request owner desktop/iPad QA. Gesture is Draw People core; Feet and Color Palette keep their optional roles. Preserve Digital 2×5, Watercolor six core steps, Human Drawing two topics/eight lessons and all approved artwork unchanged.
 
 ## 12. Daughter Gallery V1 — active task
 
@@ -1149,3 +1149,13 @@ Approved production asset targets:
 - `public/infographics/color/simple-color-palette.webp`
 
 Do not crop, resize, regenerate, recolor, rebrand or replace the approved artwork.
+
+### SG-01 integration gate — 2026-10-03
+
+- Existing PR #69 / `feature/sg01-learning-path-integration-20261003`; exactly three approved binaries uploaded unchanged.
+- Hashes, byte sizes and dimensions match `assets/batches/sg01-release.json`; built output hashes also match.
+- Semantic review: lesson descriptions, six teaching steps, Try it and Remember agree with the approved poster sequences. Existing owner acceptance of the imperfect Gesture continuity remains in force; no artwork changed.
+- Local full gate PASS: **98 tests**, content-consistency audit (53 active guides), distinctness audit (53 guides, zero high-overlap pairs), **214-page build**, **66 canonical routes / legacy aliases**, asset audit with no warnings.
+- Generated HTML confirms Gesture between Figure Proportions and Standing Figure, Feet only in Draw People Explore more, all three Character support links, optional palette links in Watercolor/Digital, and the Color Basics filter/card.
+- Digital remains **two series × five lessons**; Watercolor remains **six core steps**; Human Drawing remains **two topics / eight lessons**.
+- Final PR CI must pass before merge; verify Pages build/deploy after merge. Owner desktop/iPad visual QA remains pending.
