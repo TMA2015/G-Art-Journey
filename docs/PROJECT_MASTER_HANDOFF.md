@@ -893,3 +893,16 @@ Correction branch:
 - marks Character Batch 02 and the first 18-sheet Reference Library checkpoint as historical baselines
 - refreshes README to the current Character Art, Reference Library and Core Drawing Skills state
 - adds regression assertions preventing the old Character Art `12 lessons` copy from returning
+
+
+### Catalog consistency fix released — 2026-10-02
+
+- PR **#63 merged**.
+- PR CI **#296 PASS**.
+- Production merge commit: `e2622d5ce6af6b69691aa7158210e520a70a14f9`.
+- Pages workflow **#297 PASS**; build and deploy both succeeded.
+- Public Drawing Guides now derives collection counts from live data instead of the stale hard-coded Character Styles count.
+- Character Styles card/preview now reflects **6 topics · 18 lessons** and includes Manga, Manhwa / Webtoon, Manhua, Cartoon / Comics, Chibi Characters and Fairy-Tale Princess.
+- Reference Library preview now reflects **23 approved sheets** and only names style filters that currently have published assets.
+- README and historical baseline docs were reconciled so old 12-poster / 18-sheet checkpoints are clearly labeled as historical.
+- No artwork, binary asset, route hierarchy or approved lesson content changed.
