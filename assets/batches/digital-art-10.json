@@ -1,6 +1,6 @@
 {
   "batchId": "digital-art-10-20261002",
-  "status": "integrated-awaiting-release-gate",
+  "status": "released",
   "routeMap": [
     {
       "slug": "digital-color-layers",
@@ -126,5 +126,15 @@
     "checkpointCi": "PASS",
     "runtimeRefsSwitched": true,
     "note": "All ten approved binary hashes verified; both existing routes now use their five-poster galleries."
+  },
+  "release": {
+    "pr": 60,
+    "prStatus": "merged",
+    "prHead": "188c0f8e2e2c03ad5abe4ea0ddee3674f8ef965e",
+    "integrationCommit": "c0a9498b8ad3bd12aa5fedf069f98b252993bc47",
+    "productionReleaseCommit": "7bf250edd40d88d4a9550497d56fc68b74ae887d",
+    "prCiRun": 272,
+    "pagesRun": 273,
+    "ownerVisualQa": "pending"
   }
 }

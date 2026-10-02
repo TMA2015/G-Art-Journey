@@ -137,7 +137,7 @@ Artwork production:
 - total official Digital Art assets: **10 APPROVED**
 
 Website release:
-- **NOT YET PUBLISHED as this new 10-poster Digital Art batch**
+- **LIVE — exactly ten approved Digital Art posters (PR #60)**
 - integration branch: `feature/digital-art-10-posters-20261002`
 - exact asset map/checksums: `assets/batches/digital-art-10.json`
 
@@ -201,3 +201,17 @@ This document is the durable source of truth for the next chat.
 - PR CI and Pages deployment are verified separately before reporting the production release; this checkpoint does not assert a deployment has already occurred.
 - Next: PR CI → ready/merge PR #60 → verify Pages → record production result → owner desktop/iPad QA.
 - Owner QA: Digital tab contains the two existing guides; each opens five ordered uncropped posters; View large and Save WebP work; remake first two face posters and approved Light & Details logo remain intact.
+
+### Digital Art production release — 2026-10-02
+
+- Existing PR **#60 merged** after final-head CI **#272 PASS**.
+- Final PR head: `188c0f8e2e2c03ad5abe4ea0ddee3674f8ef965e`.
+- Production release commit: `7bf250edd40d88d4a9550497d56fc68b74ae887d`.
+- Pages workflow **#273 PASS** (build and deploy).
+- **Painting with Separate Layers: 5/5 LIVE** at `/G-Art-Journey/guide/digital-color-layers/`.
+- **Color a Face with Simple Layers: 5/5 LIVE** at `/G-Art-Journey/guide/color-a-face-in-layers/`.
+- Exactly ten approved WebP binaries preserved unchanged, with manifest hashes and dimensions verified; official face remakes and the Light & Details logo exception remain intact.
+- Local and CI release checks PASS: 83 tests, guide distinctness audit, production build, route verification and asset audit.
+- No unrelated generated material/gallery assets were included in the release.
+- Remaining acceptance: owner desktop/iPad visual QA of both catalog cards, five-poster order, uncropped display, responsive layout, View large and Save WebP.
+- This release-record update changes documentation/manifest status only; the production artwork and route implementation remain the verified PR #60 tree.
