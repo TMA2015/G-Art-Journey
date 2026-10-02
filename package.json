@@ -16,7 +16,8 @@
     "pretest": "npm run core:assets && npm run materials:assets",
     "prebuild": "npm run core:assets && npm run materials:assets",
     "predev": "npm run core:assets && npm run materials:assets",
-    "materials:assets": "node scripts/build-material-assets.mjs"
+    "materials:assets": "node scripts/build-material-assets.mjs",
+    "audit:content": "node scripts/check-content-consistency.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",
