@@ -40,18 +40,23 @@ Reserved style families that may receive future reference sheets:
 Do not fill these filters merely to make the matrix look complete. Add a reference sheet only when it supplies useful visual vocabulary not already covered.
 
 ### Skill-gap audit
-**Status:** Deferred until Learning Paths v1 is approved
+**Status:** Completed proposal — owner priority review pending
 
-After paths expose the current learning structure, review whether any true foundation gaps remain.
+Audit:
+- `docs/SKILL_GAP_AUDIT.md`
 
-Candidates to evaluate, not automatic commitments:
-- feet
-- gesture / motion foundation
-- light and value
-- composition
-- perspective for rooms / everyday objects
+Findings:
+- **Gesture & Motion Basics** — highest-priority true gap
+- **Feet from Simple Forms** — medium-priority anatomy/support gap
+- **Simple Color Harmony / Build a Simple Color Palette** — real cross-medium gap
+- two-point / room perspective — useful later, not required by current paths
+- general illustration composition — defer until a finished-illustration path exists
+- negative space / sighting — integrate into existing observational exercises rather than create a standalone lesson now
 
-A missing topic should become a new lesson only when it improves an actual learning path or closes a clear skill gap.
+Explicit non-gap:
+- Light & Value is already covered strongly by Shade Simple Forms + Graphite Values + portrait/digital reinforcement.
+
+Recommended next batch SG-01 is intentionally limited to Gesture, Feet and Simple Color Palette. Do not produce all three at once; begin with the Gesture & Motion pilot after owner approval.
 
 ## Product / UX
 
