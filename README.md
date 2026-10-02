@@ -51,16 +51,24 @@ Eight original English-first illustrated guides for faces, expressions, head ang
 
 ## Automated batch publishing
 
-`npm run art:prepare -- --input <temporary-art-folder> --activate` optimizes and validates the full next art batch, activates its pages only when every image is present, and writes the image checksum manifest. An authorized Work/desktop environment can push the batch in one commit with Git or `node scripts/push-art-batch.mjs --branch feat/character-batch02-pipeline --push`. No original artwork or extra image-host account is required. See [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).
+`npm run art:prepare -- --input <temporary-art-folder> --activate` optimizes and validates a prepared art batch, activates pages only when every required image is present, and writes checksum metadata. An authorized Work/desktop environment can push binary art on the current release branch with Git or `node scripts/push-art-batch.mjs --branch <release-branch> --push`. No extra image-host account is required. Historical Batch 02 details remain in [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).
 
 ## Introductory guide reconciliation
 
-The previous face, figure and perspective vector-only notes have been withdrawn from featured cards. Approved human-drawing posters replace the first two; old links remain friendly update pages. Landscape perspective text stays accessible while its new illustration is prepared. See [docs/LEGACY_GUIDE_RECONCILIATION.md](docs/LEGACY_GUIDE_RECONCILIATION.md).
+The previous face, figure and perspective vector-only notes have been withdrawn from featured cards. Current Human Drawing and landscape learning areas use illustrated guides, while legacy URLs remain friendly update/compatibility pages where needed. See [docs/LEGACY_GUIDE_RECONCILIATION.md](docs/LEGACY_GUIDE_RECONCILIATION.md).
 
-## Character Styles collection
+## Character Art collection
 
-Twelve original illustrated posters now live in four groups at [Character Styles](https://tma2015.github.io/G-Art-Journey/character-styles/). Artwork is stored as optimized WebP in GitHub with exact SHA-256 validation; see [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md).
+Character Art now uses a topic-first library with **6 topics × 3 illustrated lessons = 18 topic lessons**: Manga, Manhwa / Webtoon, Manhua, Cartoon / Comics, Chibi Characters and Fairy-Tale Princess. The separate Character Face Design Lab remains available as its own direct guide. Start at [Character Styles](https://tma2015.github.io/G-Art-Journey/character-styles/).
 
-## Phase 2 — Core Drawing Skills
+Artwork is stored as optimized WebP in GitHub with checksum validation. The original 12-poster baseline is documented in [docs/CHARACTER_BATCH_02.md](docs/CHARACTER_BATCH_02.md); the latest Chibi + Fairy-Tale Princess release is documented in [docs/CHARACTER_CHIBI_PRINCESS_RELEASE.md](docs/CHARACTER_CHIBI_PRINCESS_RELEASE.md).
 
-Phase 2 now has two live Core Drawing Skills guides: **Draw Hands from Simple Forms** and **Draw an Eye from Structure**. Next production continues with hair masses, fabric behavior, graphite values/portrait/landscape, then software-neutral digital basics. Graphite art stays monochrome while G-Art pastel identity moves to headings and small annotations. See [docs/CORE_DRAWING_SKILLS_PHASE2.md](docs/CORE_DRAWING_SKILLS_PHASE2.md) and [docs/ACADEMIC_REFERENCE_MAP.md](docs/ACADEMIC_REFERENCE_MAP.md).
+## Reference Library
+
+The live [Reference Library](https://tma2015.github.io/G-Art-Journey/reference-library/) contains **23 approved visual reference sheets** across Poses, Motion, Hair and Clothing. Current published style filters with assets are General / Natural, Chibi and Fairy-Tale Princess. The Manga, Manhwa / Webtoon and Manhua labels remain reserved for future reference batches. See [docs/REFERENCE_LIBRARY_PLAN.md](docs/REFERENCE_LIBRARY_PLAN.md).
+
+## Core Drawing Skills and medium guides
+
+The original Phase 2 roadmap has grown into live illustrated learning areas for **Hands, Eyes, Hair and Fabric**, alongside Pencil, Landscape, Watercolor and Digital Art guides. Digital Art uses topic → lesson navigation, and teaching posters are displayed at a comfortable single-lesson reading size. Graphite work remains pencil-first while G-Art pastel identity stays in headings and small annotations.
+
+The historical roadmap and source map remain in [docs/CORE_DRAWING_SKILLS_PHASE2.md](docs/CORE_DRAWING_SKILLS_PHASE2.md) and [docs/ACADEMIC_REFERENCE_MAP.md](docs/ACADEMIC_REFERENCE_MAP.md). Current production status and release history live in [docs/PROJECT_MASTER_HANDOFF.md](docs/PROJECT_MASTER_HANDOFF.md).
