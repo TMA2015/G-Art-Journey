@@ -30,11 +30,16 @@ test('previous generic manga entry remains as a friendly legacy link, not a dupl
  assert.ok(old.retired);
  assert.equal(old.replacementGuide,'manga-face');
 });
-test('curated page, full-size poster actions and main catalog navigation exist',async()=>{
+test('topic-first Character Art navigation and full-size poster actions exist',async()=>{
  const page=await read('src/pages/character-styles.astro');
+ const topicPage=await read('src/pages/character-styles/[group].astro');
+ const topics=await read('src/data/guide-topics.mjs');
  const catalog=await read('src/pages/guides.astro');
  const guide=await read('src/pages/guide/[slug].astro');
- for(const group of groups)assert.match(page,new RegExp("id:'"+group+"'"));
+ assert.match(page,/characterTopics/);
+ for(const group of groups)assert.match(topics,new RegExp("id:'"+group+"'"));
+ assert.match(topicPage,/characterGuides/);
+ assert.match(topicPage,/OPEN LESSON/);
  assert.match(page,/loading="lazy"/);
  assert.match(catalog,/character-styles\//);
  assert.match(guide,/Save WebP/);
