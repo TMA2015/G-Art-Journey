@@ -80,7 +80,7 @@ test('SG-01 lessons are placed in Learning Paths as approved',()=>{
 
  const watercolor=learningPaths.find(x=>x.id==='watercolor-basics');
  const digital=learningPaths.find(x=>x.id==='digital-art-basics');
- assert.ok(watercolor.explore.includes('simple-color-harmony'));
+ assert.ok(watercolor.exploreGroups.flatMap(group=>group.guides).includes('simple-color-harmony'));
  assert.ok(digital.explore.includes('simple-color-harmony'));
 
  for(const slug of ['gesture-motion-basics','feet-simple-forms','simple-color-harmony'])assert.ok(activeGuides.has(slug));
@@ -108,4 +108,17 @@ test('Post-SG01 grouping keeps Draw People and Create Characters easy to scan',a
  assert.match(page,/STAGE \{block\.stage\.number\}/);
  assert.match(page,/supportGroupsFor/);
  assert.match(page,/exploreGroupsFor/);
+});
+
+
+test('Watercolor keeps one sky technique in core and moves the duplicate drill to optional practice',()=>{
+ const watercolor=learningPaths.find(x=>x.id==='watercolor-basics');
+ const core=watercolor.steps.filter(x=>x.kind==='guide').map(x=>x.slug);
+ assert.equal(core.length,5);
+ assert.ok(core.includes('watercolor-soft-sky-cloud-washes'));
+ assert.ok(!core.includes('watercolor-sky-wash-practice'));
+ assert.equal(core.at(-1),'watercolor-small-landscape');
+ assert.deepEqual(watercolor.exploreGroups.map(x=>x.id),['practice','color-planning']);
+ assert.ok(watercolor.exploreGroups.find(x=>x.id==='practice').guides.includes('watercolor-sky-wash-practice'));
+ assert.ok(watercolor.exploreGroups.find(x=>x.id==='color-planning').guides.includes('simple-color-harmony'));
 });
