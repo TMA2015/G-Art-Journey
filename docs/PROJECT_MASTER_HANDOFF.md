@@ -1434,3 +1434,20 @@ Next production rule:
 - Lesson 2 must begin from exact room/perspective construction, not freehand AI geometry
 - keep it initially under Draw Places Explore more
 - after Lesson 2 approval, integrate both DP-01 lessons, run full tests/audits/build, then owner desktop/iPad QA
+
+
+### DP-01 Lesson 2 technical reset — 2026-10-03
+
+Owner rejected the current **Draw a Simple Room from Boxes** drafts because later-stage room construction (especially the final cleanup/detail views) did not preserve correct two-point-perspective geometry.
+
+Required correction:
+- pause image production
+- research and anchor the lesson to formal perspective-teaching references before drawing again
+- preserve one horizon line and the same two vanishing points throughout cumulative construction
+- in the beginner two-point setup, verticals remain vertical
+- every receding horizontal edge must belong to one of the two vanishing-direction families
+- final detailed room views must remain derivable from the same construction, not become freehand decorative redraws
+- use deterministic/vector construction for the room shell and furniture boxes; generative tools may only style or decorate around exact geometry
+- do not publish DP-01 Lesson 2 until technical geometry QA passes independently of visual QA
+
+The current Lesson 2 drafts are **NOT APPROVED** and must not be used as source assets.
