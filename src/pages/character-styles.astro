@@ -1,34 +1,41 @@
 ---
 import Base from '../layouts/Base.astro';
-import SectionNav from '../components/SectionNav.astro';
 import '../styles/character-styles.css';
-import {characterGuides} from '../data/character-guides.mjs';
+import '../styles/guide-series.css';
+import {characterTopics} from '../data/guide-topics.mjs';
+import {guides} from '../data/content.mjs';
 const base=import.meta.env.BASE_URL;
-const blocks=[
- {id:'manga',label:'Manga',sub:'Expressive face design, variation and character proportions.',items:characterGuides.filter(g=>g.group==='manga')},
- {id:'webtoon',label:'Manhwa / Webtoon',sub:'An everyday character, varied expressions and vertical visual storytelling.',items:characterGuides.filter(g=>g.group==='webtoon')},
- {id:'manhua',label:'Manhua',sub:'An original elegant character, face variations and flowing line rhythm.',items:characterGuides.filter(g=>g.group==='manhua')},
- {id:'cartoon',label:'Cartoon / Comics',sub:'A lively character, playful shapes and animated action poses.',items:characterGuides.filter(g=>g.group==='cartoon')}
-];
+const lab=guides.find(g=>g.slug==='four-character-face-approaches');
 ---
-<Base lang="en" title="Character Styles | 12 Visual Guides" description="Twelve original character art posters: manga, webtoon, manhua and cartoon. Draw faces, explore variations and discover special techniques.">
+<Base lang="en" title="Character Art | Topic Library" description="Choose a character-art topic first, then open the exact lesson you want: manga, webtoon, manhua, cartoon or the Character Face Design Lab.">
  <div class="site-shell character-library">
   <header class="page-hero character-hero">
-   <span class="eyebrow">A LITTLE CHARACTER STUDIO / 02</span>
-   <h1 class="serif">One pencil. <em>Many worlds.</em></h1>
-   <p>Explore four ways to tell a story with your characters. Each collection has three different things to try: a character guide, a variation sheet and a special technique. There is no required order.</p>
+   <span class="eyebrow">A LITTLE CHARACTER STUDIO</span>
+   <h1 class="serif">Choose a character <em>topic.</em></h1>
+   <p class="topic-hub-intro">Start with the kind of character work you want to explore. Each topic opens its own lesson shelf so manga, webtoon, manhua and cartoon guides no longer compete in one long list.</p>
   </header>
-  <SectionNav lang="en" items={blocks.map(b=>({id:b.id,label:b.label}))}/>
-  {blocks.map((block,i)=><section id={block.id} class="character-section" aria-labelledby={block.id+'-title'}>
-   <div class="character-section-head">
-    <div><span class="eyebrow">0{i+1} / CHARACTER EXPLORATION</span><h2 class="serif" id={block.id+'-title'}>{block.label}</h2><p>{block.sub}</p></div>
-    <span class="character-count">{block.items.length} illustrated guides</span>
-   </div>
-   <div class="character-grid">{block.items.map((g,j)=><a class="character-card" href={base+'guide/'+g.slug+'/'}>
-    <div class="character-art"><img src={base+g.image} alt={g.posterAlt} loading="lazy" decoding="async" width={g.posterWidth||1122} height={g.posterHeight||1402}/></div>
-    <div class="character-body"><span class="eyebrow">0{j+1} / {j===0?'CHARACTER GUIDE':j===1?'STYLE VARIATIONS':'SPECIAL TECHNIQUE'}</span><h3 class="serif">{g.title} ↗</h3><p>{g.description}</p><span class="character-time">{g.time} · View large & save</span></div>
-   </a>)}</div>
-  </section>)}
-  <p class="character-note">These are original interpretations for exploring art, not rules that define manga, manhwa, manhua or Western comics. The makers and visual approaches within every tradition are wonderfully varied. Change the proportions, design your own characters and follow what you enjoy.</p>
+
+  <section class="topic-hub-grid" aria-label="Character Art topics">
+   {characterTopics.map(topic=><a class="topic-hub-card" href={base+'character-styles/'+topic.id+'/'}>
+    <div class="topic-hub-art"><img src={base+topic.image} alt={topic.label+' character art topic'} loading="lazy" decoding="async"/></div>
+    <div class="topic-hub-copy">
+     <span class="eyebrow">{topic.eyebrow}</span>
+     <h2 class="serif">{topic.label}</h2>
+     <p>{topic.description}</p>
+     <span class="topic-open">OPEN TOPIC ↗</span>
+    </div>
+   </a>)}
+   {lab&&<a class="topic-hub-card topic-hub-wide" href={base+'guide/'+lab.slug+'/'}>
+    <div class="topic-hub-art"><img src={base+lab.image} alt={lab.posterAlt||lab.title} loading="lazy" decoding="async"/></div>
+    <div class="topic-hub-copy">
+     <span class="eyebrow">CHARACTER DESIGN LAB</span>
+     <h2 class="serif">{lab.title}</h2>
+     <p>{lab.description}</p>
+     <span class="topic-open">OPEN THE DESIGN LAB ↗</span>
+    </div>
+   </a>}
+  </section>
+
+  <p class="character-note">These are original learning collections, not fixed rules that define manga, manhwa, manhua or Western comics. Open one topic, choose one lesson, and adapt the ideas to your own characters.</p>
  </div>
 </Base>
