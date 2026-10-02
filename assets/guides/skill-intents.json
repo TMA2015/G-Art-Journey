@@ -630,7 +630,7 @@
       "status": "published",
       "family": "character",
       "primarySkill": "chibi-head-body-ratio-design",
-      "visibleEvidence": "intentional 2\u20133 head chibi proportion and readable silhouette",
+      "visibleEvidence": "intentional 2–3 head chibi proportion and readable silhouette",
       "stageFocus": [
         "compare-chibi-head-ratios",
         "chibi-body-masses",
@@ -707,6 +707,48 @@
         "gesture-led-hands",
         "hair-skirt-motion",
         "calm-full-body-silhouette"
+      ]
+    },
+    {
+      "slug": "gesture-motion-basics",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "full-body-gesture-motion-foundation",
+      "visibleEvidence": "Build one lively full-body pose from a line of action, chest and hip masses, stretch/compression and a believable support point.",
+      "stageFocus": [
+        "line-of-action-energy",
+        "chest-hip-mass-direction",
+        "stretch-compression-relationship",
+        "support-contact-balance",
+        "stiff-versus-flowing-comparison"
+      ]
+    },
+    {
+      "slug": "feet-simple-forms",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "foot-construction-ground-contact",
+      "visibleEvidence": "Build feet from ankle, heel and forefoot forms across views, then show toe direction, standing contact and simple shoes.",
+      "stageFocus": [
+        "ankle-heel-forefoot-blocks",
+        "side-view-foot-landmarks",
+        "top-three-quarter-direction",
+        "weight-ground-contact",
+        "shoe-over-foot-form"
+      ]
+    },
+    {
+      "slug": "simple-color-harmony",
+      "status": "published",
+      "family": "color",
+      "primarySkill": "limited-palette-color-harmony",
+      "visibleEvidence": "Build a small palette by separating hue/value/saturation, choosing one main family, one support and a small accent, then comparing mood.",
+      "stageFocus": [
+        "hue-value-saturation-separation",
+        "dominant-color-family",
+        "supporting-color-choice",
+        "small-contrast-accent",
+        "palette-mood-test"
       ]
     }
   ]
