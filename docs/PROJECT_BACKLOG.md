@@ -56,7 +56,7 @@ Findings:
 Explicit non-gap:
 - Light & Value is already covered strongly by Shade Simple Forms + Graphite Values + portrait/digital reinforcement.
 
-Recommended next batch SG-01 is intentionally limited to Gesture, Feet and Simple Color Palette. Do not produce all three at once; begin with the Gesture & Motion pilot after owner approval.
+SG-01 artwork is now complete and owner-approved: Gesture & Motion, Feet from Simple Forms and Build a Simple Color Palette. Integration into the lesson catalog and Learning Paths is the active release task.
 
 ## Product / UX
 
