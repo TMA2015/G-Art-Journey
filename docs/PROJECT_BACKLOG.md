@@ -75,7 +75,7 @@ Implementation is live through PR #71 and owner visual QA passed. This UX pass i
 
 
 ### Lesson-level path continuity
-**Status:** Proposed next UX step  
+**Status:** Implementation in progress  
 **Priority:** High
 
 Learning Paths now organize discovery well, but standalone guide pages still do not consistently show where a learner can go next.
