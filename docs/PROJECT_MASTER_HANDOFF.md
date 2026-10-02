@@ -1290,3 +1290,21 @@ Live UX:
 
 Next acceptance step:
 - owner visual QA on desktop/iPad, focused only on Draw People stage headings and Create Characters support groups
+
+
+### Post-SG01 Learning Paths grouping owner QA — 2026-10-03
+
+Owner visually checked the grouped Start Here experience and confirmed it looks good.
+
+Owner QA: **PASS**.
+
+Accepted live presentation:
+- Draw People stages: Face & Head / Figure & Motion / Finish the Figure
+- Draw People Explore more: Face details / Figure extras
+- Create Characters support groups: Pose & Motion / Anatomy / Hair & Clothing / Color
+
+The grouping pass is closed. No further changes are required to this release.
+
+Next product-design question:
+- Learning Paths now organize discovery well, but ordinary standalone lesson pages still end after Try it / Remember without a lightweight “where next?” bridge.
+- Before adding more content, evaluate a small lesson-level continuity feature that can point learners back to Start Here or to the next suggested lesson without adding accounts, locked progress or stateful curriculum behavior.
