@@ -1225,3 +1225,32 @@ Next proposed implementation:
 - generic stage/group metadata in Learning Paths data
 - subtle group headings in Start Here
 - no new artwork
+
+
+### Post-SG-01 Learning Paths grouping implementation — 2026-10-03
+
+Owner approved immediate implementation of the UX grouping proposal.
+
+Implementation branch:
+- `feature/post-sg01-learning-path-grouping-20261003`
+
+Implemented data model:
+- Draw People core steps now carry generic stage IDs with stage metadata
+- Draw People Explore more uses grouped metadata
+- Create Characters optional support uses grouped metadata
+- renderer remains generic and still supports ungrouped paths
+
+Visible grouping:
+- Draw People: Face & Head / Figure & Motion / Finish the Figure
+- Draw People Explore more: Face details / Figure extras
+- Create Characters support: Pose & Motion / Anatomy / Hair & Clothing / Color
+
+Preserved:
+- all lesson order and lesson copy
+- all artwork and routes
+- Drawing Basics / Draw Places structure
+- Watercolor six core steps
+- Digital Art two series × five lessons
+- no tabs, accordions, progress UI or new navigation layer
+
+Regression tests now validate group metadata, all nested guide references and generated Start Here headings.
