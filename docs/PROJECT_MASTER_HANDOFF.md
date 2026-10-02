@@ -1174,3 +1174,23 @@ Do not crop, resize, regenerate, recolor, rebrand or replace the approved artwor
 - Color Basics remains a lightweight catalog filter. Human Drawing is still two topics/eight lessons; Digital remains two series × five lessons; Watercolor remains six core steps.
 - Approved images and embedded logos were not regenerated, cropped, resized, recolored or rebranded. Unrelated generated gallery/material artifacts were excluded.
 - Next: owner desktop/iPad QA of poster readability, View large / Save WebP, path placement, optional boundaries, Color Basics filter and portrait/landscape overflow. Pause content expansion after SG-01 and reassess Learning Paths.
+
+
+### SG-01 owner desktop QA — 2026-10-03
+
+Owner confirmed all three newly published SG-01 lessons display correctly on desktop:
+- Draw Gesture & Motion from Simple Lines
+- Draw Feet from Simple Forms
+- Build a Simple Color Palette
+
+Desktop visual QA: **PASS**.
+
+Remaining close-out check:
+- quick iPad QA for poster readability, View large / Save WebP, Start Here placement, optional/support labels and Color Basics filtering
+
+Next product task after SG-01 close-out:
+- **Post-SG-01 Learning Paths UX audit**
+- review path length and cognitive load now that Draw People has 9 core steps
+- review Create Characters support density now that it has 7 optional support guides
+- prefer grouping/staging over deleting useful lessons
+- do not start a new content batch until this audit is complete
