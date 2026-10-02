@@ -735,3 +735,42 @@ Staging branch:
 - Main Drawing Guides catalog no longer mixes all Human Drawing / Character Styles lesson cards into the flat list; topic hubs are used instead.
 - Pencil, Landscape, Watercolor and other single-level guide groups remain direct lesson collections.
 - Remaining acceptance: owner visual QA on desktop/iPad for topic-card clarity, lesson selection, Digital poster readability and previous/next navigation.
+
+
+### Character Art expansion approved — Chibi + Fairy-Tale Princess — 2026-10-02
+
+Owner approved the next two Character Art topics after the topic-first navigation release:
+
+1. **Chibi Characters**
+2. **Fairy-Tale Princess**
+
+Locked scope:
+- exactly **3 lessons per topic / 6 planned posters total**
+- use **Character Art → Topic → Lesson**
+- do not publish an incomplete topic
+- Chibi lessons: **Draw Cute Chibi Proportions**, **Chibi Faces & Expressions**, **Chibi Poses & Outfits**
+- Princess lessons: **Design a Fairy-Tale Princess**, **Princess Hair, Dress & Royal Details**, **Graceful Princess Poses**
+
+Locked visual direction:
+- use the current **Manhwa / Webtoon Character** posters as the closest layout/mood reference
+- light pastel palette, warm/bright background, generous whitespace, character-first composition
+- avoid the Digital Art block-heavy look: no page full of strongly colored boxes, no oversized lettering, no dense technical-dashboard feeling
+- normal lesson-page display must be readable without requiring View large
+
+Princess originality boundary:
+- public topic name is **Fairy-Tale Princess**, not Disney Princess
+- all princess characters must be original G-Art Journey designs
+- do not use Disney names or recognizable franchise costumes/hairstyles/props/signature combinations
+
+Production gate:
+- create **Chibi Lesson 1** first and obtain owner visual approval before Lessons 2–3
+- then create **Fairy-Tale Princess Lesson 1** as the princess visual pilot before Lessons 2–3
+- do not mass-generate all six before these pilot approvals
+- full anatomy/hand/continuity QA remains mandatory
+
+Durable sources:
+- `docs/CHARACTER_CHIBI_PRINCESS_AUTHORING.md`
+- `assets/batches/character-chibi-princess-plan.json`
+- `docs/ILLUSTRATION_STANDARD.md`
+
+Current production status: **spec locked; artwork not yet produced or published**.

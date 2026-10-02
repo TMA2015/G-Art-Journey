@@ -1,0 +1,112 @@
+{
+  "packet_id": "CHARACTER-EXPANSION-CHIBI-PRINCESS-20261002",
+  "status": "OWNER_APPROVED_PLAN",
+  "public_release": false,
+  "category": "character",
+  "hierarchy": "Category > Topic > Lesson",
+  "visual_reference_family": "Manhwa / Webtoon Character posters",
+  "explicitly_not_visual_reference": "Digital Art block-heavy poster style",
+  "release_rule": "Publish a topic only after all 3 of its posters are owner-approved and lesson pages are ready.",
+  "topics": [
+    {
+      "id": "chibi",
+      "label": "Chibi Characters",
+      "palette": [
+        "cream/warm white",
+        "blush pink",
+        "peach",
+        "pale mint",
+        "pale sky blue",
+        "small warm yellow accents"
+      ],
+      "lessons": [
+        {
+          "order": 1,
+          "slug": "chibi-proportions",
+          "title": "Draw Cute Chibi Proportions",
+          "primary_skill": "intentional 2–3 head chibi proportion and readable silhouette",
+          "status": "PLANNED"
+        },
+        {
+          "order": 2,
+          "slug": "chibi-faces-expressions",
+          "title": "Chibi Faces & Expressions",
+          "primary_skill": "coordinated brows, eyes, mouth and cheeks for readable chibi emotion",
+          "status": "PLANNED"
+        },
+        {
+          "order": 3,
+          "slug": "chibi-poses-outfits",
+          "title": "Chibi Poses & Outfits",
+          "primary_skill": "simple gesture, balance and outfit silhouette",
+          "status": "PLANNED"
+        }
+      ]
+    },
+    {
+      "id": "princess",
+      "label": "Fairy-Tale Princess",
+      "franchise_boundary": "Original G-Art Journey princesses only; no Disney naming or recognizable franchise-character copying.",
+      "palette": [
+        "cream/warm white",
+        "blush",
+        "lilac",
+        "powder blue",
+        "pale champagne/soft gold",
+        "optional pale mint"
+      ],
+      "lessons": [
+        {
+          "order": 1,
+          "slug": "fairy-tale-princess-design",
+          "title": "Design a Fairy-Tale Princess",
+          "primary_skill": "original princess identity through face, hair silhouette, dress silhouette and motif",
+          "status": "PLANNED"
+        },
+        {
+          "order": 2,
+          "slug": "princess-hair-dress-details",
+          "title": "Princess Hair, Dress & Royal Details",
+          "primary_skill": "hair masses, dress construction, folds and restrained royal details",
+          "status": "PLANNED"
+        },
+        {
+          "order": 3,
+          "slug": "graceful-princess-poses",
+          "title": "Graceful Princess Poses",
+          "primary_skill": "elegant gesture, hand placement, balance and skirt movement",
+          "status": "PLANNED"
+        }
+      ]
+    }
+  ],
+  "visual_contract": {
+    "orientation": "portrait",
+    "background": "bright warm paper / off-white",
+    "hierarchy": "character-first, generous whitespace, 3–5 major teaching zones",
+    "typography": "friendly controlled headings; short readable English captions; no oversized bubble lettering",
+    "accents": "light pastel only; thin separators and restrained callouts",
+    "avoid": [
+      "large saturated color blocks behind every step",
+      "many competing colored rounded rectangles",
+      "dense technical-dashboard appearance",
+      "oversized body text",
+      "excessive decorative stickers/arrows",
+      "tiny anatomy hidden in crowded panels"
+    ],
+    "readability_gate": "Normal standalone lesson-page size must be sufficient to understand the poster; View large is optional."
+  },
+  "qa": {
+    "human_character_standard": "docs/ILLUSTRATION_STANDARD.md",
+    "full_resolution_anatomy_pass": true,
+    "five_digits_on_fully_visible_countable_hands": true,
+    "cumulative_step_continuity": true,
+    "distinct_characters_between_posters": true,
+    "owner_pilot_gate": [
+      "chibi-proportions",
+      "fairy-tale-princess-design"
+    ],
+    "no_mass_generation_before_pilot_approval": true
+  },
+  "total_planned_posters": 6
+}

@@ -145,3 +145,18 @@ An approved teaching poster must work in the learning interface, not only as a f
 - When several posters form one topic or series, show a lesson-selection shelf first and open each poster on its own lesson page instead of shrinking many text-heavy posters into one multi-column wall.
 - Preserve the approved image composition and aspect ratio with contain behavior; solve normal readability problems through information architecture and layout before requesting artwork regeneration.
 - If a poster remains difficult to read at a comfortable single-lesson width, then review the poster itself for excessive text density, weak hierarchy or examples that are too small.
+
+
+## Character Art pastel-layout rule — Chibi / Princess expansion
+
+For character-focused teaching posters, especially **Chibi Characters** and **Fairy-Tale Princess**, use the existing Manhwa / Webtoon poster family as the closest visual reference for mood and density.
+
+- Prefer bright warm paper, soft pastel accents and generous whitespace.
+- Let the character illustration carry the page; use color as a guide, not as a wall of boxes.
+- Keep teaching captions short and comfortably readable.
+- Use 3–5 major teaching zones instead of many competing micro-cards.
+- Avoid the block-heavy Digital Art treatment: large saturated panels, oversized lettering, dense colored boxes and excessive simultaneous accents.
+- The poster should feel light, character-first and calm enough to study for several minutes.
+- Preserve visual-family consistency across Character Art without copying another poster's exact composition.
+
+The full locked plan for the next two Character Art topics is in `docs/CHARACTER_CHIBI_PRINCESS_AUTHORING.md`.
