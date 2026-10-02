@@ -1,6 +1,6 @@
 {
   "packetId": "GART-SG01-RELEASE-20261003",
-  "status": "INTEGRATED_LOCAL_RELEASE_GATE_PASS_AWAITING_FINAL_PR_CI",
+  "status": "RELEASED_OWNER_VISUAL_QA_PENDING",
   "assetCount": 3,
   "assets": [
     {
@@ -60,5 +60,15 @@
     "preserveDigitalSeriesStructure": true,
     "preserveWatercolorCoreRoute": true,
     "publishOnlyAfterFullChecksPass": true
+  },
+  "release": {
+    "pr": 69,
+    "prStatus": "merged",
+    "prHead": "17c89ebb697f9be89c06d9cdf828e851bcbe83f7",
+    "productionImplementationCommit": "9ca5f88a91a915476b43494076bf2c5af60c6a18",
+    "prCiRun": 315,
+    "pagesRun": 316,
+    "testCount": 98,
+    "ownerVisualQa": "pending"
   }
 }

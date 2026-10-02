@@ -213,7 +213,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-Complete the existing SG-01 release in PR #69. All three approved WebPs are uploaded and local release checks pass. Verify final-head CI before merge, then verify Pages deployment and request owner desktop/iPad QA. Gesture is Draw People core; Feet and Color Palette keep their optional roles. Preserve Digital 2×5, Watercolor six core steps, Human Drawing two topics/eight lessons and all approved artwork unchanged.
+SG-01 is live through PR #69 after the complete 98-test release gate and Pages deployment passed. Next: owner desktop/iPad visual QA of the three approved posters, Start Here path placement and Color Basics catalog filtering. Preserve the optional Feet/Palette roles, Digital 2×5, Watercolor six core steps and Human Drawing two topics/eight lessons. Pause new content production after this batch and reassess the Learning Paths.
 
 ## 12. Daughter Gallery V1 — active task
 
@@ -1159,3 +1159,18 @@ Do not crop, resize, regenerate, recolor, rebrand or replace the approved artwor
 - Generated HTML confirms Gesture between Figure Proportions and Standing Figure, Feet only in Draw People Explore more, all three Character support links, optional palette links in Watercolor/Digital, and the Color Basics filter/card.
 - Digital remains **two series × five lessons**; Watercolor remains **six core steps**; Human Drawing remains **two topics / eight lessons**.
 - Final PR CI must pass before merge; verify Pages build/deploy after merge. Owner desktop/iPad visual QA remains pending.
+
+### SG-01 verified production release — 2026-10-03
+
+- Existing PR **#69 merged** after final-head CI **#315 PASS**.
+- Final PR head: `17c89ebb697f9be89c06d9cdf828e851bcbe83f7`.
+- Production implementation merge: `9ca5f88a91a915476b43494076bf2c5af60c6a18`.
+- Pages workflow **#316 PASS**: build and deploy succeeded.
+- Full release gate PASS: **98/98 tests**, content consistency, guide distinctness (53 guides / zero high-overlap pairs), 214-page production build, 66 canonical routes with legacy aliases, and asset-budget audit with no warnings.
+- Exactly **3/3 approved WebPs** are published unchanged; hashes, byte sizes and dimensions match the supplied manifest and built output.
+- New lesson routes: `/guide/gesture-motion-basics/`, `/guide/feet-simple-forms/`, `/guide/simple-color-harmony/`.
+- Gesture is Draw People core immediately after Figure Proportions and before Standing Figure. Feet remains Explore more/support.
+- Gesture, Feet and Palette are optional Create Characters support choices; Palette is only Explore more in Watercolor and Digital Art.
+- Color Basics remains a lightweight catalog filter. Human Drawing is still two topics/eight lessons; Digital remains two series × five lessons; Watercolor remains six core steps.
+- Approved images and embedded logos were not regenerated, cropped, resized, recolored or rebranded. Unrelated generated gallery/material artifacts were excluded.
+- Next: owner desktop/iPad QA of poster readability, View large / Save WebP, path placement, optional boundaries, Color Basics filter and portrait/landscape overflow. Pause content expansion after SG-01 and reassess Learning Paths.
