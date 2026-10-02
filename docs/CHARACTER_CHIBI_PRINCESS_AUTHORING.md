@@ -246,9 +246,9 @@ Do not mass-generate all six posters before the first poster of each topic is ow
 | Chibi Characters | Draw Cute Chibi Proportions | `chibi-proportions` | **OWNER APPROVED** |
 | Chibi Characters | Chibi Faces & Expressions | `chibi-faces-expressions` | **OWNER APPROVED** |
 | Chibi Characters | Chibi Poses & Outfits | `chibi-poses-outfits` | **OWNER APPROVED** |
-| Fairy-Tale Princess | Design a Fairy-Tale Princess | `fairy-tale-princess-design` | Planned |
-| Fairy-Tale Princess | Princess Hair, Dress & Royal Details | `princess-hair-dress-details` | Planned |
-| Fairy-Tale Princess | Graceful Princess Poses | `graceful-princess-poses` | Planned |
+| Fairy-Tale Princess | Design a Fairy-Tale Princess | `fairy-tale-princess-design` | **OWNER APPROVED** |
+| Fairy-Tale Princess | Princess Hair, Dress & Royal Details | `princess-hair-dress-details` | **OWNER APPROVED** |
+| Fairy-Tale Princess | Graceful Princess Poses | `graceful-princess-poses` | **OWNER APPROVED** |
 
 **Locked total: 6 planned posters.**
 
@@ -280,3 +280,26 @@ Durable Library copies:
 Do not regenerate, redesign or substitute these approved source artworks during website integration unless the owner explicitly requests a revision.
 
 **Next production step:** create only **Fairy-Tale Princess Lesson 1 — Design a Fairy-Tale Princess** as the princess visual pilot. Do not produce Princess Lessons 2–3 before Lesson 1 owner approval.
+
+
+## 12. Fairy-Tale Princess + Reference Library approval checkpoint — 2026-10-02
+
+**Fairy-Tale Princess lesson topic: 3/3 OWNER APPROVED.**
+
+Approved lesson sources:
+- `01-design-a-fairy-tale-princess.png` — 1055×1491 — SHA-256 `0451bbb311b3fdef6f64e98e5c6b2ac386184b60e700ce6df46d586028a8c369`
+- `02-princess-hair-dress-royal-details.png` — 1055×1491 — SHA-256 `27f6e430ed99b2f0c2d1f14f203d0907d33a129d51a48bac76b6b8b3d8a0bd37`
+- `03-graceful-princess-poses.png` — 1024×1536 — SHA-256 `02b3912cb3ea7418e2adbbe9f0787d41bfb5497afb7588cc742578c55fb9e984`
+
+Owner also approved **5 Reference Library sheets**:
+- Princess Hairstyles & Accessories
+- Princess Dress Library
+- Chibi Clothing Library
+- Chibi Pose & Motion Library
+- Chibi Hair Library
+
+All approved PNG originals are preserved in the project Library under:
+- `/G-Art Journey/Approved/Fairy-Tale Princess/`
+- `/G-Art Journey/Approved/Chibi/Reference/`
+
+Website integration must use exact approved assets only. No regeneration, crop, resize, logo replacement or visual redesign.
