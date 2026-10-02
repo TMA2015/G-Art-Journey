@@ -29,10 +29,10 @@ test('Human Drawing exposes two topic shelves and keeps all eight lessons reacha
  assert.equal(humanGuides.filter(x=>x.group==='figure').length,4);
 });
 
-test('Character Art exposes four style topics with three lessons each',()=>{
- assert.deepEqual(characterTopics.map(x=>x.id),['manga','webtoon','manhua','cartoon']);
+test('Character Art exposes six character topics with three lessons each',()=>{
+ assert.deepEqual(characterTopics.map(x=>x.id),['manga','webtoon','manhua','cartoon','chibi','princess']);
  for(const topic of characterTopics)assert.equal(characterGuides.filter(x=>x.group===topic.id).length,3,topic.id);
- assert.equal(characterGuides.length,12);
+ assert.equal(characterGuides.length,18);
 });
 
 test('topic-first pages and standalone Digital lesson route are wired',async()=>{

@@ -213,7 +213,7 @@ A beautiful image that teaches the wrong construction, changes the subject mid-p
 
 ## 11. Current production task
 
-Digital Art PR #60 is released: exactly ten approved posters on the two existing routes, with all automated checks and Pages deployment passing. The next task is owner desktop/iPad visual QA. Preserve the official face remakes, approved compositions and embedded logos. Do not begin new artwork or redesign during this acceptance step.
+Release the approved Chibi + Fairy-Tale Princess + Reference Library expansion through existing PR #62. All eleven exact WebPs are integrated and local checks pass; verify final PR CI before merge, then Pages deployment. Owner desktop/iPad visual QA follows. Existing Character Art content and Category → Topic → Lesson hierarchy remain intact.
 
 ## 12. Daughter Gallery V1 — active task
 
@@ -833,3 +833,16 @@ Release architecture:
 Approved originals are preserved in the project Library. Exact source hashes/dimensions are recorded in `assets/batches/character-chibi-princess-plan.json`.
 
 Next task: controlled integration of **11 exact approved assets** (6 Character Art lesson posters + 5 Reference Library sheets), full tests/audits/build, then Pages deployment and owner desktop/iPad QA. No asset may be regenerated, cropped, resized, rebranded or substituted during integration.
+
+## Integration release gate — 2026-10-02
+
+- Existing PR #62 / `feature/chibi-princess-reference-release-20261002`; all 11 approved WebPs now present.
+- All supplied and built SHA-256 hashes, byte sizes and dimensions match the approved manifest. No crop, resize, recolor, redesign or logo modification.
+- Character Art: 6 topic shelves × 3 lessons = 18 topic lessons; Character Face Design Lab remains a separate direct lesson (19 Character Art lessons overall).
+- Chibi and Fairy-Tale Princess each contain exactly 3 complete lesson records and standalone poster pages.
+- Reference Library: 23 sheets; Poses 3, Motion 7, Hair 4, Clothing 9. Styles: General 18, Chibi 3, Fairy-Tale Princess 2.
+- Local checks PASS: 90 tests; 50-guide intent audit, zero high-overlap pairs; 206-page build; English-first / legacy-alias verification; image-budget audit with no warnings.
+- Generated HTML verified: two new topic cards, three lesson cards per new topic, six standalone posters with View large / Save WebP, new style filters, five reference cards, and all eleven built asset hashes.
+- Existing 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
+- Final PR CI must pass before merge; Pages build and deployment are checked after merge.
+- Remaining acceptance: owner desktop/iPad QA after release.

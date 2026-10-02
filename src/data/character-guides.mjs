@@ -514,5 +514,263 @@ export const characterGuides = [
     "artType": "original educational illustration",
     "posterWidth": 1122,
     "posterHeight": 1402
-  }
+  },
+{
+  "slug": "chibi-proportions",
+  "title": "Draw Cute Chibi Proportions",
+  "description": "Understand how intentional head-to-body ratios create a cute chibi silhouette without losing balance.",
+  "time": "25\u201335 min",
+  "steps": [
+    {
+      "title": "Compare proportions",
+      "body": "Compare roughly 2-head, 2.5-head and 3-head chibi proportions."
+    },
+    {
+      "title": "Build the big shapes",
+      "body": "Build the head, tiny torso and simple pelvis as large readable shapes."
+    },
+    {
+      "title": "Place short limbs",
+      "body": "Place short arms and legs with coherent shoulder, elbow, hip and knee direction."
+    },
+    {
+      "title": "Simplify hands and feet",
+      "body": "Simplify hands and feet without turning them into broken anatomy."
+    },
+    {
+      "title": "Choose a silhouette",
+      "body": "Compare silhouettes and choose a proportion for an original character."
+    }
+  ],
+  "tryIt": "redraw one simple character at two different chibi ratios.",
+  "remember": "A large head and short body are deliberate design choices. Keep the joints and standing balance clear.",
+  "category": "character",
+  "tag": "CHARACTER ART",
+  "difficulty": "Beginner",
+  "poster": true,
+  "image": "infographics/character/chibi-proportions.webp",
+  "posterAlt": "Draw Cute Chibi Proportions \u2014 approved original G-Art Journey teaching poster",
+  "supplies": "Pencil and paper, or a drawing app",
+  "group": "chibi",
+  "groupOrder": 0,
+  "author": "G-Art Journey",
+  "artType": "original educational illustration",
+  "posterWidth": 1055,
+  "posterHeight": 1491
+},
+{
+  "slug": "chibi-faces-expressions",
+  "title": "Chibi Faces & Expressions",
+  "description": "Create readable chibi emotions by coordinating brows, eyes, mouth and cheeks.",
+  "time": "25\u201335 min",
+  "steps": [
+    {
+      "title": "Start with one face",
+      "body": "Start from one simple chibi face."
+    },
+    {
+      "title": "Choose clear eyes",
+      "body": "Establish a clear eye style without overcrowding the face."
+    },
+    {
+      "title": "Compare emotions",
+      "body": "Compare happy, excited, shy, surprised, annoyed and sleepy expressions."
+    },
+    {
+      "title": "Move features together",
+      "body": "Change brows, lids and mouth together rather than moving one feature alone."
+    },
+    {
+      "title": "Keep the character recognizable",
+      "body": "Keep the same character recognizable across the expression set."
+    }
+  ],
+  "tryIt": "draw three emotions using the same face shape and hairstyle.",
+  "remember": "Keep the same face and hair while changing brows, lids and mouth together.",
+  "category": "character",
+  "tag": "CHARACTER ART",
+  "difficulty": "Beginner",
+  "poster": true,
+  "image": "infographics/character/chibi-faces-expressions.webp",
+  "posterAlt": "Chibi Faces & Expressions \u2014 approved original G-Art Journey teaching poster",
+  "supplies": "Pencil and paper, or a drawing app",
+  "group": "chibi",
+  "groupOrder": 1,
+  "author": "G-Art Journey",
+  "artType": "original educational illustration",
+  "posterWidth": 1055,
+  "posterHeight": 1491
+},
+{
+  "slug": "chibi-poses-outfits",
+  "title": "Chibi Poses & Outfits",
+  "description": "Combine simple chibi gesture, balance and clothing silhouettes without hiding the pose.",
+  "time": "25\u201335 min",
+  "steps": [
+    {
+      "title": "Find the gesture",
+      "body": "Start with a short gesture line and simple body masses."
+    },
+    {
+      "title": "Try four poses",
+      "body": "Compare four readable poses such as standing, sitting, small jump and playful lean."
+    },
+    {
+      "title": "Add outfit shapes",
+      "body": "Add simple outfit shapes that follow the body."
+    },
+    {
+      "title": "Choose one accessory",
+      "body": "Use one small prop or accessory only when it helps the character idea."
+    },
+    {
+      "title": "Finish the silhouette",
+      "body": "Finish one original chibi with a clean silhouette."
+    }
+  ],
+  "tryIt": "keep one chibi proportion and design two different outfits and poses.",
+  "remember": "Keep the pose readable before adding clothing and small props.",
+  "category": "character",
+  "tag": "CHARACTER ART",
+  "difficulty": "Beginner",
+  "poster": true,
+  "image": "infographics/character/chibi-poses-outfits.webp",
+  "posterAlt": "Chibi Poses & Outfits \u2014 approved original G-Art Journey teaching poster",
+  "supplies": "Pencil and paper, or a drawing app",
+  "group": "chibi",
+  "groupOrder": 2,
+  "author": "G-Art Journey",
+  "artType": "original educational illustration",
+  "posterWidth": 1055,
+  "posterHeight": 1491
+},
+{
+  "slug": "fairy-tale-princess-design",
+  "title": "Design a Fairy-Tale Princess",
+  "description": "Combine face, hair silhouette, dress silhouette and one original motif into a coherent princess character.",
+  "time": "25\u201335 min",
+  "steps": [
+    {
+      "title": "Build the head and body",
+      "body": "Begin with a simple graceful head and upper-body construction."
+    },
+    {
+      "title": "Choose a hair silhouette",
+      "body": "Choose a distinct hair silhouette."
+    },
+    {
+      "title": "Choose a dress shape",
+      "body": "Choose a dress silhouette that supports the character mood."
+    },
+    {
+      "title": "Add one original motif",
+      "body": "Add one original motif such as stars, leaves, ribbons, pearls or geometric ornament."
+    },
+    {
+      "title": "Refine the character",
+      "body": "Refine one finished original princess without copying a recognizable franchise character."
+    }
+  ],
+  "tryIt": "make two princess designs by changing only hair silhouette, dress shape and motif.",
+  "remember": "Use your own hair, dress and motif choices to create an original fairy-tale character.",
+  "category": "character",
+  "tag": "CHARACTER ART",
+  "difficulty": "Beginner",
+  "poster": true,
+  "image": "infographics/character/fairy-tale-princess-design.webp",
+  "posterAlt": "Design a Fairy-Tale Princess \u2014 approved original G-Art Journey teaching poster",
+  "supplies": "Pencil and paper, or a drawing app",
+  "group": "princess",
+  "groupOrder": 0,
+  "author": "G-Art Journey",
+  "artType": "original educational illustration",
+  "posterWidth": 1055,
+  "posterHeight": 1491
+},
+{
+  "slug": "princess-hair-dress-details",
+  "title": "Princess Hair, Dress & Royal Details",
+  "description": "Simplify elegant hair, dress structure and decorative details into readable drawing groups.",
+  "time": "25\u201335 min",
+  "steps": [
+    {
+      "title": "Group the hair",
+      "body": "Group hair into large flowing masses before strands."
+    },
+    {
+      "title": "Build the dress",
+      "body": "Build the dress from bodice, skirt and sleeve silhouettes."
+    },
+    {
+      "title": "Place believable folds",
+      "body": "Show a few believable folds that follow gravity and body movement."
+    },
+    {
+      "title": "Select royal details",
+      "body": "Add restrained royal details: small crown/tiara, ribbon, flower, pearl or trim."
+    },
+    {
+      "title": "Simplify the decoration",
+      "body": "Remove unnecessary decoration so the character stays readable."
+    }
+  ],
+  "tryIt": "use the same base figure for two different hair-and-dress combinations.",
+  "remember": "Big hair and dress shapes come before strands, folds and decoration.",
+  "category": "character",
+  "tag": "CHARACTER ART",
+  "difficulty": "Beginner",
+  "poster": true,
+  "image": "infographics/character/princess-hair-dress-details.webp",
+  "posterAlt": "Princess Hair, Dress & Royal Details \u2014 approved original G-Art Journey teaching poster",
+  "supplies": "Pencil and paper, or a drawing app",
+  "group": "princess",
+  "groupOrder": 1,
+  "author": "G-Art Journey",
+  "artType": "original educational illustration",
+  "posterWidth": 1055,
+  "posterHeight": 1491
+},
+{
+  "slug": "graceful-princess-poses",
+  "title": "Graceful Princess Poses",
+  "description": "Create elegant gesture, hand placement and skirt movement while keeping balance plausible.",
+  "time": "25\u201335 min",
+  "steps": [
+    {
+      "title": "Find balance",
+      "body": "Find the gesture and supporting leg first."
+    },
+    {
+      "title": "Compare graceful poses",
+      "body": "Compare several graceful poses: relaxed standing, small turn, gentle greeting and walking step."
+    },
+    {
+      "title": "Place arms and hands",
+      "body": "Place arms and hands so they support the gesture rather than float beside the body."
+    },
+    {
+      "title": "Follow movement",
+      "body": "Let the skirt and hair follow the movement."
+    },
+    {
+      "title": "Finish a clear silhouette",
+      "body": "Finish one pose with a clear silhouette and calm story mood."
+    }
+  ],
+  "tryIt": "draw one princess pose twice with different arm and skirt movement.",
+  "remember": "Find the supporting leg first, then let the hands, hair and skirt follow the gesture.",
+  "category": "character",
+  "tag": "CHARACTER ART",
+  "difficulty": "Beginner",
+  "poster": true,
+  "image": "infographics/character/graceful-princess-poses.webp",
+  "posterAlt": "Graceful Princess Poses \u2014 approved original G-Art Journey teaching poster",
+  "supplies": "Pencil and paper, or a drawing app",
+  "group": "princess",
+  "groupOrder": 2,
+  "author": "G-Art Journey",
+  "artType": "original educational illustration",
+  "posterWidth": 1024,
+  "posterHeight": 1536
+}
 ];

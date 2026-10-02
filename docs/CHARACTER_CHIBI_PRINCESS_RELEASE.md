@@ -1,6 +1,6 @@
 # Chibi + Fairy-Tale Princess + Reference Library release
 
-Status: **STAGED — exact 11 approved WebPs awaiting binary upload**
+Status: **INTEGRATED — local release gate PASS; final PR CI / Pages pending**
 
 Branch: `feature/chibi-princess-reference-release-20261002`
 
@@ -70,3 +70,16 @@ Before merge:
 10. verify Pages build + deploy after merge
 
 Do not regenerate, crop, resize, rebrand or substitute any artwork.
+
+## Integration release gate — 2026-10-02
+
+- Existing PR #62 / `feature/chibi-princess-reference-release-20261002`; all 11 approved WebPs now present.
+- All supplied and built SHA-256 hashes, byte sizes and dimensions match the approved manifest. No crop, resize, recolor, redesign or logo modification.
+- Character Art: 6 topic shelves × 3 lessons = 18 topic lessons; Character Face Design Lab remains a separate direct lesson (19 Character Art lessons overall).
+- Chibi and Fairy-Tale Princess each contain exactly 3 complete lesson records and standalone poster pages.
+- Reference Library: 23 sheets; Poses 3, Motion 7, Hair 4, Clothing 9. Styles: General 18, Chibi 3, Fairy-Tale Princess 2.
+- Local checks PASS: 90 tests; 50-guide intent audit, zero high-overlap pairs; 206-page build; English-first / legacy-alias verification; image-budget audit with no warnings.
+- Generated HTML verified: two new topic cards, three lesson cards per new topic, six standalone posters with View large / Save WebP, new style filters, five reference cards, and all eleven built asset hashes.
+- Existing 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
+- Final PR CI must pass before merge; Pages build and deployment are checked after merge.
+- Remaining acceptance: owner desktop/iPad QA after release.

@@ -10,14 +10,16 @@ test('reference library keeps four distinct core collections',()=>{
 });
 
 test('reference library preserves future style families',()=>{
-  for(const id of ['general','manga','webtoon','manhua'])assert.ok(referenceStyles.some(x=>x.id===id));
+  for(const id of ['general','manga','webtoon','manhua','chibi','princess'])assert.ok(referenceStyles.some(x=>x.id===id));
 });
 
 test('approved Reference Library inventory is complete',()=>{
-  assert.equal(referenceItems.length,18);
+  assert.equal(referenceItems.length,23);
   const counts=Object.fromEntries(referenceCollections.map(c=>[c.id,referenceItems.filter(x=>x.category===c.id).length]));
-  assert.deepEqual(counts,{poses:3,motion:6,hair:2,clothing:7});
-  assert.ok(referenceItems.every(x=>x.style==='general'));
+  assert.deepEqual(counts,{poses:3,motion:7,hair:4,clothing:9});
+  assert.equal(referenceItems.filter(x=>x.style==='general').length,18);
+  assert.equal(referenceItems.filter(x=>x.style==='chibi').length,3);
+  assert.equal(referenceItems.filter(x=>x.style==='princess').length,2);
   assert.equal(referenceItems.filter(x=>x.orientation==='landscape').length,3);
 });
 

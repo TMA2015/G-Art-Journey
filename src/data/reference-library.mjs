@@ -3,7 +3,9 @@ export const referenceStyles = [
   {id:'general', label:'General / Natural'},
   {id:'manga', label:'Manga'},
   {id:'webtoon', label:'Manhwa / Webtoon'},
-  {id:'manhua', label:'Manhua'}
+  {id:'manhua', label:'Manhua'},
+  {id:'chibi', label:'Chibi'},
+  {id:'princess', label:'Fairy-Tale Princess'}
 ];
 
 export const referenceCollections = [
@@ -23,13 +25,13 @@ export const referenceCollections = [
     id:'hair',
     label:'Hair',
     eyebrow:'SHAPE & FLOW',
-    description:'Thirty hairstyle ideas across short, medium, long, tied, braided and layered families.'
+    description:'Natural, chibi and princess hairstyles, from simple cuts to braids and accessories.'
   },
   {
     id:'clothing',
     label:'Clothing',
     eyebrow:'OUTFIT & FOLDS',
-    description:'Everyday outfits, school and office looks, seasonal clothing, dresses and Vietnamese fashion.'
+    description:'Everyday outfits, seasonal clothing, Vietnamese fashion, chibi outfits and princess dresses.'
   }
 ];
 
@@ -270,5 +272,90 @@ export const referenceItems = [
     orientation:'landscape',
     alt:'Vietnamese modernized traditional fashion reference with ten contemporary outfits.',
     tags:['Vietnam','modernized','áo yếm','brocade','fusion fashion','traditional materials']
-  }
+  },
+{
+  "id": "hair-princess-01",
+  "category": "hair",
+  "style": "princess",
+  "title": "Princess Hairstyles & Accessories",
+  "description": "Princess hair shapes and accessories to combine into your own character.",
+  "image": "references/hair/princess-hairstyles-accessories.webp",
+  "width": 1055,
+  "height": 1491,
+  "orientation": "portrait",
+  "alt": "Princess Hairstyles & Accessories \u2014 original G-Art Journey reference sheet",
+  "tags": [
+    "princess",
+    "hair",
+    "accessories"
+  ]
+},
+{
+  "id": "clothing-princess-01",
+  "category": "clothing",
+  "style": "princess",
+  "title": "Princess Dress Library",
+  "description": "Ten elegant dress silhouettes for original fairy-tale characters.",
+  "image": "references/clothing/princess-dress-library.webp",
+  "width": 1055,
+  "height": 1491,
+  "orientation": "portrait",
+  "alt": "Princess Dress Library \u2014 original G-Art Journey reference sheet",
+  "tags": [
+    "princess",
+    "dress",
+    "silhouette"
+  ]
+},
+{
+  "id": "clothing-chibi-01",
+  "category": "clothing",
+  "style": "chibi",
+  "title": "Chibi Clothing Library",
+  "description": "Fifteen playful chibi outfits with clear clothing silhouettes.",
+  "image": "references/clothing/chibi-clothing-library.webp",
+  "width": 1055,
+  "height": 1491,
+  "orientation": "portrait",
+  "alt": "Chibi Clothing Library \u2014 original G-Art Journey reference sheet",
+  "tags": [
+    "chibi",
+    "outfits",
+    "clothing"
+  ]
+},
+{
+  "id": "motion-chibi-01",
+  "category": "motion",
+  "style": "chibi",
+  "title": "Chibi Pose & Motion Library",
+  "description": "Fifteen chibi poses and movements for playful character ideas.",
+  "image": "references/motion/chibi-pose-motion-library.webp",
+  "width": 1055,
+  "height": 1491,
+  "orientation": "portrait",
+  "alt": "Chibi Pose & Motion Library \u2014 original G-Art Journey reference sheet",
+  "tags": [
+    "chibi",
+    "poses",
+    "motion"
+  ]
+},
+{
+  "id": "hair-chibi-01",
+  "category": "hair",
+  "style": "chibi",
+  "title": "Chibi Hair Library",
+  "description": "Sixteen chibi hairstyles with varied shapes and character identities.",
+  "image": "references/hair/chibi-hair-library.webp",
+  "width": 1055,
+  "height": 1491,
+  "orientation": "portrait",
+  "alt": "Chibi Hair Library \u2014 original G-Art Journey reference sheet",
+  "tags": [
+    "chibi",
+    "hair",
+    "hairstyles"
+  ]
+}
 ];
