@@ -49,12 +49,17 @@ A learner should be able to open a visual, borrow an idea, then change it.
 
 ## Style filters
 
+Current published filters with live assets:
 - General / Natural
+- Chibi
+- Fairy-Tale Princess
+
+Reserved future style families:
 - Manga
 - Manhwa / Webtoon
 - Manhua
 
-The regional labels are broad visual families, not fixed rules. Avoid implying that every manga, manhwa or manhua artist draws the same way.
+The UI only shows style filters that currently have published reference sheets. Regional labels are broad visual families, not fixed rules. Avoid implying that every manga, manhwa or manhua artist draws the same way.
 
 ## Starter production size
 
@@ -149,7 +154,7 @@ QA note:
 - this is accepted for this batch only and **does not change the mandatory hand/anatomy rule**
 - future assets should avoid tiny ambiguous hands; either render hands large enough to inspect or crop them naturally when hands are not the reference subject
 
-Next: **Hair / General**, then Clothing.
+Historical production sequence: **Hair / General**, then Clothing. Both are now complete; see the current live inventory below.
 
 
 ## Hair / General starter plan
@@ -248,9 +253,9 @@ Cultural QA:
 - hand/anatomy QA remains mandatory
 
 
-## Approved asset upload checkpoint
+## First Reference Library release checkpoint — historical
 
-Owner-approved inventory for the first website upload:
+Owner-approved inventory for the original first website upload:
 
 | Collection | Approved infographics |
 | --- | ---: |
@@ -277,6 +282,33 @@ Release status:
 - Pages workflow #225 PASS
 - technical release complete
 - owner browser visual QA remains before closing this first Reference Library release checkpoint
+
+
+## Current live Reference Library inventory — 2026-10-02
+
+The library has since expanded beyond the original 18-sheet checkpoint.
+
+| Collection | Live infographics |
+| --- | ---: |
+| Poses | 3 |
+| Motion | 7 |
+| Hair | 4 |
+| Clothing | 9 |
+| **Total** | **23** |
+
+Current published style counts:
+- General / Natural: **18**
+- Chibi: **3**
+- Fairy-Tale Princess: **2**
+
+New approved themed sheets:
+- Chibi Clothing Library
+- Chibi Pose & Motion Library
+- Chibi Hair Library
+- Princess Hairstyles & Accessories
+- Princess Dress Library
+
+The four core collection IDs remain unchanged. The themed material is exposed through style filters instead of creating parallel collection silos.
 
 
 ## Character-themed Reference Library expansion — approved 2026-10-02
@@ -325,7 +357,7 @@ New approved inventory after this release: **23 reference infographics total** (
 - Reference Library: 23 sheets; Poses 3, Motion 7, Hair 4, Clothing 9. Styles: General 18, Chibi 3, Fairy-Tale Princess 2.
 - Local checks PASS: 90 tests; 50-guide intent audit, zero high-overlap pairs; 206-page build; English-first / legacy-alias verification; image-budget audit with no warnings.
 - Generated HTML verified: two new topic cards, three lesson cards per new topic, six standalone posters with View large / Save WebP, new style filters, five reference cards, and all eleven built asset hashes.
-- Existing 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
+- The original pre-expansion 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
 - Final PR CI must pass before merge; Pages build and deployment are checked after merge.
 - Remaining acceptance: owner desktop/iPad QA after release.
 
@@ -340,7 +372,7 @@ New approved inventory after this release: **23 reference infographics total** (
 - Character Art landing: **6 topic shelves × 3 lessons = 18 topic lessons**, plus the separate Character Face Design Lab (19 lessons exposed through this landing). Human Drawing face lessons remain in their existing separate shelves.
 - New topics: Chibi Characters **3/3 LIVE**; Fairy-Tale Princess **3/3 LIVE**.
 - Reference Library: **23 sheets LIVE**; Poses 3, Motion 7, Hair 4, Clothing 9. Style counts: General 18, Chibi 3, Fairy-Tale Princess 2.
-- Core collection IDs, original twelve Character Style lessons, Design Lab, existing topic routes and compatibility aliases are unchanged.
+- Core collection IDs, the original pre-expansion twelve Character Style lessons, Design Lab, existing topic routes and compatibility aliases are unchanged.
 - No unrelated generated gallery/material assets were committed.
 - Remaining acceptance: owner desktop/iPad visual QA.
 
