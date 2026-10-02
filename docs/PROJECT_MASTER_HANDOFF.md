@@ -1395,3 +1395,20 @@ DP-01 rule:
 - produce Lesson 1 pilot first
 - do not create Lesson 2 until Lesson 1 teaching/visual QA passes
 - initial placement is Draw Places Explore more, not mandatory core
+
+
+### Geometric / perspective illustration rule — 2026-10-03
+
+Owner stopped the DP-01 two-point-perspective redraw attempt because generative image editing repeatedly changed exact geometric relationships.
+
+Durable rule:
+- **Do not use generative image redraws for geometry-critical diagrams** such as perspective boxes, vanishing-point construction, projection guides, axes, measured proportions or other diagrams where line convergence / intersection is instructional content.
+- Use one of:
+  1. exact deterministic vector/code-generated construction;
+  2. an owner-approved technical diagram inserted unchanged;
+  3. a hybrid layout where the exact diagram is preserved and only surrounding decorative/editorial elements are designed around it.
+- AI-generated decoration may not alter the geometry.
+- Any geometry-critical source must be visually and mathematically checked before publication.
+- The current DP-01 poster attempts are **NOT APPROVED** and must not be integrated or published.
+
+DP-01 remains paused until a deterministic diagram workflow is used.
