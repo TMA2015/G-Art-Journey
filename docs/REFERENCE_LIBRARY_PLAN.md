@@ -357,7 +357,7 @@ New approved inventory after this release: **23 reference infographics total** (
 - Reference Library: 23 sheets; Poses 3, Motion 7, Hair 4, Clothing 9. Styles: General 18, Chibi 3, Fairy-Tale Princess 2.
 - Local checks PASS: 90 tests; 50-guide intent audit, zero high-overlap pairs; 206-page build; English-first / legacy-alias verification; image-budget audit with no warnings.
 - Generated HTML verified: two new topic cards, three lesson cards per new topic, six standalone posters with View large / Save WebP, new style filters, five reference cards, and all eleven built asset hashes.
-- Existing 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
+- The original pre-expansion 12 Character Style lessons, Design Lab, four core reference collection IDs and all existing routes are preserved.
 - Final PR CI must pass before merge; Pages build and deployment are checked after merge.
 - Remaining acceptance: owner desktop/iPad QA after release.
 
@@ -372,7 +372,7 @@ New approved inventory after this release: **23 reference infographics total** (
 - Character Art landing: **6 topic shelves × 3 lessons = 18 topic lessons**, plus the separate Character Face Design Lab (19 lessons exposed through this landing). Human Drawing face lessons remain in their existing separate shelves.
 - New topics: Chibi Characters **3/3 LIVE**; Fairy-Tale Princess **3/3 LIVE**.
 - Reference Library: **23 sheets LIVE**; Poses 3, Motion 7, Hair 4, Clothing 9. Style counts: General 18, Chibi 3, Fairy-Tale Princess 2.
-- Core collection IDs, original twelve Character Style lessons, Design Lab, existing topic routes and compatibility aliases are unchanged.
+- Core collection IDs, the original pre-expansion twelve Character Style lessons, Design Lab, existing topic routes and compatibility aliases are unchanged.
 - No unrelated generated gallery/material assets were committed.
 - Remaining acceptance: owner desktop/iPad visual QA.
 
