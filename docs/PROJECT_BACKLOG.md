@@ -1,8 +1,69 @@
 # G-Art Journey — Project Backlog
 
-_Last updated: 2026-10-01_
+_Last updated: 2026-10-02_
 
-This file is the durable list of deferred improvements that should not interrupt the current production task.
+This file tracks deferred or upcoming work that should not interrupt the current approved task. Historical release details belong in the master handoff, not here.
+
+## Active proposal
+
+### Start Here / Learning Paths
+**Status:** Proposal drafted — owner structure review pending  
+**Priority:** Next
+
+Purpose:
+- help a new learner answer “What should I learn next?”
+- organize the existing library without locking lessons
+- reuse current artwork and routes before creating more content
+
+Proposal:
+- `docs/LEARNING_PATHS_PLAN.md`
+- six initial paths: Drawing Basics, Draw People, Create Characters, Draw Places, Watercolor Basics, Digital Art Basics
+- Reference Library remains an optional support tool
+
+Do not implement the page until the owner approves the proposed path structure.
+
+## Learn to Draw — future content
+
+### Reference Library style expansion
+**Status:** Foundation complete; future expansion deferred
+
+Current live state:
+- 23 approved reference sheets
+- collections: Poses, Motion, Hair, Clothing
+- published style filters with assets: General / Natural, Chibi, Fairy-Tale Princess
+
+Reserved style families that may receive future reference sheets:
+- Manga
+- Manhwa / Webtoon
+- Manhua
+
+Do not fill these filters merely to make the matrix look complete. Add a reference sheet only when it supplies useful visual vocabulary not already covered.
+
+### Skill-gap audit
+**Status:** Deferred until Learning Paths v1 is approved
+
+After paths expose the current learning structure, review whether any true foundation gaps remain.
+
+Candidates to evaluate, not automatic commitments:
+- feet
+- gesture / motion foundation
+- light and value
+- composition
+- perspective for rooms / everyday objects
+
+A missing topic should become a new lesson only when it improves an actual learning path or closes a clear skill gap.
+
+## Product / UX
+
+### Learning-path progress tracking
+**Status:** Deferred
+
+Do not add accounts, streaks, badges, locked prerequisites or progress percentages in Learning Paths v1. First confirm that suggested paths are useful without extra state.
+
+### Vietnamese public release
+**Status:** Deferred
+
+English remains the active public language. Existing Vietnamese source material may support a future independently reviewed release; do not auto-translate live learning content.
 
 ## Visual / Home
 
@@ -10,36 +71,22 @@ This file is the durable list of deferred improvements that should not interrupt
 **Status:** Closed / superseded on 2026-10-01  
 **Priority:** None for homepage
 
-Owner decision on 2026-10-01:
-- the five original **G-Art Showcase** topics were removed from the homepage hero
-- the homepage hero now contains only **Explore Art** and **My Art**
-- therefore the old replacement task is no longer required for the homepage
-- retain the old assets only where still needed for compatibility or other pages
-- do **not** replace them quickly with merely adequate substitutes
-- whenever genuinely stronger project content appears, reuse suitable images to upgrade the relevant Showcase topic
-- if the project still lacks enough strong replacements, create a dedicated **G-Art Showcase image library** with a consistent, polished visual standard and replace the old set as a coordinated pass
+Owner decision:
+- the five original G-Art Showcase topics were removed from the homepage hero
+- the homepage hero now focuses on Explore Art and My Art
+- old showcase assets remain only where still needed for compatibility or secondary pages
+- do not replace them quickly with merely adequate substitutes
 
-Current topics affected:
-- Pencil Portrait
-- Pencil Landscape
-- Watercolor
-- Character Art
-- Digital Art
+If a future redesign needs a new coordinated showcase set, create it as a dedicated visual project with the current Illustration Standard and anatomy QA.
 
-Replacement standard:
-- immediately attractive at homepage hero size
-- visually coherent with G-Art Journey
-- strong composition even in wide hero framing
-- no anatomy/hand defects in character or human imagery
-- no unintended duplication with lesson/reference artwork
-- original G-Art imagery preferred when practical
-- historical/open-license artwork may support Explore Art, but the core G-Art Showcase should retain a recognizable G-Art identity
-- do not lower quality simply to complete all five topics at once
+## Completed foundations
 
-**Completion condition:** all five original Showcase topics have replacement images that the owner considers at least as visually compelling as the Explore Art / My Art slideshow content.
-
-## Learn to Draw
-
-### Reference Library image production
-**Status:** Paused, not cancelled  
-Foundation remains in Draft PR #52. Resume when the owner returns to Learn to Draw.
+These items should no longer appear as active backlog work:
+- Human Drawing topic hierarchy
+- Character Art topic hierarchy
+- Digital Art standalone lesson hierarchy
+- Reference Library foundation and first 23 approved sheets
+- Chibi Characters 3-lesson topic
+- Fairy-Tale Princess 3-lesson topic
+- content consistency audit + permanent CI gate
+- dynamic current collection counts / stale-copy regression protection
