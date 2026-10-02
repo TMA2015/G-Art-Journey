@@ -1412,3 +1412,25 @@ Durable rule:
 - The current DP-01 poster attempts are **NOT APPROVED** and must not be integrated or published.
 
 DP-01 remains paused until a deterministic diagram workflow is used.
+
+
+### DP-01 Lesson 1 approved — 2026-10-03
+
+Owner approved **Draw Boxes & Corners in Two-Point Perspective** after multiple geometry-correction attempts.
+
+Approved source artwork:
+- Library: `/G-Art Journey/Approved/Draw Places/DP01-01-two-point-boxes-corners.png`
+
+Important geometry rule reinforced:
+- the approved poster is acceptable because the geometry-critical diagrams were anchored to an owner-provided correct reference
+- future DP-01 geometry must use deterministic / exact construction as the source of truth
+- generative image tools may support layout, color and decorative treatment only; they must not freely redraw perspective geometry
+
+DP-01 status:
+1. Draw Boxes & Corners in Two-Point Perspective — **OWNER APPROVED**
+2. Draw a Simple Room from Boxes — **NEXT**
+
+Next production rule:
+- Lesson 2 must begin from exact room/perspective construction, not freehand AI geometry
+- keep it initially under Draw Places Explore more
+- after Lesson 2 approval, integrate both DP-01 lessons, run full tests/audits/build, then owner desktop/iPad QA
