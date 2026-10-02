@@ -44,6 +44,12 @@ test('topic-first pages and standalone Digital lesson route are wired',async()=>
  assert.match(guidesPage,/groupedLessonSlugs/);
  assert.match(guidesPage,/human-drawing\//);
  assert.match(guidesPage,/character-styles\//);
+ assert.match(guidesPage,/characterTopics\.length/);
+ assert.match(guidesPage,/characterGuides\.length/);
+ assert.match(guidesPage,/referenceItems\.length/);
+ assert.doesNotMatch(guidesPage,/time:'12 lessons'/);
+ assert.doesNotMatch(guidesPage,/Twelve original illustrated lessons/);
+ assert.doesNotMatch(guidesPage,/Explore all 12 guides/);
  assert.match(digitalParent,/OPEN LESSON/);
  assert.match(digitalLesson,/View large/);
  assert.match(digitalLesson,/Save WebP/);
