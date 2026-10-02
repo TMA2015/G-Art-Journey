@@ -1,4 +1,27 @@
-# G-Art Journey — production roadmap
+# G-Art Journey — Phase 2 production roadmap
+
+> **Historical roadmap with current reconciliation.** This file records the Phase 2 plan that guided early Core Drawing Skills expansion. Many planned items have since been implemented under newer titles or broader lesson series. Do not treat every unchecked roadmap concept as a missing lesson. The current gap decision is in `docs/SKILL_GAP_AUDIT.md`.
+
+## Current reconciliation — 2026-10-03
+
+| Original roadmap concept | Current status |
+| --- | --- |
+| Draw an Eye from Structure | Live |
+| Draw Hands from Simple Forms | Live |
+| Draw Hair as Masses, Then Strands | Live |
+| Draw Fabric from Tension & Gravity | Live |
+| Five Values & a Lit Sphere | **Superseded / covered by Shade Simple Forms + Graphite Values note** |
+| Graphite Edges & Mark Making | **Covered by Pencil Control + Texture with Graphite** |
+| Pencil Portrait: Block-in to Light & Shadow | **Live as A Pencil Portrait + Facial Features in Pencil** |
+| Pencil Landscape Depth | **Live as Build Depth with Three Layers** |
+| Simple Trees, Foliage & Texture | **Covered by Trees, Rocks & Clouds as Big Shapes + graphite texture work** |
+| Water & Reflections in Pencil | Live |
+| Layers for Beginners | **Superseded by Painting with Separate Layers (5-lesson Digital series)** |
+| Simple Skin Color | **Superseded by Color a Face with Simple Layers (5-lesson Digital series)** |
+| Light & Shadow on a Digital Character | **Covered inside the current Digital series** |
+| Soft Color Harmony | **Still a real gap; renamed proposal: Build a Simple Color Palette** |
+
+The current highest-priority missing foundation is **Gesture & Motion**, followed by **Feet from Simple Forms** as a support skill and **Simple Color Harmony** as a cross-medium color foundation.
 
 The website is a father–daughter art journey, not a comprehensive art-history course. Every subject should be easy to enter independently, visually inviting and useful enough that a beginner can continue exploring on their own. No grading, login, AI judge, commerce or public critique is required.
 

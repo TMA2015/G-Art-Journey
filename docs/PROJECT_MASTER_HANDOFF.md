@@ -1043,3 +1043,34 @@ Owner visual QA requested on desktop/iPad:
 - Digital nested lesson links
 - Reference Library helper
 - no horizontal overflow or clipped cards
+
+
+### Learning Paths skill-gap audit — 2026-10-03
+
+After owner QA confirmed Start Here / Learning Paths works well on desktop and iPad, the next approved task was a skill-gap audit based on the live paths rather than content-count expansion.
+
+Durable audit:
+- `docs/SKILL_GAP_AUDIT.md`
+
+Main findings:
+- the current library already covers most beginner foundations well
+- **Light & Value is not a current gap**: Shade Simple Forms already teaches one light source, light/shadow family, core shadow, reflected light and cast shadow; Graphite Values, Portrait and Digital Art reinforce it
+- **Gesture & Motion Basics** is the strongest real gap because motion principles are fragmented across Standing Figure, style-specific action lessons and Reference Library examples
+- **Feet from Simple Forms** is a useful missing support skill for standing/balance but should remain optional rather than a mandatory core step
+- **Simple Color Harmony / Build a Simple Color Palette** is a real cross-medium gap: Digital Art teaches layer workflow and Watercolor teaches paint behavior, but neither directly teaches hue/value/saturation, limited palettes or dominant/support/accent color choices
+- two-point/room perspective and general illustration composition are useful future extensions, not immediate needs
+- negative space/sighting should be integrated into observation exercises rather than becoming a formal standalone lesson now
+
+Recommended small batch **SG-01**:
+1. Draw Gesture & Motion from Simple Lines
+2. Draw Feet from Simple Forms
+3. Build a Simple Color Palette
+
+Production rule:
+- do not mass-produce SG-01
+- begin with Gesture & Motion as the single pilot
+- owner approves the teaching design before Feet
+- owner approves Feet before Color Palette
+- Learning Paths are updated only after each new lesson is approved and published
+
+The old Phase 2 roadmap was reconciled so superseded items such as Five Values & a Lit Sphere / Layers for Beginners do not accidentally trigger duplicate content.
