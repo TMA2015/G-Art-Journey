@@ -1125,3 +1125,27 @@ Recommended integration:
 - Build a Simple Color Palette: treat as medium-independent **Color Basics** support; link from Digital Art, Watercolor and Create Characters without altering the existing Digital 5+5 series or Watercolor six-step core route.
 
 Current next task: package the 3 approved PNGs as production WebPs, add the three lesson records and Learning Path links, run the full content-consistency / guide-distinctness / build gate, then owner visual QA.
+
+
+### SG-01 integration staging — 2026-10-03
+
+Owner approved integration of the complete SG-01 batch.
+
+Staging branch:
+- `feature/sg01-learning-path-integration-20261003`
+
+Planned lesson placement:
+- `gesture-motion-basics` — Core Drawing / Figure; Draw People core after Figure Proportions and before Standing Figure; optional Create Characters support
+- `feet-simple-forms` — Core Drawing / Figure; Draw People Explore more; optional Create Characters support
+- `simple-color-harmony` — Color Basics; optional support for Create Characters, Watercolor Basics and Digital Art Basics
+
+Catalog rule:
+- add a light **Color Basics** filter rather than misclassifying the color lesson as Digital Art or Watercolor
+- preserve existing Digital Art 5+5 series and Watercolor six-step core route unchanged
+
+Approved production asset targets:
+- `public/infographics/core/gesture-motion-basics.webp`
+- `public/infographics/core/feet-simple-forms.webp`
+- `public/infographics/color/simple-color-palette.webp`
+
+Do not crop, resize, regenerate, recolor, rebrand or replace the approved artwork.
