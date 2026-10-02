@@ -33,6 +33,11 @@ for(const label of ['Pose','Anatomy','Hair','Clothing','Color'])assert.ok(startH
 assert.ok(startHere.indexOf('Draw Gesture &amp; Motion from Simple Lines')<startHere.indexOf('Draw a Standing Figure Step by Step'));
 assert.match(startHere,/Face details/);
 assert.match(startHere,/Figure extras/);
+const watercolorStart=startHere.slice(startHere.indexOf('id="watercolor-basics"'),startHere.indexOf('id="digital-art-basics"'));
+assert.equal((watercolorStart.match(/class="path-step"/g)||[]).length,5);
+assert.match(watercolorStart,/Sky Wash Practice &amp; Variations|Sky Wash Practice & Variations/);
+assert.match(watercolorStart,/Practice/);
+assert.match(watercolorStart,/Color planning/);
 assert.doesNotMatch(guide,/Không có giáo trình/);
 const note=await read('notes/graphite-values/');
 assert.match(note,/light-and-value\.svg/);
