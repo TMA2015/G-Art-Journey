@@ -1194,3 +1194,34 @@ Next product task after SG-01 close-out:
 - review Create Characters support density now that it has 7 optional support guides
 - prefer grouping/staging over deleting useful lessons
 - do not start a new content batch until this audit is complete
+
+
+### SG-01 owner QA complete + post-release Learning Paths UX audit — 2026-10-03
+
+Owner confirmed SG-01 visual QA on both desktop and iPad: **PASS**.
+
+SG-01 is fully accepted and closed.
+
+Post-SG-01 Learning Paths UX audit:
+- `docs/POST_SG01_LEARNING_PATH_UX_AUDIT.md`
+
+Audit conclusion:
+- no lesson should be removed
+- no new tabs, accordions, progress UI or navigation layer is needed
+- Draw People should keep all 9 core lessons but present them as 3 visible stages:
+  1. Face & Head
+  2. Figure & Motion
+  3. Finish the Figure
+- Draw People Explore more should be grouped into Face details / Figure extras
+- Create Characters should keep all 7 support guides but group them by purpose:
+  - Pose & Motion
+  - Anatomy
+  - Hair & Clothing
+  - Color
+- Drawing Basics, Draw Places, Watercolor and Digital require no structural change
+- this is a UX organization pass only; lesson order, artwork, routes and curriculum remain unchanged
+
+Next proposed implementation:
+- generic stage/group metadata in Learning Paths data
+- subtle group headings in Start Here
+- no new artwork

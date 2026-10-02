@@ -56,12 +56,12 @@ Findings:
 Explicit non-gap:
 - Light & Value is already covered strongly by Shade Simple Forms + Graphite Values + portrait/digital reinforcement.
 
-SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color Palette. Owner desktop QA passed; quick iPad close-out remains.
+SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color Palette. Owner desktop and iPad QA passed; SG-01 is fully closed.
 
 ## Product / UX
 
 ### Post-SG-01 Learning Paths UX audit
-**Status:** Next  
+**Status:** Audit complete — implementation proposal ready  
 **Priority:** High
 
 Review the live Start Here experience after SG-01:
