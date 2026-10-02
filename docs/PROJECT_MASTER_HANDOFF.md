@@ -944,3 +944,41 @@ The gate checks structural learning-copy integrity across active guides, Charact
 
 Human review remains required for semantic and visual agreement:
 **Topic description → lesson objective → steps → Try it → Remember → poster**.
+
+
+### Start Here / Learning Paths proposal — 2026-10-02
+
+After the Character Art / Reference Library expansion and the new permanent content-consistency gate, the next proposed product step is **Start Here / Learning Paths**.
+
+Reason:
+- the library is now large enough that discovery is becoming a learning-design problem rather than a content-volume problem
+- the goal is to answer “What should I learn next?” without turning G-Art Journey into a locked curriculum
+
+Proposal saved at:
+- `docs/LEARNING_PATHS_PLAN.md`
+
+Proposed v1 paths:
+1. Drawing Basics
+2. Draw People
+3. Create Characters
+4. Draw Places
+5. Watercolor Basics
+6. Digital Art Basics
+
+Reference Library remains a contextual support tool, not a mandatory curriculum path.
+
+Important rules:
+- suggested order only; all lessons remain freely accessible
+- use existing lessons first; no new poster batch required for v1
+- Core / Optional / Choose one distinctions must be explicit
+- Character Art remains a branching choice among six topic families
+- Digital Art preserves its existing two-series / ten-lesson hierarchy
+- no progress tracking, badges, locked prerequisites or AI personalization in v1
+- counts and references should resolve from data rather than duplicated hard-coded copy
+
+Current state:
+- planning only
+- no production route or UI code has been changed
+- owner review of the learning-path structure is required before implementation
+
+The project backlog was refreshed at the same checkpoint: Reference Library is no longer listed as paused; its current 23-sheet foundation is complete, while Manga / Manhwa-Webtoon / Manhua reference expansion and a future skill-gap audit remain deferred.
