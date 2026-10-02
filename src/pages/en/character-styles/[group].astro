@@ -1,0 +1,7 @@
+---
+import Page from '../../character-styles/[group].astro';
+import {characterTopics} from '../../../data/guide-topics.mjs';
+export function getStaticPaths(){return characterTopics.map(topic=>({params:{group:topic.id},props:{topic}}));}
+const {topic}=Astro.props;
+---
+<Page topic={topic}/>
