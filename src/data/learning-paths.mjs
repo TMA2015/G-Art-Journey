@@ -28,6 +28,7 @@ export const learningPaths=[
    {kind:'guide',slug:'face-expressions',label:'Core'},
    {kind:'guide',slug:'head-angles',label:'Core'},
    {kind:'guide',slug:'figure-proportions',label:'Core'},
+   {kind:'guide',slug:'gesture-motion-basics',label:'Core'},
    {kind:'guide',slug:'standing-figure',label:'Core'},
    {kind:'guide',slug:'sitting-poses',label:'Core'},
    {kind:'guide',slug:'hands-simple-forms',label:'Core'},
@@ -39,6 +40,7 @@ export const learningPaths=[
    'shade-a-pencil-portrait',
    'faces-by-age',
    'body-silhouettes',
+   'feet-simple-forms',
    'fabric-tension-gravity'
   ],
   referenceCollections:['poses','motion','hair','clothing']
@@ -57,7 +59,7 @@ export const learningPaths=[
    {kind:'supportChoice',label:'Choose what you need'},
    {kind:'reference',label:'Explore more'}
   ],
-  supportGuides:['hands-simple-forms','hair-masses','fabric-tension-gravity','standing-figure'],
+  supportGuides:['gesture-motion-basics','hands-simple-forms','feet-simple-forms','hair-masses','fabric-tension-gravity','standing-figure','simple-color-harmony'],
   referenceCollections:['poses','motion','hair','clothing']
  },
  {
@@ -92,7 +94,8 @@ export const learningPaths=[
    {kind:'guide',slug:'watercolor-soft-sky-cloud-washes',label:'Core'},
    {kind:'guide',slug:'watercolor-sky-wash-practice',label:'Core'},
    {kind:'guide',slug:'watercolor-small-landscape',label:'Core'}
-  ]
+  ],
+  explore:['simple-color-harmony']
  },
  {
   id:'digital-art-basics',
@@ -105,7 +108,8 @@ export const learningPaths=[
   steps:[
    {kind:'digitalSeries',slug:'digital-color-layers',label:'Series 1'},
    {kind:'digitalSeries',slug:'color-a-face-in-layers',label:'Series 2'}
-  ]
+  ],
+  explore:['simple-color-harmony']
  }
 ];
 
