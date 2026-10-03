@@ -34,7 +34,7 @@ export const characterTopics=[
   id:'manhua',
   label:'Manhua',
   eyebrow:'CHARACTER ART',
-  description:'Elegant character design, flowing hair and fabric, detail studies and graceful movement.',
+  description:'Start with clear full-body construction and clothing shapes, then explore elegant hair, fabric, detail studies and graceful movement.',
   image:'infographics/character/manhua-ink-character.webp'
  },
  {
@@ -45,7 +45,7 @@ export const characterTopics=[
   image:'infographics/character/cartoon-shapes.webp'
  },
  {id:'chibi',label:'Chibi Characters',eyebrow:'CHARACTER ART',description:'Cute proportions, readable expressions, playful poses and simple outfit design.',image:'infographics/character/chibi-proportions.webp'},
- {id:'princess',label:'Fairy-Tale Princess',eyebrow:'CHARACTER ART',description:'Original princess design, elegant hair and dress details, and graceful, balanced poses.',image:'infographics/character/fairy-tale-princess-design.webp'}
+ {id:'princess',label:'Fairy-Tale Princess',eyebrow:'CHARACTER ART',description:'Start with simple face, dress and pose foundations, then explore richer fairy-tale design, royal details and graceful movement.',image:'infographics/character/fairy-tale-princess-design.webp'}
 ];
 
 export const digitalSeries={
