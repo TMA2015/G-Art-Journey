@@ -25,18 +25,19 @@ Implemented at `/start-here/` after owner approval. Keep future changes within t
 ## Learn to Draw — future content
 
 ### Learning-material visual refresh
-**Status:** Locked / production starting  
+**Status:** Digital + Princess complete; Clear Manhua next  
 **Priority:** Highest
 
 Plan:
 - `docs/LEARNING_MATERIAL_REFRESH_BACKLOG_20261003.md`
+- `docs/CLEAR_MANHUA_COMPANION_PLAN_20261003.md`
 
 Replace:
-- Digital Art Set A Lessons 1, 2, 3, 5
+- Digital Art Set A Lessons 1, 2, 3, 5 — **4/4 replacement posters approved**
 
 Add:
-- Simple Princess companion: 3 beginner posters
-- Clear Manhua companion: 2 required structure-first posters; optional 3rd only if needed
+- Simple Princess companion: **3/3 beginner posters approved**
+- Clear Manhua companion: **NEXT — 2 required structure-first posters; optional 3rd only if needed**
 
 Keep:
 - Digital Lesson 4 as visual benchmark
