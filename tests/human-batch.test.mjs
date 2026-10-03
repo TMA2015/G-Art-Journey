@@ -6,11 +6,15 @@ import {guides} from '../src/data/content.mjs';
 import {humanGuides} from '../src/data/human-guides.mjs';
 import {humanAssetManifest} from '../src/data/human-assets.mjs';
 const get=path=>readFile(path,'utf8');
-test('eight unique illustrated human drawing guides with accessible poster metadata',()=>{
- assert.equal(humanGuides.length,8);
- assert.equal(new Set(humanGuides.map(g=>g.slug)).size,8);
+test('nine unique illustrated human drawing guides with accessible poster metadata',()=>{
+ assert.equal(humanGuides.length,9);
+ assert.equal(new Set(humanGuides.map(g=>g.slug)).size,9);
  assert.equal(humanGuides.filter(g=>g.group==='face').length,4);
- assert.equal(humanGuides.filter(g=>g.group==='figure').length,4);
+ assert.equal(humanGuides.filter(g=>g.group==='figure').length,5);
+ const proportions=humanGuides.find(g=>g.slug==='figure-proportions');
+ assert.equal(proportions?.posterGallery?.length,3);
+ assert.equal(humanGuides.find(g=>g.slug==='sitting-poses')?.image,'infographics/human/sitting-poses.webp');
+ assert.ok(humanGuides.some(g=>g.slug==='five-everyday-sitting-poses'));
  for(const g of humanGuides){
   assert.ok(g.poster && g.posterAlt);
   assert.ok(g.steps.length>=5 && g.steps.every(s=>s.title&&s.body));
