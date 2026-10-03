@@ -89,7 +89,9 @@ Current priority:
   1. Draw a Face in Five Steps — APPROVED
   2. Five Everyday Facial Expressions — APPROVED
   3. Turn a Head: Five Useful Views — APPROVED
-- next academic decision: reassess whether Figure Proportions needs one simplified replacement before integration
+- Figure Proportions reassessment completed: **3-sheet replacement package approved**
+- Human Drawing refresh creative production is now complete
+- next: controlled integration / release of 6 approved files across 4 lessons
 
 Keep for now:
 - Faces at Different Ages
@@ -147,6 +149,29 @@ Explicit non-gap:
 - Light & Value is already covered strongly by Shade Simple Forms + Graphite Values + portrait/digital reinforcement.
 
 SG-01 is live: Gesture & Motion, Feet from Simple Forms and Build a Simple Color Palette. Owner desktop and iPad QA passed; SG-01 is fully closed.
+
+### Human Drawing clarity refresh integration
+**Status:** NEXT  
+**Priority:** Highest
+
+Approved source assets:
+- HD-FACE-01: 3 replacement posters
+- HD-FIGURE-01: 3 poster files for Figure Proportions
+- total: 6 approved files / 4 affected lessons
+
+Integration plan:
+- replace Face Basics poster
+- replace Facial Expressions poster
+- replace Head Angles poster
+- convert Figure Proportions from one overloaded poster into a 3-poster lesson gallery
+- preserve current lesson slugs and navigation
+- update exact dimensions / hashes
+- add regression coverage for gallery order and asset integrity
+- run full tests + content audit + distinctness audit + build
+- deploy only after all gates pass
+- owner desktop/iPad QA
+
+Do not alter Standing Figure, Sitting Poses, Faces by Age or Body Silhouettes in this batch.
 
 ## Product / UX
 
