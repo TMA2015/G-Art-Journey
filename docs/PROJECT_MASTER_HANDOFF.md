@@ -1451,3 +1451,28 @@ Required correction:
 - do not publish DP-01 Lesson 2 until technical geometry QA passes independently of visual QA
 
 The current Lesson 2 drafts are **NOT APPROVED** and must not be used as source assets.
+
+
+### Learning-material refresh backlog locked — 2026-10-03
+
+Owner re-evaluated the library with a stricter teaching standard: **a poster must be genuinely drawable/followable, not merely attractive**.
+
+Durable plan:
+- `docs/LEARNING_MATERIAL_REFRESH_BACKLOG_20261003.md`
+
+Locked scope:
+- **Replace:** Digital Art Set A Lessons 1, 2, 3, 5; keep academic content; use Lesson 4 as visual benchmark
+- **Add:** Simple Princess beginner companion set (3 posters)
+- **Add:** Clear Manhua structure-first companion set (2 required, optional 3rd only if still needed)
+- **Keep:** Digital Lesson 4; existing Princess 3; existing Manhua 3; other approved materials unless a concrete learning problem is identified
+- **Upload later:** no partial publication. Release the approved refresh/additions together with approved DP-01 Built Spaces assets after full QA
+
+Approved DP-01 Lesson 2 source files are preserved in Library:
+- `/G-Art Journey/Approved/Draw Places/DP01-02-room-from-boxes-steps-1-4.png`
+- `/G-Art Journey/Approved/Draw Places/DP01-02-room-from-boxes-steps-5-6.png`
+
+Immediate production next:
+- **Digital Art Lesson 1 remake — Painting with Separate Layers**
+- preserve the current five-stage workflow
+- visually follow Lesson 4: bright, calm, spacious, lightly colored, illustration-first
+- do not publish until all four Digital replacements are owner-approved
