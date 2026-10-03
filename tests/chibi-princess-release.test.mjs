@@ -40,7 +40,9 @@ test('six new lessons use unique standalone routes and pinned approved posters',
   const pinned=characterAssets.find(x=>x.slug===guide.slug);
   assert.equal(pinned.sha256,a.webpSha256);assert.equal(pinned.bytes,a.webpBytes);
  }
- for(const group of ['chibi','princess'])assert.deepEqual(characterGuides.filter(g=>g.group===group).map(g=>g.groupOrder),[0,1,2]);
+ assert.deepEqual(characterGuides.filter(g=>g.group==='chibi').map(g=>g.groupOrder),[0,1,2]);
+ const oldPrincessSlugs=assets.filter(a=>a.targetPath.includes('princess')).map(a=>a.targetPath.split('/').at(-1).replace('.webp',''));
+ assert.deepEqual(oldPrincessSlugs.map(slug=>characterGuides.find(g=>g.slug===slug).groupOrder),[3,4,5]);
 });
 
 test('five new reference sheets use their locked collection and style mappings',()=>{

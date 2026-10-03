@@ -143,5 +143,53 @@ export const characterAssets = [
   "width": 1024,
   "height": 1536,
   "sha256": "a22a9bf8ec4d28f1ca34258de63ae73ac3f7fc06c857488f7636341dfb266193"
+},
+{
+  "slug": "simple-princess-face",
+  "path": "public/infographics/character/simple-princess-face.webp",
+  "bytes": 416854,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "acd9a2117237faa8f557e63cf1f39ccc672d35d27b9ce2e821c82ebfed4cc73a"
+},
+{
+  "slug": "simple-princess-dress",
+  "path": "public/infographics/character/simple-princess-dress.webp",
+  "bytes": 393512,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "0cee55e5ba017fea3096ed93d109569623ba469e81d6993d8942ff5ef11d5d81"
+},
+{
+  "slug": "simple-princess-pose",
+  "path": "public/infographics/character/simple-princess-pose.webp",
+  "bytes": 405680,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "beceb0e315bd64ead8c468b5c78b6f9b334533e3b1af740a07ec8806ebba91e1"
+},
+{
+  "slug": "manhua-full-body-foundation",
+  "path": "public/infographics/character/manhua-full-body-foundation.webp",
+  "bytes": 410656,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "09b4e0acc5fabf5467c3aaa5e2e2351e5c4d592b4a4d082d2dd0144e1fac3d73"
+},
+{
+  "slug": "manhua-clothing-simple-shapes",
+  "path": "public/infographics/character/manhua-clothing-simple-shapes.webp",
+  "bytes": 435426,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f9c855001906a328b78222796bbcefd173b67a68ae80eb069f80e6f14e01df3d"
+},
+{
+  "slug": "manhua-pose-to-finished",
+  "path": "public/infographics/character/manhua-pose-to-finished.webp",
+  "bytes": 495346,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "aacc0254358f94440226ac37b7518da0a39610be4288b126d5e25c67e8dd181a"
 }
 ];

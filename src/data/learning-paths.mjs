@@ -82,7 +82,10 @@ export const learningPaths=[
    {kind:'guide',slug:'landscape-water-reflections',label:'Core'},
    {kind:'guide',slug:'landscape-complete-composition',label:'Core'}
   ],
-  explore:['watercolor-small-landscape']
+  exploreGroups:[
+   {id:'built-spaces',label:'Built spaces',guides:['two-point-boxes-corners','simple-room-from-boxes']},
+   {id:'watercolor-scene',label:'Try watercolor',guides:['watercolor-small-landscape']}
+  ]
  },
  {
   id:'watercolor-basics',

@@ -54,12 +54,15 @@ for(const guide of activeGuides){
 
 unique(characterTopics.map(x=>x.id),'Character Art topic id');
 unique(characterTopics.map(x=>x.label),'Character Art topic label');
+const characterExpectedCounts={manga:3,webtoon:3,manhua:6,cartoon:3,chibi:3,princess:6};
 for(const topic of characterTopics){
  if(!present(topic.description))warn(`Character topic ${topic.id}: missing description`);
  const lessons=characterGuides.filter(g=>g.group===topic.id);
- if(lessons.length!==3)warn(`Character topic ${topic.id}: expected 3 lessons, got ${lessons.length}`);
+ const expected=characterExpectedCounts[topic.id];
+ if(lessons.length!==expected)warn(`Character topic ${topic.id}: expected ${expected} lessons, got ${lessons.length}`);
  const orders=lessons.map(g=>g.groupOrder).sort((a,b)=>a-b);
- if(JSON.stringify(orders)!==JSON.stringify([0,1,2]))warn(`Character topic ${topic.id}: groupOrder must be 0,1,2`);
+ const expectedOrders=Array.from({length:expected},(_,i)=>i);
+ if(JSON.stringify(orders)!==JSON.stringify(expectedOrders))warn(`Character topic ${topic.id}: groupOrder must be ${expectedOrders.join(',')}`);
 }
 
 const humanGroupMap={faces:'face',figures:'figure'};

@@ -122,3 +122,12 @@ test('Watercolor keeps one sky technique in core and moves the duplicate drill t
  assert.ok(watercolor.exploreGroups.find(x=>x.id==='practice').guides.includes('watercolor-sky-wash-practice'));
  assert.ok(watercolor.exploreGroups.find(x=>x.id==='color-planning').guides.includes('simple-color-harmony'));
 });
+
+
+test('DP-01 Built Spaces stays optional under Draw Places',()=>{
+ const places=learningPaths.find(x=>x.id==='draw-places');
+ assert.equal(places.steps.filter(x=>x.kind==='guide').length,5);
+ assert.deepEqual(places.exploreGroups.map(x=>x.id),['built-spaces','watercolor-scene']);
+ assert.deepEqual(places.exploreGroups.find(x=>x.id==='built-spaces').guides,['two-point-boxes-corners','simple-room-from-boxes']);
+ for(const slug of ['two-point-boxes-corners','simple-room-from-boxes'])assert.ok(activeGuides.has(slug));
+});

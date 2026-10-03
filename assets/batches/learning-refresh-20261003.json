@@ -1,0 +1,161 @@
+{
+  "batchId": "learning-refresh-20261003",
+  "status": "staged",
+  "conversion": {
+    "format": "WebP",
+    "quality": 95,
+    "method": 6,
+    "resize": "none"
+  },
+  "assets": [
+    {
+      "kind": "digital-replacement",
+      "slug": "digital-color-layers-01",
+      "source": "01-painting-with-separate-layers.png",
+      "targetPath": "public/infographics/digital/layers-01-overview.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 494448,
+      "sha256": "83d083dc6adfd604e8e6b1e541f390f114ca48701766e1cceadd627153aabd9a",
+      "sourcePngSha256": "8520862e256f2fa61ba28803654bec27f93f96ffff7a85157468653501d2a21c"
+    },
+    {
+      "kind": "digital-replacement",
+      "slug": "digital-color-layers-02",
+      "source": "02-base-color-layers.png",
+      "targetPath": "public/infographics/digital/layers-02-base-color.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 470014,
+      "sha256": "0d9fc1277c7a93db21b7c4b7d48cbd2189202199be28665596afe44eb691c052",
+      "sourcePngSha256": "9e4290525c11bca676363f48d53d056be051944b10caf2d9ceffbb2cc74ed495"
+    },
+    {
+      "kind": "digital-replacement",
+      "slug": "digital-color-layers-03",
+      "source": "03-shadow-layer.png",
+      "targetPath": "public/infographics/digital/layers-03-shadow.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 582776,
+      "sha256": "7c0fdbf99cbceb79902f89964eff1670495d1627bcc689893a20d13e6bfda873",
+      "sourcePngSha256": "c7f10db5f0cf44b00243e4421b5d842650553027fc567673ea3cf23a4a350703"
+    },
+    {
+      "kind": "digital-replacement",
+      "slug": "digital-color-layers-05",
+      "source": "05-check-your-layers.png",
+      "targetPath": "public/infographics/digital/layers-05-check.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 543024,
+      "sha256": "a63e40575650566a8e7012c6fcaa2505e905118169cd8cd96849ada87cc20dbc",
+      "sourcePngSha256": "ef74252b80a8a713818294486eb4fbf091f096372a3de3d99637210a8bbef020"
+    },
+    {
+      "kind": "character-lesson",
+      "slug": "simple-princess-face",
+      "source": "01-draw-a-simple-princess-face.png",
+      "targetPath": "public/infographics/character/simple-princess-face.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 416854,
+      "sha256": "acd9a2117237faa8f557e63cf1f39ccc672d35d27b9ce2e821c82ebfed4cc73a",
+      "sourcePngSha256": "fb4dba0cd18e340d6fe31da66edbfd5f0b364358b2cc9f65f9c4f2197be21fd3"
+    },
+    {
+      "kind": "character-lesson",
+      "slug": "simple-princess-dress",
+      "source": "02-build-a-simple-princess-dress.png",
+      "targetPath": "public/infographics/character/simple-princess-dress.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 393512,
+      "sha256": "0cee55e5ba017fea3096ed93d109569623ba469e81d6993d8942ff5ef11d5d81",
+      "sourcePngSha256": "caa647afe36c22c7b0e2be67b026b4fd5c929b46feb46a4c2b063eea21f98d91"
+    },
+    {
+      "kind": "character-lesson",
+      "slug": "simple-princess-pose",
+      "source": "03-draw-a-simple-princess-pose.png",
+      "targetPath": "public/infographics/character/simple-princess-pose.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 405680,
+      "sha256": "beceb0e315bd64ead8c468b5c78b6f9b334533e3b1af740a07ec8806ebba91e1",
+      "sourcePngSha256": "675ef098660689505ffd7736a2fe6c0d7e40425aa2edaff4340999297e3c1b2c"
+    },
+    {
+      "kind": "character-lesson",
+      "slug": "manhua-full-body-foundation",
+      "source": "01-full-body-manhua-figure.png",
+      "targetPath": "public/infographics/character/manhua-full-body-foundation.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 410656,
+      "sha256": "09b4e0acc5fabf5467c3aaa5e2e2351e5c4d592b4a4d082d2dd0144e1fac3d73",
+      "sourcePngSha256": "74d86ba73e74c426efde7b69cef03bad49361163259be0404e48ef7d6c1ee965"
+    },
+    {
+      "kind": "character-lesson",
+      "slug": "manhua-clothing-simple-shapes",
+      "source": "02-build-manhua-clothing-from-simple-shapes.png",
+      "targetPath": "public/infographics/character/manhua-clothing-simple-shapes.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 435426,
+      "sha256": "f9c855001906a328b78222796bbcefd173b67a68ae80eb069f80e6f14e01df3d",
+      "sourcePngSha256": "62711e53fc9815481a1b0d292b26db3e2baabe5f18565347d4eb5ae9d2557fc6"
+    },
+    {
+      "kind": "character-lesson",
+      "slug": "manhua-pose-to-finished",
+      "source": "03-manhua-pose-to-finished-figure.png",
+      "targetPath": "public/infographics/character/manhua-pose-to-finished.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 495346,
+      "sha256": "aacc0254358f94440226ac37b7518da0a39610be4288b126d5e25c67e8dd181a",
+      "sourcePngSha256": "ef9b7dbf777ea4846478ed35f35c887b9835f71c43ecfcfb3b7552d4fd3d11ab"
+    },
+    {
+      "kind": "places-lesson",
+      "slug": "two-point-boxes-corners",
+      "source": "DP01-01-two-point-boxes-corners.png",
+      "targetPath": "public/infographics/landscape/two-point-boxes-corners.webp",
+      "width": 1054,
+      "height": 1493,
+      "bytes": 256764,
+      "sha256": "420935558f043742d86faa088da42927116121c46818134ca2cc9b5622104797",
+      "sourcePngSha256": "0e7232f578353f0b8d1ca73833447fa36cf43083eb19d938479360dfbcd0e7a8"
+    },
+    {
+      "kind": "places-gallery",
+      "slug": "simple-room-from-boxes-01",
+      "source": "DP01-02-room-from-boxes-steps-1-4.png",
+      "targetPath": "public/infographics/landscape/simple-room-boxes-01.webp",
+      "width": 1055,
+      "height": 1491,
+      "bytes": 216930,
+      "sha256": "36f96a1c5a9165b0bbdb9fde9b1797d2df817d99dae4e457604ae5b5774891ec",
+      "sourcePngSha256": "98259f5b00a1bddc41f014d8fd0deab50622c526fb089ba61a9f9d8e38cde680"
+    },
+    {
+      "kind": "places-gallery",
+      "slug": "simple-room-from-boxes-02",
+      "source": "DP01-02-room-from-boxes-steps-5-6.png",
+      "targetPath": "public/infographics/landscape/simple-room-boxes-02.webp",
+      "width": 1055,
+      "height": 1491,
+      "bytes": 252240,
+      "sha256": "b40137e2d9b771b08018f3537becf7e5a121c16b1dbd1b8142a29764aee0e139",
+      "sourcePngSha256": "520d856c598bf8e26d34915a3dfe18e43a6be71aeb3fbf2aca0930d88ab966df"
+    }
+  ],
+  "releaseRule": {
+    "noPartialUpload": true,
+    "preserveExistingManhuaAndPrincess": true,
+    "digitalLesson4Unchanged": true,
+    "dp01Placement": "Draw Places → Explore more → Built spaces"
+  }
+}

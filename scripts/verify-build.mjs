@@ -5,6 +5,11 @@ const read=async path=>readFile('dist/'+path+'index.html','utf8');
 const paths=['','explore/','guides/','start-here/','guide/gesture-motion-basics/','guide/feet-simple-forms/','guide/simple-color-harmony/','gallery/','guide/draw-a-pencil-portrait/','guide/draw-a-pencil-landscape/','guide/draw-a-manga-face/','guide/watercolor-first-flower/','guide/digital-color-layers/','notes/','notes/graphite-values/','notes/head-construction/','movement/renaissance/','movement/impressionism/','movement/post-impressionism/','movement/cubism/','movement/ink-wash/','artist/leonardo-da-vinci/','artist/claude-monet/','artist/vincent-van-gogh/','artist/fan-kuan/','guide/figure-from-simple-shapes/','guide/shade-a-pencil-portrait/','guide/street-with-depth/','guide/four-character-face-approaches/','guide/color-a-face-in-layers/','notes/figure-simple-shapes/','notes/landscape-depth/','human-drawing/','human-drawing/faces/','human-drawing/figures/','character-styles/','character-styles/manga/','character-styles/webtoon/','character-styles/manhua/','character-styles/cartoon/','guide/digital-color-layers/01-layer-workflow/','guide/digital-color-layers/02-base-color-layers/','guide/digital-color-layers/03-shadow-layer/','guide/digital-color-layers/04-light-and-details/','guide/digital-color-layers/05-check-your-layers/','guide/color-a-face-in-layers/01-clean-sketch/','guide/color-a-face-in-layers/02-flat-skin-color/','guide/color-a-face-in-layers/03-one-clear-shadow/','guide/color-a-face-in-layers/04-add-details/','guide/color-a-face-in-layers/05-check-your-layers/','guide/face-basics/','guide/face-expressions/','guide/head-angles/','guide/faces-by-age/','guide/figure-proportions/','guide/standing-figure/','guide/sitting-poses/','guide/body-silhouettes/'];
 const expansion=JSON.parse(await readFile('assets/batches/character-chibi-princess-release.json','utf8'));
 paths.push('character-styles/chibi/','character-styles/princess/',...expansion.assets.filter(a=>a.kind==='lesson').map(a=>'guide/'+a.targetPath.split('/').at(-1).replace('.webp','')+'/'));
+paths.push(
+ 'guide/simple-princess-face/','guide/simple-princess-dress/','guide/simple-princess-pose/',
+ 'guide/manhua-full-body-foundation/','guide/manhua-clothing-simple-shapes/','guide/manhua-pose-to-finished/',
+ 'guide/two-point-boxes-corners/','guide/simple-room-from-boxes/'
+);
 for(const path of paths){
  const root=await read(path),legacy=await read('en/'+path);
  for(const html of [root,legacy]){
@@ -38,6 +43,10 @@ assert.equal((watercolorStart.match(/class="path-step"/g)||[]).length,5);
 assert.match(watercolorStart,/Sky Wash Practice &amp; Variations|Sky Wash Practice & Variations/);
 assert.match(watercolorStart,/Practice/);
 assert.match(watercolorStart,/Color planning/);
+const placesStart=startHere.slice(startHere.indexOf('id="draw-places"'),startHere.indexOf('id="watercolor-basics"'));
+assert.match(placesStart,/Built spaces/);
+assert.match(placesStart,/Draw Boxes &amp; Corners in Two-Point Perspective|Draw Boxes & Corners in Two-Point Perspective/);
+assert.match(placesStart,/Draw a Simple Room from Boxes/);
 assert.doesNotMatch(guide,/Không có giáo trình/);
 const note=await read('notes/graphite-values/');
 assert.match(note,/light-and-value\.svg/);
@@ -64,10 +73,10 @@ console.log('English-first build PASS: '+paths.length+' canonical routes and /en
 
 const characterLanding=await read('character-styles/');
 assert.equal((characterLanding.match(/class="topic-hub-card"/g)||[]).length,6);
-for(const group of ['chibi','princess']){
- assert.ok(characterLanding.includes('character-styles/'+group+'/'));
- assert.equal(((await read('character-styles/'+group+'/')).match(/class="series-lesson-card"/g)||[]).length,3);
-}
+for(const group of ['chibi','princess','manhua'])assert.ok(characterLanding.includes('character-styles/'+group+'/'));
+assert.equal(((await read('character-styles/chibi/')).match(/class="series-lesson-card"/g)||[]).length,3);
+assert.equal(((await read('character-styles/princess/')).match(/class="series-lesson-card"/g)||[]).length,6);
+assert.equal(((await read('character-styles/manhua/')).match(/class="series-lesson-card"/g)||[]).length,6);
 const references=await read('reference-library/');
 assert.equal((references.match(/<article class="reference-card/g)||[]).length,23);
 for(const style of ['chibi','princess'])assert.ok(references.includes('data-reference-style="'+style+'"'));
@@ -82,7 +91,28 @@ for(const a of expansion.assets){
   assert.equal((html.match(/class="guide-poster"/g)||[]).length,1);
  }else assert.ok(references.includes(image));
 }
-console.log('Character expansion build PASS: 6 topics, 18 topic lessons + Design Lab; 23 reference sheets; all 11 built hashes match.');
+console.log('Character expansion build PASS: 6 topics, 24 topic lessons + Design Lab; 23 reference sheets; legacy 11-asset hashes match.');
+
+const refresh=JSON.parse(await readFile('assets/batches/learning-refresh-20261003.json','utf8'));
+assert.equal(refresh.assets.length,13);
+for(const a of refresh.assets){
+ const builtPath='dist/'+a.targetPath.replace(/^public\//,'');
+ const bytes=await readFile(builtPath);
+ assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256,a.targetPath);
+ assert.equal(bytes.length,a.bytes,a.targetPath);
+}
+for(const slug of [
+ 'simple-princess-face','simple-princess-dress','simple-princess-pose',
+ 'manhua-full-body-foundation','manhua-clothing-simple-shapes','manhua-pose-to-finished',
+ 'two-point-boxes-corners','simple-room-from-boxes'
+]){
+ const html=await read('guide/'+slug+'/');
+ assert.match(html,/View large/);
+ assert.match(html,/Save WebP/);
+}
+assert.equal(((await read('guide/simple-room-from-boxes/')).match(/class="guide-poster"/g)||[]).length,2);
+console.log('Learning refresh build PASS: 13 pinned WebPs; 6 companion lessons; 2 Built Spaces lessons.');
+
 
 const sgGesture=await read('guide/gesture-motion-basics/');
 assert.match(sgGesture,/Draw Gesture &amp; Motion from Simple Lines|Draw Gesture & Motion from Simple Lines/);

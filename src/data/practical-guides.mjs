@@ -303,6 +303,47 @@ export const practiceGuides = [
  seeAlso:['graphite-values']
 },
 {
+ slug:'two-point-boxes-corners',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'25–35 min',
+ title:'Draw Boxes & Corners in Two-Point Perspective',
+ description:'Use one horizon and two vanishing points to build clean boxes from a near vertical corner, then compare how height changes what you can see.',
+ image:'infographics/landscape/two-point-boxes-corners.webp',poster:true,posterWidth:1054,posterHeight:1493,
+ posterAlt:'Two-point perspective lesson showing one horizon, left and right vanishing points, exact guide lines and boxes at different heights',
+ supplies:'Paper, pencil, eraser and a ruler for the first practice',
+ steps:[
+  {title:'Find eye level',body:'Draw one horizontal horizon line and mark a left vanishing point and a right vanishing point.'},
+  {title:'Place the near corner',body:'Draw one vertical line for the nearest corner of the box. Keep this edge vertical.'},
+  {title:'Send the left edges',body:'Draw the top and bottom edges from the near corner toward the left vanishing point.'},
+  {title:'Send the right edges',body:'Draw the matching top and bottom edges from the same corner toward the right vanishing point.'},
+  {title:'Close the box',body:'Choose the box depth and add vertical back edges, then use the opposite vanishing point to complete the hidden direction.'},
+  {title:'Change the height',body:'Compare boxes below, crossing and above the horizon while keeping the same horizon and the same two vanishing points.'}
+ ],
+ tryIt:'Draw two more boxes at different heights using the same horizon, LVP and RVP. Keep every vertical edge vertical.',
+ remember:'In this beginner two-point setup, verticals stay vertical and every receding horizontal edge belongs to either the LVP family or the RVP family.'
+},
+{
+ slug:'simple-room-from-boxes',category:'landscape',tag:'LANDSCAPE DRAWING',difficulty:'Beginner',time:'30–45 min',
+ title:'Draw a Simple Room from Boxes',
+ description:'Apply the same two-point system to one room corner, then build simple furniture from boxes without losing the shared perspective.',
+ image:'infographics/landscape/simple-room-boxes-01.webp',poster:true,posterWidth:1055,posterHeight:1491,
+ posterAlt:'Draw a Simple Room from Boxes — two-point perspective room construction with one shared horizon and two vanishing points',
+ posterGallery:[
+  {title:'1. Build the room and furniture boxes',image:'infographics/landscape/simple-room-boxes-01.webp',width:1055,height:1491,alt:'Steps 1 to 4 of a two-point perspective room: room corner, room shell and two furniture boxes using one shared horizon and two vanishing points'},
+  {title:'2. Turn the boxes into furniture and clean the drawing',image:'infographics/landscape/simple-room-boxes-02.webp',width:1055,height:1491,alt:'Steps 5 and 6 of the same two-point perspective room, turning boxes into simple furniture and cleaning construction lines without changing the camera or vanishing points'}
+ ],
+ supplies:'Paper, pencil, eraser and a ruler for the first construction',
+ steps:[
+  {title:'Set the room corner',body:'Draw one horizon, LVP, RVP and a single vertical room corner. This establishes the camera and eye level.'},
+  {title:'Build the room shell',body:'Send ceiling and floor edges from the room corner toward the same two vanishing points to make one empty room.'},
+  {title:'Add one large box',body:'Place a low furniture box on the floor, keeping its receding edges aligned with the same LVP and RVP.'},
+  {title:'Add a second box',body:'Add a taller box at another position or height without creating any new vanishing point.'},
+  {title:'Turn boxes into furniture',body:'Use the box faces to create a simple bed, wardrobe or window while keeping every perspective edge consistent.'},
+  {title:'Clean the drawing',body:'Remove or lighten unnecessary guide lines. Keep the exact room, furniture positions, horizon and vanishing directions from the previous step.'}
+ ],
+ tryIt:'Draw the same room again but move one piece of furniture. Keep the same horizon and the same two vanishing points.',
+ remember:'Same horizon, same two vanishing points, verticals stay vertical. The finished room should still trace back to the original construction.'
+},
+
+{
  slug:'four-character-face-approaches',category:'character',tag:'CHARACTER ART',difficulty:'Beginner',time:'25–40 min',
  title:'Try Four Ways to Draw a Character Face',
  description:'Start from one shared head, then create four distinct characters by changing face shape, features, hair silhouette and line weight.',

@@ -750,6 +750,118 @@
         "small-contrast-accent",
         "palette-mood-test"
       ]
+    },
+    {
+      "slug": "simple-princess-face",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "beginner-princess-face-construction",
+      "visibleEvidence": "Build a simple princess face from head guides and feature placement through one readable hair mass and restrained accessory detail.",
+      "stageFocus": [
+        "simple-princess-head-guides",
+        "eye-line-feature-placement",
+        "single-hair-mass",
+        "minimal-princess-accessory",
+        "clean-face-lineart"
+      ]
+    },
+    {
+      "slug": "simple-princess-dress",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "beginner-princess-dress-construction",
+      "visibleEvidence": "Build one full-body princess dress from a bodice and large skirt mass before sleeves, three to five folds and one small motif.",
+      "stageFocus": [
+        "simple-bodice-block",
+        "large-skirt-mass",
+        "basic-sleeve-edges",
+        "few-large-dress-folds",
+        "single-motif-finish"
+      ]
+    },
+    {
+      "slug": "simple-princess-pose",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "beginner-princess-pose-balance",
+      "visibleEvidence": "Build one readable princess pose from gesture, supporting leg and simple arms, then let the skirt follow the body movement.",
+      "stageFocus": [
+        "princess-action-line",
+        "supporting-leg-balance",
+        "simple-arm-placement",
+        "skirt-follows-pose",
+        "clean-full-body-princess-pose"
+      ]
+    },
+    {
+      "slug": "manhua-full-body-foundation",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manhua-full-body-structure-foundation",
+      "visibleEvidence": "Build an elegant Manhua-inspired full-body figure from gesture and body blocks through limbs, proportion, silhouette and restrained clothing.",
+      "stageFocus": [
+        "manhua-gesture-body-blocks",
+        "manhua-limbs-joints",
+        "manhua-full-body-proportion",
+        "manhua-clean-silhouette",
+        "restrained-hair-clothing"
+      ]
+    },
+    {
+      "slug": "manhua-clothing-simple-shapes",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manhua-clothing-mass-and-fold-foundation",
+      "visibleEvidence": "Place large Manhua-inspired clothing masses over a visible body, then refine shape and add only a few gravity-led folds.",
+      "stageFocus": [
+        "body-plus-clothing-masses",
+        "clothing-silhouette-shaping",
+        "three-to-five-major-folds",
+        "body-readable-under-clothes",
+        "clean-flowing-outfit"
+      ]
+    },
+    {
+      "slug": "manhua-pose-to-finished",
+      "status": "published",
+      "family": "character",
+      "primarySkill": "manhua-construction-to-clean-line-workflow",
+      "visibleEvidence": "Keep one character and camera while moving from gesture to body blocks, large clothing masses, hair direction and a clean final line drawing.",
+      "stageFocus": [
+        "gesture-scaffold",
+        "body-block-anatomy",
+        "large-clothing-masses",
+        "hair-mass-direction",
+        "clean-line-continuity"
+      ]
+    },
+    {
+      "slug": "two-point-boxes-corners",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "two-point-box-construction",
+      "visibleEvidence": "Construct boxes from one horizon, two vanishing points and a vertical near corner, then compare boxes at different heights.",
+      "stageFocus": [
+        "two-point-horizon-setup",
+        "near-vertical-corner",
+        "left-vp-edge-family",
+        "right-vp-edge-family",
+        "close-and-height-compare"
+      ]
+    },
+    {
+      "slug": "simple-room-from-boxes",
+      "status": "published",
+      "family": "landscape",
+      "primarySkill": "two-point-room-from-boxes",
+      "visibleEvidence": "Apply one two-point system to a room shell and multiple furniture boxes, then convert them into simple furnishings without changing the camera.",
+      "stageFocus": [
+        "room-corner-two-vp",
+        "room-shell-construction",
+        "furniture-box-placement",
+        "furniture-from-boxes",
+        "same-perspective-cleanup"
+      ]
     }
   ]
 }
