@@ -4,6 +4,8 @@
 **Status:** CURRENT QUALITY BASELINE  
 **Scope:** 53 active learning guides, 6 Learning Paths, 23 Reference Library sheets
 
+> **Historical baseline note — 2026-10-03:** This document records the earlier 53-guide baseline. The project has since reached 61 active guides. Q-01 Watercolor refinement, Q-02 Human poster dimensions, Digital Set A refresh and DP-01 Built Spaces are complete. Current visual-quality work continues in `docs/HUMAN_DRAWING_QUALITY_AUDIT_ROUND2_20261003.md`.
+
 ## 1. Executive conclusion
 
 The current library is no longer in a “fill the gaps everywhere” stage.
