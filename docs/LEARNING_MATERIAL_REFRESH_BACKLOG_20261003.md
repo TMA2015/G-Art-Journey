@@ -228,3 +228,20 @@ Next:
 - combined website integration and release preparation
 - no partial upload
 - no additional poster generation unless a concrete integration/content gap is discovered
+
+
+---
+
+## Release closure — 2026-10-03
+
+Status: **OWNER QA PASS / CLOSED**
+
+- deployed SHA: `6af63164b38ece7d1b6d7eedc48a8fc68cf18288`
+- PR #74 merged
+- CI #355 PASS
+- Pages #356 PASS
+- 109 tests PASS / 0 fail
+- 13 approved refresh WebPs live
+- owner verified desktop and iPad display successfully
+
+No further action is required for this refresh batch.
