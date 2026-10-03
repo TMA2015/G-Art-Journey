@@ -1,6 +1,6 @@
 # G-Art Journey — Project Backlog
 
-_Last updated: 2026-10-02_
+_Last updated: 2026-10-03_
 
 This file tracks deferred or upcoming work that should not interrupt the current approved task. Historical release details belong in the master handoff, not here.
 
@@ -25,8 +25,8 @@ Implemented at `/start-here/` after owner approval. Keep future changes within t
 ## Learn to Draw — future content
 
 ### Learning-material visual refresh
-**Status:** Creative production complete; integration/release next  
-**Priority:** Highest
+**Status:** CLOSED — released and owner QA PASS  
+**Priority:** Closed
 
 Plan:
 - `docs/LEARNING_MATERIAL_REFRESH_BACKLOG_20261003.md`
@@ -71,25 +71,35 @@ Owner QA: desktop + iPad PASS.
 Do not create more posters for this batch unless a concrete defect is reported.
 
 ### Full learning-material quality audit
-**Status:** Completed baseline / quality correction staged  
-**Priority:** Active
+**Status:** Round 2 active — Human Drawing clarity review  
+**Priority:** Highest
 
-Audit:
-- `docs/LEARNING_MATERIAL_QUALITY_AUDIT_20261003.md`
+Audits:
+- `docs/LEARNING_MATERIAL_QUALITY_AUDIT_20261003.md` — historical 53-guide baseline
+- `docs/HUMAN_DRAWING_QUALITY_AUDIT_ROUND2_20261003.md` — current Human Drawing review
 
-Immediate correction:
-- keep Soft Sky / Cloud Washes as Watercolor core
-- move Sky Wash Practice & Variations to optional Practice
-- keep Build a Simple Color Palette under optional Color planning
+Resolved from baseline:
+- Watercolor path redundancy corrected
+- Digital Set A visual refresh completed and released
+- DP-01 Built Spaces completed and released
+- six missing Human Drawing dimensions verified directly from binaries and patched through PR #75
 
-Known watch items:
-- Digital approved posters are denser than the current preferred poster family; no redesign without owner instruction
-- Gesture & Motion is approved but not a best-in-class visual benchmark
-- six Human Drawing posters need exact width/height verification before metadata cleanup
+Current priority:
+- HD-FACE-01 Human Face clarity refresh
+  1. Draw a Face in Five Steps — refocus
+  2. Five Everyday Facial Expressions — refocus
+  3. Turn a Head: Five Useful Views — highest pedagogical mismatch
+- after that, reassess whether Figure Proportions needs one simplified replacement
+
+Keep for now:
+- Faces at Different Ages
+- Draw a Standing Figure Step by Step
+- Five Relaxed Sitting Poses
+- Body Shapes and Character Silhouettes
 
 ### DP-01 Built Spaces
-**Status:** 2/2 lessons approved; pending combined integration  
-**Priority:** High
+**Status:** CLOSED — live and owner QA PASS  
+**Priority:** Closed
 
 Plan:
 - `docs/DP01_BUILT_SPACES_PLAN.md`
