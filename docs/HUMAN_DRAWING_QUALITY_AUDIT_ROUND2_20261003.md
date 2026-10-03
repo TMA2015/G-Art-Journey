@@ -226,3 +226,42 @@ Next:
 - full CI/audit/build gate
 - controlled deployment
 - owner desktop/iPad QA
+
+
+---
+
+## Final owner-approved release scope — 2026-10-03
+
+After the HD-FACE-01 and HD-FIGURE-01 checkpoints, the owner reviewed the remaining Figure & Pose lessons and made two additional decisions:
+
+- **Draw a Standing Figure Step by Step**: later replacement artwork was explicitly approved and supersedes the earlier KEEP-only audit decision.
+- **Five Everyday Sitting Poses**: approved as a new standalone supplemental lesson covering sofa, studying at a desk, wall/ledge, bench and café stool support.
+- **Five Relaxed Sitting Poses**: keep the existing live lesson and artwork unchanged.
+- **Body Shapes and Character Silhouettes**: keep the existing live lesson and artwork unchanged.
+- **Faces at Different Ages**: keep the existing live lesson and artwork unchanged.
+
+Final release payload contains **8 new approved WebP assets**:
+1. Draw a Face in Five Steps
+2. Five Everyday Facial Expressions
+3. Turn a Head: Five Useful Views
+4. Understand Simple Figure Proportions
+5. Figure Views: Front · 3/4 · Side · Back
+6. Different Body Types
+7. Draw a Standing Figure Step by Step
+8. Five Everyday Sitting Poses
+
+Integration model:
+- three face posters replace their existing lesson posters
+- Figure Proportions uses the new core poster plus two supplemental gallery sheets
+- Standing Figure replaces its existing poster
+- Five Everyday Sitting Poses is added as a ninth Human Drawing guide
+- existing Faces at Different Ages, Five Relaxed Sitting Poses and Body Shapes and Character Silhouettes remain untouched
+
+Approved release WebPs are preserved in Library under:
+`/G-Art Journey/Approved/Human Drawing/HD-RELEASE-20261003/`
+
+Release gate:
+- preserve original Five Relaxed Sitting Poses
+- preserve Body Shapes and Character Silhouettes
+- verify all asset checksums and dimensions
+- run the full CI/audit/build gate before merge and Pages deployment
