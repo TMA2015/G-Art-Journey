@@ -1737,3 +1737,63 @@ Final release scope confirmed live:
 - Simple Room from Boxes: 2-poster gallery in approved order
 
 This refresh batch is now **CLOSED**. Do not reopen or regenerate these assets unless a concrete defect is reported.
+
+
+### Human Drawing quality audit round 2 — 2026-10-03
+
+Current audit:
+- `docs/HUMAN_DRAWING_QUALITY_AUDIT_ROUND2_20261003.md`
+
+Audit principle:
+- judge teaching artwork by whether a learner can actually reproduce the lesson, not by visual attractiveness alone
+- one clear lesson purpose per poster
+- visible construction before polish
+- continuity, anatomy/geometry accuracy and low cognitive load
+- avoid duplicating neighboring lessons inside one poster
+
+Human Drawing decisions:
+- **Draw a Face in Five Steps** — REPLACE / REFOCUS
+  - current poster contains extra expression and angle mini-lessons that duplicate neighboring guides
+- **Five Everyday Facial Expressions** — REPLACE / REFOCUS
+  - current poster spends too much space rebuilding a base face instead of teaching expression mechanics
+- **Turn a Head: Five Useful Views** — REPLACE / HIGHEST PEDAGOGICAL PRIORITY
+  - current main step row constructs a front-facing head; actual angle teaching is mostly relegated to the lower comparison row
+- **Faces at Different Ages** — KEEP / copy watch
+- **Understand Simple Figure Proportions** — REVISE LATER / second-priority batch
+- **Draw a Standing Figure Step by Step** — KEEP
+- **Five Relaxed Sitting Poses** — KEEP / strong
+- **Body Shapes and Character Silhouettes** — KEEP / copy watch
+
+Locked next production batch:
+**HD-FACE-01 — Human Face clarity refresh**
+1. Draw a Face in Five Steps
+2. Five Everyday Facial Expressions
+3. Turn a Head: Five Useful Views
+
+Shared visual direction:
+- portrait
+- clean line art first
+- compact header
+- warm paper and restrained pastel accents
+- most page area belongs to teaching drawings
+- no full-color rendering required
+- no unrelated mini-lessons in the same poster
+
+### Human poster dimension metadata — RESOLVED — 2026-10-03
+
+Six Human Drawing binaries were verified directly:
+- face-expressions.webp — 1122×1402
+- head-angles.webp — 1122×1402
+- faces-by-age.webp — 1122×1402
+- standing-figure.webp — 1122×1402
+- sitting-poses.webp — 1122×1402
+- body-silhouettes.webp — 1122×1402
+
+PR #75:
+- exact dimensions added to metadata
+- regression test added requiring all Human Drawing posters to pin dimensions
+- PR CI #360 PASS
+- merged as `eb8a07d10e017b7d2d17b18dd6e2792436c45e08`
+- Pages #361 PASS
+
+No artwork changed in this metadata correction.
