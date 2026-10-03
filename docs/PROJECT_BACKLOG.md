@@ -24,6 +24,29 @@ Implemented at `/start-here/` after owner approval. Keep future changes within t
 
 ## Learn to Draw — future content
 
+### Learning-material visual refresh
+**Status:** Locked / production starting  
+**Priority:** Highest
+
+Plan:
+- `docs/LEARNING_MATERIAL_REFRESH_BACKLOG_20261003.md`
+
+Replace:
+- Digital Art Set A Lessons 1, 2, 3, 5
+
+Add:
+- Simple Princess companion: 3 beginner posters
+- Clear Manhua companion: 2 required structure-first posters; optional 3rd only if needed
+
+Keep:
+- Digital Lesson 4 as visual benchmark
+- existing Princess and Manhua lessons
+
+Release:
+- hold all new/replacement assets until the whole refresh batch is approved
+- combine with already approved DP-01 Built Spaces assets for one controlled website update
+
+
 ### Full learning-material quality audit
 **Status:** Completed baseline / quality correction staged  
 **Priority:** Active
