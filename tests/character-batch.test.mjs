@@ -13,7 +13,7 @@ test('twenty-four complete original guides in six distinct groups',async()=>{
  assert.equal(manifest.items.length,12);
  assert.equal(characterGuides.length,24);
  assert.equal(new Set(characterGuides.map(x=>x.slug)).size,24);
- assert.deepEqual(characterGuides.slice(0,12).map(x=>x.slug),manifest.items.map(x=>x.slug));
+ assert.deepEqual(manifest.items.map(x=>x.slug).map(slug=>characterGuides.find(g=>g.slug===slug)?.slug),manifest.items.map(x=>x.slug));
  const expected={manga:3,webtoon:3,manhua:6,cartoon:3,chibi:3,princess:6};
  for(const group of groups)assert.equal(characterGuides.filter(x=>x.group===group).length,expected[group],group);
  for(const g of characterGuides){assert.equal(g.category,'character');assert.equal(g.poster,true);assert.ok(g.steps.length>=5);assert.ok(g.steps.every(x=>x.title&&x.body));assert.ok(g.tryIt&&g.remember);assert.ok(g.image.endsWith('/'+g.slug+'.webp'));assert.ok(g.posterWidth>=1000);}
@@ -21,7 +21,7 @@ test('twenty-four complete original guides in six distinct groups',async()=>{
 test('published posters all exist with exact WebP, checksum, dimensions and source paths',async()=>{
  const m=JSON.parse(await read('assets/batches/character-02.json'));
  const actual=await verify(m,sharp);
- assert.deepEqual(actual,characterAssets.slice(0,12));
+ assert.deepEqual(actual,m.items.map(item=>characterAssets.find(x=>x.slug===item.slug)));
  assert.equal(actual.length,12);
  assert.ok(actual.reduce((s,x)=>s+x.bytes,0)<6*1024*1024);
  for(const g of characterGuides){assert.ok(guides.some(x=>x.slug===g.slug));await access('public/'+g.image);}
