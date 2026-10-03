@@ -49,7 +49,7 @@ Release:
 
 
 ### Combined refresh integration / release
-**Status:** NEXT  
+**Status:** CLOSED — owner QA PASS  
 **Priority:** Highest
 
 Approved source assets are complete:
@@ -66,7 +66,9 @@ Next work:
 - controlled deploy
 - owner desktop/iPad QA
 
-Do not create more posters for this batch unless integration exposes a real learning gap.
+Owner QA: desktop + iPad PASS.
+
+Do not create more posters for this batch unless a concrete defect is reported.
 
 ### Full learning-material quality audit
 **Status:** Completed baseline / quality correction staged  
