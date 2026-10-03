@@ -858,8 +858,7 @@
       "stageFocus": [
         "room-corner-two-vp",
         "room-shell-construction",
-        "first-furniture-box",
-        "second-furniture-box",
+        "furniture-box-placement",
         "furniture-from-boxes",
         "same-perspective-cleanup"
       ]
