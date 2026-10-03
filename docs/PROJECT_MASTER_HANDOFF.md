@@ -1601,3 +1601,28 @@ Current overall refresh progress:
 - DP-01 Built Spaces: approved assets held for combined release
 
 No partial website upload yet. Continue to hold all refresh assets for one controlled release after Manhua is complete.
+
+
+### Clear Manhua Poster 1 — first draft rejected / identity correction — 2026-10-03
+
+Owner correctly identified that the first **Draw a Full-Body Manhua Figure** draft visually drifted back into the Simple Princess family.
+
+Rejected draft issues:
+- tiara / crown
+- princess-like puff sleeves and ball-gown silhouette
+- bow / floral / heart decoration dominated the design
+- copy included “princess pose”
+- final character read as a fairy-tale princess rather than the intended Manhua companion
+
+Source-of-truth correction:
+- use the existing approved G-Art Journey Manhua set as the visual/teaching family:
+  - flowing gesture
+  - elongated elegant full-body silhouette
+  - large hair masses before strands
+  - simplified layered clothing / robe / tunic / skirt / sash
+  - fabric rhythm
+  - restrained decoration only after structure
+- do not define Manhua as one fixed national style; keep it an original Manhua-inspired educational interpretation
+- no crown/tiara, no ball gown, no princess wording in the replacement Poster 1
+
+The first Manhua companion poster remains **NOT APPROVED** and must be remade before proceeding to Poster 2.
