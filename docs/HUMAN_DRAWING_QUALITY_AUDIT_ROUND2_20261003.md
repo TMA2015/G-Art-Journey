@@ -197,3 +197,32 @@ Next review gate:
 - reassess **Understand Simple Figure Proportions**
 - decide whether it truly needs one simplified replacement
 - only after that decide whether to integrate HD-FACE-01 alone or combine it with a Figure Proportions refresh
+
+
+---
+
+## HD-FIGURE-01 completion checkpoint — 2026-10-03
+
+Owner approved the simplified Figure Proportions package:
+
+1. Understand Simple Figure Proportions
+2. Figure Views: Front, 3/4, Side & Back
+3. Different Body Types
+
+Status: **3 SHEETS APPROVED**
+
+The approved files are preserved in Library under:
+`/G-Art Journey/Approved/Human Drawing/HD-FIGURE-01/`
+
+Decision:
+- use poster 1 as the core lesson
+- attach posters 2–3 as supplemental lesson gallery sheets
+- do not add views/body-type content back into the core poster
+
+With HD-FACE-01 + HD-FIGURE-01 complete, the Human Drawing clarity-refresh creative phase is closed.
+
+Next:
+- integrate 6 approved assets into the 4 existing Human Drawing lessons
+- full CI/audit/build gate
+- controlled deployment
+- owner desktop/iPad QA
