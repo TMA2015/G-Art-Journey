@@ -265,3 +265,33 @@ Release gate:
 - preserve Body Shapes and Character Silhouettes
 - verify all asset checksums and dimensions
 - run the full CI/audit/build gate before merge and Pages deployment
+
+
+---
+
+## Production release + owner visual QA — PASS — 2026-10-03
+
+Release completed through PR #76, **Integrate approved Human Drawing refresh**.
+
+Production checkpoint:
+- merge commit: `62679d8d679d8e23062555c33fbd716fedfcaa55`
+- GitHub Actions production gate: PASS
+- automated tests: **110/110 PASS**
+- content consistency audit: PASS
+- guide distinctness audit: PASS
+- site build and both language builds: PASS
+- asset audit: PASS
+- GitHub Pages deployment: PASS
+
+Owner visual QA on the live website: **PASS**.
+
+Verified release behavior:
+- the approved Face Basics, Facial Expressions and Head Angles replacements are live
+- Figure Proportions uses the approved core poster plus Figure Views and Different Body Types supplemental sheets
+- the approved Standing Figure replacement is live
+- Five Everyday Sitting Poses is live as the ninth Human Drawing guide
+- Five Relaxed Sitting Poses remains the earlier approved live lesson
+- Body Shapes and Character Silhouettes remains unchanged, by explicit owner decision
+
+Status: **Human Drawing clarity-refresh release is CLOSED and accepted in production.**
+Do not reopen or redraw this batch without a concrete defect or a later explicit curriculum decision.
