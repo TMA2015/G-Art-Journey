@@ -1626,3 +1626,87 @@ Source-of-truth correction:
 - no crown/tiara, no ball gown, no princess wording in the replacement Poster 1
 
 The first Manhua companion poster remains **NOT APPROVED** and must be remade before proceeding to Poster 2.
+
+
+### Clear Manhua companion set — completed / owner approved — 2026-10-03
+
+The owner approved the final three-poster Clear Manhua companion set.
+
+Official approved posters:
+1. **Draw a Full-Body Manhua Figure** — APPROVED
+2. **Build Manhua Clothing from Simple Shapes** — APPROVED
+3. **Manhua Pose to Finished Figure** — APPROVED
+
+Important replacement note:
+- the first approved-looking Poster 1 layout was later superseded for consistency
+- the official Poster 1 is the five-step layout that merges Gesture + Body Blocks and matches the approved Poster 2 family
+- earlier Manhua Poster 1 drafts are not official source assets
+
+Final Manhua visual/teaching standard:
+- monochrome / clean line-art teaching figures
+- no full color fill on the figure
+- warm cream paper with restrained pastel labels/arrows/flowers
+- compact header
+- 4 smaller construction panels on the left + one large final figure on the right when appropriate
+- Try it + Remember kept compact
+- full-body clarity
+- construction before detail
+- same character / pose / camera throughout a cumulative poster
+- large hair masses before strands
+- simple flowing robe/tunic/skirt/sash shapes
+- no princess-coded crown/ball-gown identity
+- anatomy and five-finger hand QA remain mandatory
+
+Approved source files saved in Library:
+- `/G-Art Journey/Approved/Character Art/Clear Manhua/01-full-body-manhua-figure.png`
+- `/G-Art Journey/Approved/Character Art/Clear Manhua/02-build-manhua-clothing-from-simple-shapes.png`
+- `/G-Art Journey/Approved/Character Art/Clear Manhua/03-manhua-pose-to-finished-figure.png`
+
+### Digital Art refresh — approved sources archived — 2026-10-03
+
+All four replacement posters are owner-approved and now preserved in Library:
+- `/G-Art Journey/Approved/Digital Art Refresh/01-painting-with-separate-layers.png`
+- `/G-Art Journey/Approved/Digital Art Refresh/02-base-color-layers.png`
+- `/G-Art Journey/Approved/Digital Art Refresh/03-shadow-layer.png`
+- `/G-Art Journey/Approved/Digital Art Refresh/05-check-your-layers.png`
+
+Digital Lesson 4 — **Light & Details** remains the existing visual benchmark and is not replaced.
+
+### DP-01 final asset resolution — 2026-10-03
+
+The earlier Lesson 2 technical-reset note is historical. The owner later approved the corrected two-poster Lesson 2 set.
+
+Current DP-01 approved assets:
+1. **Draw Boxes & Corners in Two-Point Perspective** — APPROVED
+2. **Draw a Simple Room from Boxes** — APPROVED as two posters:
+   - Steps 1–4
+   - Steps 5–6 + Try it / Remember
+
+Approved Library sources:
+- `/G-Art Journey/Approved/Draw Places/DP01-01-two-point-boxes-corners.png`
+- `/G-Art Journey/Approved/Draw Places/DP01-02-room-from-boxes-steps-1-4.png`
+- `/G-Art Journey/Approved/Draw Places/DP01-02-room-from-boxes-steps-5-6.png`
+
+The deterministic geometry rule remains mandatory for future perspective/geometry teaching assets.
+
+### Learning-material refresh production checkpoint — 2026-10-03
+
+Creative production is now complete for the locked refresh batch.
+
+Approved asset totals:
+- Digital Art replacements: **4/4**
+- Simple Princess companion: **3/3**
+- Clear Manhua companion: **3/3**
+- DP-01 Built Spaces: **2 lessons / 3 approved poster files**
+
+Next phase is **integration/release preparation**, not more poster generation:
+1. prepare production WebPs from approved originals without unintended crop/redesign
+2. integrate replacement Digital posters
+3. add Simple Princess and Clear Manhua companion lessons/topics in the intended Character Art hierarchy
+4. add DP-01 under Draw Places → Explore more / Built spaces
+5. reconcile counts, descriptions and lesson navigation
+6. run tests, content consistency audit, distinctness audit and production build
+7. deploy only after all gates pass
+8. owner desktop/iPad QA
+
+Do not generate additional posters for this batch unless integration reveals a concrete missing learning asset.
