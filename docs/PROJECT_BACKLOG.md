@@ -25,7 +25,7 @@ Implemented at `/start-here/` after owner approval. Keep future changes within t
 ## Learn to Draw — future content
 
 ### Learning-material visual refresh
-**Status:** Digital + Princess complete; Clear Manhua next  
+**Status:** Creative production complete; integration/release next  
 **Priority:** Highest
 
 Plan:
@@ -37,7 +37,7 @@ Replace:
 
 Add:
 - Simple Princess companion: **3/3 beginner posters approved**
-- Clear Manhua companion: **NEXT — 2 required structure-first posters; optional 3rd only if needed**
+- Clear Manhua companion: **3/3 posters approved**
 
 Keep:
 - Digital Lesson 4 as visual benchmark
@@ -47,6 +47,26 @@ Release:
 - hold all new/replacement assets until the whole refresh batch is approved
 - combine with already approved DP-01 Built Spaces assets for one controlled website update
 
+
+### Combined refresh integration / release
+**Status:** NEXT  
+**Priority:** Highest
+
+Approved source assets are complete:
+- Digital Art replacements: 4
+- Simple Princess companion: 3
+- Clear Manhua companion: 3
+- DP-01 Built Spaces: 3 poster files across 2 lessons
+
+Next work:
+- prepare exact production WebPs
+- integrate content/metadata/navigation
+- reconcile lesson/topic counts and descriptions
+- full tests + content audit + distinctness audit + production build
+- controlled deploy
+- owner desktop/iPad QA
+
+Do not create more posters for this batch unless integration exposes a real learning gap.
 
 ### Full learning-material quality audit
 **Status:** Completed baseline / quality correction staged  
@@ -66,7 +86,7 @@ Known watch items:
 - six Human Drawing posters need exact width/height verification before metadata cleanup
 
 ### DP-01 Built Spaces
-**Status:** Next content expansion  
+**Status:** 2/2 lessons approved; pending combined integration  
 **Priority:** High
 
 Plan:
