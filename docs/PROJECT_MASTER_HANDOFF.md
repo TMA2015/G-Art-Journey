@@ -1476,3 +1476,68 @@ Immediate production next:
 - preserve the current five-stage workflow
 - visually follow Lesson 4: bright, calm, spacious, lightly colored, illustration-first
 - do not publish until all four Digital replacements are owner-approved
+
+
+### Simple Princess companion set — locked design standard — 2026-10-03
+
+Purpose:
+- a beginner-friendly companion to the existing Fairy-Tale Princess set
+- **does not replace** the existing 3 detailed Princess lessons
+- success criterion: a young learner can follow the construction and reproduce the drawing, not merely admire the finished artwork
+
+The set contains exactly 3 posters:
+
+1. **Draw a Simple Princess Face**
+   - simple head shape / centerline
+   - eye placement
+   - simple nose / mouth
+   - one clear hair mass
+   - small tiara/crown as an optional final detail
+   - final face remains simple and copyable
+
+2. **Build a Simple Princess Dress**
+   - simple torso / bodice shape
+   - large skirt mass
+   - basic sleeves
+   - 3–5 clear folds only
+   - one small decorative motif
+   - final full-body dress remains readable and drawable
+
+3. **Draw a Simple Princess Pose**
+   - gesture / line of action
+   - supporting leg and balance
+   - simple arm placement
+   - skirt follows the pose
+   - finish one full-body silhouette
+   - pose must remain physically plausible and easy to copy
+
+Design principles:
+- portrait teaching-poster format, same visual family as current Character / SG-01 posters
+- warm paper / cream background
+- soft pastel accents; limited palette
+- generous whitespace
+- large illustrations; small, readable text
+- minimal decorative panels; avoid Digital-Art-style block-heavy layouts
+- construction first, decoration last
+- show large shapes before strands, folds, jewelry or ornament
+- keep line art visible and easy to trace visually
+- use restrained color only after construction is understandable
+- each cumulative sequence keeps the **same character, pose and camera** unless the lesson explicitly teaches a pose change
+- do not hide body construction under hair or dress
+- do not use elaborate lace, layered jewelry, dense embroidery or difficult rendering
+- hands/feet, if visible, must remain anatomically plausible; five fingers on fully visible hands
+- Try it + Remember should be short and practical
+- final art should feel cute/elegant, but never more detailed than the learner can reasonably reproduce
+
+Across the 3 posters:
+- keep one consistent visual family
+- characters may differ between posters, but each poster must use one consistent learner-copyable princess design throughout its own steps
+- use clearly different hair/dress choices so the set does not feel duplicated
+- all three should look simpler than the existing Fairy-Tale Princess set
+
+Production order:
+1. Simple Princess Face
+2. Simple Princess Dress
+3. Simple Princess Pose
+
+Owner approval is required after each poster before producing the next.
