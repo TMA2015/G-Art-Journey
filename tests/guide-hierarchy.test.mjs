@@ -22,11 +22,11 @@ test('Digital Art has two topics with five standalone lesson definitions each',a
  }
 });
 
-test('Human Drawing exposes two topic shelves and keeps all eight lessons reachable',()=>{
+test('Human Drawing exposes two topic shelves and keeps all nine lessons reachable',()=>{
  assert.deepEqual(humanTopics.map(x=>x.id),['faces','figures']);
- assert.equal(humanGuides.length,8);
+ assert.equal(humanGuides.length,9);
  assert.equal(humanGuides.filter(x=>x.group==='face').length,4);
- assert.equal(humanGuides.filter(x=>x.group==='figure').length,4);
+ assert.equal(humanGuides.filter(x=>x.group==='figure').length,5);
 });
 
 test('Character Art exposes six topics with beginner companions added to Manhua and Princess',()=>{
@@ -70,11 +70,18 @@ test('all Human Drawing posters pin exact binary dimensions',()=>{
   assert.ok(Number.isInteger(guide.posterWidth)&&guide.posterWidth>0,guide.slug+' missing posterWidth');
   assert.ok(Number.isInteger(guide.posterHeight)&&guide.posterHeight>0,guide.slug+' missing posterHeight');
  }
- const expectedWide=new Set(['face-expressions','head-angles','faces-by-age','standing-figure','sitting-poses','body-silhouettes']);
+ const expected={
+  'face-basics':[1055,1491],
+  'face-expressions':[1024,1536],
+  'head-angles':[1024,1536],
+  'faces-by-age':[1122,1402],
+  'figure-proportions':[1024,1536],
+  'standing-figure':[1086,1448],
+  'sitting-poses':[1122,1402],
+  'five-everyday-sitting-poses':[1055,1491],
+  'body-silhouettes':[1122,1402]
+ };
  for(const guide of humanGuides){
-  if(expectedWide.has(guide.slug)){
-   assert.equal(guide.posterWidth,1122,guide.slug);
-   assert.equal(guide.posterHeight,1402,guide.slug);
-  }
+  assert.deepEqual([guide.posterWidth,guide.posterHeight],expected[guide.slug],guide.slug);
  }
 });
