@@ -93,6 +93,27 @@ for(const a of expansion.assets){
 }
 console.log('Character expansion build PASS: 6 topics, 24 topic lessons + Design Lab; 23 reference sheets; legacy 11-asset hashes match.');
 
+const refresh=JSON.parse(await readFile('assets/batches/learning-refresh-20261003.json','utf8'));
+assert.equal(refresh.assets.length,13);
+for(const a of refresh.assets){
+ const builtPath='dist/'+a.targetPath.replace(/^public\//,'');
+ const bytes=await readFile(builtPath);
+ assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256,a.targetPath);
+ assert.equal(bytes.length,a.bytes,a.targetPath);
+}
+for(const slug of [
+ 'simple-princess-face','simple-princess-dress','simple-princess-pose',
+ 'manhua-full-body-foundation','manhua-clothing-simple-shapes','manhua-pose-to-finished',
+ 'two-point-boxes-corners','simple-room-from-boxes'
+]){
+ const html=await read('guide/'+slug+'/');
+ assert.match(html,/View large/);
+ assert.match(html,/Save WebP/);
+}
+assert.equal(((await read('guide/simple-room-from-boxes/')).match(/class="guide-poster"/g)||[]).length,2);
+console.log('Learning refresh build PASS: 13 pinned WebPs; 6 companion lessons; 2 Built Spaces lessons.');
+
+
 const sgGesture=await read('guide/gesture-motion-basics/');
 assert.match(sgGesture,/Draw Gesture &amp; Motion from Simple Lines|Draw Gesture & Motion from Simple Lines/);
 assert.match(sgGesture,/CONTINUE LEARNING/);
