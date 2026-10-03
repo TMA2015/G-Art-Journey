@@ -47,8 +47,8 @@ export const humanGuides = [
   },
   {
     "slug": "face-expressions",
-    "posterWidth": 1122,
-    "posterHeight": 1402,
+    "posterWidth": 1024,
+    "posterHeight": 1536,
     "poster": true,
     "category": "character",
     "group": "face",
@@ -93,8 +93,8 @@ export const humanGuides = [
   },
   {
     "slug": "head-angles",
-    "posterWidth": 1122,
-    "posterHeight": 1402,
+    "posterWidth": 1024,
+    "posterHeight": 1536,
     "poster": true,
     "category": "character",
     "group": "face",
@@ -185,8 +185,8 @@ export const humanGuides = [
   },
   {
     "slug": "figure-proportions",
-    "posterWidth": 1055,
-    "posterHeight": 1491,
+    "posterWidth": 1024,
+    "posterHeight": 1536,
     "poster": true,
     "category": "figure",
     "group": "figure",
@@ -227,12 +227,35 @@ export const humanGuides = [
     "difficulty": "Beginner",
     "author": "G-Art Journey",
     "artType": "original educational illustration",
-    "groupOrder": 4
+    "groupOrder": 4,
+    "posterGallery": [
+      {
+        "title": "1. Understand Simple Figure Proportions",
+        "image": "infographics/human/figure-proportions.webp",
+        "width": 1024,
+        "height": 1536,
+        "alt": "Understand Simple Figure Proportions — approved G-Art Journey infographic poster"
+      },
+      {
+        "title": "2. Figure Views: Front · 3/4 · Side · Back",
+        "image": "infographics/human/figure-views.webp",
+        "width": 1024,
+        "height": 1536,
+        "alt": "Figure Views: Front, three-quarter, side and back — approved G-Art Journey infographic poster"
+      },
+      {
+        "title": "3. Different Body Types",
+        "image": "infographics/human/body-types.webp",
+        "width": 1024,
+        "height": 1536,
+        "alt": "Different Body Types — approved G-Art Journey infographic poster"
+      }
+    ]
   },
   {
     "slug": "standing-figure",
-    "posterWidth": 1122,
-    "posterHeight": 1402,
+    "posterWidth": 1086,
+    "posterHeight": 1448,
     "poster": true,
     "category": "figure",
     "group": "figure",
@@ -323,6 +346,52 @@ export const humanGuides = [
     "groupOrder": 6
   },
   {
+    "slug": "five-everyday-sitting-poses",
+    "posterWidth": 1055,
+    "posterHeight": 1491,
+    "poster": true,
+    "category": "figure",
+    "group": "figure",
+    "tag": "FIGURE DRAWING",
+    "title": "Five Everyday Sitting Poses",
+    "description": "Practice believable seated figures using real supports: a sofa, desk chair, wall or ledge, bench and café stool.",
+    "time": "30–45 min",
+    "supplies": "Pencil, paper, eraser or a drawing app",
+    "steps": [
+      {
+        "title": "Relax into a sofa",
+        "body": "Let the seat and backrest carry the body. Notice how the pelvis settles into the cushion and the torso can lean back."
+      },
+      {
+        "title": "Sit forward at a desk",
+        "body": "Place the hips firmly on the chair, lean the torso slightly toward the work surface and give the feet a stable place on the floor."
+      },
+      {
+        "title": "Use a wall or ledge",
+        "body": "Put the pelvis on the edge, let the hands help with balance when needed and allow the legs to hang or cross naturally."
+      },
+      {
+        "title": "Settle on a bench",
+        "body": "Keep the sit bones supported, the torso relaxed and the hands and feet placed naturally around the pose."
+      },
+      {
+        "title": "Balance on a café stool",
+        "body": "Stack the torso mostly over the pelvis and use the stool rung or floor to give one or both feet a convincing support point."
+      }
+    ],
+    "tryIt": "Draw the same character in all five settings. Mark the seat or support first, then add the pelvis, torso angle, hands and feet.",
+    "remember": "A believable sitting pose shows where the body's weight goes. Check the support, pelvis–torso angle and contact points before polishing the silhouette.",
+    "seeAlso": [
+      "figure-simple-shapes"
+    ],
+    "image": "infographics/human/everyday-sitting-poses.webp",
+    "posterAlt": "Five Everyday Sitting Poses — original G-Art Journey infographic poster",
+    "difficulty": "Beginner",
+    "author": "G-Art Journey",
+    "artType": "original educational illustration",
+    "groupOrder": 7
+  },
+  {
     "slug": "body-silhouettes",
     "posterWidth": 1122,
     "posterHeight": 1402,
@@ -366,7 +435,7 @@ export const humanGuides = [
     "difficulty": "Beginner",
     "author": "G-Art Journey",
     "artType": "original educational illustration",
-    "groupOrder": 7
+    "groupOrder": 8
   }
 ];
-export const humanPosterSlugs = ["face-basics","face-expressions","head-angles","faces-by-age","figure-proportions","standing-figure","sitting-poses","body-silhouettes"];
+export const humanPosterSlugs = ["face-basics","face-expressions","head-angles","faces-by-age","figure-proportions","standing-figure","sitting-poses","five-everyday-sitting-poses","body-silhouettes"];

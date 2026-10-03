@@ -66,11 +66,13 @@ for(const topic of characterTopics){
 }
 
 const humanGroupMap={faces:'face',figures:'figure'};
+const humanExpectedCounts={faces:4,figures:5};
 unique(humanTopics.map(x=>x.id),'Human Drawing topic id');
 for(const topic of humanTopics){
  const group=humanGroupMap[topic.id];
+ const expected=humanExpectedCounts[topic.id];
  if(!group)warn(`Human topic ${topic.id}: no content-group mapping in audit`);
- else if(humanGuides.filter(g=>g.group===group).length!==4)warn(`Human topic ${topic.id}: expected 4 lessons`);
+ else if(humanGuides.filter(g=>g.group===group).length!==expected)warn(`Human topic ${topic.id}: expected ${expected} lessons`);
  if(!present(topic.description))warn(`Human topic ${topic.id}: missing description`);
 }
 
