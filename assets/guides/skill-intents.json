@@ -178,6 +178,20 @@
       ]
     },
     {
+      "slug": "five-everyday-sitting-poses",
+      "status": "published",
+      "family": "figure",
+      "primarySkill": "everyday-seated-contact-and-support",
+      "visibleEvidence": "Compare five everyday seats by showing where the pelvis is supported, how body weight transfers, how the torso angles from the pelvis and where hands and feet make contact.",
+      "stageFocus": [
+        "sofa-backrest-weight-transfer",
+        "desk-forward-torso-support",
+        "ledge-edge-hand-balance",
+        "bench-sit-bone-contact",
+        "stool-rung-foot-support"
+      ]
+    },
+    {
       "slug": "body-silhouettes",
       "status": "published",
       "family": "figure",
