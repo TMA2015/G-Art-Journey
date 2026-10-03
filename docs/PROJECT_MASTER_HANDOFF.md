@@ -1823,3 +1823,38 @@ Official source files preserved in Library:
 
 These three posters are approved for a later controlled website replacement batch.
 The currently live Human Drawing posters remain production source until integration is performed.
+
+
+### HD-FIGURE-01 — owner approved 3-sheet figure proportions lesson — 2026-10-03
+
+Approved lesson package:
+1. **Understand Simple Figure Proportions** — main construction / head-unit poster
+2. **Figure Views: Front, 3/4, Side & Back** — supplemental view sheet
+3. **Different Body Types** — supplemental silhouette / proportion-variation sheet
+
+Locked direction:
+- same clarity-first family as HD-FACE-01
+- clean line art
+- compact header
+- warm cream paper with restrained pastel accents
+- large teaching figures
+- construction and landmarks remain visible
+- no unnecessary rendering
+- supplemental sheets extend the lesson without overloading the main poster
+
+Official source files preserved in Library:
+- `/G-Art Journey/Approved/Human Drawing/HD-FIGURE-01/01-understand-simple-figure-proportions.png`
+- `/G-Art Journey/Approved/Human Drawing/HD-FIGURE-01/02-figure-views-front-3quarter-side-back.png`
+- `/G-Art Journey/Approved/Human Drawing/HD-FIGURE-01/03-different-body-types.png`
+
+Human Drawing refresh creative production is now complete:
+- HD-FACE-01: 3 replacement posters
+- HD-FIGURE-01: 3 approved poster files for one lesson
+- total approved new Human Drawing assets: **6 files**
+- affected live lessons: **4**
+  - Draw a Face in Five Steps
+  - Five Everyday Facial Expressions
+  - Turn a Head: Five Useful Views
+  - Understand Simple Figure Proportions
+
+Next phase: controlled integration / release. Do not redraw additional Human Drawing lessons unless a concrete defect is reported.
