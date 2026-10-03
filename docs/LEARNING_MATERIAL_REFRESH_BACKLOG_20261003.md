@@ -16,7 +16,7 @@ Existing live assets remain in place until their replacements are approved and t
 
 ---
 
-## 1. Digital Art refresh plan
+## 1. Digital Art refresh plan — COMPLETED / 4 REPLACEMENTS APPROVED
 
 ### Scope
 Remake Set A:
@@ -58,7 +58,7 @@ Do not replace live files until all four are approved.
 
 ---
 
-## 2. Simple Princess companion plan
+## 2. Simple Princess companion plan — COMPLETED / 3 POSTERS APPROVED
 
 ### Why
 The existing Fairy-Tale Princess set is attractive and useful for style inspiration, but it is too detailed to serve as the easiest drawing-along entry point.
@@ -106,7 +106,7 @@ Role on website:
 
 ---
 
-## 3. Clear Manhua companion plan
+## 3. Clear Manhua companion plan — NEXT
 
 ### Why
 The current Manhua set communicates elegance, hair/fabric flow and decorative detail well, but the learner does not get enough clean full-body structural construction.
@@ -170,3 +170,41 @@ Release only after:
 6. desktop + iPad owner QA.
 
 DP-01 approved assets should join this later release rather than being uploaded separately.
+
+
+---
+
+## Progress checkpoint — 2026-10-03
+
+### Digital Art refresh
+**4/4 replacement posters approved**
+- Painting with Separate Layers
+- Base Color Layers
+- Shadow Layer
+- Check Your Layers
+- Light & Details remains the existing visual benchmark
+
+### Simple Princess companion
+**3/3 approved**
+- Draw a Simple Princess Face
+- Build a Simple Princess Dress
+- Draw a Simple Princess Pose
+
+Final Princess standard:
+- clarity-first line art
+- no full color fill in core teaching sequence
+- construction and hair lines must remain readable
+- large final figure
+- compact header and compact Try it/Remember
+
+### Clear Manhua companion
+**Next active production**
+- Poster 1: Draw a Full-Body Manhua Figure
+- Poster 2: Build Manhua Clothing from Simple Shapes
+- Poster 3: optional only if a real bridge gap remains
+
+Detailed plan:
+- `docs/CLEAR_MANHUA_COMPANION_PLAN_20261003.md`
+
+### Website
+No partial upload. Hold all approved assets for the combined controlled release.
