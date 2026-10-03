@@ -47,6 +47,8 @@ export const humanGuides = [
   },
   {
     "slug": "face-expressions",
+    "posterWidth": 1122,
+    "posterHeight": 1402,
     "poster": true,
     "category": "character",
     "group": "face",
@@ -91,6 +93,8 @@ export const humanGuides = [
   },
   {
     "slug": "head-angles",
+    "posterWidth": 1122,
+    "posterHeight": 1402,
     "poster": true,
     "category": "character",
     "group": "face",
@@ -135,6 +139,8 @@ export const humanGuides = [
   },
   {
     "slug": "faces-by-age",
+    "posterWidth": 1122,
+    "posterHeight": 1402,
     "poster": true,
     "category": "character",
     "group": "face",
@@ -225,6 +231,8 @@ export const humanGuides = [
   },
   {
     "slug": "standing-figure",
+    "posterWidth": 1122,
+    "posterHeight": 1402,
     "poster": true,
     "category": "figure",
     "group": "figure",
@@ -270,6 +278,8 @@ export const humanGuides = [
   },
   {
     "slug": "sitting-poses",
+    "posterWidth": 1122,
+    "posterHeight": 1402,
     "poster": true,
     "category": "figure",
     "group": "figure",
@@ -314,6 +324,8 @@ export const humanGuides = [
   },
   {
     "slug": "body-silhouettes",
+    "posterWidth": 1122,
+    "posterHeight": 1402,
     "poster": true,
     "category": "figure",
     "group": "figure",

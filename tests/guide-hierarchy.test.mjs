@@ -63,3 +63,18 @@ test('topic-first pages and standalone Digital lesson route are wired',async()=>
  assert.match(humanPage,/OPEN TOPIC/);
  assert.match(characterPage,/OPEN TOPIC/);
 });
+
+
+test('all Human Drawing posters pin exact binary dimensions',()=>{
+ for(const guide of humanGuides){
+  assert.ok(Number.isInteger(guide.posterWidth)&&guide.posterWidth>0,guide.slug+' missing posterWidth');
+  assert.ok(Number.isInteger(guide.posterHeight)&&guide.posterHeight>0,guide.slug+' missing posterHeight');
+ }
+ const expectedWide=new Set(['face-expressions','head-angles','faces-by-age','standing-figure','sitting-poses','body-silhouettes']);
+ for(const guide of humanGuides){
+  if(expectedWide.has(guide.slug)){
+   assert.equal(guide.posterWidth,1122,guide.slug);
+   assert.equal(guide.posterHeight,1402,guide.slug);
+  }
+ }
+});
