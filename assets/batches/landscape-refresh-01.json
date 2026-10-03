@@ -1,0 +1,14 @@
+{
+  "batchId": "landscape-refresh-01",
+  "status": "staged-only",
+  "targetSlug": "draw-a-pencil-landscape",
+  "targetImage": "infographics/landscape/landscape-basics.webp",
+  "sourceFilename": "landscape-basics.webp",
+  "bytes": 324414,
+  "sha256": "f49cec4b15896ca111ef96f57ec575d039407eeed64eaafcbd33da2384a09c06",
+  "width": 1055,
+  "height": 1491,
+  "focus": "mountain and water landscape: horizon, large masses, near/far layers, reflections and contrast",
+  "distinctFrom": "street-with-depth (one-point straight-street perspective; text-only until separate suitable poster exists)",
+  "activationRule": "Do not create a second mountain/lake lesson. Replace the illustration on existing draw-a-pencil-landscape only after exact WebP is committed and verified."
+}
