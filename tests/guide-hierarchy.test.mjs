@@ -29,10 +29,15 @@ test('Human Drawing exposes two topic shelves and keeps all eight lessons reacha
  assert.equal(humanGuides.filter(x=>x.group==='figure').length,4);
 });
 
-test('Character Art exposes six character topics with three lessons each',()=>{
+test('Character Art exposes six topics with beginner companions added to Manhua and Princess',()=>{
  assert.deepEqual(characterTopics.map(x=>x.id),['manga','webtoon','manhua','cartoon','chibi','princess']);
- for(const topic of characterTopics)assert.equal(characterGuides.filter(x=>x.group===topic.id).length,3,topic.id);
- assert.equal(characterGuides.length,18);
+ const counts=Object.fromEntries(characterTopics.map(topic=>[topic.id,characterGuides.filter(x=>x.group===topic.id).length]));
+ assert.deepEqual(counts,{manga:3,webtoon:3,manhua:6,cartoon:3,chibi:3,princess:6});
+ assert.equal(characterGuides.length,24);
+ assert.deepEqual(characterGuides.filter(x=>x.group==='manhua').sort((a,b)=>a.groupOrder-b.groupOrder).slice(0,3).map(x=>x.slug),
+  ['manhua-full-body-foundation','manhua-clothing-simple-shapes','manhua-pose-to-finished']);
+ assert.deepEqual(characterGuides.filter(x=>x.group==='princess').sort((a,b)=>a.groupOrder-b.groupOrder).slice(0,3).map(x=>x.slug),
+  ['simple-princess-face','simple-princess-dress','simple-princess-pose']);
 });
 
 test('topic-first pages and standalone Digital lesson route are wired',async()=>{
