@@ -1797,3 +1797,29 @@ PR #75:
 - Pages #361 PASS
 
 No artwork changed in this metadata correction.
+
+
+### HD-FACE-01 — owner approved 3/3 — 2026-10-03
+
+Approved replacement posters:
+1. **Draw a Face in Five Steps** — APPROVED
+2. **Five Everyday Facial Expressions** — APPROVED
+3. **Turn a Head: Five Useful Views** — APPROVED
+
+Locked clarity-first standard:
+- clean line art
+- compact header
+- warm cream paper with restrained pastel accents
+- teaching drawings receive most of the page
+- construction remains visible
+- no unrelated mini-lessons inside one poster
+- final/comparison drawings are large enough to copy
+- minimal decorative color; no full rendering needed
+
+Official source files preserved in Library:
+- `/G-Art Journey/Approved/Human Drawing/HD-FACE-01/01-draw-a-face-in-five-steps.png`
+- `/G-Art Journey/Approved/Human Drawing/HD-FACE-01/02-five-everyday-facial-expressions.png`
+- `/G-Art Journey/Approved/Human Drawing/HD-FACE-01/03-turn-a-head-five-useful-views.png`
+
+These three posters are approved for a later controlled website replacement batch.
+The currently live Human Drawing posters remain production source until integration is performed.
