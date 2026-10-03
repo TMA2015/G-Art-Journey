@@ -106,7 +106,7 @@ Role on website:
 
 ---
 
-## 3. Clear Manhua companion plan — NEXT
+## 3. Clear Manhua companion plan — COMPLETED / 3 POSTERS APPROVED
 
 ### Why
 The current Manhua set communicates elegance, hair/fabric flow and decorative detail well, but the learner does not get enough clean full-body structural construction.
@@ -198,13 +198,33 @@ Final Princess standard:
 - compact header and compact Try it/Remember
 
 ### Clear Manhua companion
-**Next active production**
-- Poster 1: Draw a Full-Body Manhua Figure
-- Poster 2: Build Manhua Clothing from Simple Shapes
-- Poster 3: optional only if a real bridge gap remains
+**3/3 approved**
+- Draw a Full-Body Manhua Figure
+- Build Manhua Clothing from Simple Shapes
+- Manhua Pose to Finished Figure
 
 Detailed plan:
 - `docs/CLEAR_MANHUA_COMPANION_PLAN_20261003.md`
 
 ### Website
 No partial upload. Hold all approved assets for the combined controlled release.
+
+
+---
+
+## Final creative-production checkpoint — 2026-10-03
+
+The locked refresh asset-production phase is complete.
+
+Approved:
+- Digital Art refresh: 4 replacement posters
+- Simple Princess companion: 3 posters
+- Clear Manhua companion: 3 posters
+- DP-01 Built Spaces: 2 lessons / 3 poster files
+
+All approved source originals are preserved in Library.
+
+Next:
+- combined website integration and release preparation
+- no partial upload
+- no additional poster generation unless a concrete integration/content gap is discovered
