@@ -1710,3 +1710,30 @@ Next phase is **integration/release preparation**, not more poster generation:
 8. owner desktop/iPad QA
 
 Do not generate additional posters for this batch unless integration reveals a concrete missing learning asset.
+
+
+### Combined learning refresh — OWNER QA PASS / CLOSED — 2026-10-03
+
+Production release:
+- final deployed SHA: `6af63164b38ece7d1b6d7eedc48a8fc68cf18288`
+- PR #74: merged / closed
+- CI #355: PASS
+- Pages #356: build + deployment PASS
+- tests: 109 passed / 0 failed
+- content audit: 61 active guides · 6 Character topics · 2 Digital topics · 23 reference sheets
+- learning-intent audit: 61 guides · 0 high-overlap pairs
+- learning refresh build verification: 13 pinned WebPs · 6 companion lessons · 2 Built Spaces lessons
+
+Owner visual QA:
+- desktop: PASS
+- iPad: PASS
+- new approved image set confirmed live
+
+Final release scope confirmed live:
+- Digital Art Set A: refreshed Lessons 1, 2, 3 and 5; Lesson 4 retained
+- Fairy-Tale Princess: 6 lessons total, 3 simple companion lessons first
+- Manhua: 6 lessons total, 3 structure-first companion lessons first
+- Draw Places: 5 core lessons retained; DP-01 under Explore more → Built spaces
+- Simple Room from Boxes: 2-poster gallery in approved order
+
+This refresh batch is now **CLOSED**. Do not reopen or regenerate these assets unless a concrete defect is reported.
