@@ -163,3 +163,40 @@ Before release:
 - owner desktop/iPad QA
 
 The existing Manhua set stays live alongside the new beginner companion; it is not replaced.
+
+
+---
+
+## Manhua identity guardrail — added after Poster 1 QA
+
+The first generated Poster 1 draft was rejected because it drifted into the **Simple Princess visual identity**.
+
+Do **not** reuse princess-coded design language in the Clear Manhua companion.
+
+Avoid as primary identity:
+- tiaras / crowns
+- ball gowns
+- puff-sleeve princess dresses
+- large bows used as the main costume motif
+- rose / heart decoration used as the dominant character identity
+- text such as “princess pose”
+- cute fairy-tale framing that makes the character read as a princess lesson
+
+Use the existing approved Manhua material as the source family instead:
+- flowing gesture
+- elongated, elegant full-body silhouette
+- large flowing hair groups
+- layered but simplified robe / tunic / skirt / sash shapes
+- restrained hair ornaments such as a simple pin, ribbon or small floral accent if needed
+- fabric rhythm that follows pose and gravity
+- selective elegant detail after construction
+
+The companion is not intended to define one national Manhua formula. It should remain an **original Manhua-inspired educational interpretation** consistent with the existing G-Art Journey Manhua set.
+
+Poster 1 must therefore show:
+- one non-princess full-body character
+- structure-first line art
+- simple elegant clothing with no ball-gown silhouette
+- no crown / tiara
+- no princess wording
+- the same pose and proportions from gesture to final
