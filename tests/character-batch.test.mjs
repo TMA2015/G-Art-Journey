@@ -8,13 +8,14 @@ import {validateManifest,verify} from '../scripts/art-batch.mjs';
 import sharp from 'sharp';
 const read=p=>readFile(p,'utf8');
 const groups=['manga','webtoon','manhua','cartoon','chibi','princess'];
-test('eighteen complete original guides in six distinct groups',async()=>{
+test('twenty-four complete original guides in six distinct groups',async()=>{
  const manifest=validateManifest(JSON.parse(await read('assets/batches/character-02.json')));
  assert.equal(manifest.items.length,12);
- assert.equal(characterGuides.length,18);
- assert.equal(new Set(characterGuides.map(x=>x.slug)).size,18);
+ assert.equal(characterGuides.length,24);
+ assert.equal(new Set(characterGuides.map(x=>x.slug)).size,24);
  assert.deepEqual(characterGuides.slice(0,12).map(x=>x.slug),manifest.items.map(x=>x.slug));
- for(const group of groups)assert.equal(characterGuides.filter(x=>x.group===group).length,3,group);
+ const expected={manga:3,webtoon:3,manhua:6,cartoon:3,chibi:3,princess:6};
+ for(const group of groups)assert.equal(characterGuides.filter(x=>x.group===group).length,expected[group],group);
  for(const g of characterGuides){assert.equal(g.category,'character');assert.equal(g.poster,true);assert.ok(g.steps.length>=5);assert.ok(g.steps.every(x=>x.title&&x.body));assert.ok(g.tryIt&&g.remember);assert.ok(g.image.endsWith('/'+g.slug+'.webp'));assert.ok(g.posterWidth>=1000);}
 });
 test('published posters all exist with exact WebP, checksum, dimensions and source paths',async()=>{
