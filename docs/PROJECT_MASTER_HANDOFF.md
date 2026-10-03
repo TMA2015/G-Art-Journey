@@ -1541,3 +1541,63 @@ Production order:
 3. Simple Princess Pose
 
 Owner approval is required after each poster before producing the next.
+
+
+### Simple Princess companion set — completed / owner approved — 2026-10-03
+
+The owner approved the final clarity-first versions of all three Simple Princess companion posters.
+
+Final approved set:
+1. **Draw a Simple Princess Face** — APPROVED
+2. **Build a Simple Princess Dress** — APPROVED
+3. **Draw a Simple Princess Pose** — APPROVED
+
+The final visual direction evolved from the original pastel concept:
+- instructional figures are primarily clean line art
+- no full color fill in the core drawing sequence
+- construction lines and hair lines remain easy to read
+- final figure is larger than the construction steps
+- title/header remains compact
+- Try it + Remember are kept small so teaching drawings receive most of the page
+
+Approved source files saved in Library:
+- `/G-Art Journey/Approved/Character Art/Simple Princess/01-draw-a-simple-princess-face.png`
+- `/G-Art Journey/Approved/Character Art/Simple Princess/02-build-a-simple-princess-dress.png`
+- `/G-Art Journey/Approved/Character Art/Simple Princess/03-draw-a-simple-princess-pose.png`
+
+Important replacement note:
+- the earlier colored **Build a Simple Princess Dress** draft was superseded and is NOT the approved version
+- the earlier colored **Draw a Simple Princess Pose** draft was superseded and is NOT the approved version
+- only the line-art clarity-first versions above are official
+
+### Clear Manhua companion — implementation plan locked — 2026-10-03
+
+Plan:
+- `docs/CLEAR_MANHUA_COMPANION_PLAN_20261003.md`
+
+Keep the current three Manhua lessons unchanged as style/inspiration content.
+
+New companion:
+1. **Draw a Full-Body Manhua Figure** — NEXT
+2. **Build Manhua Clothing from Simple Shapes** — required after Poster 1
+3. **Manhua Pose to Finished Figure** — optional; create only if Posters 1–2 still leave a real bridge gap
+
+Locked direction:
+- full-body, structure-first teaching
+- clean line art; no full-color fill in the main instructional sequence
+- large final drawing
+- readable hair masses/strands
+- simple clothing forms
+- same character/pose/camera throughout cumulative steps
+- compact header (~10–12% height)
+- compact Try it + Remember (~7–10% height)
+- pastel only for labels/arrows/decorative accents
+- owner QA after each poster
+
+Current overall refresh progress:
+- Digital Art replacements: **4/4 APPROVED**
+- Simple Princess companion: **3/3 APPROVED**
+- Clear Manhua companion: **0/2 required** (+ optional 3rd decision later)
+- DP-01 Built Spaces: approved assets held for combined release
+
+No partial website upload yet. Continue to hold all refresh assets for one controlled release after Manhua is complete.
