@@ -175,3 +175,25 @@ Do not expand:
 - Reference Library style matrix
 
 Those can be reconsidered after the Human Face clarity refresh.
+
+
+---
+
+## HD-FACE-01 completion checkpoint — 2026-10-03
+
+Owner approved all three replacement posters:
+1. Draw a Face in Five Steps
+2. Five Everyday Facial Expressions
+3. Turn a Head: Five Useful Views
+
+Status: **3/3 APPROVED**
+
+The approved files are preserved in Library under:
+`/G-Art Journey/Approved/Human Drawing/HD-FACE-01/`
+
+Do not redraw these three unless a concrete defect is found.
+
+Next review gate:
+- reassess **Understand Simple Figure Proportions**
+- decide whether it truly needs one simplified replacement
+- only after that decide whether to integrate HD-FACE-01 alone or combine it with a Figure Proportions refresh
