@@ -85,11 +85,11 @@ Resolved from baseline:
 - six missing Human Drawing dimensions verified directly from binaries and patched through PR #75
 
 Current priority:
-- HD-FACE-01 Human Face clarity refresh
-  1. Draw a Face in Five Steps — refocus
-  2. Five Everyday Facial Expressions — refocus
-  3. Turn a Head: Five Useful Views — highest pedagogical mismatch
-- after that, reassess whether Figure Proportions needs one simplified replacement
+- HD-FACE-01 Human Face clarity refresh — **3/3 owner approved; pending controlled website integration**
+  1. Draw a Face in Five Steps — APPROVED
+  2. Five Everyday Facial Expressions — APPROVED
+  3. Turn a Head: Five Useful Views — APPROVED
+- next academic decision: reassess whether Figure Proportions needs one simplified replacement before integration
 
 Keep for now:
 - Faces at Different Ages
