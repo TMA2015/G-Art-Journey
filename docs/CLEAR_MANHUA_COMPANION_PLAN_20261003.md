@@ -23,7 +23,7 @@ Their weakness is not that they are bad; it is that they do not provide enough c
 ## New companion set
 
 ### Poster 1 — Draw a Full-Body Manhua Figure
-**Status:** NEXT
+**Status:** APPROVED
 
 Teaching sequence:
 1. Gesture / line of action
@@ -39,7 +39,7 @@ Required outcome:
 - elegant but simple Manhua feel
 
 ### Poster 2 — Build Manhua Clothing from Simple Shapes
-**Status:** PLANNED AFTER POSTER 1
+**Status:** APPROVED
 
 Teaching sequence:
 1. Start from a visible body construction
@@ -53,7 +53,7 @@ Required outcome:
 - learner can see where sleeves, skirt panels and folds come from
 
 ### Poster 3 — Manhua Pose to Finished Figure
-**Status:** OPTIONAL / DECIDE AFTER POSTERS 1–2
+**Status:** APPROVED
 
 Create only if Posters 1–2 still leave a real learning gap.
 
@@ -200,3 +200,27 @@ Poster 1 must therefore show:
 - no crown / tiara
 - no princess wording
 - the same pose and proportions from gesture to final
+
+
+---
+
+## Completion checkpoint — 2026-10-03
+
+All three companion posters are owner-approved.
+
+Official layout family:
+- clean line art
+- compact floral/cream G-Art Manhua framing
+- four smaller teaching panels + one large final figure where suitable
+- final figure receives the most visual space
+- compact Try it / Remember
+- restrained pastel accents only
+
+Official Poster 1 is the revised five-step version:
+1. Gesture + Body Blocks
+2. Simple Limbs + Joints
+3. Full-Body Proportion
+4. Refine Silhouette
+5. Final Figure
+
+The set is complete. Proceed to combined integration rather than creating more Manhua posters.
