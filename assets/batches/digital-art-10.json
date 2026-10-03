@@ -1,6 +1,6 @@
 {
   "batchId": "digital-art-10-20261002",
-  "status": "released",
+  "status": "refresh-staged",
   "routeMap": [
     {
       "slug": "digital-color-layers",
@@ -9,29 +9,29 @@
         {
           "localFile": "01-painting-with-separate-layers.webp",
           "targetPath": "infographics/digital/layers-01-overview.webp",
-          "width": 1122,
-          "height": 1402,
-          "bytes": 259824,
-          "sha256": "95dcdc4c93c46c37c6a03d334107fd1cd79e0a37c59773930a492565d5b66423",
-          "sourcePngSha256": "f7d03a610353ec76f593af16dd94fd35700b662f6ce4dd91243917a45e86c9de"
+          "width": 1024,
+          "height": 1536,
+          "bytes": 494448,
+          "sha256": "83d083dc6adfd604e8e6b1e541f390f114ca48701766e1cceadd627153aabd9a",
+          "sourcePngSha256": "8520862e256f2fa61ba28803654bec27f93f96ffff7a85157468653501d2a21c"
         },
         {
           "localFile": "02-base-color-layers.webp",
           "targetPath": "infographics/digital/layers-02-base-color.webp",
-          "width": 1122,
-          "height": 1402,
-          "bytes": 265304,
-          "sha256": "2f3dd459210820e849dc2518aecb9a9078f97e7472a84fced1932de51bd2c928",
-          "sourcePngSha256": "9b9e9fc142e06baf1dab9ad0df702238bde0523099d1f2b84fe0bf76616e4b7a"
+          "width": 1024,
+          "height": 1536,
+          "bytes": 470014,
+          "sha256": "0d9fc1277c7a93db21b7c4b7d48cbd2189202199be28665596afe44eb691c052",
+          "sourcePngSha256": "9e4290525c11bca676363f48d53d056be051944b10caf2d9ceffbb2cc74ed495"
         },
         {
           "localFile": "03-shadow-layer.webp",
           "targetPath": "infographics/digital/layers-03-shadow.webp",
-          "width": 1122,
-          "height": 1402,
-          "bytes": 323742,
-          "sha256": "06893410502c30a1a74290add37c9ca6530a3918c21caf2959285c9d42764651",
-          "sourcePngSha256": "fc11e4c6b7ca2bdcc5239e23b2568edc1aa840dffe1b961f7b0fd13041ba906a"
+          "width": 1024,
+          "height": 1536,
+          "bytes": 582776,
+          "sha256": "7c0fdbf99cbceb79902f89964eff1670495d1627bcc689893a20d13e6bfda873",
+          "sourcePngSha256": "c7f10db5f0cf44b00243e4421b5d842650553027fc567673ea3cf23a4a350703"
         },
         {
           "localFile": "04-light-details.webp",
@@ -45,11 +45,11 @@
         {
           "localFile": "05-check-your-layers.webp",
           "targetPath": "infographics/digital/layers-05-check.webp",
-          "width": 1055,
-          "height": 1491,
-          "bytes": 341060,
-          "sha256": "3058e2fd1428c1df6f14ecc4731f232f1846f44425165d368724c4807b62ddc3",
-          "sourcePngSha256": "9a04f36c6830f11ef54d7367bc89b9665b0b549257238d8428601878349a761d"
+          "width": 1024,
+          "height": 1536,
+          "bytes": 543024,
+          "sha256": "a63e40575650566a8e7012c6fcaa2505e905118169cd8cd96849ada87cc20dbc",
+          "sourcePngSha256": "ef74252b80a8a713818294486eb4fbf091f096372a3de3d99637210a8bbef020"
         }
       ]
     },
@@ -115,7 +115,7 @@
   },
   "conversion": {
     "format": "WebP",
-    "quality": 88,
+    "quality": 95,
     "method": 6,
     "resize": "none",
     "preserveEmbeddedLogo": true
@@ -136,5 +136,16 @@
     "prCiRun": 272,
     "pagesRun": 273,
     "ownerVisualQa": "pending"
+  },
+  "refresh": {
+    "date": "2026-10-03",
+    "replacementLessons": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "lesson4": "kept unchanged",
+    "ownerApproved": true
   }
 }
