@@ -1888,3 +1888,30 @@ Verified release behavior:
 
 Status: **Human Drawing clarity-refresh release is CLOSED and accepted in production.**
 Do not reopen or redraw this batch without a concrete defect or a later explicit curriculum decision.
+
+
+---
+
+## Face Shapes research prototype — A1 spec DRAFT — 2026-10-24
+
+This is a **new research/reference prototype** initiated after the Human Drawing refresh was closed and accepted. It does not reopen that release and does not yet authorize publishing a new website lesson/mini-series.
+
+Owner decisions:
+- Use the Gemini Asian/European beauty-variant workbook as reference for a structural graphite face-shape library.
+- Exactly five base shapes: **Oval / Round / Heart / Square / Diamond**. New face-shape categories are out of scope.
+- Preserve the existing variants; fix their structure if needed. Two duplicate `EUR_OVAL_01` / `EUR_OVAL_02` entries in the Asian sheet may be deleted, since originals remain in the European sheet.
+- First artwork is one preferred **5-column × 3-row**, 15-face graphite atlas: columns by shape; rows **Front (0°) / 3/4 (~45°) / Profile (90°)**. Front row anchors the structural classification.
+- Faces are pleasant, natural adult faces; thin pencil lines, minimal hair/makeup/shadows; compare forehead, cheekbones, jaw and chin. Same individual across the 3 angles in each column.
+- Regional Asian/European style variations and feature diversity come **after** base-shape examples pass; do not imply rigid biological or ethnic distinctions.
+- If one 15-head generation has too many inconsistencies, generate 5 shape-specific three-view triptychs and composite the same 5×3 final atlas.
+- Keep purple G-Art logo at upper left, composited from the canonical repo asset; this landscape comparison is an explicit pedagogical exception to the usual portrait poster format.
+- No photo-real face library / website mini-series until initial prototype is visually verified.
+
+Detailed working specification:
+**`docs/FACE_SHAPES_A1_FOUNDATION_SPEC.md`**
+
+Status:
+- A1 design/spec drafted; **awaiting owner review**
+- A1 graphite illustration **NOT generated yet**
+- no Face Shapes lesson uploaded or deployed on site
+- Existing G-Art Journey Human Drawing release remains **CLOSED / Owner QA PASS**.
