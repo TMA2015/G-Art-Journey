@@ -1915,3 +1915,11 @@ Status:
 - A1 graphite illustration **NOT generated yet**
 - no Face Shapes lesson uploaded or deployed on site
 - Existing G-Art Journey Human Drawing release remains **CLOSED / Owner QA PASS**.
+
+Working Gemini workbook has also been standardized (without inventing new style variants):
+- Original variant rows preserved (13 Asia + 11 Europe = 24 unique variants)
+- Two duplicate EUR_OVAL_01 / EUR_OVAL_02 entries cleared from the Asian sheet only
+- Added sheet `Chuẩn 5 face shapes` with fixed outline and no-confusion rules
+- Added sheet `Kiểm kê biến thể` with actual per-region coverage; Europe Round currently absent (0)
+- Saved Library file: `/G-Art Journey/Face Shapes Research/Thu_vien_5_dang_khuon_mat_Chuan_hoa_A1.xlsx`
+- Europe Round variants should be **considered only after** canonical A1 prototype is visually approved.
