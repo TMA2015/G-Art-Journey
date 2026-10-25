@@ -1941,3 +1941,17 @@ Working Gemini workbook has also been standardized (without inventing new style 
 - Keep face geometry and each unique identity while switching rendering style; do not let photographic beautification change the shape.
 - AI-painted logos differ between research portraits; use the actual repo brand asset if these become publishing assets.
 - A1/A2 and all existing Human Drawing published lessons remain untouched. Do not open new website mini-series yet.
+
+
+## Photoreal pilot execution QA — 2026-10-25
+
+**Result: FAIL — output-source binding and identity preservation.** Two experimental generation calls are not accepted as conversions.
+
+1. The first attempt, based on a five-reference comparison strip (approved *shortlist*, not approved photoreal output), generated a generic 5-column/3-style teaching infographic and **changed several variant IDs/face identities**. It did not faithfully translate the five original portrait identities.
+2. The narrower `ASIA_ROUND_01` single-source attempt unexpectedly generated a new **Heart & Diamond eight-portrait board**, not a transformation of the Round portrait. This is a severe target mismatch.
+
+**Do not label either image as a valid photoreal translation or add it to the 24-variant library.** The issue is image-to-image source anchoring / instruction fidelity in this execution path, not a failure of the base Gemini design briefs.
+
+Next reproducible test, once exact source-image editing can be grounded: transform **one explicitly referenced original image at a time**, retain its unique eyes/nose/mouth and head proportions, verify shape and identity against the original before trying the other four. If the conversion still changes identity, stop instead of producing visually attractive but invalid substitutes.
+
+**Confirmed deliverables so far:** 24 portraits inspected with QA statuses, specific duplicate risks identified, a five-code shortlist, and a source reference comparison strip. **Photoreal conversion remains BLOCKED / NOT APPROVED.**
