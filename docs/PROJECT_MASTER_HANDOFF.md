@@ -1923,3 +1923,21 @@ Working Gemini workbook has also been standardized (without inventing new style 
 - Added sheet `Kiểm kê biến thể` with actual per-region coverage; Europe Round currently absent (0)
 - Saved Library file: `/G-Art Journey/Face Shapes Research/Thu_vien_5_dang_khuon_mat_Chuan_hoa_A1.xlsx`
 - Europe Round variants should be **considered only after** canonical A1 prototype is visually approved.
+
+
+---
+
+## Face Shapes research — variant visual QA — 2026-10-25
+
+**Scope:** research-only; not approved for live website deployment.
+
+- 24 Gemini-grounded pencil/soft-color reference portraits across Sets 1–3 have been generated, 8 + 8 + 8. Owner judged them markedly better than prior generic six-face poster sets.
+- Full visual QA of 24 portraits is documented in `docs/FACE_SHAPES_VARIANT_QA_20261025.md`.
+- Review result: **10 PASS, 12 WATCH, 2 targeted REWORK**; no files removed or wholesale recreation authorized.
+- Strong same-face concern: `ASIA_OVAL_01` vs `ASIA_HEART_01` (near-reused eye/nose/mouth/tilt); recommend revising the Heart member.
+- Additional near-duplicate + weak jaw: `ASIA_ROUND_02` vs `ASIA_SQUARE_02`; recommend revising Square member.
+- Lesser similarity: `ASIA_DIAMOND_01` / `ASIA_DIAMOND_02`; WATCH.
+- Pilot shortlist for pencil-to-photoreal comparison: **ASIA_OVAL_02, ASIA_ROUND_01, EUR_HEART_01, EUR_SQUARE_01, EUR_DIAMOND_01**.
+- Keep face geometry and each unique identity while switching rendering style; do not let photographic beautification change the shape.
+- AI-painted logos differ between research portraits; use the actual repo brand asset if these become publishing assets.
+- A1/A2 and all existing Human Drawing published lessons remain untouched. Do not open new website mini-series yet.
