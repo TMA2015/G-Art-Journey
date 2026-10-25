@@ -87,3 +87,25 @@ No artwork has been deleted or automatically redrawn.
 Next reproducible test, once exact source-image editing can be grounded: transform **one explicitly referenced original image at a time**, retain its unique eyes/nose/mouth and head proportions, verify shape and identity against the original before trying the other four. If the conversion still changes identity, stop instead of producing visually attractive but invalid substitutes.
 
 **Confirmed deliverables so far:** 24 portraits inspected with QA statuses, specific duplicate risks identified, a five-code shortlist, and a source reference comparison strip. **Photoreal conversion remains BLOCKED / NOT APPROVED.**
+
+
+---
+
+## Subsequent five-portrait photoreal pilot — OWNER VISUAL PASS — 2026-10-25
+
+This records a **later successful five-image transformation batch** and supersedes the *blocked* status of the two **earlier failed attempts above**; those failed outputs remain explicitly rejected and must not be relabeled as successful.
+
+Converted pilot variants (one photoreal portrait each):
+- `ASIA_OVAL_02` — Oval
+- `ASIA_ROUND_01` — Round
+- `EUR_HEART_01` — Heart
+- `EUR_SQUARE_01` — Square
+- `EUR_DIAMOND_01` — Diamond
+
+**Owner visual feedback:** the five conversions are **near-perfect and accurate**, with near-unchanged face shape and identity/feature geometry; the primary difference is the photographic/color rendition. **Pilot result: OWNER VISUAL PASS, 5/5.** This is an owner assessment based on visual comparison, not an automated biometric measurement. Do not infer that all remaining variants will convert with equal fidelity.
+
+**Status distinction:** 5 successful photo conversions are approved as **research/reference pilots**, while the **24 original variants remain 10 PASS / 12 WATCH / 2 REWORK** from the earlier library-wide QA. Approving the photo pilot does not clear the other face-shape/identity flags.
+
+**Owner scope decision:** these portraits are *private character reference/research materials*. No intention to publish the faces to G-Art Journey. The public website focuses on **drawing instruction**, not beauty-character-reference galleries.
+
+**Recommended next phase:** targeted repairs to `ASIA_HEART_01` and `ASIA_SQUARE_02`, preserving their Gemini briefs and distinguishing each from its near-duplicate; then owner QA on these two. Once accepted, proceed to staged photoreal conversions of other original variants and per-pair QA, without bulk automatic PASS. Optional future European Round variants are outside the original 24 and would require a new brief.
