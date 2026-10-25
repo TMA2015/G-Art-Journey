@@ -1955,3 +1955,16 @@ Working Gemini workbook has also been standardized (without inventing new style 
 Next reproducible test, once exact source-image editing can be grounded: transform **one explicitly referenced original image at a time**, retain its unique eyes/nose/mouth and head proportions, verify shape and identity against the original before trying the other four. If the conversion still changes identity, stop instead of producing visually attractive but invalid substitutes.
 
 **Confirmed deliverables so far:** 24 portraits inspected with QA statuses, specific duplicate risks identified, a five-code shortlist, and a source reference comparison strip. **Photoreal conversion remains BLOCKED / NOT APPROVED.**
+
+
+---
+
+### Face Shapes research — 5 photoreal pilot portraits: OWNER VISUAL PASS — 2026-10-25
+
+The later five-portrait conversion batch succeeded after previous invalid output attempts. Owner reviewed the five results and reported they were **nearly perfect**, primarily changing from pencil/soft-color illustration to natural photographic color while maintaining facial shapes and identities.
+
+Pilot accepted for **ASIA_OVAL_02, ASIA_ROUND_01, EUR_HEART_01, EUR_SQUARE_01, EUR_DIAMOND_01**. This **supersedes the older photoreal BLOCKED statement for these five new outputs only**; earlier defective outputs stay rejected. Detailed record: `docs/FACE_SHAPES_VARIANT_QA_20261025.md`.
+
+**Do not upload these face-reference collections to the G-Art Journey website**. Owner emphasizes that the public project teaches drawing; character/face reference artwork is a separate research library.
+
+Next recommended work is **repair only the 2 flagged pencil source references** (`ASIA_HEART_01`, `ASIA_SQUARE_02`) and validate them, then consider extending photoreal transformations with paired source/image QA. The remaining 24-reference audit statuses stay intact until targeted re-review.
